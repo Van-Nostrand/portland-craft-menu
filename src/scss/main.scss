@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "abstracts/variables";
 *,
 *::before,
@@ -43,3 +44,13 @@ a:visited{
   width: 100%;
   text-align: center;
 }
+=======
+@import "base/base";
+@import "abstracts/variables";
+@import "components/navbar";
+@import "components/landing-page";
+
+
+
+
+>>>>>>> 3018d373ee275712b6f8c933566c4950f6afd737
