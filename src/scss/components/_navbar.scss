@@ -1,59 +1,50 @@
 nav{
-  font-size: 1.4rem;
+  
+  // font-weight: 
   display: flex;
   flex-flow: row;
   align-items: center;
   position: relative;
-  margin: 5rem auto;
+  margin-top: 3rem;
 
   // link visited hover active focus
   // focus is an accessability thing; highlighting links with the tab key
   #nav-group-left,
   #nav-group-right{
-    flex: 2 1 40vw;
+    width: 38vw;
     display: flex;
-    color: pink;
+
+    a{
+      margin: 0 2rem;
+    }
+    
   }
 
   #nav-group-left{
     justify-content: end;
   }
 
+  
+
   #nav-group-logo{
-    // flex: 0 2 10vw;
+    flex: 0 1 10vw;
     position: relative;
     width: 10vw;
     justify-items: center;
+    margin: 0 2rem;
 
     img{
-      width: 100%;
+      width: 200px;
+      max-width: 200px;
       display: block;
       margin: 0 auto;
     }
     
   }
 
-  a {
-    // color: $light-font;
-    color: $visible-red;
-    text-decoration: none;
-    margin: 0 3rem;
-    letter-spacing: 0.2rem;
-  }
+  
 
-  a:visited{
-    // color: $light-font-visited;
-    color: $visible-red;
-  }
-
-  a:hover{
-    // color: $light-font-hover;
-    color: $visible-red;
-  }
-
-  a:active{
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+  
 }
 
 

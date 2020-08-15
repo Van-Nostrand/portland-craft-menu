@@ -8,11 +8,10 @@
     align-items: center;
     flex-flow: column;
 
-
     &-photo-wrapper{
       position: absolute;
       overflow: hidden;
-      top:-200px;
+      top:-230px;
       z-index: -1;
       width: 100%; //setting this to 100vw causes the image to overflow the page
     
@@ -25,10 +24,7 @@
     //navbar...
 
     &-tag{
-      margin: 10rem auto;
-      color: $portland-off-white;
-      font-size: 7rem;
-      text-align: center;
+      margin: 5rem auto;
     }
   }
 }
