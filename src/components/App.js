@@ -10,7 +10,8 @@ class App extends React.Component{
       backgroundImage: `url(${PCservice})`
     }
     return(
-      <div id="main-container" style={mainStyle}>
+      <div id="main-container" >
+        <img id="main-background" src={PCservice} />
         <nav>
           <a href="#">HOME</a>
           <a href="#">MENU</a>
@@ -21,9 +22,11 @@ class App extends React.Component{
           <a href="#">CONTACT</a>
           <a href="#">EVENTS</a>
         </nav>
-        <h2 id="tagline">
-          WE ARE OPEN FOR DINE IN AND TAKE OUT!
-        </h2>
+        <div id="below-nav">
+          <h2 id="tagline">
+            WE ARE OPEN FOR DINE IN AND TAKE OUT!
+          </h2>
+        </div>
       </div>
     )
   }
