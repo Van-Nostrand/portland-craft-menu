@@ -1,12 +1,8 @@
-*,
-*::before,
-*::after{
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "base/base";
+@import "abstracts/variables";
+@import "components/navbar";
+@import "components/landing-page";
 
-#main-container{
-  height: 100vh;
-  
-}
+
+
+
