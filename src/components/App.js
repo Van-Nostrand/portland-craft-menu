@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/main.scss";
+
 import PCservice from "../assets/PCservice.png";
 import pclogo from "../assets/pclogo.png";
 

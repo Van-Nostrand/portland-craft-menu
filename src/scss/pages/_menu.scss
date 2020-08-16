@@ -1,0 +1,30 @@
+#menu{
+  font-size: 25px;
+  width: 50vw;
+  position: relative;
+  border: 5px dashed purple;
+
+  .page-divider{
+    // width: 100vw;
+    height:2px;
+    border: 2px solid red;
+    position: relative;
+  }
+
+  .menu-section-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    position: relative;
+
+    .menu-item{
+      border: 1px solid black;
+      width: 150px;
+      padding: 2rem;
+      max-height: 15rem;
+    }
+  }
+
+  
+
+}
