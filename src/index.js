@@ -4,4 +4,4 @@ import App from "./components/App";
 import Menu from "./components/Menu";
 import "./scss/main.scss";
 
-ReactDOM.render(<Menu />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

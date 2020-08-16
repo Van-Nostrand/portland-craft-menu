@@ -11,21 +11,29 @@
     &-photo-wrapper{
       position: absolute;
       overflow: hidden;
-      top:-230px;
+      transform: translate(0,-100px);
       z-index: -1;
       width: 100%; //setting this to 100vw causes the image to overflow the page
     
       img{
         position: relative;
         width: 100%;
+        filter: brightness(0.7);
       }
     }
     
     //navbar...
 
     &-tag{
-      margin: 5rem auto;
+      margin: 6rem 0;
     }
+  }
+
+  #mid-section{
+    border: 2px dashed purple;
+    background-color: #fff;
+    height: 500px;
+    transform: translate(0,100px);
   }
 }
 

@@ -1,0 +1,15 @@
+#mid-button-wrapper{
+  position: relative;
+  margin: 0 auto;
+  width: 20rem;
+  height: 7rem;
+  background-color: $button-orange;
+  justify-items: center;
+  
+  & a{
+    position: relative;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+  }
+}

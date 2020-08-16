@@ -7,27 +7,36 @@
 
       a{
         text-decoration: none;
-        color: $visible-red;
+        color: $light-font;
         letter-spacing: 0.1rem;
       }
       a:visited{
         // color: $light-font-visited;
-        color: $visible-red;
+        color: $light-font-visited;
       }
     
       a:hover{
         // color: $light-font-hover;
-        color: $visible-red;
+        color: $light-font-hover;
       }
     
       a:active{
-        background-color: rgba(0, 0, 0, 0.5);
+        color: $portland-off-white;
       }
     }
     &-tag{
       color: $portland-off-white;
       font-size: 7rem;
       text-align: center;
+      font-weight: 800;
+      line-height: 7.8rem;
+    }
+  }
+
+  & #mid-section{
+
+    & #mid-button-wrapper{
+      text-decoration: none;
     }
   }
 }

@@ -26,31 +26,19 @@ const Menu = (props) => {
   let {starters, burgers, mains} = menuData;
   starters = starters.map((item, i)=> {
     return(
-      <div key={`menu-item${i}`} className="menu-item">
-        <div className="menu-item-name">{item.name}</div>
-        <div className="menu-item-price">{item.price}</div>
-        <div className="menu-item-notes">{item.notes}</div>
-      </div>
+      <MenuItem key={`menu-item-starters-${i}`} name={item.name} price={item.price} notes={item.notes} />
     );
   });
 
   burgers = burgers.map((item, i)=> {
     return(
-      <div key={`menu-item${i}`} className="menu-item">
-        <div className="menu-item-name">{item.name}</div>
-        <div className="menu-item-price">{item.price}</div>
-        <div className="menu-item-notes">{item.notes}</div>
-      </div>
+      <MenuItem key={`menu-item-burgers-${i}`} name={item.name} price={item.price} notes={item.notes} />
     );
   });
 
   mains = mains.map((item, i)=> {
     return(
-      <div key={`menu-item${i}`} className="menu-item">
-        <div className="menu-item-name">{item.name}</div>
-        <div className="menu-item-price">{item.price}</div>
-        <div className="menu-item-notes">{item.notes}</div>
-      </div>
+      <MenuItem key={`menu-item-mains-${i}`} name={item.name} price={item.price} notes={item.notes} />
     );
   });
 
@@ -68,6 +56,16 @@ const Menu = (props) => {
       <div className="menu-section-wrapper">
         {mains}
       </div>
+    </div>
+  )
+}
+
+const MenuItem = ({name, price, notes}) => {
+  return (
+    <div className="menu-item">
+      <div className="menu-item-name">{name}</div>
+      <div className="menu-item-price">{price}</div>
+      <div className="menu-item-notes">{notes}</div>
     </div>
   )
 }
