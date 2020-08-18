@@ -13,7 +13,7 @@ class App extends React.Component{
     return(
       <BrowserRouter>
         <div id="header-photo-wrapper">
-          <img id="restaurant-photo" src={props.background} />
+          <img id="restaurant-photo" src={PCservice} />
         </div>
         <nav>
           <div id="nav-group-left">
