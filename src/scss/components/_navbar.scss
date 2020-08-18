@@ -1,11 +1,8 @@
 nav{
-  
-  // font-weight: 
   display: flex;
   flex-flow: row;
   align-items: center;
   position: relative;
-  margin-top: 3rem;
 
   // link visited hover active focus
   // focus is an accessability thing; highlighting links with the tab key
@@ -24,8 +21,6 @@ nav{
     justify-content: end;
   }
 
-  
-
   #nav-group-logo{
     flex: 0 1 10vw;
     position: relative;
@@ -41,14 +36,4 @@ nav{
     }
     
   }
-
-  
-
-  
 }
-
-
-
-
-
-
