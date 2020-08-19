@@ -1,29 +1,121 @@
-#menu{
+// =======
+// Menu.js
+// =======
+.menu{
   font-size: 25px;
-  width: 50vw;
+  width: 60vw;
   position: relative;
+  top: $header-offset;
   border: 5px dashed purple;
+  margin: 0 auto 6rem auto;
+  transform: translateY($header-offset);
+  background-color: $portland-off-white;
 
   .page-divider{
     height:2px;
     border: 2px solid red;
     position: relative;
+    top: $header-offset;
   }
 
   .menu-section-wrapper{
-    display: flex;
-    flex-wrap: wrap;
     max-width: 100%;
     position: relative;
 
-    .menu-item{
-      border: 1px solid black;
-      width: 150px;
-      padding: 2rem;
-      max-height: 15rem;
+
+    // ==============
+    // MenuSection.js
+    // ==============
+    section {
+      // border: 4px solid green;
+
+      h2{
+        text-align: center;
+      }
+
+      .menu-item-wrapper{
+        border: 1px dashed green;
+        box-sizing: border-box;
+        width: 100%;
+        // height: 400px;
+        padding: 3rem 0;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+        // ===========
+        // MenuItem.js
+        // ===========
+        .menu-item{
+          border: 1px solid black;
+          max-width: 500px;
+          padding: 2rem;
+          max-height: 20rem;
+          font-size: 3rem;
+          display: inline-block;
+          flex: 2 1 40%;
+
+          &-name{
+            display: inline-block;
+            margin-right: 1rem;
+            color: $portland-red;
+            text-transform: capitalize;
+          }
+
+          &-logo{
+            height: 2rem;
+            margin: 0 0.3rem;
+          }
+
+          &-price{
+            display: inline-block;
+    
+            svg{
+              height: 1.2rem; //set size of the dot with this
+              position: relative;
+              top: -2px;
+              margin-right: 1rem;
+            }
+
+            span{
+              font-size: 3rem;
+            }
+          }
+
+          
+        }
+      }
+
+    }
+
+    .menu-dips{
+      width: 40vw;
+      margin: 0 auto;
+      border: 4px dashed brown;
+
+      h4{
+        text-align: center;
+      }
+
+      &-list{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-flow: row;
+
+        li {
+          width: 15rem;
+        }
+      }
+
     }
   }
+}
 
-  
-
+.smaller-text{
+  font-size: 1.6rem;
 }

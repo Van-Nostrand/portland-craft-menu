@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 50 50"
+   height="50"
+   width="50">
+  <defs
+     id="defs2">
+    <rect
+       x="28"
+       y="11"
+       width="24"
+       height="31"
+       id="rect2647" />
+    <rect
+       id="rect845"
+       height="24.190475"
+       width="40.065475"
+       y="116.41667"
+       x="88.446426" />
+    <rect
+       id="rect839"
+       height="83.910713"
+       width="102.80952"
+       y="100.54167"
+       x="58.208332" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     id="layer1">
+    <circle
+       r="24.017063"
+       cy="24.999788"
+       cx="24.999441"
+       id="path835"
+       style="fill:none;fill-opacity:1;stroke:#bd141b;stroke-width:1.95255;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       transform="matrix(3.4615305,0,0,5.278117,-194.67355,-542.23168)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Raleway,sans-serif;white-space:pre;shape-inside:url(#rect839);fill:#bd141b;fill-opacity:1;stroke:none;stroke-width:0.122017;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       id="text837"
+       xml:space="preserve"><tspan
+         x="58.208984"
+         y="110.33778"><tspan
+           style="stroke-width:0.122017;stroke-miterlimit:4;stroke-dasharray:none">v
+</tspan></tspan></text>
+    <text
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect845);fill:#000000;fill-opacity:1;stroke:none;"
+       id="text843"
+       xml:space="preserve" />
+    <text
+       xml:space="preserve"
+       id="text2645"
+       style="font-size:20px;line-height:1.25;font-family:Raleway,sans-serif;white-space:pre;shape-inside:url(#rect2647);" />
+    <text
+       xml:space="preserve"
+       style="font-size:36.7065px;line-height:1.25;font-family:Raleway,sans-serif;fill:#bd141b;fill-opacity:1;stroke:none;stroke-width:1.83532"
+       x="27.754959"
+       y="28.932837"
+       id="text2653"
+       transform="scale(0.89011337,1.1234524)"><tspan
+         id="tspan2651"
+         x="27.754959"
+         y="28.932837"
+         style="stroke-width:1.83532">g</tspan></text>
+  </g>
+</svg>

@@ -50,7 +50,13 @@ module.exports = {
       {
         test: /\.(jpe?g|svg|png|gif)$/,
         use: [
-          "file-loader"
+          {
+            loader: "file-loader",
+            options: {
+              name: 'dist/[hash]-[name].[ext]'
+            }
+          }
+          
         ]
       }
     ]
