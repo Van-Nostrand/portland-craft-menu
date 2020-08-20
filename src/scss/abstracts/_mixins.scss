@@ -1,0 +1,29 @@
+/*
+media query management
+
+0-600     - Phone
+600-900   - tablet portrait
+900-1200  - tablet landscape
+1200-1800 - normal styles
+1800+     - big desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
+
+// use em for media queries because media queries get their font-size from a different place.. I forget how this works, but using rem supposedly causes problems.
+
+//I don't think I'll need to worry about sub 600px devices... for now at least
+@mixin respond($breakpoint){
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content }; // 600px
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) { @content }; // 900px
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) { @content }; // 1200px
+  }
+  @if $breakpoint == big-desk {
+    @media (min-width: 112.5em) { @content }; // 1800px
+  }
+}

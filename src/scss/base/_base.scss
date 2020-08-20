@@ -6,7 +6,26 @@
   box-sizing: inherit;
 }
 
+// set html font-size to 62.5%
+// reasoning:
+// the default font size in most browsers is 16px. some users like to change the font size for vision reasons. if we set the html font-size to a static value, then we remove the users ability to do this. if we set it to a percentage, with the intention being that we design the page with 1rem = 10px on a 16px font size page, then we need to set the page to a percentage that is equivalent to 10/16.  
 
+html{
+  font-size: 62.5%;
+  
+  @include respond(tab-land){  // width < 1200
+    font-size: 56.25%;
+  }
+  @include respond(tab-port){  // width < 900
+    font-size: 50%;
+  }
+  @include respond(phone){
+    font-size: 40%;
+  }
+  @include respond(big-desk){  // width > 1800
+    font-size: 75%;
+  }
+}
 
 #root{
   position: static;

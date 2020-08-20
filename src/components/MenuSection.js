@@ -1,16 +1,19 @@
 import React from "react";
 import { MenuItem } from "./MenuItem";
 
-export const MenuSection = ({section, items}) => {
+export const MenuSection = ({section, items, logos}) => {
 
   let menuItems = items.map((item, i) => {
+    let dietlogos = {
+      glutenFree: item.glutenFree ? logos.gflogo : false,
+      vegetarian: item.vegetarian ? logos.vegetarianlogo : false,
+      vegan: item.vegan ? logos.veganlogo : false
+    }
     return <MenuItem 
               name={item.name} 
               price={item.price} 
-              notes={item.notes} 
-              glutenFree={item.glutenFree}
-              vegetarian={item.vegetarian}
-              vegan={item.vegan}
+              notes={item.notes}
+              logos={dietlogos} 
               key={`${section}-item-${i}`} />
   });
 
@@ -18,7 +21,7 @@ export const MenuSection = ({section, items}) => {
   return(
     <section>
       <h2>{section}</h2>
-      <ul className="menu-item-wrapper">
+      <ul className="menu-section__item-wrapper">
         {menuItems}
       </ul>
     </section>

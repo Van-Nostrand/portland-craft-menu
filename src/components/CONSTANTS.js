@@ -9,6 +9,14 @@ export const TEMP_MENU_DATA = {
       glutenFree: false
     },
     {
+      name: "caesar salad",
+      price: "14",
+      notes: "Romaine lettuce hearts, house caesar dressing, croutons, parmesan cheese",
+      vegetarian: false,
+      vegan: false,
+      glutenFree: false
+    },
+    {
       name: "house salad",
       price: "12",
       notes: "Artisan salad mix, maple dijon vinaigrette",
@@ -41,7 +49,7 @@ export const TEMP_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "green beans",
+      name: "Maple-Miso green beans",
       price: "12",
       notes: "Beans tossed in our signature maple miso glaze, sesame seeds",
       vegetarian: true,
@@ -83,17 +91,17 @@ export const TEMP_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "veggie burger",
+      name: "portland veggie burger",
       price: "16",
-      notes: "Our house-made veggie patty with cheddar, tomatoes, lettuce, garlic aioli, relish, brioche bun, and a side of fries",
+      notes: "Our house-made chickpea and black bean patty with avocado, tomato, lettuce, onion, garlic aioli, relish, brioche bun, and a side of fries",
       vegetarian: true,
       vegan: false,
       glutenFree: false
     },
     {
-      name: "chicken sandwich",
+      name: "portland chicken sandwich",
       price: "18",
-      notes: "Organic free-run chicken breast, breaded and fried, served on a brioche bun with garlic aioli, tomato, lettuce, and a side of fries",
+      notes: "Organic free-run chicken breast, breaded and fried, served on a brioche bun with house-made slaw, tomato, bananna pepper relish, pickled onion, garlic aioli, and a side of fries",
       vegetarian: false,
       vegan: false,
       glutenFree: false

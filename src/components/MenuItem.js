@@ -1,28 +1,26 @@
 import React from "react";
-import gflogo from "./gf.svg";
-import vegetarianlogo from "./vegetarian.svg";
-import veganlogo from "./vegan.svg";
 
-export const MenuItem = ({ name = "unnamed", price = "23", notes="notes go here", vegan, vegetarian, glutenFree }) => {
 
-  let gfElement = glutenFree ? 
+export const MenuItem = ({ name = "unnamed", price = "23", notes="notes go here", logos }) => {
+
+  let gfElement = logos.glutenFree ? 
                     <img 
                       className="menu-item-logo" 
-                      src={gflogo} 
+                      src={logos.glutenFree} 
                       alt="gflogo" /> : 
                     <></>;
 
-  let veganElement = vegan ? 
+  let veganElement = logos.vegan ? 
                       <img 
                         className="menu-item-logo" 
-                        src={veganlogo} 
+                        src={logos.vegan} 
                         alt="veganlogo" /> : 
                       <></>;
 
-  let vegetarianElement = vegetarian ? 
+  let vegetarianElement = logos.vegetarian ? 
                             <img 
                               className="menu-item-logo" 
-                              src={vegetarianlogo} 
+                              src={logos.vegetarian} 
                               alt="vegetarianlogo" /> : 
                             <></>;
 
