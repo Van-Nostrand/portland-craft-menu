@@ -16,6 +16,10 @@ export default class Menu extends Component {
     }
   }
 
+  scrollEvent = () => {
+    console.log("scrolled!")
+  }
+
   render(){
     return(
       <>
@@ -26,7 +30,7 @@ export default class Menu extends Component {
 
           <div className="menu__section-wrapper">
             <MenuSection 
-              section="starters" 
+              section="starters and salads" 
               items={this.state.menuData["starters"]} 
               logos={{veganlogo, vegetarianlogo, gflogo}} />
           </div>
@@ -42,14 +46,14 @@ export default class Menu extends Component {
 
           <div className="menu__page-divider"></div>
 
-          <div className="menu__section-wrapper">
+          <div className="menu__section-wrapper" onScroll={this.scrollEvent}>
             <MenuSection 
               section="mains" 
               items={this.state.menuData["mains"]} 
               logos={{veganlogo, vegetarianlogo, gflogo}} />
           </div>
 
-          <div className="menu__section-wrapper">
+          <div className="menu__section-wrapper" >
             <section className="menu-dips">
               <h4>Dips</h4>
               <ul className="menu-dips-list">

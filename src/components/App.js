@@ -2,7 +2,7 @@ import React from "react";
 // import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import Menu from "./Menu";
-import NavHat from "./NavHat";
+import {NavHat} from "./NavHat";
 
 import PCservice from "../assets/PCservice.png";
 import pclogo from "../assets/pclogo.png";
@@ -17,7 +17,7 @@ class App extends React.Component{
     }
   }
 
-  changePage = (page) => {
+  changePage = (e, page) => {
     this.setState({currentPage: page});
   }
 
@@ -37,35 +37,7 @@ class App extends React.Component{
     
     return(
       <>
-        <div className="header">
-          <div className="header-photo-wrapper">
-            <img id="restaurant-photo" src={PCservice} />
-          </div>
-
-          <nav>
-            <div id="nav-group-left">
-              <Scroll.Link to="scroll-here" spy={true} smooth={true} duration={250} >
-                <div onClick={() => this.changePage("home")}>
-                  HOME
-                </div>
-              </Scroll.Link>
-              <Scroll.Link to="scroll-here" spy={true} smooth={true} duration={250} >
-                <div onClick={() => this.changePage("menu")}>
-                  MENU
-                </div>
-              </Scroll.Link>
-              <a href="#">RESTAURANT</a>
-            </div>
-            <span id="nav-group-logo">
-              <img src={pclogo} />
-            </span>
-            <div id="nav-group-right">
-              <a href="#">CONTACT</a>
-              <a href="#">EVENTS</a>
-            </div>
-          </nav>
-
-        </div>
+        <NavHat clickListener={this.changePage}/>
 
         <Scroll.Element name="scroll-here" >
           <div id="scroll-anchor"></div>

@@ -8,8 +8,8 @@
   // TEXT
   // OTHER
 
-  position: relative;
-  top: $header-offset;
+  position: absolute;
+  top: $full-nav-height;
 
   display: flex;
   flex-flow: column;
@@ -30,6 +30,7 @@
     border: 0.4rem solid #bd141b;
     height:2px;
     width: 90%;
+    margin: 2rem 0;
   }
 
   &__section-wrapper{

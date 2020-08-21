@@ -53,7 +53,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: 'dist/[hash]-[name].[ext]'
+              name: '[hash]-[name].[ext]'
             }
           }
           

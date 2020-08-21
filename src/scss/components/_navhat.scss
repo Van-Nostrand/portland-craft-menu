@@ -1,3 +1,8 @@
+.nav-hat-wrapper{
+  height: $page-height;
+  position: relative;
+}
+
 .background-photo-wrapper{
   position: absolute;
   z-index: -1;
@@ -15,7 +20,8 @@
 
 .full-nav{
   position: relative;
-  padding-top: 4rem;
+  padding-top: 2rem;
+  height: $full-nav-height;
 
   display: flex;
   flex-flow: row;
@@ -25,13 +31,16 @@
 
   @include respond(phone){
     opacity: 0;
-    position: absolute;
   }
 
   &__group-left,
   &__group-right{
     display: flex;
     width: 45vw;
+
+    &-link{
+      cursor: pointer;
+    }
 
     a{
       margin: 0 1.8rem;
@@ -62,20 +71,51 @@
 }
 
 .mobile-nav{
-  position: absolute;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: $mobile-nav-height;
+
+  background-color: $soft-black;
+
+  &__btns{
+    position: relative;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 60rem;
+
+    & a:nth-of-type(1){
+      margin-left: 5rem;
+    }
+
+  }
+  &__logo{
+    position: relative;
+
+    display: inline-block;
+    height: 8rem;
+    margin-right: 5rem;
+
+    img{
+      height: 100%;
+    }
+  }
+
+}
+
+.hide-nav{
   opacity: 0;
+  width: 0;
+  height: 0;
+  // position: absolute;
 
   @include respond(phone){
     opacity: 1;
-    position: relative;
   }
 }
-
-
-.header{
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  padding-top: 8rem;
-}
-
