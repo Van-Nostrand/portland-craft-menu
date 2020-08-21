@@ -3,37 +3,15 @@ import React from "react";
 
 export const MenuItem = ({ itemName = "unnamed", price = "23", notes="notes go here", logos }) => {
 
-  let gfElement = logos.glutenFree ? 
-                    <img 
-                      className="menu-item__dietlogo" 
-                      src={logos.glutenFree} 
-                      alt="gflogo" /> : 
-                    <></>;
-
-  let veganElement = logos.vegan ? 
-                      <img 
-                        className="menu-item__dietlogo" 
-                        src={logos.vegan} 
-                        alt="veganlogo" /> : 
-                      <></>;
-
-  let vegetarianElement = logos.vegetarian ? 
-                            <img 
-                              className="menu-item__dietlogo" 
-                              src={logos.vegetarian} 
-                              alt="vegetarianlogo" /> : 
-                            <></>;
-
-
   return(
     <li className="menu-item">
 
       <div className="menu-item__name">
 
         {itemName}
-        {gfElement}
-        {veganElement}
-        {vegetarianElement}
+        {logos.glutenFree ? <img className="menu-item__dietlogo" src={logos.glutenFree} alt="gflogo" /> : <></>}
+        {logos.vegan ? <img className="menu-item__dietlogo" src={logos.vegan} alt="veganlogo" /> : <></>}
+        {logos.vegetarian ? <img className="menu-item__dietlogo" src={logos.vegetarian} alt="vegetarianlogo" /> : <></>}
     
       </div>
 

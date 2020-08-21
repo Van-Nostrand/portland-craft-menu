@@ -14,7 +14,7 @@ a{
   color: $light-font;
 
   @include respond(tab-port){
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 
@@ -37,23 +37,44 @@ a:focus   { color: $light-font-hover ;}
   color: #ccc;
 }
 
+
+
 /* _menu.scss */
 .menu{
   font-size: 2.5rem;
 
   &__legend{
     font-size: 1.8rem;
+
+    @include respond(tab-port){
+      font-size: 5rem;
+    }
   }
 
-  h6, h2{
+  h6, .menu-section__title{
     color: $portland-red;
   }
+  h6{
+    @include respond(tab-port){
+      font-size: 4.5rem;
+    }
+  }
+
+  &-section__title{
+    font-size: 5rem;
+    text-transform: capitalize;
+
+    @include respond(tab-port){
+      font-size: 8rem;
+    }
+  }
+
 }
 .menu-item{
   font-size: 3rem;
 
   @include respond(tab-port){
-    font-size: 5rem;
+    font-size: 8rem;
   }
 
   &__name{
@@ -65,7 +86,7 @@ a:focus   { color: $light-font-hover ;}
     font-size: 2.6rem;
 
     @include respond(tab-port){
-      font-size: 3.2rem;
+      font-size: 7rem;
     }
   }
 }
@@ -73,6 +94,6 @@ a:focus   { color: $light-font-hover ;}
   font-size: 1.6rem;
 
   @include respond(tab-port){
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }

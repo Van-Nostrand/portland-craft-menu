@@ -27,15 +27,24 @@
 
   &__legend{
     position: relative;
-    margin: 2rem auto;
+    // margin: 2rem auto;
+    text-align: center;
 
     &-item{
       display: inline-block;
       height: 2.3rem;
       margin: 0 1rem;
 
+      @include respond(tab-port){
+        height: 5rem;
+      }
+
       img{
         height: 100%;
+
+        @include respond(tab-port){
+          transform: translateY(1rem);
+        }
       }
     }
   }
@@ -78,7 +87,7 @@ section {
     align-items: start;
   }
 
-  h2{
+  .menu-section__title{
     text-align: center;
   }
 
@@ -144,8 +153,8 @@ section {
     margin: 0 0.3rem;
 
     @include respond(tab-port){
-      height: 2rem;
-      margin: 0 0.2rem;
+      height: 6rem;
+      margin: 0 0.4rem;
       
     }
   }

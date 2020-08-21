@@ -79,13 +79,12 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   height: $mobile-nav-height;
-  // margin-top: 1rem;
   box-sizing: content-box;
 
   background-color: $soft-black;
 
   @include respond(tab-port){
-    
+
   }
 
   &__btns{
@@ -98,7 +97,7 @@
   &__logo{
 
     display: inline-block;
-    height: 8rem;
+    height: 16rem;
     margin-right: 7rem;
 
     img{

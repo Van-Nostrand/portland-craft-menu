@@ -20,7 +20,7 @@ export const MenuSection = ({section, items, logos}) => {
   // TODO: rename class menu-item-wrapper to something better
   return(
     <section>
-      <h2>{section}</h2>
+      <div className="menu-section__title">{section}</div>
       <ul className="menu-section__item-wrapper">
         {menuItems}
       </ul>
