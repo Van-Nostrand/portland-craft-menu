@@ -9,19 +9,41 @@
   // OTHER
 
   position: absolute;
-  top: $full-nav-height;
+  top: $mobile-nav-height;
 
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
   margin: 0 auto 6rem auto;
-  padding-top: $component-top-pad;
+  padding-top: $component-top-pad-full;
 
   background-color: $portland-off-white;
 
   @include respond(tab-port){
     display: inline-block;
+    padding-top: 0;
+  }
+
+  &__legend{
+    position: relative;
+    margin: 2rem auto;
+
+    &-item{
+      display: inline-block;
+      height: 2.3rem;
+      margin: 0 1rem;
+
+      img{
+        height: 100%;
+      }
+    }
+  }
+
+  h6{
+    @include respond(tab-port){
+      text-align: center;
+    }
   }
 
   &__page-divider{
@@ -31,6 +53,10 @@
     height:2px;
     width: 90%;
     margin: 2rem 0;
+
+    @include respond(tab-port){
+      margin: 2rem auto;
+    }
   }
 
   &__section-wrapper{
@@ -94,26 +120,44 @@ section {
 
   @include respond(tab-port){
     flex: 0;
-    display: block;
+    max-width: none;
+    max-height: none;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
   }
   
-  &-name{
+  &__name{
     display: inline-block;
     margin-right: 1rem;
+    
+    @include respond(tab-port) {
+      flex: 2 2 70%;
+    }
   }
 
-  &-logo{
+  &__dietlogo{
     display: inline;
     height: 2rem;
     margin: 0 0.3rem;
 
-    @include respond(phone){
-      display: inline-block;
+    @include respond(tab-port){
+      height: 2rem;
+      margin: 0 0.2rem;
+      
     }
   }
 
-  &-price{
+  &__price{
     display: inline-block;
+
+    @include respond(tab-port){
+      flex: 2 1 20%;
+      text-align: end;
+      margin-right: 1.5rem;
+    }
 
     svg{
       //set size of the dot with height property
@@ -122,8 +166,19 @@ section {
 
       height: 1.2rem; 
       margin-right: 1rem;
+
+      @include respond(tab-port){
+        height: 0rem;
+      }
     }
-  }  
+  } 
+  
+  &__notes{
+    @include respond(tab-port){
+      
+      margin-top: 1rem;
+    }
+  }
 }
 
 // =====

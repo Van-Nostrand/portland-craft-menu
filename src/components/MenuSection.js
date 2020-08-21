@@ -10,7 +10,7 @@ export const MenuSection = ({section, items, logos}) => {
       vegan: item.vegan ? logos.veganlogo : false
     }
     return <MenuItem 
-              name={item.name} 
+              itemName={item.name} 
               price={item.price} 
               notes={item.notes}
               logos={dietlogos} 

@@ -12,19 +12,30 @@ export default class Menu extends Component {
     super(props);
 
     this.state = {
-      menuData: TEMP_MENU_DATA
+      menuData: TEMP_MENU_DATA,
+      menuPage: "food"
     }
   }
 
-  scrollEvent = () => {
-    console.log("scrolled!")
-  }
-
   render(){
+    let legendText = [" = vegetarian", " = vegan", " = gluten free"];
     return(
       <>
         <div className="menu">
-          <h6>We serve locally-sourced offerings inspired by the Portland food scene, paired with the best drinks the Northwest has to offer!</h6>
+
+          <div className="menu__legend">
+            <div className="menu__legend-item">
+              <img src={vegetarianlogo} alt="vegetarianlogo" /> = vegetarian
+            </div>
+            <div className="menu__legend-item">
+              <img src={veganlogo} alt="veganlogo" /> = vegan
+            </div>
+            <div className="menu__legend-item">
+              <img src={gflogo} alt="gflogo" /> = gluten free
+            </div>
+          </div>
+
+          <h6>We serve locally-sourced offerings inspired by the Portland food scene, paired with the best drinks of the Northwest!</h6>
 
           <div className="menu__page-divider"></div>
 
@@ -46,7 +57,7 @@ export default class Menu extends Component {
 
           <div className="menu__page-divider"></div>
 
-          <div className="menu__section-wrapper" onScroll={this.scrollEvent}>
+          <div className="menu__section-wrapper" >
             <MenuSection 
               section="mains" 
               items={this.state.menuData["mains"]} 
