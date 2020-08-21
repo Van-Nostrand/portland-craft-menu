@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import Menu from "./Menu";
+import NavHat from "./NavHat";
 
 import PCservice from "../assets/PCservice.png";
 import pclogo from "../assets/pclogo.png";

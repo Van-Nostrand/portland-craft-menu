@@ -4,10 +4,12 @@ html{
   text-rendering: optimizeLegibility;
 }
 
+// link visited hover active focus, in that order. 
+// focus is an accessability thing, and actually the easiest to miss and most important. it affects cycling through elements with the tab key, when you don't have or can't use a mouse
 a{
   text-decoration: none;
   transform: scale(1, 0.95);
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   color: $light-font;
 }
@@ -15,6 +17,7 @@ a{
 a:visited { color: $light-font-visited ;}
 a:hover   { color: $light-font-hover ;}
 a:active  { color: $portland-off-white ;}
+a:focus   { color: $light-font-hover ;}
 
 #landing-tag{
   color: $portland-off-white;

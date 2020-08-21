@@ -10,22 +10,21 @@
 
   position: relative;
   top: $header-offset;
-  transform: translateY($header-offset);
 
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
   margin: 0 auto 6rem auto;
+  padding-top: $component-top-pad;
+
+  background-color: $portland-off-white;
 
   @include respond(tab-port){
     display: inline-block;
-    align-items: start;
   }
-  
-  background-color: $portland-off-white;
 
-  .page-divider{
+  &__page-divider{
     position: relative;
 
     border: 0.4rem solid #bd141b;
@@ -33,119 +32,120 @@
     width: 90%;
   }
 
-  &-section-wrapper{
+  &__section-wrapper{
     position: relative;
     max-width: 100%;
+  }
+  // Section here
+  // Dips here
+}
 
 
-    // ==============
-    // MenuSection.js
-    // ==============
-    section {
-      position: relative;
+// ==============
+// MenuSection.js
+// ==============
+section {
+  position: relative;
 
-      @include respond(tab-port){
-        align-items: start;
-      }
+  @include respond(tab-port){
+    align-items: start;
+  }
 
-      h2{
-        text-align: center;
-      }
+  h2{
+    text-align: center;
+  }
 
-      .menu-section__item-wrapper{
-        position: relative;
+  .menu-section__item-wrapper{
+    position: relative;
 
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        padding: 3rem 0;
-        justify-content: center;
-        width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 3rem 0;
+    justify-content: center;
+    width: 100%;
 
-        
-        text-align: center;
-        list-style: none;
-        
-        @include respond(tab-port) {
-          display: inline-block;
-          text-align: start;
-        }
-
-        // ===========
-        // MenuItem.js
-        // ===========
-        .menu-item{
-          position: relative;
-
-          display: inline-block;
-          flex: 2 1 40%;
-          padding: 2rem;
-          max-width: 500px;
-          max-height: 20rem;
-
-          @include respond(tab-port){
-            flex: 0;
-          }
-          
-
-          &-name{
-            display: inline-block;
-            margin-right: 1rem;
-          }
-
-          &-logo{
-            display: inline;
-            height: 2rem;
-            margin: 0 0.3rem;
-
-            @include respond(phone){
-              display: inline-block;
-            }
-          }
-
-          &-price{
-            display: inline-block;
+    text-align: center;
+    list-style: none;
     
-            svg{
-              //set size of the dot with height property
-              position: relative;
-              top: -2px;
-
-              height: 1.2rem; 
-              margin-right: 1rem;
-            }
-
-            
-          }
-
-          
-        }
-      }
-
+    @include respond(tab-port) {
+      display: block;
+      text-align: start;
     }
 
-    .menu-dips{
-      width: 40vw;
-      margin: 0 auto;
-
-      h4{
-        text-align: center;
-      }
-
-      &-list{
-        display: flex;
-        flex-flow: row;
-
-        list-style: none;
-        text-align: center;
-
-        li {
-          width: 15rem;
-        }
-      }
-
-    }
+    // MenuItem here
+    
   }
 }
 
+// ===========
+// MenuItem.js
+// ===========
+.menu-item{
+  position: relative;
+
+  display: inline-block;
+  flex: 2 1 40%;
+  padding: 2rem;
+  max-width: 500px;
+  max-height: 20rem;
+
+  @include respond(tab-port){
+    flex: 0;
+    display: block;
+  }
+  
+  &-name{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  &-logo{
+    display: inline;
+    height: 2rem;
+    margin: 0 0.3rem;
+
+    @include respond(phone){
+      display: inline-block;
+    }
+  }
+
+  &-price{
+    display: inline-block;
+
+    svg{
+      //set size of the dot with height property
+      position: relative;
+      top: -2px;
+
+      height: 1.2rem; 
+      margin-right: 1rem;
+    }
+  }  
+}
+
+// =====
+// Dips!
+// =====
+.menu-dips{
+  width: 40vw;
+  margin: 0 auto;
+
+  h4{
+    text-align: center;
+  }
+
+  &-list{
+    display: flex;
+    flex-flow: row;
+
+    list-style: none;
+    text-align: center;
+
+    li {
+      width: 15rem;
+    }
+  }
+
+}

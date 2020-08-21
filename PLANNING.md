@@ -1,3 +1,24 @@
+IMPLEMENT BEM ARCHITECTURE
+Block, Element, Modifier
+.block {}
+.block__element{}
+.block__element-modifier{}
+.block__element-modifier--secondmodifier{}
+etc...
+
+also, implement the 7-1 structure
+introduced by Hugo Giraudel (sp?)
+read up on him... 
+
+The 7 folders:
+base/             basic project definitions (*, html, body...)
+components/       one file for each component
+layout/           define the overall layout of the project
+pages/            styles for specific pages
+themes/           for implementing different visual themes
+abstracts/        variables, mixins...
+vendors/          third party libraries
+
 The app has a header that contains background images and a navbar. 
 These are absolutely positioned and fit over other page elements
 Test click and scroll? 
