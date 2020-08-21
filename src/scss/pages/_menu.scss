@@ -195,10 +195,10 @@ section {
 // =====
 .menu-dips{
   width: 40vw;
-  margin: 0 auto;
+  margin: 0 auto 5rem auto;
 
-  h4{
-    text-align: center;
+  @include respond(tab-port){
+    width: 100%;
   }
 
   &-list{
@@ -209,7 +209,10 @@ section {
     text-align: center;
 
     li {
-      width: 15rem;
+
+      img{
+        height: 4rem;
+      }
     }
   }
 

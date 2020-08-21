@@ -64,20 +64,19 @@ export default class Menu extends Component {
               logos={{veganlogo, vegetarianlogo, gflogo}} />
           </div>
 
+          <div className="menu__page-divider"></div>
+
           <div className="menu__section-wrapper" >
             <section className="menu-dips">
-              <h4>Dips</h4>
+              <div className="menu-section__title">Dips!</div>
               <ul className="menu-dips-list">
                 <li className="smaller-text">Garlic aioli</li>
                 <li className="smaller-text">Smoked paprika aioli</li>
                 <li className="smaller-text">Scallion aioli</li>
+                <li className="smaller-text">Thai chili<img src={veganlogo} alt="veganlogo" /></li>
                 <li className="smaller-text">Habenero (extra hot!)</li>
-                <li className="smaller-text">Thai chili<img src={veganlogo} alt="veganlogo" style={{height: "2rem",marginLeft: "0.3rem"}} /></li>
               </ul>
             </section>
-          </div>
-          <div className="legend">
-
           </div>
           <h2>get a portland growler to go, ask your server!</h2>
         
