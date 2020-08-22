@@ -25,3 +25,5 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @media (min-width: 112.5em) { @content }; // 1800px
   }
 }
+
+// , (max-width: 75em) and  (-webkit-min-device-pixel-ratio: 2)

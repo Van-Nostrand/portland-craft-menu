@@ -1,4 +1,4 @@
-export const TEMP_MENU_DATA = {
+export const FOOD_MENU_DATA = {
   starters: [
     {
       name: "house fries",
@@ -142,3 +142,148 @@ export const TEMP_MENU_DATA = {
     }
   ]
 };
+
+export const DRINK_MENU_DATA = {
+  wine: {
+    red: [
+      {
+        name: "Lake Breeze Meritage",
+        sizes: [12, 16, 48],
+        notes: "BC"
+      },
+      {
+        name: "Septima Malbec",
+        sizes: [10, 14, 42],
+        notes: "Argentina"
+      },
+      {
+        name: "James Mitchell Cabernet Sauvignon",
+        sizes: [12, 16, 48],
+        notes: "California"
+      },
+      {
+        name: "Sandhill Cabernet Merlot",
+        sizes: [11, 15, 45],
+        notes: "BC"
+      },
+      {
+        name: "See Ya Later Ranch Pinot Noir",
+        sizes: [11, 15, 45],
+        notes: "BC"
+      },
+      {
+        name: "Kanazawa Merlot",
+        sizes: [12, 16, 48],
+        notes: "BC"
+      },
+    ],
+    white: [
+      {
+        name: "Tightrope Pinot Gris",
+        sizes: [10, 14, 42],
+        notes: "BC"
+      },
+      {
+        name: "Sandhill Pinot Blanc",
+        sizes: [11, 15, 45],
+        notes: "BC"
+      },
+      {
+        name: "Gray Monk Chardonnay",
+        sizes: [12, 16, 48],
+        notes: "BC"
+      },
+      {
+        name: "Bonamici Rose",
+        sizes: [10, 14, 42],
+        notes: "BC"
+      },
+      {
+        name: "Kanazawa Nomu",
+        sizes: [12, 16, 48],
+        notes: "BC"
+      },
+      {
+        name: "Charles Smith Riesling",
+        sizes: [12, 16, 48],
+        notes: "Washington"
+      },
+      {
+        name: "Kim Crawford Sauvignon Blanc",
+        sizes: [12, 16, 48],
+        notes: "New Zealand"
+      },
+    ],
+    bubbles: [
+      {
+        name: "Stellars Jay",
+        sizes: [11, 45],
+        notes: "BC"
+      },
+      {
+        name: "Codorniu Cava",
+        sizes: [12, 16, 48],
+        notes: "Spain"
+      },
+    ]
+  },
+  cocktails: [
+    {
+      name: "Spritz Veneziano",
+      price: "11",
+      notes: "Ruffino Prosecco, soda, choice of liqueur"
+    },
+    {
+      name: "Margarita",
+      price: "12",
+      notes: "El Jimador Blanco tequila, lime, agave (optional)"
+    },
+    {
+      name: "Moscow Mule or Dark & Stormy",
+      price: "12",
+      notes: "Absolut vodka or Goslings black rum, sugar, Angostura bitters, Fentiman's ginger beer"
+    },
+    {
+      name: "Whiskey Sour",
+      price: "13",
+      notes: "Wild Turkey bourbon, lemon, sugar, Angostura bitters, egg white (optional)"
+    },
+    {
+      name: "Corpse Reviver #2",
+      price: "12",
+      notes: "Beefeater gin, Cointreau, Lillet Blanc, Pernod rinse, lemon"
+    },
+    {
+      name: "Daquiri",
+      price: "12",
+      notes: "Flor de Ca\u00f1a rum, lime, sugar"
+    },
+    {
+      name: "Negroni Sour",
+      price: "13",
+      notes: "Beefeater gin, Campari, Odd Society Amaro, orange, lemon, sugar, egg white (optional). Cory's own creation!"
+    },
+    {
+      name: "Best Bloody Caesar",
+      price: "9/13",
+      notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
+    },
+    {
+      name: "Fraser Collins",
+      price: "13",
+      notes: "Beefeater gin, lemon, sugar, cucumber, black pepper, topped off with pilsner. Mike's twist on the Tom Collins!"
+    },
+    {
+      name: "Spanish Fashion",
+      price: "13",
+      notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
+    },
+  ],
+  draught: [
+    {
+      name: "",
+      sizes: [],
+      notes: ""
+    },
+  ]
+}

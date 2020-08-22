@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {MenuSection} from "./MenuSection";
 import {
-  TEMP_MENU_DATA
+  FOOD_MENU_DATA
 } from "./CONSTANTS";
 import gflogo from "../assets/gf.svg";
 import vegetarianlogo from "../assets/vegetarian.svg";
@@ -12,13 +12,13 @@ export default class Menu extends Component {
     super(props);
 
     this.state = {
-      menuData: TEMP_MENU_DATA,
+      menuData: FOOD_MENU_DATA,
       menuPage: "food"
     }
   }
 
   render(){
-    let legendText = [" = vegetarian", " = vegan", " = gluten free"];
+    
     return(
       <>
         <div className="menu">

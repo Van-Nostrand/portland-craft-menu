@@ -26,11 +26,13 @@
   }
 
   &__legend{
+
     position: relative;
     // margin: 2rem auto;
     text-align: center;
 
     &-item{
+
       display: inline-block;
       height: 2.3rem;
       margin: 0 1rem;
@@ -38,8 +40,12 @@
       @include respond(tab-port){
         height: 5rem;
       }
+      @include respond(phone){
+        height: 5rem;
+      }
 
       img{
+
         height: 100%;
 
         @include respond(tab-port){
@@ -50,12 +56,14 @@
   }
 
   h6{
+
     @include respond(tab-port){
       text-align: center;
     }
   }
 
   &__page-divider{
+
     position: relative;
 
     border: 0.4rem solid #bd141b;
@@ -69,6 +77,7 @@
   }
 
   &__section-wrapper{
+    
     position: relative;
     max-width: 100%;
   }
@@ -86,9 +95,16 @@ section {
   @include respond(tab-port){
     align-items: start;
   }
+  @include respond(phone){
+    align-items: start;
+  }
 
   .menu-section__title{
     text-align: center;
+
+    @include respond(tab-port){
+      color: purple;
+    }
   }
 
   .menu-section__item-wrapper{
