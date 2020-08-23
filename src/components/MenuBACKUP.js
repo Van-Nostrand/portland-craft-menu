@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import {MenuSection} from "./MenuSection";
-import {DrinksMenu} from "./DrinksMenu";
-import {FoodMenu} from "./FoodMenu";
+import {MenuDrinks} from "./MenuDrinks";
 import {
-  FOOD_MENU_DATA,
-  DRINKS_MENU_DATA
+  FOOD_MENU_DATA
 } from "./CONSTANTS";
 import gflogo from "../assets/gf.svg";
 import vegetarianlogo from "../assets/vegetarian.svg";
