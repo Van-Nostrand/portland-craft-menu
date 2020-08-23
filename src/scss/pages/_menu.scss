@@ -9,59 +9,26 @@
   // OTHER
 
   position: absolute;
-  top: $mobile-nav-height;
+  top: $desktop-nav-height;
 
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
   margin: 0 auto 6rem auto;
-  padding-top: $component-top-pad-full;
+  padding-top: $desktop-pad-top;
 
   background-color: $portland-off-white;
 
   @include respond(tab-port){
+    top: $mobile-nav-height;
     display: inline-block;
     padding-top: 0;
   }
 
-  &__legend{
-
-    position: relative;
-    // margin: 2rem auto;
-    text-align: center;
-
-    &-item{
-
-      display: inline-block;
-      height: 2.3rem;
-      margin: 0 1rem;
-
-      @include respond(tab-port){
-        height: 5rem;
-      }
-      @include respond(phone){
-        height: 5rem;
-      }
-
-      img{
-
-        height: 100%;
-
-        @include respond(tab-port){
-          transform: translateY(1rem);
-        }
-      }
-    }
-  }
-
-  h6{
-
-    @include respond(tab-port){
-      text-align: center;
-    }
-  }
-
+  // =======================
+  // DrinksMenu and FoodMenu
+  // =======================
   &__page-divider{
 
     position: relative;
@@ -85,29 +52,21 @@
   // Dips here
 }
 
-
-// ==============
-// MenuSection.js
-// ==============
+// =========================================
+// FoodSection, WineSection, CocktailSection
+// =========================================
 section {
   position: relative;
 
   @include respond(tab-port){
     align-items: start;
   }
-  @include respond(phone){
-    align-items: start;
-  }
 
   .menu-section__title{
     text-align: center;
-
-    @include respond(tab-port){
-      color: purple;
-    }
   }
 
-  .menu-section__item-wrapper{
+  .menu-section__wrapper{
     position: relative;
 
     display: flex;
@@ -125,111 +84,5 @@ section {
       display: block;
       text-align: start;
     }
-
-    // MenuItem here
-    
   }
-}
-
-// ===========
-// MenuItem.js
-// ===========
-.menu-item{
-  position: relative;
-
-  display: inline-block;
-  flex: 2 1 40%;
-  padding: 2rem;
-  max-width: 500px;
-  max-height: 20rem;
-
-  @include respond(tab-port){
-    flex: 0;
-    max-width: none;
-    max-height: none;
-    position: relative;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-
-  }
-  
-  &__name{
-    display: inline-block;
-    margin-right: 1rem;
-    
-    @include respond(tab-port) {
-      flex: 2 2 70%;
-    }
-  }
-
-  &__dietlogo{
-    display: inline;
-    height: 2rem;
-    margin: 0 0.3rem;
-
-    @include respond(tab-port){
-      height: 6rem;
-      margin: 0 0.4rem;
-      
-    }
-  }
-
-  &__price{
-    display: inline-block;
-
-    @include respond(tab-port){
-      flex: 2 1 20%;
-      text-align: end;
-      margin-right: 1.5rem;
-    }
-
-    svg{
-      //set size of the dot with height property
-      position: relative;
-      top: -2px;
-
-      height: 1.2rem; 
-      margin-right: 1rem;
-
-      @include respond(tab-port){
-        height: 0rem;
-      }
-    }
-  } 
-  
-  &__notes{
-    @include respond(tab-port){
-      
-      margin-top: 1rem;
-    }
-  }
-}
-
-// =====
-// Dips!
-// =====
-.menu-dips{
-  width: 40vw;
-  margin: 0 auto 5rem auto;
-
-  @include respond(tab-port){
-    width: 100%;
-  }
-
-  &-list{
-    display: flex;
-    flex-flow: row;
-
-    list-style: none;
-    text-align: center;
-
-    li {
-
-      img{
-        height: 4rem;
-      }
-    }
-  }
-
 }

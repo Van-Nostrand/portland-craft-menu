@@ -1,16 +1,16 @@
 import React from "react";
 
 
-export const Wine = ({ itemName = "unnamed", price = ["5","10","23"], notes=""}) => {
+export const Wine = ({ itemName = "unnamed", notes="", sizes}) => {
 
   return(
-    <li className="menu-item">
+    <li className="menu-item wine-item">
 
       <div className="menu-item__name">
 
         {itemName}
-        <span className="menu-item__notes smaller-text">
-          {`(${notes})`}
+        <span className="smaller-text wine-origin">
+          {` (${notes})`}
         </span>
     
       </div>
@@ -20,7 +20,7 @@ export const Wine = ({ itemName = "unnamed", price = ["5","10","23"], notes=""})
         <svg viewBox="0 0 12 12" >
           <circle cx="5" cy="5" r="5"/>
         </svg>
-        <span>{price}</span>
+        <span>{sizes.join("/")}</span>
       </div>
 
       

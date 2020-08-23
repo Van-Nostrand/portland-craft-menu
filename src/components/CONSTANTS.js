@@ -143,7 +143,7 @@ export const FOOD_MENU_DATA = {
   ]
 };
 
-export const DRINK_MENU_DATA = {
+export const DRINKS_MENU_DATA = {
   wine: {
     red: [
       {
@@ -239,7 +239,7 @@ export const DRINK_MENU_DATA = {
       notes: "El Jimador Blanco tequila, lime, agave (optional)"
     },
     {
-      name: "Moscow Mule or Dark & Stormy",
+      name: "Moscow Mule / Dark & Stormy",
       price: "12",
       notes: "Absolut vodka or Goslings black rum, sugar, Angostura bitters, Fentiman's ginger beer"
     },

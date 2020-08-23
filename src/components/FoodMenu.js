@@ -1,66 +1,65 @@
 import React from "react";
+import {FoodSection} from "./FoodSection";
 
-export const FoodMenu = ({vegetarianlogo, veganlogo, gflogo, menuData }) => {
+export const FoodMenu = ({logos, menuData }) => {
   
-    
   return(
     <>
-      <div className="food-menu">
+      <div className="menu food-menu">
 
-        <div className="food-menu__legend">
-          <div className="food-menu__legend-item">
-            <img src={vegetarianlogo} alt="vegetarianlogo" /> = vegetarian
-          </div>
-          <div className="food-menu__legend-item">
-            <img src={veganlogo} alt="veganlogo" /> = vegan
-          </div>
-          <div className="food-menu__legend-item">
-            <img src={gflogo} alt="gflogo" /> = gluten free
-          </div>
-        </div>
+        <div className="menu__page-divider"></div>
 
-        <div className="food-menu__page-divider"></div>
-
-        <div className="food-menu__section-wrapper">
-          <MenuSection 
+        <div className="menu__section-wrapper">
+          <FoodSection 
             section="starters and salads" 
             items={menuData["starters"]} 
-            logos={{veganlogo, vegetarianlogo, gflogo}} />
+            logos={logos} />
         </div>
 
-        <div className="food-menu__page-divider"></div>
+        <div className="menu__page-divider"></div>
 
-        <div className="food-menu__section-wrapper">
-          <MenuSection 
+        <div className="menu__section-wrapper">
+          <FoodSection 
             section="burgers" 
             items={menuData["burgers"]} 
-            logos={{veganlogo, vegetarianlogo, gflogo}} />
+            logos={logos} />
         </div>
 
-        <div className="food-menu__page-divider"></div>
+        <div className="menu__page-divider"></div>
 
-        <div className="food-menu__section-wrapper" >
-          <MenuSection 
+        <div className="menu__section-wrapper" >
+          <FoodSection 
             section="mains" 
             items={menuData["mains"]} 
-            logos={{veganlogo, vegetarianlogo, gflogo}} />
+            logos={logos} />
         </div>
 
-        <div className="food-menu__page-divider"></div>
+        <div className="menu__page-divider"></div>
 
-        <div className="food-menu__section-wrapper" >
-          <section className="food-menu__section__dips">
-            <div className="food-menu__section__dips-title">Dips!</div>
-            <ul className="food-menu__section__dips-list">
+        <div className="menu__section-wrapper" >
+          <section className="menu-dips">
+            <div className="menu-dips__title">Dips!</div>
+            <ul className="menu-dips__list">
               <li className="smaller-text">Garlic aioli</li>
               <li className="smaller-text">Smoked paprika aioli</li>
               <li className="smaller-text">Scallion aioli</li>
-              <li className="smaller-text">Thai chili<img src={veganlogo} alt="veganlogo" /></li>
+              <li className="smaller-text">Thai chili<img src={logos.veganlogo} alt="veganlogo" /></li>
               <li className="smaller-text">Habenero (extra hot!)</li>
             </ul>
           </section>
         </div>
-        <h2>get a portland growler to go, ask your server!</h2>
+
+        <div className="food-menu__legend">
+          <div className="food-menu__legend-item">
+            <img src={logos.vegetarianlogo} alt="vegetarianlogo" /> = vegetarian
+          </div>
+          <div className="food-menu__legend-item">
+            <img src={logos.veganlogo} alt="veganlogo" /> = vegan
+          </div>
+          <div className="food-menu__legend-item">
+            <img src={logos.gflogo} alt="gflogo" /> = gluten free
+          </div>
+        </div>
       
       </div>
     </>

@@ -1,0 +1,69 @@
+
+.menu-item{
+  position: relative;
+
+  display: inline-block;
+  flex: 2 1 40%;
+  // padding: 2rem;
+  margin: 2rem 0 1rem 1rem; 
+  max-width: 500px;
+  max-height: 20rem;
+
+  @include respond(tab-port){
+    flex: 0;
+    max-width: none;
+    max-height: none;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+  }
+  
+  &__name{
+    display: inline-block;
+    margin-right: 1rem;
+    
+    @include respond(tab-port) {
+      flex: 2 2 75%;
+    }
+  }
+
+  &__price{
+    display: inline-block;
+
+    @include respond(tab-port){
+      flex: 2 1 15%;
+      text-align: end;
+      margin-right: 2.5rem;
+    }
+
+    svg{
+      //set size of the dot with height property
+      position: relative;
+      top: -2px;
+
+      height: 1.2rem; 
+      margin-right: 1rem;
+
+      @include respond(tab-port){
+        height: 0rem;
+        position: absolute;
+      }
+    }
+  } 
+  
+  &__notes{
+    @include respond(tab-port){
+      margin-top: 1rem;
+      width: 80%;
+    }
+  }
+}
+
+.cocktail{
+  
+  @include respond(tab-port){
+    margin-top: 4rem;
+  }
+}

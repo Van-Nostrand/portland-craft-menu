@@ -1,15 +1,15 @@
 import React from "react";
-import { MenuItem } from "./MenuItem";
+import { Food } from "./Food";
 
 export const FoodSection = ({section, items, logos}) => {
 
-  let menuItems = items.map((item, i) => {
+  let foods = items.map((item, i) => {
     let dietlogos = {
       glutenFree: item.glutenFree ? logos.gflogo : false,
       vegetarian: item.vegetarian ? logos.vegetarianlogo : false,
       vegan: item.vegan ? logos.veganlogo : false
     }
-    return <MenuItem 
+    return <Food 
               itemName={item.name} 
               price={item.price} 
               notes={item.notes}
@@ -20,9 +20,9 @@ export const FoodSection = ({section, items, logos}) => {
   // TODO: rename class menu-item-wrapper to something better
   return(
     <section>
-      <div className="food-menu__section-item--title">{section}</div>
-      <ul className="food-menu__section-item--wrapper">
-        {menuItems}
+      <div className="menu-section__title">{section}</div>
+      <ul className="menu-section__wrapper">
+        {foods}
       </ul>
     </section>
   );

@@ -54,3 +54,18 @@ CSS order suggestion from css-tricks:
   /* Other */
   cursor: pointer;
 }
+
+================================================
+================== NEW LAYOUT ==================
+
+PageWrapper
+- NavHat
+- Menu
+- - FoodMenu (old Menu)
+- - - FoodSection
+- - - - Food
+- - DrinksMenu
+- - - WineSection 
+- - - - Wine
+- - - CocktailSection
+- - - - Cocktail
