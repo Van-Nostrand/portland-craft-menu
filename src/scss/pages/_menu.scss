@@ -20,6 +20,9 @@
 
   background-color: $portland-off-white;
 
+  font-size: 2.5rem;
+  color: $portland-red;
+
   @include respond(tab-port){
     top: $mobile-nav-height;
     display: inline-block;
@@ -62,11 +65,17 @@ section {
     align-items: start;
   }
 
-  .menu-section__title{
+  .section__title{
+    font-size: $desktop-section-font-size;
+    text-transform: capitalize;
     text-align: center;
+
+    @include respond(tab-port){
+      font-size: $mobile-section-font-size;
+    }
   }
 
-  .menu-section__wrapper{
+  .section__wrapper{
     position: relative;
 
     display: flex;
@@ -83,6 +92,82 @@ section {
     @include respond(tab-port) {
       display: block;
       text-align: start;
+    }
+  }
+}
+
+
+.menu-item{
+  position: relative;
+
+  display: inline-block;
+  flex: 2 1 40%;
+  margin: 2rem 0 1rem 1rem; 
+  max-width: 500px;
+  max-height: 20rem;
+
+  font-size: 3rem;
+  font-weight: 500;
+
+  @include respond(tab-port){
+    flex: 0;
+    max-width: none;
+    max-height: none;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    font-size: 6rem;
+  }
+
+  &__name{
+    display: inline-block;
+    margin-right: 1rem;
+
+    text-transform: capitalize;
+
+    @include respond(tab-port) {
+      flex: 2 2 75%;
+    }
+  }
+  
+  &__price{
+    display: inline-block;
+
+    font-size: 2.6rem;
+    color: $dark-font;
+
+    @include respond(tab-port){
+      flex: 2 1 15%;
+      text-align: end;
+      margin-right: 2.5rem;
+
+      font-size: 5rem;
+    }
+
+    svg{
+      position: relative;
+      top: -2px;
+      
+      //set size of the dot with height property
+      height: 1.2rem; 
+      margin-right: 1rem;
+
+      @include respond(tab-port){
+        height: 0rem;
+        position: absolute;
+      }
+    }
+  }
+
+  &__notes{
+
+    color: $dark-font;
+
+    @include respond(tab-port){
+      margin-top: 1rem;
+      width: 80%;
     }
   }
 }

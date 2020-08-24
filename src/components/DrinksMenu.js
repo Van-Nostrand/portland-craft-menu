@@ -5,7 +5,6 @@ import {WineSection} from "./WineSection";
 
 export const DrinksMenu = ({menuData}) => {
 
-  console.log(menuData["wine"]["red"]);
   return (
     <div className="menu drinks-menu">
 

@@ -11,14 +11,18 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  height: $mobile-nav-height;
+  height: $desktop-nav-height;
   box-sizing: content-box;
 
   background-color: $soft-black;
 
+  @include respond(tab-port){
+    height: $mobile-nav-height;
+  }
 
   &__btns{
     width: 100%;
+    z-index: 7;
 
     display: flex;
     flex-wrap: nowrap;
@@ -36,8 +40,12 @@
   &__logo{
 
     display: inline-block;
-    height: $mobile-nav-logo-height;
+    height: $desktop-nav-logo-height;
     margin-right: 7rem;
+
+    @include respond(tab-port){
+      height: $mobile-nav-logo-height;
+    }
 
     img{
       height: 100%;

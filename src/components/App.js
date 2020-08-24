@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import {NavHat} from "./NavHat";
 import {Menu} from "./Menu";
 
-export const PageWrapper = (props) => {
+export const App = (props) => {
   let [currentPage, setCurrentPage] = useState("food");
  
   return (

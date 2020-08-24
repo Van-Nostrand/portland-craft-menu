@@ -41,73 +41,15 @@ a:focus   { color: $light-font-hover ;}
 // NavHat
 // ======
 .mobile-nav__btns{
-  font-size: 5rem;
+  font-size: 3rem;
   color: $portland-off-white;
   cursor: pointer;
-}
-
-/* _menu.scss */
-.menu{
-  font-size: 2.5rem;
-  color: $portland-red;
- 
-
-  h6, .menu-section__title{
-    // color: $portland-red;
-  }
-  h6{
-    @include respond(tab-port){
-      font-size: 4.5rem;
-    }
-  }
-
-  &-section__title{
-    font-size: $desktop-section-font-size;
-    text-transform: capitalize;
-
-    @include respond(tab-port){
-      font-size: $mobile-section-font-size;
-    }
-  }
-
-}
-
-
-
-.menu-item{
-  font-size: 3rem;
-  font-weight: 500;
-  // letter-spacing: 0.15rem;
 
   @include respond(tab-port){
-    font-size: 6rem;
-  }
-
-  &__name{
-    text-transform: capitalize;
-  }
-  
-  &__price span{
-    font-size: 2.6rem;
-    color: $dark-font;
-
-    @include respond(tab-port){
-      font-size: 5rem;
-    }
-  }
-
-  &__notes{
-    color: $dark-font;
+    font-size: 5rem;
   }
 }
 
-//TODO: find a better way to do this
-.wine-origin, 
-.food-menu__item-notes,
-.food-menu__item-price,
-.menu__item-price {
-  color: $dark-font;
-}
 .smaller-text{
   font-size: 2rem;
 
@@ -116,75 +58,5 @@ a:focus   { color: $light-font-hover ;}
   }
 }
 
-// =================
-// FoodMenu
-// =================
-.food-menu__item{
-  font-size: 3rem;
 
-  @include respond(tab-port){
-    font-size: 6rem;
-  }
 
-  &-name{
-    text-transform: capitalize;
-  }
-  
-  &-price span{
-    font-size: 2.6rem;
-    color: $dark-font ;
-
-    @include respond(tab-port){
-      font-size: 6rem;
-    }
-  }
-
-  &-notes{
-
-  }
-}
-
-.menu-dips{
-
-  &__title{
-    font-size: $desktop-section-font-size;
-
-    @include respond(tab-port){
-      font-size: $mobile-section-font-size;
-    }
-  }
-
-  &__list{
-    color: $dark-font;
-    
-    li{
-      font-size: 5rem;
-      font-weight: 500;
-    }
-  }
-}
-
-.food-menu__legend{
-  font-size: 1.8rem;
-  
-  @include respond(tab-port){
-    font-size: 5rem;
-    margin-bottom: 4rem;
-  }
-}
-
-.drinks-menu{
-
-  &__section-title{
-    font-size: $desktop-section-font-size;
-
-    @include respond(tab-port){
-      font-size: $mobile-section-font-size;
-    }
-  }
-}
-
-.wine-sizes{
-  font-size: 4rem;
-  color: $dark-font;
-}

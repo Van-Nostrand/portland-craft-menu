@@ -62,7 +62,7 @@ export const FOOD_MENU_DATA = {
       notes: "Sliced steak served with salsa verde, pickled onions, chipotle sauce, on a warm corn tortilla",
       vegetarian: false,
       vegan: false,
-      glutenFree: true
+      glutenFree: false
     },
     {
       name: "old bay popcorn",
@@ -76,9 +76,9 @@ export const FOOD_MENU_DATA = {
       name: "shrimp taco",
       price: "7 each",
       notes: "Argentinian wild prawns breaded and fried, served with chipotle slaw, salsa verde, pickled onions, on a warm corn tortilla",
-      vegetarian: true,
+      vegetarian: false,
       vegan: false,
-      glutenFree: true
+      glutenFree: false
     }
   ],
   burgers: [
@@ -133,7 +133,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },  
     {
-      name: "Mac and Cheese",
+      name: "Mac & Cheese",
       price: "17",
       notes: "Three cheeses, pasta, truffle oil, chives",
       vegetarian: false,

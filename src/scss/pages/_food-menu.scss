@@ -9,6 +9,9 @@
     max-width: 500px;
     max-height: 20rem;
 
+    font-size: 3rem;
+
+
     @include respond(tab-port){
       flex: 0;
       max-width: none;
@@ -18,11 +21,15 @@
       flex-flow: row;
       flex-wrap: wrap;
 
+      font-size: 6rem;
     }
     
     &-name{
       display: inline-block;
       margin-right: 1rem;
+
+      text-transform: capitalize;
+
       
       @include respond(tab-port) {
         flex: 2 2 75%;
@@ -32,10 +39,15 @@
     &-price{
       display: inline-block;
 
+      font-size: 2.6rem;
+      color: $dark-font ;
+
       @include respond(tab-port){
         flex: 2 1 15%;
         text-align: end;
         margin-right: 1.5rem;
+
+        font-size: 6rem;
       }
 
       svg{
@@ -53,6 +65,9 @@
     } 
     
     &-notes{
+
+      color: $dark-font;
+
       @include respond(tab-port){
         
         margin-top: 1rem;
@@ -78,14 +93,24 @@
 // =====
 .menu-dips{
   display: flex;
-  flex-flow: row;
-  width: 40vw;
+  flex-flow: column;
+  align-items: center;
+  width: 80vw;
   margin: 0 auto 5rem auto;
 
   @include respond(tab-port){
-    flex-flow: column;
-    align-items: center;
     width: 100%;
+  }
+  @include respond(phone){
+    width: 100%;
+  }
+
+  &__title{
+    font-size: $desktop-section-font-size;
+
+    @include respond(tab-port){
+      font-size: $mobile-section-font-size;
+    }
   }
 
   &__list{
@@ -98,13 +123,26 @@
     list-style: none;
     text-align: center;
     white-space: nowrap;
+    color: $dark-font;
+
 
     li {
       display: inline-block;
       margin: 1rem 2rem;
+      font-size: 3rem;
+      font-weight: 500;
+
+      @include respond(tab-port){
+        font-size: 5rem;
+      }
 
       img{
-        height: 4rem;
+        height: 2.5rem;
+        margin-left: 0.4rem;
+
+        @include respond(tab-port){
+          height: 4rem;
+        }
       }
     }
   }
@@ -127,9 +165,6 @@
     @include respond(tab-port){
       height: 6rem;
     }
-    // @include respond(phone){
-    //   height: 5rem;
-    // }
 
     img{
 
@@ -139,5 +174,14 @@
         transform: translateY(1rem);
       }
     }
+  }
+}
+
+.food-menu__legend{
+  font-size: 1.8rem;
+  
+  @include respond(tab-port){
+    font-size: 5rem;
+    margin-bottom: 4rem;
   }
 }

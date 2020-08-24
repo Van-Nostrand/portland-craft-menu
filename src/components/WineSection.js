@@ -26,11 +26,11 @@ export const WineSection = ({wineData, section}) => {
 
   return (
     <section>
-      <div className="menu-section__title">
+      <div className="section__title">
         {section}
       </div>
       
-      <ul className="menu-section__wrapper">
+      <ul className="section__wrapper">
         {dranks}
       </ul>
     </section>

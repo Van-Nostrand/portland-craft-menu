@@ -13,10 +13,10 @@ export const CocktailSection = ({cocktailData}) => {
 
   return (
     <section>
-      <div className="menu-section__title">
+      <div className="section__title">
         Cocktails
       </div>
-      <ul className="menu-section__wrapper">
+      <ul className="section__wrapper">
         {dranks}
       </ul>
     </section>

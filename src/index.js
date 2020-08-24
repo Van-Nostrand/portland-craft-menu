@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {PageWrapper} from "./components/PageWrapper";
+import {App} from "./components/App";
 import "./scss/main.scss";
 
-ReactDOM.render(<PageWrapper />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
