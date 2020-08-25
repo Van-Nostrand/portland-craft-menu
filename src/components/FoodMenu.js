@@ -7,7 +7,7 @@ export const FoodMenu = ({logos, menuData }) => {
     <>
       <div className="menu food-menu">
 
-        <div className="menu__page-divider"></div>
+        <div className="page-divider"></div>
 
         <div className="menu__section-wrapper">
           <FoodSection 
@@ -16,7 +16,7 @@ export const FoodMenu = ({logos, menuData }) => {
             logos={logos} />
         </div>
 
-        <div className="menu__page-divider"></div>
+        <div className="page-divider"></div>
 
         <div className="menu__section-wrapper">
           <FoodSection 
@@ -25,7 +25,7 @@ export const FoodMenu = ({logos, menuData }) => {
             logos={logos} />
         </div>
 
-        <div className="menu__page-divider"></div>
+        <div className="page-divider"></div>
 
         <div className="menu__section-wrapper" >
           <FoodSection 
@@ -34,7 +34,7 @@ export const FoodMenu = ({logos, menuData }) => {
             logos={logos} />
         </div>
 
-        <div className="menu__page-divider"></div>
+        <div className="page-divider"></div>
 
         <div className="menu__section-wrapper" >
           <section className="menu-dips">
@@ -49,14 +49,14 @@ export const FoodMenu = ({logos, menuData }) => {
           </section>
         </div>
 
-        <div className="food-menu__legend">
-          <div className="food-menu__legend-item">
+        <div className="diet-logo-legend">
+          <div className="diet-logo-legend--item">
             <img src={logos.vegetarianlogo} alt="vegetarianlogo" /> = vegetarian
           </div>
-          <div className="food-menu__legend-item">
+          <div className="diet-logo-legend--item">
             <img src={logos.veganlogo} alt="veganlogo" /> = vegan
           </div>
-          <div className="food-menu__legend-item">
+          <div className="diet-logo-legend--item">
             <img src={logos.gflogo} alt="gflogo" /> = gluten free
           </div>
         </div>

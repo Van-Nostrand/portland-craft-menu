@@ -4,6 +4,8 @@ import {Menu} from "./Menu";
 
 export const App = (props) => {
   let [currentPage, setCurrentPage] = useState("food");
+
+  console.log(window.screen.width);
  
   return (
     <div>

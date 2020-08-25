@@ -29,22 +29,19 @@
     padding-top: 0;
   }
 
-  // =======================
-  // DrinksMenu and FoodMenu
-  // =======================
-  &__page-divider{
+  .page-divider{
 
     position: relative;
-
+  
     border: 0.4rem solid #bd141b;
     height:2px;
     width: 90%;
     margin: 2rem 0;
-
+  
     @include respond(tab-port){
       margin: 2rem auto;
     }
-  }
+  }  
 
   &__section-wrapper{
     
@@ -55,9 +52,7 @@
   // Dips here
 }
 
-// =========================================
-// FoodSection, WineSection, CocktailSection
-// =========================================
+
 section {
   position: relative;
 
@@ -88,8 +83,12 @@ section {
 
     text-align: center;
     list-style: none;
+
+    // font-size: 8rem;
     
     @include respond(tab-port) {
+
+      // font-size: 5rem;
       display: block;
       text-align: start;
     }
@@ -119,6 +118,17 @@ section {
     flex-wrap: wrap;
 
     font-size: 6rem;
+  }
+  @include respond(phone){
+    flex: 0;
+    max-width: none;
+    max-height: none;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    font-size: 8rem;
   }
 
   &__name{

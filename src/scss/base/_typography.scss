@@ -8,7 +8,7 @@ html{
 // focus is an accessability thing, and actually the easiest to miss and most important. it affects cycling through elements with the tab key, when you don't have or can't use a mouse
 a{
   text-decoration: none;
-  transform: scale(1, 0.95);
+  transform: scale(1, 0.95); // TODO - move this to navhat
   font-size: 2rem;
   letter-spacing: 0.1rem;
   color: $light-font;
