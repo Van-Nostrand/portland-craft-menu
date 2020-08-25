@@ -37,24 +37,11 @@ a:focus   { color: $light-font-hover ;}
   color: #ccc;
 }
 
-// ======
-// NavHat
-// ======
-.mobile-nav__btns{
-  font-size: 3rem;
-  color: $portland-off-white;
-  cursor: pointer;
-
-  @include respond(tab-port){
-    font-size: 5rem;
-  }
-}
-
 .smaller-text{
   font-size: 2rem;
 
   @include respond(tab-port){
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 

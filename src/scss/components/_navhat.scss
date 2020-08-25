@@ -26,15 +26,20 @@
 
     display: flex;
     flex-wrap: nowrap;
-    margin-left: 5rem;
     padding: 0 auto;
+
+    font-size: 2.5rem;
+    color: $portland-off-white;
+    cursor: pointer;
+
+    @include respond(tab-port){
+      font-size: 3rem;
+    }
 
     &-btn{
       text-align: center;
-      margin: 0 5rem;
+      margin: 0 $mobile-nav-side-pad;
     }
-
-    
   }
 
   &__logo{
@@ -45,6 +50,7 @@
 
     @include respond(tab-port){
       height: $mobile-nav-logo-height;
+      margin-right: $mobile-nav-side-pad;
     }
 
     img{
@@ -52,14 +58,3 @@
     }
   }
 }
-
-// badly implemented
-// .hide-nav{
-//   opacity: 0;
-//   width: 0;
-//   height: 0;
-
-//   @include respond(phone){
-//     opacity: 1;
-//   }
-// }

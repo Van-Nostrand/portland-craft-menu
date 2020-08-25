@@ -3,7 +3,7 @@ import {NavHat} from "./NavHat";
 import {Menu} from "./Menu";
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("food");
+  let [currentPage, setCurrentPage] = useState("drinks");
 
   console.log(window.screen.width);
  

@@ -85,7 +85,7 @@ export const FOOD_MENU_DATA = {
     {
       name: "portland burger",
       price: "17",
-      notes: "Beef patty, aged cheddar, tomatoes, lettuce, garlic aioli, relish, brioche bun, and a side of fries",
+      notes: "Beef patty, aged cheddar, tomatoes, lettuce, garlic aioli, relish",
       vegetarian: false,
       vegan: false,
       glutenFree: false
@@ -93,7 +93,7 @@ export const FOOD_MENU_DATA = {
     {
       name: "portland veggie burger",
       price: "16",
-      notes: "Our house-made chickpea and black bean patty with avocado, tomato, lettuce, onion, garlic aioli, relish, brioche bun, and a side of fries",
+      notes: "Our house-made chickpea and black bean patty with avocado, tomato, lettuce, onion, garlic aioli, relish",
       vegetarian: true,
       vegan: false,
       glutenFree: false
@@ -101,7 +101,7 @@ export const FOOD_MENU_DATA = {
     {
       name: "portland chicken sandwich",
       price: "18",
-      notes: "Organic free-run chicken breast, breaded and fried, served on a brioche bun with house-made slaw, tomato, bananna pepper relish, pickled onion, garlic aioli, and a side of fries",
+      notes: "Organic free-run chicken breast breaded and fried, house-made slaw, tomato, bananna pepper relish, pickled onion, garlic aioli",
       vegetarian: false,
       vegan: false,
       glutenFree: false
@@ -109,7 +109,7 @@ export const FOOD_MENU_DATA = {
     {
       name: "brisket sandwich",
       price: "15",
-      notes: "House-braised brisket, aged cheddar, tomatoes, lettuce, garlic aioli, pickled onions, brioche bun, and a side of fries",
+      notes: "House-braised brisket, aged cheddar, tomatoes, lettuce, garlic aioli, pickled onions",
       vegetarian: false,
       vegan: false,
       glutenFree: false

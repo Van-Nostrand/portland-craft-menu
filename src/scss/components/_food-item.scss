@@ -22,13 +22,13 @@
     flex-flow: row;
     flex-wrap: wrap;
 
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   @include respond(phone){
     
 
-    font-size: 6rem;
+    font-size: 4rem;
   }
   
   &--name{
@@ -48,7 +48,7 @@
       margin: 0 0.3rem;
     
       @include respond(tab-port){
-        height: 6rem;
+        height: 3.2rem;
         margin: 0 0.4rem;
         
       }
@@ -58,7 +58,7 @@
   &--price{
     display: inline-block;
 
-    font-size: 2.6rem;
+    font-size: $desktop-item-price-fontsize;
     color: $dark-font ;
 
     @include respond(tab-port){
@@ -66,7 +66,7 @@
       text-align: end;
       margin-right: 1.5rem;
 
-      font-size: 6rem;
+      font-size: $mobile-item-price-fontsize;
     }
 
     svg{
@@ -86,10 +86,24 @@
   &--notes{
 
     color: $dark-font;
+    font-size: 2rem;
+    font-weight: 500;
 
     @include respond(tab-port){
-      
+      font-size: 3rem;
       margin-top: 1rem;
     }
+  }
+}
+
+.burgers{
+  font-size: 1.8rem;
+  color: $dark-font;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+
+  @include respond(tab-port){
+    font-size: 3rem;
   }
 }
