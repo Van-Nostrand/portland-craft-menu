@@ -21,7 +21,7 @@ export const FoodSection = ({section, items, logos}) => {
     section = (
       <>
         {section}
-        <div className="burgers">All burgers are served on a brioche bun and come with a side of fries (Sub salad or half-&-half for $2)</div>
+        <div className="burgers">All burgers are served on a brioche bun<br /> and come with a side of fries <br />(Sub salad or half-&-half for $2)</div>
       </>
     )
   }

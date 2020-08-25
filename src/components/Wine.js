@@ -1,21 +1,21 @@
 import React from "react";
 
 
-export const Wine = ({ itemName = "unnamed", notes="", sizes}) => {
+export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal}) => {
+
 
   return(
-    <li className="menu-item wine-item">
+    <li className="wine-item">
 
-      <div className="menu-item__name">
-
+      <div className="wine-item-name">
         {itemName}
-        <span className="smaller-text wine-origin">
-          {` (${notes})`}
-        </span>
-    
       </div>
+      <div className="wine-item-varietal">{varietal}</div>
+      <span className="wine-item-origin">
+          {` (${notes})`}
+      </span>
 
-      <div className="menu-item__price">
+      <div className="wine-item-price">
         
         <svg viewBox="0 0 12 12" >
           <circle cx="5" cy="5" r="5"/>

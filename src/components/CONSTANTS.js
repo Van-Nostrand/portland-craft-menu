@@ -93,7 +93,7 @@ export const FOOD_MENU_DATA = {
     {
       name: "portland veggie burger",
       price: "16",
-      notes: "Our house-made chickpea and black bean patty with avocado, tomato, lettuce, onion, garlic aioli, relish",
+      notes: "House-made chickpea and black bean patty with avocado, tomato, lettuce, onion, garlic aioli, relish",
       vegetarian: true,
       vegan: false,
       glutenFree: false
@@ -147,69 +147,82 @@ export const DRINKS_MENU_DATA = {
   wine: {
     red: [
       {
-        name: "Lake Breeze Meritage",
+        name: "Lake Breeze",
+        varietal: "Meritage",
         sizes: [12, 16, 48],
         notes: "BC"
       },
       {
-        name: "Septima Malbec",
+        name: "Septima",
+        varietal: "Malbec",
         sizes: [10, 14, 42],
         notes: "Argentina"
       },
       {
-        name: "James Mitchell Cabernet Sauvignon",
+        name: "James Mitchell",
+        varietal: "Cabernet Sauvignon",
         sizes: [12, 16, 48],
         notes: "California"
       },
       {
-        name: "Sandhill Cabernet Merlot",
+        name: "Sandhill",
+        varietal: "Cabernet Merlot",
         sizes: [11, 15, 45],
         notes: "BC"
       },
       {
-        name: "See Ya Later Ranch Pinot Noir",
+        name: "See Ya Later Ranch",
+        varietal: "Pinot Noir",
         sizes: [11, 15, 45],
         notes: "BC"
       },
       {
-        name: "Kanazawa Merlot",
+        name: "Kanazawa",
+        varietal: "Merlot",
         sizes: [12, 16, 48],
         notes: "BC"
       },
     ],
     white: [
       {
-        name: "Tightrope Pinot Gris",
+        name: "Tightrope",
+        varietal: "Pinot Gris",
         sizes: [10, 14, 42],
         notes: "BC"
       },
       {
-        name: "Sandhill Pinot Blanc",
+        name: "Sandhill",
+        varietal: "Pinot Blanc",
         sizes: [11, 15, 45],
         notes: "BC"
       },
       {
-        name: "Gray Monk Chardonnay",
+        name: "Gray Monk",
+        varietal: "Chardonnay",
         sizes: [12, 16, 48],
         notes: "BC"
       },
       {
-        name: "Bonamici Rose",
+        name: "Bonamici",
+        varietal: "Rose",
         sizes: [10, 14, 42],
         notes: "BC"
       },
       {
-        name: "Kanazawa Nomu",
+        name: "Kanazawa",
+        varietal: "Nomu",
         sizes: [12, 16, 48],
         notes: "BC"
       },
       {
-        name: "Charles Smith Riesling",
+        name: "Charles Smith",
+        varietal: "Riesling",
         sizes: [12, 16, 48],
         notes: "Washington"
       },
       {
-        name: "Kim Crawford Sauvignon Blanc",
+        name: "Kim Crawford",
+        varietal: "Sauvignon Blanc",
         sizes: [12, 16, 48],
         notes: "New Zealand"
       },

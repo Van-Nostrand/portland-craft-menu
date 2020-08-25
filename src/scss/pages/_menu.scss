@@ -29,17 +29,22 @@
     padding-top: 0;
   }
 
+  @include respond(phone){
+    top: $phone-nav-height;
+  }
+
   .page-divider{
 
     position: relative;
   
     border: 0.4rem solid #bd141b;
     height:2px;
-    width: 90%;
-    margin: 2rem 0;
+    // width: 90%;
+    max-width: 100%;
+    margin: 2rem $desktop-side-margin;
   
     @include respond(tab-port){
-      margin: 2rem auto;
+      margin: 2rem $mobile-side-margin;
     }
   }  
 
@@ -61,9 +66,9 @@ section {
   }
 
   .section__title{
-    font-size: $desktop-section-font-size;
     text-transform: capitalize;
     text-align: center;
+    font-size: $desktop-section-font-size;
 
     @include respond(tab-port){
       font-size: $mobile-section-font-size;
@@ -79,16 +84,20 @@ section {
     box-sizing: border-box;
     padding: 3rem 0;
     justify-content: center;
-    width: 100%;
+    margin-right: $desktop-side-margin;
+    margin-left: $desktop-side-margin;
 
     text-align: center;
     list-style: none;
-    // font-size: 8rem;
     
     @include respond(tab-port) {
 
-      // font-size: 5rem;
-      display: block;
+      // display: block;
+      flex-flow: column;
+      padding: 2rem 0 0 0;
+      margin-left: $mobile-side-margin;
+      margin-right: $mobile-side-margin;
+
       text-align: start;
     }
   }
@@ -100,35 +109,28 @@ section {
 
   display: inline-block;
   flex: 2 1 40%;
-  margin: 2rem 0 1rem 1rem; 
+  margin: 2rem 0 1rem 0; 
   max-width: 500px;
   max-height: 20rem;
 
-  font-size: 1.8rem;
+  font-size: $desktop-item-name-fontsize;
   font-weight: 500;
 
   @include respond(tab-port){
-    flex: 0;
+    position: relative;
+
+    flex: 1 2 90%;
     max-width: none;
     max-height: none;
-    position: relative;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     margin-bottom: 0;
 
-    font-size: 3rem;
+    font-size: $mobile-item-name-fontsize;
   }
   @include respond(phone){
-    // flex: 0;
-    // max-width: none;
-    // max-height: none;
-    // position: relative;
-    // display: flex;
-    // flex-flow: row;
-    // flex-wrap: wrap;
-
-    // font-size: 4rem;
+    
   }
 
   &__name{
@@ -138,7 +140,10 @@ section {
     text-transform: capitalize;
 
     @include respond(tab-port) {
-      flex: 2 2 75%;
+
+      flex: 1 2 60%;
+
+      text-align: start;
     }
   }
   
@@ -149,7 +154,7 @@ section {
     color: $dark-font;
 
     @include respond(tab-port){
-      flex: 2 1 15%;
+      flex: 0 1 10%;
       text-align: end;
       margin-right: 2.5rem;
 

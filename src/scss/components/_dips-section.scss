@@ -47,11 +47,11 @@
       }
 
       img{
-        height: 2.5rem;
+        height: 1.8rem;
         margin-left: 0.4rem;
 
         @include respond(tab-port){
-          height: 4rem;
+          height: 2.5rem;
         }
       }
     }

@@ -6,6 +6,7 @@ export const WineSection = ({wineData, section}) => {
   let dranks = wineData.map((wine, i) => {
       return <Wine 
                 itemName={wine.name}
+                varietal={wine.varietal}
                 sizes={wine.sizes}
                 notes={wine.notes}
                 key={`${section}-wine-${i}`} />

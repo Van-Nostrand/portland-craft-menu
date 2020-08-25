@@ -6,6 +6,7 @@
 }
 
 .wine-sizes{
+
   font-size: 1.8rem;
   color: $dark-font;
 
@@ -14,11 +15,79 @@
   }
 }
 
-.wine-origin{
-  color: $dark-font;
-  font-size: 1.3rem;
+.wine-item{
+  margin-bottom: 2rem;
+
+  letter-spacing: -0.05rem;
+  font-size: $desktop-item-name-fontsize;
+  font-weight: 500;
 
   @include respond(tab-port){
-    font-size: 1.8rem;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+
+    font-size: $mobile-item-name-fontsize;
+  }
+
+  &-name{
+
+    @include respond(tab-port){
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  &-varietal{
+
+    color: $dark-font;
+     
+
+    @include respond(tab-port){
+      grid-column: 1;
+      grid-row: 2;
+
+      font-size: $mobile-item-name-fontsize-sm;
+      line-height: $mobile-item-name-fontsize-sm - 0.2rem;
+    }
+  }
+  
+  &-origin{
+    color: $dark-font;
+    font-size: 1.3rem;
+    
+    @include respond(tab-port){
+      font-size: 1.8rem;
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: start;
+      margin-left: 4rem;
+
+      line-height: 3rem;
+    }
+  }
+
+  &-price{
+
+    color: $dark-font;
+    font-size: $desktop-item-price-fontsize;
+
+    @include respond(tab-port){
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: end;
+      font-size: $mobile-item-price-fontsize;
+
+      line-height: $mobile-item-price-fontsize + 0.2rem;
+    }
+
+    svg{
+
+      @include respond(tab-port){
+
+        height: 0;
+      }
+    }
   }
 }

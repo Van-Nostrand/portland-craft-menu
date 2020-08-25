@@ -5,6 +5,7 @@
 
 .mobile-nav{
   position: fixed;
+  box-sizing: content-box;
   top: 0;
   z-index: 6;
 
@@ -12,13 +13,17 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   height: $desktop-nav-height;
-  box-sizing: content-box;
 
   background-color: $soft-black;
 
   @include respond(tab-port){
     height: $mobile-nav-height;
   }
+
+  @include respond(phone){
+    height: $phone-nav-height;
+  }
+  
 
   &__btns{
     width: 100%;
@@ -27,13 +32,18 @@
     display: flex;
     flex-wrap: nowrap;
     padding: 0 auto;
+    margin-left: $desktop-side-margin;
 
     font-size: 2.5rem;
     color: $portland-off-white;
     cursor: pointer;
 
     @include respond(tab-port){
-      font-size: 3rem;
+      font-size: 2.6rem;
+    }
+
+    @include respond(phone){
+      font-size: 2rem;
     }
 
     &-btn{
@@ -46,11 +56,15 @@
 
     display: inline-block;
     height: $desktop-nav-logo-height;
-    margin-right: 7rem;
+    margin-right: $desktop-side-margin;
 
     @include respond(tab-port){
       height: $mobile-nav-logo-height;
-      margin-right: $mobile-nav-side-pad;
+      margin-right: $mobile-side-margin;
+    }
+
+    @include respond(phone){
+      height: $phone-nav-logo-height;
     }
 
     img{

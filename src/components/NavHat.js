@@ -7,18 +7,21 @@ export const NavHat = ({changePage}) => {
   return(
     <div className="nav-hat-wrapper">
       
-
       <nav className="mobile-nav" >
 
         <div className="mobile-nav__btns">
+
           <div className="mobile-nav__btns-btn" onClick={() => changePage("food")}>FOOD</div>
           <div className="mobile-nav__btns-btn" onClick={() => changePage("drinks")}>DRINKS</div>
+
         </div>
 
         <div className="mobile-nav__logo" >
+
           <a href="http://www.portlandcraft.com">
             <img src={pclogo} />
           </a>
+
         </div>
 
       </nav>
