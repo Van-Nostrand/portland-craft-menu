@@ -5,6 +5,7 @@ import {Menu} from "./Menu";
 export const App = (props) => {
   let [currentPage, setCurrentPage] = useState("drinks");
 
+  console.log(window.screen.width);
  
   return (
     <div>

@@ -10,25 +10,25 @@ export const DrinksMenu = ({menuData}) => {
 
       <div className="page-divider"></div>
 
-      <div className="menu__section-wrapper">
+      <div className="section-wrapper">
         <WineSection section="red" wineData={menuData["wine"]["red"]} />
       </div>
 
-      <div className="page-divider"></div>
+      <div className="middle-divider page-divider"></div>
 
-      <div className="menu__section-wrapper">
+      <div className="section__wrapper">
         <WineSection section="white" wineData={menuData["wine"]["white"]} />
       </div>
 
-      <div className="page-divider"></div>
+      <div className="middle-divider page-divider"></div>
 
-      <div className="menu__section-wrapper">
+      <div className="section-wrapper">
         <WineSection section="bubbly" wineData={menuData["wine"]["bubbles"]} />
       </div>
 
       <div className="page-divider"></div>
 
-      <div className="menu__section-wrapper">
+      <div className="section-wrapper">
         <CocktailSection cocktailData={menuData["cocktails"]} />
       </div>
       

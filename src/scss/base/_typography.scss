@@ -37,13 +37,13 @@ a:focus   { color: $light-font-hover ;}
   color: #ccc;
 }
 
-.smaller-text{
-  font-size: 2rem;
+// .smaller-text{
+//   font-size: 2rem;
 
-  @include respond(tab-port){
-    font-size: 3rem;
-  }
-}
+//   @include respond(tab-port){
+//     font-size: 3rem;
+//   }
+// }
 
 
 
