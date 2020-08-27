@@ -16,7 +16,7 @@ export const CocktailSection = ({cocktailData}) => {
       <div className="section__title">
         Cocktails
       </div>
-      <ul className="section__wrapper">
+      <ul className="section__list">
         {dranks}
       </ul>
     </section>

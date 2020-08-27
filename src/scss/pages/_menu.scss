@@ -1,6 +1,6 @@
-// =======
-// Menu.js
-// =======
+
+
+
 .menu{
   // POSITIONING
   // DISPLAY & BOX MODEL
@@ -31,36 +31,15 @@
 
   @include respond(phone){
     top: $phone-nav-height;
-  }
-
-  
-
-  .page-divider{
-
-    position: relative;
-  
-    border: 0.4rem solid #bd141b;
-    height: 0.2rem;
-    // flex: 2 1 90%;
-    width: 80%;
-    margin: 2rem $desktop-side-margin;
-  
-    @include respond(tab-port){
-      margin: 2rem auto;
-    }
-  }  
+  } 
 
   .section-wrapper{
     
     position: relative;
     max-width: 100%;
   }
-  // Section here
-  // Dips here
+  
 }
-
-
-
 
 section {
   position: relative;
@@ -69,9 +48,9 @@ section {
   flex-flow: column;
   align-items: center;
 
-  @include respond(tab-port){
-    // align-items: center;
-  }
+  max-width: 50%;
+
+  
 
   .section__title{
     text-transform: capitalize;
@@ -83,16 +62,15 @@ section {
     }
   }
 
-  .section__wrapper{
+  .section__list{
     position: relative;
+    box-sizing: border-box;
 
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 3rem 0;
     justify-content: center;
-    width: 90vw;
+    padding: 3rem 0;
     margin-right: $desktop-side-margin;
     margin-left: $desktop-side-margin;
 
@@ -101,7 +79,6 @@ section {
     
     @include respond(tab-port) {
 
-      // display: block;
       flex-flow: column;
       padding: 2rem 0 0 0;
       margin-left: $mobile-side-margin;
@@ -115,6 +92,28 @@ section {
     }
   }
 }
+
+//page divider exists over section only on mobile view..
+// section::before{
+//   border: none;
+//   height: 0;
+//   width: 0;
+//   margin: 0;
+  
+
+//   @include respond(tab-port){
+    
+
+//     position: absolute;
+//     content: '';
+  
+//     border: 0.4rem solid #bd141b;
+//     height: 0.2rem;
+//     width: 80%;
+//     margin: 2rem $desktop-side-margin;
+
+//   }
+// }
 
 
 .menu-item{

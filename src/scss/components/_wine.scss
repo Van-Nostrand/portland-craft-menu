@@ -16,20 +16,25 @@
 }
 
 .wine-item{
+
+  // @include respond(desktop){
   margin-bottom: 2rem;
   margin-right: 2rem;
-
   display: grid;
-  grid-template-columns: 55% 45%;
-  grid-template-rows: 50% 50%;
-  width: 35rem;
+  grid-template-columns: 30% 25% 20% 15%;
+  grid-template-rows: 100%;
 
   letter-spacing: -0.05rem;
   font-size: $desktop-item-name-fontsize;
   font-weight: 500;
+  max-width: 45vw;
+  // }
 
 
   @include respond(tab-port){
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 50% 50%;
+
     margin: 0 auto;
     width: 92%;
 
@@ -38,26 +43,28 @@
 
   &-name{
 
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: start;
     font-size: $desktop-item-name-fontsize;
-
-
+    
+    
     @include respond(tab-port){
+      grid-column: 1;
+      grid-row: 1;
+      justify-self: start;
+
       font-size: $mobile-item-name-fontsize;
     }
   }
 
   &-varietal{
 
-    grid-column: 1;
-    grid-row: 2;
-    justify-self: start;
     
     color: $dark-font;
-
+    font-size: $desktop-item-name-fontsize;
+    
     @include respond(tab-port){
+      grid-column: 1;
+      grid-row: 2;
+      justify-self: start;
 
       font-size: $mobile-item-name-fontsize-sm;
       line-height: $mobile-item-name-fontsize-sm - 0.2rem;
@@ -65,15 +72,17 @@
   }
   
   &-origin{
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: start;
     
     color: $dark-font;
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 2.6rem;
+    justify-self: end;
     
     @include respond(tab-port){
+      line-height: 2rem;
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: start;
       font-size: 1.8rem;
       line-height: 3rem;
     }
@@ -83,12 +92,12 @@
 
     color: $dark-font;
     font-size: $desktop-item-price-fontsize;
-
-    grid-column: 2;
-    grid-row: 1;
     justify-self: end;
 
+    
     @include respond(tab-port){
+      grid-column: 2;
+      grid-row: 1;
       font-size: $mobile-item-price-fontsize;
 
       line-height: $mobile-item-price-fontsize + 0.2rem;

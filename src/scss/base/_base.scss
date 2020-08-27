@@ -30,3 +30,9 @@ html{
 #root{
   position: static;
 }
+
+//TEMPORARY
+.menu-wrapper{
+  position: relative;
+  top: $desktop-nav-height;
+}

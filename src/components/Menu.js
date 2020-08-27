@@ -21,8 +21,8 @@ export const Menu = ({currentPage}) => {
   }
       
   return(
-    <>
+    <div className="menu-wrapper">
       {currentMenu}
-    </>
+    </div>
   )
 }

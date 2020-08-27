@@ -7,16 +7,12 @@ export const FoodMenu = ({logos, menuData }) => {
     <>
       <div className="menu food-menu">
 
-        <div className="page-divider"></div>
-
         <div className="menu__section-wrapper">
           <FoodSection 
             section="starters & salads" 
             items={menuData["starters"]} 
             logos={logos} />
         </div>
-
-        <div className="page-divider"></div>
 
         <div className="menu__section-wrapper">
           <FoodSection 
@@ -25,16 +21,12 @@ export const FoodMenu = ({logos, menuData }) => {
             logos={logos} />
         </div>
 
-        <div className="page-divider"></div>
-
         <div className="menu__section-wrapper" >
           <FoodSection 
             section="mains" 
             items={menuData["mains"]} 
             logos={logos} />
         </div>
-
-        <div className="page-divider"></div>
 
         <div className="menu__section-wrapper" >
           <section className="menu-dips">
