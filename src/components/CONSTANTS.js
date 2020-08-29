@@ -235,7 +235,7 @@ export const DRINKS_MENU_DATA = {
       },
       {
         name: "Codorniu Cava",
-        sizes: [12, 16, 48],
+        sizes: [10, 42],
         notes: "Spain"
       },
     ]
