@@ -1,7 +1,6 @@
 .food-menu{
 
   position: absolute;
-  top: $desktop-nav-height;
 
   display: flex;
   flex-flow: column;
@@ -24,19 +23,16 @@
   .food-section-wrapper{
     
     position: relative;
-    max-width: 100%;
+    width: 100%;
+
   }
   
 }
 
 #food-section {
-  position: relative;
 
-  display: flex;
-  flex-flow: column;
-  align-items: center;
 
-  max-width: 50%;
+  // max-width: 50%;
 
   .section__title{
     text-transform: capitalize;
