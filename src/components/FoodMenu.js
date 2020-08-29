@@ -5,30 +5,30 @@ export const FoodMenu = ({logos, menuData }) => {
   
   return(
     <>
-      <div className="menu food-menu">
+      <div className="food-menu">
 
-        <div className="menu__section-wrapper">
+        <div className="food-section-wrapper">
           <FoodSection 
             section="starters & salads" 
             items={menuData["starters"]} 
             logos={logos} />
         </div>
 
-        <div className="menu__section-wrapper">
+        <div className="food-section-wrapper">
           <FoodSection 
             section="burgers" 
             items={menuData["burgers"]} 
             logos={logos} />
         </div>
 
-        <div className="menu__section-wrapper" >
+        <div className="food-section-wrapper" >
           <FoodSection 
             section="mains" 
             items={menuData["mains"]} 
             logos={logos} />
         </div>
 
-        <div className="menu__section-wrapper" >
+        <div className="food-section-wrapper" >
           <section className="menu-dips">
             <div className="menu-dips__title">Dips!</div>
             <ul className="menu-dips__list">

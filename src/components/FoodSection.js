@@ -28,7 +28,7 @@ export const FoodSection = ({section, items, logos}) => {
 
   // TODO: rename class menu-item-wrapper to something better
   return(
-    <section>
+    <section id="food-section">
       <div className="section__title">{section}</div>
       <ul className="section__wrapper">
         {foods}

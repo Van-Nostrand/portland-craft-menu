@@ -1,74 +1,32 @@
-.cocktail{
-  
-  @include respond(tab-port){
-    margin-top: 4rem;
-  }
-}
-
 .wine-sizes{
 
   font-size: 1.8rem;
   color: $dark-font;
+  font-weight: 500;
 
-  @include respond(tab-port){
-    font-size: 2.4rem;
-  }
 }
 
 .wine-item{
 
-  // @include respond(desktop){
   margin-bottom: 2rem;
-  margin-right: 2rem;
   display: grid;
-  grid-template-columns: 30% 25% 20% 15%;
+  grid-template-columns: 30% 30% 20% 20% ;
   grid-template-rows: 100%;
+  // height: auto;
 
   letter-spacing: -0.05rem;
   font-size: $desktop-item-name-fontsize;
   font-weight: 500;
-  max-width: 45vw;
-  // }
-
-
-  @include respond(tab-port){
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 50% 50%;
-
-    margin: 0 auto;
-    width: 92%;
-
-    font-size: $mobile-item-name-fontsize;
-  }
 
   &-name{
 
     font-size: $desktop-item-name-fontsize;
-    
-    
-    @include respond(tab-port){
-      grid-column: 1;
-      grid-row: 1;
-      justify-self: start;
-
-      font-size: $mobile-item-name-fontsize;
-    }
   }
 
   &-varietal{
-
     
     color: $dark-font;
     font-size: $desktop-item-name-fontsize;
-    
-    @include respond(tab-port){
-      grid-column: 1;
-      grid-row: 2;
-      justify-self: start;
-
-      font-size: $mobile-item-name-fontsize-sm;
-      line-height: $mobile-item-name-fontsize-sm - 0.2rem;
-    }
   }
   
   &-origin{
@@ -76,16 +34,7 @@
     color: $dark-font;
     font-size: 1.3rem;
     line-height: 2.6rem;
-    justify-self: end;
-    
-    @include respond(tab-port){
-      line-height: 2rem;
-      grid-column: 2;
-      grid-row: 1;
-      justify-self: start;
-      font-size: 1.8rem;
-      line-height: 3rem;
-    }
+    justify-self: start;
   }
 
   &-price{
@@ -94,24 +43,28 @@
     font-size: $desktop-item-price-fontsize;
     justify-self: end;
 
-    
-    @include respond(tab-port){
-      grid-column: 2;
-      grid-row: 1;
-      font-size: $mobile-item-price-fontsize;
-
-      line-height: $mobile-item-price-fontsize + 0.2rem;
-    }
-
     svg{
 
       height: $desktop-item-price-dot;
       margin-right: 1.5rem;
-
-      @include respond(tab-port){
-
-        height: 0;
-      }
     }
   }
+}
+
+// <section>
+#red > .section__list, #white > .section__list{
+  width: 90%;
+}
+#red > .section__title{
+  transform: translateX(50%);
+}
+#white > .section__title{
+  transform: translateX(-50%);
+}
+#red > .section__list{
+  align-content: end;
+}
+
+#white > .section__list{
+  align-content: start;
 }

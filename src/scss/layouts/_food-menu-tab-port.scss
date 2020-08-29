@@ -1,0 +1,25 @@
+@include respond(tab-port){
+
+  .food-menu{
+      
+    top: $mobile-nav-height;
+    display: inline-block;
+    padding-top: 0;
+  }
+  
+  #food-section > .section__title{
+  
+      font-size: $mobile-section-fontsize;
+  }
+  
+  #food-section > .section__list{
+    
+      flex-flow: column;
+      padding: 2rem 0 0 0;
+      margin-left: $mobile-side-margin;
+      margin-right: $mobile-side-margin;
+
+      text-align: start;
+    
+  }
+}

@@ -2,25 +2,46 @@ import React from "react";
 
 export const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
 
-  return(
-    <li className="menu-item cocktail">
+  let notesElement;
+  if(Array.isArray(notes)){
+    let parsedNote = notes[0].split(".").map((item, i) => <div key={`splitstring${i}`}>{item}<br /></div>);
+    notesElement = (
+      <div className="cocktail-choices">
+        {parsedNote}
+        {notes[1].map((choice, i) => {
 
-      <div className="menu-item__name">
+          return(
+            <span key={`c${i}`}>
+                {`${i === notes[1].length -1 ? ", or " : i > 0 ? ", " : ""}`}
+                {choice}
+            </span>
+          )
+        }
+        )}
+      </div>
+    )
+  }
+  else {
+    notesElement = notes.split(".").map((item, i) => <p key={`splitstring${i}`}>{item}</p>);
+    
+    
+  }
+
+  return(
+    <li className="cocktail">
+
+      <div className="cocktail-name">
 
         {itemName}
     
       </div>
 
-      <div className="menu-item__price">
-        
-        <svg viewBox="0 0 12 12" >
-          <circle cx="5" cy="5" r="5"/>
-        </svg>
+      <div className="cocktail-price">
         <span>{price}</span>
       </div>
 
-      <div className="menu-item__notes">
-        {notes}
+      <div className="cocktail-notes">
+        {notesElement}
       </div>
 
     </li>

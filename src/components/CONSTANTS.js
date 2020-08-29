@@ -235,7 +235,7 @@ export const DRINKS_MENU_DATA = {
       },
       {
         name: "Codorniu Cava",
-        sizes: [12, 16, 48],
+        sizes: [10, 42],
         notes: "Spain"
       },
     ]
@@ -244,12 +244,12 @@ export const DRINKS_MENU_DATA = {
     {
       name: "Spritz Veneziano",
       price: "11",
-      notes: "Ruffino Prosecco, soda, choice of liqueur"
+      notes: ["Ruffino Prosecco, soda, choice of liqueur:", ["Aperol", "Campari", "Elderflower & Cassis ($12)"]]
     },
     {
       name: "Margarita",
       price: "12",
-      notes: "El Jimador Blanco tequila, lime, agave (optional)"
+      notes: "El Jimador Blanco tequila, lime, agave"
     },
     {
       name: "Moscow Mule / Dark & Stormy",
@@ -259,7 +259,7 @@ export const DRINKS_MENU_DATA = {
     {
       name: "Whiskey Sour",
       price: "13",
-      notes: "Wild Turkey bourbon, lemon, sugar, Angostura bitters, egg white (optional)"
+      notes: "Wild Turkey bourbon, lemon, sugar, Angostura bitters, egg white"
     },
     {
       name: "Corpse Reviver #2",
@@ -274,11 +274,11 @@ export const DRINKS_MENU_DATA = {
     {
       name: "Negroni Sour",
       price: "13",
-      notes: "Beefeater gin, Campari, Odd Society Amaro, orange, lemon, sugar, egg white (optional). Cory's own creation!"
+      notes: "Beefeater gin, Campari, Odd Society Amaro, orange, lemon, sugar, egg white. Cory's own creation!"
     },
     {
       name: "Best Bloody Caesar",
-      price: "9/13",
+      price: "9 / 13",
       notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
     },
     {

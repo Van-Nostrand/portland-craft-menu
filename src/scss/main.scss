@@ -5,7 +5,6 @@
 @import "base/base";
 @import "base/typography";
 
-@import "components/navbar";
 @import "components/mid-button-wrapper";
 @import "components/header";
 @import "components/navhat";
@@ -13,8 +12,13 @@
 @import "components/dips-section";
 @import "components/food-item";
 @import "components/wine";
+@import "components/cocktail";
+@import "components/bubbly";
+
+@import "layouts/wine-tab-port";
+@import "layouts/food-menu-tab-port";
 
 @import "pages/landing-page";
-// @import "pages/menu";
+@import "pages/food-menu";
 @import "pages/home";
 @import "pages/drinks-menu";

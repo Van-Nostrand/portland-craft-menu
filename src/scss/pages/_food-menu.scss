@@ -1,0 +1,69 @@
+.food-menu{
+
+  position: absolute;
+  top: $desktop-nav-height;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 6rem auto;
+  padding-top: $desktop-pad-top;
+
+  background-color: $portland-off-white;
+
+  font-size: 2.5rem;
+  color: $portland-red;
+
+
+
+  @include respond(phone){
+    top: $phone-nav-height;
+  } 
+
+  .food-section-wrapper{
+    
+    position: relative;
+    max-width: 100%;
+  }
+  
+}
+
+#food-section {
+  position: relative;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  max-width: 50%;
+
+  .section__title{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: $desktop-section-fontsize;
+
+  }
+
+  .section__list{
+    position: relative;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 0;
+    margin-right: $desktop-side-margin;
+    margin-left: $desktop-side-margin;
+
+    text-align: center;
+    list-style: none;
+    
+   
+
+    @include respond(phone){
+      width: 92%;
+    }
+  }
+}

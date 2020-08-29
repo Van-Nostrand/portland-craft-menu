@@ -12,7 +12,7 @@ export const CocktailSection = ({cocktailData}) => {
   });
 
   return (
-    <section>
+    <section id="cocktails">
       <div className="section__title">
         Cocktails
       </div>

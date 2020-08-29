@@ -6,7 +6,7 @@ import {WineSection} from "./WineSection";
 export const DrinksMenu = ({menuData}) => {
 
   return (
-    <div className="menu drinks-menu">
+    <div className="drinks-menu">
       
       <div className="section-wrapper">
         <WineSection section="red" wineData={menuData["wine"]["red"]} />

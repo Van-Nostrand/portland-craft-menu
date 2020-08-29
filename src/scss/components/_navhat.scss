@@ -8,11 +8,13 @@
   box-sizing: content-box;
   top: 0;
   z-index: 6;
+  width: 100%;
 
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   height: $desktop-nav-height;
+  align-items: center;
 
   background-color: $soft-black;
 
@@ -30,9 +32,11 @@
     z-index: 7;
 
     display: flex;
+    flex-flow: row;
     flex-wrap: nowrap;
     padding: 0 auto;
     margin-left: $desktop-side-margin;
+    align-items: center;
 
     font-size: 2.5rem;
     color: $portland-off-white;

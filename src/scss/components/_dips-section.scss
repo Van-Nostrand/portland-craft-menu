@@ -16,10 +16,10 @@
   }
 
   &__title{
-    font-size: $desktop-section-font-size;
+    font-size: $desktop-section-fontsize;
 
     @include respond(tab-port){
-      font-size: $mobile-section-font-size;
+      font-size: $mobile-section-fontsize;
     }
   }
 
@@ -39,12 +39,8 @@
     li {
       display: inline-block;
       margin: 1rem 2rem;
-      // font-size: 3rem;
       font-weight: 500;
 
-      @include respond(tab-port){
-        // font-size: 5rem;
-      }
 
       img{
         height: 1.8rem;
