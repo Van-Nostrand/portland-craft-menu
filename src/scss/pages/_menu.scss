@@ -1,3 +1,9 @@
+.food-menu::before, .drinks-menu::before{
+  @include desktopPseudoFrame(93.3%);
+}
+.food-menu::after, .drinks-menu::after{
+  @include desktopPseudoInnerFrame(94%);
+}
 .menu-wrapper{
   transform: translateY($desktop-nav-height);
   background-color: $portland-off-white;
@@ -14,10 +20,13 @@ section{
   align-items: center;
 
   .section__title{
+    margin-top: 2rem;
+
     text-transform: capitalize;
     font-weight: 700;
     font-size: $desktop-section-fontsize;
     text-align: center;
+    color: $portland-red;
   }
 
   .section__list{

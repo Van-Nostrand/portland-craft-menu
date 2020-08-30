@@ -9,14 +9,11 @@
   margin: 0 auto 6rem auto;
   padding-top: $desktop-pad-top;
 
-  
-
   font-size: 2.5rem;
   color: $portland-red;
 
   @include respond(phone){
     position: relative;
-    // top: $phone-nav-height;
   } 
 
   .food-section-wrapper{
@@ -26,17 +23,45 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding-top: 1rem;
 
     @include respond(phone){
       width: 90%;
     }
-
   }
 
-  .food-section-wrapper::before{
-    @include desktopPseudoDivider();
-  }
   
+
+  // .food-section-wrapper::before{
+  //   // @include desktopPseudoDivider();
+  //   @include desktopPseudoFrame(90%);
+    
+  // }
+  // .food-section-wrapper::after{
+  //   @include desktopPseudoInnerFrame(92%);
+  // }
+}
+
+.mains::before{
+  content: '';
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+
+  width: 55vw;
+  margin: 0 -27.5vw;
+  border-top: 5px dashed $portland-red-alpha;
+}
+
+.burgers::before{
+  content: '';
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+
+  width: 55vw;
+  margin: 0 -27.5vw;
+  border-top: 5px dashed $portland-red-alpha;
 }
 
 .food-section-wrapper > section {
@@ -47,7 +72,6 @@
   
   .section__title{
 
-
     @include respond(tab-port){
       font-size: $mobile-section-fontsize;
 
@@ -57,7 +81,10 @@
       align-self: center;
       
     }
-  
+
+    div{
+      font-size: $desktop-item-notes-fontsize;
+    }
   }
 
   .section__list{
@@ -68,15 +95,14 @@
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3rem 0;
     margin: 0 $desktop-side-margin 2rem $desktop-side-margin;
-
     
     text-align: center;
     list-style: none;
     
     
     @include respond(tab-port){
+      padding: 3rem 0;
       flex-flow: column;
       justify-content: flex-start;
       text-align: start;

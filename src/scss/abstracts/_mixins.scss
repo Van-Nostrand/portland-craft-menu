@@ -36,6 +36,27 @@
   width: 80vw;
   margin: -3rem -40vw;
 }
+
+@mixin desktopPseudoFrame($height){
+  content: '';
+  position: absolute;
+  left: 50%;
+
+  border: 0.3rem solid $portland-red;
+  height: $height;
+  width: 60vw;
+  margin: 0.3rem -30vw;
+}
+@mixin desktopPseudoInnerFrame($height){
+  content: '';
+  position: absolute;
+  left: 50%;
+
+  border: 0.3rem solid $portland-red;
+  height: $height;
+  width: 59.5vw;
+  margin: 0rem -29.75vw;
+}
 // @mixin respond($breakpoint){
 //   @if $breakpoint == phone {
 //     @media screen and (max-width: 37.5em), (max-width: 56.25em) and (-webkit-min-device-pixel-ratio: 2) { @content }; // 600px

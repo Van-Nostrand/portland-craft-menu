@@ -18,6 +18,7 @@
   &__title{
     
     font-size: $desktop-section-fontsize;
+    margin-top: 2rem;
     
 
     @include respond(tab-port){
