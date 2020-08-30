@@ -9,36 +9,55 @@
   margin: 0 auto 6rem auto;
   padding-top: $desktop-pad-top;
 
-  background-color: $portland-off-white;
+  
 
   font-size: 2.5rem;
   color: $portland-red;
 
-
-
   @include respond(phone){
-    top: $phone-nav-height;
+    position: relative;
+    // top: $phone-nav-height;
   } 
 
   .food-section-wrapper{
     
     position: relative;
-    width: 100%;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 
+    @include respond(phone){
+      width: 90%;
+    }
+
+  }
+
+  .food-section-wrapper::before{
+    @include desktopPseudoDivider();
   }
   
 }
 
-#food-section {
+.food-section-wrapper > section {
 
-
-  // max-width: 50%;
-
+  @include respond(phone){
+    width: 100%;
+  }
+  
   .section__title{
-    text-transform: capitalize;
-    text-align: center;
-    font-size: $desktop-section-fontsize;
 
+
+    @include respond(tab-port){
+      font-size: $mobile-section-fontsize;
+
+    }
+
+    @include respond(phone){
+      align-self: center;
+      
+    }
+  
   }
 
   .section__list{
@@ -50,16 +69,23 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 3rem 0;
-    margin-right: $desktop-side-margin;
-    margin-left: $desktop-side-margin;
+    margin: 0 $desktop-side-margin 2rem $desktop-side-margin;
 
+    
     text-align: center;
     list-style: none;
     
-   
+    
+    @include respond(tab-port){
+      flex-flow: column;
+      justify-content: flex-start;
+      text-align: start;
+      margin: 0;
+    }
 
     @include respond(phone){
-      width: 92%;
+      width: 100%;
+      margin: 0;
     }
   }
 }

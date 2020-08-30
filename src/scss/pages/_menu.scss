@@ -1,4 +1,11 @@
+.menu-wrapper{
+  transform: translateY($desktop-nav-height);
+  background-color: $portland-off-white;
 
+  @include respond(phone){
+    top: $phone-nav-height;
+  }
+}
 section{
 
   position: relative;
@@ -9,14 +16,16 @@ section{
   .section__title{
     text-transform: capitalize;
     font-weight: 700;
+    font-size: $desktop-section-fontsize;
+    text-align: center;
   }
 
   .section__list{
     list-style: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
   }
 }

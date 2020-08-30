@@ -2,21 +2,23 @@
 // FoodMenu.js
 // ===========
 .menu-dips{
+  position: relative;
+
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 80vw;
-  margin: 0 auto 5rem auto;
+  justify-content: center;
+  width: 100%;
+
 
   @include respond(tab-port){
-    width: 100%;
-  }
-  @include respond(phone){
-    width: 100%;
+    // width: 100%;
   }
 
   &__title{
+    
     font-size: $desktop-section-fontsize;
+    
 
     @include respond(tab-port){
       font-size: $mobile-section-fontsize;
@@ -34,6 +36,7 @@
     text-align: center;
     white-space: nowrap;
     color: $dark-font;
+    font-size: $desktop-item-name-fontsize;
 
 
     li {
