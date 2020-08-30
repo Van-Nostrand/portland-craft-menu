@@ -17,14 +17,6 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "house salad",
-      price: "12",
-      notes: "Artisan salad mix, maple dijon vinaigrette",
-      vegetarian: true,
-      vegan: true,
-      glutenFree: true
-    },
-    {
       name: "korean sticky wings",
       price: "16",
       notes: "Gachujang (Korean chili paste), BBQ sauce, scallion, black sesame",
@@ -33,17 +25,17 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
+      name: "house salad",
+      price: "12",
+      notes: "Artisan salad mix, maple dijon vinaigrette",
+      vegetarian: true,
+      vegan: true,
+      glutenFree: true
+    },
+    {
       name: "salt & pepper wings",
       price: "14",
       notes: "'Nuff said. Comes with choice of dip",
-      vegetarian: false,
-      vegan: false,
-      glutenFree: false
-    },
-    {
-      name: "poutine",
-      price: "12",
-      notes: "Hand-cut local Kennebec fries, curds, gravy, scallions",
       vegetarian: false,
       vegan: false,
       glutenFree: false
@@ -55,6 +47,14 @@ export const FOOD_MENU_DATA = {
       vegetarian: true,
       vegan: true,
       glutenFree: true
+    },
+    {
+      name: "poutine",
+      price: "12",
+      notes: "Hand-cut local Kennebec fries, curds, gravy, scallions",
+      vegetarian: false,
+      vegan: false,
+      glutenFree: false
     },
     {
       name: "Tacos Carnitas",
@@ -76,6 +76,16 @@ export const FOOD_MENU_DATA = {
       name: "shrimp taco",
       price: "7 each",
       notes: "Argentinian wild prawns breaded and fried, served with chipotle slaw, salsa verde, pickled onions, on a warm corn tortilla",
+      vegetarian: false,
+      vegan: false,
+      glutenFree: false
+    }
+  ],
+  features: [
+    {
+      name: "name",
+      price: "price",
+      notes: "notes",
       vegetarian: false,
       vegan: false,
       glutenFree: false
