@@ -1,17 +1,25 @@
 .food-menu::before, .drinks-menu::before{
   @include desktopPseudoFrame(93.3%);
 }
+
 .food-menu::after, .drinks-menu::after{
   @include desktopPseudoInnerFrame(94%);
 }
-.menu-wrapper{
-  transform: translateY($desktop-nav-height);
+
+.page-wrapper{
   background-color: $portland-off-white;
+  position: absolute;
+  top: $desktop-fullnav-height;
+  z-index: 1;
+  width: 65vw;
+  left: 50%;
+  margin: 0 -32.5vw;
 
   @include respond(phone){
     top: $phone-nav-height;
   }
 }
+
 section{
 
   position: relative;

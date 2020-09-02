@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {NavHat} from "./NavHat";
-import {Menu} from "./Menu";
+import {PageLoader} from "./PageLoader";
 
 export const App = (props) => {
   let [currentPage, setCurrentPage] = useState("food");
@@ -10,7 +10,7 @@ export const App = (props) => {
   return (
     <div>
       <NavHat changePage={setCurrentPage} />
-      <Menu currentPage={currentPage} />
+      <PageLoader pageTitle={currentPage} />
     </div>
   )
 }

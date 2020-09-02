@@ -1,32 +1,88 @@
 .nav-hat-wrapper{
   height: $page-height;
-  position: absolute;
+  position: relative;
+  width: 100%;
 }
 
 .background-photo-wrapper{
   opacity: 1;
+  z-index: -1;
+  width: 100%;
 
   @include respond(tab-port){
     opacity: 0;
+
+  }
+
+  img{
+    width: 100%;
   }
 }
 
 .full-nav{
-  position: relative;
-  width: 100%;
+  position: absolute;
   box-sizing: content-box;
+  top: 0;
 
+  width: 100%;
+
+  display: flex;
   padding-top: 2rem;
-  height: $desktop-nav-height;
   flex-flow: row;
   align-items: center;
   justify-content: center;
+  height: $desktop-nav-height;
 
   @include respond(tab-port){
     position: absolute;
     width: 0;
     height: 0; 
     opacity: 0;
+  }
+
+  &__group-left, &__group-right{
+    width: 30vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $portland-off-white;
+    text-shadow: 0.3rem 0.3rem $button-font-shadow;
+    cursor: pointer;
+
+    text-align: center;
+    margin-right: 5rem;
+
+    button{
+      border: none;
+      font-size: $button-font-size;
+      font-weight: 800;
+      font-family: inherit;
+      background: none;
+      text-shadow: 0.3rem 0.3rem $button-font-shadow;
+      color: $portland-off-white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: $light-font-hover;
+    }
+    button:active{
+      color: $portland-off-white;
+      transform: translateY(0.1rem);
+    }
+  }
+
+
+  &__group-logo{
+    display: inline-block;
+    height: 10rem;
+
+    img{
+      height: 100%;
+    }
   }
 
 }
@@ -73,11 +129,13 @@
     margin-left: $desktop-side-margin;
     align-items: center;
 
-    font-size: 2.5rem;
+    font-size: $button-font-size;
     font-weight: 800;
     color: $portland-off-white;
-    text-shadow: 0.3rem 0.3rem $font-shadow;
+    text-shadow: 0.3rem 0.3rem $button-font-shadow;
     cursor: pointer;
+
+    
 
     @include respond(tab-port){
       margin-left: $mobile-side-margin;

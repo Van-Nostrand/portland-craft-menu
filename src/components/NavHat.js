@@ -8,21 +8,22 @@ export const NavHat = ({changePage}) => {
   return(
     <div className="nav-hat-wrapper">
 
-      {/* <div className="background-photo-wrapper">
+      <div className="background-photo-wrapper">
         <img id="restaurant-photo" src={pcMezzanine} />
-      </div> */}
+      </div>
     
-      {/* <nav className="full-nav" >
+      <nav className="full-nav" >
 
         <div className="full-nav__group-left">
-          <a href="#">
-            HOME
-          </a>
-          <a href="#">
-            MENU
-          </a>
           
-          <a href="#">RESTAURANT</a>
+          <button onClick={() => {}}>
+            HOME
+          </button>
+
+          <button onClick={() => changePage("food")}>FOOD</button>
+          
+          <button onClick={() => changePage("drinks")}>DRINKS</button>
+
         </div>
 
         <span className="full-nav__group-logo">
@@ -30,11 +31,18 @@ export const NavHat = ({changePage}) => {
         </span>
 
         <div className="full-nav__group-right">
-          <a href="#">CONTACT</a>
-          <a href="#">EVENTS</a>
+
+          <button onClick={() => {}}>
+            CONTACT
+          </button>
+
+          <button onClick={() => {}}>
+            EVENTS
+          </button>
+          
         </div>
 
-      </nav> */}
+      </nav>
       
       <nav className="mobile-nav" >
 

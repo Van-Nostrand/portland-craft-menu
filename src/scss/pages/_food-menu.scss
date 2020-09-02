@@ -1,6 +1,6 @@
 .food-menu{
 
-  position: absolute;
+  position: relative;
 
   display: flex;
   flex-flow: column;
@@ -30,39 +30,11 @@
     }
   }
 
-  
 
-  // .food-section-wrapper::before{
-  //   // @include desktopPseudoDivider();
-  //   @include desktopPseudoFrame(90%);
-    
-  // }
-  // .food-section-wrapper::after{
-  //   @include desktopPseudoInnerFrame(92%);
-  // }
 }
 
-.mains::before{
-  content: '';
-  position: absolute;
-  top: 0rem;
-  left: 50%;
-
-  width: 55vw;
-  margin: 0 -27.5vw;
-  border-top: 5px dashed $portland-red-alpha;
-}
-
-.burgers::before{
-  content: '';
-  position: absolute;
-  top: 0rem;
-  left: 50%;
-
-  width: 55vw;
-  margin: 0 -27.5vw;
-  border-top: 5px dashed $portland-red-alpha;
-}
+.mains::before{ @include desktopPseudoDivider(); }
+.burgers::before{ @include desktopPseudoDivider(); }
 
 .food-section-wrapper > section {
 
