@@ -16,13 +16,13 @@ export const NavHat = ({changePage}) => {
 
         <div className="full-nav__group-left">
           
-          <button onClick={() => {}}>
+          <button onClick={() => changePage("landing")}>
             HOME
           </button>
 
           <button onClick={() => changePage("food")}>FOOD</button>
           
-          <button onClick={() => changePage("drinks")}>DRINKS</button>
+          <button onClick={() => {}} >TAKE-OUT MENU</button>
 
         </div>
 
@@ -31,6 +31,8 @@ export const NavHat = ({changePage}) => {
         </span>
 
         <div className="full-nav__group-right">
+
+          <button onClick={() => changePage("drinks")}>DRINKS</button>
 
           <button onClick={() => {}}>
             CONTACT

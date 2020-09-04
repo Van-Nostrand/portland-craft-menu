@@ -1,18 +1,48 @@
-#landing-page{
-  top: $header-offset;
+.landing-page{
+  top: $desktop-fullnav-height;
   height: 300vh;
   position: relative;
   border: 2px dashed purple;
 
-  #landing-tag{
+  .landing-tag{
+    position: absolute;
+    left: 50%;
+    top: -$desktop-fullnav-height - 15rem;
+
+    width: 110rem;
+    margin: 0 -55rem;
+
+    color: $light-font;
+    font-size: 8rem;
     text-align: center;
   }
 
-  #mid-section{
+  .mid-section{
+    position: relative;
     border: 7px dashed orange;
     background-color: #fff;
     height: 500px;
-    transform: translate(0, $header-offset);
+
+    transform: translateY($desktop-fullnav-height);
+    
+    button{
+      position: absolute;
+      top: -$desktop-fullnav-height - 25rem;
+      left: 50%;
+    
+      border: none;
+      background: $button-orange; 
+      border-radius: 0.3rem;
+      margin: 0 -15.5rem;
+      width: 31rem;
+    
+      font-size: 2rem;
+      line-height: 6.5rem;
+      text-align: center;
+      font-weight: 700;
+      color: $light-font;
+    }
   }
+
 }
 

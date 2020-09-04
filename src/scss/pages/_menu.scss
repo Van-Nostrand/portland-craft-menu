@@ -1,9 +1,9 @@
 .food-menu::before, .drinks-menu::before{
-  @include desktopPseudoFrame(93.3%);
+  @include desktopPseudoFrame(94%);
 }
 
 .food-menu::after, .drinks-menu::after{
-  @include desktopPseudoInnerFrame(94%);
+  @include desktopPseudoInnerFrame(94.7%);
 }
 
 .page-wrapper{

@@ -11,6 +11,8 @@ import vegetarianlogo from "../assets/vegetarian.svg";
 import veganlogo from "../assets/vegan.svg";
 
 export const PageLoader = ({pageTitle}) => {
+
+  console.log(/landing/.test(pageTitle));
   
   let currentPage;
   switch(true){
@@ -19,6 +21,7 @@ export const PageLoader = ({pageTitle}) => {
     case /drinks/.test(pageTitle): currentPage = <DrinksMenu menuData={DRINKS_MENU_DATA} />;
       break;
     case /landing/.test(pageTitle): currentPage = <LandingPage />;
+      break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }
       
