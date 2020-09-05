@@ -310,3 +310,10 @@ export const DRINKS_MENU_DATA = {
     },
   ]
 }
+
+export const FEATURES_MENU_DATA = {
+  
+  freshSheet: [
+
+  ]
+}

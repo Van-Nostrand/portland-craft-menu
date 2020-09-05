@@ -4,7 +4,7 @@ import {PageLoader} from "./PageLoader";
 import * as Scroll from "react-scroll";
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("food");
+  let [currentPage, setCurrentPage] = useState("landing");
 
  console.log(currentPage);
   return (
