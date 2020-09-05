@@ -12,7 +12,6 @@ import veganlogo from "../assets/vegan.svg";
 
 export const PageLoader = ({pageTitle}) => {
 
-  console.log(/landing/.test(pageTitle));
   
   let currentPage;
   switch(true){
@@ -26,8 +25,8 @@ export const PageLoader = ({pageTitle}) => {
   }
       
   return(
-    <div className="page-wrapper">
+    <>
       {currentPage}
-    </div>
+    </>
   )
 }

@@ -3,7 +3,7 @@ import {NavHat} from "./NavHat";
 import {PageLoader} from "./PageLoader";
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("landing");
+  let [currentPage, setCurrentPage] = useState("drinks");
 
  console.log(currentPage);
   return (

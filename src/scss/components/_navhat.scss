@@ -1,6 +1,6 @@
 .nav-hat-wrapper{
   height: $page-height;
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
@@ -8,10 +8,10 @@
   opacity: 1;
   z-index: -1;
   width: 100%;
+  transform: translateY(-10rem);
 
   @include respond(tab-port){
     opacity: 0;
-
   }
 
   img{

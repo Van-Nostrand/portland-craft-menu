@@ -12,7 +12,7 @@ export const WineSection = ({wineData, section}) => {
                 key={`${section}-wine-${i}`} />
   });
 
-  let sectionID = section;
+  let sectionClassName = section;
   let sectionDIV;
 
   if(section === "bubbly"){
@@ -29,7 +29,7 @@ export const WineSection = ({wineData, section}) => {
   
 
   return (
-    <section id={sectionID}>
+    <section className={sectionClassName}>
       <div className="section__title">
         {sectionDIV}
       </div>

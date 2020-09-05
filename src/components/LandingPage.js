@@ -11,7 +11,7 @@ export const LandingPage = (props) => {
       </div>
 
       <div className="mid-section">
-        <button className="mid-section-button">TAKE OUT & DELIVERY MENU</button>
+        
       </div>
     </div>
   )

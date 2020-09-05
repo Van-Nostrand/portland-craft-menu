@@ -27,27 +27,31 @@
 
   border: 0.3rem solid $portland-red-alpha;
   height: 0.2rem;
-  width: 80%;
-  margin: -3rem -40%;
+  width: 88%;
+  margin: -3rem -44%;
 }
 
 @mixin desktopPseudoFrame($height){
   content: '';
   position: absolute;
   left: 50%;
+  top: 2.9rem;
 
   border: 0.3rem solid $portland-red;
   height: $height;
   width: 60vw;
-  margin: 0.4rem -30vw;
+  margin-left: -30vw;
+  margin-right: -30vw;
 }
 @mixin desktopPseudoInnerFrame($height){
   content: '';
   position: absolute;
   left: 50%;
+  top: 2.3rem;
 
   border: 0.3rem solid $portland-red;
   height: $height;
   width: 59.5vw;
-  margin: 0rem -29.75vw;
+  margin-left: -29.75vw;
+  margin-right: -29.75vw;
 }

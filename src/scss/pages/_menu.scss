@@ -1,23 +1,24 @@
 .food-menu::before, .drinks-menu::before{
-  @include desktopPseudoFrame(94%);
+  @include desktopPseudoFrame(95%);
 }
 
 .food-menu::after, .drinks-menu::after{
-  @include desktopPseudoInnerFrame(94.7%);
+  @include desktopPseudoInnerFrame(96.4%);
 }
-
-.page-wrapper{
-  background-color: $portland-off-white;
+.menu{
+  //general menu layout
   position: absolute;
-  top: $desktop-fullnav-height;
-  z-index: 1;
-  width: 65vw;
   left: 50%;
-  margin: 0 -32.5vw;
+  top: $desktop-fullnav-height;
 
-  @include respond(phone){
-    top: $phone-nav-height;
-  }
+  
+  margin: 0 -32.5vw 6rem -32.5vw;
+  padding-top: $desktop-pad-top;
+  width: 65vw;
+  
+  background-color: $portland-off-white;
+  color: $portland-red;
+  font-size: 2.5rem;
 }
 
 section{
@@ -28,21 +29,13 @@ section{
   align-items: center;
 
   .section__title{
-    margin-top: 2rem;
 
     text-transform: capitalize;
     font-weight: 700;
     font-size: $desktop-section-fontsize;
     text-align: center;
     color: $portland-red;
-  }
 
-  .section__list{
-    list-style: none;
-    margin-top: 1rem;
-    display: flex;
-    flex-flow: column;
-    flex-wrap: wrap;
-    align-items: center;
+    margin-bottom: 1rem;
   }
 }

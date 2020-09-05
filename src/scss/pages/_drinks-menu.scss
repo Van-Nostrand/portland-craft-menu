@@ -1,25 +1,13 @@
 .drinks-menu{
 
-  //general menu layout
-  position: absolute;
-
-  background-color: $portland-off-white;
-  font-size: 2.5rem;
-  color: $portland-red;
-  font-weight: 500;
-  //general layout ends
-
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 25% 25%;
-
-  margin: 0 auto 6rem auto;
-  padding-top: $desktop-pad-top + 5rem;
-  width: 100%;
+  justify-items: center;
   
   
   //red wine
-  .section-wrapper:nth-of-type(1){
+  &__section-wrapper:nth-of-type(1){
     grid-column: 1;
     grid-row: 1;
     width: 80%;
@@ -27,67 +15,27 @@
   }
 
   //white wine
-  .section-wrapper:nth-of-type(2){
+  &__section-wrapper:nth-of-type(2){
     grid-column: 2;
     grid-row: 1;
     width: 80%;
-
-
   }
 
   //bubbly
-  .section-wrapper:nth-of-type(3){
+  &__section-wrapper:nth-of-type(3){
     grid-column: 1 / span 2;
     grid-row: 2;
+    width: 80%;
+    // justify-items: center;
   }
 
   //cocktails
-  .section-wrapper:nth-of-type(4){
+  &__section-wrapper:nth-of-type(4){
     grid-column: 1 / span 2;
     grid-row: 3;
     margin-top: 6rem;
+    width: 80%;
   }
 
-  // page divider above cocktails
-  .section-wrapper:nth-of-type(4)::before{
-    @include desktopPseudoDivider();
-  }  
+
 }
-
-// set left to 50% and use a negative margin equal to half the elements width to center absolute elements
-
-// page divider at the top of the drinks menu
-.drinks-menu::before{
-
-  content: '';
-  position: absolute;
-  top: $desktop-pad-top;
-  left: 50%;
-
-  border: 0.4rem solid #bd141b;
-  height: 0.2rem;
-  width: 80vw;
-  margin: 2rem -40vw;
-}
-
-// section{
-
-//   position: relative;
-//   display: flex;
-//   flex-flow: column;
-//   align-items: center;
-
-//   .section__title{
-//     text-transform: capitalize;
-//     font-weight: 700;
-//   }
-
-//   .section__list{
-//     list-style: none;
-//     margin-top: 2rem;
-//     display: flex;
-//     flex-flow: column;
-//     flex-wrap: wrap;
-//     align-content: center;
-//   }
-// }

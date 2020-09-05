@@ -1,25 +1,18 @@
 .food-menu{
 
-  position: relative;
-
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 100%;
-  margin: 0 auto 6rem auto;
-  padding-top: $desktop-pad-top;
 
-  font-size: 2.5rem;
-  color: $portland-red;
 
   @include respond(phone){
     position: relative;
   } 
 
-  .food-section-wrapper{
+  &__section-wrapper{
     
     position: relative;
-    width: 70%;
+    width: 90%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -36,7 +29,7 @@
 .mains::before{ @include desktopPseudoDivider(); }
 .burgers::before{ @include desktopPseudoDivider(); }
 
-.food-section-wrapper > section {
+.food-menu__section-wrapper > section {
 
   @include respond(phone){
     width: 100%;

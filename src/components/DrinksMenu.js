@@ -6,21 +6,21 @@ import {WineSection} from "./WineSection";
 export const DrinksMenu = ({menuData}) => {
 
   return (
-    <div className="drinks-menu">
+    <div className="menu drinks-menu">
       
-      <div className="section-wrapper">
+      <div className="drinks-menu__section-wrapper">
         <WineSection section="red" wineData={menuData["wine"]["red"]} />
       </div>
 
-      <div className="section-wrapper">
+      <div className="drinks-menu__section-wrapper">
         <WineSection section="white" wineData={menuData["wine"]["white"]} />
       </div>
 
-      <div className="section-wrapper">
+      <div className="drinks-menu__section-wrapper">
         <WineSection section="bubbly" wineData={menuData["wine"]["bubbles"]} />
       </div>
 
-      <div className="section-wrapper">
+      <div className="drinks-menu__section-wrapper">
         <CocktailSection cocktailData={menuData["cocktails"]} />
       </div>
       

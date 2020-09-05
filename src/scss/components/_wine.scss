@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: 30% 30% 20% 20% ;
   grid-template-rows: 100%;
-  // height: auto;
+  width: 100%;
 
   letter-spacing: -0.05rem;
   font-size: $desktop-item-name-fontsize;
@@ -40,7 +40,7 @@
   &-price{
 
     color: $dark-font;
-    font-size: $desktop-item-price-fontsize;
+    font-size: $desktop-item-price-fontsize ;
     justify-self: end;
 
     svg{
@@ -52,19 +52,20 @@
 }
 
 // <section>
-#red > .section__list, #white > .section__list{
+.red.section__list, .white.section__list{
   width: 90%;
+  justify-items: center;
 }
-#red > .section__title{
+.red.section__title{
   transform: translateX(50%);
 }
-#white > .section__title{
+.white.section__title{
   transform: translateX(-50%);
 }
-#red > .section__list{
+.red.section__list{
   align-content: end;
 }
 
-#white > .section__list{
+.white.section__list{
   align-content: start;
 }
