@@ -1,43 +1,51 @@
-.wine-sizes{
-
-  font-size: 1.8rem;
-  color: $dark-font;
-  font-weight: 500;
-
+.red .section__list, .white .section__list{
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.wine-item{
 
-  margin-bottom: 2rem;
+.wine-item{
+  position: relative;
+
+  // margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: 30% 30% 20% 20% ;
-  grid-template-rows: 100%;
+  grid-template-columns: 40% 40% 20% ;
+  grid-template-rows: 50% 50%;
   width: 100%;
+  margin-bottom: 0.5rem;
 
   letter-spacing: -0.05rem;
   font-size: $desktop-item-name-fontsize;
   font-weight: 500;
 
   &-name{
-
+    grid-column: 1;
+    grid-row: 1;
     font-size: $desktop-item-name-fontsize;
   }
 
   &-varietal{
-    
+    grid-column: 1 / span 2;
+    grid-row: 2;
     color: $dark-font;
-    font-size: $desktop-item-name-fontsize;
+    font-size: $desktop-item-name-fontsize - 0.3rem;
   }
   
   &-origin{
+    grid-column: 2;
+    grid-row: 1;
     
     color: $dark-font;
     font-size: 1.3rem;
-    line-height: 2.6rem;
+    // line-height: 2.6rem;
     justify-self: start;
   }
 
   &-price{
+
+    grid-column: 3;
+    grid-row: 1;
 
     color: $dark-font;
     font-size: $desktop-item-price-fontsize ;
@@ -51,21 +59,10 @@
   }
 }
 
-// <section>
-.red.section__list, .white.section__list{
-  width: 90%;
-  justify-items: center;
-}
-.red.section__title{
-  transform: translateX(50%);
-}
-.white.section__title{
-  transform: translateX(-50%);
-}
-.red.section__list{
-  align-content: end;
-}
+.wine-sizes{
 
-.white.section__list{
-  align-content: start;
+  font-size: 1.8rem;
+  color: $dark-font;
+  font-weight: 500;
+
 }

@@ -8,7 +8,7 @@
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  width: 95%;
+  width: 100%;
 
 
   @include respond(tab-port){
@@ -19,6 +19,7 @@
     
     font-size: $desktop-section-fontsize - 0.2rem;
     margin-top: 2rem;
+    color: $portland-red;
     
 
     @include respond(tab-port){
@@ -47,7 +48,7 @@
 
 
       img{
-        height: 1.8rem;
+        height: $desktop-item-name-fontsize - 0.1rem;
         margin-left: 0.4rem;
 
         @include respond(tab-port){

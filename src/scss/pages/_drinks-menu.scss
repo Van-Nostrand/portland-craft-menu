@@ -1,9 +1,25 @@
 .drinks-menu{
 
+  position: relative;
+  top: $desktop-fullnav-height;
+
+  margin: 0 auto 6rem auto;
+  padding-top: $desktop-pad-top;
+  width: 65vw;
+
+  background-color: $portland-off-white;
+  color: $portland-red;
+  font-size: 2.5rem;
+
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 25% 25%;
   justify-items: center;
+
+
+  &__section-wrapper{
+    width: 100%;
+  }
   
   
   //red wine
@@ -11,7 +27,7 @@
     grid-column: 1;
     grid-row: 1;
     width: 80%;
-    justify-self: end;
+    margin-left: 7rem;
   }
 
   //white wine
@@ -19,14 +35,13 @@
     grid-column: 2;
     grid-row: 1;
     width: 80%;
+    margin-right: 7rem;
   }
 
   //bubbly
   &__section-wrapper:nth-of-type(3){
     grid-column: 1 / span 2;
     grid-row: 2;
-    width: 80%;
-    // justify-items: center;
   }
 
   //cocktails

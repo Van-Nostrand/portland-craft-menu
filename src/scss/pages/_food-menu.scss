@@ -1,5 +1,16 @@
 .food-menu{
 
+  position: relative;
+  top: $desktop-fullnav-height;
+
+  margin: 0 auto 6rem auto;
+  padding-top: $desktop-pad-top;
+  width: 65vw;
+
+  background-color: $portland-off-white;
+  
+  font-size: 2.5rem;
+
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -37,6 +48,8 @@
   
   .section__title{
 
+    color: $portland-red;
+
     @include respond(tab-port){
       font-size: $mobile-section-fontsize;
 
@@ -48,6 +61,8 @@
     }
 
     div{
+      color: $dark-font;
+      font-style: italic;
       font-size: $desktop-item-notes-fontsize;
     }
   }

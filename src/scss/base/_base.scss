@@ -25,7 +25,11 @@ html{
   @include respond(big-desk){  // width > 1800
     font-size: 75%;
   }
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
 }
+
 
 #root{
   position: static;

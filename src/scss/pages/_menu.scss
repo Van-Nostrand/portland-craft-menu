@@ -5,28 +5,9 @@
 .food-menu::after, .drinks-menu::after{
   @include desktopPseudoInnerFrame(96.4%);
 }
-.menu{
-  //general menu layout
-  position: absolute;
-  left: 50%;
-  top: $desktop-fullnav-height;
 
-  
-  margin: 0 -32.5vw 6rem -32.5vw;
-  padding-top: $desktop-pad-top;
-  width: 65vw;
-  
-  background-color: $portland-off-white;
-  color: $portland-red;
-  font-size: 2.5rem;
-}
 
 section{
-
-  position: relative;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
 
   .section__title{
 
@@ -36,6 +17,6 @@ section{
     text-align: center;
     color: $portland-red;
 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }

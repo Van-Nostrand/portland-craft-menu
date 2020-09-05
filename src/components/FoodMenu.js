@@ -9,7 +9,7 @@ export const FoodMenu = ({logos, menuData }) => {
 
         <div className="food-menu__section-wrapper">
           <FoodSection 
-            section="starters & salads" 
+            section="starters" 
             items={menuData["starters"]} 
             logos={logos} />
         </div>

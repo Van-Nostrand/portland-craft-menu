@@ -27,6 +27,9 @@ export const FoodSection = ({section, items, logos}) => {
       </>
     )
   }
+  else if(section === "starters"){
+    section = "starters & salads";  
+  }
 
 
   // TODO: rename class menu-item-wrapper to something better

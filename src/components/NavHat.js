@@ -22,7 +22,7 @@ export const NavHat = ({changePage}) => {
 
           <button onClick={() => changePage("food")}>FOOD</button>
           
-          <button onClick={() => {}} >TAKE-OUT MENU</button>
+          <button onClick={() => {}} >TAKE-OUT</button>
 
         </div>
 
