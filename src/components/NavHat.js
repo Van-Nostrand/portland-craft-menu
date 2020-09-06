@@ -1,9 +1,45 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import pclogo from "../assets/pclogo.png";
 import pcMezzanine from "../assets/PCservice.png";
-//TODO: rename nav-hat-wrapper to something like page-wrapper
-export const NavHat = ({changePage}) => {
 
+export const NavHat = ({changePage}) => {
+  let [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  useEffect(() => {
+    console.log(mobileNavOpen);
+  }, [mobileNavOpen]);
+
+  let leftButtons = (
+    <>
+      <button onClick={() => changePage("landing")}>HOME</button>
+      <button onClick={() => changePage("food")}>FOOD</button>      
+      <button onClick={() => changePage("drinks")}>DRINKS</button>
+    </>
+  )
+
+  let rightButtons = (
+    <>
+      <button onClick={() => {}} >TAKE-OUT</button>
+      <button onClick={() => {}} >CONTACT</button>
+      <button onClick={() => {}} >EVENTS</button>    
+    </>
+  )
+
+  let mobileButtons = (
+    <>
+      <button onClick={() => changePage("food")}>FOOD</button> 
+      <button onClick={() => changePage("drinks")}>DRINKS</button>
+      <button onClick={() => {}} >TAKE-OUT</button>
+    </>
+  )
+
+  let mobileMenu = (
+    <>
+      <button onClick={() => changePage("landing")}>HOME</button>
+      <button onClick={() => {}} >CONTACT</button>
+      <button onClick={() => {}} >EVENTS</button> 
+    </>
+  )
 
   return(
     <div className="nav-hat-wrapper">
@@ -14,57 +50,58 @@ export const NavHat = ({changePage}) => {
     
       <nav className="full-nav" >
 
-        <div className="full-nav__group-left">
-          
-          <button onClick={() => changePage("landing")}>
-            HOME
-          </button>
-
-          <button onClick={() => changePage("food")}>FOOD</button>
-          
-          <button onClick={() => {}} >TAKE-OUT</button>
-
-        </div>
+        <NavButtonGroup classString={"full-nav__group-left"} buttons={leftButtons} />
 
         <span className="full-nav__group-logo">
           <img src={pclogo} />
         </span>
 
-        <div className="full-nav__group-right">
-
-          <button onClick={() => changePage("drinks")}>DRINKS</button>
-
-          <button onClick={() => {}}>
-            CONTACT
-          </button>
-
-          <button onClick={() => {}}>
-            EVENTS
-          </button>
-          
-        </div>
+        <NavButtonGroup classString={"full-nav__group-right"} buttons={rightButtons} />
 
       </nav>
       
       <nav className="mobile-nav" >
 
-        <div className="mobile-nav__btns">
+        <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} />
 
-          <div className="mobile-nav__btns-btn" onClick={() => changePage("food")}>FOOD</div>
-          <div className="mobile-nav__btns-btn" onClick={() => changePage("drinks")}>DRINKS</div>
+        <span className="mobile-nav__logo" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+          <img src={pclogo} />
+        </span>
 
-        </div>
-
-        <div className="mobile-nav__logo" >
-
-          <a href="http://www.portlandcraft.com">
-            <img src={pclogo} />
-          </a>
-
-        </div>
+        <MobileNavDrawer open={mobileNavOpen} />
 
       </nav>
 
     </div>
   )
 };
+
+const MobileNavDrawer = (props) => {
+  let style = {
+
+    position: "absolute",
+    zIndex: "1",
+    transform: `translateY(${props.open ? "0" : "500px"})`,
+    transition: "transform 1s, display 1s",
+    height: "500px",
+    width: "100%",
+    background: "red",
+    display: `flex`,
+    flexFlow: "column nowrap",
+    // overflowY: "hidden"
+    
+  }
+  
+  return(
+    <div className="mobile-nav__drawer" style={style}></div>
+  )
+}
+
+const NavButtonGroup = (props) => {
+
+  return (
+    <div className={props.classString}>
+      {props.buttons}
+    </div>
+  )
+}

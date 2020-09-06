@@ -1,10 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import {NavHat} from "./NavHat";
 import {PageLoader} from "./PageLoader";
 import * as Scroll from "react-scroll";
+import {ScrollExample} from "./ScrollExample";
+
+//scrolling info from :
+//https://dev.to/chriseickemeyergh/building-custom-scroll-animations-using-react-hooks-4h6f
 
 export const App = (props) => {
   let [currentPage, setCurrentPage] = useState("landing");
+  let theRef = useRef(null);
 
  console.log(currentPage);
   return (
@@ -13,4 +18,7 @@ export const App = (props) => {
       <PageLoader pageTitle={currentPage} />
     </div>
   )
+  // return(
+  //   <ScrollExample />
+  // )
 }

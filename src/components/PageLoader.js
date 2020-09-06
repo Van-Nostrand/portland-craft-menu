@@ -2,21 +2,22 @@ import React from "react";
 import {FoodMenu} from "./FoodMenu";
 import {DrinksMenu} from "./DrinksMenu";
 import {LandingPage} from "./LandingPage";
-import {FeaturesSection} from "./FeaturesSection";
+// import {FeaturesSection} from "./FeaturesSection";
 import {
   FOOD_MENU_DATA,
-  DRINKS_MENU_DATA
+  DRINKS_MENU_DATA,
+  FEATURES_MENU_DATA
 } from "./CONSTANTS";
 import gflogo from "../assets/gf.svg";
 import vegetarianlogo from "../assets/vegetarian.svg";
 import veganlogo from "../assets/vegan.svg";
 
-export const PageLoader = ({pageTitle}) => {
+export const PageLoader = ({ pageTitle}) => {
 
   
   let currentPage;
   switch(true){
-    case /food/.test(pageTitle): currentPage = <FoodMenu menuData={FOOD_MENU_DATA} logos={{gflogo, vegetarianlogo, veganlogo}} />;
+    case /food/.test(pageTitle): currentPage = <FoodMenu menuData={FOOD_MENU_DATA} features={FEATURES_MENU_DATA} logos={{gflogo, vegetarianlogo, veganlogo}} />;
       break;
     case /drinks/.test(pageTitle): currentPage = <DrinksMenu menuData={DRINKS_MENU_DATA} />;
       break;

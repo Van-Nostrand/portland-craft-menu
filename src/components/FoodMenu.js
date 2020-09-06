@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useState, useEffect, useRef, useLayoutEffect} from "react";
 import {FoodSection} from "./FoodSection";
 
-export const FoodMenu = ({logos, menuData }) => {
+export const FoodMenu = ({logos, menuData, features }) => {
+
+
   
   return(
     <>
       <div className="menu food-menu">
+
+
+        <div className="food-menu__section-wrapper">
+          <FoodSection 
+            section="features" 
+            items={features.freshSheet} 
+            logos={logos} />
+        </div>
 
         <div className="food-menu__section-wrapper">
           <FoodSection 

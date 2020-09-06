@@ -1,7 +1,7 @@
 export const FOOD_MENU_DATA = {
   starters: [
     {
-      name: "house fries",
+      name: "House Fries",
       price: "7",
       notes: "Hand-cut local Kennebec fries",
       vegetarian: true,
@@ -9,7 +9,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "caesar salad",
+      name: "Caesar Salad",
       price: "14",
       notes: "Romaine lettuce hearts, house caesar dressing, croutons, parmesan cheese",
       vegetarian: false,
@@ -17,7 +17,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "korean sticky wings",
+      name: "Korean Sticky Wings",
       price: "16",
       notes: "Gachujang (Korean chili paste), BBQ sauce, scallion, black sesame",
       vegetarian: false,
@@ -25,7 +25,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "house salad",
+      name: "House Salad",
       price: "12",
       notes: "Artisan salad mix, maple dijon vinaigrette",
       vegetarian: true,
@@ -33,7 +33,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: true
     },
     {
-      name: "salt & pepper wings",
+      name: "Salt & Pepper Wings",
       price: "14",
       notes: "'Nuff said. Comes with choice of dip",
       vegetarian: false,
@@ -41,7 +41,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "Maple-Miso green beans",
+      name: "Maple-Miso Green Beans",
       price: "12",
       notes: "Beans tossed in our signature maple miso glaze, sesame seeds",
       vegetarian: true,
@@ -49,7 +49,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: true
     },
     {
-      name: "poutine",
+      name: "Poutine",
       price: "12",
       notes: "Hand-cut local Kennebec fries, curds, gravy, scallions",
       vegetarian: false,
@@ -65,7 +65,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "old bay popcorn",
+      name: "Old Bay Popcorn",
       price: "4",
       notes: "Real butter, Old Bay seasoning",
       vegetarian: true,
@@ -73,7 +73,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: true
     },
     {
-      name: "shrimp taco",
+      name: "Shrimp Taco",
       price: "7 each",
       notes: "Argentinian wild prawns breaded and fried, served with chipotle slaw, salsa verde, pickled onions, on a warm corn tortilla",
       vegetarian: false,
@@ -314,6 +314,21 @@ export const DRINKS_MENU_DATA = {
 export const FEATURES_MENU_DATA = {
   
   freshSheet: [
-
+    {
+      name: "Corn on the Cob",
+      price: "7",
+      notes: "grilled corn with a cilantro lime butter and chilis",
+      vegetarian: true,
+      vegan: false,
+      glutenFree: true
+    },
+    {
+      name: "Grilled raddichio salad",
+      price: "10",
+      notes: "miso dressing",
+      vegetarian: true,
+      vegan: true,
+      glutenFree: true
+    }
   ]
 }

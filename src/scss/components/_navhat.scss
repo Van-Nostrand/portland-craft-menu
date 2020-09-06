@@ -1,7 +1,12 @@
 .nav-hat-wrapper{
-  // height: $page-height;
   position: absolute;
   width: 100%;
+  top: 0;
+  // z-index: -1;
+
+  @include respond(tab-port){
+    position: sticky;
+  }
 }
 
 .background-photo-wrapper{
@@ -85,27 +90,27 @@
 
 .mobile-nav{
 
-  position: absolute;
+  // position: absolute;
   height: 0;
   width: 0;
   opacity: 0;
-
+  top: 0;
+  // overflow: hidden;
+  z-index: 20;
   
   @include respond(tab-port){
 
-    position: fixed;
-    box-sizing: content-box;
+    position: absolute;
     top: 0;
-    z-index: 6;
     width: 100%;
   
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: start;
     align-items: center;
     opacity: 1;
   
-    background-color: $soft-black;
+    background: $soft-black;
     height: $mobile-nav-height;
   }
 
@@ -114,46 +119,61 @@
   }
   
 
-  &__btns{
-    width: 100%;
-    z-index: 7;
-
-    display: flex;
-    flex-flow: row;
-    flex-wrap: nowrap;
-    padding: 0 auto;
-    margin-left: $desktop-side-margin;
-    align-items: center;
-
-    font-size: $button-font-size;
-    font-weight: 800;
-    color: $portland-off-white;
-    text-shadow: 0.3rem 0.3rem $button-font-shadow;
-    cursor: pointer;
+  &__buttons{
 
     
-
     @include respond(tab-port){
-      margin-left: $mobile-side-margin;
-      font-size: 2.6rem;
+      
+      
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      margin-right: $mobile-side-margin;
+      
+      color: $portland-off-white;
+      text-shadow: 0.3rem 0.3rem $button-font-shadow;
+      cursor: pointer;
     }
-
+    
     @include respond(phone){
-      margin-left: $phone-side-margin;
+      margin-right: $phone-side-margin;
       font-size: 2rem;
     }
-
-    &-btn{
+    
+    button {
+      border: none;      
+      
       text-align: center;
-      margin-right: 5rem;
+      background: none;
+      font-weight: 800;
+      font-family: inherit;
+      color: $portland-off-white;
+      cursor: pointer;
+      text-shadow: 
+      0.3rem 0.3rem $button-font-shadow, 
+      -1px 0 1px $button-font-outline, 
+      0 -1px 1px $button-font-outline;
+      z-index: 6;
+
+      @include respond(tab-port){
+        font-size: $mobile-nav-fontsize;
+      }
+
+      @include respond(phone){
+        font-size: $phone-nav-fontsize;
+      }
     }
   }
-
+  
   &__logo{
 
     display: inline-block;
     height: $desktop-nav-logo-height;
     margin-right: $desktop-side-margin;
+    z-index: 21;
+    cursor: pointer;
 
     @include respond(tab-port){
       height: $mobile-nav-logo-height;
@@ -168,5 +188,9 @@
     img{
       height: 100%;
     }
+  }
+
+  &__drawer{
+    z-index: -1;
   }
 }
