@@ -1,3 +1,8 @@
 # Menu template
 
-re-creating the webpage for Portland Craft as a trial. will end up designing an online menu
+An online menu for Portland Craft written with React. 
+
+## TODO
+* implement lazy loading of images
+* scroll effects
+* clean up the spacing of items on the menu
