@@ -1,0 +1,61 @@
+.full-nav{
+  position: absolute;
+  box-sizing: content-box;
+  top: 0;
+
+  width: 100%;
+
+  display: flex;
+  padding-top: 2rem;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  height: $desktop-nav-height;
+
+  @include respond(tab-port){
+    position: absolute;
+    width: 0;
+    height: 0; 
+    opacity: 0;
+  }
+
+  &__group-left, &__group-right{
+    width: 30vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+
+    button{
+      border: none;
+      background: none;
+      
+      font-size: $button-font-size;
+      font-weight: 800;
+      font-family: inherit;
+      color: $portland-off-white;
+      cursor: pointer;
+      text-shadow: 0.3rem 0.3rem $button-font-shadow, -1px 0 1px $button-font-outline, 0 -1px 1px $button-font-outline;
+    }
+
+    button:hover {
+      color: $light-font-hover;
+    }
+    button:active{
+      color: $portland-off-white;
+      transform: translateY(0.1rem);
+    }
+  }
+
+
+  &__group-logo{
+    display: inline-block;
+    height: 10rem;
+    padding-left: 1rem;
+
+    img{
+      height: 100%;
+      display: inline-block;
+    }
+  }
+
+}

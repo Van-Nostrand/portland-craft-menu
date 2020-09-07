@@ -8,7 +8,7 @@ import {ScrollExample} from "./ScrollExample";
 //https://dev.to/chriseickemeyergh/building-custom-scroll-animations-using-react-hooks-4h6f
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("landing");
+  let [currentPage, setCurrentPage] = useState("food");
   let theRef = useRef(null);
 
  console.log(currentPage);
@@ -18,7 +18,4 @@ export const App = (props) => {
       <PageLoader pageTitle={currentPage} />
     </div>
   )
-  // return(
-  //   <ScrollExample />
-  // )
 }
