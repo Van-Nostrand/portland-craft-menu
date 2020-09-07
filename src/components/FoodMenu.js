@@ -3,8 +3,6 @@ import {FoodSection} from "./FoodSection";
 
 export const FoodMenu = ({logos, menuData, features }) => {
 
-
-  
   return(
     <>
       <div className="menu food-menu">
