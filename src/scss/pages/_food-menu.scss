@@ -1,7 +1,5 @@
 .food-menu{
 
-
-
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -14,6 +12,7 @@
   &__section-wrapper{
     
     position: relative;
+
     width: 90%;
     display: flex;
     flex-flow: column;
@@ -24,17 +23,46 @@
       width: 90%;
     }
   }
-
-
 }
 
-.mains::before{ @include desktopPseudoDivider(); }
-.burgers::before{ @include desktopPseudoDivider(); }
+.starters::before{ 
+  @include desktopPseudoDivider(); 
+  @include respond(tab-port){
+    @include mobilePseudoDivider();
+  }
+}
+.mains::before{ 
+  @include desktopPseudoDivider(); 
+  @include respond(tab-port){
+    @include mobilePseudoDivider();
+  }
+}
+.burgers::before{ 
+  @include desktopPseudoDivider(); 
+  @include respond(tab-port){
+    @include mobilePseudoDivider();
+  }
+}
+
+.menu-dips::before{
+  @include desktopPseudoDivider();
+  @include respond(tab-port){
+    @include mobilePseudoDivider();
+  }
+}
+
+.diet-logo-legend::before{
+  @include desktopPseudoDivider();
+  @include respond(tab-port){
+    @include mobilePseudoDivider();
+  }
+}
+
 
 .food-menu__section-wrapper > section {
 
   @include respond(phone){
-    width: 100%;
+    // width: 100%;
   }
   
   .section__title{
@@ -43,7 +71,7 @@
 
     @include respond(tab-port){
       font-size: $mobile-section-fontsize;
-
+      
     }
 
     @include respond(phone){
@@ -55,6 +83,14 @@
       color: $dark-font;
       font-style: italic;
       font-size: $desktop-item-notes-fontsize;
+
+      @include respond(tab-port){
+        font-size: $mobile-item-notes-fontsize;
+      }
+
+      @include respond(phone){
+        font-size: $phone-item-notes-fontsize;
+      }
     }
   }
 
@@ -66,23 +102,23 @@
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 $desktop-side-margin 2rem $desktop-side-margin;
+    margin: 0 $desktop-side-margin 3rem $desktop-side-margin;
     
     text-align: center;
     list-style: none;
     
-    
     @include respond(tab-port){
-      padding: 3rem 0;
+      padding: 1rem 0;
+      
       flex-flow: column;
       justify-content: flex-start;
+      margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
+
       text-align: start;
-      margin: 0;
     }
 
     @include respond(phone){
-      width: 100%;
-      margin: 0;
+      margin: 0 $phone-side-margin 2rem $phone-side-margin;
     }
   }
 }

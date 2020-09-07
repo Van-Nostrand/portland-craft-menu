@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import pclogo from "../assets/pclogo.png";
-import pcMezzanine from "../assets/PCservice.png";
 
 export const NavHat = ({changePage}) => {
   let [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -19,7 +18,7 @@ export const NavHat = ({changePage}) => {
 
   let rightButtons = (
     <>
-      <button onClick={() => {}} >TAKE-OUT</button>
+      <button onClick={console.log("CLICKED!!")} >TAKE-OUT</button>
       <button onClick={() => {}} >CONTACT</button>
       <button onClick={() => {}} >EVENTS</button>    
     </>
@@ -43,10 +42,6 @@ export const NavHat = ({changePage}) => {
 
   return(
     <div className="nav-hat-wrapper">
-
-      <div className="background-photo-wrapper">
-        <img id="restaurant-photo" src={pcMezzanine} />
-      </div>
     
       <nav className="full-nav" >
 
@@ -98,7 +93,7 @@ const MobileNavDrawer = (props) => {
 const NavButtonGroup = (props) => {
 
   return (
-    <div className={props.classString}>
+    <div className={props.classString} onClick={console.log("CLICKED!!")}>
       {props.buttons}
     </div>
   )

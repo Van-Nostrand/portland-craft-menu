@@ -1,5 +1,5 @@
 .mobile-nav{
-
+  position: absolute;
   width: 0;
   opacity: 0;
   
@@ -34,7 +34,6 @@
     
     @include respond(tab-port){
       
-      
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -51,7 +50,7 @@
     
     @include respond(phone){
       padding-right: $phone-side-margin;
-      font-size: 2rem;
+      font-size: $phone-nav-fontsize;
     }
     
     
@@ -72,8 +71,10 @@
     }
 
     @include respond(phone){
-      height: $phone-nav-height;
+      height: $phone-nav-height - 1rem;
       padding-right: $phone-side-margin - 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
 
     img{
@@ -91,14 +92,17 @@
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  // align-items: flex-start; 
   justify-items: flex-start; 
-  background: red;
+  background: $portland-red;
   
   transition: transform 0.3s;
 
   button{
     margin: 0 1rem;
+
+    @include respond(phone){
+      margin: 0 3rem;
+    }
   }
 }
 

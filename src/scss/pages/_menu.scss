@@ -17,6 +17,15 @@
   background-color: $portland-off-white;
   color: $portland-red;
   font-size: 2.5rem;
+
+  @include respond(tab-port){
+    width: 100%;
+    top: 0;
+  }
+
+  @include respond(phone){
+    top: 0;
+  }
 }
 
 
@@ -29,7 +38,5 @@ section{
     font-size: $desktop-section-fontsize;
     text-align: center;
     color: $portland-red;
-
-    margin-bottom: 2rem;
   }
 }

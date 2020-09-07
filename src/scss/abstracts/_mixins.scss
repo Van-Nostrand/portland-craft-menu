@@ -31,6 +31,18 @@
   margin: -3rem -44%;
 }
 
+@mixin mobilePseudoDivider(){
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+
+  border: 0.3rem solid $portland-red-alpha;
+  height: 0.4rem;
+  width: 90%;
+  margin: -2rem -45%;
+}
+
 @mixin desktopPseudoFrame($height){
   content: '';
   position: absolute;
@@ -42,6 +54,17 @@
   width: 60vw;
   margin-left: -30vw;
   margin-right: -30vw;
+
+  @include respond(tab-port){
+    left: 50%;
+    width: 95%;
+    margin: 0 -47.5%;
+    height: $height + 2.6%;
+  }
+
+  @include respond(phone){
+    
+  }
 }
 @mixin desktopPseudoInnerFrame($height){
   content: '';
@@ -54,4 +77,15 @@
   width: 59.5vw;
   margin-left: -29.75vw;
   margin-right: -29.75vw;
+
+  @include respond(tab-port){
+    left: 50%;
+    width: 93.6%;
+    margin: 0 -46.8%;
+    height: $height + 1.8%;
+  }
+
+  @include respond(phone){
+    
+  }
 }
