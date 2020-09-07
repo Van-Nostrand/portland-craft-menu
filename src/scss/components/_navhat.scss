@@ -2,7 +2,6 @@
   position: absolute;
   width: 100%;
   top: 0;
-  // z-index: -1;
 
   @include respond(tab-port){
     position: sticky;
@@ -90,17 +89,22 @@
 
 .mobile-nav{
 
-  // position: absolute;
+  position: fixed;
+
   height: 0;
   width: 0;
   opacity: 0;
-  top: 0;
-  // overflow: hidden;
-  z-index: 20;
+  
+  z-index: 9;
+  height: $mobile-nav-height;
+  // background: $soft-black;
+
+  &__background-wrapper{
+    position: relative;
+
+  }
   
   @include respond(tab-port){
-
-    position: absolute;
     top: 0;
     width: 100%;
   
@@ -110,12 +114,35 @@
     align-items: center;
     opacity: 1;
   
-    background: $soft-black;
-    height: $mobile-nav-height;
   }
 
   @include respond(phone){
     height: $phone-nav-height;
+  }
+
+
+  button {
+    border: none; 
+    z-index: 10;     
+    
+    text-align: center;
+    background: none;
+    font-weight: 800;
+    font-family: inherit;
+    color: $portland-off-white;
+    cursor: pointer;
+    text-shadow: 
+      0.3rem 0.3rem $button-font-shadow, 
+      -1px 0 1px $button-font-outline, 
+      0 -1px 1px $button-font-outline;
+
+    @include respond(tab-port){
+      font-size: $mobile-nav-fontsize;
+    }
+
+    @include respond(phone){
+      font-size: $phone-nav-fontsize;
+    }
   }
   
 
@@ -142,29 +169,7 @@
       font-size: 2rem;
     }
     
-    button {
-      border: none;      
-      
-      text-align: center;
-      background: none;
-      font-weight: 800;
-      font-family: inherit;
-      color: $portland-off-white;
-      cursor: pointer;
-      text-shadow: 
-      0.3rem 0.3rem $button-font-shadow, 
-      -1px 0 1px $button-font-outline, 
-      0 -1px 1px $button-font-outline;
-      z-index: 6;
-
-      @include respond(tab-port){
-        font-size: $mobile-nav-fontsize;
-      }
-
-      @include respond(phone){
-        font-size: $phone-nav-fontsize;
-      }
-    }
+    
   }
   
   &__logo{
@@ -172,7 +177,7 @@
     display: inline-block;
     height: $desktop-nav-logo-height;
     margin-right: $desktop-side-margin;
-    z-index: 21;
+    z-index: 9;
     cursor: pointer;
 
     @include respond(tab-port){
@@ -191,6 +196,17 @@
   }
 
   &__drawer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: red;
+    display: flex;
+    flex-flow: column nowrap;
+    transition: transform 1s;
     z-index: -1;
   }
+}
+
+.opendrawer{
+  transform: translateY($phone-nav-height);
 }

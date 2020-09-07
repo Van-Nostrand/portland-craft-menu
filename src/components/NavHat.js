@@ -62,13 +62,15 @@ export const NavHat = ({changePage}) => {
       
       <nav className="mobile-nav" >
 
-        <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} />
+        {/* <div className="mobile-nav__background-wrapper"></div>
+
+        <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} /> */}
 
         <span className="mobile-nav__logo" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
           <img src={pclogo} />
         </span>
 
-        <MobileNavDrawer open={mobileNavOpen} />
+        <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} />
 
       </nav>
 
@@ -77,23 +79,22 @@ export const NavHat = ({changePage}) => {
 };
 
 const MobileNavDrawer = (props) => {
-  let style = {
+  let classString = props.open ? "mobile-nav__drawer opendrawer" : "mobile-nav__drawer";
 
-    position: "absolute",
-    zIndex: "1",
-    transform: `translateY(${props.open ? "0" : "500px"})`,
-    transition: "transform 1s, display 1s",
-    height: "500px",
-    width: "100%",
-    background: "red",
-    display: `flex`,
-    flexFlow: "column nowrap",
-    // overflowY: "hidden"
+  //   transition: "transform 1s",
+  //   height: "500px",
+  //   width: "100%",
+  //   background: "red",
+  //   display: `flex`,
+  //   flexFlow: "column nowrap",
+  //   // overflowY: "hidden"
     
-  }
+  // }
   
   return(
-    <div className="mobile-nav__drawer" style={style}></div>
+    <div className={classString}>
+      {props.buttons}
+    </div>
   )
 }
 
