@@ -8,7 +8,7 @@
 
 .menu{
   position: relative;
-  top: $desktop-fullnav-height;
+  top: $desktop-nav-height;
 
   margin: 0 auto 6rem auto;
   padding-top: $desktop-pad-top;
@@ -20,10 +20,6 @@
 
   @include respond(tab-port){
     width: 100%;
-    top: 0;
-  }
-
-  @include respond(phone){
     top: 0;
   }
 }

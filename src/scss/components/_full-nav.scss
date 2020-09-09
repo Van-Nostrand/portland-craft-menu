@@ -26,12 +26,13 @@
 
     button{
       border: none;
-      background: none;
       
+      background: none;
       font-size: $button-font-size;
       font-weight: 800;
       font-family: inherit;
       color: $portland-off-white;
+      text-align: center;
       cursor: pointer;
       text-shadow: 
         0.3rem 0.3rem $button-font-shadow, 
@@ -84,6 +85,8 @@
   transform: translateY(-100%);
   transition: transform 0.3s;
 
+  
+
   &__group{
     display: flex;
     flex-flow: row;
@@ -96,4 +99,7 @@
 .secondary-nav-open{
   opacity: 1;
   transform: translateY(0%);
+  @include respond(tab-port){
+    display: none;
+  }
 }

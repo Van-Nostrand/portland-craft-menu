@@ -5,6 +5,13 @@
   grid-template-rows: 50% 25% 25%;
   justify-items: center;
 
+  @include respond(tab-port){
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    justify-items: start;
+  }
+
 
   &__section-wrapper{
     width: 100%;
@@ -39,5 +46,12 @@
     grid-row: 3;
     margin-top: 6rem;
     width: 80%;
+  }
+
+  @include respond(tab-port){
+    &__section-wrapper{
+      margin: 0;
+      width: 100%;
+    }
   }
 }

@@ -1,5 +1,5 @@
 .landing-page{
-  top: $desktop-fullnav-height;
+  top: $desktop-nav-height;
   height: 300vh;
   position: relative;
   border: 2px dashed purple;
@@ -8,7 +8,7 @@
   .landing-tag{
     position: absolute;
     left: 50%;
-    top: -$desktop-fullnav-height + 20rem;
+    top: -$desktop-nav-height + 20rem;
 
     width: 110rem;
     margin: 0 -55rem;
@@ -29,7 +29,7 @@
     background-color: #fff;
     height: 500px;
 
-    // transform: translateY($desktop-fullnav-height);
+    // transform: translateY($desktop-nav-height);
   }
 
 }
