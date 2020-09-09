@@ -3,15 +3,23 @@
 }
 
 .food-menu::after, .drinks-menu::after{
-  @include desktopPseudoInnerFrame(96.4%);
+  @include respond(desktop){
+
+    @include desktopPseudoInnerFrame(96.4%);
+  }
+
+  @include respond(tab-port){
+    @include desktopPseudoInnerFrame(96.8%);
+  }
 }
 
 .menu{
   position: relative;
   top: $desktop-nav-height;
 
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 3rem auto;
   padding-top: $desktop-pad-top;
+  // padding-bottom: 6rem;
   width: 65vw;
 
   background-color: $portland-off-white;
@@ -21,6 +29,7 @@
   @include respond(tab-port){
     width: 100%;
     top: 0;
+    height: auto;
   }
 }
 

@@ -7,7 +7,7 @@ import * as Scroll from "react-scroll";
 import pcMezzanine from "../assets/PCservice.png";
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("food");
+  let [currentPage, setCurrentPage] = useState("drinks");
 
   return (
     <div className="app-div">

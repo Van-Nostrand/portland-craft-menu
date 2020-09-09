@@ -3,24 +3,29 @@
   width: 100%;
   margin: 0 auto;
 
-  
-
   .section__list{
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    height: 35rem;
+    // height: 35rem;
+
+    @include respond(tab-port){
+      flex-flow: column nowrap;
+    }
   }
 }
 
 .cocktails::before{
   @include desktopPseudoDivider();
-}
 
+  @include respond(tab-port){
+    @include mobilePseudoDivider();
+  }
+}
 
 // individual cocktail items
 .cocktail{
-
 
   width: 45%;
   display: grid;
@@ -31,20 +36,30 @@
   font-size: $desktop-item-name-fontsize;
   font-weight: 500;
 
+  @include respond(tab-port){
+    width: 100%;
+    grid-template-columns: 70% 30%;
+    font-size: $mobile-item-name-fontsize;
+    margin: 0 0 0.9rem 0 ;
+  }
 
   &-name{
     grid-column: 1;
     grid-row: 1;
     
-    font-weight: 600;
+    font-weight: 500;
   }
 
   &-price{
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
-
+    font-size: $desktop-item-price-fontsize;
     color: $dark-font;
+
+    @include respond(tab-port){
+      font-size: $mobile-item-price-fontsize;
+    }
   }
 
   &-notes{
@@ -53,6 +68,10 @@
 
     color: $dark-font;
     font-size: $desktop-item-notes-fontsize;
+
+    @include respond(tab-port){
+      font-size: $mobile-item-notes-fontsize;
+    }
   }
 }
 

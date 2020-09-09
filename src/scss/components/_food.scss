@@ -1,6 +1,67 @@
-// =======
-// Food.js
-// =======
+.food-menu__section-wrapper > section {
+
+  @include respond(phone){
+    // width: 100%;
+  }
+  
+  .section__title{
+
+    color: $portland-red;
+
+    @include respond(tab-port){
+      font-size: $mobile-section-fontsize;
+      
+    }
+
+    @include respond(phone){
+      align-self: center;
+      
+    }
+
+    div{
+      color: $dark-font;
+      font-style: italic;
+      font-size: $desktop-item-notes-fontsize;
+
+      @include respond(tab-port){
+        font-size: $mobile-item-notes-fontsize;
+      }
+
+      @include respond(phone){
+        font-size: $phone-item-notes-fontsize;
+      }
+    }
+  }
+
+  .section__list{
+    position: relative;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 $desktop-side-margin 3rem $desktop-side-margin;
+    
+    text-align: center;
+    list-style: none;
+    
+    @include respond(tab-port){
+      padding: 1rem 0;
+      
+      flex-flow: column;
+      justify-content: flex-start;
+      margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
+
+      text-align: start;
+    }
+
+    @include respond(phone){
+      margin: 0 $phone-side-margin 2rem $phone-side-margin;
+    }
+  }
+}
+
 .food-item{
   position: relative;
 
@@ -35,7 +96,6 @@
 
   &--name{
     display: inline-block;
-    // margin-right: 0.3rem;
 
     text-transform: capitalize;
     color: $portland-red;
