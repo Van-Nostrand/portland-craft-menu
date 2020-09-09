@@ -4,13 +4,12 @@
   top: 0;
 
   width: 100%;
-
-  display: flex;
+  height: $desktop-nav-height;
   padding-top: 2rem;
+  display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
-  height: $desktop-nav-height;
 
   @include respond(tab-port){
     position: absolute;
@@ -34,7 +33,10 @@
       font-family: inherit;
       color: $portland-off-white;
       cursor: pointer;
-      text-shadow: 0.3rem 0.3rem $button-font-shadow, -1px 0 1px $button-font-outline, 0 -1px 1px $button-font-outline;
+      text-shadow: 
+        0.3rem 0.3rem $button-font-shadow, 
+        -1px 0 1px $button-font-outline, 
+        0 -1px 1px $button-font-outline;
     }
 
     button:hover {
@@ -46,9 +48,6 @@
     }
   }
 
-  
-
-
   &__group-logo{
     display: inline-block;
     height: 10rem;
@@ -59,5 +58,42 @@
       display: inline-block;
     }
   }
+}
 
+.secondary-nav-scroll-target{
+  position: absolute;
+  top: 20rem;
+  border: 3px dashed purple;
+  width: 80vw;
+  height: 10rem;
+}
+
+.secondary-nav{
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  flex-flow: row;
+
+  width: 100%;
+  height: 100px;
+  
+  background: black;
+  
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+
+  &__group{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    font-size: $button-font-size;
+  }
+}
+
+.secondary-nav-open{
+  opacity: 1;
+  transform: translateY(0%);
 }

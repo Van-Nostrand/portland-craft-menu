@@ -1,44 +1,40 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useRef} from "react";
+import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
 import pclogo from "../assets/pclogo.png";
 
 export const NavHat = ({changePage}) => {
+  let menuSwitchRef = useRef(null);
+  let show = useCustomScrollRef(menuSwitchRef, 1000);
   let [mobileNavOpen, setMobileNavOpen] = useState(false);
 
-  useEffect(() => {
-    console.log(mobileNavOpen);
-  }, [mobileNavOpen]);
+  let leftButtons = (<>
+    <button onClick={() => changePage("landing")}>HOME</button>
+    <button onClick={() => changePage("food")}>FOOD</button>      
+    <button onClick={() => changePage("drinks")}>DRINKS</button>
+  </>)
 
-  let leftButtons = (
-    <>
-      <button onClick={() => changePage("landing")}>HOME</button>
-      <button onClick={() => changePage("food")}>FOOD</button>      
-      <button onClick={() => changePage("drinks")}>DRINKS</button>
-    </>
-  )
+  let rightButtons = (<>
+    <button onClick={() => console.log("TAKEOUT")} >TAKE-OUT</button>
+    <button onClick={() => {}} >CONTACT</button>
+    <button onClick={() => {}} >EVENTS</button>    
+  </>)
 
-  let rightButtons = (
-    <>
-      <button onClick={console.log("CLICKED!!")} >TAKE-OUT</button>
-      <button onClick={() => {}} >CONTACT</button>
-      <button onClick={() => {}} >EVENTS</button>    
-    </>
-  )
+  let mobileButtons = (<>
+    <button onClick={() => changePage("food")}>FOOD</button> 
+    <button onClick={() => changePage("drinks")}>DRINKS</button>
+    <button onClick={() => {}} >TAKE-OUT</button>
+  </>)
 
-  let mobileButtons = (
-    <>
-      <button onClick={() => changePage("food")}>FOOD</button> 
-      <button onClick={() => changePage("drinks")}>DRINKS</button>
-      <button onClick={() => {}} >TAKE-OUT</button>
-    </>
-  )
+  let mobileMenu = (<>
+    <button onClick={() => changePage("landing")}>HOME</button>
+    <button onClick={() => {}} >CONTACT</button>
+    <button onClick={() => {}} >EVENTS</button> 
+  </>)
 
-  let mobileMenu = (
-    <>
-      <button onClick={() => changePage("landing")}>HOME</button>
-      <button onClick={() => {}} >CONTACT</button>
-      <button onClick={() => {}} >EVENTS</button> 
-    </>
-  )
+  let secondaryNavButtons = (<>
+    {leftButtons}
+    {rightButtons}
+  </>)
 
   return(
     <div className="nav-hat-wrapper">
@@ -55,9 +51,9 @@ export const NavHat = ({changePage}) => {
 
       </nav>
 
-      <nav className="full-secondary-nav">
 
-        
+      <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
+        <NavButtonGroup classString={"secondary-nav__group"} buttons={secondaryNavButtons}/>
       </nav>
       
 
@@ -71,12 +67,13 @@ export const NavHat = ({changePage}) => {
           <img src={pclogo} />
         </span>
 
-        
-
       </nav>
+      <div className="secondary-nav-scroll-target" ref={menuSwitchRef} ></div>
 
     </div>
   )
+
+  
 };
 
 const MobileNavDrawer = (props) => {
@@ -93,7 +90,7 @@ const MobileNavDrawer = (props) => {
 const NavButtonGroup = (props) => {
 
   return (
-    <div className={props.classString} onClick={console.log("CLICKED!!")}>
+    <div className={props.classString} onClick={() => console.log("CLICKED!!")}>
       {props.buttons}
     </div>
   )
