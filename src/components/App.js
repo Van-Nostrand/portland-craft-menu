@@ -9,6 +9,8 @@ import pcMezzanine from "../assets/PCservice.png";
 export const App = (props) => {
   let [currentPage, setCurrentPage] = useState("drinks");
 
+  console.log(window.innerWidth);
+
   return (
     <div className="app-div">
       <div className="background-photo-wrapper">

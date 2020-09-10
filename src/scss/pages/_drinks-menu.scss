@@ -1,11 +1,9 @@
 .drinks-menu{
 
-  @include respond(desktop){
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 25% 25%;
     justify-items: center;
-  }
 
   @include respond(tab-port){
     display: flex;
@@ -14,49 +12,54 @@
     align-items: center;
   }
 
-  
-  @include respond(desktop){
-    //red wine
-    &__section-wrapper:nth-of-type(1){
-      grid-column: 1;
-      grid-row: 1;
-      width: 80%;
-      margin-left: 7rem;
-    }
+  &__section-wrapper{
+    width: 80%;
+  }
+  //red wine
+  &__section-wrapper:nth-of-type(1){
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 7rem;
 
-    //white wine
-    &__section-wrapper:nth-of-type(2){
-      grid-column: 2;
-      grid-row: 1;
-      width: 80%;
-      margin-right: 7rem;
+    @include respond(tab-port){
+      margin-left: 0;
     }
+  }
 
-    //bubbly
-    &__section-wrapper:nth-of-type(3){
-      grid-column: 1 / span 2;
-      grid-row: 2;
+  //white wine
+  &__section-wrapper:nth-of-type(2){
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 7rem;
+
+    @include respond(tab-port){
+      margin-right: 0;
     }
+  }
 
-    //cocktails
-    &__section-wrapper:nth-of-type(4){
-      grid-column: 1 / span 2;
-      grid-row: 3;
-      margin-top: 6rem;
-      width: 80%;
+  //bubbly
+  &__section-wrapper:nth-of-type(3){
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  //cocktails
+  &__section-wrapper:nth-of-type(4){
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    margin-top: 6rem;
+
+    @include respond(tab-port){
+      margin-top: 0;
     }
   }
 
   @include respond(tab-port){
     &__section-wrapper{
       position: relative;
-      margin: 0 0 0 0;
-      width: 85%;
-    }
-
-    &__section-wrapper:nth-of-type(1), 
-    &__section-wrapper:nth-of-type(2){
       width: 78%;
     }
+
+    
   }
 }
