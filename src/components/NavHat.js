@@ -22,13 +22,11 @@ export const NavHat = ({changePage}) => {
   let mobileButtons = (<>
     <button onClick={() => changePage("food")}>FOOD</button> 
     <button onClick={() => changePage("drinks")}>DRINKS</button>
-    <button onClick={() => {}} >TAKE-OUT</button>
+    <button onClick={() => changePage("specials")}>SPECIALS</button>
   </>)
 
   let mobileMenu = (<>
-    <button onClick={() => changePage("landing")}>HOME</button>
-    <button onClick={() => {}} >CONTACT</button>
-    <button onClick={() => {}} >EVENTS</button> 
+    <button onClick={() => changePage("landing")}>HOME</button> 
   </>)
 
   let secondaryNavButtons = (<>

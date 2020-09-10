@@ -5,24 +5,12 @@
   flex-flow: column;
   align-items: center;
 
+  section{
 
-  @include respond(phone){
-    position: relative;
-  } 
-
-  &__section-wrapper{
-    
-    position: relative;
-
-    width: 90%;
     display: flex;
     flex-flow: column;
     align-items: center;
     padding-top: 1rem;
-
-    @include respond(phone){
-      width: 90%;
-    }
   }
 }
 

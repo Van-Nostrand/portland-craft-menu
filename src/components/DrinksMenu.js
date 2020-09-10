@@ -8,22 +8,13 @@ export const DrinksMenu = ({menuData}) => {
   return (
     <div className="menu drinks-menu">
       
-      <div className="drinks-menu__section-wrapper">
-        <WineSection section="red" wineData={menuData["wine"]["red"]} />
-      </div>
+      <WineSection section="red" wineData={menuData["wine"]["red"]} />
 
-      <div className="drinks-menu__section-wrapper">
-        <WineSection section="white" wineData={menuData["wine"]["white"]} />
-      </div>
+      <WineSection section="white" wineData={menuData["wine"]["white"]} />
 
-      <div className="drinks-menu__section-wrapper">
-        <WineSection section="bubbly" wineData={menuData["wine"]["bubbles"]} />
-      </div>
+      <WineSection section="bubbly" wineData={menuData["wine"]["bubbles"]} />
 
-      <div className="drinks-menu__section-wrapper">
-        <CocktailSection cocktailData={menuData["cocktails"]} />
-      </div>
-      
+      <CocktailSection cocktailData={menuData["cocktails"]} />
       
     </div>
   )

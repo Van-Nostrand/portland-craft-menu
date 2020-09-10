@@ -1,8 +1,3 @@
-.red .section__list, .white .section__list{
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-}
 
 
 .wine-item{
@@ -15,7 +10,7 @@
   margin-bottom: 0.5rem;
 
   letter-spacing: -0.05rem;
-  font-size: $desktop-item-name-fontsize;
+  // font-size: $desktop-item-name-fontsize;
   font-weight: 500;
 
   @include respond(tab-port){
@@ -81,8 +76,12 @@
 
 .wine-sizes{
 
-  font-size: 1.8rem;
+  font-size: $desktop-sub-section-fontsize;
   color: $dark-font;
   font-weight: 500;
+
+  @include respond(tab-land){
+    font-size: $mobile-sub-section-fontsize;
+  }
 
 }

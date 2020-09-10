@@ -1,29 +1,14 @@
-.food-menu__section-wrapper > section {
-
-  @include respond(phone){
-    // width: 100%;
-  }
+.food-menu section {
   
   .section__title{
 
-    color: $portland-red;
-
-    @include respond(tab-port){
-      font-size: $mobile-section-fontsize;
-      
-    }
-
-    @include respond(phone){
-      align-self: center;
-      
-    }
-
+    //specific to the burger subheading
     div{
       color: $dark-font;
       font-style: italic;
       font-size: $desktop-item-notes-fontsize;
 
-      @include respond(tab-port){
+      @include respond(tab-land){
         font-size: $mobile-item-notes-fontsize;
       }
 
@@ -34,13 +19,8 @@
   }
 
   .section__list{
-    position: relative;
-    box-sizing: border-box;
-
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+    flex-flow: row wrap;
     margin: 0 $desktop-side-margin 3rem $desktop-side-margin;
     
     text-align: center;
@@ -74,7 +54,7 @@
   font-size: $desktop-item-name-fontsize;
 
 
-  @include respond(tab-port){
+  @include respond(tab-land){
     position: relative;
     
     display: flex;
@@ -85,7 +65,6 @@
     max-width: none;
     max-height: none;
     margin-top: 1rem;
-
 
     font-size: $mobile-item-name-fontsize;
   }
