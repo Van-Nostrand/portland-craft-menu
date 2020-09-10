@@ -19,14 +19,13 @@
 
   margin: 0 auto 3rem auto;
   padding-top: $desktop-pad-top;
-  // padding-bottom: 6rem;
   width: 65vw;
 
   background-color: $portland-off-white;
   color: $portland-red;
   font-size: 2.5rem;
 
-  @include respond(tab-port){
+  @include respond(tab-land){
     width: 100%;
     top: 0;
     height: auto;
@@ -36,6 +35,14 @@
 
 section{
 
+  position: relative;
+
+  width: 80%;
+
+  @include respond(tab-land){
+    width: 78%;
+  }
+
   .section__title{
 
     text-transform: capitalize;
@@ -43,5 +50,22 @@ section{
     font-size: $desktop-section-fontsize;
     text-align: center;
     color: $portland-red;
+
+    @include respond(tab-land){
+      font-size: $mobile-section-fontsize;
+    }
+
+    @include respond(phone){
+      font-size: $phone-section-fontsize;
+    }
+  }
+
+  .section__list{
+    display: flex;
+    flex-flow: column wrap;
+
+    @include respond(tab-land){
+      flex-flow: column nowrap;
+    }
   }
 }

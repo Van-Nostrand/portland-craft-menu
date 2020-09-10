@@ -23,7 +23,7 @@ export const PageLoader = ({ pageTitle}) => {
       break;
     case /landing/.test(pageTitle): currentPage = <LandingPage />;
       break;
-    case /features/.test(pageTitle): currentPage = <FeaturesSection />;
+    case /specials/.test(pageTitle): currentPage = <FeaturesSection />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }

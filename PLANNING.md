@@ -6,22 +6,7 @@ Block, Element, Modifier
 .block__element-modifier--secondmodifier{}
 etc...
 
-also, implement the 7-1 structure
-introduced by Hugo Giraudel (sp?)
-read up on him... 
-
-The 7 folders:
-base/             basic project definitions (*, html, body...)
-components/       one file for each component
-layout/           define the overall layout of the project
-pages/            styles for specific pages
-themes/           for implementing different visual themes
-abstracts/        variables, mixins...
-vendors/          third party libraries
-
-The app has a header that contains background images and a navbar. 
-These are absolutely positioned and fit over other page elements
-Test click and scroll? 
+I kind-of half implemented it..
 
 CSS order suggestion from css-tricks:
 .selector {
@@ -56,7 +41,7 @@ CSS order suggestion from css-tricks:
 }
 
 ================================================
-================== NEW LAYOUT ==================
+==================  LAYOUT ==================
 
 PageWrapper
 - NavHat
@@ -69,3 +54,5 @@ PageWrapper
 - - - - Wine
 - - - CocktailSection
 - - - - Cocktail
+
+spiced candied "nuts"
