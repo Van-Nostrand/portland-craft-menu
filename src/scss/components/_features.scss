@@ -2,9 +2,13 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  
 }
+
 .happy-hour{
+
+  @include respond(phone){
+    width: 85%;
+  }
   
   .section__title{
     margin: 3rem 0 2rem 0;
@@ -13,7 +17,6 @@
 
     font-size: $desktop-section-fontsize + 1rem;
  
-
     @include respond(tab-land){
       font-size: $mobile-section-fontsize;
     }
@@ -44,21 +47,67 @@
     @include respond(phone){
       font-size: $phone-item-notes-fontsize;
     }
+
+    > svg {
+      @include respond(tab-port){
+        display: none;
+      }
+    }
+  }
+
+  .hh-subtitle-time{
+    display: inline-block;
+
+    @include respond(tab-port){
+      display: block;
+    }
   }
 
   .section__list{
     align-items: center;
   }
+
+  svg{
+    height: 0.9rem;
+    margin: 0 0.7rem 0 0.7rem;
+    transform: translateY(-0.2rem);
+
+    @include respond(phone){
+      height: 0.7rem;
+    }
+
+    // @include respond(tab-port){
+    //   display: none;
+    // }
+  }
+
+
 }
+
 .hh-item{
   display: flex;
   flex-flow: row nowrap;
-
   margin: 1rem;
+  
+  @include respond(phone){
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 
+  .item-name{
+    @include respond(phone){
+      font-size: $mobile-item-name-fontsize - 0.2rem;
+    }
+  }
 
   .item-price{
     margin: 0 0.5rem;
+
+    @include respond(tab-port){
+      margin: 0;
+    }
   }
 
   .item-size{
@@ -68,15 +117,14 @@
     margin: 0 0.5rem;
   
     @include respond(tab-port){
-      font-size: $mobile-item-notes-fontsize;
+      font-size: $mobile-item-notes-fontsize - 0.2rem;
+    }
+    @include respond(phone){
+      font-size: $phone-item-notes-fontsize - 0.2rem;
     }
   }
 }
-.hh-item svg{
-  height: 0.9rem;
-  margin: 0 0.5rem 0 0.7rem;
-  transform: translateY(-0.3rem);
-}
+
 
 .hh-item div {
   transform: scale(0.95,1.3);

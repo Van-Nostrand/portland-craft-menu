@@ -7,10 +7,10 @@ export const FoodMenu = ({logos, menuData, features }) => {
     <>
       <div className="menu food-menu">
 
-        <FoodSection 
+        {/* <FoodSection 
           section="features" 
           items={features.freshSheet} 
-          logos={logos} />
+          logos={logos} /> */}
 
         <FoodSection 
           section="starters" 

@@ -19,7 +19,7 @@ export const NavHat = ({changePage}) => {
   let mobileButtons = (<>
     <button onClick={() => changePage("food")}>FOOD</button> 
     <button onClick={() => changePage("drinks")}>DRINKS</button>
-    <button onClick={() => changePage("specials")}>SPECIALS</button>
+    <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
   </>)
 
   let mobileMenu = (<>
@@ -58,7 +58,7 @@ export const NavHat = ({changePage}) => {
 
         <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} />
 
-        <span className="mobile-nav__logo" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+        <span className="mobile-nav__logo" >
           <img src={pclogo} />
         </span>
 

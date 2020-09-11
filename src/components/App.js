@@ -6,7 +6,7 @@ import * as Scroll from "react-scroll";
 import pcMezzanine from "../assets/PCservice.png";
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("specials");
+  let [currentPage, setCurrentPage] = useState("food");
 
   console.log(window.innerWidth);
 

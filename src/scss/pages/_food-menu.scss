@@ -14,12 +14,12 @@
   }
 }
 
-.starters::before{ 
-  @include desktopPseudoDivider(); 
-  @include respond(tab-port){
-    @include mobilePseudoDivider();
-  }
-}
+// .starters::before{ 
+//   @include desktopPseudoDivider(); 
+//   @include respond(tab-port){
+//     @include mobilePseudoDivider();
+//   }
+// }
 .mains::before{ 
   @include desktopPseudoDivider(); 
   @include respond(tab-port){

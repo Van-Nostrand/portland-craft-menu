@@ -1,19 +1,12 @@
-// .food-menu::before, .drinks-menu::before{
 .menu::before{
-  // @include respond(big-desk){
-    // @include desktopPseudoFrame(95.2%);
-  // }
-  // @include respond(tab-port){
-    @include desktopPseudoFrame(95%);
-  // }
+  @include desktopPseudoFrame(95%);
 }
 
-// .food-menu::after, .drinks-menu::after{
 .menu::after{
-  @include respond(big-desk){
+  
 
     @include desktopPseudoInnerFrame(96.4%);
-  }
+  
 
   @include respond(tab-port){
     @include desktopPseudoInnerFrame(96.8%);
@@ -82,6 +75,10 @@ section{
 
   @include respond(tab-port){
     font-size: $mobile-item-name-fontsize;
+  }
+
+  @include respond(phone){
+    font-size: $phone-item-name-fontsize;
   }
 }
 .item-price{
