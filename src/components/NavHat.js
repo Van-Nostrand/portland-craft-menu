@@ -23,13 +23,26 @@ export const NavHat = ({changePage}) => {
   </>)
 
   let mobileMenu = (<>
-    <button onClick={() => changePage("landing")}>HOME</button> 
+    <button onClick={() => changePage("food")}>FOOD</button> 
+    <button onClick={() => changePage("drinks")}>DRINKS</button>
+    <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
   </>)
 
   let secondaryNavButtons = (<>
     {leftButtons}
     {rightButtons}
   </>)
+
+  let menuHamburger = (
+    <div className="menu-burger" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
+      <svg viewBox="0 0 100 100" width="30" height="30">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
+    </div>
+    
+  )
 
   return(
     <div className="nav-hat-wrapper">
@@ -53,6 +66,8 @@ export const NavHat = ({changePage}) => {
       
 
       <nav className="mobile-nav" >
+
+        {/* {menuHamburger} */}
 
         <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} />
 

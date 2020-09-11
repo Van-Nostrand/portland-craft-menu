@@ -10,7 +10,7 @@ export const FeaturesMenu2 = ({menuData}) => {
       <div className="menu features">
         <section className="happy-hour">
           <div className="section__title">
-            HAPPY HOUR DRINK FEATURES
+            Happy Hour Features
           </div>
           <div className="section__hh-subtitle">
             <div className="hh-subtitle-time">

@@ -7,7 +7,7 @@
 .happy-hour{
 
   @include respond(phone){
-    width: 85%;
+    width: 90%;
   }
   
   .section__title{
@@ -69,25 +69,20 @@
 
   svg{
     height: 0.9rem;
-    margin: 0 0.7rem 0 0.7rem;
-    transform: translateY(-0.2rem);
+    margin: 0 0.4rem 0 0.4rem;
 
     @include respond(phone){
       height: 0.7rem;
+      transform: translateY(1rem);
     }
-
-    // @include respond(tab-port){
-    //   display: none;
-    // }
   }
-
-
 }
 
 .hh-item{
   display: flex;
   flex-flow: row nowrap;
   margin: 1rem;
+  font-weight: 600;
   
   @include respond(phone){
     width: 100%;
@@ -97,8 +92,14 @@
   }
 
   .item-name{
+    @include respond(tab-port){
+      font-size: $mobile-item-name-fontsize;
+      // font-size: $mobile-item-name-fontsize - 0.2rem;
+    }
+
     @include respond(phone){
-      font-size: $mobile-item-name-fontsize - 0.2rem;
+      // font-size: $phone-item-name-fontsize - 0.6rem;
+      font-size: $phone-item-name-fontsize;
     }
   }
 
@@ -107,6 +108,13 @@
 
     @include respond(tab-port){
       margin: 0;
+      font-size: $mobile-item-price-fontsize;
+      // font-size: $mobile-item-price-fontsize - 0.2rem;
+    }
+
+    @include respond(phone){
+      font-size: $phone-item-price-fontsize;
+      // font-size: $phone-item-price-fontsize - 0.6rem;
     }
   }
 
@@ -114,7 +122,7 @@
     color: $dark-font;
     font-size: $desktop-item-notes-fontsize;
     font-weight: 400;
-    margin: 0 0.5rem;
+    margin: 0 0.3rem;
   
     @include respond(tab-port){
       font-size: $mobile-item-notes-fontsize - 0.2rem;
@@ -122,6 +130,11 @@
     @include respond(phone){
       font-size: $phone-item-notes-fontsize - 0.2rem;
     }
+  }
+
+  span{
+    display: flex;
+    flex-flow: row nowrap;
   }
 }
 

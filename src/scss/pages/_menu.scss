@@ -42,6 +42,9 @@ section{
   @include respond(tab-land){
     width: 78%;
   }
+  @include respond(phone){
+    width: 90%;
+  }
 
   .section__title{
 
