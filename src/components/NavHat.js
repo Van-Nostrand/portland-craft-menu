@@ -13,7 +13,7 @@ export const NavHat = ({changePage}) => {
   </>)
 
   let rightButtons = (<>
-    <button onClick={() => changePage("specials")}>SPECIALS</button>
+    <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
   </>)
 
   let mobileButtons = (<>
