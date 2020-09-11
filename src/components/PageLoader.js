@@ -1,7 +1,7 @@
 import React from "react";
 import {FoodMenu} from "./FoodMenu";
 import {DrinksMenu} from "./DrinksMenu";
-import {FeaturesSection} from "./FeaturesSection";
+import {FeaturesMenu2} from "./FeaturesMenu2";
 import {
   FOOD_MENU_DATA,
   DRINKS_MENU_DATA,
@@ -20,7 +20,7 @@ export const PageLoader = ({ pageTitle}) => {
       break;
     case /drinks/.test(pageTitle): currentPage = <DrinksMenu menuData={DRINKS_MENU_DATA} />;
       break;
-    case /specials/.test(pageTitle): currentPage = <FeaturesSection menuData={FOOD_MENU_DATA["happyHour"]} />;
+    case /specials/.test(pageTitle): currentPage = <FeaturesMenu2 menuData={FOOD_MENU_DATA["happyHour"]} />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }

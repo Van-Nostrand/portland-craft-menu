@@ -1,32 +1,91 @@
-.happy-hour{
+.features{
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-
+  
+}
+.happy-hour{
+  
   .section__title{
-    transform:
+    margin: 3rem 0 2rem 0;
+    transform: scale(0.9, 1.5);
+    font-weight: 700;
+
+    font-size: $desktop-section-fontsize + 1rem;
+ 
+
+    @include respond(tab-land){
+      font-size: $mobile-section-fontsize;
+    }
+
+    @include respond(phone){
+      font-size: $phone-section-fontsize;
+    }
   }
   .section__hh-subtitle{
-    font-size: $desktop-item-notes-fontsize;
+
+    margin: 3rem;
+    transform: scale(0.95,1.3);
+    
     color: $dark-font;
-    transform: scale(1,1.5);
+
+    font-weight: 500;
+    text-align: center;
+    font-size: $desktop-item-notes-fontsize + 1rem;
+    
+    @include respond(tab-land){
+      font-size: $mobile-item-notes-fontsize;
+    }
+
+    @include respond(tab-port){
+      font-size: $mobile-item-notes-fontsize;
+    }
+
+    @include respond(phone){
+      font-size: $phone-item-notes-fontsize;
+    }
+  }
+
+  .section__list{
+    align-items: center;
   }
 }
+.hh-item{
+  display: flex;
+  flex-flow: row nowrap;
 
+  margin: 1rem;
+
+
+  .item-price{
+    margin: 0 0.5rem;
+  }
+
+  .item-size{
+    color: $dark-font;
+    font-size: $desktop-item-notes-fontsize;
+    font-weight: 400;
+    margin: 0 0.5rem;
+  
+    @include respond(tab-port){
+      font-size: $mobile-item-notes-fontsize;
+    }
+  }
+}
 .hh-item svg{
   height: 0.9rem;
+  margin: 0 0.5rem 0 0.7rem;
+  transform: translateY(-0.3rem);
 }
 
 .hh-item div {
+  transform: scale(0.95,1.3);
+
   display: inline-block;
+  margin: 0 0.1rem;
 }
-
-.item-size{
-  font-size: $desktop-item-notes-fontsize;
-
-  @include respond(tab-port){
-    font-size: $mobile-item-notes-fontsize;
-  }
+.smiley-face-wrapper{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
 }

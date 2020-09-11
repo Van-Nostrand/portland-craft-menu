@@ -103,14 +103,12 @@
   .item-price{
     display: inline-block;
 
-    // font-size: $desktop-item-price-fontsize;
     color: $dark-font ;
 
     @include respond(tab-port){
       flex: 2 1 15%;
       text-align: end;
 
-      // font-size: $mobile-item-price-fontsize;
     }
 
     svg{
@@ -120,7 +118,6 @@
       height: 0.5rem; 
       margin: 0 1rem;
       top: -0.2rem;
-      // transform: translateY(-0.2rem);
 
       @include respond(tab-port){
         height: 0rem;
@@ -131,25 +128,11 @@
   .item-notes{
 
     color: $dark-font;
-    // font-size: $desktop-item-notes-fontsize;
     font-weight: 500;
 
     @include respond(tab-port){
       max-width: 90%;
 
-      // font-size: $mobile-item-notes-fontsize;
     }
   }
-}
-
-.burgers{
-  // font-size: 1.4rem;
-  // color: $dark-font;
-  
-  
-  // text-transform: none;
-
-  // @include respond(tab-port){
-  //   font-size: 2.2rem;
-  // }
 }

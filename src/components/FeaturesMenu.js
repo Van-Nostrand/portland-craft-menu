@@ -1,6 +1,6 @@
 import React from "react";
 
-export const FeaturesSection = (props) => {
+export const FeaturesMenu = (props) => {
 
  
   return(

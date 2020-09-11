@@ -84,46 +84,41 @@ export const FOOD_MENU_DATA = {
   happyHour: [
     {
       name: "Select US Craft Beer",
-      notes: [
-        {price: "5", note: "(14oz"}
+      prices: [
+        {price: "5.75", size: "(14oz)"}
       ]
     },
     {
-      name: "Select Local Craft Beer",
-      notes: [
-        {price: "5", note: "(20oz)"},
-        {price: "4", note: "(12oz)"}
+      name: "Select Local Draught Beer",
+      prices: [
+        {price: "4", size: "(12oz)"},
+        {price: "5", size: "(20oz)"}
       ]
     },
     {
-      name: "Select US Craft Beer",
-      price: "5.75",
-      notes: "(14oz)",
+      name: "House Red, White, & Rose Wine",
+      prices: [
+        {price: "5.50", size: "(5oz)"},
+        {price: "9", size: "(8oz)"}
+      ]
     },
     {
-      name: "Select US Craft Beer",
-      price: "5.75",
-      notes: "(14oz)",
+      name: "Aperol Spritz & Moscow Mule",
+      prices: [
+        {price: "9", size: ""},
+      ]
     },
     {
-      name: "Select US Craft Beer",
-      price: "5.75",
-      notes: "(14oz)",
+      name: "Select Single/Double Highballs",
+      prices: [
+        {price: "5/7.50", size: ""}
+      ]
     },
     {
-      name: "Select US Craft Beer",
-      price: "5.75",
-      notes: "(14oz)",
-    },
-    {
-      name: "Select US Craft Beer",
-      price: "5.75",
-      notes: "(14oz)",
-    },
-    {
-      name: "Select US Craft Beer",
-      price: "5.75",
-      notes: "(14oz)",
+      name: "Jameson",
+      prices: [
+        {price: "4.50", size: "(1oz)"}
+      ]
     }
   ],
   burgers: [
