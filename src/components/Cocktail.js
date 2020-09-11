@@ -4,6 +4,7 @@ export const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
 
   let notesElement;
   if(Array.isArray(notes)){
+    
     let parsedNote = notes[0].split(".").map((item, i) => <div key={`splitstring${i}`}>{item}<br /></div>);
     notesElement = (
       <div className="cocktail-choices">
@@ -30,17 +31,17 @@ export const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
   return(
     <li className="cocktail">
 
-      <div className="cocktail-name">
+      <div className="cocktail-name item-name">
 
         {itemName}
     
       </div>
 
-      <div className="cocktail-price">
+      <div className="cocktail-price item-price">
         <span>{price}</span>
       </div>
 
-      <div className="cocktail-notes">
+      <div className="cocktail-notes item-notes">
         {notesElement}
       </div>
 

@@ -1,0 +1,32 @@
+.happy-hour{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .section__title{
+    transform:
+  }
+  .section__hh-subtitle{
+    font-size: $desktop-item-notes-fontsize;
+    color: $dark-font;
+    transform: scale(1,1.5);
+  }
+}
+
+.hh-item svg{
+  height: 0.9rem;
+}
+
+.hh-item div {
+  display: inline-block;
+}
+
+.item-size{
+  font-size: $desktop-item-notes-fontsize;
+
+  @include respond(tab-port){
+    font-size: $mobile-item-notes-fontsize;
+  }
+}

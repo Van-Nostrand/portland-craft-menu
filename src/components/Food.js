@@ -5,7 +5,7 @@ export const Food = ({ itemName = "unnamed", price = "23", notes="notes go here"
   return(
     <li className="food-item">
 
-      <div className="food-item--name">
+      <div className="item-name">
 
         {itemName}
         {logos.glutenFree ? <img className="dietlogo" src={logos.glutenFree} alt="gflogo" /> : <></>}
@@ -14,7 +14,7 @@ export const Food = ({ itemName = "unnamed", price = "23", notes="notes go here"
     
       </div>
 
-      <div className="food-item--price">
+      <div className="item-price">
         
         <svg viewBox="0 0 12 12" >
           <circle cx="5" cy="5" r="5"/>
@@ -22,7 +22,7 @@ export const Food = ({ itemName = "unnamed", price = "23", notes="notes go here"
         <span>{price}</span>
       </div>
 
-      <div className="food-item--notes smaller-text">
+      <div className="item-notes smaller-text">
         {notes}
       </div>
 

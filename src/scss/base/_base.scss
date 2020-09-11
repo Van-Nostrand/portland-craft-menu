@@ -29,11 +29,10 @@ html{
   font-weight: 700;
   text-rendering: optimizeLegibility;
 }
-
-
 #root{
-  position: static;
+  // position: static;
 }
-.app-div{
-  // height: 4000px;
+
+li{
+  list-style: none;
 }

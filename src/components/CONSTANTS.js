@@ -81,14 +81,49 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     }
   ],
-  features: [
+  happyHour: [
     {
-      name: "name",
-      price: "price",
-      notes: "notes",
-      vegetarian: false,
-      vegan: false,
-      glutenFree: false
+      name: "Select US Craft Beer",
+      notes: [
+        {price: "5", note: "(14oz"}
+      ]
+    },
+    {
+      name: "Select Local Craft Beer",
+      notes: [
+        {price: "5", note: "(20oz)"},
+        {price: "4", note: "(12oz)"}
+      ]
+    },
+    {
+      name: "Select US Craft Beer",
+      price: "5.75",
+      notes: "(14oz)",
+    },
+    {
+      name: "Select US Craft Beer",
+      price: "5.75",
+      notes: "(14oz)",
+    },
+    {
+      name: "Select US Craft Beer",
+      price: "5.75",
+      notes: "(14oz)",
+    },
+    {
+      name: "Select US Craft Beer",
+      price: "5.75",
+      notes: "(14oz)",
+    },
+    {
+      name: "Select US Craft Beer",
+      price: "5.75",
+      notes: "(14oz)",
+    },
+    {
+      name: "Select US Craft Beer",
+      price: "5.75",
+      notes: "(14oz)",
     }
   ],
   burgers: [

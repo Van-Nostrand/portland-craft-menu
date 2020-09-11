@@ -8,15 +8,12 @@ export const NavHat = ({changePage}) => {
   let [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   let leftButtons = (<>
-    <button onClick={() => changePage("landing")}>HOME</button>
     <button onClick={() => changePage("food")}>FOOD</button>      
     <button onClick={() => changePage("drinks")}>DRINKS</button>
   </>)
 
   let rightButtons = (<>
-    <button onClick={() => console.log("TAKEOUT")} >TAKE-OUT</button>
-    <button onClick={() => {}} >CONTACT</button>
-    <button onClick={() => {}} >EVENTS</button>    
+    <button onClick={() => changePage("specials")}>SPECIALS</button>
   </>)
 
   let mobileButtons = (<>

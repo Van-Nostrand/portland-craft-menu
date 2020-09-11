@@ -7,7 +7,7 @@ export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal}) => {
   return(
     <li className="wine-item">
 
-      <div className="wine-item-name">
+      <div className="wine-item-name item-name">
         {itemName}
       </div>
 
@@ -19,11 +19,8 @@ export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal}) => {
           {` (${notes})`}
       </span>
 
-      <div className="wine-item-price">
-        
-        {/* <svg viewBox="0 0 12 12" >
-          <circle cx="5" cy="5" r="5"/>
-        </svg> */}
+      <div className="wine-item-price item-price">
+   
         <span>{sizes.join("/")}</span>
       </div>
 

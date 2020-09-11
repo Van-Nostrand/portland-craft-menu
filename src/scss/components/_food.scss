@@ -73,7 +73,7 @@
     align-content: flex-start;
   }
 
-  &--name{
+  .item-name{
     display: inline-block;
 
     text-transform: capitalize;
@@ -100,17 +100,17 @@
     }
   }
 
-  &--price{
+  .item-price{
     display: inline-block;
 
-    font-size: $desktop-item-price-fontsize;
+    // font-size: $desktop-item-price-fontsize;
     color: $dark-font ;
 
     @include respond(tab-port){
       flex: 2 1 15%;
       text-align: end;
 
-      font-size: $mobile-item-price-fontsize;
+      // font-size: $mobile-item-price-fontsize;
     }
 
     svg{
@@ -128,16 +128,16 @@
     }
   } 
   
-  &--notes{
+  .item-notes{
 
     color: $dark-font;
-    font-size: $desktop-item-notes-fontsize;
+    // font-size: $desktop-item-notes-fontsize;
     font-weight: 500;
 
     @include respond(tab-port){
       max-width: 90%;
 
-      font-size: $mobile-item-notes-fontsize;
+      // font-size: $mobile-item-notes-fontsize;
     }
   }
 }

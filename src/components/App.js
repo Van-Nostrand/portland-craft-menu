@@ -3,11 +3,10 @@ import {NavHat} from "./NavHat";
 import {PageLoader} from "./PageLoader";
 import * as Scroll from "react-scroll";
 
-// import pclogo from "../assets/pclogo.png";
 import pcMezzanine from "../assets/PCservice.png";
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("drinks");
+  let [currentPage, setCurrentPage] = useState("specials");
 
   console.log(window.innerWidth);
 

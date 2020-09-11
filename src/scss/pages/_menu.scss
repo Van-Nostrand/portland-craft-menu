@@ -69,3 +69,25 @@ section{
     }
   }
 }
+
+.item-name{
+  font-size: $desktop-item-name-fontsize;
+
+  @include respond(tab-port){
+    font-size: $mobile-item-name-fontsize;
+  }
+}
+.item-price{
+  font-size: $desktop-item-price-fontsize;
+
+  @include respond(tab-port){
+    font-size: $mobile-item-price-fontsize;
+  }
+}
+.item-notes{
+  font-size: $desktop-item-notes-fontsize;
+
+  @include respond(tab-port){
+    font-size: $mobile-item-notes-fontsize;
+  }
+}
