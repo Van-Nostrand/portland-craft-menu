@@ -1,11 +1,11 @@
-import React, {useState, useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
 import pclogo from "../assets/pclogo.png";
 
-export const NavHat = ({changePage}) => {
+export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   let menuSwitchRef = useRef(null);
   let show = useCustomScrollRef(menuSwitchRef, 1000);
-  let [mobileNavOpen, setMobileNavOpen] = useState(false);
+  // let [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   let leftButtons = (<>
     <button onClick={() => changePage("food")}>FOOD</button>      
@@ -14,6 +14,7 @@ export const NavHat = ({changePage}) => {
 
   let rightButtons = (<>
     <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
+    <button onClick={() => changePage("snacks")}>BAR-SNACKS</button>
   </>)
 
   let mobileButtons = (<>
@@ -26,22 +27,22 @@ export const NavHat = ({changePage}) => {
     <button onClick={() => changePage("food")}>FOOD</button> 
     <button onClick={() => changePage("drinks")}>DRINKS</button>
     <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
+    <button onClick={() => changePage("snacks")}>BAR-SNACKS</button>
   </>)
 
   let secondaryNavButtons = (<>
     {leftButtons}
     {rightButtons}
-  </>)
+  </>);
 
   let menuHamburger = (
     <div className="menu-burger" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-      <svg viewBox="0 0 100 100" width="30" height="30">
-        <rect width="100" height="20"></rect>
-        <rect y="30" width="100" height="20"></rect>
-        <rect y="60" width="100" height="20"></rect>
+      <svg viewBox="0 0 100 100" width="50" height="30">
+        <rect width="120" height="15" rx="10"></rect>
+        <rect y="30" width="120" height="15" rx="10"></rect>
+        <rect y="60" width="120" height="15" rx="10"></rect>
       </svg>
     </div>
-    
   )
 
   return(
@@ -67,11 +68,11 @@ export const NavHat = ({changePage}) => {
 
       <nav className="mobile-nav" >
 
-        {/* {menuHamburger} */}
+        {menuHamburger}
 
         <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} />
 
-        <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} />
+        {/* <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} /> */}
 
         <span className="mobile-nav__logo" >
           <img src={pclogo} />

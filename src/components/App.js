@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {NavHat} from "./NavHat";
 import {PageLoader} from "./PageLoader";
 import * as Scroll from "react-scroll";
@@ -7,7 +7,13 @@ import * as Scroll from "react-scroll";
 
 export const App = (props) => {
   let [currentPage, setCurrentPage] = useState("food");
+  let [mobileNavOpen, setMobileNavOpen] = useState(false);
 
+  useEffect(() => {
+    setMobileNavOpen(false);
+  }, [currentPage]);
+
+  
   console.log(window.innerWidth);
 
   return (
@@ -15,7 +21,7 @@ export const App = (props) => {
       {/* <div className="background-photo-wrapper">
         <img id="restaurant-photo" src={pcMezzanine} />
       </div> */}
-      <NavHat changePage={setCurrentPage} />
+      <NavHat changePage={setCurrentPage} currentPage={currentPage} mobileNavOpen={mobileNavOpen} setMobileNavOpen={setMobileNavOpen} />
       <PageLoader pageTitle={currentPage} />
     </div>
   )

@@ -155,6 +155,80 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     }
   ],
+  snacks: [
+    {
+      name: "Felix Farm Kennebec Fries",
+      price: "7",
+      notes: "Black garlic aioli, fresh herbs",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+    {
+      name: "Poutine",
+      price: "11",
+      notes: "Felix Farm Kennebec potatoes, cheese curd, house gravy",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+    {
+      name: "Mixed Olives",
+      price: "7",
+      notes: "House marinated with citrus and herbs",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+    {
+      name: "Spiced Candied Nuts",
+      price: "7",
+      notes: "House blends",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+    {
+      name: "Crispy Rossdown Chicken Skin",
+      price: "8",
+      notes: "Lime, chilis, lemongrass",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+    {
+      name: "Pickled Vegetables",
+      price: "6",
+      notes: "Seasonal selections",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+    {
+      name: "Cashew Spread",
+      price: "10",
+      notes: "Fresh herbs, lightly toasted bread",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+    {
+      name: "Candied Bacon",
+      price: ["2 (1 strip)", "10 (6 strips)"],
+      notes: "Maple spiced",
+      dairyFree: false,
+      vegan: false,
+      glutenFree: false,
+      nutFree: false
+    },
+  ],
   mains: [
     {
       name: "BBQ stout ribs",
