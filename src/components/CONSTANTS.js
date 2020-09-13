@@ -1,3 +1,4 @@
+import React from "react";
 export const FOOD_MENU_DATA = {
   starters: [
     {
@@ -41,9 +42,9 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "Maple-Miso Green Beans",
+      name: "Maple-Miso Cauliflower",
       price: "12",
-      notes: "Beans tossed in our signature maple miso glaze, sesame seeds",
+      notes: "Fried Cauliflower tossed in our signature maple miso glaze, sesame seeds",
       vegetarian: true,
       vegan: true,
       glutenFree: true
@@ -52,14 +53,6 @@ export const FOOD_MENU_DATA = {
       name: "Poutine",
       price: "12",
       notes: "Hand-cut local Kennebec fries, curds, gravy, scallions",
-      vegetarian: false,
-      vegan: false,
-      glutenFree: false
-    },
-    {
-      name: "Tacos Carnitas",
-      price: "15",
-      notes: "Sliced steak served with salsa verde, pickled onions, chipotle sauce, on a warm corn tortilla",
       vegetarian: false,
       vegan: false,
       glutenFree: false
@@ -123,15 +116,15 @@ export const FOOD_MENU_DATA = {
   ],
   burgers: [
     {
-      name: "portland burger",
-      price: "17",
+      name: "Portland Burger",
+      price: "18",
       notes: "Beef patty, aged cheddar, tomatoes, lettuce, garlic aioli, relish",
       vegetarian: false,
       vegan: false,
       glutenFree: false
     },
     {
-      name: "portland veggie burger",
+      name: "Portland Veggie Burger",
       price: "16",
       notes: "House-made chickpea and black bean patty with avocado, tomato, lettuce, onion, garlic aioli, relish",
       vegetarian: true,
@@ -139,7 +132,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "portland chicken sandwich",
+      name: "Portland Chicken Sandwich",
       price: "18",
       notes: "Organic free-run chicken breast breaded and fried, house-made slaw, tomato, bananna pepper relish, pickled onion, garlic aioli",
       vegetarian: false,
@@ -147,7 +140,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "brisket sandwich",
+      name: "Brisket Sandwich",
       price: "15",
       notes: "House-braised brisket, aged cheddar, tomatoes, lettuce, garlic aioli, pickled onions",
       vegetarian: false,
@@ -221,8 +214,8 @@ export const FOOD_MENU_DATA = {
     },
     {
       name: "Candied Bacon",
-      price: ["2 (1 strip)", "10 (6 strips)"],
-      notes: "Maple spiced",
+      price: "2 / 10",
+      notes: "Maple spiced. 2 for one strip, or 10 for 6 strips",
       dairyFree: false,
       vegan: false,
       glutenFree: false,
@@ -231,7 +224,7 @@ export const FOOD_MENU_DATA = {
   ],
   mains: [
     {
-      name: "BBQ stout ribs",
+      name: "BBQ Stout Ribs",
       price: "23",
       notes: "Full rack of slow-braised back ribs, stout BBQ sauce, coleslaw, fries",
       vegetarian: false,
@@ -239,7 +232,7 @@ export const FOOD_MENU_DATA = {
       glutenFree: false
     },
     {
-      name: "fried chicken & chips",
+      name: "Fried Chicken & Chips",
       price: "18",
       notes: "Our house-battered chicken breast, coleslaw, gravy, fries",
       vegetarian: false,
@@ -404,13 +397,6 @@ export const DRINKS_MENU_DATA = {
       name: "Spanish Fashion",
       price: "13",
       notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
-    },
-  ],
-  draught: [
-    {
-      name: "",
-      sizes: [],
-      notes: ""
     },
   ]
 }
