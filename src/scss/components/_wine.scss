@@ -10,7 +10,6 @@
   margin-bottom: 0.5rem;
 
   letter-spacing: -0.05rem;
-  font-weight: 500;
 
   @include respond(tab-port){
     grid-template-columns: 50% 30% 20% ;
@@ -44,6 +43,7 @@
     
     color: $dark-font;
     font-size: $desktop-item-price-fontsize;
+    font-weight: 500;
    
     justify-self: start;
 

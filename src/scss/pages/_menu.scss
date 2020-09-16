@@ -1,17 +1,4 @@
-.menu::before{
-  @include desktopPseudoFrame(95%);
-}
 
-.menu::after{
-  
-
-    @include desktopPseudoInnerFrame(96.4%);
-  
-
-  @include respond(tab-port){
-    @include desktopPseudoInnerFrame(96.8%);
-  }
-}
 
 .menu{
   position: relative;
@@ -20,6 +7,7 @@
   margin: 0 auto 3rem auto;
   padding-top: $desktop-pad-top;
   width: 65vw;
+  min-height: 100vh;
 
   background-color: $portland-off-white;
   color: $portland-red;
@@ -40,10 +28,10 @@ section{
   width: 80%;
 
   @include respond(tab-land){
-    width: 78%;
+    width: 95%;
   }
   @include respond(phone){
-    width: 90%;
+    width: 95%;
   }
 
   .section__title{
@@ -69,6 +57,7 @@ section{
 
     @include respond(tab-land){
       flex-flow: column nowrap;
+      width: 100%;
     }
   }
 }
@@ -89,7 +78,7 @@ section{
   color: $dark-font;
 
   @include respond(tab-port){
-    font-size: $mobile-item-price-fontsize;
+    font-size: $mobile-item-name-fontsize;
   }
 }
 .item-notes{

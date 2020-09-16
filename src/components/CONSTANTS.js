@@ -138,14 +138,6 @@ export const FOOD_MENU_DATA = {
       vegetarian: false,
       vegan: false,
       glutenFree: false
-    },
-    {
-      name: "Brisket Sandwich",
-      price: "15",
-      notes: "House-braised brisket, aged cheddar, tomatoes, lettuce, garlic aioli, pickled onions",
-      vegetarian: false,
-      vegan: false,
-      glutenFree: false
     }
   ],
   snacks: [

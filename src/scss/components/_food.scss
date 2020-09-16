@@ -78,7 +78,7 @@
 
     text-transform: capitalize;
     color: $portland-red;
-    font-weight: 500; 
+    // font-weight: 500; 
     
     @include respond(tab-port) {
       flex: 2 2 75%;
