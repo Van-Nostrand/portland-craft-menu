@@ -57,7 +57,7 @@
     height: $desktop-nav-logo-height;
 
     z-index: 9;
-    cursor: pointer;
+    // cursor: pointer;
     background: $dark-font;
 
     @include respond(tab-port){

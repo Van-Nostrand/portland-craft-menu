@@ -143,6 +143,13 @@
   display: flex;
   flex-flow: row;
   justify-content: center;
+
+  img{
+
+    //the svg was rendered offset, so this corrects that
+    position: relative;
+    left: -6px;
+  }
 }
 
 .sunday-social{

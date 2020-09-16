@@ -15,16 +15,16 @@ export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal}) => {
         {varietal}
       </div>
 
-      <span className="wine-item-origin">
-          {` (${notes})`}
-      </span>
+      
 
       <div className="wine-item-price item-price">
    
-        <span>{sizes.join("/")}</span>
+        <span>{sizes.join(" / ")}</span>
       </div>
 
-      
+      <span className="wine-item-origin">
+          {` (${notes})`}
+      </span>
 
     </li>
   )

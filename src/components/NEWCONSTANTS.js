@@ -328,7 +328,7 @@ export const COCKTAILS = [
   {
     name: "Daquiri",
     price: "12",
-    notes: "Flor de Ca\u00f1a rum, lime, sugar"
+    notes: "dark rum, lime, sugar"
   },
   {
     name: "Negroni Sour",

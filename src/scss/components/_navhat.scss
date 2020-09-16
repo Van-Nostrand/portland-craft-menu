@@ -8,6 +8,7 @@
   @include respond(tab-port){
     position: sticky;
     height: $mobile-nav-height;
+    padding-top: -1px;
   }
 
   @include respond(phone){

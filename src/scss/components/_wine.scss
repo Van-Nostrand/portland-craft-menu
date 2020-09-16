@@ -12,11 +12,13 @@
   letter-spacing: -0.05rem;
 
   @include respond(tab-port){
-    grid-template-columns: 50% 30% 20% ;
+    grid-template-columns: auto 30% 30% ;
     grid-template-rows: 50% 50%;
+   
   }
 
   &-name{
+
     grid-column: 1;
     grid-row: 1;
     font-size: $desktop-item-name-fontsize;
@@ -27,19 +29,21 @@
   }
 
   &-varietal{
-    grid-column: 1 / span 2;
-    grid-row: 2;
+
+    grid-column: 2 ;
+    grid-row: 1;
     color: $dark-font;
     font-size: $desktop-item-name-fontsize - 0.3rem;
 
     @include respond(tab-port){
+      justify-self: start;
       font-size: $mobile-item-name-fontsize - 0.2rem;
     }
   }
   
   &-origin{
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     
     color: $dark-font;
     font-size: $desktop-item-price-fontsize;
