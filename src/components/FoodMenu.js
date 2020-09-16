@@ -14,17 +14,17 @@ export const FoodMenu = ({logos, menuData, features }) => {
 
         <FoodSection 
           section="starters" 
-          items={menuData["starters"]} 
+          items={menuData.STARTERS} 
           logos={logos} />
 
         <FoodSection 
           section="burgers" 
-          items={menuData["burgers"]} 
+          items={menuData.BURGERS} 
           logos={logos} />
 
         <FoodSection 
           section="mains" 
-          items={menuData["mains"]} 
+          items={menuData.MAINS} 
           logos={logos} />
 
         <section className="menu-dips">
