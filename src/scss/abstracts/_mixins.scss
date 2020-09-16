@@ -59,13 +59,15 @@
     left: 50%;
     width: 95%;
     margin: 0 -47.5%;
-    height: $height + 2.6%;
+    height: $height + 0.9%;
   }
 
   @include respond(phone){
     
   }
 }
+
+
 @mixin desktopPseudoInnerFrame($height){
   content: '';
   position: absolute;
@@ -82,7 +84,7 @@
     left: 50%;
     width: 93.6%;
     margin: 0 -46.8%;
-    height: $height + 1.8%;
+    height: $height ;
   }
 
   @include respond(phone){

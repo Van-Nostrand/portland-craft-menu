@@ -117,18 +117,36 @@
   }
 }
 
-.menu-burger{
-  background: $dark-font;
+.mobile-nav__btn-wrapper{
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu-burger{
+  position: relative;
+  background: $dark-font;
   height: 100%;
 
   svg{
     position: relative;
     top: $mobile-nav-height / 4;
-    left: 4rem;
 
     rect{
-      fill: $portland-beige;
+      fill: $light-font;
     }
   }
 }
+
+.menu-drawer-button{
+  position: relative;
+  background-color: $dark-font;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: $mobile-nav-fontsize - 1.2rem;
+}
+

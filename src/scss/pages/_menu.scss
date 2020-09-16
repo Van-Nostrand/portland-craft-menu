@@ -1,16 +1,18 @@
 .menu::before{
   @include desktopPseudoFrame(95%);
+
+  // @include respond(tab-port){
+  //   @include relativePseudoFrame(94%);
+  // }
 }
 
 .menu::after{
   
 
-    @include desktopPseudoInnerFrame(96.4%);
+  @include desktopPseudoInnerFrame(96.4%);
   
 
-  @include respond(tab-port){
-    @include desktopPseudoInnerFrame(96.8%);
-  }
+  
 }
 
 .menu{
@@ -19,6 +21,7 @@
 
   margin: 0 auto 3rem auto;
   padding-top: $desktop-pad-top;
+  padding-bottom: $desktop-pad-top;
   width: 65vw;
 
   background-color: $portland-off-white;

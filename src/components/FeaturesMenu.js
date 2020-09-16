@@ -26,10 +26,21 @@ export const FeaturesMenu = ({menuData}) => {
           <ul className="section__list">
             {items}
           </ul>
-          <div className="smiley-face-wrapper">
-            <img src={smileyface} />
-          </div>
+          
         </section>
+
+        <section className="sunday-social">
+          <div className="section__title">
+            Sunday Social<span className="smaller-text">ly distanced</span>
+          </div>
+          <p>All-day on Sundays, 20 and 12 oz pours of local draught are $4.50!</p>
+
+        </section>
+
+        <div className="smiley-face-wrapper">
+          <img src={smileyface} />
+        </div>
+        
       </div>
     </>
   )

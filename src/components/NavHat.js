@@ -45,6 +45,16 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     </div>
   )
 
+  let menuDrawerButton = (
+    <button className="menu-drawer-button" onClick={() => setMobileNavOpen(!mobileNavOpen)}>MORE<br />MENUS</button>
+  )
+  let menuDrawerButton2 = (
+    <div className="menu-drawer-button-wrapper">
+
+      <button className="menu-drawer-button2" onClick={() => setMobileNavOpen(!mobileNavOpen)}>TAP FOR<br />MORE MENUS</button>
+    </div>
+  )
+
   return(
     <div className="nav-hat-wrapper">
     
@@ -68,7 +78,13 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
       <nav className="mobile-nav" >
 
-        {menuHamburger}
+        <div className="mobile-nav__btn-wrapper">
+
+          {menuHamburger}
+
+          {menuDrawerButton}
+        </div>
+
 
         <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} />
 
