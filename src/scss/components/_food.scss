@@ -24,7 +24,6 @@
     margin: 0 $desktop-side-margin 3rem $desktop-side-margin;
     
     text-align: center;
-    list-style: none;
     
     @include respond(tab-port){
       padding: 1rem 0;
@@ -51,9 +50,6 @@
   max-height: 20rem;
   margin: 0.5rem 0;
 
-  font-size: $desktop-item-name-fontsize;
-
-
   @include respond(tab-land){
     position: relative;
     
@@ -65,8 +61,6 @@
     max-width: none;
     max-height: none;
     margin-top: 1rem;
-
-    font-size: $mobile-item-name-fontsize;
   }
 
   @include respond(phone){
@@ -75,11 +69,8 @@
 
   .item-name{
     display: inline-block;
-
     text-transform: capitalize;
-    color: $portland-red;
-    // font-weight: 500; 
-    
+
     @include respond(tab-port) {
       flex: 2 2 75%;
     }
@@ -107,7 +98,6 @@
   .item-price{
     display: inline-block;
 
-    color: $dark-font ;
 
     @include respond(tab-port){
       flex: 2 1 15%;
@@ -134,9 +124,6 @@
   } 
   
   .item-notes{
-
-    color: $dark-font;
-    font-weight: 500;
 
     @include respond(tab-port){
       max-width: 90%;

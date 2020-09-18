@@ -1,5 +1,3 @@
-
-
 .wine-item{
   position: relative;
 
@@ -21,11 +19,6 @@
 
     grid-column: 1;
     grid-row: 1;
-    font-size: $desktop-item-name-fontsize;
-
-    @include respond(tab-port){
-      font-size: $mobile-item-name-fontsize;
-    }
   }
 
   &-varietal{
@@ -60,18 +53,11 @@
 
     grid-column: 3;
     grid-row: 1;
-
-    color: $dark-font;
-    font-size: $desktop-item-price-fontsize ;
     justify-self: end;
-
-    @include respond(tab-port){
-      font-size: $mobile-item-price-fontsize;
-    }
 
     svg{
 
-      height: $desktop-item-price-dot;
+      height: $desktop-item-price-dot; //rename this sass var
       margin-right: 1.5rem;
     }
   }
@@ -79,12 +65,12 @@
 
 .wine-sizes{
 
-  font-size: $desktop-sub-section-fontsize;
-  color: $dark-font;
+  font-size: $desktop-sub-section-fontsize; //merge this sass var
+  color: $dark-font; //necessary?
   font-weight: 500;
 
   @include respond(tab-land){
-    font-size: $mobile-sub-section-fontsize;
+    font-size: $mobile-sub-section-fontsize; //necessary?
   }
 
 }

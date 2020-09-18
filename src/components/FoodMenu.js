@@ -28,8 +28,8 @@ export const FoodMenu = ({logos, menuData, features }) => {
           logos={logos} />
 
         <section className="menu-dips">
-          <div className="menu-dips__title">Dips!</div>
-          <ul className="menu-dips__list">
+          <div className="menu-dips__title section__title">Dips!</div>
+          <ul className="menu-dips__list section__list">
             <li className="menu-dips__list-item">Garlic aioli</li>
             <li className="menu-dips__list-item">Smoked paprika aioli</li>
             <li className="menu-dips__list-item">Scallion aioli</li>

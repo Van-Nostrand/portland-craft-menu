@@ -1,7 +1,4 @@
-
 .bubbly{
-
-  
   width: 40%;
   margin: 0 auto;
 
@@ -27,8 +24,6 @@
       display: grid;
       grid-template-columns: 60% 20% 20%;
       margin: 0 2rem;
-      
-      font-size: $desktop-item-name-fontsize;
 
       @include respond(tab-port){
         width: 100%;
@@ -39,26 +34,16 @@
       &-name{
         grid-column: 1;
         grid-row: 1;
-
-        @include respond(tab-port){
-          font-size: $mobile-item-name-fontsize;
-        }
       }
 
       &-origin{
         grid-column: 2;
         grid-row: 1;
-
       }
 
       &-price{
         grid-column: 3;
         grid-row: 1;
-        font-size: $desktop-item-price-fontsize;
-
-        @include respond(tab-port){
-          font-size: $mobile-item-price-fontsize;
-        }
       }
     }
   }

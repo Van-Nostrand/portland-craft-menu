@@ -7,24 +7,13 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: center;
-  // width: 100%;
-
-
-  @include respond(tab-port){
-    // width: 100%;
-  }
+  justify-content: center; 
 
   &__title{
-    
-    font-size: $desktop-section-fontsize - 0.2rem;
     margin-top: 2rem;
-    color: $portland-red;
-    
 
     @include respond(tab-port){
       margin-top: 0;
-      font-size: $mobile-section-fontsize;
     }
   }
 
@@ -35,9 +24,9 @@
     justify-content: space-around;
     padding: 2rem;
 
-    list-style: none;
     text-align: center;
     white-space: nowrap;
+
     color: $dark-font;
     font-size: $desktop-item-name-fontsize;
 

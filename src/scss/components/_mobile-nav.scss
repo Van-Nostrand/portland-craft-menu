@@ -47,8 +47,6 @@
       padding-right: $phone-side-margin;
       font-size: $phone-nav-fontsize;
     }
-    
-    
   }
   
   &__logo{
@@ -57,7 +55,6 @@
     height: $desktop-nav-logo-height;
 
     z-index: 9;
-    // cursor: pointer;
     background: $dark-font;
 
     @include respond(tab-port){

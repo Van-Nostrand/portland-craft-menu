@@ -9,18 +9,11 @@
   
   .section__title{
     margin: 3rem 0 2rem 0;
-    font-weight: 700;
 
     font-size: $desktop-section-fontsize + 1rem;
  
-    @include respond(tab-land){
-      font-size: $mobile-section-fontsize;
-    }
-
-    @include respond(phone){
-      font-size: $phone-section-fontsize;
-    }
   }
+
   .section__hh-subtitle{
 
     margin: 3rem;
@@ -77,7 +70,6 @@
   display: flex;
   flex-flow: row nowrap;
   margin: 1rem;
-  // font-weight: 600;
   
   @include respond(phone){
     width: 100%;
@@ -86,37 +78,20 @@
     justify-content: space-between;
   }
 
-  .item-name{
-    @include respond(tab-port){
-      font-size: $mobile-item-name-fontsize;
-      // font-size: $mobile-item-name-fontsize - 0.2rem;
-    }
-
-    @include respond(phone){
-      // font-size: $phone-item-name-fontsize - 0.6rem;
-      font-size: $phone-item-name-fontsize;
-    }
-  }
-
   .item-price{
     margin: 0 0.5rem;
 
     @include respond(tab-port){
       margin: 0;
-      font-size: $mobile-item-price-fontsize;
-      // font-size: $mobile-item-price-fontsize - 0.2rem;
     }
 
-    @include respond(phone){
-      font-size: $phone-item-price-fontsize;
-      // font-size: $phone-item-price-fontsize - 0.6rem;
-    }
+    
   }
 
   .item-size{
     color: $dark-font;
     font-size: $desktop-item-notes-fontsize;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 0.3rem;
   
     @include respond(tab-port){

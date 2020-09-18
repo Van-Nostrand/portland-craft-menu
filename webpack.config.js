@@ -23,6 +23,7 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          'resolve-url-loader',
           {
             loader: 'sass-loader',
             options: {
@@ -58,6 +59,16 @@ module.exports = {
           }
           
         ]
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        exclude: /node_modules/,
+        loader: 'file-loader',
+        options: {
+          name: "[name].[ext]",
+          outputPath: 'fonts/'
+        }    
+        
       }
     ]
   },

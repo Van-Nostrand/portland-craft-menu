@@ -15,13 +15,10 @@
   grid-template-rows: auto auto;
   margin: 0 2rem 1.5rem 2rem;
 
-  font-size: $desktop-item-name-fontsize;
-  // font-weight: 500;
 
   @include respond(tab-port){
     width: 100%;
     grid-template-columns: 70% 30%;
-    font-size: $mobile-item-name-fontsize;
     margin: 0 0 0.9rem 0 ;
   }
 
@@ -35,26 +32,12 @@
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
-    font-size: $desktop-item-price-fontsize;
-    color: $dark-font;
 
-    @include respond(tab-port){
-      font-size: $mobile-item-price-fontsize;
-    }
   }
 
   &-notes{
     grid-column: 1 / span 2;
     grid-row: 2;
-
-    color: $dark-font;
-    font-size: $desktop-item-notes-fontsize;
-    font-weight: 500;
-
-
-    @include respond(tab-port){
-      font-size: $mobile-item-notes-fontsize;
-    }
   }
 }
 
