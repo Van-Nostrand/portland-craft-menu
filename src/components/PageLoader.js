@@ -23,17 +23,21 @@ export const PageLoader = ({ pageTitle}) => {
 
   let currentPage;
   switch(true){
-    case /food/.test(pageTitle): currentPage =  <FoodMenu 
-                                                  menuData={{STARTERS, BURGERS, SNACKS, MAINS}} 
-                                                  features={FRESH_SHEET} 
-                                                  logos={{gflogo, vegetarianlogo, veganlogo}} />;
+    case /food/.test(pageTitle): 
+      currentPage = <FoodMenu 
+                      menuData={{STARTERS, BURGERS, SNACKS, MAINS}} 
+                      features={FRESH_SHEET} 
+                      logos={{gflogo, vegetarianlogo, veganlogo}} />;
       break;
-    case /drinks/.test(pageTitle): currentPage =  <DrinksMenu 
-                                                    menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS}} />;
+    case /drinks/.test(pageTitle): 
+      currentPage = <DrinksMenu 
+                      menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS}} />;
       break;
-    case /specials/.test(pageTitle): currentPage = <FeaturesMenu menuData={HAPPY_HOUR} />;
+    case /specials/.test(pageTitle): 
+      currentPage = <FeaturesMenu menuData={HAPPY_HOUR} />;
       break;
-    case /snacks/.test(pageTitle): currentPage = <BarSnacks menuData={SNACKS} logos={{gflogo, vegetarianlogo, veganlogo}} />;
+    case /snacks/.test(pageTitle): 
+      currentPage = <BarSnacks menuData={SNACKS} logos={{gflogo, vegetarianlogo, veganlogo}} />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }
