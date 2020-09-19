@@ -69,7 +69,7 @@
   color: $dark-font; //necessary?
   font-weight: 500;
 
-  @include respond(tab-land){
+  @include respond(tab-port){
     font-size: $mobile-sub-section-fontsize; //necessary?
   }
 

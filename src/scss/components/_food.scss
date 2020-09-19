@@ -50,7 +50,7 @@
   max-height: 20rem;
   margin: 0.5rem 0;
 
-  @include respond(tab-land){
+  @include respond(tab-port){
     position: relative;
     
     display: flex;
