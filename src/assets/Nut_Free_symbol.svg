@@ -1,17 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
-<style type="text/css">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 24.302 24.302"
+   xml:space="preserve"
+   sodipodi:docname="Nut_Free_symbol.svg"
+   width="24.302"
+   height="24.302"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"><metadata
+   id="metadata1000"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs998">
+	
+	
+	
+</defs><sodipodi:namedview
+   inkscape:document-rotation="0"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="998"
+   id="namedview996"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="11.825846"
+   inkscape:cx="6.6179746"
+   inkscape:cy="28.550337"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style985">
 	.st0{fill:none;stroke:#BC141A;stroke-width:0.642;}
 	.st1{fill:#BC141A;}
 	.st2{font-family:'GothamCondensed-Book';}
 	.st3{font-size:23.7969px;}
 </style>
-<g>
-	<path class="st0" d="M243.36,407.17c6.53,0,11.83-5.3,11.83-11.83s-5.29-11.83-11.83-11.83s-11.83,5.3-11.83,11.83
-		S236.82,407.17,243.36,407.17z"/>
-	<text transform="matrix(1 0 0 1 235.5132 403.1465)" class="st1 st2 st3">n</text>
-	<text transform="matrix(1 0 0 1 244.2935 403.5752)" class="st1 st2 st3">f</text>
-</g>
+<g
+   id="g1510"><path
+     class="st0"
+     d="m 12.151,23.981 c 6.53,0 11.83,-5.3 11.83,-11.83 0,-6.53 -5.29,-11.82999999 -11.83,-11.82999999 C 5.611,0.32100001 0.32100001,5.621 0.32100001,12.151 c 0,6.53 5.28999999,11.83 11.82999999,11.83 z"
+     id="path987" /><g
+     aria-label="n"
+     id="text989"
+     style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#bc141a"
+     class="st1 st2 st3"><path
+       d="M 4.1095694,8.1644463 V 20.634022 H 6.108509 v -6.877304 c 0,-2.546269 1.3326263,-4.2120515 3.3791597,-4.2120515 1.5705953,0 2.5700653,0.9518755 2.5700653,2.4510805 v 8.638275 h 1.975143 v -9.423573 c 0,-2.0703298 -1.546799,-3.4029562 -3.950286,-3.4029562 -1.856158,0 -3.046003,0.713907 -4.1406603,2.4510802 V 8.1644463 Z"
+       style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#bc141a"
+       id="path1499" /></g><g
+     aria-label="f"
+     id="text991"
+     style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#bc141a"
+     class="st1 st2 st3"><path
+       d="M 19.56236,8.1703171 H 17.49203 V 6.2189713 c 0,-0.8328915 0.452141,-1.2612357 1.38022,-1.2612357 0.166578,0 0.237969,0 0.69011,0.023797 V 3.3395464 c -0.452141,-0.095188 -0.713907,-0.1189845 -1.118454,-0.1189845 -1.832361,0 -2.927019,1.0470636 -2.927019,2.8318311 v 2.1179241 h -1.665783 v 1.6181892 h 1.665783 V 20.639893 H 17.49203 V 9.7885063 h 2.07033 z"
+       style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#bc141a"
+       id="path1502" /></g></g>
 </svg>

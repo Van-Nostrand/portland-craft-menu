@@ -1,5 +1,3 @@
-export const SNACKS, LARGER, SWEETS
-
 export const SNACKS = [
   {
     name: "Pickled Vegetables",
@@ -24,7 +22,6 @@ export const SNACKS = [
   {
     name: "Warm Mixed Olives",
     price: "7",
-    // notes: "House marinated with citrus and herb",
     notes: "House marinated with citrus and herbs",
     vegetarian: false,
     vegan: true,
@@ -35,7 +32,6 @@ export const SNACKS = [
   {
     name: "Spiced Candied Nuts",
     price: "7",
-    // notes: "Roasted in house with our spice blend",
     notes: "Roasted in-house with our own spice blend",
     vegetarian: false,
     vegan: true,
@@ -46,7 +42,6 @@ export const SNACKS = [
   {
     name: "Crispy Rossdown Chicken Crackling",
     price: "8",
-    // notes: "Fried chicken skin with house seasoning blend of lime, chilis, lemongrass, and herbs",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
     vegetarian: false,
     vegan: false,
@@ -57,9 +52,7 @@ export const SNACKS = [
   {
     name: "Cashew Spread",
     price: "10",
-    // Maybe we could use less of the word "house"?
-    // notes: "House-made cashew spread, house-pickled vegetables, fresh herbs, house crisps/bread",
-    notes: "With pickled vegetables, fresh herbs, house-baked bread",
+    notes: "With pickled vegetables, fresh herbs, fresh bread, all made in-house",
     vegetarian: false,
     vegan: true,
     glutenFree: false, 
@@ -79,8 +72,6 @@ export const SNACKS = [
   {
     name: "Craft Poutine",
     price: "11",
-    // plural "curds"
-    // notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curd, house-made chicken gravy",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
     vegetarian: false,
     vegan: false,
@@ -90,143 +81,120 @@ export const SNACKS = [
   }
 ];
 
-export const SMALL_PLATES = [
+export const OMNIVORES = [
   {
-    subSection: "Omnivores",
-    items: [
-      {
-        name: "Rossdown Wings",
-        price: "18",
-        // notes: "1 lb wings, daikon, carrots, celery, garlic chili butter sauce",
-        notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
-        vegetarian: false,
-        vegan: false,
-        glutenFree: true, 
-        nutFree: false, 
-        dairyFree: false
-      },
-      {
-        name: "Pacific Humboldt Squid",
-        price: "12",
-        // capital
-        // notes: "tomato, leeks, garlic, chilis, herbs",
-        notes: "Tomato, leeks, garlic, chilis, herbs",
-        vegetarian: false,
-        vegan: false,
-        glutenFree: true, 
-        nutFree: true, 
-        dairyFree: true
-      },
-      {
-        name: "Pacific Wild Shrimp Fritter",
-        price: "10",
-        // erraneous "and"
-        // notes: "Corn, soy bean, herbs, and spicy black garlic aioli",
-        notes: "Corn, soy bean, herbs, spicy black garlic aioli",
-        vegetarian: false,
-        vegan: false,
-        glutenFree: false, 
-        nutFree: true, 
-        dairyFree: true
-      },
-      {
-        // asterisk for no reason? There's no footnote anywhere
-        // name: "Westcoast* Crab Dip",
-        name: "Westcoast Crab Dip",
-        price: "15",
-        // capital
-        // notes: "bacon, leeks, herbs, house bread",
-        notes: "Bacon, leeks, herbs, house bread",
-        vegetarian: false,
-        vegan: false,
-        glutenFree: false, 
-        nutFree: true, 
-        dairyFree: false
-      },
-      {
-        name: "Fraser Valley Pork Belly",
-        price: "13",
-        // seared belly vs seared pork belly? 
-        // "smoke onion" sounds like an instruction. is it supposed to be "smoked onion jam"?
-        // notes: "Seared belly, house pickles, green onions, smoke onion, jam",
-        notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
-        vegetarian: false,
-        vegan: false,
-        glutenFree: true, 
-        nutFree: true, 
-        dairyFree: true
-      },
-      {
-        name: "Cache Creek Beef Tartar",
-        price: "18",
-        notes: "Black garlic, celery, radish, egg yolk, shallots, toast",
-        vegetarian: false,
-        vegan: false,
-        glutenFree: false, 
-        nutFree: true, 
-        dairyFree: true
-      },
-    ]
+    name: "Rossdown Wings",
+    price: "18",
+    notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: true, 
+    nutFree: false, 
+    dairyFree: false
   },
   {
-    subSection: "Herbivores",
-    items: [
-      {
-        name: "B.C. Kale Salad",
-        price: "9",
-        notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
-        vegetarian: true,
-        vegan: true,
-        glutenFree: true, 
-        nutFree: true, 
-        dairyFree: true
-      },
-      {
-        // The colloquial term is "corn-on-the-cob", not "a cob", would we rather go with this?
-        // name: "Chilliwack Corn on a Cob",
-        name: "Chilliwack Corn-on-the-Cob",
-        price: "7",
-        notes: "Grilled corn, chili lime butter, citrus herb crumble",
-        vegetarian: true,
-        vegan: false,
-        glutenFree: false, 
-        nutFree: true, 
-        dairyFree: true
-      },
-      {
-        name: "Heirloom Tomato Salad",
-        price: "11",
-        notes: "Avocado, basil, radish, balsamic aioli, sourdough",
-        vegetarian: true,
-        vegan: false,
-        glutenFree: false, 
-        nutFree: true, 
-        dairyFree: true
-      },
-      {
-        name: '"Fried Rice"',
-        price: "14",
-        // notes: "Mushrooms, gai lan, corn, shallots sesame sauce",
-        notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
-        vegetarian: true,
-        vegan: true,
-        glutenFree: true, 
-        nutFree: true, 
-        dairyFree: true
-      },
-      {
-        // This name needs reworking... can Gai Lan, broccoli, and kale go in the description?
-        name: "B.C. Brasica (Gai Lan/Broccoli/Kale)",
-        price: "8",
-        notes: "Cashews, Garlic, herbs",
-        vegetarian: true,
-        vegan: true,
-        glutenFree: true, 
-        nutFree: false, 
-        dairyFree: true
-      },
-    ]
-  }
+    name: "Pacific Humboldt Squid",
+    price: "12",
+    notes: "Tomato, leeks, garlic, chilis, herbs",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Pacific Wild Shrimp Fritter",
+    price: "10",
+    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Westcoast Crab Dip",
+    price: "15",
+    notes: "Bacon, leeks, herbs, house bread",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false
+  },
+  {
+    name: "Fraser Valley Pork Belly",
+    price: "13",
+    notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Cache Creek Beef Tartar",
+    price: "18",
+    notes: "Black garlic, celery, radish, egg yolk, shallots, toast",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+];
+
+export const HERBIVORES = [
+  {
+    name: "B.C. Kale Salad",
+    price: "9",
+    notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
+    vegetarian: true,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Chilliwack Corn-on-the-Cob",
+    price: "7",
+    notes: "Grilled corn, chili lime butter, citrus herb crumble",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Heirloom Tomato Salad",
+    price: "11",
+    notes: "Avocado, basil, radish, balsamic aioli, sourdough",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: '"Fried Rice"',
+    price: "14",
+    notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
+    vegetarian: true,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "B.C. Brassica",
+    price: "8",
+    notes: "Gai Lan, broccoli, kale, cashews, garlic, herbs",
+    vegetarian: true,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: false, 
+    dairyFree: true
+  },
 ];
 
 export const LARGER = [
@@ -286,8 +254,6 @@ export const SWEETS = [
   {
     name: "Chocolate Mousse",
     price: "9", 
-    // spelling
-    // notes: "Sponge cake, whipped cream, cocao nibs",
     notes: "Sponge cake, whipped cream, cacao nibs",
     vegetarian: true,
     vegan: false,

@@ -20,7 +20,7 @@ export const App = (props) => {
         currentPage={currentPage} 
         mobileNavOpen={mobileNavOpen} 
         setMobileNavOpen={setMobileNavOpen} />
-        
+
       <PageLoader pageTitle={currentPage} />
     </div>
   )

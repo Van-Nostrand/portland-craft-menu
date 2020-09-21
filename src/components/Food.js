@@ -8,9 +8,31 @@ export const Food = ({ itemName = "unnamed", price = "23", notes="notes go here"
       <div className="item-name">
 
         {itemName}
-        {logos.glutenFree ? <img className="dietlogo" src={logos.glutenFree} alt="gflogo" /> : <></>}
-        {logos.vegan ? <img className="dietlogo" src={logos.vegan} alt="veganlogo" /> : <></>}
-        {logos.vegetarian ? <img className="dietlogo" src={logos.vegetarian} alt="vegetarianlogo" /> : <></>}
+        {logos.glutenFree ? 
+          <img 
+            className="dietlogo" 
+            src={logos.glutenFree} 
+            alt="gflogo" /> : <></>}
+        {logos.vegan ? 
+          <img 
+            className="dietlogo" 
+            src={logos.vegan} 
+            alt="veganlogo" /> : <></>}
+        {logos.vegetarian ? 
+          <img 
+            className="dietlogo" 
+            src={logos.vegetarian} 
+            alt="vegetarianlogo" /> : <></>}
+        {logos.nutFree ? 
+          <img 
+            className="dietlogo" 
+            src={logos.nutFree} 
+            alt="nutFreeLogo" /> : <></>}
+        {logos.dairyFree ? 
+          <img 
+            className="dietlogo" 
+            src={logos.dairyFree} 
+            alt="dairyFreeLogo" /> : <></>}
     
       </div>
 

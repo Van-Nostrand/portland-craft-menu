@@ -1,33 +1,36 @@
 import React from "react";
-import {FoodMenu} from "./FoodMenu";
+import {FoodMenu2} from "./FoodMenu2";
 import {DrinksMenu} from "./DrinksMenu";
 import {FeaturesMenu} from "./FeaturesMenu";
 import {BarSnacks} from "./BarSnacks";
 import {
-  STARTERS,
-  BURGERS,
-  SNACKS,
-  MAINS,
   WHITE_WINE,
   RED_WINE,
   BUBBLES,
   COCKTAILS,
-  FRESH_SHEET,
   HAPPY_HOUR
 } from "./CONSTANTS";
-import gflogo from "../assets/gf.svg";
+import {
+  SNACKS,
+  OMNIVORES,
+  HERBIVORES,
+  LARGER,
+  SWEETS
+} from "./CONSTANTS2";
+import gflogo from "../assets/Gluten_Free_symbol.svg";
 import vegetarianlogo from "../assets/vegetarian.svg";
-import veganlogo from "../assets/vegan.svg";
+import veganlogo from "../assets/Vegan_symbol.svg";
+import nutFree from "../assets/Nut_Free_symbol.svg";
+import dairyFree from "../assets/Dairy_Free_symbol.svg";
 
 export const PageLoader = ({ pageTitle}) => {
 
   let currentPage;
   switch(true){
     case /food/.test(pageTitle): 
-      currentPage = <FoodMenu 
-                      menuData={{STARTERS, BURGERS, SNACKS, MAINS}} 
-                      features={FRESH_SHEET} 
-                      logos={{gflogo, vegetarianlogo, veganlogo}} />;
+      currentPage = <FoodMenu2 
+                      menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS}} 
+                      logos={{gflogo, vegetarianlogo, veganlogo, nutFree, dairyFree}} />;
       break;
     case /drinks/.test(pageTitle): 
       currentPage = <DrinksMenu 
@@ -35,9 +38,6 @@ export const PageLoader = ({ pageTitle}) => {
       break;
     case /specials/.test(pageTitle): 
       currentPage = <FeaturesMenu menuData={HAPPY_HOUR} />;
-      break;
-    case /snacks/.test(pageTitle): 
-      currentPage = <BarSnacks menuData={SNACKS} logos={{gflogo, vegetarianlogo, veganlogo}} />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }

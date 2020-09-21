@@ -5,7 +5,6 @@ import pclogo from "../assets/pclogo.png";
 export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   let menuSwitchRef = useRef(null);
   let show = useCustomScrollRef(menuSwitchRef, 1000);
-  // let [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   let leftButtons = (<>
     <button onClick={() => changePage("food")}>FOOD</button>      
@@ -14,7 +13,6 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
   let rightButtons = (<>
     <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
-    <button onClick={() => changePage("snacks")}>BAR-SNACKS</button>
   </>)
 
   let mobileButtons = (<>
@@ -27,7 +25,6 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     <button onClick={() => changePage("food")}>FOOD</button> 
     <button onClick={() => changePage("drinks")}>DRINKS</button>
     <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
-    <button onClick={() => changePage("snacks")}>BAR-SNACKS</button>
   </>)
 
   let secondaryNavButtons = (<>
