@@ -1,206 +1,284 @@
-export const STARTERS = [
-  {
-    name: "House Fries",
-    price: "7",
-    notes: "Hand-cut local Kennebec fries",
-    vegetarian: true,
-    vegan: true,
-    glutenFree: false
-  },
-  {
-    name: "Caesar Salad",
-    price: "14",
-    notes: "Romaine lettuce hearts, house caesar dressing, croutons, parmesan cheese",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false
-  },
-  {
-    name: "Korean Sticky Wings",
-    price: "16",
-    notes: "Gachujang (Korean chili paste), BBQ sauce, scallion, black sesame",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false
-  },
-  {
-    name: "House Salad",
-    price: "12",
-    notes: "Artisan salad mix, maple dijon vinaigrette",
-    vegetarian: true,
-    vegan: true,
-    glutenFree: true
-  },
-  {
-    name: "Salt & Pepper Wings",
-    price: "14",
-    notes: "'Nuff said. Comes with choice of dip",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false
-  },
-  {
-    name: "Maple-Miso Cauliflower",
-    price: "12",
-    notes: "Fried Cauliflower tossed in our signature maple miso glaze, sesame seeds",
-    vegetarian: true,
-    vegan: true,
-    glutenFree: true
-  },
-  {
-    name: "Poutine",
-    price: "12",
-    notes: "Hand-cut local Kennebec fries, curds, gravy, scallions",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false
-  },
-  {
-    name: "Old Bay Popcorn",
-    price: "4",
-    notes: "Real butter, Old Bay seasoning",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: true
-  },
-  {
-    name: "Shrimp Taco",
-    price: "7 each",
-    notes: "Argentinian wild prawns breaded and fried, served with chipotle slaw, salsa verde, pickled onions, on a warm corn tortilla",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false
-  }
-];
-
-export const BURGERS = [
-  {
-    name: "Portland Burger",
-    price: "18",
-    notes: "Beef patty, aged cheddar, tomatoes, lettuce, garlic aioli, relish",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false
-  },
-  {
-    name: "Portland Veggie Burger",
-    price: "16",
-    notes: "House-made chickpea and black bean patty with avocado, tomato, lettuce, onion, garlic aioli, relish",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false
-  },
-  {
-    name: "Portland Chicken Sandwich",
-    price: "18",
-    notes: "Organic free-run chicken breast breaded and fried, house-made slaw, tomato, bananna pepper relish, pickled onion, garlic aioli",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false
-  }
-];
-
 export const SNACKS = [
+  {
+    name: "Pickled Vegetables",
+    price: "6",
+    notes: "House-pickled seasonally sourced selections",
+    vegetarian: false,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
-    notes: "Black garlic aioli, fresh herbs",
-    dairyFree: false,
+    notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
+    vegetarian: false,
     vegan: false,
-    glutenFree: false,
-    nutFree: false
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: false
   },
   {
-    name: "Poutine",
-    price: "11",
-    notes: "Felix Farm Kennebec potatoes, cheese curd, house gravy",
-    dairyFree: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: false
-  },
-  {
-    name: "Mixed Olives",
+    name: "Warm Mixed Olives",
     price: "7",
     notes: "House marinated with citrus and herbs",
-    dairyFree: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: false
+    vegetarian: false,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
   },
   {
     name: "Spiced Candied Nuts",
     price: "7",
-    notes: "House blends",
-    dairyFree: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: false
+    notes: "Roasted in-house with our own spice blend",
+    vegetarian: false,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: false, 
+    dairyFree: true
   },
   {
-    name: "Crispy Rossdown Chicken Skin",
+    name: "Crispy Rossdown Chicken Crackling",
     price: "8",
-    notes: "Lime, chilis, lemongrass",
-    dairyFree: false,
+    notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
+    vegetarian: false,
     vegan: false,
-    glutenFree: false,
-    nutFree: false
-  },
-  {
-    name: "Pickled Vegetables",
-    price: "6",
-    notes: "Seasonal selections",
-    dairyFree: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: false
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
   },
   {
     name: "Cashew Spread",
     price: "10",
-    notes: "Fresh herbs, lightly toasted bread",
-    dairyFree: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: false
+    notes: "With pickled vegetables, fresh herbs, fresh bread, all made in-house",
+    vegetarian: false,
+    vegan: true,
+    glutenFree: false, 
+    nutFree: false, 
+    dairyFree: true
   },
   {
     name: "Candied Bacon",
-    price: "2 / 10",
-    notes: "Maple spiced. 2 for one strip, or 10 for 6 strips",
-    dairyFree: false,
+    price: "one piece for 2, six pieces for 10",
+    notes: "Johnston Farm smoked bacon baked with house-spice blend",
+    vegetarian: false,
     vegan: false,
-    glutenFree: false,
-    nutFree: false
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Craft Poutine",
+    price: "11",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false
   }
 ];
 
-export const MAINS = [
+export const OMNIVORES = [
   {
-    name: "BBQ Stout Ribs",
-    price: "23",
-    notes: "Full rack of slow-braised back ribs, stout BBQ sauce, coleslaw, fries",
+    name: "Rossdown Wings",
+    price: "18",
+    notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
     vegetarian: false,
     vegan: false,
-    glutenFree: false
+    glutenFree: true, 
+    nutFree: false, 
+    dairyFree: false
   },
   {
-    name: "Fried Chicken & Chips",
-    price: "18",
-    notes: "Our house-battered chicken breast, coleslaw, gravy, fries",
+    name: "Pacific Humboldt Squid",
+    price: "12",
+    notes: "Tomato, leeks, garlic, chilis, herbs",
     vegetarian: false,
     vegan: false,
-    glutenFree: false
-  },  
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
   {
-    name: "Mac & Cheese",
-    price: "17",
-    notes: "Three cheeses, pasta, truffle oil, chives",
+    name: "Pacific Wild Shrimp Fritter",
+    price: "10",
+    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
     vegetarian: false,
     vegan: false,
-    glutenFree: false
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Westcoast Crab Dip",
+    price: "15",
+    notes: "Bacon, leeks, herbs, house bread",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false
+  },
+  {
+    name: "Fraser Valley Pork Belly",
+    price: "13",
+    notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Cache Creek Beef Tartar",
+    price: "18",
+    notes: "Black garlic, celery, radish, egg yolk, shallots, toast",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+];
+
+export const HERBIVORES = [
+  {
+    name: "B.C. Kale Salad",
+    price: "9",
+    notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
+    vegetarian: false,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Chilliwack Corn-on-the-Cob",
+    price: "7",
+    notes: "Grilled corn, chili lime butter, citrus herb crumble",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Heirloom Tomato Salad",
+    price: "11",
+    notes: "Avocado, basil, radish, balsamic aioli, sourdough",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: '"Fried Rice"',
+    price: "14",
+    notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
+    vegetarian: false,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "B.C. Brassica",
+    price: "8",
+    notes: "Gai Lan, broccoli, kale, cashews, garlic, herbs",
+    vegetarian: false,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: false, 
+    dairyFree: true
+  },
+];
+
+export const LARGER = [
+  {
+    name: "Cache Creek Dry-Aged Burger",
+    price: "20",
+    notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false,
+  },
+  {
+    name: "Rossdown Chicken and Waffle",
+    price: "23",
+    notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false
+  },
+  {
+    name: "Pacific Wild Salmon",
+    price: "24",
+    notes: "Fried rice, corn, broccoli, sesame leek sauce",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: true, 
+    nutFree: true, 
+    dairyFree: true
+  },
+  {
+    name: "Grain Bowl",
+    price: "21",
+    notes: "Farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
+    vegetarian: false,
+    vegan: true,
+    glutenFree: true, 
+    nutFree: false, 
+    dairyFree: true
+  },
+  {
+    name: "Biscuit and Gravy",
+    price: "18",
+    notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false
   }
 ];
+
+export const SWEETS = [
+  {
+    name: "Chocolate Mousse",
+    price: "9", 
+    notes: "Sponge cake, whipped cream, cacao nibs",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false
+  },
+  {
+    // "Stone fruit fried" sounds like the pie was fried in stone fruits, or using a method involving stone fruits. 
+    // name: "Stone Fruit Fried Pie",
+    name: "Fried Stone Fruit Pie",
+    price: "8",
+    notes: "Sponge cake, whipped cream, cacao nibs",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: false, 
+    dairyFree: false
+  },
+]
+
+
+// =========
+// BEVERAGES
+// =========
 
 export const WHITE_WINE = [
   {
@@ -352,24 +430,7 @@ export const COCKTAILS = [
   }
 ]
 
-export const FRESH_SHEET = [
-  {
-    name: "Corn on the Cob",
-    price: "7",
-    notes: "grilled corn with a cilantro lime butter and chilis",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: true
-  },
-  {
-    name: "Grilled raddichio salad",
-    price: "10",
-    notes: "miso dressing",
-    vegetarian: true,
-    vegan: true,
-    glutenFree: true
-  }
-]
+
 
 export const HAPPY_HOUR = [
   {

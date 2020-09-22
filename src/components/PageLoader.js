@@ -1,22 +1,19 @@
 import React from "react";
-import {FoodMenu2} from "./FoodMenu2";
+import {FoodMenu} from "./FoodMenu";
 import {DrinksMenu} from "./DrinksMenu";
 import {FeaturesMenu} from "./FeaturesMenu";
-import {BarSnacks} from "./BarSnacks";
 import {
   WHITE_WINE,
   RED_WINE,
   BUBBLES,
   COCKTAILS,
-  HAPPY_HOUR
-} from "./CONSTANTS";
-import {
+  HAPPY_HOUR,
   SNACKS,
   OMNIVORES,
   HERBIVORES,
   LARGER,
   SWEETS
-} from "./CONSTANTS2";
+} from "./CONSTANTS";
 import gflogo from "../assets/Gluten_Free_symbol.svg";
 import vegetarianlogo from "../assets/vegetarian.svg";
 import veganlogo from "../assets/Vegan_symbol.svg";
@@ -28,7 +25,7 @@ export const PageLoader = ({ pageTitle}) => {
   let currentPage;
   switch(true){
     case /food/.test(pageTitle): 
-      currentPage = <FoodMenu2 
+      currentPage = <FoodMenu
                       menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS}} 
                       logos={{gflogo, vegetarianlogo, veganlogo, nutFree, dairyFree}} />;
       break;

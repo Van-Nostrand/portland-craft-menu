@@ -12,6 +12,10 @@
 
 html{
   font-size: 62.5%;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.03rem;
   
   @include respond(tab-land){  // width < 1200
     font-size: 56.25%;
@@ -21,15 +25,15 @@ html{
   }
   @include respond(phone){
     font-size: 40%;
+    letter-spacing: 0.01rem;
   }
   @include respond(big-desk){  // width > 1800
     font-size: 75%;
   }
   // font-family: "Roboto", sans-serif;
   // font-family: "Raleway", sans-serif;
-  font-family: "Gotham", sans-serif;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
+  
+
 }
 
 li{

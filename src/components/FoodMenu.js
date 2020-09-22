@@ -1,42 +1,42 @@
-import React, {useState, useEffect, useRef, useLayoutEffect} from "react";
+import React from "react";
 import {FoodSection} from "./FoodSection";
 
-export const FoodMenu = ({logos, menuData, features }) => {
+export const FoodMenu = ({logos, menuData}) => {
 
   return(
     <>
       <div className="menu food-menu">
 
-        {/* <FoodSection 
-          section="features" 
-          items={features.freshSheet} 
-          logos={logos} /> */}
-
         <FoodSection 
-          section="starters" 
-          items={menuData.STARTERS} 
+          section="Bar Snacks" 
+          items={menuData.SNACKS} 
           logos={logos} />
 
-        <FoodSection 
-          section="burgers" 
-          items={menuData.BURGERS} 
-          logos={logos} />
-
-        <FoodSection 
-          section="mains" 
-          items={menuData.MAINS} 
-          logos={logos} />
-
-        <section className="menu-dips">
-          <div className="menu-dips__title section__title">Dips!</div>
-          <ul className="menu-dips__list section__list">
-            <li className="menu-dips__list-item">Garlic aioli</li>
-            <li className="menu-dips__list-item">Smoked paprika aioli</li>
-            <li className="menu-dips__list-item">Scallion aioli</li>
-            <li className="menu-dips__list-item">Thai chili<img src={logos.veganlogo} alt="veganlogo" /></li>
-            <li className="menu-dips__list-item">Habenero (extra hot!)</li>
-          </ul>
+        <section className="faux-section">
+          <div className="section__title">
+            Small Plates
+          </div>
         </section>
+
+        <FoodSection 
+          section="Omnivores" 
+          items={menuData.OMNIVORES} 
+          logos={logos} />
+
+        <FoodSection 
+          section="Herbivores" 
+          items={menuData.HERBIVORES} 
+          logos={logos} />
+
+        <FoodSection 
+          section="Larger" 
+          items={menuData.LARGER} 
+          logos={logos} />
+
+        <FoodSection 
+          section="Sweets" 
+          items={menuData.SWEETS} 
+          logos={logos} />
 
         <section className="diet-logo-legend">
           <div className="diet-logo-legend--item">
@@ -47,6 +47,12 @@ export const FoodMenu = ({logos, menuData, features }) => {
           </div>
           <div className="diet-logo-legend--item">
             <img src={logos.gflogo} alt="gflogo" /> = gluten free
+          </div>
+          <div className="diet-logo-legend--item">
+            <img src={logos.dairyFree} alt="dflogo" /> = dairy free
+          </div>
+          <div className="diet-logo-legend--item">
+            <img src={logos.nutFree} alt="nflogo" /> = nut free
           </div>
         </section>
       

@@ -15,6 +15,10 @@
     font-size: 2.8rem;
   }
 
+  @include respond(phone){
+    font-size: $phone-item-price-fontsize;
+  }
+
   &--item{
 
     display: inline-block;
@@ -22,7 +26,7 @@
     margin: 0 1rem;
 
     @include respond(tab-port){
-      height: 3rem;
+      height: $phone-item-logo-size;
     }
 
     img{

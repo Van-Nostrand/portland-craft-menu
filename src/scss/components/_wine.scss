@@ -30,7 +30,11 @@
 
     @include respond(tab-port){
       justify-self: start;
-      font-size: $mobile-item-name-fontsize - 0.2rem;
+      font-size: $mobile-item-name-fontsize - 0.3rem;
+    }
+
+    @include respond(phone){
+      font-size: $phone-item-name-fontsize - 0.3rem;
     }
   }
   
@@ -39,13 +43,17 @@
     grid-row: 2;
     
     color: $dark-font;
-    font-size: $desktop-item-price-fontsize;
+    font-size: $desktop-item-name-fontsize - 0.3rem;
     font-weight: 500;
    
     justify-self: start;
 
     @include respond(tab-port){
-      font-size: $mobile-item-price-fontsize;
+      font-size: $mobile-item-name-fontsize - 0.3rem;
+    }
+
+    @include respond(phone){
+      font-size: $phone-item-name-fontsize - 0.3rem;
     }
   }
 

@@ -7,18 +7,28 @@ $button-font-shadow: #787878;
 $button-font-size: 2.5rem;
 $button-font-outline: #787878e6;
 
+$menu-background-color: #f8f8f1;
+
 $portland-beige: #babd9b;
 $portland-off-white: #efeeec;
 $portland-red: #bd141b;
 $portland-red-alpha: #bd141ad7;
 
-$phone-nav-height: 10rem;
-$phone-nav-fontsize: 2.5rem;
+// PHONE STYLING
+
+$phone-nav-height: 8rem;
+$phone-nav-fontsize: 2rem;
+$phone-nav-logo-height: 5rem;
+
+$phone-item-name-fontsize: 2.2rem; 
+$phone-item-notes-fontsize: 1.8rem;
+$phone-item-price-fontsize: 2.1rem;
+$phone-item-logo-size: 2.2rem;
+
+$phone-section-fontsize: 3.5rem;
 $phone-side-margin: 2rem;
-$phone-item-name-fontsize: 2.7rem; 
-$phone-item-notes-fontsize: 2.2rem;
-$phone-item-price-fontsize: 2.5rem;
-$phone-section-fontsize: 4.4rem;
+
+// TABLET STYLING
 
 $mobile-nav-height: 12rem;
 $mobile-nav-fontsize: 3.2rem;
@@ -30,6 +40,9 @@ $mobile-item-name-fontsize: 2.5rem;
 $mobile-item-price-fontsize: 2.2rem;
 $mobile-item-notes-fontsize: 2.1rem;
 $mobile-side-margin: 2.5rem;
+
+
+// DESKTOP STYLING
 
 $desktop-pad-top: 4rem;
 $desktop-nav-height: 30rem;
@@ -43,10 +56,9 @@ $desktop-item-name-fontsize: 1.6rem;
 $desktop-item-price-fontsize: 1.3rem;
 $desktop-item-price-dot: 0.8rem;
 $desktop-item-notes-fontsize: 1.2rem;
+$desktop-item-logo-size: 1.2rem;
+
 $desktop-side-margin: 6rem;
 
 $desktop-secondary-nav-top: 12rem;
 $desktop-secondary-nav-height: 6rem;
-
-
-

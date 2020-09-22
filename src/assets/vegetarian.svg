@@ -15,26 +15,26 @@
    sodipodi:docname="vegetarian.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <sodipodi:namedview
-     inkscape:document-rotation="0"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="998"
-     id="namedview947"
-     showgrid="false"
-     inkscape:zoom="12.863138"
-     inkscape:cx="25.328006"
-     inkscape:cy="26.953942"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:current-layer="svg8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="25"
+     inkscape:cx="12.281408"
+     inkscape:zoom="16.550575"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     id="namedview15"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <defs
      id="defs2">
     <rect
@@ -58,27 +58,24 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     id="g2136">
-    <circle
-       style="fill:none;fill-opacity:1;stroke:#bd141b;stroke-width:1.95255;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path835"
-       cx="24.999441"
-       cy="24.999788"
-       r="24.017063" />
-    <text
-       xml:space="preserve"
-       id="text837"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Raleway, sans-serif;white-space:pre;shape-inside:url(#rect839);fill:#bd141b;fill-opacity:1;stroke:#bd141b;stroke-width:0.445291;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
-       transform="matrix(3.3943602,0,0,4.8255019,-185.01286,-488.3893)"><tspan
-         x="58.208984"
-         y="110.33778"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway, sans-serif;fill:#bd141b;fill-opacity:1;stroke:#bd141b;stroke-width:0.445291;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">V</tspan></tspan></text>
-  </g>
+  <circle
+     r="24.017063"
+     cy="24.999788"
+     cx="24.999441"
+     id="path835"
+     style="fill:none;fill-opacity:1;stroke:#bd141b;stroke-width:1.553;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     transform="matrix(4.414791,0,0,3.6133144,-247.93982,-356.99174)"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Raleway, sans-serif;white-space:pre;shape-inside:url(#rect839);fill:#bd141b;fill-opacity:1;stroke:#bd141b;stroke-width:0.16515;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+     id="text837"
+     xml:space="preserve"><tspan
+       x="58.208984"
+       y="110.33778"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Raleway, sans-serif;fill:#bd141b;fill-opacity:1;stroke:#bd141b;stroke-width:0.16515;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">V</tspan></tspan></text>
   <text
      style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect845);fill:#000000;fill-opacity:1;stroke:none;"
      id="text843"

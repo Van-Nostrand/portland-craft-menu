@@ -5,7 +5,7 @@
   
   z-index: 9;
   height: 100%;
-  background: $soft-black;
+  background: $dark-font;
 
   &__background-wrapper{
     position: relative;
@@ -35,7 +35,7 @@
       justify-content: space-around;
       width: 100%;
       height: 100%;
-      padding-right: $mobile-side-margin;
+      
       background: $dark-font;
       
       color: $portland-off-white;
@@ -44,7 +44,7 @@
     }
     
     @include respond(phone){
-      padding-right: $phone-side-margin;
+    
       font-size: $phone-nav-fontsize;
     }
   }
@@ -63,7 +63,7 @@
     }
 
     @include respond(phone){
-      height: $phone-nav-height - 1rem;
+      height: $phone-nav-logo-height;
       padding-right: $phone-side-margin - 1rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;

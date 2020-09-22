@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from "react";
+import React, { useRef} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
 import pclogo from "../assets/pclogo.png";
 
@@ -65,11 +65,11 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
       <nav className="mobile-nav" >
 
-        {menuHamburger}
+        {/* {menuHamburger} */}
 
-        <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} />
+        {/* <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} /> */}
 
-        {/* <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} /> */}
+        <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} />
 
         <span className="mobile-nav__logo" >
           <img src={pclogo} />
