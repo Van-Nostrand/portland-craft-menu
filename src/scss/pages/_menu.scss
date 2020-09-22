@@ -10,7 +10,7 @@
   min-height: 100vh;
 
   background-color: $menu-background-color;
-  color: $portland-red;
+  color: black;
   font-size: 2.5rem;
 
   @include respond(tab-port){
@@ -62,6 +62,7 @@ section{
 .item-name{
   font-size: $desktop-item-name-fontsize;
   color: $portland-red;
+  font-weight: 600;
 
   @include respond(tab-port){
     font-size: $mobile-item-name-fontsize;
@@ -75,6 +76,7 @@ section{
 .item-price{
   font-size: $desktop-item-price-fontsize;
   color: $dark-font;
+  // font-weight: 600;
 
   @include respond(tab-port){
     font-size: $mobile-item-price-fontsize;
@@ -88,7 +90,7 @@ section{
 .item-notes{
   font-size: $desktop-item-notes-fontsize;
   color: $dark-font;
-  font-weight: 500;
+  font-weight: 400;
 
   @include respond(tab-port){
     font-size: $mobile-item-notes-fontsize;

@@ -13,9 +13,9 @@
 html{
   font-size: 62.5%;
   font-family: "Gotham", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.04rem;
   
   @include respond(tab-land){  // width < 1200
     font-size: 56.25%;

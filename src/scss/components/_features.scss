@@ -91,7 +91,7 @@
   .item-size{
     color: $dark-font;
     font-size: $desktop-item-notes-fontsize;
-    font-weight: 500;
+    font-weight: 400;
     margin: 0 0.3rem;
   
     @include respond(tab-port){
@@ -130,7 +130,7 @@
 .sunday-social{
 
   p{
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 .smaller-text{

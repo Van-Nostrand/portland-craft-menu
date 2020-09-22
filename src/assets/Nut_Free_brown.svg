@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="24.302"
+   width="24.302"
+   xml:space="preserve"
+   viewBox="0 0 24.302 24.302"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
+   id="metadata1000"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs998">
+	
+	
+	
+</defs>
+<style
+   id="style985"
+   type="text/css">
+	.st0{fill:none;stroke:#BC141A;stroke-width:0.642;}
+	.st1{fill:#BC141A;}
+	.st2{font-family:'GothamCondensed-Book';}
+	.st3{font-size:23.7969px;}
+</style>
+<g
+   id="g1510"><path
+     style="stroke:#94241e;stroke-opacity:1"
+     id="path987"
+     d="m 12.151,23.981 c 6.53,0 11.83,-5.3 11.83,-11.83 0,-6.53 -5.29,-11.82999999 -11.83,-11.82999999 C 5.611,0.32100001 0.32100001,5.621 0.32100001,12.151 c 0,6.53 5.28999999,11.83 11.82999999,11.83 z"
+     class="st0" /><g
+     class="st1 st2 st3"
+     style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#bc141a"
+     id="text989"
+     aria-label="n"><path
+       id="path1499"
+       style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#94241e;fill-opacity:1"
+       d="M 4.1095694,8.1644463 V 20.634022 H 6.108509 v -6.877304 c 0,-2.546269 1.3326263,-4.2120515 3.3791597,-4.2120515 1.5705953,0 2.5700653,0.9518755 2.5700653,2.4510805 v 8.638275 h 1.975143 v -9.423573 c 0,-2.0703298 -1.546799,-3.4029562 -3.950286,-3.4029562 -1.856158,0 -3.046003,0.713907 -4.1406603,2.4510802 V 8.1644463 Z" /></g><g
+     class="st1 st2 st3"
+     style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#bc141a"
+     id="text991"
+     aria-label="f"><path
+       id="path1502"
+       style="font-size:23.7969px;font-family:GothamCondensed-Book;fill:#94241e;fill-opacity:1"
+       d="M 19.56236,8.1703171 H 17.49203 V 6.2189713 c 0,-0.8328915 0.452141,-1.2612357 1.38022,-1.2612357 0.166578,0 0.237969,0 0.69011,0.023797 V 3.3395464 c -0.452141,-0.095188 -0.713907,-0.1189845 -1.118454,-0.1189845 -1.832361,0 -2.927019,1.0470636 -2.927019,2.8318311 v 2.1179241 h -1.665783 v 1.6181892 h 1.665783 V 20.639893 H 17.49203 V 9.7885063 h 2.07033 z" /></g></g>
+</svg>

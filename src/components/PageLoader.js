@@ -15,7 +15,7 @@ import {
   SWEETS
 } from "./CONSTANTS";
 import gflogo from "../assets/Gluten_Free_symbol.svg";
-import vegetarianlogo from "../assets/vegetarian.svg";
+import vegetarianlogo from "../assets/Vegetarian_symbol.svg";
 import veganlogo from "../assets/Vegan_symbol.svg";
 import nutFree from "../assets/Nut_Free_symbol.svg";
 import dairyFree from "../assets/Dairy_Free_symbol.svg";

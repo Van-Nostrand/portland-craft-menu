@@ -1,3 +1,5 @@
+import React from "react";
+
 export const SNACKS = [
   {
     name: "Pickled Vegetables",
@@ -61,7 +63,7 @@ export const SNACKS = [
   },
   {
     name: "Candied Bacon",
-    price: "one piece for 2, six pieces for 10",
+    price: "2(one) or $10(six)",
     notes: "Johnston Farm smoked bacon baked with house-spice blend",
     vegetarian: false,
     vegan: false,
@@ -381,7 +383,7 @@ export const COCKTAILS = [
   {
     name: "Spritz Veneziano",
     price: "11",
-    notes: ["Ruffino Prosecco, soda, choice of liqueur:", ["Aperol", "Campari", "Elderflower & Cassis ($12)"]]
+    notes: "Choice of Aperol, Campari, or St Germain and Cassis, mixed with soda and Cava"
   },
   {
     name: "Margarita",
