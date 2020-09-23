@@ -14,7 +14,7 @@ export const FoodMenu = ({logos, menuData}) => {
 
         <section className="faux-section">
           <div className="section__title">
-            Small Plates
+            SMALL PLATES
           </div>
         </section>
 

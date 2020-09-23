@@ -2,11 +2,11 @@
 
 .menu{
   position: relative;
-  top: $desktop-nav-height / 2;
+  top: $desktop-nav-height;
 
   margin: 0 auto 3rem auto;
   padding-top: $desktop-pad-top;
-  width: 65vw;
+  width: $desktop-menu-width;
   min-height: 100vh;
 
   background-color: $menu-background-color;
@@ -14,7 +14,7 @@
   font-size: 2.5rem;
 
   @include respond(tab-port){
-    width: 100%;
+    width: $mobile-menu-width;
     top: 0;
     height: auto;
   }
@@ -95,5 +95,17 @@ section{
 
   @include respond(tab-port){
     font-size: $mobile-item-notes-fontsize;
+  }
+}
+
+svg{
+  //set size of the dot with height property
+  position: relative;
+  height: $desktop-item-price-dot; 
+  margin: 0 1rem;
+  top: -0.2rem;
+
+  @include respond(tab-port){
+    height: 0rem;
   }
 }

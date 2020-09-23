@@ -12,7 +12,7 @@ $less-bright-brown: #a0170f;
 $medium-brown: #94241e;
 $brown-brown: #6a2008;
 
-$menu-background-color: #fafaf5;
+$menu-background-color: #fcfcfc;
 
 $portland-beige: #babd9b;
 $portland-off-white: #efeeec;
@@ -22,12 +22,13 @@ $portland-red-alpha: #bd141ad7;
 // PHONE STYLING
 
 $phone-nav-height: 8rem;
-$phone-nav-fontsize: 2rem;
+$phone-nav-fontsize: 2.2rem;
 $phone-nav-logo-height: 5rem;
 
 $phone-item-name-fontsize: 2.2rem; 
 $phone-item-notes-fontsize: 1.8rem;
 $phone-item-price-fontsize: 2.1rem;
+$phone-item-price-dot: 0.7rem;
 $phone-item-logo-size: 2.2rem;
 
 $phone-section-fontsize: 3.5rem;
@@ -42,28 +43,31 @@ $mobile-section-fontsize: 4rem;
 $mobile-sub-section-fontsize: 3rem;
 
 $mobile-item-name-fontsize: 2.5rem;
-$mobile-item-price-fontsize: 2.2rem;
 $mobile-item-notes-fontsize: 2.1rem;
+$mobile-item-price-fontsize: 2.3rem;
+$mobile-item-price-dot: 0.6rem;
 $mobile-side-margin: 2.5rem;
 
+$mobile-menu-width: 100%;
 
 // DESKTOP STYLING
 
 $desktop-pad-top: 4rem;
-$desktop-nav-height: 30rem;
+$desktop-nav-height: 15rem;
 $desktop-nav-element-height: 10rem;
 $desktop-nav-logo-height: 8rem;
 
 $desktop-section-fontsize: 2.2rem;
 $desktop-sub-section-fontsize: 1.5rem;
 
-$desktop-item-name-fontsize: 1.4rem;
-$desktop-item-price-fontsize: 1.2rem;
-$desktop-item-price-dot: 0.8rem;
-$desktop-item-notes-fontsize: 1.2rem;
+$desktop-item-name-fontsize: 1.8rem;
+$desktop-item-notes-fontsize: 1.4rem;
+$desktop-item-price-fontsize: 1.6rem;
+$desktop-item-price-dot: 0.5rem;
 $desktop-item-logo-size: 1.2rem;
 
 $desktop-side-margin: 6rem;
+$desktop-menu-width: 65vw;
 
 $desktop-secondary-nav-top: 12rem;
 $desktop-secondary-nav-height: 6rem;

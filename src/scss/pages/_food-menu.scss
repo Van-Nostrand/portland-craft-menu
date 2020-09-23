@@ -1,12 +1,10 @@
 //FOODMENU.JS AND FOODSECTION.JS
 .food-menu{
-
   display: flex;
   flex-flow: column;
   align-items: center;
 
   section{
-
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -19,7 +17,6 @@
       text-align: center;
       
       @include respond(tab-port){
-        
         flex-flow: column;
         justify-content: flex-start;
         margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
@@ -36,7 +33,6 @@
 
 .barsnacks::before, .faux-section::before, .larger::before, .sweets::before{
   @include desktopPseudoDivider();
-
   @include respond(tab-port){
     @include mobilePseudoDivider();
   }
@@ -77,14 +73,14 @@
 
 .omnivores .section__title, .herbivores .section__title{
   color: $soft-black;
-  font-size: $desktop-section-fontsize - 0.3rem;
+  font-size: $desktop-section-fontsize - 0.4rem;
 
   @include respond(tab-port){
-    font-size: $mobile-section-fontsize - 0.3rem;
+    font-size: $mobile-section-fontsize - 0.4rem;
   }
 
   @include respond(phone){
-    font-size: $phone-section-fontsize - 0.3rem;
+    font-size: $phone-section-fontsize - 0.4rem;
   }
 }
 

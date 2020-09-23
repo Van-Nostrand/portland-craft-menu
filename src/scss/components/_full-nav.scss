@@ -4,11 +4,13 @@
   top: 0;
 
   width: 100%;
+  background-color: $dark-font;
   height: $desktop-nav-height;
-  padding-top: 2rem;
+  // padding-top: 2rem;
   display: flex;
   flex-flow: row;
   justify-content: center;
+  align-items: center;
 
   @include respond(tab-port){
     position: absolute;
@@ -92,11 +94,15 @@
   &__group{
     display: flex;
     flex-flow: row;
-    width: 80%;
+    width: $desktop-menu-width;
     margin: 0 auto;
     justify-content: space-around;
 
     font-size: $button-font-size;
+
+    button{
+      min-width: 17rem;
+    }
   }
 }
 

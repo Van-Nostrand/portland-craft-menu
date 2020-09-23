@@ -23,7 +23,7 @@
   content: '';
   position: absolute;
   left: 50%;
-  top: 1rem;
+  top: 1.5rem;
 
   border: 0.3rem solid $portland-red;
   height: 0.2rem;
@@ -52,7 +52,6 @@
   border-top: 0.4rem solid $portland-red;  
   width: $width or 90%;
   margin: -2rem (-$width/2 or -45%);
-
 }
 
 @mixin desktopPseudoFrame($height){

@@ -20,6 +20,7 @@ export const FoodSection = ({section, items, logos}) => {
   });
   
   let classString = `food-section ${section.toLowerCase().split(" ").join("")}` ;
+  section = section.toUpperCase();
 
   return(
     <section className={classString}>

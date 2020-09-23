@@ -44,17 +44,17 @@
       grid-row: 1 / span 2;
     }
 
-    svg{
-      //set size of the dot with height property
-      position: relative;
-      height: 0.5rem; 
-      margin: 0 1rem;
-      top: -0.2rem;
+    // svg{
+    //   //set size of the dot with height property
+    //   position: relative;
+    //   height: $desktop-item-price-dot; 
+    //   margin: 0 1rem;
+    //   top: -0.2rem;
 
-      @include respond(tab-port){
-        height: 0rem;
-      }
-    }
+    //   @include respond(tab-port){
+    //     height: 0rem;
+    //   }
+    // }
   } 
   
   .item-notes{

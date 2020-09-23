@@ -383,7 +383,7 @@ export const COCKTAILS = [
   {
     name: "Spritz Veneziano",
     price: "11",
-    notes: "Choice of Aperol, Campari, or St Germain and Cassis, mixed with soda and Cava"
+    notes: "Choice of Aperol, Campari, or St Germain and Cassis (+$1), mixed with soda and Cava"
   },
   {
     name: "Margarita",

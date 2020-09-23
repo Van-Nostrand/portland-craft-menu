@@ -11,18 +11,16 @@
     margin: 3rem 0 2rem 0;
 
     font-size: $desktop-section-fontsize + 1rem;
- 
   }
 
   .section__hh-subtitle{
-
     margin: 3rem;
     
     color: $dark-font;
 
     font-weight: 500;
     text-align: center;
-    font-size: $desktop-item-name-fontsize + 1rem;
+    font-size: $desktop-item-name-fontsize;
     
     @include respond(tab-land){
       font-size: $mobile-item-name-fontsize;
@@ -36,11 +34,11 @@
       font-size: $phone-item-name-fontsize;
     }
 
-    > svg {
-      @include respond(tab-port){
-        display: none;
-      }
-    }
+    // > svg {
+    //   @include respond(tab-port){
+    //     display: none;
+    //   }
+    // }
   }
 
   .hh-subtitle-time{
@@ -55,15 +53,15 @@
     align-items: center;
   }
 
-  svg{
-    height: 0.9rem;
-    margin: 0 0.4rem 0 0.4rem;
+  // svg{
+  //   height: 0.9rem;
+  //   margin: 0 0.4rem 0 0.4rem;
 
-    @include respond(phone){
-      height: 0.7rem;
-      transform: translateY(1rem);
-    }
-  }
+  //   @include respond(phone){
+  //     height: 0.7rem;
+  //     transform: translateY(1rem);
+  //   }
+  // }
 }
 
 .hh-item{
