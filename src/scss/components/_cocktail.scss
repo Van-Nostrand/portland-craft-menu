@@ -1,3 +1,9 @@
+.cocktails{
+  display: flex;
+  flex-flow: column;
+  // margin: 0 auto;
+  align-items: center;
+}
 .cocktails::before{
   @include desktopPseudoDivider();
 
@@ -9,7 +15,6 @@
 // individual cocktail items
 .cocktail{
 
-  width: 45%;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: auto auto;
@@ -18,21 +23,19 @@
 
   @include respond(tab-port){
     width: 100%;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 85% 15%;
     margin: 0 0 0.9rem 0 ;
   }
 
   &-name{
     grid-column: 1;
     grid-row: 1;
-    
   }
 
   &-price{
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
-
   }
 
   &-notes{

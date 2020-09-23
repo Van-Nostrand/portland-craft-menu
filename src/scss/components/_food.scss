@@ -1,87 +1,16 @@
-.food-menu section {
-
-  .section__title{
-
-    //specific to the burger subheading
-    div{
-      color: $dark-font;
-      font-style: italic;
-      font-size: $desktop-item-notes-fontsize;
-
-      @include respond(tab-land){
-        font-size: $mobile-item-notes-fontsize;
-      }
-
-      @include respond(phone){
-        font-size: $phone-item-notes-fontsize;
-      }
-    }
-  }
-
-  .section__list{
-    flex-flow: row wrap;
-    margin: 0 $desktop-side-margin 3rem $desktop-side-margin;
-    
-    text-align: center;
-    
-    @include respond(tab-port){
-      
-      flex-flow: column;
-      justify-content: flex-start;
-      margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
-
-      text-align: start;
-    }
-
-    @include respond(phone){
-      margin: 1rem $phone-side-margin 2rem $phone-side-margin;
-    }
-  }
-}
-
-.barsnacks::before, .faux-section::before, .larger::before, .sweets::before{
-  @include desktopPseudoDivider();
-
-  @include respond(tab-port){
-    @include mobilePseudoDivider();
-  }
-}
-
-.herbivores::before{
-  @include respond(tab-port){
-    @include singleLinePseudoDivider(90%);
-  }
-}
-
-.omnivores .section__title, .herbivores .section__title{
-  color: $soft-black;
-  font-size: $desktop-section-fontsize - 0.3rem;
-
-  @include respond(tab-port){
-    font-size: $mobile-section-fontsize - 0.3rem;
-  }
-
-  @include respond(phone){
-    font-size: $phone-section-fontsize - 0.3rem;
-  }
-}
-
-.food-menu .omnivores, .food-menu .herbivores{
-  padding-top: 1rem;
-}
-
 .food-item{
   position: relative;
 
   display: inline-block;
   flex: 2 1 40%;
-  max-width: 500px;
-  max-height: 20rem;
+  max-width: 35rem;
+  max-height: 25rem;
   margin: 0.2rem 0;
 
   @include respond(tab-port){
     position: relative;
     
+    margin: 0.4rem 0;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto auto auto;
@@ -89,7 +18,6 @@
     width: 100%;
     max-width: none;
     max-height: none;
-    // margin-top: 1rem;
   }
 
   @include respond(phone){
@@ -138,20 +66,24 @@
   }
 
   .item-diet-logos{
+
     @include respond(tab-port){
       grid-column: 1;
       grid-row: 4;
     }
 
     .dietlogo{
-      display: inline;
+      position: relative;
+      display: inline-block;
       height: $desktop-item-logo-size;
       margin: 0 0.1rem;
+      top: -1rem;
       stroke: $brown-brown;
     
       @include respond(tab-port){
         height: $phone-item-logo-size;
         margin: 0 0.3rem;
+        top: 0;
       }
     }
   }

@@ -13,25 +13,26 @@ export const WineSection = ({wineData, section}) => {
   });
 
   let sectionClassName = section;
-  let sectionDIV;
+  let priceSizeString;
 
   if(section === "bubbly"){
-    sectionDIV = <div>
-                {section}
-                <div className="wine-sizes">5oz / bottle</div>
-              </div>
+    section = "Bubbly";
+    priceSizeString = "5oz / btl";
   } else {
-    sectionDIV = <div>
-                {`${section} Wine`}
-                <div className="wine-sizes" >5oz / 8oz / bottle</div>
-              </div>
+    section = `${section} Wine`
+    priceSizeString = "5oz / 8oz / btl";
+            
   }
   
 
   return (
     <section className={sectionClassName}>
       <div className="section__title">
-        {sectionDIV}
+        {section}
+      </div>
+
+      <div className="wine-sizes">
+        {priceSizeString}
       </div>
       
       <ul className="section__list">

@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   top: 0;
-  height: 100%;
+  height: 100%; //without this the full-nav scroll animation doesn't trigger
   z-index: 100;
 
   @include respond(tab-port){
@@ -17,20 +17,21 @@
 }
 
 button {
+  border: none;
 
-  border: none;     
-  
-  background: none;
   font-size: $button-font-size;
   font-weight: 800;
   font-family: inherit;
-  color: $portland-off-white;
   text-align: center;
-  cursor: pointer;
+
+  background: none;
+  color: $portland-off-white;
   text-shadow: 
     0.3rem 0.3rem $button-font-shadow, 
     -1px 0 1px $button-font-outline, 
     0 -1px 1px $button-font-outline;
+  
+  cursor: pointer;
 
   @include respond(tab-port){
     font-size: $mobile-nav-fontsize;

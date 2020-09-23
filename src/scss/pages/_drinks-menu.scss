@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 25% 25%;
+  padding-top: 4rem;
   justify-items: center;
 
   @include respond(tab-port){
@@ -10,12 +11,17 @@
     flex-flow: column;
     align-items: center;
   }
+
+  section{
+    padding-top: 2rem;
+  }
     
   //red wine grid settings
   section:nth-of-type(1){
     grid-column: 1;
     grid-row: 1;
-    margin-left: 7rem;
+    margin-right: 1rem;
+    justify-self: end;
 
     @include respond(tab-port){
       margin-left: 0;
@@ -26,7 +32,8 @@
   section:nth-of-type(2){
     grid-column: 2;
     grid-row: 1;
-    margin-right: 7rem;
+    margin-left: 1rem;
+    justify-self: start;
 
     @include respond(tab-port){
       margin-right: 0;
@@ -43,11 +50,28 @@
   section:nth-of-type(4){
     grid-column: 1 / span 2;
     grid-row: 3;
-    margin-top: 6rem;
+    margin-top: 3rem;
 
     @include respond(tab-port){
       margin-top: 0;
-      margin-bottom: 2rem;
+      
     }
+  }
+}
+
+.drinks-menu::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+
+  border: 0.3rem solid $portland-red;
+  height: 0.2rem;
+  width: 88%;
+  margin: -3rem -44%;
+
+  @include respond(tab-port){
+    border: 0.4rem solid $portland-red;
+
   }
 }

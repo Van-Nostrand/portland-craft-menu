@@ -287,43 +287,43 @@ export const WHITE_WINE = [
     name: "Tightrope",
     varietal: "Pinot Gris",
     sizes: [10, 14, 42],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Sandhill",
     varietal: "Pinot Blanc",
     sizes: [11, 15, 45],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Gray Monk",
     varietal: "Chardonnay",
     sizes: [12, 16, 48],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Bonamici",
     varietal: "Rose",
     sizes: [10, 14, 42],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Kanazawa",
     varietal: "Nomu",
     sizes: [12, 16, 48],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Charles Smith",
     varietal: "Riesling",
     sizes: [12, 16, 48],
-    notes: "Washington"
+    notes: "Wash."
   },
   {
     name: "Kim Crawford",
     varietal: "Sauvignon Blanc",
     sizes: [12, 16, 48],
-    notes: "New Zealand"
+    notes: "N.Z."
   }
 ];
 
@@ -332,37 +332,37 @@ export const RED_WINE = [
     name: "Lake Breeze",
     varietal: "Meritage",
     sizes: [12, 16, 48],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Septima",
     varietal: "Malbec",
     sizes: [10, 14, 42],
-    notes: "Argentina"
+    notes: "Arg."
   },
   {
     name: "James Mitchell",
     varietal: "Cabernet Sauvignon",
     sizes: [12, 16, 48],
-    notes: "California"
+    notes: "Cal."
   },
   {
     name: "Sandhill",
     varietal: "Cabernet Merlot",
     sizes: [11, 15, 45],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "See Ya Later Ranch",
     varietal: "Pinot Noir",
     sizes: [11, 15, 45],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Kanazawa",
     varietal: "Merlot",
     sizes: [12, 16, 48],
-    notes: "BC"
+    notes: "B.C."
   }
 ]
 
@@ -370,7 +370,7 @@ export const BUBBLES = [
   {
     name: "Stellars Jay",
     sizes: [11, 45],
-    notes: "BC"
+    notes: "B.C."
   },
   {
     name: "Codorniu Cava",

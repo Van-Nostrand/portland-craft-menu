@@ -1,6 +1,6 @@
 import React, { useRef} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
-import pclogo from "../assets/pclogo.png";
+import pclogo from "../assets/portlandlogoplain.svg";
 
 export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   let menuSwitchRef = useRef(null);

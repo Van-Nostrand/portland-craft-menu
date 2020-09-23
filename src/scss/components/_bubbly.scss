@@ -1,5 +1,5 @@
 .bubbly{
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
 
   @include respond(tab-port){
@@ -10,7 +10,7 @@
   .section__list{
     display: flex;
     flex-flow: row wrap;
-    margin: 0 auto;
+    // margin: 0 auto;
     
     justify-content: space-evenly;
 
@@ -23,12 +23,10 @@
     .wine-item{
       display: grid;
       grid-template-columns: 60% 20% 20%;
-      margin: 0 2rem;
 
       @include respond(tab-port){
         width: 100%;
         grid-template-columns: 60% 20% 20%;
-        margin: 0 0;
       }
 
       &-name{

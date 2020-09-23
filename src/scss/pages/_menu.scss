@@ -2,7 +2,7 @@
 
 .menu{
   position: relative;
-  top: $desktop-nav-height;
+  top: $desktop-nav-height / 2;
 
   margin: 0 auto 3rem auto;
   padding-top: $desktop-pad-top;
@@ -26,6 +26,7 @@ section{
   width: 80%;
 
   @include respond(tab-port){
+    // adjust this in wine.scss too
     width: 90%;
   }
   @include respond(phone){
@@ -76,7 +77,7 @@ section{
 .item-price{
   font-size: $desktop-item-price-fontsize;
   color: $dark-font;
-  // font-weight: 600;
+ 
 
   @include respond(tab-port){
     font-size: $mobile-item-price-fontsize;

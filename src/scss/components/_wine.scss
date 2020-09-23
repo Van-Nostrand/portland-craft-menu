@@ -1,18 +1,30 @@
+.red, .white, .bubbly {
+  display: flex;
+  flex-flow: column;
+
+  @include respond(tab-port){
+    width: 80%;
+  }
+}
+
+.red, .white{
+  width: 60%;
+
+  @include respond(tab-port){
+    width: 90%;
+  }
+}
+
 .wine-item{
   position: relative;
 
   display: grid;
-  grid-template-columns: 40% 40% 20% ;
+  grid-template-columns: auto auto ;
   grid-template-rows: 50% 50%;
   width: 100%;
   margin-bottom: 0.5rem;
 
   letter-spacing: -0.05rem;
-
-  @include respond(tab-port){
-    grid-template-columns: auto 30% 30% ;
-    grid-template-rows: 50% 50%;
-  }
 
   &-name{
     grid-column: 1;
@@ -21,8 +33,8 @@
 
   &-varietal{
 
-    grid-column: 2 ;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     color: $dark-font;
     font-size: $desktop-item-name-fontsize - 0.3rem;
 
@@ -36,28 +48,11 @@
     }
   }
   
-  &-origin{
-    grid-column: 1;
-    grid-row: 2;
-    
-    color: $dark-font;
-    font-size: $desktop-item-name-fontsize - 0.3rem;
-    font-weight: 400;
-   
-    justify-self: start;
 
-    @include respond(tab-port){
-      font-size: $mobile-item-name-fontsize - 0.3rem;
-    }
-
-    @include respond(phone){
-      font-size: $phone-item-name-fontsize - 0.3rem;
-    }
-  }
 
   &-price{
 
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     justify-self: end;
 
@@ -71,12 +66,18 @@
 
 .wine-sizes{
 
-  font-size: $desktop-sub-section-fontsize; //merge this sass var
-  color: $dark-font; //necessary?
+  font-size: $desktop-item-price-fontsize; 
   font-weight: 400;
+  color: $button-font-outline;
+  align-self: flex-end;
+  // letter-spacing: -0.1rem;
 
   @include respond(tab-port){
-    font-size: $mobile-sub-section-fontsize; //necessary?
+    font-size: $mobile-item-price-fontsize;
+  }
+
+  @include respond(phone){
+    font-size: $phone-item-price-fontsize;
   }
 
 }

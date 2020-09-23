@@ -40,22 +40,36 @@ export const FoodMenu = ({logos, menuData}) => {
 
         <section className="diet-logo-legend">
           <div className="diet-logo-legend--item">
-            <img src={logos.vegetarianlogo} alt="vegetarianlogo" /> = vegetarian
+            <img src={logos.vegetarianlogo} alt="vegetarianlogo" />
+            <svg viewBox="0 0 12 12" >
+              <circle cx="5" cy="5" r="5"/>
+            </svg>vegetarian
           </div>
           <div className="diet-logo-legend--item">
-            <img src={logos.veganlogo} alt="veganlogo" /> = vegan
+            <img src={logos.veganlogo} alt="veganlogo" />
+            <svg viewBox="0 0 12 12" >
+              <circle cx="5" cy="5" r="5"/>
+            </svg>vegan
           </div>
           <div className="diet-logo-legend--item">
-            <img src={logos.gflogo} alt="gflogo" /> = gluten free
+            <img src={logos.gflogo} alt="gflogo" />
+            <svg viewBox="0 0 12 12" >
+              <circle cx="5" cy="5" r="5"/>
+            </svg>gluten free
           </div>
           <div className="diet-logo-legend--item">
-            <img src={logos.dairyFree} alt="dflogo" /> = dairy free
+            <img src={logos.dairyFree} alt="dflogo" />
+            <svg viewBox="0 0 12 12" >
+              <circle cx="5" cy="5" r="5"/>
+            </svg>dairy free
           </div>
           <div className="diet-logo-legend--item">
-            <img src={logos.nutFree} alt="nflogo" /> = nut free
+            <img src={logos.nutFree} alt="nflogo" />
+            <svg viewBox="0 0 12 12" >
+              <circle cx="5" cy="5" r="5"/>
+            </svg>nut free
           </div>
         </section>
-      
       </div>
     </>
   )
