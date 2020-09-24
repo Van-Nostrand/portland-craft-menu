@@ -52,6 +52,7 @@ section{
   .section__list{
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 
     @include respond(tab-port){
       flex-flow: column nowrap;
@@ -92,6 +93,7 @@ section{
   font-size: $desktop-item-notes-fontsize;
   color: $dark-font;
   font-weight: 400;
+  font-style: italic;
 
   @include respond(tab-port){
     font-size: $mobile-item-notes-fontsize;

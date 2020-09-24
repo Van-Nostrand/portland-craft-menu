@@ -76,10 +76,8 @@
       position: relative;
       display: inline-block;
       height: $desktop-item-logo-size;
-      margin: 0 0.1rem;
-      top: -1rem;
-      stroke: $brown-brown;
-    
+      margin: 0.8rem 0.1rem;
+      top: -1rem;    
       @include respond(tab-port){
         height: $phone-item-logo-size;
         margin: 0 0.3rem;

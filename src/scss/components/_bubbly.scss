@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @include respond(tab-port){
-    width: 80%;
+    width: 90%;
     margin: 0 auto 2rem;
   }
 
@@ -17,7 +17,7 @@
     @include respond(tab-port){
       flex-flow: column;
       margin: 0;
-      width: 100%;
+      // width: 100%;
     }
 
     .wine-item{
@@ -25,7 +25,7 @@
       grid-template-columns: 60% 20% 20%;
 
       @include respond(tab-port){
-        width: 100%;
+        // width: 100%;
         grid-template-columns: 60% 20% 20%;
       }
 

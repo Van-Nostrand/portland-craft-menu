@@ -116,10 +116,11 @@
   display: flex;
   flex-flow: row;
   justify-content: center;
+  width: 100%;
 
   img{
 
-    //the svg was rendered offset, so this corrects that
+    //the svg isn't centered properly, so this corrects that until I edit it
     position: relative;
     left: -6px;
   }

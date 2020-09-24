@@ -391,7 +391,7 @@ export const COCKTAILS = [
   {
     name: "Moscow Mule / Dark & Stormy",
     price: "12",
-    notes: "Absolut vodka or Goslings black rum, sugar, Angostura bitters, Fentiman's ginger beer"
+    notes: "Absolut vodka or Goslings black rum, lime, sugar, Angostura bitters, Fentiman's ginger beer"
   },
   {
     name: "Whiskey Sour",
@@ -406,7 +406,7 @@ export const COCKTAILS = [
   {
     name: "Daquiri",
     price: "12",
-    notes: "dark rum, lime, sugar"
+    notes: "Dark rum, lime, sugar"
   },
   {
     name: "Negroni Sour",
@@ -415,7 +415,7 @@ export const COCKTAILS = [
   },
   {
     name: "Best Bloody Caesar",
-    price: "9 / 13",
+    price: "9 / $13",
     notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
   },
   {
