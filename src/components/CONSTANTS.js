@@ -462,7 +462,7 @@ export const HAPPY_HOUR = [
   {
     name: "Select Single/Double Highballs",
     prices: [
-      {price: "5/7.50", size: ""}
+      {price: "5 / $7.50", size: ""}
     ]
   },
   {

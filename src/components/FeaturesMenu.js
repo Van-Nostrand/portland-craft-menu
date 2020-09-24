@@ -59,7 +59,7 @@ const LineItem = (props) => {
                 <circle cx="5" cy="5" r="5"></circle>
               </svg> : ""}
               <div className="item-price">
-                {line.price}
+                ${line.price}
               </div>
               {line.size !== "" ? <div className="item-size">{line.size}</div> : "" }
             </span>
