@@ -29,7 +29,7 @@ export const FoodMenu = ({logos, menuData}) => {
           logos={logos} />
 
         <FoodSection 
-          section="Larger" 
+          section="Large Plates" 
           items={menuData.LARGER} 
           logos={logos} />
 

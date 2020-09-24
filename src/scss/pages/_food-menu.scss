@@ -31,7 +31,7 @@
   }
 }
 
-.barsnacks::before, .faux-section::before, .larger::before, .sweets::before{
+.barsnacks::before, .faux-section::before, .largeplates::before, .sweets::before{
   @include desktopPseudoDivider();
   @include respond(tab-port){
     @include mobilePseudoDivider();
