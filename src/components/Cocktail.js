@@ -38,7 +38,7 @@ export const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
       </div>
 
       <div className="cocktail-price item-price">
-        <span>{price}</span>
+        <span>${price}</span>
       </div>
 
       <div className="cocktail-notes item-notes">

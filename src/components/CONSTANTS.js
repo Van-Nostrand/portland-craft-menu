@@ -233,7 +233,7 @@ export const LARGER = [
   {
     name: "Grain Bowl",
     price: "21",
-    notes: "Farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
+    notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
     vegetarian: false,
     vegan: true,
     glutenFree: true, 
@@ -264,11 +264,9 @@ export const SWEETS = [
     dairyFree: false
   },
   {
-    // "Stone fruit fried" sounds like the pie was fried in stone fruits, or using a method involving stone fruits. 
-    // name: "Stone Fruit Fried Pie",
-    name: "Fried Stone Fruit Pie",
+    name: "Fried Pear Pie",
     price: "8",
-    notes: "Sponge cake, whipped cream, cacao nibs",
+    notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
     vegetarian: true,
     vegan: false,
     glutenFree: false, 
