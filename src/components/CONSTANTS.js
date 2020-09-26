@@ -77,7 +77,7 @@ export const SNACKS = [
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
     vegetarian: false,
     vegan: false,
-    glutenFree: false, 
+    glutenFree: false,
     nutFree: true, 
     dairyFree: false
   }
@@ -86,7 +86,7 @@ export const SNACKS = [
 export const OMNIVORES = [
   {
     name: "Rossdown Wings",
-    price: "18",
+    price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
     vegetarian: false,
     vegan: false,
@@ -242,7 +242,7 @@ export const LARGER = [
   },
   {
     name: "Biscuit and Gravy",
-    price: "18",
+    price: "14",
     notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
     vegetarian: true,
     vegan: false,
