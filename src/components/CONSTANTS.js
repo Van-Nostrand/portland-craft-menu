@@ -19,7 +19,7 @@ export const SNACKS = [
     vegan: false,
     glutenFree: true, 
     nutFree: true, 
-    dairyFree: false
+    dairyFree: true
   },
   {
     name: "Warm Mixed Olives",
@@ -236,7 +236,7 @@ export const LARGER = [
     notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
     vegetarian: false,
     vegan: true,
-    glutenFree: true, 
+    glutenFree: false, 
     nutFree: false, 
     dairyFree: true
   },
