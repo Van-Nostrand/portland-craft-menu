@@ -4,12 +4,24 @@ import { Food } from "./Food";
 export const FoodSection = ({section, items, logos}) => {
 
   let foods = items.map((item, i) => {
-    let dietlogos = {
-      glutenFree: item.glutenFree ? logos.gflogo : false,
-      vegetarian: item.vegetarian ? logos.vegetarianlogo : false,
-      vegan: item.vegan ? logos.veganlogo : false,
-      nutFree: item.nutFree ? logos.nutFree : false,
-      dairyFree: item.dairyFree ? logos.dairyFree : false
+    let dietlogos;
+    if(logos){
+      dietlogos = {
+        glutenFree: item.glutenFree ? logos.gflogo : false,
+        vegetarian: item.vegetarian ? logos.vegetarianlogo : false,
+        vegan: item.vegan ? logos.veganlogo : false,
+        nutFree: item.nutFree ? logos.nutFree : false,
+        dairyFree: item.dairyFree ? logos.dairyFree : false
+      }
+    }
+    else{
+      dietlogos = {
+        glutenFree: false,
+        vegetarian: false,
+        vegan: false,
+        nutFree: false,
+        dairyFree: false,
+      }
     }
     return <Food 
               itemName={item.name} 

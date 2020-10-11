@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Food = ({ itemName = "unnamed", price = "23", notes="notes go here", logos }) => {
+export const Food = ({ itemName = "unnamed", price = "23", notes="", logos }) => {
 
   let dietLogos = <>
     {logos.glutenFree ? 
@@ -39,7 +39,6 @@ export const Food = ({ itemName = "unnamed", price = "23", notes="notes go here"
       </div>
 
       <div className="item-price">
-        
         <svg viewBox="0 0 12 12" >
           <circle cx="5" cy="5" r="5"/>
         </svg>

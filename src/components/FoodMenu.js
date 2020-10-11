@@ -37,6 +37,11 @@ export const FoodMenu = ({logos, menuData}) => {
           section="Sweets" 
           items={menuData.SWEETS} 
           logos={logos} />
+        
+        <FoodSection 
+          section="Sides" 
+          items={menuData.SIDES} 
+          logos={logos} />
 
         <section className="diet-logo-legend">
           <div className="diet-logo-legend--item">

@@ -12,7 +12,8 @@ import {
   OMNIVORES,
   HERBIVORES,
   LARGER,
-  SWEETS
+  SWEETS,
+  SIDES
 } from "./CONSTANTS";
 import gflogo from "../assets/Gluten_Free_symbol.svg";
 import vegetarianlogo from "../assets/Vegetarian_symbol.svg";
@@ -26,7 +27,7 @@ export const PageLoader = ({ pageTitle}) => {
   switch(true){
     case /food/.test(pageTitle): 
       currentPage = <FoodMenu
-                      menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS}} 
+                      menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES}} 
                       logos={{gflogo, vegetarianlogo, veganlogo, nutFree, dairyFree}} />;
       break;
     case /drinks/.test(pageTitle): 

@@ -87,3 +87,14 @@
 .food-menu .omnivores, .food-menu .herbivores{
   padding-top: 1rem;
 }
+
+.sides {
+  width: 60%;
+
+  @include respond(tab-port){
+    width: 70%;
+  }
+  @include respond(phone){
+    width: 70%;
+  }
+}

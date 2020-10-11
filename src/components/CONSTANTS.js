@@ -1,4 +1,42 @@
 import React from "react";
+export const SIDES = [
+  {
+    name: "House Aioli",
+    price: "1"
+  },
+  {
+    name: "Extra Bread",
+    price: "3"
+  },
+  {
+    name: "Maple Syrup",
+    price: "2"
+  },
+  {
+    name: "Salad",
+    price: "5"
+  },
+  {
+    name: "Coconut Gravy",
+    price: "2"
+  },
+  {
+    name: "Chicken Gravy",
+    price: "2"
+  },
+  {
+    name: "Waffle",
+    price: "5"
+  },
+  {
+    name: "Fried Chicken Breast",
+    price: "8"
+  },
+  {
+    name: "Tofu",
+    price: "6"
+  },
+];
 
 export const SNACKS = [
   {
