@@ -108,16 +108,6 @@ export const SNACKS = [
     glutenFree: true, 
     nutFree: true, 
     dairyFree: true
-  },
-  {
-    name: "Craft Poutine",
-    price: "11",
-    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: true, 
-    dairyFree: false
   }
 ];
 
@@ -141,6 +131,16 @@ export const OMNIVORES = [
     glutenFree: true, 
     nutFree: true, 
     dairyFree: true
+  },
+  {
+    name: "Craft Poutine",
+    price: "11",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false,
+    nutFree: true, 
+    dairyFree: false
   },
   {
     name: "Pacific Wild Shrimp Fritter",
