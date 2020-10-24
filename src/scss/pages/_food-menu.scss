@@ -14,8 +14,6 @@
       flex-flow: row wrap;
       margin: 0 $desktop-side-margin 3rem $desktop-side-margin;
       
-      text-align: center;
-      
       @include respond(tab-port){
         flex-flow: column;
         justify-content: flex-start;

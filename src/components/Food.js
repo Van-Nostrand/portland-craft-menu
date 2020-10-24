@@ -33,6 +33,7 @@ export const Food = ({ itemName = "unnamed", price = "23", notes="", logos }) =>
 
   return(
     <li className="food-item">
+      {/* <div className="test-element">test</div> */}
 
       <div className="item-name">
         {itemName}

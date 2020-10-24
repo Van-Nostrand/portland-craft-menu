@@ -58,53 +58,53 @@ section{
   }
 }
 
-.item-name{
-  font-size: $desktop-item-name-fontsize;
-  color: $portland-red;
-  font-weight: 600;
+// .item-name{
+//   font-size: $desktop-item-name-fontsize;
+//   color: $portland-red;
+//   font-weight: 600;
 
-  @include respond(tab-port){
-    font-size: $mobile-item-name-fontsize;
-  }
+//   @include respond(tab-port){
+//     font-size: $mobile-item-name-fontsize;
+//   }
 
-  @include respond(phone){
-    font-size: $phone-item-name-fontsize;
-  }
-}
+//   @include respond(phone){
+//     font-size: $phone-item-name-fontsize;
+//   }
+// }
 
-.item-price{
-  font-size: $desktop-item-price-fontsize;
-  color: $dark-font;
+// .item-price{
+//   font-size: $desktop-item-price-fontsize;
+//   color: $dark-font;
  
 
-  @include respond(tab-port){
-    font-size: $mobile-item-price-fontsize;
-  }
+//   @include respond(tab-port){
+//     font-size: $mobile-item-price-fontsize;
+//   }
 
-  @include respond(phone){
-    font-size: $phone-item-price-fontsize;
-  }
-}
+//   @include respond(phone){
+//     font-size: $phone-item-price-fontsize;
+//   }
+// }
 
-.item-notes{
-  font-size: $desktop-item-notes-fontsize;
-  color: $dark-font;
-  font-weight: 400;
-  font-style: italic;
+// .item-notes{
+//   font-size: $desktop-item-notes-fontsize;
+//   color: $dark-font;
+//   font-weight: 400;
+//   font-style: italic;
 
-  @include respond(tab-port){
-    font-size: $mobile-item-notes-fontsize;
-  }
-}
+//   @include respond(tab-port){
+//     font-size: $mobile-item-notes-fontsize;
+//   }
+// }
 
-svg{
-  //set size of the dot with height property
-  position: relative;
-  height: $desktop-item-price-dot; 
-  margin: 0 1rem;
-  top: -0.2rem;
+// svg{
+//   //set size of the dot with height property
+//   position: relative;
+//   height: $desktop-item-price-dot; 
+//   margin: 0 1rem;
+//   top: -0.2rem;
 
-  @include respond(tab-port){
-    height: 0rem;
-  }
-}
+//   @include respond(tab-port){
+//     height: 0rem;
+//   }
+// }
