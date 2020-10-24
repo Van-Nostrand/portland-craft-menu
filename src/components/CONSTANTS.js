@@ -113,6 +113,16 @@ export const SNACKS = [
 
 export const OMNIVORES = [
   {
+    name: "Craft Poutine",
+    price: "11",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false,
+    nutFree: true, 
+    dairyFree: false
+  },
+  {
     name: "Rossdown Wings",
     price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
@@ -131,16 +141,6 @@ export const OMNIVORES = [
     glutenFree: true, 
     nutFree: true, 
     dairyFree: true
-  },
-  {
-    name: "Craft Poutine",
-    price: "11",
-    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: true, 
-    dairyFree: false
   },
   {
     name: "Pacific Wild Shrimp Fritter",
@@ -216,6 +216,16 @@ export const HERBIVORES = [
     dairyFree: true
   },
   {
+    name: "Biscuit and Gravy",
+    price: "14",
+    notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
+    vegetarian: true,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: true, 
+    dairyFree: false
+  },
+  {
     name: '"Fried Rice"',
     price: "14",
     notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
@@ -278,16 +288,7 @@ export const LARGER = [
     nutFree: false, 
     dairyFree: true
   },
-  {
-    name: "Biscuit and Gravy",
-    price: "14",
-    notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
-  }
+  
 ];
 
 export const SWEETS = [
