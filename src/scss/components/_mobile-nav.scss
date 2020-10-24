@@ -1,27 +1,18 @@
 .mobile-nav{
-  position: absolute;
-  width: 0;
-  opacity: 0;
-  
-  z-index: 9;
-  height: 100%;
-  margin-top: 0;
-  background: $dark-font;
-
-  &__background-wrapper{
-    position: relative;
-  }
+  display: none;
   
   @include respond(tab-port){
-    position: relative;
+    position: fixed;
     top: 0;
-    width: 100%;
-  
+    
     display: flex;
     flex-flow: row nowrap;
-    justify-content: start;
+    width: 100%;
     align-items: center;
-    opacity: 1;
+    height: $mobile-nav-height;
+
+    background: $dark-font;
+    z-index: 9;
   }
 
   &__button-group{
@@ -33,22 +24,15 @@
       justify-content: space-around;
       width: 100%;
       height: 100%;
-      
-      
     }
   }
   
   &__logo{
     display: inline-block;
-    height: $desktop-nav-logo-height;
+    height: $mobile-nav-height;
+    padding-right: $mobile-side-margin;
 
-    z-index: 9;
-    background: $dark-font;
-
-    @include respond(tab-port){
-      height: $mobile-nav-height;
-      padding-right: $mobile-side-margin;
-    }
+    background-color: $dark-font;
 
     @include respond(phone){
       height: $phone-nav-logo-height;
@@ -61,59 +45,4 @@
       height: 100%;
     }
   }  
-}
-
-.mobile-nav-drawer{
-  position: absolute;
-  top: -20%;
-  z-index: -1;
-  height: 120%;
-
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  background: $portland-red;
-  
-  transition: transform 0.3s;
-
-  @include respond(phone){
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-  }
-
-  button:nth-of-type(1){grid-column: 1; grid-row: 1;}
-  button:nth-of-type(2){grid-column: 2; grid-row: 1;}
-  button:nth-of-type(3){grid-column: 1; grid-row: 2;}
-  button:nth-of-type(4){grid-column: 2; grid-row: 2;}
-
-  button{
-    margin: 0 1rem;
-
-    @include respond(phone){
-      margin: 0;
-    }
-  }
-}
-
-.opendrawer{
-  @include respond(tab-port){
-    transform: translateY(100%);
-  }
-}
-
-.menu-burger{
-  background: $dark-font;
-  width: 100%;
-  height: 100%;
-
-  svg{
-    position: relative;
-    top: $mobile-nav-height / 4;
-    left: 4rem;
-
-    rect{
-      fill: $portland-beige;
-    }
-  }
 }

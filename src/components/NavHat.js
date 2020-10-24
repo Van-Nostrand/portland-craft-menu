@@ -46,42 +46,32 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     <div className="nav-hat-wrapper">
     
       <nav className="full-nav" >
-
-        <NavButtonGroup classString={"full-nav__group-left"} buttons={leftButtons} />
-
-        <span className="full-nav__group-logo">
+        <NavButtonGroup classString={"full-nav__button-group-left"} buttons={leftButtons} />
+        <div className="full-nav__group-logo">
           <img src={pclogo} />
-        </span>
-
-        <NavButtonGroup classString={"full-nav__group-right"} buttons={rightButtons} />
-
+        </div>
+        <NavButtonGroup classString={"full-nav__button-group-right"} buttons={rightButtons} />
       </nav>
 
 
       <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
-        <NavButtonGroup classString={"secondary-nav__group"} buttons={secondaryNavButtons}/>
+        <NavButtonGroup classString={"secondary-nav__button-group"} buttons={secondaryNavButtons}/>
       </nav>
       
 
       <nav className="mobile-nav" >
-
         {/* {menuHamburger} */}
-
         {/* <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} /> */}
-
         <NavButtonGroup classString={"mobile-nav__button-group"} buttons={mobileButtons} />
-
-        <span className="mobile-nav__logo" >
+        <div className="mobile-nav__logo" >
           <img src={pclogo} />
-        </span>
-
+        </div>
       </nav>
+
       <div className="secondary-nav-scroll-target" ref={menuSwitchRef} ></div>
 
     </div>
   )
-
-  
 };
 
 const MobileNavDrawer = (props) => {

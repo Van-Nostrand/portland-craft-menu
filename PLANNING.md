@@ -1,4 +1,12 @@
+Websites to imitate:
+The Flying Pig - https://theflyingpigvan.com/menu/
+Havana - https://www.havanavancouver.com/menu
+The Charlatan - http://thecharlatanrestaurant.com/kitchen/
+Pourhouse - https://www.pourhousevancouver.com/menu/lunchdinner
+Guilt & Co - https://www.guiltandcompany.com/menu.html
+
 IMPLEMENT BEM ARCHITECTURE
+NAH
 Block, Element, Modifier
 .block {}
 .block__element{}
@@ -39,37 +47,3 @@ CSS order suggestion from css-tricks:
   /* Other */
   cursor: pointer;
 }
-
-================================================
-==================  LAYOUT ==================
-
-PageWrapper
-- NavHat
-- Menu
-- - FoodMenu (old Menu)
-- - - FoodSection
-- - - - Food
-- - DrinksMenu
-- - - WineSection 
-- - - - Wine
-- - - CocktailSection
-- - - - Cocktail
-
-spiced candied "nuts"
-
-
-== updates to portland craft website ==
-
-font is rgb(32, 23, 19)
-light font is rgba(0, 0, 0, 0.5)
-
-color: rgba(0, 0, 0, 0.5);
-font-family: "Raleway";
-font-size: 15px;
-font-style: normal;
-font-weight: 700; or 400
-letter-spacing: 0.4px;
-line-height: 24px;
-overflow-wrap: break-word;
-text-align: center;
-white-space: pre-wrap

@@ -5,18 +5,15 @@
   top: $desktop-nav-height;
 
   margin: 0 auto 3rem auto;
-  padding-top: $desktop-pad-top;
   width: $desktop-menu-width;
-  min-height: 100vh;
 
   background-color: $menu-background-color;
-  color: black;
+  color: $alt-dark-font;
   font-size: 2.5rem;
 
   @include respond(tab-port){
     width: $mobile-menu-width;
-    top: 0;
-    height: auto;
+    top: $mobile-nav-height + 3rem;
   }
 }
 

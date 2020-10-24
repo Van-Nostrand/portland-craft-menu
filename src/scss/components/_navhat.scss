@@ -2,22 +2,10 @@
   position: absolute;
   width: 100%;
   top: 0;
-  height: 100%; //without this the full-nav scroll animation doesn't trigger
   z-index: 100;
-
-  @include respond(tab-port){
-    position: sticky;
-    height: $mobile-nav-height;
-    padding-top: -1px;
-  }
-
-  @include respond(phone){
-    height: $phone-nav-height;
-  }
 
   button {
     border: none;
-
     cursor: pointer;
 
     background: none;
@@ -46,7 +34,4 @@
     color: $portland-off-white;
     transform: translateY(0.1rem);
   }
-
 }
-
-

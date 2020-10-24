@@ -12,39 +12,18 @@
   align-items: center;
 
   @include respond(tab-port){
-    position: absolute;
-    width: 0;
-    height: 0; 
-    opacity: 0;
+    display: none;
   }
 
-  &__group-left, &__group-right, &__group-logo{
-    height: $desktop-nav-element-height;
-  }
 
-  &__group-left, &__group-right{
+  &__button-group-left, &__button-group-right{
     width: 30vw;
     display: flex;
     flex-flow: row;
     justify-content: space-around;
-
-    button{
-      // border: none;
-      
-      // background: none;
-      // font-size: $button-font-size;
-      // font-weight: 800;
-      // font-family: inherit;
-      // color: $portland-off-white;
-      // text-align: center;
-      // text-shadow: 
-      //   0.3rem 0.3rem $button-font-shadow, 
-      //   -1px 0 1px $button-font-outline, 
-      //   0 -1px 1px $button-font-outline;
-    }
   }
 
-  &__group-logo{
+  &__button-group-logo{
     display: inline-block;
     padding-left: 1rem;
 
@@ -66,47 +45,35 @@
 
 .secondary-nav{
   position: fixed;
-  top: 0;
+  top: -($desktop-secondary-nav-height + 0.1rem) ;
 
   display: flex;
   flex-flow: row;
-
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: $desktop-secondary-nav-height;
   
-  background: black;
+  background-color: $dark-font;
   
-  opacity: 0;
-  transform: translateY(-100%);
   transition: transform 0.3s;
 
+  @include respond(tab-port){
+    display: none;
+  }
 
-  &__group{
+  &__button-group{
     display: flex;
     flex-flow: row;
     width: $desktop-menu-width;
     margin: 0 auto;
     justify-content: space-around;
-
-    font-size: $button-font-size;
-
-    button{
-      min-width: 17rem;
-    }
   }
 }
 
 .secondary-nav-open{
+  transform: translateY(100%);
   @include respond(tab-port){
     display: none;
   }
-  @include respond(desktop){
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  @include respond(big-desktop){
-    opacity: 1;
-    transform: translateY(0%);
-  }
-
 }
