@@ -69,7 +69,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
         {/* <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} /> */}
 
-        <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} />
+        <NavButtonGroup classString={"mobile-nav__button-group"} buttons={mobileButtons} />
 
         <span className="mobile-nav__logo" >
           <img src={pclogo} />

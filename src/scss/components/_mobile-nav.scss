@@ -24,7 +24,7 @@
     opacity: 1;
   }
 
-  &__buttons{
+  &__button-group{
 
     @include respond(tab-port){
       display: flex;
@@ -34,15 +34,7 @@
       width: 100%;
       height: 100%;
       
-      background: $dark-font;
       
-      color: $portland-off-white;
-      text-shadow: 0.3rem 0.3rem $button-font-shadow;
-      cursor: pointer;
-    }
-    
-    @include respond(phone){
-      font-size: $phone-nav-fontsize;
     }
   }
   
