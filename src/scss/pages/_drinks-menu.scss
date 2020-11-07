@@ -3,17 +3,12 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 25% 25%;
-  padding-top: 4rem;
   justify-items: center;
 
   @include respond(tab-port){
     display: flex;
     flex-flow: column;
     align-items: center;
-  }
-
-  section{
-    padding-top: 2rem;
   }
     
   //red wine grid settings
@@ -56,22 +51,5 @@
       margin-top: 0;
       
     }
-  }
-}
-
-.drinks-menu::before{
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 6rem;
-
-  border: 0.3rem solid $portland-red;
-  height: 0.2rem;
-  width: 88%;
-  margin: -3rem -44%;
-
-  @include respond(tab-port){
-    border: 0.4rem solid $portland-red;
-
   }
 }

@@ -1,6 +1,7 @@
 import React, { useRef} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
 import pclogo from "../assets/portlandlogoplain.svg";
+import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
 
 export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   let menuSwitchRef = useRef(null);
@@ -48,7 +49,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       <nav className="full-nav" >
         <NavButtonGroup classString={"full-nav__button-group-left"} buttons={leftButtons} />
         <div className="full-nav__group-logo">
-          <img src={pclogo} />
+          <img src={blkWhiteLogo} />
         </div>
         <NavButtonGroup classString={"full-nav__button-group-right"} buttons={rightButtons} />
       </nav>
@@ -64,7 +65,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
         {/* <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} /> */}
         <NavButtonGroup classString={"mobile-nav__button-group"} buttons={mobileButtons} />
         <div className="mobile-nav__logo" >
-          <img src={pclogo} />
+          <img src={blkWhiteLogo} />
         </div>
       </nav>
 

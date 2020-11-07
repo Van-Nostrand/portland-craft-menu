@@ -7,8 +7,8 @@
   margin: 0 auto 3rem auto;
   width: $desktop-menu-width;
 
-  background-color: $menu-background-color;
-  color: $alt-dark-font;
+  background-color: #333;
+  color: #eee;
   font-size: 2.5rem;
 
   @include respond(tab-port){
@@ -17,10 +17,12 @@
   }
 }
 
-
 section{
   position: relative;
   width: 80%;
+  padding-top: 2rem;
+
+  border-top: 3px solid $portland-red;
 
   @include respond(tab-port){
     // adjust this in wine.scss too

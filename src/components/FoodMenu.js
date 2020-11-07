@@ -8,26 +8,22 @@ export const FoodMenu = ({logos, menuData}) => {
       <div className="menu food-menu">
 
         <FoodSection 
-          section="Bar Snacks" 
+          section="Snacks" 
           items={menuData.SNACKS} 
           logos={logos} />
 
-        <section className="faux-section">
-          <div className="section__title">
-            SMALL PLATES
-          </div>
-        </section>
+        <div className="small-plates-wrapper">
+          <FoodSection
+            section="Omnivores"
+            items={menuData.OMNIVORES}
+            logos={logos} />
 
-        <FoodSection 
-          section="Omnivores" 
-          items={menuData.OMNIVORES} 
-          logos={logos} />
-
-        <FoodSection 
-          section="Herbivores" 
-          items={menuData.HERBIVORES} 
-          logos={logos} />
-
+          <FoodSection
+            section="Herbivores"
+            items={menuData.HERBIVORES}
+            logos={logos} />
+        </div>
+        
         <FoodSection 
           section="Large Plates" 
           items={menuData.LARGER} 

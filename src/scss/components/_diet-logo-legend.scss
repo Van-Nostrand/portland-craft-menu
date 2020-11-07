@@ -9,7 +9,8 @@
   margin-bottom: 4rem;
 
   font-size: $desktop-item-name-fontsize;
-  color: $dark-font;
+  // color: $dark-font;
+  color: #eee;
 
   @include respond(tab-port){
     font-size: $mobile-item-name-fontsize;

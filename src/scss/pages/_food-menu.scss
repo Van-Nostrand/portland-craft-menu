@@ -8,11 +8,9 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding-top: 2rem;
   
     .section__list{
       flex-flow: row wrap;
-      margin: 0 $desktop-side-margin 3rem $desktop-side-margin;
       
       @include respond(tab-port){
         flex-flow: column;
@@ -29,48 +27,8 @@
   }
 }
 
-.barsnacks::before, .faux-section::before, .largeplates::before, .sweets::before{
-  @include desktopPseudoDivider();
-  @include respond(tab-port){
-    @include mobilePseudoDivider();
-  }
-}
-
-.herbivores::before{
-  @include respond(tab-port){
-    @include singleLinePseudoDivider(90%);
-  }
-}
-
-.mains::before{ 
-  @include desktopPseudoDivider(); 
-  @include respond(tab-port){
-    @include mobilePseudoDivider();
-  }
-}
-.burgers::before{ 
-  @include desktopPseudoDivider(); 
-  @include respond(tab-port){
-    @include mobilePseudoDivider();
-  }
-}
-
-.menu-dips::before{
-  @include desktopPseudoDivider();
-  @include respond(tab-port){
-    @include mobilePseudoDivider();
-  }
-}
-
-.diet-logo-legend::before{
-  @include desktopPseudoDivider();
-  @include respond(tab-port){
-    @include mobilePseudoDivider();
-  }
-}
-
 .omnivores .section__title, .herbivores .section__title{
-  color: $soft-black;
+  color: #eee;
   font-size: $desktop-section-fontsize - 0.4rem;
 
   @include respond(tab-port){

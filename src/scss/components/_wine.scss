@@ -35,7 +35,7 @@
 
     grid-column: 1;
     grid-row: 2;
-    color: $dark-font;
+    color: #eee;
     font-size: $desktop-item-name-fontsize - 0.3rem;
 
     @include respond(tab-port){
@@ -47,8 +47,6 @@
       font-size: $phone-item-name-fontsize - 0.3rem;
     }
   }
-  
-
 
   &-price{
 
@@ -68,9 +66,8 @@
 
   font-size: $desktop-item-price-fontsize; 
   font-weight: 400;
-  color: $button-font-outline;
+  color: #eee;
   align-self: flex-end;
-  // letter-spacing: -0.1rem;
 
   @include respond(tab-port){
     font-size: $mobile-item-price-fontsize;

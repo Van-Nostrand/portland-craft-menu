@@ -27,7 +27,8 @@
     text-align: center;
     white-space: nowrap;
 
-    color: $dark-font;
+    // color: $dark-font;
+    color: #eee;
     font-size: $desktop-item-name-fontsize;
 
     @include respond(tab-port){
