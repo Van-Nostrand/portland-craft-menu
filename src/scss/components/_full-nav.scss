@@ -4,7 +4,7 @@
   top: 0;
 
   width: 100%;
-  background-color: $dark-font;
+  background-color: $menu-background-color;
   height: $desktop-nav-height;
   display: flex;
   flex-flow: row;
@@ -54,7 +54,7 @@
   width: 100%;
   height: $desktop-secondary-nav-height;
   
-  background-color: $dark-font;
+  background-color: $menu-background-color;
   
   transition: transform 0.3s;
 

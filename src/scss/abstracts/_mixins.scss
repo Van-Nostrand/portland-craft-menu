@@ -1,6 +1,4 @@
 // ORDER: Base + typography > general layout + grid > page layout > components
-
-// use em for media queries because media queries get their font-size from a different place.. I forget how this works, but using rem supposedly causes problems.
 @mixin respond($breakpoint){
   @if $breakpoint == phone {
     @media screen and (max-width: 37.5em) { @content }; // 600px

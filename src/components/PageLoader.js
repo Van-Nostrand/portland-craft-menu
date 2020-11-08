@@ -1,6 +1,7 @@
 import React from "react";
 import {FoodMenu} from "./FoodMenu";
 import {DrinksMenu} from "./DrinksMenu";
+import {DrinksMenu2} from "./DrinksMenu2";
 import {FeaturesMenu} from "./FeaturesMenu";
 import {
   WHITE_WINE,
@@ -31,7 +32,7 @@ export const PageLoader = ({ pageTitle}) => {
                       logos={{gflogo, vegetarianlogo, veganlogo, nutFree, dairyFree}} />;
       break;
     case /drinks/.test(pageTitle): 
-      currentPage = <DrinksMenu 
+      currentPage = <DrinksMenu2 
                       menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS}} />;
       break;
     case /specials/.test(pageTitle): 

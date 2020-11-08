@@ -20,7 +20,7 @@
 
     @include respond(tab-port){
       font-size: $mobile-nav-fontsize;
-      background-color: $dark-font;
+      background-color: $menu-background-color;
     }
 
     @include respond(phone){

@@ -17,7 +17,7 @@ html{
   text-rendering: optimizeLegibility;
   letter-spacing: 0.04rem;
 
-  background-color: #333;
+  background-color: $menu-background-color;
   
   @include respond(tab-land){  // width < 1200
     font-size: 56.25%;
