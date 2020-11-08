@@ -3,6 +3,7 @@ import {FoodMenu} from "./FoodMenu";
 import {DrinksMenu} from "./DrinksMenu";
 import {DrinksMenu2} from "./DrinksMenu2";
 import {FeaturesMenu} from "./FeaturesMenu";
+import {ElementTestPage} from "./ElementTestPage";
 import {
   WHITE_WINE,
   RED_WINE,
@@ -37,6 +38,9 @@ export const PageLoader = ({ pageTitle}) => {
       break;
     case /specials/.test(pageTitle): 
       currentPage = <FeaturesMenu menuData={HAPPY_HOUR} />;
+      break;
+    case /testpage/.test(pageTitle):
+      currentPage = <ElementTestPage />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }

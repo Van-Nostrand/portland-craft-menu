@@ -1,3 +1,16 @@
+@font-face{
+  font-family: 'Gotham Regular';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../../fonts/Gotham Condensed Book Regular.woff2') format('woff2');
+}
+@font-face{
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../../fonts/GothamCondensed-Book.woff2') format('woff2');
+}
 *,
 *::before,
 *::after{
@@ -6,16 +19,18 @@
   box-sizing: inherit;
 }
 
+
 // set html font-size to 62.5%
 // reasoning:
 // the default font size in most browsers is 16px. some users like to change the font size for vision reasons. if we set the html font-size to a static value, then we remove the users ability to do this. if we set it to a percentage, with the intention being that we design the page with 1rem = 10px on a 16px font size page, then we need to set the page to a percentage that is equivalent to 10/16.  
 
 html{
   font-size: 62.5%;
-  font-family: "Gotham", sans-serif;
-  font-weight: 500;
+  // font-family: "Gotham", sans-serif;
+  font-family: "Helvetica";
+  // letter-spacing: 0.04rem;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
-  letter-spacing: 0.04rem;
 
   background-color: $menu-background-color;
   

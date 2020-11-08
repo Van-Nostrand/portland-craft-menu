@@ -32,7 +32,7 @@
     height: $mobile-nav-height;
     padding-right: $mobile-side-margin;
 
-    background-color: $dark-font;
+    background-color: $menu-background-color;
 
     @include respond(phone){
       height: $phone-nav-logo-height;
