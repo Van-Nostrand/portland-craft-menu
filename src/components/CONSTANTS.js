@@ -101,7 +101,7 @@ export const SNACKS = [
   },
   {
     name: "Candied Bacon",
-    price: "2 for one or $10 for six",
+    price: "2 for 1 or $10 for 6",
     notes: "Johnston Farm smoked bacon baked with house-spice blend",
     vegetarian: false,
     vegan: false,

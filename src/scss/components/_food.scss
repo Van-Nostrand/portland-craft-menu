@@ -1,92 +1,106 @@
-// .food-item{
-//   position: relative;
+.small-plates-wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+}
 
-//   display: inline-block;
-//   flex: 2 1 40%;
-//   max-width: 35rem;
-//   max-height: 25rem;
-//   margin: 0.2rem 0;
+.item-name{
+  font-size: $desktop-item-name-fontsize;
+  // color: $dark-font;
+  color: #eee;
 
-//   @include respond(tab-port){
-//     position: relative;
+  font-weight: 600;
+
+  @include respond(tab-port){
+    font-size: $mobile-item-name-fontsize;
+  }
+
+  @include respond(phone){
+    font-size: $phone-item-name-fontsize;
+  }
+}
+
+.item-price{
+  font-size: $desktop-item-price-fontsize;
+  // color: $dark-font;
+  color: #eee;
+ 
+  @include respond(tab-port){
+    font-size: $mobile-item-price-fontsize;
+  }
+
+  @include respond(phone){
+    font-size: $phone-item-price-fontsize;
+  }
+}
+
+.item-notes{
+  font-size: $desktop-item-notes-fontsize;
+  // color: $dark-font;
+  color: #eee;
+  font-weight: 400;
+  font-style: italic;
+
+  @include respond(tab-port){
+    font-size: $mobile-item-notes-fontsize;
+  }
+}
+
+// separating dots. Badly implemented. Needs changing
+svg{
+  display: none;
+}
+
+.food-item{
+  position: relative;
+  flex: 2 1 40%;
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  row-gap: 0.1rem;
+  max-width: 34rem;
+  max-height: 25rem;
+
+  margin: 1rem;
+
+  @include respond(tab-port){
+    margin: 0.4rem 0;
+    max-width: none;
+    max-height: none;
+    align-content: flex-start;
+  }
+
+  .item-name{
+    display: inline-block;
     
-//     margin: 0.4rem 0;
-//     display: grid;
-//     grid-template-columns: 1fr auto;
-//     grid-template-rows: auto auto auto auto;
+    letter-spacing: 0;
+    grid-column: 1;
+    grid-row: 1 ;
+    justify-self: start;
+  }
 
-//     width: 100%;
-//     max-width: none;
-//     max-height: none;
-//   }
+  .item-price{
+    display: inline-block;
 
-//   @include respond(phone){
-//     align-content: flex-start;
-//   }
-
-//   .item-name{
-//     display: inline-block;
-//     text-transform: capitalize;
-
-//     @include respond(tab-port) {
-//       letter-spacing: 0;
-//       grid-column: 1;
-//       grid-row: 1 / span 2;
-//       align-self: end;
-//     }
-//   }
-
-//   .item-price{
-//     display: inline-block;
-
-//     @include respond(tab-port){
-//       text-align: end;
-//       grid-column: 2;
-//       grid-row: 1 / span 2;
-//     }
-
-//     // svg{
-//     //   //set size of the dot with height property
-//     //   position: relative;
-//     //   height: $desktop-item-price-dot; 
-//     //   margin: 0 1rem;
-//     //   top: -0.2rem;
-
-//     //   @include respond(tab-port){
-//     //     height: 0rem;
-//     //   }
-//     // }
-//   } 
+    text-align: end;
+    grid-column: 2;
+    grid-row: 1;
+  } 
   
-//   .item-notes{
+  .item-notes{
 
-//     @include respond(tab-port){
-//       grid-column: 1 / span 2;
-//       grid-row: 3;
-//     }
-//   }
+    justify-self: start;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+  .diet-string{
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+}
 
-//   .item-diet-logos{
-
-//     @include respond(tab-port){
-//       grid-column: 1;
-//       grid-row: 4;
-//     }
-
-//     .dietlogo{
-//       position: relative;
-//       display: inline-block;
-//       height: $desktop-item-logo-size;
-//       margin: 0.8rem 0.1rem;
-//       top: -1rem;    
-//       @include respond(tab-port){
-//         height: $phone-item-logo-size;
-//         margin: 0 0.3rem;
-//         top: 0;
-//       }
-//     }
-//   }
-
-// }
-
-
+.test-element{
+  font-size: 112.5em;
+}

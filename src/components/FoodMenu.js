@@ -12,17 +12,15 @@ export const FoodMenu = ({logos, menuData}) => {
           items={menuData.SNACKS} 
           logos={logos} />
 
-        <div className="small-plates-wrapper">
-          <FoodSection
-            section="Omnivores"
-            items={menuData.OMNIVORES}
-            logos={logos} />
+        <FoodSection
+          section="Omnivores"
+          items={menuData.OMNIVORES}
+          logos={logos} />
 
-          <FoodSection
-            section="Herbivores"
-            items={menuData.HERBIVORES}
-            logos={logos} />
-        </div>
+        <FoodSection
+          section="Herbivores"
+          items={menuData.HERBIVORES}
+          logos={logos} />
         
         <FoodSection 
           section="Large Plates" 
@@ -39,38 +37,6 @@ export const FoodMenu = ({logos, menuData}) => {
           items={menuData.SIDES} 
           logos={logos} />
 
-        <section className="diet-logo-legend">
-          <div className="diet-logo-legend--item">
-            <img src={logos.vegetarianlogo} alt="vegetarianlogo" />
-            <svg viewBox="0 0 12 12" >
-              <circle cx="5" cy="5" r="5"/>
-            </svg>vegetarian
-          </div>
-          <div className="diet-logo-legend--item">
-            <img src={logos.veganlogo} alt="veganlogo" />
-            <svg viewBox="0 0 12 12" >
-              <circle cx="5" cy="5" r="5"/>
-            </svg>vegan
-          </div>
-          <div className="diet-logo-legend--item">
-            <img src={logos.gflogo} alt="gflogo" />
-            <svg viewBox="0 0 12 12" >
-              <circle cx="5" cy="5" r="5"/>
-            </svg>gluten free
-          </div>
-          <div className="diet-logo-legend--item">
-            <img src={logos.dairyFree} alt="dflogo" />
-            <svg viewBox="0 0 12 12" >
-              <circle cx="5" cy="5" r="5"/>
-            </svg>dairy free
-          </div>
-          <div className="diet-logo-legend--item">
-            <img src={logos.nutFree} alt="nflogo" />
-            <svg viewBox="0 0 12 12" >
-              <circle cx="5" cy="5" r="5"/>
-            </svg>nut free
-          </div>
-        </section>
       </div>
     </>
   )

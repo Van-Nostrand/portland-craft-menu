@@ -7,14 +7,15 @@
   section{
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-start;
   
     .section__list{
+      display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
       
       @include respond(tab-port){
         flex-flow: column;
-        justify-content: flex-start;
         margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
   
         text-align: start;
@@ -27,8 +28,24 @@
   }
 }
 
-.omnivores .section__title, .herbivores .section__title{
-  color: #eee;
+.snacks .section__title{
+  color: $potential-blue;
+}
+
+.omnivores .section__title{
+  color: $portland-red;
+  font-size: $desktop-section-fontsize - 0.4rem;
+
+  @include respond(tab-port){
+    font-size: $mobile-section-fontsize - 0.4rem;
+  }
+
+  @include respond(phone){
+    font-size: $phone-section-fontsize - 0.4rem;
+  }
+}
+.herbivores .section__title{
+  color: $maybe-green;
   font-size: $desktop-section-fontsize - 0.4rem;
 
   @include respond(tab-port){

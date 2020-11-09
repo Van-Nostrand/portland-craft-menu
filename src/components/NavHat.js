@@ -12,8 +12,24 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     <button onClick={() => changePage("drinks")}>DRINKS</button>
   </>)
 
+  let logo = <div className="logo-container">
+               <img src={blkWhiteLogo} />
+             </div>;
+
   let rightButtons = (<>
     <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
+  </>)
+
+  let allbuttons = (<>
+    <button onClick={() => changePage("food")}>
+      FOOD
+    </button>      
+    <button onClick={() => changePage("drinks")}>
+      DRINKS
+    </button>
+    <button onClick={() => changePage("specials")}>
+      HAPPY-HOUR
+    </button>
   </>)
 
   let mobileButtons = (<>
@@ -29,6 +45,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   </>)
 
   let secondaryNavButtons = (<>
+    {logo}
     {leftButtons}
     {rightButtons}
   </>);
@@ -47,11 +64,12 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     <div className="nav-hat-wrapper">
     
       <nav className="full-nav" >
-        <NavButtonGroup classString={"full-nav__button-group-left"} buttons={leftButtons} />
-        <div className="full-nav__group-logo">
+        {/* <div className="full-nav__group-logo">
           <img src={blkWhiteLogo} />
-        </div>
-        <NavButtonGroup classString={"full-nav__button-group-right"} buttons={rightButtons} />
+        </div> */}
+        {logo}
+        <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
+        
       </nav>
 
 
@@ -61,8 +79,6 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       
 
       <nav className="mobile-nav" >
-        {/* {menuHamburger} */}
-        {/* <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} /> */}
         <NavButtonGroup classString={"mobile-nav__button-group"} buttons={mobileButtons} />
         <div className="mobile-nav__logo" >
           <img src={blkWhiteLogo} />

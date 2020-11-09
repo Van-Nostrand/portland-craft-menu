@@ -1,4 +1,4 @@
-// ORDER: Base + typography > general layout + grid > page layout > components
+// generalized responsive design breakpoints
 @mixin respond($breakpoint){
   @if $breakpoint == phone {
     @media screen and (max-width: 37.5em) { @content }; // 600px
@@ -14,7 +14,6 @@
   }
   @if $breakpoint == big-desk {
     @media screen and (min-width: 112.5em) { @content }; // 1800px
-    //at font-size: 75% on html element, 112.5em is NOT 1800 px. it is 1350px
   }
 }
 
@@ -23,6 +22,11 @@
     0.3rem 0.3rem $button-font-shadow, 
     -1px 0 1px $button-font-outline, 
     0 -1px 1px $button-font-outline;
+}
+
+@mixin newHeadingShadow(){
+  color: $portland-red;
+  text-shadow: 0.07em 0em 0.06em $goth-lavender, 0.09em 0 $potential-blue;
 }
 
 @mixin desktopPseudoDivider(){
@@ -60,49 +64,4 @@
   margin: -2rem (-$width/2 or -45%);
 }
 
-@mixin desktopPseudoFrame($height){
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 2.9rem;
 
-  border: 0.3rem solid $portland-red;
-  height: $height;
-  width: 60vw;
-  margin-left: -30vw;
-  margin-right: -30vw;
-
-  @include respond(tab-port){
-    left: 50%;
-    width: 95%;
-    margin: 0 -47.5%;
-    height: $height + 2.6%;
-  }
-
-  @include respond(phone){
-    
-  }
-}
-@mixin desktopPseudoInnerFrame($height){
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 2.3rem;
-
-  border: 0.3rem solid $portland-red;
-  height: $height;
-  width: 59.5vw;
-  margin-left: -29.75vw;
-  margin-right: -29.75vw;
-
-  @include respond(tab-port){
-    left: 50%;
-    width: 93.6%;
-    margin: 0 -46.8%;
-    height: $height + 1.8%;
-  }
-
-  @include respond(phone){
-    
-  }
-}

@@ -3,7 +3,7 @@ import {NavHat} from "./NavHat";
 import {PageLoader} from "./PageLoader";
 
 export const App = (props) => {
-  let [currentPage, setCurrentPage] = useState("testpage");
+  let [currentPage, setCurrentPage] = useState("food");
   let [mobileNavOpen, setMobileNavOpen] = useState(false); // used for "menu burger", which is not currently being used.. 
 
   useEffect(() => {

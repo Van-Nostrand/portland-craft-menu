@@ -19,6 +19,12 @@
   box-sizing: inherit;
 }
 
+button{
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 
 // set html font-size to 62.5%
 // reasoning:
@@ -26,9 +32,7 @@
 
 html{
   font-size: 62.5%;
-  // font-family: "Gotham", sans-serif;
   font-family: "Helvetica";
-  // letter-spacing: 0.04rem;
   font-weight: 600;
   text-rendering: optimizeLegibility;
 
@@ -47,8 +51,6 @@ html{
   @include respond(big-desk){  // width > 1800
     font-size: 75%;
   }
-  // font-family: "Roboto", sans-serif;
-  // font-family: "Raleway", sans-serif;
 }
 
 li{

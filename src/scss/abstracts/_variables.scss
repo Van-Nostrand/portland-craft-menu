@@ -13,7 +13,6 @@ $less-bright-brown: #a0170f;
 $medium-brown: #94241e;
 $brown-brown: #6a2008;
 
-// $menu-background-color: #f2fcfc;
 $menu-background-color: black;
 
 $portland-beige: #babd9b;
@@ -30,10 +29,16 @@ $portland-pink: #bd146e;
 $portland-dull-red: #a33236;
 $potential-blue: #146ebd;
 
+$maybe-green: #70bd14;
+
 /////////////////////// 
 //// try this 
 // #bd141b, #f7f3e3, #ecf0f1, #2b2118, #6a5d7b
-
+$nu-beige: #f7f3e3;
+$fresh-walls: #ecf0f1;
+$brown-q: #2b2118; 
+$faded-lavender: #6a5d7b;
+$goth-lavender: #625671;
 
 // PHONE STYLING
 $phone-nav-height: 10rem;
@@ -81,8 +86,9 @@ $desktop-item-price-fontsize: 1.6rem;
 $desktop-item-price-dot: 0.5rem;
 $desktop-item-logo-size: 1.4rem;
 
-$desktop-side-margin: 6rem;
-$desktop-menu-width: 65vw;
+$desktop-navhat-side-pad: 3rem;
+$desktop-side-margin: 20rem;
+$desktop-menu-width: 75vw;
 
 $desktop-secondary-nav-top: 12rem;
-$desktop-secondary-nav-height: 6rem;
+$desktop-secondary-nav-height: 9rem;

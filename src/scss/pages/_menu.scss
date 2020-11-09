@@ -19,7 +19,7 @@
 
 section{
   position: relative;
-  width: 80%;
+  // width: 80%;
   padding-top: 2rem;
 
   border-top: 3px solid $portland-red;
@@ -38,6 +38,7 @@ section{
     font-size: $desktop-section-fontsize;
     text-align: center;
     color: $portland-red;
+    margin-left: 1rem;
 
     @include respond(tab-port){
       font-size: $mobile-section-fontsize;
@@ -49,8 +50,8 @@ section{
   }
 
   .section__list{
-    display: flex;
-    flex-flow: column wrap;
+    // display: flex;
+    // flex-flow: column wrap;
     justify-content: center;
 
     @include respond(tab-port){
