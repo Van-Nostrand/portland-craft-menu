@@ -16,7 +16,7 @@ import {
   LARGER,
   SWEETS,
   SIDES
-} from "./CONSTANTS";
+} from "./CONSTANTS2";
 import gflogo from "../assets/Gluten_Free_symbol.svg";
 import vegetarianlogo from "../assets/Vegetarian_symbol.svg";
 import veganlogo from "../assets/Vegan_symbol.svg";
