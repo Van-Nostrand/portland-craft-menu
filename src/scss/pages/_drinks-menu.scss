@@ -1,55 +1,33 @@
-.drinks-menu{
+.menu.drinks-menu{
 
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 25% 25%;
-  justify-items: center;
+  flex-flow: row nowrap;
+  align-items: normal;
 
-  @include respond(tab-port){
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-  }
-    
-  //red wine grid settings
-  section:nth-of-type(1){
-    grid-column: 1;
-    grid-row: 1;
-    margin-right: 1rem;
-    justify-self: end;
+  .wine-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 5rem;
 
-    @include respond(tab-port){
-      margin-left: 0;
+    padding-right: 2rem;
+
+    .red-wine-wrapper{
+      grid-row: 1;
+      grid-column: 1;
+    }
+    .white-wine-wrapper{
+      grid-row: 1;
+      grid-column: 2;
+    }
+    .bubbly-wrapper{
+      grid-row: 2;
+      grid-column: 1 ;
     }
   }
 
-  //white wine grid settings
-  section:nth-of-type(2){
-    grid-column: 2;
-    grid-row: 1;
-    margin-left: 1rem;
-    justify-self: start;
-
-    @include respond(tab-port){
-      margin-right: 0;
-    }
+  .cocktail-section{
+    padding-left: 2rem;
   }
 
-  //bubbly grid settings
-  section:nth-of-type(3){
-    grid-column: 1 / span 2;
-    grid-row: 2;
-  }
-
-  //cocktails grid settings
-  section:nth-of-type(4){
-    grid-column: 1 / span 2;
-    grid-row: 3;
-    margin-top: 3rem;
-
-    @include respond(tab-port){
-      margin-top: 0;
-      
-    }
-  }
+  
 }

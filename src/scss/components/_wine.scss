@@ -1,20 +1,3 @@
-.red, .white, .bubbly {
-  display: flex;
-  flex-flow: column;
-
-  @include respond(tab-port){
-    width: 80%;
-  }
-}
-
-.red, .white{
-  width: 60%;
-
-  @include respond(tab-port){
-    width: 90%;
-  }
-}
-
 .wine-item{
   position: relative;
 

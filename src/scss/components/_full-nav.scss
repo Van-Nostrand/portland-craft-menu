@@ -1,11 +1,11 @@
 .full-nav{
-  position: absolute;
+  position: relative;
   box-sizing: content-box;
   top: 0;
 
   width: 100%;
   
-  background-color: $menu-background-color;
+  // background-color: $menu-background-color;
   height: $desktop-nav-height;
   display: flex;
   flex-flow: row;
@@ -16,11 +16,26 @@
     display: none;
   }
 
+  .bknd-img-wrapper{
+    position: absolute;
+    width: 100%;
+    height: $desktop-nav-height;
+    overflow: hidden;
+  }
+
+  .bknd-img-wrapper img{
+    object-fit: cover;
+    width: 110%;
+    filter: brightness(40%);
+    transform: translate(-10rem, -72rem) rotate(-12deg);
+  }
+
   .logo-container{
     margin-left: $desktop-side-margin;
     display: inline-block;
     padding-left: $desktop-navhat-side-pad;
     padding-right: $desktop-navhat-side-pad;
+    z-index: 10;
 
     img{
       height: 100%;
@@ -29,6 +44,7 @@
   }
 
   &__button-group{
+    position: relative;
     margin-right: $desktop-side-margin;
     padding-right: $desktop-navhat-side-pad;
     padding-left: $desktop-navhat-side-pad;
@@ -38,7 +54,7 @@
     justify-content: space-between;
 
     font-size: $button-font-size;
-    font-weight: 900;
+    font-weight: 700;
     font-family: inherit;
   }
 }
@@ -79,6 +95,7 @@
     justify-content: space-around;
 
     font-size: $button-font-size;
+    font-weight: 700;
   }
 
   .logo-container img{

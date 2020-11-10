@@ -4,10 +4,13 @@
   position: relative;
   top: $desktop-nav-height;
 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   margin: 0 auto 3rem auto;
   width: $desktop-menu-width;
 
-  background-color: $menu-background-color;
+  // background-color: $menu-background-color;
   color: #eee;
   font-size: 2.5rem;
 
@@ -19,13 +22,11 @@
 
 section{
   position: relative;
-  // width: 80%;
   padding-top: 2rem;
 
-  border-top: 3px solid $portland-red;
+  @include sectionBorderTop();
 
   @include respond(tab-port){
-    // adjust this in wine.scss too
     width: 90%;
   }
   @include respond(phone){
@@ -50,8 +51,7 @@ section{
   }
 
   .section__list{
-    // display: flex;
-    // flex-flow: column wrap;
+
     justify-content: center;
 
     @include respond(tab-port){
@@ -60,54 +60,3 @@ section{
     }
   }
 }
-
-// .item-name{
-//   font-size: $desktop-item-name-fontsize;
-//   color: $portland-red;
-//   font-weight: 600;
-
-//   @include respond(tab-port){
-//     font-size: $mobile-item-name-fontsize;
-//   }
-
-//   @include respond(phone){
-//     font-size: $phone-item-name-fontsize;
-//   }
-// }
-
-// .item-price{
-//   font-size: $desktop-item-price-fontsize;
-//   color: $dark-font;
- 
-
-//   @include respond(tab-port){
-//     font-size: $mobile-item-price-fontsize;
-//   }
-
-//   @include respond(phone){
-//     font-size: $phone-item-price-fontsize;
-//   }
-// }
-
-// .item-notes{
-//   font-size: $desktop-item-notes-fontsize;
-//   color: $dark-font;
-//   font-weight: 400;
-//   font-style: italic;
-
-//   @include respond(tab-port){
-//     font-size: $mobile-item-notes-fontsize;
-//   }
-// }
-
-// svg{
-//   //set size of the dot with height property
-//   position: relative;
-//   height: $desktop-item-price-dot; 
-//   margin: 0 1rem;
-//   top: -0.2rem;
-
-//   @include respond(tab-port){
-//     height: 0rem;
-//   }
-// }

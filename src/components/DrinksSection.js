@@ -9,6 +9,7 @@ export const DrinksSection = ({drinks, section}) => {
 
   if(section === "wine"){
     let winekeys = Object.keys(drinks);
+    let wineCategories = [];
     dranks = [];
     winekeys.forEach((style, i) => {
       let styleData = drinks[style].map((wine, j) => {

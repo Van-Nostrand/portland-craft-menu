@@ -37,7 +37,7 @@
   font-size: $desktop-item-notes-fontsize;
   // color: $dark-font;
   color: #eee;
-  font-weight: 400;
+  font-weight: 100;
   font-style: italic;
 
   @include respond(tab-port){
@@ -93,7 +93,7 @@ svg{
     grid-column: 1 / span 2;
     grid-row: 2;
   }
-  .diet-string{
+  .diet{
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 500;

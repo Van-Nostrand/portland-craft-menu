@@ -1,7 +1,7 @@
 import React from "react";
 import {FoodSection} from "./FoodSection";
 
-export const FoodMenu = ({logos, menuData}) => {
+export const FoodMenu = ({ menuData }) => {
 
   return(
     <>
@@ -9,33 +9,27 @@ export const FoodMenu = ({logos, menuData}) => {
 
         <FoodSection 
           section="Snacks" 
-          items={menuData.SNACKS} 
-          logos={logos} />
+          items={menuData.SNACKS} />
 
         <FoodSection
           section="Omnivores"
-          items={menuData.OMNIVORES}
-          logos={logos} />
+          items={menuData.OMNIVORES} />
 
         <FoodSection
           section="Herbivores"
-          items={menuData.HERBIVORES}
-          logos={logos} />
+          items={menuData.HERBIVORES} />
         
         <FoodSection 
           section="Large Plates" 
-          items={menuData.LARGER} 
-          logos={logos} />
+          items={menuData.LARGER} />
 
         <FoodSection 
           section="Sweets" 
-          items={menuData.SWEETS} 
-          logos={logos} />
+          items={menuData.SWEETS} />
         
         <FoodSection 
           section="Sides" 
-          items={menuData.SIDES} 
-          logos={logos} />
+          items={menuData.SIDES} />
 
       </div>
     </>

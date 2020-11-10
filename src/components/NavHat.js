@@ -1,7 +1,9 @@
 import React, { useRef} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
-import pclogo from "../assets/portlandlogoplain.svg";
+// import pclogo from "../assets/portlandlogoplain.svg";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
+import pcservice from "../assets/PCservice.png";
+import pcTaps from "../assets/pcTaps.jpg";
 
 export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   let menuSwitchRef = useRef(null);
@@ -60,23 +62,23 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     </div>
   )
 
+ 
+
   return(
     <div className="nav-hat-wrapper">
+      
     
       <nav className="full-nav" >
-        {/* <div className="full-nav__group-logo">
-          <img src={blkWhiteLogo} />
-        </div> */}
+        <div className="bknd-img-wrapper">
+          <img src={pcTaps}  />
+        </div>
         {logo}
         <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
-        
       </nav>
-
 
       <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
         <NavButtonGroup classString={"secondary-nav__button-group"} buttons={secondaryNavButtons}/>
       </nav>
-      
 
       <nav className="mobile-nav" >
         <NavButtonGroup classString={"mobile-nav__button-group"} buttons={mobileButtons} />
@@ -105,7 +107,7 @@ const MobileNavDrawer = (props) => {
 const NavButtonGroup = (props) => {
 
   return (
-    <div className={props.classString} onClick={() => console.log("CLICKED!!")}>
+    <div className={props.classString}>
       {props.buttons}
     </div>
   )

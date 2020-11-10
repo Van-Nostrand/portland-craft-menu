@@ -43,78 +43,43 @@ export const SNACKS = [
     name: "Pickled Vegetables",
     price: "6",
     notes: "House-pickled seasonally sourced selections",
-    dietary: "vegan, gluten free", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
     notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
-    dietary: "gluten and dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Warm Mixed Olives",
     price: "7",
     notes: "House marinated with citrus and herbs",
-    dietary: "vegan, gluten free", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "Spiced Candied Nuts",
     price: "7",
     notes: "Roasted in-house with our own spice blend",
-    dietary: "vegan, gluten free", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "Crispy Rossdown Chicken Crackling",
     price: "8",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
-    dietary: "gluten and dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Cashew Spread",
     price: "10",
     notes: "With pickled vegetables, fresh herbs, fresh bread, all made in-house",
-    dietary: "vegan", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan", 
   },
   {
     name: "Candied Bacon",
     price: "2 for 1 or $10 for 6",
     notes: "Johnston Farm smoked bacon baked with house-spice blend",
-    dietary: "gluten and dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   }
 ];
 
@@ -123,78 +88,43 @@ export const OMNIVORES = [
     name: "Craft Poutine",
     price: "11",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
-    dietary: "", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: true, 
-    dairyFree: false
+    diet: "", 
   },
   {
     name: "Rossdown Wings",
     price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
-    dietary: "gluten free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: false, 
-    dairyFree: false
+    diet: "gluten free", 
   },
   {
     name: "Pacific Humboldt Squid",
     price: "12",
     notes: "Tomato, leeks, garlic, chilis, herbs",
-    dietary: "gluten and dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Pacific Wild Shrimp Fritter",
     price: "10",
     notes: "Corn, soy bean, herbs, spicy black garlic aioli",
-    dietary: "dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "dairy free", 
   },
   {
     name: "Westcoast Crab Dip",
     price: "15",
     notes: "Bacon, leeks, herbs, house bread",
-    dietary: "", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "", 
   },
   {
     name: "Fraser Valley Pork Belly",
     price: "13",
     notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
-    dietary: "gluten and dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Cache Creek Beef Tartar",
     price: "18",
     notes: "Black garlic, celery, radish, egg yolk, shallots, toast",
-    dietary: "dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "dairy free", 
   },
 ];
 
@@ -203,67 +133,37 @@ export const HERBIVORES = [
     name: "B.C. Kale Salad",
     price: "9",
     notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
-    dietary: "vegan, gluten free", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "Chilliwack Corn-on-the-Cob",
     price: "7",
     notes: "Grilled corn, chili lime butter, citrus herb crumble",
-    dietary: "vegetarian", 
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "vegetarian", 
   },
   {
     name: "Heirloom Tomato Salad",
     price: "11",
     notes: "Avocado, basil, radish, balsamic aioli, sourdough",
-    dietary: "vegetarian, dairy free", 
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegetarian, dairy free", 
   },
   {
     name: "Biscuit and Gravy",
     price: "14",
     notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
-    dietary: "vegetarian", 
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "vegetarian", 
   },
   {
     name: '"Fried Rice"',
     price: "14",
     notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
-    dietary: "vegan, gluten free", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "B.C. Brassica",
     price: "8",
     notes: "Gai Lan, broccoli, kale, cashews, garlic, herbs",
-    dietary: "vegan, gluten free", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
 ];
 
@@ -272,45 +172,25 @@ export const LARGER = [
     name: "Cache Creek Dry-Aged Burger",
     price: "20",
     notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli",
-    dietary: "", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false,
+    diet: "", 
   },
   {
     name: "Rossdown Chicken and Waffle",
     price: "23",
     notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
-    dietary: "", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "", 
   },
   {
     name: "Pacific Wild Salmon",
     price: "24",
     notes: "Fried rice, corn, broccoli, sesame leek sauce",
-    dietary: "gluten and dairy free", 
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Grain Bowl",
     price: "21",
     notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
-    dietary: "vegan", 
-    vegetarian: false,
-    vegan: true,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan", 
   },
   
 ];
@@ -320,23 +200,13 @@ export const SWEETS = [
     name: "Chocolate Mousse",
     price: "9", 
     notes: "Sponge cake, whipped cream, cacao nibs",
-    dietary: "vegetarian", 
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "vegetarian", 
   },
   {
     name: "Fried Pear Pie",
     price: "8",
     notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
-    dietary: "vegetarian", 
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: false
+    diet: "vegetarian", 
   },
 ]
 
@@ -509,12 +379,12 @@ export const COCKTAILS = [
   {
     name: "Mt Hood Warmer",
     price: "14",
-    notes: "Chai infused whiskey, nocino, brandy, Grand Marnier, orange, sugar, absinthe"
+    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
   },
   {
     name: "Eastburn Daquiri",
     price: "13",
-    notes: "Butter infused rum, lemon, sugar, candied ginger"
+    notes: "Butter infused rum, lemon, sugar, house-made candied ginger"
   },
   {
     name: "Lonsdale Quay",
@@ -543,49 +413,49 @@ export const HAPPY_HOUR_FOOD = [
     name: "Pickled Vegetables",
     price: "4",
     notes: "House-pickled seasonally sourced selections",
-    dietary: "vegan, gluten free", 
+    diet: "vegan, gluten free", 
   },
   {
     name: "Felix Farm Kennebec Fries",
     price: "5",
     notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
-    dietary: "gluten and dairy free", 
+    diet: "gluten and dairy free", 
   },
   {
     name: "Spiced Candied Nuts",
     price: "5",
     notes: "Roasted in-house with our own spice blend",
-    dietary: "vegan, gluten free", 
+    diet: "vegan, gluten free", 
   },
   {
     name: "Crispy Rossdown Chicken Crackling",
     price: "5",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
-    dietary: "gluten and dairy free", 
+    diet: "gluten and dairy free", 
   },
   {
     name: "Craft Poutine",
     price: "8",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
-    dietary: "", 
+    diet: "", 
   },
   {
     name: "Westcoast Crab Dip",
     price: "12",
     notes: "Bacon, leeks, herbs, house bread",
-    dietary: "", 
+    diet: "", 
   },
   {
     name: "B.C. Kale Salad",
     price: "7",
     notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
-    dietary: "vegan, gluten free", 
+    diet: "vegan, gluten free", 
   },
   {
     name: "Pacific Wild Shrimp Fritter",
     price: "8",
     notes: "Corn, soy bean, herbs, spicy black garlic aioli",
-    dietary: "dairy free", 
+    diet: "dairy free", 
   }
 ];
 
