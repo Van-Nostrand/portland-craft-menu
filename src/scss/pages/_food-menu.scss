@@ -57,14 +57,14 @@
   padding-top: 1rem;
 }
 
-.sides, .sweets {
-  // width: 60%;
+// .sides, .sweets {
+//   width: 60%;
 
-  @include respond(tab-port){
-    // width: 70%;
-  }
-  @include respond(phone){
-    // width: 70%;
-  }
-}
+//   @include respond(tab-port){
+//     width: 70%;
+//   }
+//   @include respond(phone){
+//     width: 70%;
+//   }
+// }
 
