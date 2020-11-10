@@ -22,49 +22,18 @@
       }
     }
   }
+
+  section:not(:first-child){
+    @include sectionBorderTop();
+  }
 }
 
 .snacks .section__title{
   color: $potential-blue;
 }
-
 .omnivores .section__title{
   color: $portland-red;
-  font-size: $desktop-section-fontsize - 0.4rem;
-
-  @include respond(tab-port){
-    font-size: $mobile-section-fontsize - 0.4rem;
-  }
-
-  @include respond(phone){
-    font-size: $phone-section-fontsize - 0.4rem;
-  }
 }
 .herbivores .section__title{
   color: $maybe-green;
-  font-size: $desktop-section-fontsize - 0.4rem;
-
-  @include respond(tab-port){
-    font-size: $mobile-section-fontsize - 0.4rem;
-  }
-
-  @include respond(phone){
-    font-size: $phone-section-fontsize - 0.4rem;
-  }
 }
-
-.food-menu .omnivores, .food-menu .herbivores{
-  padding-top: 1rem;
-}
-
-.sides, .sweets {
-  // width: 60%;
-
-  @include respond(tab-port){
-    // width: 70%;
-  }
-  @include respond(phone){
-    // width: 70%;
-  }
-}
-

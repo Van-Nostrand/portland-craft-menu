@@ -10,14 +10,11 @@
   .section__list{
     display: flex;
     flex-flow: row wrap;
-    // margin: 0 auto;
-    
     justify-content: space-evenly;
 
     @include respond(tab-port){
       flex-flow: column;
       margin: 0;
-      // width: 100%;
     }
 
     .wine-item{
@@ -25,7 +22,6 @@
       grid-template-columns: 60% 20% 20%;
 
       @include respond(tab-port){
-        // width: 100%;
         grid-template-columns: 60% 20% 20%;
       }
 
