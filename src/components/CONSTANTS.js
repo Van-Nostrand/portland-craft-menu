@@ -80,7 +80,7 @@ export const SNACKS = [
     dairyFree: true
   },
   {
-    name: "Crispy Rossdown Chicken Crackling",
+    name: "Crispy Farmcrest Chicken Crackling",
     price: "8",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
     vegetarian: false,
@@ -259,7 +259,7 @@ export const LARGER = [
     dairyFree: false,
   },
   {
-    name: "Rossdown Chicken and Waffle",
+    name: "Farmcrest Chicken and Waffle",
     price: "23",
     notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
     vegetarian: false,
@@ -456,16 +456,6 @@ export const COCKTAILS = [
     name: "Best Bloody Caesar",
     price: "9 / $13",
     notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
-  },
-  {
-    name: "Fraser Collins",
-    price: "13",
-    notes: "Beefeater gin, lemon, sugar, cucumber, black pepper, topped off with pilsner. Mike's twist on the Tom Collins!"
-  },
-  {
-    name: "Spanish Fashion",
-    price: "13",
-    notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
   }
 ]
 
