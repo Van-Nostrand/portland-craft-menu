@@ -123,7 +123,7 @@ export const OMNIVORES = [
     dairyFree: false
   },
   {
-    name: "Rossdown Wings",
+    name: "Farmcrest Wings",
     price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
     vegetarian: false,
