@@ -460,14 +460,14 @@ export const NEW_COCKTAILS = [
 
 export const COCKTAILS = [
   {
-    name: "Spritz Veneziano",
+    name: "Aperol or Elderflower Spritz",
     price: "11",
-    notes: "Choice of Aperol, Campari, or St Germain and Cassis (+$1), mixed with soda and Cava"
+    notes: "Choice of Aperol or St Germain and Cassis (+$1), mixed with soda and sparkling white wine"
   },
   {
     name: "Margarita",
     price: "12",
-    notes: "El Jimador Blanco tequila, lime, agave"
+    notes: "El Jimador Silver tequila, Cointreau, lime"
   },
   {
     name: "Moscow Mule / Dark & Stormy",
@@ -482,12 +482,12 @@ export const COCKTAILS = [
   {
     name: "Corpse Reviver #2",
     price: "12",
-    notes: "Beefeater gin, Cointreau, Lillet Blanc, Pernod rinse, lemon"
+    notes: "Beefeater gin, Cointreau, Lillet Blanc, Pernod, lemon"
   },
   {
     name: "Daquiri",
     price: "12",
-    notes: "Dark rum, lime, sugar"
+    notes: "Flor de Caña rum, lime, sugar"
   },
   {
     name: "Negroni Sour",
@@ -497,7 +497,7 @@ export const COCKTAILS = [
   {
     name: "Best Bloody Caesar",
     price: "9 / $13",
-    notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
+    notes: "Absolut vodka, house caesar mix, Clamato, pickled veg."
   }
 ]
 

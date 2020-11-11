@@ -98,7 +98,7 @@ const MobileNavDrawer = (props) => {
 const NavButtonGroup = (props) => {
 
   return (
-    <div className={props.classString} onClick={() => console.log("CLICKED!!")}>
+    <div className={props.classString}>
       {props.buttons}
     </div>
   )
