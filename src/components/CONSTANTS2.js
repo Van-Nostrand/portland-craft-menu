@@ -1,4 +1,3 @@
-import React from "react";
 export const SIDES = [
   {
     name: "House Aioli",
@@ -209,11 +208,6 @@ export const SWEETS = [
     diet: "vegetarian", 
   },
 ]
-
-
-// =========
-// BEVERAGES
-// =========
 
 export const WHITE_WINE = [
   {
@@ -458,7 +452,6 @@ export const HAPPY_HOUR_FOOD = [
     diet: "dairy free", 
   }
 ];
-
 
 export const HAPPY_HOUR = [
   {
