@@ -1,4 +1,3 @@
-import React from "react";
 export const SIDES = [
   {
     name: "House Aioli",

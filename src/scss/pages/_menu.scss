@@ -10,7 +10,7 @@
   min-height: 100vh;
 
   background-color: $menu-background-color;
-  color: black;
+  color: $dark-font;
   font-size: 2.5rem;
 
   @include respond(tab-port){
@@ -63,7 +63,7 @@ section{
 
 .item-name{
   font-size: $desktop-item-name-fontsize;
-  color: $portland-red;
+  color: $dark-font;
   font-weight: 600;
 
   @include respond(tab-port){
