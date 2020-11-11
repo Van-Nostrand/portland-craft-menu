@@ -541,7 +541,7 @@ export const HAPPY_HOUR = [
     ]
   },
   {
-    name: "Select Single/Double Highballs",
+    name: "Select Single/Double Hiballs",
     prices: [
       {price: "5 / $7.50", size: ""}
     ]
@@ -553,6 +553,57 @@ export const HAPPY_HOUR = [
     ]
   }
 ]
+
+export const HAPPY_HOUR_FOOD = [
+  {
+    name: "Pickled Vegetables",
+    price: "4",
+    notes: "House-pickled seasonally sourced selections",
+    diet: "vegan, gluten free", 
+  },
+  {
+    name: "Felix Farm Kennebec Fries",
+    price: "5",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
+    diet: "gluten and dairy free", 
+  },
+  {
+    name: "Spiced Candied Nuts",
+    price: "5",
+    notes: "Roasted in-house with our own spice blend",
+    diet: "vegan, gluten free", 
+  },
+  {
+    name: "Crispy Rossdown Chicken Crackling",
+    price: "5",
+    notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
+    diet: "gluten and dairy free", 
+  },
+  {
+    name: "Craft Poutine",
+    price: "8",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
+    diet: "", 
+  },
+  {
+    name: "Westcoast Crab Dip",
+    price: "12",
+    notes: "Bacon, leeks, herbs, house bread",
+    diet: "", 
+  },
+  {
+    name: "B.C. Kale Salad",
+    price: "7",
+    notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
+    diet: "vegan, gluten free", 
+  },
+  {
+    name: "Pacific Wild Shrimp Fritter",
+    price: "8",
+    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
+    diet: "dairy free", 
+  }
+];
 
 export const NON_ALCOHOLIC = [
   {

@@ -1,35 +1,41 @@
 import React from "react";
 
-export const Food = ({ itemName = "unnamed", price = "23", notes="", logos }) => {
+export const Food = ({ itemName = "unnamed", price = "23", notes="", logos = "" }) => {
 
-  let dietLogos = <>
-    {logos.glutenFree ? 
-      <img 
-        className="dietlogo" 
-        src={logos.glutenFree} 
-        alt="gflogo" /> : <></>}
-    {logos.vegan ? 
-      <img 
-        className="dietlogo" 
-        src={logos.vegan} 
-        alt="veganlogo" /> : <></>}
-    {logos.vegetarian ? 
-      <img 
-        className="dietlogo" 
-        src={logos.vegetarian} 
-        alt="vegetarianlogo" /> : <></>}
-    {logos.nutFree ? 
-      <img 
-        className="dietlogo" 
-        src={logos.nutFree} 
-        alt="nutFreeLogo" /> : <></>}
-    {logos.dairyFree ? 
-      <img 
-        className="dietlogo" 
-        src={logos.dairyFree} 
-        alt="dairyFreeLogo" /> : <></>}
+  let dietLogos;
+  if(logos === ""){
+    dietLogos = ""
+  }else{
+    dietLogos = <>
+      {logos.glutenFree ? 
+        <img 
+          className="dietlogo" 
+          src={logos.glutenFree} 
+          alt="gflogo" /> : <></>}
+      {logos.vegan ? 
+        <img 
+          className="dietlogo" 
+          src={logos.vegan} 
+          alt="veganlogo" /> : <></>}
+      {logos.vegetarian ? 
+        <img 
+          className="dietlogo" 
+          src={logos.vegetarian} 
+          alt="vegetarianlogo" /> : <></>}
+      {logos.nutFree ? 
+        <img 
+          className="dietlogo" 
+          src={logos.nutFree} 
+          alt="nutFreeLogo" /> : <></>}
+      {logos.dairyFree ? 
+        <img 
+          className="dietlogo" 
+          src={logos.dairyFree} 
+          alt="dairyFreeLogo" /> : <></>}
+    
+    </>;
+  }
   
-  </>;
 
   return(
     <li className="food-item">

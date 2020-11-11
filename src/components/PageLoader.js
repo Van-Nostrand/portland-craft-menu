@@ -8,6 +8,7 @@ import {
   BUBBLES,
   COCKTAILS,
   HAPPY_HOUR,
+  HAPPY_HOUR_FOOD,
   SNACKS,
   OMNIVORES,
   HERBIVORES,
@@ -35,7 +36,7 @@ export const PageLoader = ({ pageTitle}) => {
                       menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS}} />;
       break;
     case /specials/.test(pageTitle): 
-      currentPage = <FeaturesMenu menuData={HAPPY_HOUR} />;
+      currentPage = <FeaturesMenu menuData={[HAPPY_HOUR,HAPPY_HOUR_FOOD]} />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }
