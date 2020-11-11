@@ -1,4 +1,3 @@
-import React from "react";
 export const SIDES = [
   {
     name: "House Aioli",
@@ -43,71 +42,43 @@ export const SNACKS = [
     name: "Pickled Vegetables",
     price: "6",
     notes: "House-pickled seasonally sourced selections",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
     notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Warm Mixed Olives",
     price: "7",
     notes: "House marinated with citrus and herbs",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "Spiced Candied Nuts",
     price: "7",
     notes: "Roasted in-house with our own spice blend",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
-    name: "Crispy Farmcrest Chicken Crackling",
+    name: "Crispy Rossdown Chicken Crackling",
     price: "8",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Cashew Spread",
     price: "10",
     notes: "With pickled vegetables, fresh herbs, fresh bread, all made in-house",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan", 
   },
   {
     name: "Candied Bacon",
     price: "2 for 1 or $10 for 6",
     notes: "Johnston Farm smoked bacon baked with house-spice blend",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   }
 ];
 
@@ -116,71 +87,43 @@ export const OMNIVORES = [
     name: "Craft Poutine",
     price: "11",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false,
-    nutFree: true, 
-    dairyFree: false
+    diet: "", 
   },
   {
     name: "Rossdown Wings",
     price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: false, 
-    dairyFree: false
+    diet: "gluten free", 
   },
   {
     name: "Pacific Humboldt Squid",
     price: "12",
     notes: "Tomato, leeks, garlic, chilis, herbs",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Pacific Wild Shrimp Fritter",
     price: "10",
     notes: "Corn, soy bean, herbs, spicy black garlic aioli",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "dairy free", 
   },
   {
     name: "Westcoast Crab Dip",
     price: "15",
     notes: "Bacon, leeks, herbs, house bread",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "", 
   },
   {
     name: "Fraser Valley Pork Belly",
     price: "13",
     notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Cache Creek Beef Tartar",
     price: "18",
     notes: "Black garlic, celery, radish, egg yolk, shallots, toast",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "dairy free", 
   },
 ];
 
@@ -189,61 +132,37 @@ export const HERBIVORES = [
     name: "B.C. Kale Salad",
     price: "9",
     notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "Chilliwack Corn-on-the-Cob",
     price: "7",
     notes: "Grilled corn, chili lime butter, citrus herb crumble",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegetarian", 
   },
   {
     name: "Heirloom Tomato Salad",
     price: "11",
     notes: "Avocado, basil, radish, balsamic aioli, sourdough",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegetarian, dairy free", 
   },
   {
     name: "Biscuit and Gravy",
     price: "14",
     notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "vegetarian", 
   },
   {
     name: '"Fried Rice"',
     price: "14",
     notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
   {
     name: "B.C. Brassica",
     price: "8",
     notes: "Gai Lan, broccoli, kale, cashews, garlic, herbs",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: true, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan, gluten free", 
   },
 ];
 
@@ -252,41 +171,25 @@ export const LARGER = [
     name: "Cache Creek Dry-Aged Burger",
     price: "20",
     notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false,
+    diet: "", 
   },
   {
-    name: "Farmcrest Chicken and Waffle",
+    name: "Rossdown Chicken and Waffle",
     price: "23",
     notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "", 
   },
   {
     name: "Pacific Wild Salmon",
     price: "24",
     notes: "Fried rice, corn, broccoli, sesame leek sauce",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: true, 
-    nutFree: true, 
-    dairyFree: true
+    diet: "gluten and dairy free", 
   },
   {
     name: "Grain Bowl",
     price: "21",
     notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
-    vegetarian: false,
-    vegan: true,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: true
+    diet: "vegan", 
   },
   
 ];
@@ -296,28 +199,15 @@ export const SWEETS = [
     name: "Chocolate Mousse",
     price: "9", 
     notes: "Sponge cake, whipped cream, cacao nibs",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: false
+    diet: "vegetarian", 
   },
   {
     name: "Fried Pear Pie",
     price: "8",
     notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: false
+    diet: "vegetarian", 
   },
 ]
-
-
-// =========
-// BEVERAGES
-// =========
 
 export const WHITE_WINE = [
   {
@@ -414,9 +304,62 @@ export const BUBBLES = [
     sizes: [10, 42],
     notes: "Spain"
   }
-];
+]
 
-export const NEW_COCKTAILS = [
+export const OLD_COCKTAILS = [
+  {
+    name: "Aperol or Elderflower Spritz",
+    price: "11",
+    notes: "Choose either Aperol or St Germain & Cassis (+$1), sparkling white wine, soda"
+  },
+  {
+    name: "Margarita",
+    price: "12",
+    notes: "El Jimador Blanco tequila, triple sec, lime"
+  },
+  {
+    name: "Moscow Mule / Dark & Stormy",
+    price: "12",
+    notes: "Absolut vodka or Goslings black rum, lime, sugar, Angostura bitters, ginger beer"
+  },
+  {
+    name: "Whiskey Sour",
+    price: "13",
+    notes: "Wild Turkey bourbon, lemon, sugar, Angostura bitters, egg white"
+  },
+  {
+    name: "Corpse Reviver #2",
+    price: "12",
+    notes: "Beefeater gin, Cointreau, Lillet Blanc, Pernod rinse, lemon"
+  },
+  {
+    name: "Daquiri",
+    price: "12",
+    notes: "Dark rum, lime, sugar"
+  },
+  {
+    name: "Negroni Sour",
+    price: "13",
+    notes: "Beefeater gin, Campari, Odd Society Amaro, orange, lemon, sugar, egg white. Cory's own creation!"
+  },
+  {
+    name: "Best Bloody Caesar",
+    price: "9 / $13",
+    notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
+  },
+  {
+    name: "Fraser Collins",
+    price: "13",
+    notes: "Beefeater gin, lemon, sugar, cucumber, black pepper, topped off with pilsner. Mike's twist on the Tom Collins!"
+  },
+  {
+    name: "Spanish Fashion",
+    price: "13",
+    notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
+  }
+]
+
+export const COCKTAILS = [
   {
     name: "Gastown",
     price: "13",
@@ -459,59 +402,56 @@ export const NEW_COCKTAILS = [
   },
 ]
 
-export const COCKTAILS = [
+export const HAPPY_HOUR_FOOD = [
   {
-    name: "Spritz Veneziano",
-    price: "11",
-    notes: "Choice of Aperol, Campari, or St Germain and Cassis (+$1), mixed with soda and Cava"
+    name: "Pickled Vegetables",
+    price: "4",
+    notes: "House-pickled seasonally sourced selections",
+    diet: "vegan, gluten free", 
   },
   {
-    name: "Margarita",
+    name: "Felix Farm Kennebec Fries",
+    price: "5",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
+    diet: "gluten and dairy free", 
+  },
+  {
+    name: "Spiced Candied Nuts",
+    price: "5",
+    notes: "Roasted in-house with our own spice blend",
+    diet: "vegan, gluten free", 
+  },
+  {
+    name: "Crispy Rossdown Chicken Crackling",
+    price: "5",
+    notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
+    diet: "gluten and dairy free", 
+  },
+  {
+    name: "Craft Poutine",
+    price: "8",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
+    diet: "", 
+  },
+  {
+    name: "Westcoast Crab Dip",
     price: "12",
-    notes: "El Jimador Blanco tequila, lime, agave"
+    notes: "Bacon, leeks, herbs, house bread",
+    diet: "", 
   },
   {
-    name: "Moscow Mule / Dark & Stormy",
-    price: "12",
-    notes: "Absolut vodka or Goslings black rum, lime, sugar, Angostura bitters, Fentiman's ginger beer"
+    name: "B.C. Kale Salad",
+    price: "7",
+    notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
+    diet: "vegan, gluten free", 
   },
   {
-    name: "Whiskey Sour",
-    price: "13",
-    notes: "Wild Turkey bourbon, lemon, sugar, Angostura bitters, egg white"
-  },
-  {
-    name: "Corpse Reviver #2",
-    price: "12",
-    notes: "Beefeater gin, Cointreau, Lillet Blanc, Pernod rinse, lemon"
-  },
-  {
-    name: "Daquiri",
-    price: "12",
-    notes: "Dark rum, lime, sugar"
-  },
-  {
-    name: "Negroni Sour",
-    price: "13",
-    notes: "Beefeater gin, Campari, Odd Society Amaro, orange, lemon, sugar, egg white. Cory's own creation!"
-  },
-  {
-    name: "Best Bloody Caesar",
-    price: "9 / $13",
-    notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
-  },
-  {
-    name: "Fraser Collins",
-    price: "13",
-    notes: "Beefeater gin, lemon, sugar, cucumber, black pepper, topped off with pilsner. Mike's twist on the Tom Collins!"
-  },
-  {
-    name: "Spanish Fashion",
-    price: "13",
-    notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
+    name: "Pacific Wild Shrimp Fritter",
+    price: "8",
+    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
+    diet: "dairy free", 
   }
-]
-
+];
 
 export const HAPPY_HOUR = [
   {
@@ -523,7 +463,7 @@ export const HAPPY_HOUR = [
   {
     name: "Select Local Draught Beer",
     prices: [
-      {price: "4", size: "(12oz)"},
+      {price: "4", size: "(14oz)"},
       {price: "5", size: "(20oz)"}
     ]
   },
