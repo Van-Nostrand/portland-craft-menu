@@ -1,6 +1,5 @@
 import React, { useRef} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
-// import pclogo from "../assets/portlandlogoplain.svg";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
 import pcservice from "../assets/PCservice.png";
 import pcTaps from "../assets/pcTaps.jpg";

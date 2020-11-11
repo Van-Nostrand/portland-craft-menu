@@ -8,11 +8,9 @@
   flex-flow: column;
   align-items: center;
   margin: 1rem auto 3rem auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 0 9rem 0 9rem;
   width: $desktop-menu-width;
  
-  @include sectionBorderTop();
 
   color: $brown-q;
   font-size: 2.5rem;
@@ -39,7 +37,7 @@ section{
   .section__title{
     text-transform: capitalize;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     color: $portland-red;
     margin-left: 1rem;

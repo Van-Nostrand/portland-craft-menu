@@ -15,13 +15,6 @@ import {
   SWEETS,
   SIDES
 } from "./CONSTANTS2";
-// import pcservice from "../assets/PCservice.png";
-// import pctaps from "../assets/pcTaps.jpg";
-// import gflogo from "../assets/Gluten_Free_symbol.svg";
-// import vegetarianlogo from "../assets/Vegetarian_symbol.svg";
-// import veganlogo from "../assets/Vegan_symbol.svg";
-// import nutFree from "../assets/Nut_Free_symbol.svg";
-// import dairyFree from "../assets/Dairy_Free_symbol.svg";
 
 export const PageLoader = ({ pageTitle}) => {
 

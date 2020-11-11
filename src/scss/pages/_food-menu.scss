@@ -4,6 +4,8 @@
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+
+    @include sectionBorderTop();
   
     .section__list{
       display: flex;
@@ -22,12 +24,12 @@
       }
     }
   }
-
-  section:not(:first-child){
-    @include sectionBorderTop();
-  }
+  
 }
-
+// .sweets{
+//   width: 100%;
+//   padding
+// }
 .snacks .section__title{
   color: $potential-blue;
 }
@@ -36,4 +38,14 @@
 }
 .herbivores .section__title{
   color: $maybe-green;
+}
+
+.sides {
+  max-width: 50vw;
+  & .section__list{
+
+    & .food-item{
+      
+    }
+  }
 }
