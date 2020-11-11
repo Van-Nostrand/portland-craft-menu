@@ -1,4 +1,3 @@
-import React from "react";
 export const SIDES = [
   {
     name: "House Aioli",
@@ -499,16 +498,6 @@ export const COCKTAILS = [
     name: "Best Bloody Caesar",
     price: "9 / $13",
     notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
-  },
-  {
-    name: "Fraser Collins",
-    price: "13",
-    notes: "Beefeater gin, lemon, sugar, cucumber, black pepper, topped off with pilsner. Mike's twist on the Tom Collins!"
-  },
-  {
-    name: "Spanish Fashion",
-    price: "13",
-    notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
   }
 ]
 
