@@ -16,19 +16,7 @@
     display: none;
   }
 
-  .bknd-img-wrapper{
-    position: absolute;
-    width: 100%;
-    height: $desktop-nav-height;
-    overflow: hidden;
-  }
-
-  .bknd-img-wrapper img{
-    object-fit: cover;
-    width: 110%;
-    filter: brightness(40%);
-    transform: translate(-10rem, -72rem) rotate(-12deg);
-  }
+  
 
   .logo-container{
     margin-left: $desktop-side-margin;
@@ -37,7 +25,7 @@
     padding-right: $desktop-navhat-side-pad;
     z-index: 10;
 
-    img{
+    & img{
       height: 100%;
       display: inline-block;
     }
@@ -57,6 +45,20 @@
     font-weight: 700;
     font-family: inherit;
   }
+}
+
+.bknd-img-wrapper{
+  position: absolute;
+  width: 100%;
+  height: $desktop-nav-height;
+  overflow: hidden;
+}
+
+.bknd-img-wrapper img{
+  object-fit: cover;
+  width: 110%;
+  filter: brightness(40%);
+  transform: translate(-10rem, -72rem) rotate(-12deg);
 }
 
 .secondary-nav-scroll-target{

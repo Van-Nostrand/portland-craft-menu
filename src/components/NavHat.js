@@ -77,6 +77,9 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       </nav>
 
       <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
+        <div className="bknd-img-wrapper">
+          <img src={pcservice}  />
+        </div>
         <NavButtonGroup classString={"secondary-nav__button-group"} buttons={secondaryNavButtons}/>
       </nav>
 

@@ -12,7 +12,6 @@
     
     text-align: center;
    
-    // @include fontShadow();
     @include newHeadingShadow();
 
     @include respond(tab-port){
