@@ -1,13 +1,14 @@
 import React from "react";
 import {FoodMenu} from "./FoodMenu";
 import {DrinksMenu2} from "./DrinksMenu2";
-import {FeaturesMenu} from "./FeaturesMenu";
+import {HappyHour} from "./HappyHour";
 import {
   WHITE_WINE,
   RED_WINE,
   BUBBLES,
   COCKTAILS,
   HAPPY_HOUR,
+  HAPPY_HOUR_FOOD,
   SNACKS,
   OMNIVORES,
   HERBIVORES,
@@ -27,18 +28,11 @@ export const PageLoader = ({ pageTitle}) => {
       currentPage = <DrinksMenu2 menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS}} />;
       break;
     case /specials/.test(pageTitle): 
-      currentPage = <FeaturesMenu menuData={HAPPY_HOUR} />;
+      currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }
-      
-  let bkndimgstyle = {
-    position: "absolute",
-    objectFit: "cover",
-    width: "100%",
-    filter: "brightness(60%)"
-
-  }
+  
   return(
     <div className="pagewrapper">
       

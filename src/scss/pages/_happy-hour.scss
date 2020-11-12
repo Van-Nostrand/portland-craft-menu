@@ -6,7 +6,6 @@
 
 .happy-hour{
 
-  
   .section__title{
     margin: 3rem 0 2rem 0;
 
@@ -33,12 +32,6 @@
     @include respond(phone){
       font-size: $phone-item-name-fontsize;
     }
-
-    // > svg {
-    //   @include respond(tab-port){
-    //     display: none;
-    //   }
-    // }
   }
 
   .hh-subtitle-time{
@@ -48,20 +41,6 @@
       display: block;
     }
   }
-
-  .section__list{
-    align-items: center;
-  }
-
-  // svg{
-  //   height: 0.9rem;
-  //   margin: 0 0.4rem 0 0.4rem;
-
-  //   @include respond(phone){
-  //     height: 0.7rem;
-  //     transform: translateY(1rem);
-  //   }
-  // }
 }
 
 .hh-item{
@@ -82,8 +61,6 @@
     @include respond(tab-port){
       margin: 0;
     }
-
-    
   }
 
   .item-size{
@@ -105,7 +82,6 @@
     flex-flow: row nowrap;
   }
 }
-
 
 .hh-item div {
 

@@ -1,9 +1,11 @@
 import React from "react";
 import smileyface from "../assets/smileyfaceColor2.svg";
+import {Food} from "./Food";
 
-export const FeaturesMenu = ({menuData}) => {
+export const HappyHour = ({menuData}) => {
 
-  let items = menuData.map((item, i) => <LineItem name={item.name} prices={item.prices} key={`lineitem-${i}`} />);
+  let drinks = menuData[0].map((item, i) => <LineItem name={item.name} prices={item.prices} key={`lineitem-${i}`} />);
+  let food = menuData[1].map((item, i) => <Food itemName={item.name} price={item.price} notes={item.notes} key={`hh-food-${i}`} />);
  
   return(
     <>
@@ -21,8 +23,17 @@ export const FeaturesMenu = ({menuData}) => {
               3-6 pm Friday - Sunday
             </div>
           </div>
+          <div className="section__title">
+            Food
+          </div>
           <ul className="section__list">
-            {items}
+            {food}
+          </ul>
+          <div className="section__title">
+            Drinks
+          </div>
+          <ul className="section__list">
+            {drinks}
           </ul>
           
         </section>
