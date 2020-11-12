@@ -67,10 +67,10 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       </nav>
 
       <nav className="mobile-nav" >
-        <NavButtonGroup classString={"mobile-nav__button-group"} buttons={allbuttons} />
         <div className="mobile-nav__logo" >
           <img src={blkWhiteLogo} />
         </div>
+        <NavButtonGroup classString={"mobile-nav__button-group"} buttons={allbuttons} />
       </nav>
 
       <div className="secondary-nav-scroll-target" ref={menuSwitchRef} ></div>

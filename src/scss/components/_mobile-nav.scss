@@ -1,42 +1,43 @@
 .mobile-nav{
   display: none;
-  
   @include respond(tab-port){
-    position: fixed;
-    top: 0;
-    
     display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    align-items: center;
-    height: $mobile-nav-height;
-
-    background-color: $menu-background-color;
-    z-index: 9;
   }
+  
+  position: fixed;
+  top: 0;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+  height: $mobile-nav-height;
+
+  background-color: $alt-dark-font;
+  z-index: 9;
 
   &__button-group{
 
-    @include respond(tab-port){
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+
+    & button{
+      background-color: $alt-dark-font;
     }
   }
   
   &__logo{
     display: inline-block;
-    height: $mobile-nav-height;
-    padding-right: $mobile-side-margin;
+    height: $mobile-nav-height - 1.4rem;
+    padding-left: $mobile-side-margin;
 
-    background-color: $menu-background-color;
+    background-color: $alt-dark-font;
 
     @include respond(phone){
       height: $phone-nav-logo-height;
-      padding-right: $phone-side-margin - 1rem;
+      padding-left: $phone-side-margin - 1rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
     }

@@ -62,3 +62,10 @@ html{
 li{
   list-style: none;
 }
+
+.app-div{
+  display: flex;
+  flex-flow: column nowrap;
+  // justify-content: center;
+  align-items: center;
+}

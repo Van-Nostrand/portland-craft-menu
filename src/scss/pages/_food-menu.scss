@@ -15,14 +15,20 @@
       justify-content: center;
       
       @include respond(tab-port){
-        flex-flow: column;
         margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
         text-align: start;
+        justify-content: space-around;
       }
-  
+      
       @include respond(phone){
+        flex-flow: column nowrap;
         margin: 1rem $phone-side-margin 2rem $phone-side-margin;
       }
+    }
+
+    .section__list li:last-of-type{
+      // float: left;
+      // background-color: purple;
     }
   } 
 }
@@ -49,7 +55,6 @@
 
 //////////////////////////////////// 
 ////////// ITEMS
-
 .food-item{
   position: relative;
   flex: 2 1 40%;
@@ -63,10 +68,11 @@
   margin: 1rem;
 
   @include respond(tab-port){
-    margin: 0.4rem 0;
-    max-width: none;
-    max-height: none;
-    align-content: flex-start;
+    margin: 0.7rem 0.4rem;
+    max-width: 40vw;
+    max-height: unset;
+    align-content: center;
+
   }
 
   .item-name{

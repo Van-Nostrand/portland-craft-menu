@@ -15,8 +15,10 @@
   font-size: 2.5rem;
 
   @include respond(tab-port){
-    width: $mobile-menu-width;
     top: $mobile-nav-height + 3rem;
+    margin: 1rem 0;
+    padding: 0;
+    width: 95vw;
   }
 }
 
@@ -27,10 +29,11 @@ section{
   font-size: $desktop-item-base-fontsize;
 
   @include respond(tab-port){
-    width: 90%;
+    width: 100%;
+    padding: 2rem 0;
   }
   @include respond(phone){
-    width: 90%;
+    // width: 90%;
   }
 
   .section__title{
@@ -42,11 +45,12 @@ section{
     margin-left: 1rem;
 
     @include respond(tab-port){
-      font-size: $mobile-section-fontsize;
+      // font-size: $mobile-section-fontsize;
+      font-size: 1.7em;
     }
 
     @include respond(phone){
-      font-size: $phone-section-fontsize;
+      // font-size: $phone-section-fontsize;
     }
   }
 
@@ -56,7 +60,7 @@ section{
 
     @include respond(tab-port){
       flex-flow: column nowrap;
-      width: 100%;
+      font-size: 1.4em;
     }
   }
 }

@@ -34,9 +34,8 @@ export const PageLoader = ({ pageTitle}) => {
   }
   
   return(
-    <div className="pagewrapper">
-      
+    <>
       {currentPage}
-    </div>
+    </>
   )
 }
