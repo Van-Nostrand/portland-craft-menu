@@ -29,11 +29,7 @@ section{
   font-size: $desktop-item-base-fontsize;
 
   @include respond(tab-port){
-    width: 100%;
     padding: 2rem 0;
-  }
-  @include respond(phone){
-    // width: 90%;
   }
 
   .section__title{

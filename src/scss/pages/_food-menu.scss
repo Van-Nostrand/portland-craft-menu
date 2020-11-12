@@ -72,7 +72,10 @@
     max-width: 40vw;
     max-height: unset;
     align-content: center;
+  }
 
+  @include respond(phone){
+    max-width: unset;
   }
 
   .item-name{
