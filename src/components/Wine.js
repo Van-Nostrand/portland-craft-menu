@@ -5,7 +5,7 @@ export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal}) => {
 
 
   return(
-    <li className="wine-item">
+    <li className="wine-item menu-item">
 
       <div className="wine-item-name item-name">
         {itemName}

@@ -17,6 +17,7 @@
   font-weight: 300 900;
   src: url('../../font/Raleway-VariableFont_wght.woff2') format('woff2');
 }
+
 *,
 *::before,
 *::after{
@@ -31,9 +32,7 @@ button{
   font-weight: inherit;
 }
 
-
 // set html font-size to 62.5%
-// reasoning:
 // the default font size in most browsers is 16px. some users like to change the font size for vision reasons. if we set the html font-size to a static value, then we remove the users ability to do this. if we set it to a percentage, with the intention being that we design the page with 1rem = 10px on a 16px font size page, then we need to set the page to a percentage that is equivalent to 10/16.  
 
 html{
@@ -44,6 +43,7 @@ html{
 
   background-color: $menu-background-color;
   
+  //breakpoints for reasonable resizing of fonts on other devices
   @include respond(tab-land){  // width < 1200
     font-size: 56.25%;
   }
@@ -52,7 +52,7 @@ html{
   }
   @include respond(phone){
     font-size: 40%;
-    letter-spacing: 0.01rem;
+    // letter-spacing: 0.01rem;
   }
   @include respond(big-desk){  // width > 1800
     font-size: 75%;
@@ -66,6 +66,5 @@ li{
 .app-div{
   display: flex;
   flex-flow: column nowrap;
-  // justify-content: center;
   align-items: center;
 }

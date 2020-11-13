@@ -8,8 +8,10 @@
 
   .section__title{
     margin: 3rem 0 2rem 0;
+  }
 
-    font-size: $desktop-section-fontsize + 1rem;
+  .section__title:nth-of-type(1){
+    font-size: 2.3em;
   }
 
   .section__hh-subtitle{
@@ -19,26 +21,14 @@
 
     font-weight: 500;
     text-align: center;
-    font-size: $desktop-item-name-fontsize;
-    
-    @include respond(tab-land){
-      font-size: $mobile-item-name-fontsize;
-    }
+    font-size: 1.3em;
 
-    @include respond(tab-port){
-      font-size: $mobile-item-name-fontsize;
-    }
-
-    @include respond(phone){
-      font-size: $phone-item-name-fontsize;
-    }
-  }
-
-  .hh-subtitle-time{
-    display: inline-block;
-
-    @include respond(tab-port){
-      display: block;
+    .hh-subtitle-time{
+      display: inline-block;
+  
+      @include respond(tab-port){
+        display: block;
+      }
     }
   }
 }
@@ -65,15 +55,12 @@
 
   .item-size{
     color: $dark-font;
-    font-size: $desktop-item-notes-fontsize;
     font-weight: 400;
     margin: 0 0.3rem;
   
     @include respond(tab-port){
-      font-size: $mobile-item-notes-fontsize - 0.2rem;
     }
     @include respond(phone){
-      font-size: $phone-item-notes-fontsize - 0.2rem;
     }
   }
 
@@ -95,7 +82,6 @@
   width: 100%;
 
   img{
-
     //the svg isn't centered properly, so this corrects that until I edit it
     position: relative;
     left: -6px;

@@ -1,23 +1,24 @@
 /////////////////////////////// 
 ////// SECTIONS
-.food-menu{
+.menu.food-menu{
 
   section{
     display: flex;
     flex-flow: column;
     align-items: flex-start;
 
-    @include sectionBorderTop();
-  
     .section__list{
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: flex-start;
+      min-width: 80vw;
+      
       
       @include respond(tab-port){
         margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
         text-align: start;
         justify-content: space-around;
+        align-items: stretch;
       }
       
       @include respond(phone){
@@ -25,12 +26,33 @@
         margin: 1rem $phone-side-margin 2rem $phone-side-margin;
       }
     }
-
-    .section__list li:last-of-type{
-      // float: left;
-      // background-color: purple;
-    }
   } 
+
+  & .sides {
+    max-width: 50vw;
+    align-self: flex-start;
+  
+    @include respond(tab-port){
+      max-width: unset;
+    }
+
+    .section__title{
+      font-size: 1.2em;
+    }
+    .section__list{
+      min-width: unset;
+      flex-flow: row wrap;
+  
+      .food-item{
+        margin: 0.2rem 1.7rem;
+        font-size: 0.8em;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        row-gap: unset;
+        max-width: 11rem;
+      }
+    }
+  }
 }
 
 .snacks .section__title{
@@ -43,15 +65,14 @@
   color: $maybe-green;
 }
 
-.sides {
-  max-width: 50vw;
-  & .section__list{
+.sweets{
 
-    & .food-item{
-      
-    }
+  @include respond(tab-port){
+
   }
 }
+
+
 
 //////////////////////////////////// 
 ////////// ITEMS
@@ -63,7 +84,7 @@
   grid-template-columns: 1fr auto;
   grid-template-rows: auto auto 1fr;
   row-gap: 0.1rem;
-  max-width: 29rem;
+  max-width: 28rem;
   max-height: 25rem;
   margin: 1rem;
 

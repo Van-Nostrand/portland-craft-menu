@@ -5,12 +5,13 @@ import {Cocktail} from "./Cocktail";
 export const DrinksSection = ({drinks, section}) => {
 
   let dranks; 
-  let sectionClassName = section;
+
+  const WINESIZES = <div className="wine-sizes">5oz, 8oz, bottle</div>;
+  const BUBBLYSIZES = <div className="wine-sizes">5oz, bottle</div>;
 
   if(section === "wine"){
     let winekeys = Object.keys(drinks);
     let wineCategories = [];
-    dranks = [];
     winekeys.forEach((style, i) => {
       let styleData = drinks[style].map((wine, j) => {
         return <Wine 
@@ -20,33 +21,60 @@ export const DrinksSection = ({drinks, section}) => {
                 notes={wine.notes}
                 key={`${style}-wine-${j}`} />
       });
-      dranks.push( 
+      wineCategories.push( 
         <ul className="section__list" key={`winelist${i}`}>
           {styleData}
         </ul>);
     });
-    console.log(dranks);
+    dranks = 
+      <>
+        <div className="red-wine-wrapper">
+          <div className="section__title">
+            Red
+          </div>
+          {WINESIZES}
+          {wineCategories[0]}
+        </div>
+        <div className="white-wine-wrapper">
+          <div className="section__title">
+            White
+          </div>
+          {WINESIZES}
+          {wineCategories[1]}
+        </div>
+        <div className="bubbly-wrapper">
+          <div className="section__title">
+            Bubbly
+          </div>
+          {BUBBLYSIZES}
+          {wineCategories[2]}
+        </div>
+        
+      </>;
+    section = "wine-section"
   }
   else if(section === "cocktails"){
-    dranks = <ul className="section__list">
-                {
-                  drinks.map((cocktail, i) => {
-                    return <Cocktail 
-                            itemName={cocktail.name}
-                            price={cocktail.price}
-                            notes={cocktail.notes}
-                            key={`cocktail-${i}`} />
-                  })
-                }
-              </ul>;
+    dranks = 
+      <>
+        <div className="section__title">
+          Cocktails
+        </div>
+        <ul className="section__list">
+          {drinks.map((cocktail, i) => {
+              return <Cocktail 
+                      itemName={cocktail.name}
+                      price={cocktail.price}
+                      notes={cocktail.notes}
+                      key={`cocktail-${i}`} />
+          })}
+        </ul>
+      </>;
+    section = "cocktail-section"
   }
   
   return (
     <section className={section}>
-      <div className="section__title">
-        {section}
-      </div>
-
+      
       {dranks}
       
     </section>

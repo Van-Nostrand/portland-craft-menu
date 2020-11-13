@@ -5,7 +5,7 @@ export const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
   let notesElement = notes.split(".").map((item, i) => <p key={`splitstring${i}`}>{item}</p>);
 
   return(
-    <li className="cocktail">
+    <li className="cocktail menu-item">
 
       <div className="cocktail-name item-name">
 

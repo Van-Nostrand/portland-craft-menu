@@ -12,7 +12,7 @@ export const HappyHour = ({menuData}) => {
       <div className="menu features">
         <section className="happy-hour">
           <div className="section__title">
-            Happy-Hour
+            Happy-Hour!
           </div>
           <div className="section__hh-subtitle">
             <div className="hh-subtitle-time">

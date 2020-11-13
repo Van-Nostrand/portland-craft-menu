@@ -1,20 +1,27 @@
 import React from "react";
-
-import {CocktailSection} from "./CocktailSection";
-import {WineSection} from "./WineSection";
+import { DrinksSection } from  "./DrinksSection";
 
 export const DrinksMenu = ({menuData}) => {
 
   return (
     <div className="menu drinks-menu">
       
-      <WineSection section="red" wineData={menuData.RED_WINE} />
+      <DrinksSection
+        section="wine" 
+        drinks={{
+          red: menuData.RED_WINE, 
+          white: menuData.WHITE_WINE, 
+          bubbles: menuData.BUBBLES 
+        }} />
 
-      <WineSection section="white" wineData={menuData.WHITE_WINE} />
-
-      <WineSection section="bubbly" wineData={menuData.BUBBLES} />
-
-      <CocktailSection cocktailData={menuData.COCKTAILS} />
+      <div className="divider-wrapper">
+        <div className="horizontal-divider"></div>
+      </div>
+      
+      
+      <DrinksSection
+        section="cocktails" 
+        drinks={menuData.COCKTAILS} />
       
     </div>
   )
