@@ -8,6 +8,11 @@ export const FoodMenu = ({logos, menuData}) => {
       <div className="menu food-menu">
 
         <FoodSection 
+          section="Features"
+          items={menuData.FEATURES}
+          logos={logos} />
+
+        <FoodSection 
           section="Bar Snacks" 
           items={menuData.SNACKS} 
           logos={logos} />

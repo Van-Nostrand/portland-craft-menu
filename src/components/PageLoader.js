@@ -9,6 +9,7 @@ import {
   COCKTAILS,
   HAPPY_HOUR,
   HAPPY_HOUR_FOOD,
+  FEATURES,
   SNACKS,
   OMNIVORES,
   HERBIVORES,
@@ -28,7 +29,7 @@ export const PageLoader = ({ pageTitle}) => {
   switch(true){
     case /food/.test(pageTitle): 
       currentPage = <FoodMenu
-                      menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES}} 
+                      menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES,FEATURES}} 
                       logos={{gflogo, vegetarianlogo, veganlogo, nutFree, dairyFree}} />;
       break;
     case /drinks/.test(pageTitle): 

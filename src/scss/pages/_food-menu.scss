@@ -99,3 +99,14 @@
   }
 }
 
+.food-section.features{
+  .section__list{
+    .food-item{
+      margin: 0.2rem 3rem;
+
+      @include respond(tab-port){
+        margin: 0.2rem 0;
+      }
+    }
+  }
+}

@@ -458,6 +458,30 @@ export const NEW_COCKTAILS = [
   },
 ]
 
+export const FEATURES = [
+  {
+    name: "Parsnip and Szechuan Pepper Soup",
+    price: "13",
+    notes: "",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: false, 
+    dairyFree: false
+  },
+  {
+    name: "Ink Risotto With Fried Calimari",
+    price: "17",
+    notes: "",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: false, 
+    dairyFree: false
+  },
+
+]
+
 export const COCKTAILS = [
   {
     name: "Aperol or Elderflower Spritz",
