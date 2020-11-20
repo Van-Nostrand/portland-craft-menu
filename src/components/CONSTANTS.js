@@ -417,6 +417,11 @@ export const BUBBLES = [
 
 export const NEW_COCKTAILS = [
   {
+    name: "Nelson Iced Tea",
+    price: "13",
+    notes: "Gin, Cointreau, black cherry balsamic vinegar, lemon, sugar, soda"
+  },
+  {
     name: "Gastown",
     price: "13",
     notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
@@ -456,6 +461,7 @@ export const NEW_COCKTAILS = [
     price: "14",
     notes: "Tequila, Green Chartreuse, sugar, lime, cassis, egg white"
   },
+  
 ]
 
 export const FEATURES = [
