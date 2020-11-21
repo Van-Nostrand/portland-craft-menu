@@ -1,10 +1,27 @@
-import React, { useRef} from "react";
+import React, { useState, useRef, useEffect} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
-import pcservice from "../assets/PCservice.png";
-import pcTaps from "../assets/pcTaps.jpg";
+// import pcservice from "../assets/PCservice.png";
+// import pcTaps from "../assets/pcTaps.jpg";
+
 
 export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
+
+  let [ windowBreakpoint, setWindowBreakpoint] = useState(true);
+
+  useEffect(() => {
+
+    const getWindowSize = () => {
+      setWindowBreakpoint(window.innerWidth > 900);
+    }
+
+    window.addEventListener("resize", getWindowSize);
+
+    return () => {
+      window.removeEventListener("resize", getWindowSize);
+    }
+  }, []);
+
   let menuSwitchRef = useRef(null);
   let show = useCustomScrollRef(menuSwitchRef, 1000);
 
@@ -48,12 +65,35 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   );
 
 
+  let pcTaps;
+  await (() => {
+    if(windowBreakpoint){
+      import(
+        /* webpackPrefetch: true */
+        '../assets/pcTaps.jpg'
+      )
+      .then(img => {
+        console.log("then!")
+        pcTaps = <img data-src={img} />
+        console.log(pcTaps)
+      })
+      .catch(err => console.log(err));
+    }
+    else{
+      pcTaps = <div></div>
+    }
+  });
+
+  console.log(pcTaps);
+
+
   return(
     <div className="nav-hat-wrapper">
       
       <nav className="full-nav" >
         <div className="bknd-img-wrapper">
-          <img src={pcTaps}  />
+          {/* <img className="bknd-img" src={pcTaps} alt="NOTHING"  /> */}
+          {pcTaps}
         </div>
         {logo}
         <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
@@ -61,7 +101,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
       <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
         <div className="bknd-img-wrapper">
-          <img src={pcservice}  />
+          {/* <img className="taps-img" src={pcservice}  /> */}
         </div>
         <NavButtonGroup classString={"secondary-nav__button-group"} buttons={secondaryNavButtons}/>
       </nav>

@@ -1,0 +1,82 @@
+.features{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.happy-hour{
+
+  .section__title{
+    margin: 3rem 0 2rem 0;
+  }
+
+  .section__title:nth-of-type(1){
+    font-size: 2.3em;
+  }
+
+  .section__hh-subtitle{
+    margin: 3rem;
+    
+    color: $dark-font;
+
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.3em;
+
+    .hh-subtitle-time{
+      display: inline-block;
+  
+    }
+  }
+}
+
+.hh-item{
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 1rem;
+
+  .item-price{
+    margin: 0 0.5rem;
+
+  }
+
+  .item-size{
+    color: $dark-font;
+    font-weight: 400;
+    margin: 0 0.3rem;
+
+  }
+
+  span{
+    display: flex;
+    flex-flow: row nowrap;
+  }
+}
+
+.hh-item div {
+
+  display: inline-block;
+  margin: 0 0.1rem;
+}
+.smiley-face-wrapper{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+
+  img{
+    //the svg isn't centered properly, so this corrects that until I edit it
+    position: relative;
+    left: -6px;
+  }
+}
+
+.sunday-social{
+
+  p{
+    font-weight: 400;
+  }
+}
+.smaller-text{
+  font-size: 1.5rem;
+}

@@ -9,7 +9,12 @@
 @import "components/mobile-nav";
 @import "components/background-photo";
 
-@import "pages/food-menu";
-@import "pages/drinks-menu";
-@import "pages/menu";
-@import "pages/happy-hour";
+@import "pages/main/food-menu";
+@import "pages/main/drinks-menu";
+@import "pages/main/menu";
+@import "pages/main/happy-hour";
+
+@import "pages/mobile/food-menu";
+@import "pages/mobile/drinks-menu";
+@import "pages/mobile/menu";
+@import "pages/mobile/happy-hour";

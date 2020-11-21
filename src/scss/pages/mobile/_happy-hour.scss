@@ -1,0 +1,24 @@
+.happy-hour{
+  .section__hh-subtitle{
+    .hh-subtitle-time{
+      @include respond(tab-port){
+        display: block;
+      }
+    }
+  }
+}
+
+.hh-item{
+  @include respond(phone){
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .item-price{
+    @include respond(tab-port){
+      margin: 0;
+    }
+  }
+}

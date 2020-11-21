@@ -1,0 +1,36 @@
+/////////////////////////////////////////// 
+////////// GENERAL MENU STYLING
+.menu{
+  @include respond(tab-port){
+    top: $mobile-nav-height + 3rem;
+    margin: 1rem 0;
+    padding: 0;
+    // width: 95vw;
+  }
+}
+
+section{
+  @include respond(tab-port){
+    padding: 2rem 0;
+  }
+
+  .section__title{
+    @include respond(tab-port){
+      font-size: 1.7em;
+    }
+  }
+
+  .section__list{
+    @include respond(tab-port){
+      flex-flow: column nowrap;
+      font-size: 1.4em;
+      width: 88vw;
+    }
+  }
+}
+
+.divider-wrapper{
+  @include respond(tab-port){
+    display: none;
+  }
+}

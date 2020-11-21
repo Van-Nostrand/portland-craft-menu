@@ -1,0 +1,96 @@
+/////////////////////////////// 
+////// SECTIONS
+.menu.food-menu{
+
+  section{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    .section__list{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      // min-width: unset;
+    }
+  } 
+
+  & .sides {
+    .section__title{
+      font-size: 1.2em;
+    }
+    .section__list{
+      flex-flow: row wrap;
+  
+      .food-item{
+        margin: 0.2rem 0rem;
+        font-size: 0.8em;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        row-gap: unset;
+      }
+    }
+  }
+}
+
+.snacks .section__title{
+  color: $potential-blue;
+}
+.omnivores .section__title{
+  color: $portland-red;
+}
+.herbivores .section__title{
+  color: $maybe-green;
+}
+
+//////////////////////////////////// 
+////////// ITEMS
+.food-item{
+  position: relative;
+  flex: 2 1 40%;
+  display: grid;
+
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  row-gap: 0.1rem;
+  max-width: 28rem;
+  max-height: 25rem;
+  margin: 1rem;
+
+  .item-name{
+    display: inline-block;
+    
+    letter-spacing: 0;
+    grid-column: 1;
+    grid-row: 1 ;
+    justify-self: start;
+  }
+
+  .item-price{
+    display: inline-block;
+
+    text-align: end;
+    grid-column: 2;
+    grid-row: 1;
+
+    font-size: 0.9em;
+  } 
+  
+  .item-notes{
+
+    justify-self: start;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+
+    font-size: 0.8em;
+    font-weight: 100;
+    font-style: italic;
+  }
+  .diet{
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+}
+

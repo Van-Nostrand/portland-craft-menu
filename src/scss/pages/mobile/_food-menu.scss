@@ -1,0 +1,51 @@
+/////////////////////////////// 
+////// SECTIONS
+.menu.food-menu{
+
+  section{
+    @include respond(tab-port){
+
+    }
+    .section__list{
+      @include respond(tab-port){
+        margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
+        text-align: start;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 88vw;
+      }
+      
+      @include respond(phone){
+        flex-flow: column nowrap;
+        margin: 1rem $phone-side-margin 2rem $phone-side-margin;
+      }
+    }
+  } 
+
+  & .sides {
+    @include respond(tab-port){
+      .section__list{
+        justify-content: space-between;
+
+        .food-item{
+          max-width: 43%;
+        }
+      }
+    }
+  }
+}
+
+//////////////////////////////////// 
+////////// ITEMS
+.food-item{
+  @include respond(tab-port){
+    margin: 0.7rem 0rem;
+    max-height: unset;
+    align-content: center;
+  }
+
+  @include respond(phone){
+    max-width: unset;
+  }
+}
+
