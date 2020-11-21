@@ -438,8 +438,8 @@ export const NEW_COCKTAILS = [
   },
   {
     name: "Eastburn Daquiri",
-    price: "13",
-    notes: "Butter infused rum, lemon, sugar, house-made candied ginger"
+    price: "12",
+    notes: "Butter infused rum, lemon, sugar"
   },
   {
     name: "Lonsdale Quay",

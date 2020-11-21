@@ -14,7 +14,7 @@ export const DrinksMenu = ({menuData}) => {
 
       <WineSection section="bubbly" wineData={menuData.BUBBLES} />
 
-      <CocktailSection cocktailData={menuData.COCKTAILS} />
+      <CocktailSection cocktailData={menuData.NEW_COCKTAILS} />
       
     </div>
   )
