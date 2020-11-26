@@ -3,11 +3,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
 
 module.exports = {
-  entry: __dirname + "/src/index.js",
+  // entry: __dirname + "/src/index.js",
+  entry: {
+    index: {
+      import: __dirname + "/src/index.js",
+      dependOn: 'shared'
+    },
+    another: {
+      import: __dirname + "/src/components/lazyImage.js",
+      dependOn: 'shared'
+    },
+    shared: ['react', 'react-dom']
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-    publicPath: ""
+    filename: "[name].bundle.js"
   },
   module: {
     rules: [

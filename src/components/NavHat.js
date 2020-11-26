@@ -1,23 +1,37 @@
-import React, { useState, useRef, useEffect} from "react";
+import React, { useState, useRef, useEffect, lazy} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
-// import pcservice from "../assets/PCservice.png";
-// import pcTaps from "../assets/pcTaps.jpg";
+import pcservice from "../assets/PCservice.png";
+import pcTaps from "../assets/pcTaps.jpg";
 
+// const IMAGES = require.context("../assets/", true);
 
 export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
-  let [ windowBreakpoint, setWindowBreakpoint] = useState(true);
+  const [ windowBreakpoint, setWindowBreakpoint] = useState(true);
+  const [ loadImage, setLoadImage ] = useState(false);
 
+  // handles window resizing
   useEffect(() => {
-
     const getWindowSize = () => {
       setWindowBreakpoint(window.innerWidth > 900);
     }
+    // const checkScroll = () => {
+    //   if(!loadImage && (scrollTarget.current.offsetTop < (window.scrollY + window.innerHeight))){
+    //     setLoadImage(true);
 
+    //     import(
+    //       /* webpackPrefetch: true */
+    //       "./lazyImage"
+    //     )
+    //     .then(lazyImage => lazyImage.default(imageTarget, 'alice.jpg'))
+    //     .catch(err => console.error(err));
+    //   }
+    // }
     window.addEventListener("resize", getWindowSize);
-
+    // window.addEventListener('scroll', checkScroll);
     return () => {
+      // window.removeEventListener('scroll', checkScroll);
       window.removeEventListener("resize", getWindowSize);
     }
   }, []);
@@ -64,27 +78,38 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     </>
   );
 
+  let taps = <img src={pcTaps} />
+  // if(windowBreakpoint){
+  //   pcTaps = <img src={IMAGES('./pcTaps.jpg')} />;
+  // }
+  // else{
+  //   pcTaps = <></>
+  // }
+  
 
-  let pcTaps;
-  await (() => {
-    if(windowBreakpoint){
-      import(
-        /* webpackPrefetch: true */
-        '../assets/pcTaps.jpg'
-      )
-      .then(img => {
-        console.log("then!")
-        pcTaps = <img data-src={img} />
-        console.log(pcTaps)
-      })
-      .catch(err => console.log(err));
-    }
-    else{
-      pcTaps = <div></div>
-    }
-  });
+    // an attempt at lazy loading that didn't go as planned
+  // let pcTaps;
+  // await (() => {
+  //   if(windowBreakpoint){
+  //     import(
+  //       /* webpackPrefetch: true */
+  //       '../assets/pcTaps.jpg'
+  //     )
+  //     .then(img => {
+  //       console.log("then!")
+  //       pcTaps = <img data-src={img} />
+  //       console.log(pcTaps)
+  //     })
+  //     .catch(err => console.log(err));
+  //   }
+  //   else{
+  //     pcTaps = <div></div>
+  //   }
+  // });
 
-  console.log(pcTaps);
+  // console.log(pcTaps);
+
+  // console.log(getImageNames());
 
 
   return(
@@ -93,7 +118,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       <nav className="full-nav" >
         <div className="bknd-img-wrapper">
           {/* <img className="bknd-img" src={pcTaps} alt="NOTHING"  /> */}
-          {pcTaps}
+          <LazyImageTest src="pcTaps" />
         </div>
         {logo}
         <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
@@ -101,7 +126,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
       <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
         <div className="bknd-img-wrapper">
-          {/* <img className="taps-img" src={pcservice}  /> */}
+          <img className="taps-img" src={pcservice}  />
         </div>
         <NavButtonGroup classString={"secondary-nav__button-group"} buttons={secondaryNavButtons}/>
       </nav>
@@ -114,7 +139,6 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       </nav>
 
       <div className="secondary-nav-scroll-target" ref={menuSwitchRef} ></div>
-
     </div>
   )
 };
@@ -128,3 +152,4 @@ const NavButtonGroup = (props) => {
     </div>
   )
 }
+

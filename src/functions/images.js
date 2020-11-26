@@ -1,6 +1,10 @@
 import generateImage from "./generateImage";
+import getImageNames from "./getImageNames";
 
-const image = document.querySelector(".bknd-img");
+const image = () => {
+  let imageContainer = document.querySelector(".bknd-img");
+  
+}
 
 console.log(image);
 
