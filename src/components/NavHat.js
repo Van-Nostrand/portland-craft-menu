@@ -11,30 +11,32 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   const [ windowBreakpoint, setWindowBreakpoint] = useState(true);
   const [ loadImage, setLoadImage ] = useState(false);
 
+  const imagetarget = useRef(null);
+
   // handles window resizing
   useEffect(() => {
+    setWindowBreakpoint(window.innerWidth > 900);
+    console.log(window.innerWidth);
     const getWindowSize = () => {
       setWindowBreakpoint(window.innerWidth > 900);
     }
-    // const checkScroll = () => {
-    //   if(!loadImage && (scrollTarget.current.offsetTop < (window.scrollY + window.innerHeight))){
-    //     setLoadImage(true);
-
-    //     import(
-    //       /* webpackPrefetch: true */
-    //       "./lazyImage"
-    //     )
-    //     .then(lazyImage => lazyImage.default(imageTarget, 'alice.jpg'))
-    //     .catch(err => console.error(err));
-    //   }
-    // }
+    
     window.addEventListener("resize", getWindowSize);
-    // window.addEventListener('scroll', checkScroll);
     return () => {
-      // window.removeEventListener('scroll', checkScroll);
       window.removeEventListener("resize", getWindowSize);
     }
   }, []);
+
+  useEffect(() => {
+    if(windowBreakpoint){
+      import(
+        /* webpackPrefetch: true */
+        './lazyImage'
+      )
+      .then(image => image.default("pcTaps.jpg", imagetarget))
+      .catch(err => console.error(err));
+    }
+  });
 
   let menuSwitchRef = useRef(null);
   let show = useCustomScrollRef(menuSwitchRef, 1000);
@@ -78,38 +80,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     </>
   );
 
-  let taps = <img src={pcTaps} />
-  // if(windowBreakpoint){
-  //   pcTaps = <img src={IMAGES('./pcTaps.jpg')} />;
-  // }
-  // else{
-  //   pcTaps = <></>
-  // }
-  
-
-    // an attempt at lazy loading that didn't go as planned
-  // let pcTaps;
-  // await (() => {
-  //   if(windowBreakpoint){
-  //     import(
-  //       /* webpackPrefetch: true */
-  //       '../assets/pcTaps.jpg'
-  //     )
-  //     .then(img => {
-  //       console.log("then!")
-  //       pcTaps = <img data-src={img} />
-  //       console.log(pcTaps)
-  //     })
-  //     .catch(err => console.log(err));
-  //   }
-  //   else{
-  //     pcTaps = <div></div>
-  //   }
-  // });
-
-  // console.log(pcTaps);
-
-  // console.log(getImageNames());
+  let taps = <img src={pcTaps} /> 
 
 
   return(
@@ -117,8 +88,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       
       <nav className="full-nav" >
         <div className="bknd-img-wrapper">
-          {/* <img className="bknd-img" src={pcTaps} alt="NOTHING"  /> */}
-          <LazyImageTest src="pcTaps" />
+          <img alt="LOADING...." ref={imagetarget} />
         </div>
         {logo}
         <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
