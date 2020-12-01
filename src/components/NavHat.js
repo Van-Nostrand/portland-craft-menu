@@ -1,124 +1,81 @@
-import React, { useState, useRef, useEffect, lazy} from "react";
+import React, { useState, useRef, useEffect} from "react";
 import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
 import pcservice from "../assets/PCservice.png";
-import pcTaps from "../assets/pcTaps.jpg";
-
-// const IMAGES = require.context("../assets/", true);
 
 export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
   const [ windowBreakpoint, setWindowBreakpoint] = useState(true);
   const [ loadImage, setLoadImage ] = useState(false);
+  const imageTarget = useRef(null);
 
   // handles window resizing
   useEffect(() => {
     const getWindowSize = () => {
       setWindowBreakpoint(window.innerWidth > 900);
     }
-    // const checkScroll = () => {
-    //   if(!loadImage && (scrollTarget.current.offsetTop < (window.scrollY + window.innerHeight))){
-    //     setLoadImage(true);
-
-    //     import(
-    //       /* webpackPrefetch: true */
-    //       "./lazyImage"
-    //     )
-    //     .then(lazyImage => lazyImage.default(imageTarget, 'alice.jpg'))
-    //     .catch(err => console.error(err));
-    //   }
-    // }
     window.addEventListener("resize", getWindowSize);
-    // window.addEventListener('scroll', checkScroll);
     return () => {
-      // window.removeEventListener('scroll', checkScroll);
       window.removeEventListener("resize", getWindowSize);
     }
   }, []);
 
+  // lazy load image
+  useEffect(() => {
+    if(windowBreakpoint){
+      import(
+        /* webpackPrefetch: true */
+        "./lazyImage"
+      )
+      .then(lazyImage => lazyImage.default("pcTaps.jpg", imageTarget))
+      .catch(err => console.error(err));
+    }
+  },[windowBreakpoint]);
+
   let menuSwitchRef = useRef(null);
   let show = useCustomScrollRef(menuSwitchRef, 1000);
 
-  let leftButtons = (
-    <>
-      <button onClick={() => changePage("food")}>FOOD</button>      
-      <button onClick={() => changePage("drinks")}>DRINKS</button>
-    </>
-  );
+  let leftButtons = (<>
+    <button onClick={() => changePage("food")}>FOOD</button>      
+    <button onClick={() => changePage("drinks")}>DRINKS</button>
+  </>);
+  let rightButtons = (<>
+    <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
+  </>);
 
   let logo = <div className="logo-container">
                <img src={blkWhiteLogo} />
              </div>;
 
-  let rightButtons = (
-    <>
-      <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
-    </>
-  );
 
-  let allbuttons = (
-    <>
-      <button onClick={() => changePage("food")}>
-        FOOD
-      </button>      
-      <button onClick={() => changePage("drinks")}>
-        DRINKS
-      </button>
-      <button onClick={() => changePage("specials")}>
-        HAPPY-HOUR
-      </button>
-    </>
-  );
+  let allbuttons = (<>
+    <button onClick={() => changePage("food")}>
+      FOOD
+    </button>      
+    <button onClick={() => changePage("drinks")}>
+      DRINKS
+    </button>
+    <button onClick={() => changePage("specials")}>
+      HAPPY-HOUR
+    </button>
+  </>);
 
-  let secondaryNavButtons = (
-    <>
-      {logo}
-      {leftButtons}
-      {rightButtons}
-    </>
-  );
-
-  let taps = <img src={pcTaps} />
-  // if(windowBreakpoint){
-  //   pcTaps = <img src={IMAGES('./pcTaps.jpg')} />;
-  // }
-  // else{
-  //   pcTaps = <></>
-  // }
-  
-
-    // an attempt at lazy loading that didn't go as planned
-  // let pcTaps;
-  // await (() => {
-  //   if(windowBreakpoint){
-  //     import(
-  //       /* webpackPrefetch: true */
-  //       '../assets/pcTaps.jpg'
-  //     )
-  //     .then(img => {
-  //       console.log("then!")
-  //       pcTaps = <img data-src={img} />
-  //       console.log(pcTaps)
-  //     })
-  //     .catch(err => console.log(err));
-  //   }
-  //   else{
-  //     pcTaps = <div></div>
-  //   }
-  // });
-
-  // console.log(pcTaps);
-
-  // console.log(getImageNames());
-
+  let secondaryNavButtons = (<>
+    {logo}
+    {leftButtons}
+    {rightButtons}
+  </>);
 
   return(
     <div className="nav-hat-wrapper">
       
       <nav className="full-nav" >
         <div className="bknd-img-wrapper">
-          {/* <img className="bknd-img" src={pcTaps} alt="NOTHING"  /> */}
-          <LazyImageTest src="pcTaps" />
+          <img 
+            className="image-test" 
+            alt="loading..." 
+            ref={imageTarget} />
+          
         </div>
         {logo}
         <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
