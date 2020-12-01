@@ -195,16 +195,6 @@ export const HERBIVORES = [
     dairyFree: true
   },
   {
-    name: "Chilliwack Corn-on-the-Cob",
-    price: "7",
-    notes: "Grilled corn, chili lime butter, citrus herb crumble",
-    vegetarian: true,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: true, 
-    dairyFree: true
-  },
-  {
     name: "Heirloom Tomato Salad",
     price: "11",
     notes: "Avocado, basil, radish, balsamic aioli, sourdough",
@@ -461,31 +451,6 @@ export const NEW_COCKTAILS = [
     price: "14",
     notes: "Tequila, Green Chartreuse, sugar, lime, cassis, egg white"
   },
-  
-]
-
-export const FEATURES = [
-  {
-    name: "Parsnip and Szechuan Pepper Soup",
-    price: "13",
-    notes: "",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: false
-  },
-  {
-    name: "Ink Risotto With Fried Calimari",
-    price: "17",
-    notes: "",
-    vegetarian: false,
-    vegan: false,
-    glutenFree: false, 
-    nutFree: false, 
-    dairyFree: false
-  },
-
 ]
 
 export const COCKTAILS = [
@@ -530,6 +495,65 @@ export const COCKTAILS = [
     notes: "Absolut vodka, house caesar mix, Clamato, pickled veg."
   }
 ]
+
+export const ProposedCocktails = [
+  {
+    name: "Nelson Iced Tea",
+    price: "13",
+    notes: "Gin, Cointreau, black cherry balsamic vinegar, lemon, sugar, soda"
+  },
+  {
+    name: "Aperol or Elderflower Spritz",
+    price: "11",
+    notes: "Choice of Aperol or St Germain and Cassis (+$1), mixed with soda and sparkling white wine"
+  },
+  {
+    name: "Gastown",
+    price: "13",
+    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
+  },
+  {
+    name: "Mt Hood Warmer",
+    price: "14",
+    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
+  },
+  {
+    name: "Eastburn Daquiri",
+    price: "12",
+    notes: "Butter infused rum, lemon, sugar"
+  },
+  {
+    name: "Charlotte's Tick Bite",
+    price: "13",
+    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
+  },
+  {
+    name: "Whiskey Pearing",
+    price: "15",
+    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
+  },
+  {
+    name: "Moscow Mule / Dark & Stormy",
+    price: "12",
+    notes: "Absolut vodka or Goslings black rum, lime, sugar, Angostura bitters, Fentiman's ginger beer"
+  }
+]
+
+
+export const FEATURES = [
+  {
+    name: "Parsnip and Szechuan Pepper Soup",
+    price: "13",
+    notes: "",
+    vegetarian: false,
+    vegan: false,
+    glutenFree: false, 
+    nutFree: false, 
+    dairyFree: false
+  }
+]
+
+
 
 
 export const HAPPY_HOUR = [
