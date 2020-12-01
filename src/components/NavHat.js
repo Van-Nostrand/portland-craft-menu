@@ -9,28 +9,32 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   const [ loadImage, setLoadImage ] = useState(false);
   const imageTarget = useRef(null);
 
+  const imagetarget = useRef(null);
+
   // handles window resizing
   useEffect(() => {
+    setWindowBreakpoint(window.innerWidth > 900);
+    console.log(window.innerWidth);
     const getWindowSize = () => {
       setWindowBreakpoint(window.innerWidth > 900);
     }
+    
     window.addEventListener("resize", getWindowSize);
     return () => {
       window.removeEventListener("resize", getWindowSize);
     }
   }, []);
 
-  // lazy load image
   useEffect(() => {
     if(windowBreakpoint){
       import(
         /* webpackPrefetch: true */
-        "./lazyImage"
+        './lazyImage'
       )
-      .then(lazyImage => lazyImage.default("pcTaps.jpg", imageTarget))
+      .then(image => image.default("pcTaps.jpg", imagetarget))
       .catch(err => console.error(err));
     }
-  },[windowBreakpoint]);
+  });
 
   let menuSwitchRef = useRef(null);
   let show = useCustomScrollRef(menuSwitchRef, 1000);
@@ -47,6 +51,35 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
                <img src={blkWhiteLogo} />
              </div>;
 
+  let rightButtons = (
+    <>
+      <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
+    </>
+  );
+
+  let allbuttons = (
+    <>
+      <button onClick={() => changePage("food")}>
+        FOOD
+      </button>      
+      <button onClick={() => changePage("drinks")}>
+        DRINKS
+      </button>
+      <button onClick={() => changePage("specials")}>
+        HAPPY-HOUR
+      </button>
+    </>
+  );
+
+  let secondaryNavButtons = (
+    <>
+      {logo}
+      {leftButtons}
+      {rightButtons}
+    </>
+  );
+
+  let taps = <img src={pcTaps} /> 
 
   let allbuttons = (<>
     <button onClick={() => changePage("food")}>
@@ -71,11 +104,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       
       <nav className="full-nav" >
         <div className="bknd-img-wrapper">
-          <img 
-            className="image-test" 
-            alt="loading..." 
-            ref={imageTarget} />
-          
+          <img alt="LOADING...." ref={imagetarget} />
         </div>
         {logo}
         <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
