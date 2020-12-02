@@ -14,7 +14,8 @@ import {
   HERBIVORES,
   LARGER,
   SWEETS,
-  SIDES
+  SIDES,
+  PACKAGED_BEER
 } from "./CONSTANTS2";
 
 export const PageLoader = ({ pageTitle}) => {
@@ -25,7 +26,7 @@ export const PageLoader = ({ pageTitle}) => {
       currentPage = <FoodMenu menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES}} />;
       break;
     case /drinks/.test(pageTitle): 
-      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS}} />;
+      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS, PACKAGED_BEER}} />;
       break;
     case /specials/.test(pageTitle): 
       currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;

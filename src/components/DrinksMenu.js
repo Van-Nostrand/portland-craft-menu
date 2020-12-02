@@ -22,6 +22,10 @@ export const DrinksMenu = ({menuData}) => {
       <DrinksSection
         section="cocktails" 
         drinks={menuData.COCKTAILS} />
+
+      <DrinksSection
+        section="packaged-beer"
+        drinks={menuData.PACKAGED_BEER} />
       
     </div>
   )

@@ -71,6 +71,27 @@ export const DrinksSection = ({drinks, section}) => {
       </>;
     section = "cocktail-section"
   }
+  else if(section === "packaged-beer"){
+    dranks = 
+      <>
+        <div className="section__title">
+          Beer To-Go!
+        </div>
+        <p>Take some cans home with you!<br />(with the purchase of food)</p>
+        <ul className="section__list">
+          {drinks.map((item, i) => {
+              return  <li key={`packaged-beer-${i}`}>
+                        <div className="packaged-name item-name">
+                          {item.name}
+                        </div>
+                        <div className="packaged-price item-price">
+                          ${/[.50]$/.test(item.price) ? <>{item.price.split(".")[0]}&#189;</> : <>{item.price}</>}
+                        </div>
+                      </li>
+          })}
+        </ul>
+      </>;
+  }
   
   return (
     <section className={section}>
