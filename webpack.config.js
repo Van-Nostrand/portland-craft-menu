@@ -7,7 +7,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: ""
   },
   module: {
     rules: [
@@ -58,7 +57,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(ttf|eot|woff|woff2)$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         exclude: /node_modules/,
         use: [
           {
@@ -82,5 +81,5 @@ module.exports = {
       chunkFilename: "[id].css"
     })
   ],
-  devtool: "internal-source-map"
+  devtool: "source-map"
 }

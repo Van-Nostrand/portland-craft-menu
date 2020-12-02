@@ -19,6 +19,8 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
                <img src={blkWhiteLogo} />
              </div>;
 
+  console.log(blkWhiteLogo);
+
   let rightButtons = (
     <>
       <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
@@ -68,7 +70,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
       <nav className="mobile-nav" >
         <div className="mobile-nav__logo" >
-          <img src={blkWhiteLogo} />
+          {logo}
         </div>
         <NavButtonGroup classString={"mobile-nav__button-group"} buttons={allbuttons} />
       </nav>

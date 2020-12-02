@@ -519,3 +519,22 @@ export const NON_ALCOHOLIC = [
     notes: "PLACEHOLDER"
   }
 ];
+
+export const PACKAGED_BEER = [
+  {
+    name: "Steamworks Kolsch",
+    price: "3",
+  },
+  {
+    name: "Steamworks Hazy Pale Ale",
+    price: "3",
+  },
+  {
+    name: "Parkside Dawn Pilsner",
+    price: "3",
+  },
+  {
+    name: "Deschutes Mirror Pond Pale Ale",
+    price: "3.5",
+  },
+]

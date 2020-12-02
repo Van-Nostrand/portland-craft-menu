@@ -4,6 +4,11 @@ import {Cocktail} from "./Cocktail";
 
 export const DrinksSection = ({drinks, section}) => {
 
+  console.log("DRINKS");
+  console.log(drinks);
+  console.log("SECTION");
+  console.log(section);
+
   let dranks; 
 
   const WINESIZES = <div className="wine-sizes">5oz, 8oz, bottle</div>;
@@ -77,7 +82,7 @@ export const DrinksSection = ({drinks, section}) => {
         <div className="section__title">
           Beer To-Go!
         </div>
-        <p>Take some cans home with you!<br />(with the purchase of food)</p>
+        <p>Take some cans home with you!</p><br /><p>(with the purchase of food)</p>
         <ul className="section__list">
           {drinks.map((item, i) => {
               return  <li key={`packaged-beer-${i}`}>
