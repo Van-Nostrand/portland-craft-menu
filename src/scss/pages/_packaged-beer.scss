@@ -1,0 +1,16 @@
+
+.packaged-beer {
+  width: 90%;
+  .section__list{
+    width: 100%;
+  }
+  li{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    .packaged-price{
+      justify-self: end;
+    }
+  }
+}

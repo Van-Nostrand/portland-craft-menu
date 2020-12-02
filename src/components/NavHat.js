@@ -65,10 +65,6 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
       <nav className="mobile-nav" >
 
-        {/* {menuHamburger} */}
-
-        {/* <MobileNavDrawer open={mobileNavOpen} buttons={mobileMenu} /> */}
-
         <NavButtonGroup classString={"mobile-nav__buttons"} buttons={mobileButtons} />
 
         <span className="mobile-nav__logo" >

@@ -405,7 +405,7 @@ export const BUBBLES = [
   }
 ];
 
-export const NEW_COCKTAILS = [
+export const COCKTAILS_DRAFT = [
   {
     name: "Nelson Iced Tea",
     price: "13",
@@ -453,7 +453,7 @@ export const NEW_COCKTAILS = [
   },
 ]
 
-export const COCKTAILS = [
+export const OLD_COCKTAILS = [
   {
     name: "Aperol or Elderflower Spritz",
     price: "11",
@@ -496,53 +496,48 @@ export const COCKTAILS = [
   }
 ]
 
-export const ProposedCocktails = [
-  {
-    name: "Nelson Iced Tea",
-    price: "13",
-    notes: "Gin, Cointreau, black cherry balsamic vinegar, lemon, sugar, soda"
-  },
+export const NEW_COCKTAILS = [
   {
     name: "Aperol or Elderflower Spritz",
     price: "11",
     notes: "Choice of Aperol or St Germain and Cassis (+$1), mixed with soda and sparkling white wine"
   },
   {
-    name: "Gastown",
-    price: "13",
-    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
-  },
-  {
-    name: "Mt Hood Warmer",
-    price: "14",
-    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
-  },
-  {
-    name: "Eastburn Daquiri",
+    name: "Moscow Mule",
     price: "12",
-    notes: "Butter infused rum, lemon, sugar"
+    notes: "Absolut vodka, lime, sugar, Angostura bitters, Fentiman's ginger beer"
+  },
+  {
+    name: "Nelson Iced Tea",
+    price: "13",
+    notes: "Cory's own creation. Gin, Cointreau, Nelson Olive Oil Co black cherry balsamic vinegar, lemon, sugar, soda"
+  },
+  {
+    name: "Black Bears and Traffic",
+    price: "13",
+    notes: "Excuses for being late when you're from North Van. Sons of Vancouver's No 82 Amaretto and Chili Vodka, lemon, egg white, citrus zest"
   },
   {
     name: "Charlotte's Tick Bite",
     price: "13",
-    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
+    notes: "It's a long story. Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
+  },
+  {
+    name: "Mt Hood Warmer",
+    price: "14",
+    notes: "Chai infused rye, Ampersand \"Nocino!\", Grand Marnier, orange, sugar, absinthe"
   },
   {
     name: "Whiskey Pearing",
     price: "15",
-    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
-  },
-  {
-    name: "Moscow Mule / Dark & Stormy",
-    price: "12",
-    notes: "Absolut vodka or Goslings black rum, lime, sugar, Angostura bitters, Fentiman's ginger beer"
-  }
+    notes: "It's a double-pun - deal with it. McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
+  }  
 ]
 
 
 export const FEATURES = [
   {
-    name: "Parsnip and Szechuan Pepper Soup",
+    name: "Roasted Cauliflower Soup",
     price: "13",
     notes: "",
     vegetarian: false,
@@ -617,7 +612,7 @@ export const HAPPY_HOUR_FOOD = [
     diet: "vegan, gluten free", 
   },
   {
-    name: "Crispy Rossdown Chicken Crackling",
+    name: "Crispy Farmcrest Chicken Crackling",
     price: "5",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
     diet: "gluten and dairy free", 
@@ -673,3 +668,22 @@ export const NON_ALCOHOLIC = [
     notes: "PLACEHOLDER"
   }
 ];
+
+export const PACKAGED_BEER = [
+  {
+    name: "Parkside Dawn Pilsner",
+    price: "3"
+  },
+  {
+    name: "Deschutes Mirror Pond Pale Ale",
+    price: "3.5"
+  },
+  {
+    name: "Steamworks Hazy Pale Ale",
+    price: "3"
+  },
+  {
+    name: "Steamworks Kolsch",
+    price: "3"
+  }
+]

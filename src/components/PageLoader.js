@@ -7,6 +7,7 @@ import {
   RED_WINE,
   BUBBLES,
   NEW_COCKTAILS,
+  PACKAGED_BEER,
   HAPPY_HOUR,
   HAPPY_HOUR_FOOD,
   FEATURES,
@@ -34,7 +35,7 @@ export const PageLoader = ({ pageTitle}) => {
       break;
     case /drinks/.test(pageTitle): 
       currentPage = <DrinksMenu 
-                      menuData={{WHITE_WINE, RED_WINE, BUBBLES, NEW_COCKTAILS}} />;
+                      menuData={{WHITE_WINE, RED_WINE, BUBBLES, NEW_COCKTAILS, PACKAGED_BEER}} />;
       break;
     case /specials/.test(pageTitle): 
       currentPage = <FeaturesMenu menuData={[HAPPY_HOUR,HAPPY_HOUR_FOOD]} />;
