@@ -8,26 +8,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   let menuSwitchRef = useRef(null);
   let show = useCustomScrollRef(menuSwitchRef, 1000);
 
-  let leftButtons = (
-    <>
-      <button onClick={() => changePage("food")}>FOOD</button>      
-      <button onClick={() => changePage("drinks")}>DRINKS</button>
-    </>
-  );
-
-  let logo = <div className="logo-container">
-               <img src={blkWhiteLogo} />
-             </div>;
-
-  console.log(blkWhiteLogo);
-
-  let rightButtons = (
-    <>
-      <button onClick={() => changePage("specials")}>HAPPY-HOUR</button>
-    </>
-  );
-
-  let allbuttons = (
+  let buttons = (
     <>
       <button onClick={() => changePage("food")}>
         FOOD
@@ -41,15 +22,6 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     </>
   );
 
-  let secondaryNavButtons = (
-    <>
-      {logo}
-      {leftButtons}
-      {rightButtons}
-    </>
-  );
-
-
   return(
     <div className="nav-hat-wrapper">
       
@@ -57,22 +29,33 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
         <div className="bknd-img-wrapper">
           <img src={pcTaps}  />
         </div>
-        {logo}
-        <NavButtonGroup classString="full-nav__button-group" buttons={allbuttons} />
+        <div className="logo full-nav__logo">
+          <img src={blkWhiteLogo} />
+        </div>
+        <div className="full-nav__button-group">
+          {buttons}
+        </div>
       </nav>
 
       <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
         <div className="bknd-img-wrapper">
           <img src={pcservice}  />
         </div>
-        <NavButtonGroup classString={"secondary-nav__button-group"} buttons={secondaryNavButtons}/>
+        <div className="logo secondary-nav__logo">
+          <img src={blkWhiteLogo} />
+        </div>
+        <div className="secondary-nav__button-group">
+          {buttons}
+        </div>
       </nav>
 
       <nav className="mobile-nav" >
-        <div className="mobile-nav__logo" >
-          {logo}
+        <div className="logo mobile-nav__logo">
+          <img src={blkWhiteLogo} />
         </div>
-        <NavButtonGroup classString={"mobile-nav__button-group"} buttons={allbuttons} />
+        <div className="mobile-nav__button-group">
+          {buttons}
+        </div>
       </nav>
 
       <div className="secondary-nav-scroll-target" ref={menuSwitchRef} ></div>
@@ -80,13 +63,3 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
     </div>
   )
 };
-
-
-const NavButtonGroup = (props) => {
-
-  return (
-    <div className={props.classString}>
-      {props.buttons}
-    </div>
-  )
-}

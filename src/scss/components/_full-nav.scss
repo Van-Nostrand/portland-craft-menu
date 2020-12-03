@@ -20,7 +20,7 @@
     display: inline-block;
     padding-left: $desktop-navhat-side-pad;
     padding-right: $desktop-navhat-side-pad;
-    z-index: 10;
+    // z-index: 10;
 
     & img{
       height: 100%;
@@ -58,8 +58,6 @@
   }
 }
 
-
-
 .secondary-nav-scroll-target{
   position: absolute;
   top: $desktop-secondary-nav-top;
@@ -81,6 +79,7 @@
   height: $desktop-secondary-nav-height;
   background-color: $menu-background-color;
   transition: transform 0.3s;
+  // z-index: 10;
 
   @include respond(tab-port){
     display: none;
@@ -95,20 +94,18 @@
 
     font-size: $button-font-size;
     font-weight: 700;
-    z-index: 2;
   }
 
   .bknd-img-wrapper{
     height: $desktop-secondary-nav-height;
 
-    img{
+    & img{
       transform: translate(0rem, -17rem);
     }
   }
 
   .logo-container img{
     height: $desktop-secondary-nav-height - 2rem;
-    z-index: 0;
   }
 }
 

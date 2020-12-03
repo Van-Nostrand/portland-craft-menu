@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   top: 0;
-  z-index: 100;
+  // z-index: 100;
 
   button {
     border: none;
@@ -28,4 +28,13 @@
     color: $portland-off-white;
     transform: translateY(0.1rem);
   }
+
+  .logo{
+    // top: 0;
+    height: 80%;
+  }
+}
+nav{ z-index: 1;}
+nav div{
+  z-index: 2;
 }
