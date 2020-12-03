@@ -2,7 +2,6 @@
   position: absolute;
   width: 100%;
   top: 0;
-  
 
   button {
     border: none;
@@ -21,32 +20,39 @@
       font-size: $phone-nav-fontsize;
     }
   }
+
   button:hover {
     color: $light-font-hover;
   }
+
   button:active{
     color: $portland-off-white;
     transform: translateY(0.1rem);
   }
+
   nav{
     .logo{
     
       height: auto;
       width: auto;
-      padding: 0 15rem;
+      
       position: relative;
+
+      margin: 0 $desktop-side-margin/2 0 $desktop-side-margin;
   
       @include respond(phone){
+        
         height: $phone-nav-logo-height;
         padding: 0;
         margin-right: $phone-side-margin;
         margin-left: $phone-side-margin;
+
       }
     }
 
     .button-group{
       position: relative;
-      margin-right: $desktop-side-margin;
+      margin: 0 $desktop-side-margin 0 $desktop-side-margin/2;
       width: 100%;
       display: flex;
       flex-flow: row;

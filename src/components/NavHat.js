@@ -37,7 +37,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
         </div>
       </nav>
 
-      <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
+      {/* <nav className={show ? "secondary-nav secondary-nav-open" : "secondary-nav"}>
         <div className="bknd-img-wrapper">
           <img src={pcservice}  />
         </div>
@@ -47,7 +47,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
         <div className="button-group secondary-nav__button-group">
           {buttons}
         </div>
-      </nav>
+      </nav> */}
 
       <nav className="mobile-nav" >
         <div className="logo mobile-nav__logo">
