@@ -1,6 +1,4 @@
 import React from "react";
-import {Wine} from "./Wine";
-import {Cocktail} from "./Cocktail";
 
 export const DrinksSection = ({drinks, section}) => {
 
@@ -106,4 +104,6 @@ export const DrinksSection = ({drinks, section}) => {
     </section>
   )
 }
+
+
 

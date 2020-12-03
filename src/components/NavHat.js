@@ -32,7 +32,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
         <div className="logo full-nav__logo">
           <img src={blkWhiteLogo} />
         </div>
-        <div className="full-nav__button-group">
+        <div className="button-group full-nav__button-group">
           {buttons}
         </div>
       </nav>
@@ -44,7 +44,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
         <div className="logo secondary-nav__logo">
           <img src={blkWhiteLogo} />
         </div>
-        <div className="secondary-nav__button-group">
+        <div className="button-group secondary-nav__button-group">
           {buttons}
         </div>
       </nav>
@@ -53,7 +53,7 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
         <div className="logo mobile-nav__logo">
           <img src={blkWhiteLogo} />
         </div>
-        <div className="mobile-nav__button-group">
+        <div className="button-group mobile-nav__button-group">
           {buttons}
         </div>
       </nav>

@@ -16,7 +16,7 @@ import {
   SWEETS,
   SIDES,
   PACKAGED_BEER
-} from "./CONSTANTS2";
+} from "./CONSTANTS";
 
 export const PageLoader = ({ pageTitle}) => {
 
