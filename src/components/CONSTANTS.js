@@ -60,10 +60,10 @@ export const SNACKS = [
     name: "Spiced Candied Nuts",
     price: "7",
     notes: "Roasted in-house with our own spice blend",
-    diet: "vegan, gluten free, contains nuts... obviously", 
+    diet: "vegan, gluten free", 
   },
   {
-    name: "Crispy Rossdown Chicken Crackling",
+    name: "Crispy Farmcrest Chicken Crackling",
     price: "8",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
     diet: "gluten and dairy free", 
@@ -90,7 +90,7 @@ export const OMNIVORES = [
     diet: "", 
   },
   {
-    name: "Rossdown Wings",
+    name: "Farmcrest Wings",
     price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
     diet: "gluten free", 
@@ -135,12 +135,6 @@ export const HERBIVORES = [
     diet: "vegan, gluten free", 
   },
   {
-    name: "Chilliwack Corn-on-the-Cob",
-    price: "7",
-    notes: "Grilled corn, chili lime butter, citrus herb crumble",
-    diet: "vegetarian", 
-  },
-  {
     name: "Heirloom Tomato Salad",
     price: "11",
     notes: "Avocado, basil, radish, balsamic aioli, sourdough",
@@ -162,7 +156,7 @@ export const HERBIVORES = [
     name: "B.C. Brassica",
     price: "8",
     notes: "Gai Lan, broccoli, kale, cashews, garlic, herbs",
-    diet: "vegan, gluten free", 
+    diet: "vegan, gluten free, contains nuts", 
   },
 ];
 
@@ -174,7 +168,7 @@ export const LARGER = [
     diet: "", 
   },
   {
-    name: "Rossdown Chicken and Waffle",
+    name: "Farmcrest Chicken and Waffle",
     price: "23",
     notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
     diet: "", 
@@ -189,7 +183,7 @@ export const LARGER = [
     name: "Grain Bowl",
     price: "21",
     notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
-    diet: "vegan", 
+    diet: "vegan, contains nuts", 
   },
   
 ];
@@ -422,7 +416,7 @@ export const HAPPY_HOUR_FOOD = [
     diet: "vegan, gluten free", 
   },
   {
-    name: "Crispy Rossdown Chicken Crackling",
+    name: "Crispy Farmcrest Chicken Crackling",
     price: "5",
     notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
     diet: "gluten and dairy free", 
