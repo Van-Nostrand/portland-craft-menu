@@ -6,6 +6,9 @@
     align-self: flex-start;
     font-size: 0.7em;
     font-style: italic;
+    @include respond(tab-port){
+      padding-left: 1rem;
+    }
   }
 
   section{
@@ -15,36 +18,51 @@
 
     flex: 0 1;
 
+    @include respond(tab-port){
+      align-items: stretch;
+    }
+
     .section__list{
       display: flex;
       flex-flow: row wrap;
-      justify-content: flex-start;
+      justify-content: stretch;
+
+      padding: 1rem;
       
       
       @include respond(tab-port){
-        margin: 0 $mobile-side-margin 3rem $mobile-side-margin;
         text-align: start;
         justify-content: space-around;
         align-items: stretch;
+
+        // width: 100%;
       }
       
       @include respond(phone){
         flex-flow: column nowrap;
-        margin: 1rem $phone-side-margin 2rem $phone-side-margin;
       }
     }
   }
   
-  section:nth-last-child(1), section:nth-last-child(2){
-    flex: 0 2 40%;
-  }
+  // helps slot sides and sweets beside each other in desktop view
+  // section:nth-last-child(1), section:nth-last-child(2){
+  //   flex: 0 2 40%;
 
+  //   @include respond(tab-port){
+  //     flex: 0 1;
+  //   }
+  // }
+
+
+  ////////////////////////////////////
+  ///////// SIDES
   & .sides {
     max-width: 50vw;
     align-self: flex-start;
   
     @include respond(tab-port){
       max-width: unset;
+      align-self: stretch;
     }
 
     .section__title{
@@ -53,14 +71,23 @@
     .section__list{
       min-width: unset;
       flex-flow: row wrap;
+
+      @include respond(tab-port){
+        display: grid;
+        grid-template-columns: auto auto;
+        
+        height: auto;
+      }
+
   
       .food-item{
-        margin: 0.2rem 1.7rem;
-        font-size: 0.8em;
+        font-size: 0.7em;
         grid-template-columns: auto auto;
         grid-template-rows: auto;
-        row-gap: unset;
-        max-width: 11rem;
+        // row-gap: unset;
+        width: 18rem;
+        margin: 0.1rem;
+
       }
     }
   }
@@ -83,17 +110,17 @@
   position: relative;
   display: grid;
 
-  width: 25rem;
-  grid-template-columns: 1fr auto;
+  width: 26rem;
+  grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto 1fr;
   row-gap: 0.1rem;
   
-  max-height: 25rem;
-  margin: 1rem;
+  // max-height: 25rem;
+  margin: 0.5rem;
 
   @include respond(tab-port){
-    margin: 0.7rem 0.4rem;
-    max-width: 40vw;
+    // margin: 0.7rem 0.4rem;
+    // max-width: 40vw;
     max-height: unset;
     align-content: center;
   }
@@ -106,7 +133,7 @@
     display: inline-block;
     
     letter-spacing: 0;
-    grid-column: 1;
+    grid-column: 1 / span 2;
     grid-row: 1 ;
     justify-self: start;
   }
@@ -115,16 +142,21 @@
     display: inline-block;
 
     text-align: end;
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
 
     font-size: 0.9em;
+    padding-right: 0.7rem;
+
+    @include respond(tab-port){
+      padding-right: 0;
+    }
   } 
   
   .item-notes{
 
     justify-self: start;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     grid-row: 2;
 
     font-size: 0.8em;

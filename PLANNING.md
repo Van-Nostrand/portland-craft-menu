@@ -5,16 +5,8 @@ The Charlatan - http://thecharlatanrestaurant.com/kitchen/
 Pourhouse - https://www.pourhousevancouver.com/menu/lunchdinner
 Guilt & Co - https://www.guiltandcompany.com/menu.html
 
-PADDING AND MARGIN ON ITEMS
-FOOD
-1rem around items, 0.7rem 0.4rem responsive
-no padding
+PADDING VS MARGIN
+use margin on a container
+use padding on the children of a container
 
-COCKTAILS
-responsive margin 0 0 0.9rem 0
-
-WINE
-0.5rem bottom margin
-
-BUBBLY
-none set
+So, section elements should use margin, divs within should use padding
