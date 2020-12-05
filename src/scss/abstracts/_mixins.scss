@@ -1,5 +1,8 @@
 // generalized responsive design breakpoints
 @mixin respond($breakpoint){
+  @if $breakpoint == small-phone {
+    @media screen and (max-width: 25em) { @content };
+  }
   @if $breakpoint == phone {
     @media screen and (max-width: 37.5em) { @content }; // 600px
   }

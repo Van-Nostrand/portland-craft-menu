@@ -4,7 +4,7 @@ export const PackagedBeer = ({items}) => {
 
   let listItems = items.map((item, i) => {
     return(
-      <li key={`packaged-beer-${i}`}>
+      <li className="menu-item packaged-beer-item" key={`packaged-beer-${i}`}>
         <div className="packaged-name item-name">
           {item.name}
         </div>

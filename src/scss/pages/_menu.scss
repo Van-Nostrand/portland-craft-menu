@@ -3,6 +3,7 @@
 .menu{
   position: relative;
   top: $desktop-nav-height; 
+
   margin: 1rem auto 3rem auto;
   width: $desktop-menu-width;
 
@@ -17,8 +18,8 @@
     display: flex;
     flex-flow: column nowrap;
     top: $mobile-nav-height + 3rem;
+
     margin: 1rem 0;
-    padding: 0;
     width: 95vw;
   }
 }
@@ -27,14 +28,16 @@ section{
   position: relative;
   
   grid-column: 1 / span 2;
-  padding: 1.5rem;
 
   font-size: $desktop-item-base-fontsize;
   width: 100%;
 
+  margin-bottom: 1rem;
+
   @include sectionBorderTop();
   @include respond(tab-port){
-    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+    align-items: stretch;
   }
 
   .section__title{
@@ -44,22 +47,22 @@ section{
     text-align: center;
     color: $portland-red;
 
+    padding: 3rem 2rem 1rem 0.5rem;
+
     @include respond(tab-port){
       font-size: 1.7em;
-    }
-
-    @include respond(phone){
     }
   }
 
   .section__list{
 
     justify-content: center;
+    padding: 1rem;
+
 
     @include respond(tab-port){
       flex-flow: column nowrap;
       font-size: 1.4em;
-      // width: unset;
     }
 
     .menu-item{
@@ -68,13 +71,14 @@ section{
         width: unset;
       }
       .item-name{
-        font-size: 1.05em;
+        font-size: 1.08em;
       }
     }
   }
 }
 section:nth-last-child(2){
   grid-column: 1;
+
   margin-right: 0.5rem;
 
   @include respond(tab-port){
@@ -84,11 +88,12 @@ section:nth-last-child(2){
 }
 section:nth-last-child(1){
   grid-column: 2;
+
   margin-left: 0.5rem;
 
   @include respond(tab-port){
     grid-column: unset;
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 

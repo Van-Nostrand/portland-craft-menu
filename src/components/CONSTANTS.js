@@ -84,16 +84,16 @@ export const SNACKS = [
 
 export const OMNIVORES = [
   {
+    name: "Pacific Wild Shrimp Fritter",
+    price: "10",
+    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
+    diet: "dairy free", 
+  },
+  {
     name: "Craft Poutine",
     price: "11",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
     diet: "", 
-  },
-  {
-    name: "Farmcrest Wings",
-    price: "16",
-    notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
-    diet: "gluten free", 
   },
   {
     name: "Pacific Humboldt Squid",
@@ -102,10 +102,10 @@ export const OMNIVORES = [
     diet: "gluten and dairy free", 
   },
   {
-    name: "Pacific Wild Shrimp Fritter",
-    price: "10",
-    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
-    diet: "dairy free", 
+    name: "Fraser Valley Pork Belly",
+    price: "13",
+    notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
+    diet: "gluten and dairy free", 
   },
   {
     name: "Westcoast Crab Dip",
@@ -114,10 +114,10 @@ export const OMNIVORES = [
     diet: "", 
   },
   {
-    name: "Fraser Valley Pork Belly",
-    price: "13",
-    notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
-    diet: "gluten and dairy free", 
+    name: "Farmcrest Wings",
+    price: "16",
+    notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
+    diet: "gluten free", 
   },
   {
     name: "Cache Creek Beef Tartar",
@@ -129,35 +129,41 @@ export const OMNIVORES = [
 
 export const HERBIVORES = [
   {
+    name: "B.C. Brassica",
+    price: "8",
+    notes: "Broccoli, kale, cashews, garlic, herbs",
+    diet: "vegan, gluten free, contains nuts", 
+  },
+  {
     name: "B.C. Kale Salad",
     price: "9",
     notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
     diet: "vegan, gluten free", 
   },
   {
-    name: "Heirloom Tomato Salad",
-    price: "11",
-    notes: "Avocado, basil, radish, balsamic aioli, sourdough",
-    diet: "vegetarian, dairy free", 
+    name: "Cauliflower Soup",
+    price: "12",
+    notes: "Cauliflower, cheddar crumble",
+    diet: "vegetarian, gluten free"
   },
-  {
-    name: "Biscuit and Gravy",
-    price: "14",
-    notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
-    diet: "vegetarian", 
-  },
+  // {
+  //   name: "Heirloom Tomato Salad",
+  //   price: "11",
+  //   notes: "Avocado, basil, radish, balsamic aioli, sourdough",
+  //   diet: "vegetarian, dairy free", 
+  // },
+  // {
+  //   name: "Biscuit and Gravy",
+  //   price: "14",
+  //   notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
+  //   diet: "vegetarian", 
+  // },
   {
     name: '"Fried Rice"',
     price: "14",
     notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
     diet: "vegan, gluten free", 
-  },
-  {
-    name: "B.C. Brassica",
-    price: "8",
-    notes: "Gai Lan, broccoli, kale, cashews, garlic, herbs",
-    diet: "vegan, gluten free, contains nuts", 
-  },
+  }
 ];
 
 export const LARGER = [

@@ -52,6 +52,7 @@ const DrinksSection = ({drinks, section}) => {
         return <Wine 
                 itemName={wine.name}
                 varietal={wine.varietal}
+                style={style}
                 sizes={wine.sizes}
                 notes={wine.notes}
                 key={`${style}-wine-${j}`} />
@@ -115,7 +116,7 @@ const DrinksSection = ({drinks, section}) => {
         <p>Take some cans home with you!</p><br /><p>(with the purchase of food)</p>
         <ul className="section__list">
           {drinks.map((item, i) => {
-              return  <li key={`packaged-beer-${i}`}>
+              return  <li className="menu-item packaged-beer-item" key={`packaged-beer-${i}`}>
                         <div className="packaged-name item-name">
                           {item.name}
                         </div>
@@ -139,8 +140,8 @@ const DrinksSection = ({drinks, section}) => {
 
 
 
-const Wine = ({ itemName = "unnamed", notes="", sizes, varietal}) => {
-
+const Wine = ({ itemName = "unnamed", notes="", sizes, varietal, style}) => {
+console.log(style);
   return(
     <li className="wine-item menu-item">
 
@@ -185,6 +186,20 @@ const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
         {notesElement}
       </div>
 
+    </li>
+  )
+}
+
+
+const PackagedBeer = ({beer}) => {
+  return(
+    <li className="menu-item packaged-beer-item" >
+      <div className="packaged-name item-name">
+        {item.name}
+      </div>
+      <div className="packaged-price item-price">
+        ${/[.50]$/.test(beer.price) ? <>{beer.price.split(".")[0]}&#189;</> : <>{beer.price}</>}
+      </div>
     </li>
   )
 }

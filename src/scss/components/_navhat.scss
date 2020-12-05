@@ -1,24 +1,19 @@
 .nav-hat-wrapper{
   position: absolute;
-  width: 100%;
+  width: 100vw;
   top: 0;
+  overflow: hidden;
 
   button {
     border: none;
     cursor: pointer;
     background: none;
     text-align: center;
+
+    font-size: 2.6em;
    
     @include newHeadingShadow();
 
-    @include respond(tab-port){
-      font-size: $mobile-nav-fontsize;
-      background-color: $menu-background-color;
-    }
-
-    @include respond(phone){
-      font-size: $phone-nav-fontsize;
-    }
   }
 
   button:hover {
@@ -44,7 +39,7 @@
         
         height: $phone-nav-logo-height;
         padding: 0;
-        margin-right: $phone-side-margin;
+        margin-right: 0;
         margin-left: $phone-side-margin;
 
       }
@@ -58,21 +53,9 @@
       flex-flow: row;
       justify-content: space-between;
   
-      font-size: $button-font-size;
       font-weight: 700;
       font-family: inherit;
   
-      @include respond(phone){
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: space-between;
-
-        width: 100%;
-        height: 100%;
-        margin-right: $phone-side-margin;
-        margin-left: $phone-side-margin;
-      }
     }
   }  
 }
