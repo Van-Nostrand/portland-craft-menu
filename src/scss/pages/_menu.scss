@@ -22,80 +22,80 @@
     margin: 1rem 0;
     width: 95vw;
   }
-}
-
-section{
-  position: relative;
+  section{
+    position: relative;
+    
+    grid-column: 1 / span 2;
   
-  grid-column: 1 / span 2;
-
-  font-size: $desktop-item-base-fontsize;
-  width: 100%;
-
-  margin-bottom: 1rem;
-
-  @include sectionBorderTop();
-  @include respond(tab-port){
-    margin-bottom: 1.5rem;
-    align-items: stretch;
-  }
-
-  .section__title{
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 1.3em;
-    text-align: center;
-    color: $portland-red;
-
-    padding: 3rem 2rem 1rem 0.5rem;
-
+    font-size: $desktop-item-base-fontsize;
+    width: 100%;
+  
+    margin-bottom: 1rem;
+  
+    @include sectionBorderTop();
     @include respond(tab-port){
-      font-size: 1.7em;
+      margin-bottom: 1.5rem;
+      align-items: stretch;
     }
-  }
-
-  .section__list{
-
-    justify-content: center;
-    padding: 1rem;
-
-
-    @include respond(tab-port){
-      flex-flow: column nowrap;
-      font-size: 1.4em;
-    }
-
-    .menu-item{
-
+  
+    .section__title{
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 1.3em;
+      text-align: center;
+      color: $portland-red;
+  
+      padding: 3rem 2rem 1rem 0.5rem;
+  
       @include respond(tab-port){
-        width: unset;
+        font-size: 1.7em;
       }
-      .item-name{
-        font-size: 1.08em;
+    }
+  
+    .section__list{
+  
+      justify-content: center;
+      padding: 1rem;
+  
+  
+      @include respond(tab-port){
+        flex-flow: column nowrap;
+        font-size: 1.4em;
+      }
+  
+      .menu-item{
+  
+        @include respond(tab-port){
+          width: unset;
+        }
+        .item-name{
+          font-size: 1.08em;
+        }
       }
     }
   }
-}
-section:nth-last-child(2){
-  grid-column: 1;
-
-  margin-right: 0.5rem;
-
-  @include respond(tab-port){
-    grid-column: unset;
-    margin-right: 0;
+  section:nth-last-child(2){
+    grid-column: 1;
+  
+    margin-right: 0.5rem;
+  
+    @include respond(tab-port){
+      grid-column: unset;
+      margin-right: 0;
+    }
+  }
+  section:nth-last-child(1){
+    grid-column: 2;
+  
+    margin-left: 0.5rem;
+  
+    @include respond(tab-port){
+      grid-column: unset;
+      margin-left: 0;
+    }
   }
 }
-section:nth-last-child(1){
-  grid-column: 2;
 
-  margin-left: 0.5rem;
-
-  @include respond(tab-port){
-    grid-column: unset;
-    margin-left: 0;
-  }
-}
 
 .divider-wrapper{
   align-self: stretch;

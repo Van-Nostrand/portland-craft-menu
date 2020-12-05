@@ -42,7 +42,7 @@ const DrinksSection = ({drinks, section}) => {
   let dranks; 
 
   const WINESIZES = <div className="wine-sizes">5oz, 8oz, bottle</div>;
-  const BUBBLYSIZES = <div className="wine-sizes">5oz, bottle</div>;
+  const BUBBLYSIZES = <div className="wine-sizes bubbly-sizes">5oz, bottle</div>;
 
   if(section === "wine"){
     let winekeys = Object.keys(drinks);
@@ -58,35 +58,53 @@ const DrinksSection = ({drinks, section}) => {
                 key={`${style}-wine-${j}`} />
       });
       wineCategories.push( 
-        <ul className="section__list" key={`winelist${i}`}>
+        <ul className={`section__list ${style}-section__list`} key={`winelist${i}`}>
           {styleData}
         </ul>);
     });
     dranks = 
       <>
-        <div className="red-wine-wrapper">
-          <div className="section__title">
+          <div className="section__title red-section-title">
             Red
           </div>
           {WINESIZES}
           {wineCategories[0]}
-        </div>
-        <div className="white-wine-wrapper">
-          <div className="section__title">
+          <div className="section__title white-section-title">
             White
           </div>
           {WINESIZES}
           {wineCategories[1]}
-        </div>
-        <div className="bubbly-wrapper">
-          <div className="section__title">
+          <div className="section__title bubbly-section-title">
             Bubbly
           </div>
           {BUBBLYSIZES}
           {wineCategories[2]}
-        </div>
-        
       </>;
+    // dranks = 
+    //   <>
+    //     <div className="red-wine-wrapper">
+    //       <div className="section__title">
+    //         Red
+    //       </div>
+    //       {WINESIZES}
+    //       {wineCategories[0]}
+    //     </div>
+    //     <div className="white-wine-wrapper">
+    //       <div className="section__title">
+    //         White
+    //       </div>
+    //       {WINESIZES}
+    //       {wineCategories[1]}
+    //     </div>
+    //     <div className="bubbly-wrapper">
+    //       <div className="section__title">
+    //         Bubbly
+    //       </div>
+    //       {BUBBLYSIZES}
+    //       {wineCategories[2]}
+    //     </div>
+        
+    //   </>;
     section = "wine-section"
   }
   else if(section === "cocktails"){
@@ -143,7 +161,7 @@ const DrinksSection = ({drinks, section}) => {
 const Wine = ({ itemName = "unnamed", notes="", sizes, varietal, style}) => {
 console.log(style);
   return(
-    <li className="wine-item menu-item">
+    <li className={`wine-item ${style}-wine-item menu-item`}>
 
       <div className="wine-item-name item-name">
         {itemName}
@@ -168,21 +186,21 @@ const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
   let notesElement = notes.split(".").map((item, i) => <p key={`splitstring${i}`}>{item}</p>);
 
   return(
-    <li className="cocktail menu-item">
+    <li className="cocktail-item menu-item">
 
-      <div className="cocktail-name item-name">
+      <div className="cocktail-item-name item-name">
 
         {itemName}
     
       </div>
 
-      <div className="cocktail-price item-price">
+      <div className="cocktail-item-price item-price">
         <span>
           ${price}
         </span>
       </div>
 
-      <div className="cocktail-notes item-notes">
+      <div className="cocktail-item-notes item-notes">
         {notesElement}
       </div>
 
