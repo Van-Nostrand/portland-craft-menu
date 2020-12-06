@@ -4,11 +4,13 @@
   position: relative;
   top: $desktop-nav-height; 
 
-  margin: 1rem auto 3rem auto;
-  width: $desktop-menu-width;
-
   display: grid;
   grid-template-columns: 50% 50%;
+  margin: 1rem auto 3rem auto;
+  width: 72vw;
+
+  box-sizing: content-box;
+  padding: 3rem;
 
   background-color: $menu-background-color;
   color: $brown-q;
@@ -17,25 +19,33 @@
   @include respond(tab-port){
     display: flex;
     flex-flow: column nowrap;
-    top: $mobile-nav-height + 3rem;
+    top: $mobile-nav-height;
 
-    margin: 1rem 0;
+    margin: 0;
     width: 95vw;
+  }
+
+  @include respond(big-desk){
+    width: 70vw;
   }
   section{
     position: relative;
-    
+
     grid-column: 1 / span 2;
-  
+    margin: 0 2rem 2rem 2rem;
+
+    border-top: 3px solid $portland-red;
     font-size: $desktop-item-base-fontsize;
-    width: 100%;
-  
-    margin-bottom: 1rem;
-  
-    @include sectionBorderTop();
+
     @include respond(tab-port){
-      margin-bottom: 1.5rem;
+      
+      margin: 0 0 1.5rem 0;
       align-items: stretch;
+    }
+
+    @include respond(phone){
+      display: flex;
+      flex-flow: column;
     }
   
     .section__title{
@@ -49,19 +59,27 @@
   
       @include respond(tab-port){
         font-size: 1.7em;
+        align-self: flex-start;
       }
     }
   
     .section__list{
   
       justify-content: center;
-      padding: 1rem;
-  
+      // padding: 1rem 4rem; changing for food menu spacing in desktop view
+      padding: 0 4rem 1rem 4rem;
   
       @include respond(tab-port){
+        display: flex;
         flex-flow: column nowrap;
         font-size: 1.4em;
+        padding: 0 2rem;
       }
+
+      @include respond(small-phone){
+        padding: 0 1rem 1rem 1rem;
+      }
+
   
       .menu-item{
   

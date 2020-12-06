@@ -26,7 +26,7 @@ html{
   font-family: "Raleway", sans-serif;
   text-rendering: optimizeLegibility;
 
-  background-color: $menu-background-color;
+  // background-color: $menu-background-color;
   
   //breakpoints for reasonable resizing of fonts on other devices
   @include respond(tab-land){  // width < 1200
