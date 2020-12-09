@@ -1,5 +1,6 @@
 /////////////////////////////// 
 ////// SECTIONS
+<<<<<<< HEAD
 .menu.food-menu{ // div at top
 
   position: relative;
@@ -22,18 +23,25 @@
     display: flex;
     flex-flow: column nowrap;
   }
+=======
+.food-menu.menu{
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
 
   p{
     align-self: flex-start;
     font-size: 0.7em;
     font-style: italic;
+<<<<<<< HEAD
 
+=======
+    margin-left: 2.5rem;
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
     @include respond(tab-port){
-      padding-left: 3rem;
+      margin-left: 3rem;
     }
 
     @include respond(phone){
-      padding-left: 1rem;
+      margin-left: 0.5rem;
     }
   }
   ////////////////////////////////////////////////
@@ -74,6 +82,7 @@
     }
   
     .section__list{
+<<<<<<< HEAD
 
       display: grid;
       grid-template-columns: 25% 25% 25% 25%;
@@ -81,6 +90,13 @@
       padding: 1rem;
       justify-content: center;
 
+=======
+      //grid works really well here
+      // food menu 1080p desktop
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
       @include respond(tab-port){
         display: grid;
         grid-template-columns: 40vw 40vw;
@@ -96,6 +112,16 @@
         flex-flow: column nowrap;
       }
     }
+  }
+
+  section.snacks .section__title{
+    color: $potential-blue;
+  }
+  section.omnivores .section__title{
+    color: $portland-red;
+  }
+  section.herbivores .section__title{
+    color: $maybe-green;
   }
   
   
@@ -175,6 +201,7 @@
     }
   }
 
+<<<<<<< HEAD
   .snacks .section__title{
     color: $potential-blue;
   }
@@ -182,6 +209,9 @@
     color: $maybe-green;
   }
 }
+=======
+
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
 
 
 
@@ -192,18 +222,21 @@
   position: relative;
   display: grid;
 
-  width: 27rem;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto 1fr;
   row-gap: 0.1rem;
   
-  margin: 0.5rem;
+  margin: 1rem;
 
   @include respond(tab-port){
     max-height: unset;
     align-content: center;
+<<<<<<< HEAD
     width: unset;
 
+=======
+    margin: 0 0 1rem 0;
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
   }
 
   @include respond(phone){

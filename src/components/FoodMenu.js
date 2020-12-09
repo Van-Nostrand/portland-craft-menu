@@ -3,7 +3,7 @@ import React from "react";
 export const FoodMenu = ({ menuData }) => {
 
   return(<>
-    <div className="menu food-menu">
+    <div className="food-menu menu">
       <p>All items are nut-free unless specified</p>
 
       <FoodSection 

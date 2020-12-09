@@ -16,7 +16,7 @@
     @media (min-width: 76em) and (max-width: 112em){ @content };
   }
   @if $breakpoint == big-desk {
-    @media screen and (min-width: 112.5em) { @content }; // 1800px
+    @media screen and (min-width: 125em) { @content }; // 1800px
   }
 }
 

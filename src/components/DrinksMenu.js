@@ -64,13 +64,19 @@ const DrinksSection = ({drinks, section}) => {
           <div className="section__title red-section-title">
             Red
           </div>
+<<<<<<< HEAD
           <div className="red-sizes">
             5oz, 8oz, bottle
           </div>
+=======
+          {WINESIZES}
+          
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
           {wineCategories[0]}
-          <div className="section__title white-section-title">
+            <div className="section__title white-section-title">
             White
           </div>
+<<<<<<< HEAD
           <div className="white-sizes">
             5oz, 8oz, bottle
           </div>
@@ -81,6 +87,19 @@ const DrinksSection = ({drinks, section}) => {
           <div className="wine-sizes bubbly-sizes">5oz, bottle</div>
           {wineCategories[2]}
       </>;
+=======
+          {WINESIZES}
+          
+          {wineCategories[1]}
+            <div className="section__title bubbly-section-title">
+            Bubbly
+          </div>
+          {BUBBLYSIZES}
+          
+          {wineCategories[2]}
+      </>;
+
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
     section = "wine-section"
   }
   else if(section === "cocktails"){
@@ -107,12 +126,16 @@ const DrinksSection = ({drinks, section}) => {
         <div className="section__title">
           Beer To-Go!
         </div>
+<<<<<<< HEAD
         <p>
           Take some cans home with you!
         </p>
         <p>
           (with a food purchase - ask your server)
         </p>
+=======
+        <p>Take some cans home with you!</p><p>(with the purchase of food)</p>
+>>>>>>> 9d3c9012e58aa102e39a11af31478c42e8a7a1a3
         <ul className="section__list">
           {drinks.map((item, i) => {
               return  <li className="menu-item packaged-beer-item" key={`packaged-beer-${i}`}>
