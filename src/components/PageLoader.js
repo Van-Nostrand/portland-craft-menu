@@ -1,6 +1,7 @@
 import React from "react";
 import {FoodMenu} from "./FoodMenu";
 import {DrinksMenu} from "./DrinksMenu";
+import {DrinksMenu2} from "./DrinksMenu2";
 import {HappyHour} from "./HappyHour";
 import {
   WHITE_WINE,
@@ -26,7 +27,7 @@ export const PageLoader = ({ pageTitle}) => {
       currentPage = <FoodMenu menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES}} />;
       break;
     case /drinks/.test(pageTitle): 
-      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS, PACKAGED_BEER}} />;
+      currentPage = <DrinksMenu2 menuData={{WHITE_WINE, RED_WINE, BUBBLES, COCKTAILS, PACKAGED_BEER}} />;
       break;
     case /specials/.test(pageTitle): 
       currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;

@@ -146,18 +146,6 @@ export const HERBIVORES = [
     notes: "Cauliflower, cheddar crumble",
     diet: "vegetarian, gluten free"
   },
-  // {
-  //   name: "Heirloom Tomato Salad",
-  //   price: "11",
-  //   notes: "Avocado, basil, radish, balsamic aioli, sourdough",
-  //   diet: "vegetarian, dairy free", 
-  // },
-  // {
-  //   name: "Biscuit and Gravy",
-  //   price: "14",
-  //   notes: "House-made lemon herb biscuit, honey butter, braised greens, coconut gravy",
-  //   diet: "vegetarian", 
-  // },
   {
     name: '"Fried Rice"',
     price: "14",
@@ -174,6 +162,12 @@ export const LARGER = [
     diet: "", 
   },
   {
+    name: "Grain Bowl",
+    price: "21",
+    notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
+    diet: "vegan, contains nuts", 
+  },
+  {
     name: "Farmcrest Chicken and Waffle",
     price: "23",
     notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
@@ -184,14 +178,7 @@ export const LARGER = [
     price: "24",
     notes: "Fried rice, corn, broccoli, sesame leek sauce",
     diet: "gluten and dairy free", 
-  },
-  {
-    name: "Grain Bowl",
-    price: "21",
-    notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
-    diet: "vegan, contains nuts", 
-  },
-  
+  }  
 ];
 
 export const SWEETS = [
@@ -217,6 +204,12 @@ export const WHITE_WINE = [
     notes: "B.C."
   },
   {
+    name: "Bonamici",
+    varietal: "Rose",
+    sizes: [10, 14, 42],
+    notes: "B.C."
+  },
+  {
     name: "Sandhill",
     varietal: "Pinot Blanc",
     sizes: [11, 15, 45],
@@ -226,12 +219,6 @@ export const WHITE_WINE = [
     name: "Gray Monk",
     varietal: "Chardonnay",
     sizes: [12, 16, 48],
-    notes: "B.C."
-  },
-  {
-    name: "Bonamici",
-    varietal: "Rose",
-    sizes: [10, 14, 42],
     notes: "B.C."
   },
   {
@@ -256,22 +243,10 @@ export const WHITE_WINE = [
 
 export const RED_WINE = [
   {
-    name: "Lake Breeze",
-    varietal: "Meritage",
-    sizes: [12, 16, 48],
-    notes: "B.C."
-  },
-  {
     name: "Septima",
     varietal: "Malbec",
     sizes: [10, 14, 42],
     notes: "Arg."
-  },
-  {
-    name: "James Mitchell",
-    varietal: "Cabernet Sauvignon",
-    sizes: [12, 16, 48],
-    notes: "Cal."
   },
   {
     name: "Sandhill",
@@ -286,6 +261,18 @@ export const RED_WINE = [
     notes: "B.C."
   },
   {
+    name: "Lake Breeze",
+    varietal: "Meritage",
+    sizes: [12, 16, 48],
+    notes: "B.C."
+  },
+  {
+    name: "James Mitchell",
+    varietal: "Cabernet Sauvignon",
+    sizes: [12, 16, 48],
+    notes: "Cal."
+  },
+  {
     name: "Kanazawa",
     varietal: "Merlot",
     sizes: [12, 16, 48],
@@ -295,14 +282,14 @@ export const RED_WINE = [
 
 export const BUBBLES = [
   {
-    name: "Stellars Jay",
-    sizes: [11, 45],
-    notes: "B.C."
-  },
-  {
     name: "Codorniu Cava",
     sizes: [10, 42],
     notes: "Spain"
+  },
+  {
+    name: "Stellars Jay",
+    sizes: [11, 45],
+    notes: "B.C."
   }
 ]
 

@@ -41,9 +41,6 @@ const DrinksSection = ({drinks, section}) => {
 
   let dranks; 
 
-  const WINESIZES = <div className="wine-sizes">5oz, 8oz, bottle</div>;
-  const BUBBLYSIZES = <div className="wine-sizes bubbly-sizes">5oz, bottle</div>;
-
   if(section === "wine"){
     let winekeys = Object.keys(drinks);
     let wineCategories = [];
@@ -67,50 +64,29 @@ const DrinksSection = ({drinks, section}) => {
           <div className="section__title red-section-title">
             Red
           </div>
-          {WINESIZES}
+          <div className="red-sizes">
+            5oz, 8oz, bottle
+          </div>
           {wineCategories[0]}
           <div className="section__title white-section-title">
             White
           </div>
-          {WINESIZES}
+          <div className="white-sizes">
+            5oz, 8oz, bottle
+          </div>
           {wineCategories[1]}
-          <div className="section__title bubbly-section-title">
+          <div className="bubbly-section-title">
             Bubbly
           </div>
-          {BUBBLYSIZES}
+          <div className="wine-sizes bubbly-sizes">5oz, bottle</div>
           {wineCategories[2]}
       </>;
-    // dranks = 
-    //   <>
-    //     <div className="red-wine-wrapper">
-    //       <div className="section__title">
-    //         Red
-    //       </div>
-    //       {WINESIZES}
-    //       {wineCategories[0]}
-    //     </div>
-    //     <div className="white-wine-wrapper">
-    //       <div className="section__title">
-    //         White
-    //       </div>
-    //       {WINESIZES}
-    //       {wineCategories[1]}
-    //     </div>
-    //     <div className="bubbly-wrapper">
-    //       <div className="section__title">
-    //         Bubbly
-    //       </div>
-    //       {BUBBLYSIZES}
-    //       {wineCategories[2]}
-    //     </div>
-        
-    //   </>;
     section = "wine-section"
   }
   else if(section === "cocktails"){
     dranks = 
       <>
-        <div className="section__title">
+        <div className="cocktail-section-title">
           Cocktails
         </div>
         <ul className="section__list">
@@ -131,7 +107,12 @@ const DrinksSection = ({drinks, section}) => {
         <div className="section__title">
           Beer To-Go!
         </div>
-        <p>Take some cans home with you!</p><br /><p>(with the purchase of food)</p>
+        <p>
+          Take some cans home with you!
+        </p>
+        <p>
+          (with a food purchase - ask your server)
+        </p>
         <ul className="section__list">
           {drinks.map((item, i) => {
               return  <li className="menu-item packaged-beer-item" key={`packaged-beer-${i}`}>
@@ -155,7 +136,6 @@ const DrinksSection = ({drinks, section}) => {
     </section>
   )
 }
-
 
 
 const Wine = ({ itemName = "unnamed", notes="", sizes, varietal, style}) => {
