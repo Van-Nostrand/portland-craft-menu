@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400 800;
   src:
     url('../../assets/font/Raleway-VariableFont_wght.woff2') format('woff2');
 }
@@ -22,11 +22,10 @@ button{
 
 html{
   font-size: 62.5%;
-  // font-family: "Helvetica";
   font-family: "Raleway", sans-serif;
   text-rendering: optimizeLegibility;
 
-  // background-color: $menu-background-color;
+  background-color: $menu-background-color;
   
   //breakpoints for reasonable resizing of fonts on other devices
   @include respond(tab-land){  // width < 1200

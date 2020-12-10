@@ -49,7 +49,7 @@ const FoodSection = ({section, items}) => {
   });
   
   let classString = `food-section ${section.toLowerCase().split(" ").join("")}`;
-  section = section.toUpperCase();
+  // section = section.toUpperCase();
 
   return(
     <section className={classString}>

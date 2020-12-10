@@ -1,11 +1,10 @@
 /////////////////////////////// 
 ////// SECTIONS
-.menu.food-menu{ // div at top
+.food-menu{ // div at top
 
   position: relative;
   top: $desktop-nav-height; 
   margin: 1rem auto 3rem auto;
-  // width: $desktop-menu-width;
 
   display: grid;
   grid-template-columns: 50% 50%;
@@ -15,7 +14,7 @@
   font-size: 2.5rem;
 
   @include respond(tab-port){
-    top: $mobile-nav-height + 3rem;
+    top: $mobile-nav-height;
     margin: 1rem 0;
     width: 95vw;
 
@@ -41,7 +40,6 @@
     position: relative;
     margin-bottom: 1rem;
 
-    //section is a flex item on mobile / grid item on desktop
     flex: 0 1;
     grid-column: 1 / span 2;
     
@@ -50,7 +48,6 @@
     align-items: flex-start;
     width: 100%;
 
-    font-size: $desktop-item-base-fontsize;
     border-top: 3px solid $portland-red;
     
     @include respond(tab-port){
@@ -61,14 +58,13 @@
     .section__title{
       text-transform: capitalize;
       font-weight: 700;
-      font-size: 1.3em;
+      font-size: 1.2em;
       text-align: center;
       color: $portland-red;
   
       padding: 3rem 2rem 1rem 0.5rem;
   
       @include respond(tab-port){
-        font-size: 1.7em;
       }
     }
   
@@ -87,7 +83,6 @@
         align-items: stretch;
         
         text-align: start;
-        font-size: 1.4em;
       }
       
       @include respond(phone){

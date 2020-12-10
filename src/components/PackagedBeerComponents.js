@@ -3,7 +3,7 @@ import React from "react";
 export const PackagedBeerSection = ({beers}) => {
   return (
     <section className="packaged-beer-section">
-      <div className="packaged-beer-section-title">
+      <div className="packaged-beer-section-title section-title">
         Beer To-Go!
       </div>
       <p>
@@ -12,7 +12,7 @@ export const PackagedBeerSection = ({beers}) => {
       <p>
         (with food purchase - ask your server)
       </p>
-      <ul className="packaged-beer-list">
+      <ul className="packaged-beer-section-list section-list">
         {beers}
       </ul>
     </section>
@@ -21,11 +21,11 @@ export const PackagedBeerSection = ({beers}) => {
 
 export const PackagedBeer = ({name, price}) => {
   return(
-    <li className="menu-item packaged-beer-item" >
-      <div className="packaged-name item-name">
+    <li className="menu-item packaged-beer" >
+      <div className="packaged-beer-name item-name">
         {name}
       </div>
-      <div className="packaged-price item-price">
+      <div className="packaged-beer-price item-price">
         ${/[.50]$/.test(price) ? <>{price.split(".")[0]}&#189;</> : <>{price}</>}
       </div>
     </li>

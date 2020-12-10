@@ -1,6 +1,5 @@
 import React from "react";
 import {FoodMenu} from "./FoodMenu";
-import {DrinksMenu} from "./DrinksMenu";
 import {DrinksMenu2} from "./DrinksMenu2";
 import {HappyHour} from "./HappyHour";
 import {
