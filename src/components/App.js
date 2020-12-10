@@ -22,3 +22,12 @@ export const App = (props) => {
     </div>
   )
 }
+
+
+
+// if (somethingHappen) import(
+//   /* webpackPrefetch: true */
+//   './images'
+// );
+
+

@@ -1,12 +1,25 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: __dirname + "/src/index.js",
+  
+  entry: {
+    index: {
+      import: __dirname + "/src/index.js",
+      dependOn: 'shared'
+    },
+    another: {
+      import: __dirname + "/src/components/lazyImage.js",
+      dependOn: 'shared'
+    },
+    shared: ['react', 'react-dom']
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
   },
   module: {
     rules: [
@@ -72,6 +85,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "public/index.html"),
       inject: "body"
@@ -79,7 +93,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new BundleAnalyzerPlugin(),
   ],
   devtool: "source-map"
 }
