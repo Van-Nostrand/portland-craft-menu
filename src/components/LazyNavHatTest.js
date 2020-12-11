@@ -1,4 +1,4 @@
-import React, { Suspense, useRef } from "react";
+import React, { Suspense } from "react";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
 import LazyMobileNav from "./LazyMobileNav";
 
@@ -23,7 +23,6 @@ export const LazyNavHatTest = ({changePage}) => {
   );
 
   let navElement;
-  // console.log(mobilePage)
   if(window.innerWidth < 900){
     navElement = <LazyMobileNav buttons={buttons} logo={blkWhiteLogo} />
     console.log("mobile page!");

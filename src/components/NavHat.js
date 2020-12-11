@@ -1,46 +1,31 @@
-import React, { useState, useRef, useEffect } from "react";
-import {useCustomScrollRef} from "../hooks/useCustomScrollRef";
+import React, { Suspense, useState, useEffect } from "react";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
-import pcservice from "../assets/PCservice.png";
-// import pcTaps from "../assets/pcTaps.jpg";
-import MyImage from "./MyImage";
+import MobileNav from "./MobileNav";
+const LazyFullNav = React.lazy(() => import("./LazyFullNav"));
 
 
-export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
-  let menuSwitchRef = useRef(null);
-  let show = useCustomScrollRef(menuSwitchRef, 1000);
+export const NavHat = ({changePage}) => {
 
-  const [ windowBreakpoint, setWindowBreakpoint] = useState(true);
-  const [ loadImage, setLoadImage ] = useState(false);
-  const imageTarget = useRef(null);
+  const [ fullNav, setFullNav ] = useState(false);
 
-  // handles window resizing
-  useEffect(() => {
-    setWindowBreakpoint(window.innerWidth > 900);
-    // console.log(window.innerWidth);
+  const testWindowSize = () => {
 
-    const getWindowSize = () => {
-      setWindowBreakpoint(window.innerWidth > 900);
+    if(window.innerWidth > 1200){
+      setFullNav(true);
     }
-    
-    window.addEventListener("resize", getWindowSize);
+    else{
+      setFullNav(false);
+    }
+  }
+
+  useEffect(() => {
+    testWindowSize();
+    window.addEventListener("resize", testWindowSize);
     return () => {
-      window.removeEventListener("resize", getWindowSize);
+      window.removeEventListener("resize", testWindowSize);
     }
-  }, []);
+  },[]);
 
-  useEffect(() => {
-    if(windowBreakpoint){
-      import(
-        /* webpackPrefetch: true */
-        './MyImage'
-      )
-      .then(image => image.default({src: "pcTaps.jpg", alt: "LOADING...", caption: "image test"}, imageTarget))
-      .catch(err => console.error(err));
-      setLoadImage(true);
-
-    }
-  });
 
   let buttons = (
     <>
@@ -55,37 +40,22 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
       </button>
     </>
   );
-  let imageElement;
-  if(loadImage){
-    imageElement = <MyImage image={{src: "pcTaps.jpg", alt: "LOADING...", caption: "image test"}} />
+
+ 
+  let navElement;
+  if(!fullNav){
+    navElement = <MobileNav buttons={buttons} logo={blkWhiteLogo} />
+  }
+  else{
+    navElement =  <Suspense fallback={<div>Loading...</div>}>
+                    <LazyFullNav buttons={buttons} logo={blkWhiteLogo} />
+                  </Suspense>;
   }
 
   return(
     <div className="nav-hat-wrapper">
       
-      <nav className="full-nav" >
-        <div className="bknd-img-wrapper">
-          {/* <img alt="LOADING..." ref={imageTarget}  /> */}
-          {imageElement}
-        </div>
-        <div className="logo full-nav__logo">
-          <img src={blkWhiteLogo} />
-        </div>
-        <div className="button-group full-nav__button-group">
-          {buttons}
-        </div>
-      </nav>
-
-      <nav className="mobile-nav" >
-        <div className="logo mobile-nav__logo">
-          <img src={blkWhiteLogo} />
-        </div>
-        <div className="button-group mobile-nav__button-group">
-          {buttons}
-        </div>
-      </nav>
-
-      <div className="secondary-nav-scroll-target" ref={menuSwitchRef} ></div>
+      {navElement}
 
     </div>
   )

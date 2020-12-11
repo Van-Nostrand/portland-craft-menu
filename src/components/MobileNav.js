@@ -1,6 +1,6 @@
 import React from "react";
 
-function LazyMobileNav({buttons, logo}){
+function MobileNav({buttons, logo}){
   return(
     <nav className="mobile-nav" >
       <div className="logo mobile-nav__logo">
@@ -13,4 +13,4 @@ function LazyMobileNav({buttons, logo}){
   );
 }
 
-export default LazyMobileNav;
+export default MobileNav;

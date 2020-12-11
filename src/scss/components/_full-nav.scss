@@ -22,11 +22,19 @@
   height: $desktop-nav-height;
   overflow: hidden;
 
+  @include respond(big-desk){
+    background-color: purple;
+  }
+
   img{
     object-fit: cover;
     width: 110%;
     filter: brightness(45%);
-    transform: translate(-10rem, -72rem) rotate(-12deg);
+    transform: translate(-10rem, -52rem) rotate(-12deg);
+
+    @include respond(desktop){
+      transform: translate(-10rem, -58rem) rotate(-12deg);
+    }
   }
 }
 

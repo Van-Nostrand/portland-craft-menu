@@ -6,7 +6,7 @@ function LazyFullNav({buttons, logo}) {
 
   const getImage = () => {
     import(
-      /* webpackMode: "lazy-once" */
+      /* webpackMode: "lazy" */
       `../assets/pcTaps.jpg`
     )
     .then(src => setImage(src.default))
