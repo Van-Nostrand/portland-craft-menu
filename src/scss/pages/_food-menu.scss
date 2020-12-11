@@ -41,7 +41,6 @@
     position: relative;
     margin-bottom: 1rem;
 
-    flex: 0 1;
     grid-column: 1 / span 2;
     
     display: flex;
@@ -94,6 +93,15 @@
       @include respond(phone){
         display: flex;
         flex-flow: column nowrap;
+      }
+    }
+  }
+
+  .features{
+    .section__list{
+      min-width: 90%;
+      .food-item{
+        width: 20rem;
       }
     }
   }

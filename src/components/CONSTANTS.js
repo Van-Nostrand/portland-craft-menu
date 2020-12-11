@@ -304,11 +304,7 @@ export const OLD_COCKTAILS = [
     price: "12",
     notes: "El Jimador Blanco tequila, triple sec, lime"
   },
-  {
-    name: "Moscow Mule / Dark & Stormy",
-    price: "12",
-    notes: "Absolut vodka or Goslings black rum, lime, sugar, Angostura bitters, ginger beer"
-  },
+  
   {
     name: "Whiskey Sour",
     price: "13",
@@ -346,6 +342,48 @@ export const OLD_COCKTAILS = [
   }
 ]
 
+export const HOUSE_COCKTAILS = [
+  {
+    name: "Aperol / Elderflower Spritz",
+    price: "11",
+    notes: "Choose either Aperol or St Germain & Cassis (+$1), sparkling white wine, soda"
+  },
+  {
+    name: "Moscow Mule",
+    price: "12",
+    notes: "Absolut vodka, lime, sugar, Angostura bitters, ginger beer"
+  },
+  {
+    name: "Nelson Iced Tea",
+    price: "13",
+    notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
+  },
+  {
+    name: "Gastown",
+    price: "13",
+    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
+  },
+  {
+    name: "Charlotte's Tick Bite",
+    price: "13",
+    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
+  },
+  {
+    name: "Mt Hood Warmer",
+    price: "14",
+    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
+  },
+  {
+    name: "Lonsdale Quay",
+    price: "15",
+    notes: "Vodka, Galliano, St Germain, earl grey tea, lemon, sugar, egg white"
+  },
+  {
+    name: "Rose City Pearing",
+    price: "15",
+    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
+  }
+]
 export const COCKTAILS = [
   {
     name: "Gastown",
@@ -388,6 +426,21 @@ export const COCKTAILS = [
     notes: "Tequila, Green Chartreuse, sugar, lime, cassis, egg white"
   },
 ]
+
+export const FEATURES = [
+  {
+    name: "Placeholder Feature",
+    price: "15",
+    notes: "some placeholder words that will eventually be food",
+    diet: "oh, you're allergic to all of it"
+  },
+  {
+    name: "Another Placeholder",
+    price: "15",
+    notes: "this one had gluten added and then removed",
+    diet: "may have traces of gluten, or maybe it doesn't. U READY?"
+  }
+];
 
 export const HAPPY_HOUR_FOOD = [
   {

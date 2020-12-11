@@ -7,6 +7,10 @@ export const FoodMenu = ({ menuData }) => {
       <p>All items are nut-free unless specified</p>
 
       <FoodSection 
+        section="Features" 
+        items={menuData.FEATURES} />
+
+      <FoodSection 
         section="Snacks" 
         items={menuData.SNACKS} />
 

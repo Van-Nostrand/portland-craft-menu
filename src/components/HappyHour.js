@@ -9,8 +9,8 @@ export const HappyHour = ({menuData}) => {
  
   return(
     <>
-      <div className="menu features">
-        <section className="happy-hour">
+      <div className="menu happy-hour-page">
+        <section className="happy-hour-section">
           <div className="section__title">
             Happy-Hour!
           </div>
@@ -23,22 +23,22 @@ export const HappyHour = ({menuData}) => {
               3-6 pm Friday - Sunday
             </div>
           </div>
-          <div className="section__title">
+          <div className="hh-food-title">
             Food
           </div>
-          <ul className="section__list">
+          <ul className="hh-food-list">
             {food}
           </ul>
-          <div className="section__title">
+          <div className="hh-drinks-title">
             Drinks
           </div>
-          <ul className="section__list">
+          <ul className="hh-drinks-list">
             {drinks}
           </ul>
           
         </section>
 
-        <section className="sunday-social">
+        <section className="sunday-social-section">
           <div className="section__title">
             Sunday Social<span className="smaller-text">ly distanced</span>
           </div>
