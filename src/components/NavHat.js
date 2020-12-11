@@ -17,7 +17,8 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
   // handles window resizing
   useEffect(() => {
     setWindowBreakpoint(window.innerWidth > 900);
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
+
     const getWindowSize = () => {
       setWindowBreakpoint(window.innerWidth > 900);
     }
@@ -30,12 +31,12 @@ export const NavHat = ({changePage, mobileNavOpen, setMobileNavOpen}) => {
 
   useEffect(() => {
     if(windowBreakpoint){
-      // import(
-      //   /* webpackPrefetch: true */
-      //   './MyImage'
-      // )
-      // .then(image => image.default({src: "pcTaps.jpg", alt: "LOADING...", caption: "image test"}, imageTarget))
-      // .catch(err => console.error(err));
+      import(
+        /* webpackPrefetch: true */
+        './MyImage'
+      )
+      .then(image => image.default({src: "pcTaps.jpg", alt: "LOADING...", caption: "image test"}, imageTarget))
+      .catch(err => console.error(err));
       setLoadImage(true);
 
     }

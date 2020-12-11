@@ -6,6 +6,7 @@
   "homepage": "http://Van-Nostrand.github.io/portland-craft-menu",
   "scripts": {
     "start": "webpack serve --mode=development",
+    "prodstart": "webpack serve --mode=production",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -15,12 +16,12 @@
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-lazy-load-image-component": "^1.5.1",
     "react-scroll": "^1.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-transform-arrow-functions": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",

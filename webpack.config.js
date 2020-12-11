@@ -5,14 +5,13 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-  
   entry: {
     index: {
       import: __dirname + "/src/index.js",
       dependOn: 'shared'
     },
-    another: {
-      import: __dirname + "/src/components/lazyImage.js",
+    fullnav: {
+      import: __dirname + "/src/components/LazyFullNav.js",
       dependOn: 'shared'
     },
     shared: ['react', 'react-dom']
@@ -57,17 +56,21 @@ module.exports = {
           "css-loader"
         ]
       },
+      // {
+      //   test: /\.(jpe?g|svg|png|gif)$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: '[hash]-[name].[ext]'
+      //       }
+      //     }
+          
+      //   ]
+      // },
       {
         test: /\.(jpe?g|svg|png|gif)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: '[hash]-[name].[ext]'
-            }
-          }
-          
-        ]
+        type: "asset/resource"
       },
       {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
