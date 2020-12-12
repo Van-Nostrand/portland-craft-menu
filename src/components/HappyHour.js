@@ -47,7 +47,7 @@ export const HappyHour = ({menuData}) => {
               ly distanced
             </span>
           </div>
-          <p>All-day on Sundays, 20 and 12 oz pours of local draught are $4.50!</p>
+          <p>All-day on Sundays, 20 and 12 oz pours of a select local lager or pilsner are $4.50!</p>
 
         </section>
 
