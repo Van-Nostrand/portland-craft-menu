@@ -3,7 +3,7 @@ import {NavHat} from "./NavHat";
 import {PageLoader} from "./PageLoader";
 
 export const App = () => {
-  let [currentPage, setCurrentPage] = useState("specials");
+  let [currentPage, setCurrentPage] = useState("food");
 
   return (
     <div className="app-div">
