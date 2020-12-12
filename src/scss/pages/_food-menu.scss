@@ -46,8 +46,6 @@
     display: flex;
     flex-flow: column;
     align-items: stretch;
-    // align-items: flex-start;
-    // width: 100%;
 
     border-top: 3px solid $portland-red;
     
@@ -100,15 +98,6 @@
     }
   }
 
-  .features{
-    .section__list{
-      // min-width: 90%;
-      // .food-item{
-      //   width: 20rem;
-      // }
-    }
-  }
-
   section.snacks .section__title{
     color: $potential-blue;
   }
@@ -118,8 +107,6 @@
   section.herbivores .section__title{
     color: $maybe-green;
   }
-  
-  
 
   // positions "sides" beside "sweets"
   section:nth-last-child(2){
@@ -152,8 +139,6 @@
       }
     }
   }
-  
-
 
   ////////////////////////////////////
   ///////// SIDES
@@ -176,6 +161,11 @@
         height: auto;
       }
 
+      @include respond(phone){
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }
   
       .food-item{
         grid-template-columns: 80% 10%;

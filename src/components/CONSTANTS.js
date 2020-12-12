@@ -28,16 +28,22 @@ export const SIDES = [
     price: "5"
   },
   {
-    name: "Fried Chicken Breast",
-    price: "8"
-  },
-  {
     name: "Tofu",
     price: "6"
+  },
+  {
+    name: "Fried Chicken Breast",
+    price: "8"
   },
 ];
 
 export const SNACKS = [
+  {
+    name: "Candied Bacon",
+    price: "2 for 1 or $10 for 6",
+    notes: "Johnston Farm smoked bacon baked with house-spice blend",
+    diet: "gluten and dairy free", 
+  },
   {
     name: "Pickled Vegetables",
     price: "6",
@@ -73,12 +79,6 @@ export const SNACKS = [
     price: "10",
     notes: "With pickled vegetables, fresh herbs, fresh bread, all made in-house",
     diet: "vegan", 
-  },
-  {
-    name: "Candied Bacon",
-    price: "2 for 1 or $10 for 6",
-    notes: "Johnston Farm smoked bacon baked with house-spice blend",
-    diet: "gluten and dairy free", 
   }
 ];
 
@@ -183,17 +183,17 @@ export const LARGER = [
 
 export const SWEETS = [
   {
-    name: "Chocolate Mousse",
-    price: "9", 
-    notes: "Sponge cake, whipped cream, cacao nibs",
-    diet: "vegetarian, contains nuts", 
-  },
-  {
     name: "Fried Pear Pie",
     price: "8",
     notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
     diet: "vegetarian, contains nuts", 
   },
+  {
+    name: "Chocolate Mousse",
+    price: "9", 
+    notes: "Sponge cake, whipped cream, cacao nibs",
+    diet: "vegetarian, contains nuts", 
+  }
 ]
 
 export const WHITE_WINE = [

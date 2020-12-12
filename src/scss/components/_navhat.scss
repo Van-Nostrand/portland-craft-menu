@@ -42,7 +42,7 @@
 
     .button-group{
       position: relative;
-      margin: 0 $desktop-side-margin 0 $desktop-side-margin/2;
+      margin: 0 $desktop-side-margin 0 $desktop-side-margin;
       width: 100%;
 
       display: flex;
@@ -56,3 +56,9 @@
 }
 nav{ z-index: 1;}
 nav div{ z-index: 2;}
+
+button.button-current-page{
+  border-bottom: 3px solid $portland-red;
+  box-sizing: content-box;
+  margin-bottom: -3px;
+}

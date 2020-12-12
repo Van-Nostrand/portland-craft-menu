@@ -4,9 +4,10 @@ import MobileNav from "./MobileNav";
 const LazyFullNav = React.lazy(() => import("./LazyFullNav"));
 
 
-export const NavHat = ({changePage}) => {
+export const NavHat = ({changePage, currentPage}) => {
 
   const [ fullNav, setFullNav ] = useState(false);
+  
 
   const testWindowSize = () => {
 
@@ -29,13 +30,13 @@ export const NavHat = ({changePage}) => {
 
   let buttons = (
     <>
-      <button onClick={() => changePage("food")}>
+      <button className={currentPage === "food" ? "button-current-page" : "" } onClick={() => changePage("food")}>
         FOOD
       </button>      
-      <button onClick={() => changePage("drinks")}>
+      <button className={currentPage === "drinks" ? "button-current-page" : "" } onClick={() => changePage("drinks")}>
         DRINKS
       </button>
-      <button onClick={() => changePage("specials")}>
+      <button className={currentPage === "specials" ? "button-current-page" : "" } onClick={() => changePage("specials")}>
         HAPPY-HOUR
       </button>
     </>
