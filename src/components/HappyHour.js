@@ -16,21 +16,21 @@ export const HappyHour = ({menuData}) => {
           </div>
           <div className="section__hh-subtitle">
             <div className="hh-subtitle-time">
-              4-6pm Tuesday - Thursday
+              4-6pm<br />Tuesday - Thursday
             </div>
             
             <div className="hh-subtitle-time">
-              3-6 pm Friday - Sunday
+              3-6pm<br/>Friday - Sunday
             </div>
           </div>
           <div className="hh-food-title">
-            Food
+            Happy-Hour Food Features
           </div>
           <ul className="hh-food-list">
             {food}
           </ul>
           <div className="hh-drinks-title">
-            Drinks
+            Happy-Hour Drink Features
           </div>
           <ul className="hh-drinks-list">
             {drinks}
@@ -40,7 +40,12 @@ export const HappyHour = ({menuData}) => {
 
         <section className="sunday-social-section">
           <div className="section__title">
-            Sunday Social<span className="smaller-text">ly distanced</span>
+            <span>
+              Sunday Social
+            </span>
+            <span className="small-title">
+              ly distanced
+            </span>
           </div>
           <p>All-day on Sundays, 20 and 12 oz pours of local draught are $4.50!</p>
 

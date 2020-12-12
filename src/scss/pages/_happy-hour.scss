@@ -1,8 +1,13 @@
 .happy-hour-page{
+  position: relative;
+  top: $desktop-nav-height; 
+
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  top: $desktop-nav-height; 
+
+  font-size: 2.5rem;
+
 }
 
 .happy-hour-section{
@@ -19,10 +24,9 @@
 
   background-color: $menu-background-color;
   color: $brown-q;
-  font-size: 2.5rem;
 
   @include respond(tab-port){
-    top: $mobile-nav-height + 3rem;
+    // top: $mobile-nav-height + 3rem;
     margin: 1rem 0;
     width: 95vw;
 
@@ -35,18 +39,26 @@
     grid-row: 1;
 
     font-size: 2.3em;
+    font-weight: 500;
     color: $portland-red;
+
+    @include respond(phone){
+      margin-bottom: 2rem;
+    }
   }
 
   .section__hh-subtitle{
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 4;
     grid-row: 2;
-    margin: 3rem;
+
+    display: flex; 
+    flex-flow: row;
     
     color: $dark-font;
     font-weight: 500;
     text-align: center;
-    font-size: 1.3em;
+    justify-items: stretch;
+    font-size: 1em;
 
     .hh-subtitle-time{
       display: inline-block;
@@ -55,25 +67,42 @@
         display: block;
       }
     }
+
+    .hh-subtitle-time:nth-of-type(1){
+      margin-right: 2rem;
+    }
+    .hh-subtitle-time:nth-of-type(2){
+      margin-left: 2rem;
+    }
   }
 
   .hh-food-title, .hh-drinks-title{
     margin: 3rem 0 2rem 0;
+    color: $portland-red;
+    font-size: 1.2em;
+    font-weight: 600;
+
+    @include respond(phone){
+      margin-top: 1rem;
+    }
   }
 
   .hh-food-title{
     grid-column: 2 / span 2;
     grid-row: 3;
+    text-align: center;
   }
 
   .hh-food-list{
     grid-column: 1 / span 3;
     grid-row: 4;
+    margin-bottom: 2rem;
   }
 
   .hh-drinks-title{
     grid-column: 4 / span 2;
     grid-row: 3;
+    text-align: center;
   }
 
   .hh-drinks-list{
@@ -86,6 +115,7 @@
   display: flex;
   flex-flow: row nowrap;
   margin: 1rem;
+  font-size: 0.95em;
   
   @include respond(phone){
     width: 100%;
@@ -96,6 +126,7 @@
 
   .item-price{
     margin: 0 0.5rem;
+    font-size: 0.9em;
 
     @include respond(tab-port){
       margin: 0;
@@ -106,6 +137,7 @@
     color: $dark-font;
     font-weight: 400;
     margin: 0 0.3rem;
+    font-size: 0.7em;
   }
 
   span{
@@ -136,13 +168,48 @@
 
   position: relative;
   width: 76vw;
+  margin-top: 2rem;
+
   display: flex;
   flex-flow: column;
+  align-items: stretch;
 
-  font-size: 6rem;
+
+  @include respond(phone){
+    width: 96vw;
+  }
+
+  .section__title{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: center;
+
+    color: $portland-red;
+    font-size: 2.3em;
+
+    @include respond(small-phone){
+      font-size: 2em;
+    }
+
+    span:nth-of-type(2){
+      font-size:0.5em;
+      line-height: 1.65em;
+    }
+  }
+  .section__title:last-child{
+    line-height: 1em;
+    font-size: 1em;
+  }
 
   p{
     font-weight: 400;
+    font-size: 1.4em;
+    text-align: center;
+
+    @include respond(phone){
+      font-size: 0.9em;
+    }
   }
 }
 .smaller-text{

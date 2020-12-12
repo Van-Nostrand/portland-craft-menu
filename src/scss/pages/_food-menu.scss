@@ -45,8 +45,9 @@
     
     display: flex;
     flex-flow: column;
-    align-items: flex-start;
-    width: 100%;
+    align-items: stretch;
+    // align-items: flex-start;
+    // width: 100%;
 
     border-top: 3px solid $portland-red;
     
@@ -56,6 +57,7 @@
     }
 
     .section__title{
+      align-self: flex-start;
       text-transform: capitalize;
       font-weight: 700;
       font-size: 0.95em;
@@ -93,16 +95,17 @@
       @include respond(phone){
         display: flex;
         flex-flow: column nowrap;
+        align-items: stretch;
       }
     }
   }
 
   .features{
     .section__list{
-      min-width: 90%;
-      .food-item{
-        width: 20rem;
-      }
+      // min-width: 90%;
+      // .food-item{
+      //   width: 20rem;
+      // }
     }
   }
 

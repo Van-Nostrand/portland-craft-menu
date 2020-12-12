@@ -429,16 +429,10 @@ export const COCKTAILS = [
 
 export const FEATURES = [
   {
-    name: "Placeholder Feature",
-    price: "15",
-    notes: "some placeholder words that will eventually be food",
-    diet: "oh, you're allergic to all of it"
-  },
-  {
-    name: "Another Placeholder",
-    price: "15",
-    notes: "this one had gluten added and then removed",
-    diet: "may have traces of gluten, or maybe it doesn't. U READY?"
+    name: "Skillet Pie",
+    price: "12",
+    notes: "Fresh house-made dough, pork belly, mushrooms, tomatoes, cheese, parsley",
+    diet: ""
   }
 ];
 
@@ -497,20 +491,20 @@ export const HAPPY_HOUR = [
   {
     name: "Select US Craft Beer",
     prices: [
-      {price: "5.75", size: "(14oz)"}
+      {price: "5.75", size: " (14oz)"}
     ]
   },
   {
     name: "Select Local Draught Beer",
     prices: [
-      {price: "4", size: "(14oz)"},
-      {price: "5", size: "(20oz)"}
+      {price: "4", size: " (14oz)"},
+      {price: "5", size: " (20oz)"}
     ]
   },
   {
     name: "House Red, White, & Rose Wine",
     prices: [
-      {price: "5.50", size: "(5oz)"},
+      {price: "5.50", size: " (5oz)"},
       {price: "9", size: "(8oz)"}
     ]
   },
@@ -529,7 +523,7 @@ export const HAPPY_HOUR = [
   {
     name: "Jameson",
     prices: [
-      {price: "4.50", size: "(1oz)"}
+      {price: "4.50", size: " (1oz)"}
     ]
   }
 ]
