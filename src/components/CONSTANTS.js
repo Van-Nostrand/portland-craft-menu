@@ -16,10 +16,6 @@ export const SIDES = [
     price: "5"
   },
   {
-    name: "Coconut Gravy",
-    price: "2"
-  },
-  {
     name: "Chicken Gravy",
     price: "2"
   },
@@ -158,7 +154,7 @@ export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
     price: "20",
-    notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli",
+    notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries, or salad (+$2)",
     diet: "", 
   },
   {
@@ -170,7 +166,7 @@ export const LARGER = [
   {
     name: "Farmcrest Chicken and Waffle",
     price: "23",
-    notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
+    notes: "Fried chicken breast, mushroom, bacon, butter, gravy",
     diet: "", 
   },
   {
