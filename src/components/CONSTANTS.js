@@ -89,7 +89,7 @@ export const OMNIVORES = [
     name: "Roasted Organic Carrot and Brussel Sprouts Salad",
     price: "10",
     notes: "Carrots, brussel sprouts, radish, sunflower seeds, double smoked bacon vinaigrette",
-    diet: ""
+    diet: "gluten free"
   },
   {
     name: "Craft Poutine",
@@ -146,7 +146,7 @@ export const HERBIVORES = [
     name: "Cauliflower Soup",
     price: "12",
     notes: "Cauliflower, cheddar crumble",
-    diet: "vegetarian, gluten free"
+    diet: "vegetarian"
   },
   {
     name: '"Fried Rice"',
