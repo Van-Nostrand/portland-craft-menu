@@ -16,6 +16,10 @@ export const SIDES = [
     price: "5"
   },
   {
+    name: "Coconut Gravy",
+    price: "2"
+  },
+  {
     name: "Chicken Gravy",
     price: "2"
   },
@@ -86,12 +90,6 @@ export const OMNIVORES = [
     diet: "dairy free", 
   },
   {
-    name: "Roasted Organic Carrot and Brussel Sprouts Salad",
-    price: "10",
-    notes: "Carrots, brussel sprouts, radish, sunflower seeds, double smoked bacon vinaigrette",
-    diet: ""
-  },
-  {
     name: "Craft Poutine",
     price: "11",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
@@ -160,7 +158,7 @@ export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
     price: "20",
-    notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries, or salad (+$2)",
+    notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli",
     diet: "", 
   },
   {
@@ -172,7 +170,7 @@ export const LARGER = [
   {
     name: "Farmcrest Chicken and Waffle",
     price: "23",
-    notes: "Fried chicken breast, mushroom, bacon, butter, gravy",
+    notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
     diet: "", 
   },
   {
