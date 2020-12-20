@@ -45,7 +45,7 @@ export const NavHat = ({changePage, currentPage}) => {
  
   let navElement;
   if(!fullNav){
-    navElement = <MobileNav buttons={buttons} logo={blkWhiteLogo} />
+    navElement = <MobileNav buttons={buttons} logo={blkWhiteLogo} currentPage={currentPage} />
   }
   else{
     navElement =  <Suspense fallback={<div>Loading...</div>}>

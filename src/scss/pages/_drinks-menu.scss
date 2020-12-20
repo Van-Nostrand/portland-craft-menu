@@ -349,3 +349,68 @@
   }
 }
 
+.mobile-drinks-sub-nav{
+  position: absolute;
+  top: $mobile-nav-height;
+  background-color: grey;
+  width: 100%;
+
+  display: flex; 
+  flex-flow: row;
+  justify-content: space-around;
+
+  button{
+    color: white;
+
+    height: 6rem;
+  }
+}
+
+.liquor-section{
+
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+  grid-template-rows: 7rem auto;
+
+  border-top: 3px solid $portland-red;
+
+  &-title{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+
+    padding-top: 3rem;
+
+    font-size: 1.2em;
+    color: $portland-red;
+  }
+
+  .liquor-pour-header{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    align-self: end;
+    padding: 0 3.5rem 0.5rem 0;
+
+    font-size: 0.75em;
+  }
+
+  &-list{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+
+    justify-self: stretch;
+
+    .liquor-item{
+      display: flex;
+      flex-flow: row;
+      width: 100%;
+
+      justify-content: space-between;
+
+      margin: 0.5rem 0;
+
+      
+    }
+  }
+}

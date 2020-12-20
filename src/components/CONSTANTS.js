@@ -78,6 +78,250 @@ export const SNACKS = [
   }
 ];
 
+export const OTHER_WHISKEY = [
+  {
+    name: "Jameson",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Jack Daniels",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "George Dickel",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Other Whiskey 14",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Other Whiskey 15",
+    single: "7",
+    double: "12"
+  }
+];
+
+export const GIN = [
+  {
+    name: "Beefeater",
+    single: "6.50",
+    double: "10.50"
+  },
+  {
+    name: "Victoria",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Empress 1908",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Odd Society Wallflower",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Long Table London Dry",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Long Table Rose",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Long Table Cucumber",
+    single: "7",
+    double: "12"
+  }
+];
+
+export const VODKA = [
+  {
+    name: "Absolut",
+    single: "6.50",
+    double: "10.50"
+  },
+  {
+    name: "Odd Society East Van",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Grey Goose",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Long Table Texada",
+    single: "10",
+    double: "18"
+  }
+];
+
+export const TEQUILA = [
+  {
+    name: "El Jimador",
+    single: "8",
+    double: "14"
+  },
+  {
+    name: "Olmeca",
+    single: "7",
+    double: "13"
+  },
+  {
+    name: "Espolón",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Cazadores",
+    single: "9",
+    double: "16"
+  }
+];
+
+export const OTHER_SPIRITS = [
+  {
+    name: "Pisco 1",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Rum 2",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Rum 13",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Rum 14",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Hayman's Sloe Gin",
+    single: "9",
+    double: "16"
+  }
+];
+
+export const SCOTCH = [
+  {
+    name: "Laphroaig",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "McClellands Islay",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Auchentoshan",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Royal Grouse",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Royal Grouse Smokey Black",
+    single: "7",
+    double: "12"
+  }
+];
+
+export const RYE = [
+  {
+    name: "Lot No. 40",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bulleit",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Rittenhouse",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Mitchers",
+    single: "16",
+    double: "28"
+  },
+  {
+    name: "Odd Society Mongrel",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Odd Society Prospector",
+    single: "7",
+    double: "12"
+  }
+];
+
+export const BOURBON = [
+  {
+    name: "Bourbon 1",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bourbon 2",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bourbon 13",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bourbon 14",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bourbon 15",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bourbon 16",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bourbon 17",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bourbon 18",
+    single: "7",
+    double: "12"
+  },
+];
+
 export const OMNIVORES = [
   {
     name: "Pacific Wild Shrimp Fritter",
