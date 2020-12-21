@@ -78,250 +78,6 @@ export const SNACKS = [
   }
 ];
 
-export const OTHER_WHISKEY = [
-  {
-    name: "Jameson",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Jack Daniels",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "George Dickel",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Other Whiskey 14",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Other Whiskey 15",
-    single: "7",
-    double: "12"
-  }
-];
-
-export const GIN = [
-  {
-    name: "Beefeater",
-    single: "6.50",
-    double: "10.50"
-  },
-  {
-    name: "Victoria",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Empress 1908",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Odd Society Wallflower",
-    single: "9",
-    double: "16"
-  },
-  {
-    name: "Long Table London Dry",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Long Table Rose",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Long Table Cucumber",
-    single: "7",
-    double: "12"
-  }
-];
-
-export const VODKA = [
-  {
-    name: "Absolut",
-    single: "6.50",
-    double: "10.50"
-  },
-  {
-    name: "Odd Society East Van",
-    single: "9",
-    double: "16"
-  },
-  {
-    name: "Grey Goose",
-    single: "11",
-    double: "19"
-  },
-  {
-    name: "Long Table Texada",
-    single: "10",
-    double: "18"
-  }
-];
-
-export const TEQUILA = [
-  {
-    name: "El Jimador",
-    single: "8",
-    double: "14"
-  },
-  {
-    name: "Olmeca",
-    single: "7",
-    double: "13"
-  },
-  {
-    name: "Espolón",
-    single: "9",
-    double: "16"
-  },
-  {
-    name: "Cazadores",
-    single: "9",
-    double: "16"
-  }
-];
-
-export const OTHER_SPIRITS = [
-  {
-    name: "Pisco 1",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Rum 2",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Rum 13",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Rum 14",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Hayman's Sloe Gin",
-    single: "9",
-    double: "16"
-  }
-];
-
-export const SCOTCH = [
-  {
-    name: "Laphroaig",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "McClellands Islay",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Auchentoshan",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Royal Grouse",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Royal Grouse Smokey Black",
-    single: "7",
-    double: "12"
-  }
-];
-
-export const RYE = [
-  {
-    name: "Lot No. 40",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bulleit",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Rittenhouse",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Mitchers",
-    single: "16",
-    double: "28"
-  },
-  {
-    name: "Odd Society Mongrel",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Odd Society Prospector",
-    single: "7",
-    double: "12"
-  }
-];
-
-export const BOURBON = [
-  {
-    name: "Bourbon 1",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bourbon 2",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bourbon 13",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bourbon 14",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bourbon 15",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bourbon 16",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bourbon 17",
-    single: "7",
-    double: "12"
-  },
-  {
-    name: "Bourbon 18",
-    single: "7",
-    double: "12"
-  },
-];
-
 export const OMNIVORES = [
   {
     name: "Pacific Wild Shrimp Fritter",
@@ -440,7 +196,7 @@ export const SWEETS = [
     notes: "Sponge cake, whipped cream, cacao nibs",
     diet: "vegetarian, contains nuts", 
   }
-]
+];
 
 export const WHITE_WINE = [
   {
@@ -524,7 +280,7 @@ export const RED_WINE = [
     sizes: [12, 16, 48],
     notes: "B.C."
   }
-]
+];
 
 export const BUBBLES = [
   {
@@ -537,7 +293,7 @@ export const BUBBLES = [
     sizes: [11, 45],
     notes: "B.C."
   }
-]
+];
 
 export const OLD_COCKTAILS = [
   {
@@ -586,7 +342,7 @@ export const OLD_COCKTAILS = [
     price: "13",
     notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
   }
-]
+];
 
 export const HOUSE_COCKTAILS = [
   {
@@ -629,7 +385,8 @@ export const HOUSE_COCKTAILS = [
     price: "15",
     notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
-]
+];
+
 export const COCKTAILS = [
   {
     name: "Gastown",
@@ -671,7 +428,7 @@ export const COCKTAILS = [
     price: "14",
     notes: "Tequila, Green Chartreuse, sugar, lime, cassis, egg white"
   },
-]
+];
 
 export const FEATURES = [
   {
@@ -772,7 +529,7 @@ export const HAPPY_HOUR = [
       {price: "4.50", size: " (1oz)"}
     ]
   }
-]
+];
 
 export const NON_ALCOHOLIC = [
   {
@@ -817,4 +574,404 @@ export const PACKAGED_BEER = [
     name: "Deschutes Mirror Pond Pale Ale",
     price: "3.5",
   },
+];
+
+export const OTHER_WHISKEY = [
+  {
+    name: "Jameson",
+    single: "7",
+    double: "11"
+  },
+  {
+    name: "George Dickel",
+    single: "7",
+    double: "11"
+  },
+  {
+    name: "Jack Daniels",
+    single: "8",
+    double: "13"
+  }
+];
+
+export const GIN = [
+  {
+    name: "Beefeater",
+    single: "6.50",
+    double: "10.50"
+  },
+  {
+    name: "Odd Society Wallflower",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Hayman's Sloe Gin",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Victoria Distillery",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Resurrection BC Dry",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Long Table London Dry",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Long Table Cucumber",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Empress 1908",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Resurrection Rose",
+    single: "13",
+    double: "23"
+  },
+];
+
+export const VODKA = [
+  {
+    name: "Absolut",
+    single: "6.50",
+    double: "10.50"
+  },
+  {
+    name: "Odd Society East Van",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Long Table Texada",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Grey Goose",
+    single: "11",
+    double: "19"
+  }
+];
+
+export const TEQUILA = [
+  {
+    name: "Olmeca",
+    single: "7",
+    double: "13"
+  },
+  {
+    name: "El Jimador",
+    single: "8",
+    double: "13"
+  },
+  {
+    name: "Espolón",
+    single: "9",
+    double: "14"
+  },
+  {
+    name: "Cazadores",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Sombra (Mezcal)",
+    single: "12",
+    double: "21"
+  }
+];
+
+export const RUM = [
+  {
+    name: "Bacardi Superior",
+    single: "6.50",
+    double: "10.50"
+  },
+  {
+    name: "Appleton Estate",
+    single: "6.50",
+    double: "10.50"
+  },
+  {
+    name: "Flor de Caña",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Sailor Jerry",
+    single: "8",
+    double: "13"
+  },
+  {
+    name: "Goslings Black Seal",
+    single: "8",
+    double: "13"
+  }
+];
+
+export const OTHER_SPIRITS = [
+  {
+    name: "Aperol",
+    single: "7",
+    double: "13"
+  },
+  {
+    name: "Campari",
+    single: "7",
+    double: "13"
+  },
+  {
+    name: "Long Table Akvavit",
+    single: "10",
+    double: "18"
+  }
+];
+
+export const BRANDY = [
+  {
+    name: "Capel Pisco",
+    single: "8",
+    double: "13"
+  },
+  {
+    name: "Courvoisier VS",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Hennessy VS",
+    single: "13",
+    double: "23"
+  }
 ]
+
+export const SCOTCH = [
+  {
+    name: "The Famous Grouse",
+    single: "7",
+    double: "13"
+  },
+  {
+    name: "The Famous Grouse Smokey Black",
+    single: "8",
+    double: "14"
+  },
+  {
+    name: "McClelland's Islay",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Auchentoshan American Oak",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Aberlour 12yr",
+    single: "13",
+    double: "23"
+  },
+  {
+    name: "Laphroaig 10yr",
+    single: "14",
+    double: "25"
+  },
+];
+
+export const RYE = [
+  {
+    name: "Wisers Special Blend",
+    single: "6½",
+    double: "10½"
+  },
+  {
+    name: "Odd Society Mongrel",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Bulleit",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Lot No. 40",
+    single: "7",
+    double: "12"
+  },
+  {
+    name: "Resurrection White Rye",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Odd Society Prospector",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Rittenhouse",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Mitchers",
+    single: "16",
+    double: "28"
+  }  
+];
+
+export const BOURBON = [
+  {
+    name: "Wild Turkey 81",
+    single: "6.50",
+    double: "10.50"
+  },
+  {
+    name: "Jim Beam",
+    single: "7",
+    double: "13"
+  },
+  {
+    name: "George Dickel",
+    single: "7",
+    double: "13"
+  },
+  {
+    name: "Old Forester",
+    single: "8",
+    double: "14"
+  },
+  {
+    name: "Bulleit",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Four Roses",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Buffalo Trace",
+    single: "9",
+    double: "16"
+  },
+  {
+    name: "Makers Mark",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Old Tub",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Redemption",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Rebel Yell",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Knob Creek",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "I.W. Harper",
+    single: "10",
+    double: "18"
+  },
+  {
+    name: "Russel's Reserve 10yr",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Woodford Reserve",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Basil Hayden's",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Knob Creek Smoked Maple",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Legent",
+    single: "11",
+    double: "19"
+  },
+  {
+    name: "Elijah Craig",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Bulleit 10yr",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Wild Turkey Longbranch",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Eagle Rare",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Jefferson's",
+    single: "12",
+    double: "21"
+  },
+  {
+    name: "Old Forester 1870",
+    single: "13",
+    double: "23"
+  },
+  {
+    name: "Woodford Reserve Double Oaked",
+    single: "14",
+    double: "25"
+  },
+  {
+    name: "Bernheim Original",
+    single: "15",
+    double: "26"
+  },
+  {
+    name: "Clyde May's",
+    single: "16",
+    double: "28"
+  },
+  {
+    name: "Michter's",
+    single: "16",
+    double: "28"
+  }
+];

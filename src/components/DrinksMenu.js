@@ -154,6 +154,22 @@ export const DrinksMenu = ({menuData}) => {
               double={otherspirits.double}
               key={`other-spirits-${i}`} />
   });
+  let rum = menuData.RUM.map((rum, i) => {
+    return <LiquorItem 
+              name={rum.name}
+              style={"rum"}
+              single={rum.single}
+              double={rum.double}
+              key={`rum-${i}`} />
+  });
+  let brandy = menuData.BRANDY.map((brandy, i) => {
+    return <LiquorItem 
+              name={brandy.name}
+              style={"brandy"}
+              single={brandy.single}
+              double={brandy.double}
+              key={`brandy-${i}`} />
+  });
 
   return (
     <div className="menu drinks-menu">
@@ -223,6 +239,16 @@ export const DrinksMenu = ({menuData}) => {
           sectionTitle={"Other Spirits"}
           sectionSizeString={"1oz, 2oz"}
           items={otherSpirits} />
+        
+        <LiquorSection 
+          sectionTitle={"Brandy"}
+          sectionSizeString={"1oz, 2oz"}
+          items={brandy} />
+        
+        <LiquorSection 
+          sectionTitle={"Rum"}
+          sectionSizeString={"1oz, 2oz"}
+          items={rum} />
       
     </div>
   )
