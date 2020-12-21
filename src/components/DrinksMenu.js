@@ -1,10 +1,46 @@
-import React from "react";
-import { PackagedBeerSection, PackagedBeer } from "./PackagedBeerComponents";
-import { Wine, WineSection } from "./WineComponents";
-import { Cocktail, CocktailSection } from "./CocktailComponents";
+import React, { useState, useRef, useEffect } from "react";
+import PackagedBeerSection, { PackagedBeer } from "./PackagedBeerComponents";
+import WineSection, { Wine } from "./WineComponents";
+import CocktailSection, { Cocktail } from "./CocktailComponents";
 import { LiquorItem, LiquorSection } from "./LiquorComponents";
+import { useCustomScrollRef } from "../hooks/useCustomScrollRef";
 
 export const DrinksMenu = ({menuData}) => {
+  const SCROLL_ALIASING = 50;
+
+  let [ currentView, setCurrentView ] = useState("wine");
+  let [ currentScroll, setCurrentScroll ] = useState(0);
+  let wineRef = useRef();
+  let cocktailRef = useRef();
+  let packagedRef = useRef();
+
+  useEffect(() => {
+    const checkPosition = () => console.log(wineRef.current.getBoundingClientRect());
+    const scrollChecking = () => { 
+      if(window.scrollY > currentScroll + SCROLL_ALIASING || window.scrollY < currentScroll - SCROLL_ALIASING){
+        setCurrentScroll(window.scrollY);
+        console.log(window.scrollY);
+      }
+    }
+
+    const showCurrentView = () => {
+      let cocktailRefY = cocktailRef.current.getBoundingClientRect().y;
+      let wineRefY = wineRef.current.getBoundingClientRect().y;
+      let packagedRefY = packagedRef.current.getBoundingClientRect().y;
+      if(cocktailRefY < 100 && cocktailRefY > -100){
+        setCurrentView("cocktails");
+      }
+      else if(wineRefY < 100 && wineRefY > -100){
+        setCurrentView("wine");
+      }
+      else if(packagedRefY < 100 && packagedRefY > -100){
+        setCurrentView("packaged");
+      }
+    }
+    window.addEventListener("scroll", showCurrentView);
+
+    return(() => window.removeEventListener("scroll", showCurrentView));
+  },[]);
 
   let redwines = menuData.RED_WINE.map((wine, j) => {
     return <Wine 
@@ -124,23 +160,28 @@ export const DrinksMenu = ({menuData}) => {
 
         <WineSection 
           sectionTitle="Red" 
+          ref={wineRef}
           sectionSizeString="5oz, 8oz, bottle" 
           wines={redwines} />
 
         <WineSection 
           sectionTitle="White" 
+          ref={null}
           sectionSizeString="5oz, 8oz, bottle" 
           wines={whitewines} />
 
         <WineSection 
           sectionTitle="Bubbly" 
+          ref={null}
           sectionSizeString="5oz, bottle" 
           wines={bubblies} />
 
         <CocktailSection
+          ref={cocktailRef}
           cocktails={cocktails} />
 
         <PackagedBeerSection 
+          ref={packagedRef}
           beers={packagedBeer} />
 
         <LiquorSection 

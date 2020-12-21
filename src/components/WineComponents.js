@@ -1,4 +1,5 @@
 import React from "react";
+
 export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal, style}) => {
 // console.log(style);
   return(
@@ -16,20 +17,18 @@ export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal, style}) 
   )
 }
 
-export const WineSection = ({sectionTitle, sectionSizeString, wines}) => {
-  let lowercasesection = sectionTitle.toLowerCase();
-  return (
-    <section className={`wine-section ${lowercasesection}-wine-section`}>
-      <div className={`wine-section-title ${lowercasesection}-section-title section-title`}>
-        {sectionTitle}
+export default React.forwardRef(function WineSection(props, ref){
+  return(
+    <section className={`wine-section ${props.sectionTitle.toLowerCase()}-wine-section`} ref={ref}>
+      <div className={`wine-section-title ${props.sectionTitle.toLowerCase()}-section-title section-title`}>
+        {props.sectionTitle}
       </div>
-      <div className={`wine-sizes ${lowercasesection}-wine-sizes`}>
-        {sectionSizeString}
+      <div className={`wine-sizes ${props.sectionTitle.toLowerCase()}-wine-sizes`}>
+        {props.sectionSizeString}
       </div>
-      <ul className={`wine-list ${lowercasesection}-wine-list section-list`}>
-        {wines}
+      <ul className={`wine-list ${props.sectionTitle.toLowerCase()}-wine-list section-list`}>
+        {props.wines}
       </ul>
     </section>
   );
-}
-
+});

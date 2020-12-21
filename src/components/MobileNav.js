@@ -1,6 +1,7 @@
 import React from "react";
 
-function MobileNav({buttons, logo, currentPage}){
+function MobileNav({buttons, logo, currentPage, highlight}){
+  let highlightStyle = {color: "purple"};
   return(
     <nav className="mobile-nav" >
       <div className="logo mobile-nav__logo">
@@ -11,9 +12,9 @@ function MobileNav({buttons, logo, currentPage}){
       </div>
       {currentPage === "drinks" ? 
         <div className="mobile-drinks-sub-nav">
-          <button className="mobile-sub-nav-wine">Wine</button>
-          <button className="mobile-sub-nav-cocktails">Cocktails</button>
-          <button className="mobile-sub-nav-togobeers">To-Go Beers</button>
+          <button style={highlight === "wine" ? highlightStyle : {}} className="mobile-sub-nav-wine">Wine</button>
+          <button style={highlight === "cocktails" ? highlightStyle : {}} className="mobile-sub-nav-cocktails">Cocktails</button>
+          <button style={highlight === "packaged" ? highlightStyle : {}} className="mobile-sub-nav-togobeers">To-Go Beers</button>
         </div>
         : <></>}
     </nav>

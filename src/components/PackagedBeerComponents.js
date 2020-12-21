@@ -1,8 +1,8 @@
 import React from "react";
 
-export const PackagedBeerSection = ({beers}) => {
+export default React.forwardRef(function PackagedBeerSection(props, ref){
   return (
-    <section className="packaged-beer-section">
+    <section ref={ref} className="packaged-beer-section">
       <div className="packaged-beer-section-title section-title">
         Beer To-Go!
       </div>
@@ -13,11 +13,11 @@ export const PackagedBeerSection = ({beers}) => {
         (with food purchase - ask your server)
       </p>
       <ul className="packaged-beer-section-list section-list">
-        {beers}
+        {props.beers}
       </ul>
     </section>
   )
-}
+});
 
 export const PackagedBeer = ({name, price}) => {
   return(

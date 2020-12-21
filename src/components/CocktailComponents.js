@@ -1,18 +1,18 @@
 import React from "react";
 
 
-export const CocktailSection = ({cocktails}) => {
+export default React.forwardRef(function CocktailSection(props, ref){
   return (
-    <section className={`cocktail-section`}>
+    <section ref={ref} className={`cocktail-section`}>
       <div className={`cocktail-section-title section-title`}>
         Cocktails
       </div>
       <ul className={`cocktail-section-list section-list`}>
-        {cocktails}
+        {props.cocktails}
       </ul>
     </section>
   )
-}
+});
 
 export const Cocktail = ({ itemName = "unnamed", price = "23", notes=""}) => {
 
