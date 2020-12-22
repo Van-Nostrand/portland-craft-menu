@@ -1,4 +1,4 @@
-// from https://codesandbox.io/s/github/Andarist/use-smooth-scroll/tree/master/examples/simple?file=/src/index.js:0-948
+// an example from https://codesandbox.io/s/github/Andarist/use-smooth-scroll/tree/master/examples/simple?file=/src/index.js:0-948
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import styled from 'react-emotion'

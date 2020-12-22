@@ -12,7 +12,7 @@
   font-size: 2.5rem;
 
   @include respond(tab-port){
-    top: $mobile-nav-height;
+    top: $mobile-nav-height + 4rem;
     width: 95vw;
     grid-template-columns: repeat(12, 1fr);
   }
@@ -346,23 +346,6 @@
         font-size: 0.7em;
       }
     }
-  }
-}
-
-.mobile-drinks-sub-nav{
-  position: absolute;
-  top: $mobile-nav-height;
-  background-color: grey;
-  width: 100%;
-
-  display: flex; 
-  flex-flow: row;
-  justify-content: space-around;
-
-  button{
-    color: white;
-
-    height: 6rem;
   }
 }
 

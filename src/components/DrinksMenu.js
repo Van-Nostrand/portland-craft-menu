@@ -6,43 +6,42 @@ import LiquorSection, { LiquorItem } from "./LiquorComponents";
 import { useCustomScrollRef } from "../hooks/useCustomScrollRef";
 
 export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
-  const SCROLL_ALIASING = 50;
-
-  // let [ currentView, setCurrentView ] = useState("wine");
+  const SCROLL_ALIASING = 40; // old iteration: values used for performance reasons
   let [ currentScroll, setCurrentScroll ] = useState(0);
-  let wineRef = useRef();
+
+  let wineTopRef = useRef();
+  let wineBottomRef = useRef();
   let cocktailRef = useRef();
   let packagedRef = useRef();
-  let spiritsRef = useRef();
+  let spiritsTopRef = useRef();
+  let spiritsBottomRef = useRef();
 
   useEffect(() => {
 
     const showCurrentView = () => {
-      console.log("scrolling");
-      let cocktailRefY = cocktailRef.current.getBoundingClientRect().y;
-      let wineRefY = wineRef.current.getBoundingClientRect().y;
-      let packagedRefY = packagedRef.current.getBoundingClientRect().y;
-      let spiritsRefY = spiritsRef.current.getBoundingClientRect().y;
-      if(cocktailRefY < 110 && cocktailRefY > -110){
-        setCurrentDrinkSection("cocktails");
-      }
-      else if(wineRefY < 110 && wineRefY > -110){
+      if(wineTopRef.current.getBoundingClientRect().top < 0 && wineBottomRef.current.getBoundingClientRect().bottom > 140 ){
         setCurrentDrinkSection("wine");
       }
-      else if(packagedRefY < 110 && packagedRefY > -110){
+      else if(cocktailRef.current.getBoundingClientRect().top < 135 && cocktailRef.current.getBoundingClientRect().bottom > 140){
+        setCurrentDrinkSection("cocktails");
+      }
+      else if(packagedRef.current.getBoundingClientRect().top < 135 && packagedRef.current.getBoundingClientRect().bottom > 140){
         setCurrentDrinkSection("packaged");
       }
-      else if(spiritsRefY < 110 && spiritsRefY > -110){
+      else if(spiritsTopRef.current.getBoundingClientRect().top < 130 && spiritsBottomRef.current.getBoundingClientRect().bottom > 0){
         setCurrentDrinkSection("spirits");
       }
     }
+
     window.addEventListener("scroll", showCurrentView);
 
     passRefs({
-      wineRef,
+      wineTopRef,
+      wineBottomRef,
       cocktailRef,
       packagedRef,
-      spiritsRef
+      spiritsTopRef,
+      spiritsBottomRef
     });
 
     return(() => window.removeEventListener("scroll", showCurrentView));
@@ -182,7 +181,7 @@ export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
 
         <WineSection 
           sectionTitle="Red" 
-          ref={wineRef}
+          ref={wineTopRef}
           sectionSizeString="5oz, 8oz, bottle" 
           wines={redwines} />
 
@@ -194,7 +193,7 @@ export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
 
         <WineSection 
           sectionTitle="Bubbly" 
-          ref={null}
+          ref={wineBottomRef}
           sectionSizeString="5oz, bottle" 
           wines={bubblies} />
 
@@ -208,7 +207,7 @@ export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
 
         <LiquorSection 
           sectionTitle={"Bourbon"}
-          ref={spiritsRef}
+          ref={spiritsTopRef}
           sectionSizeString={"1oz, 2oz"}
           items={bourbon} />
         
@@ -254,6 +253,7 @@ export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
         
         <LiquorSection 
           sectionTitle={"Rum"}
+          ref={spiritsBottomRef}
           sectionSizeString={"1oz, 2oz"}
           items={rum} />
       

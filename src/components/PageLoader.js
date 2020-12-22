@@ -1,32 +1,14 @@
 import React from "react";
-import {FoodMenu} from "./FoodMenu";
-import {DrinksMenu} from "./DrinksMenu";
-import {HappyHour} from "./HappyHour";
+import { FoodMenu } from "./FoodMenu";
+import { DrinksMenu } from "./DrinksMenu";
+import { HappyHour } from "./HappyHour";
 import {
-  WHITE_WINE,
-  RED_WINE,
-  BUBBLES,
+  WHITE_WINE, RED_WINE, BUBBLES,
   HOUSE_COCKTAILS,
-  BOURBON,
-  RYE,
-  SCOTCH,
-  OTHER_WHISKEY,
-  GIN,
-  VODKA,
-  TEQUILA,
-  RUM,
-  OTHER_SPIRITS,
-  BRANDY,
-  HAPPY_HOUR,
-  HAPPY_HOUR_FOOD,
-  FEATURES,
-  SNACKS,
-  OMNIVORES,
-  HERBIVORES,
-  LARGER,
-  SWEETS,
-  SIDES,
-  PACKAGED_BEER
+  BOURBON, RYE, SCOTCH, OTHER_WHISKEY, GIN, VODKA, TEQUILA, RUM, BRANDY, OTHER_SPIRITS,
+  PACKAGED_BEER,
+  HAPPY_HOUR, HAPPY_HOUR_FOOD, FEATURES,
+  SNACKS, OMNIVORES, HERBIVORES, LARGER, SWEETS, SIDES  
 } from "./CONSTANTS";
 
 export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {

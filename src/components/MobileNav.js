@@ -1,8 +1,8 @@
 import React from "react";
-import useCustomSmoothScroll from "../hooks/useCustomSmoothScroll";
+import useSmoothScroll from "../hooks/useSmoothScroll";
 
 function MobileNav({buttons, logo, currentPage, highlight, allRefs}){
-  let highlightStyle = {color: "purple"};
+  let highlightStyle = {color: "#bd141b", borderBottom: "3px solid #bd141b"};
   return(
     <nav className="mobile-nav" >
       <div className="logo mobile-nav__logo">
@@ -11,42 +11,45 @@ function MobileNav({buttons, logo, currentPage, highlight, allRefs}){
       <div className="button-group mobile-nav__button-group">
         {buttons}
       </div>
+
       {currentPage === "drinks" ? 
+
         <div className="mobile-drinks-sub-nav">
           <button 
             style={highlight === "wine" ? highlightStyle : {}} 
             className="mobile-sub-nav-wine"
             onClick={() => 
-              useCustomSmoothScroll(allRefs.wineRef.current.getBoundingClientRect().y)
+              useSmoothScroll(allRefs.wineTopRef.current.getBoundingClientRect().y)
             }>
-            Wine
+              Wine
           </button>
           <button 
             style={highlight === "cocktails" ? highlightStyle : {}} 
             className="mobile-sub-nav-cocktails" 
             onClick={() => 
-              useCustomSmoothScroll(allRefs.cocktailRef.current.getBoundingClientRect().y)
+              useSmoothScroll(allRefs.cocktailRef.current.getBoundingClientRect().y)
             }>
-            Cocktails
+              Cocktails
           </button>
           <button 
             style={highlight === "packaged" ? highlightStyle : {}} 
             className="mobile-sub-nav-togobeers"
             onClick={() => 
-              useCustomSmoothScroll(allRefs.packagedRef.current.getBoundingClientRect().y)
+              useSmoothScroll(allRefs.packagedRef.current.getBoundingClientRect().y)
             }>
-            ToGo
+              ToGo
           </button>
           <button 
             style={highlight === "spirits" ? highlightStyle : {}} 
             className="mobile-sub-nav-spirits"
             onClick={() => 
-              useCustomSmoothScroll(allRefs.spiritsRef.current.getBoundingClientRect().y)
+              useSmoothScroll(allRefs.spiritsTopRef.current.getBoundingClientRect().y)
             }>
-            Spirits
+              Spirits
           </button>
         </div>
-        : <></>}
+
+      : <></>}
     </nav>
   );
 }

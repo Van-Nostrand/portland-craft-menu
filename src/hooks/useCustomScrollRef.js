@@ -1,5 +1,8 @@
 import { useState, useLayoutEffect } from "react";
 
+// I used this to trigger whether an element appeared after scrolling a certain amount down a page
+// there might be a better way to do this...
+
 //bufferValue is an integer defining the number of pixels past the target element that can be scrolled to before sending show=false
 export function useCustomScrollRef(scrollRef, bufferValue){
   const [show, doShow] = useState(false);
