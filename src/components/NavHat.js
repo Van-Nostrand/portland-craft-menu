@@ -4,14 +4,12 @@ import MobileNav from "./MobileNav";
 const LazyFullNav = React.lazy(() => import("./LazyFullNav"));
 
 
-export const NavHat = ({changePage, currentPage}) => {
+export const NavHat = ({changePage, currentPage, currentDrinkSection, allRefs}) => {
 
   const [ fullNav, setFullNav ] = useState(false);
   const [ drinksMenuHighlight, setDrinksMenuHighlight ] = useState("wine");
   
-
   const testWindowSize = () => {
-
     if(window.innerWidth > 1200){
       setFullNav(true);
     }
@@ -46,7 +44,7 @@ export const NavHat = ({changePage, currentPage}) => {
  
   let navElement;
   if(!fullNav){
-    navElement = <MobileNav highlight={drinksMenuHighlight} buttons={buttons} logo={blkWhiteLogo} currentPage={currentPage} />
+    navElement = <MobileNav highlight={currentDrinkSection} buttons={buttons} logo={blkWhiteLogo} currentPage={currentPage} allRefs={allRefs} />
   }
   else{
     navElement =  <Suspense fallback={<div>Loading...</div>}>

@@ -3,15 +3,19 @@ import {NavHat} from "./NavHat";
 import {PageLoader} from "./PageLoader";
 
 export const App = () => {
-  let [currentPage, setCurrentPage] = useState("drinks");
+  let [ currentPage, setCurrentPage ] = useState("drinks");
+  let [ currentDrinkSection, setCurrentDrinkSection ] = useState("wine");
+  let [ allRefs, passRefs ] = useState();
 
   return (
     <div className="app-div">
       <NavHat 
         changePage={setCurrentPage} 
+        currentDrinkSection={currentDrinkSection}
+        allRefs={allRefs}
         currentPage={currentPage} />
 
-      <PageLoader pageTitle={currentPage} />
+      <PageLoader passRefs={passRefs} pageTitle={currentPage} setCurrentDrinkSection={setCurrentDrinkSection} />
     </div>
   )
 }

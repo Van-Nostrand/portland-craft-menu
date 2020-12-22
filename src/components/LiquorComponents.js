@@ -13,11 +13,10 @@ export const LiquorItem = ({ name = "unnamed", style, single, double}) => {
   )
 }
 
-
-export const LiquorSection = ({sectionTitle, sectionSizeString, items}) => {
+export default React.forwardRef(function LiquorSection({sectionTitle, sectionSizeString, items}, ref){
   let lowercasesection = sectionTitle.toLowerCase();
   return (
-    <section className={`liquor-section ${lowercasesection}-section`}>
+    <section ref={ref} className={`liquor-section ${lowercasesection}-section`}>
       <div className={`liquor-section-title ${lowercasesection}-section-title section-title`}>
         {sectionTitle}
       </div>
@@ -29,5 +28,5 @@ export const LiquorSection = ({sectionTitle, sectionSizeString, items}) => {
       </ul>
     </section>
   );
-}
+});
 

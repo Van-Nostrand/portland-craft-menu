@@ -2,42 +2,48 @@ import React, { useState, useRef, useEffect } from "react";
 import PackagedBeerSection, { PackagedBeer } from "./PackagedBeerComponents";
 import WineSection, { Wine } from "./WineComponents";
 import CocktailSection, { Cocktail } from "./CocktailComponents";
-import { LiquorItem, LiquorSection } from "./LiquorComponents";
+import LiquorSection, { LiquorItem } from "./LiquorComponents";
 import { useCustomScrollRef } from "../hooks/useCustomScrollRef";
 
-export const DrinksMenu = ({menuData}) => {
+export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
   const SCROLL_ALIASING = 50;
 
-  let [ currentView, setCurrentView ] = useState("wine");
+  // let [ currentView, setCurrentView ] = useState("wine");
   let [ currentScroll, setCurrentScroll ] = useState(0);
   let wineRef = useRef();
   let cocktailRef = useRef();
   let packagedRef = useRef();
+  let spiritsRef = useRef();
 
   useEffect(() => {
-    const checkPosition = () => console.log(wineRef.current.getBoundingClientRect());
-    const scrollChecking = () => { 
-      if(window.scrollY > currentScroll + SCROLL_ALIASING || window.scrollY < currentScroll - SCROLL_ALIASING){
-        setCurrentScroll(window.scrollY);
-        console.log(window.scrollY);
-      }
-    }
 
     const showCurrentView = () => {
+      console.log("scrolling");
       let cocktailRefY = cocktailRef.current.getBoundingClientRect().y;
       let wineRefY = wineRef.current.getBoundingClientRect().y;
       let packagedRefY = packagedRef.current.getBoundingClientRect().y;
-      if(cocktailRefY < 100 && cocktailRefY > -100){
-        setCurrentView("cocktails");
+      let spiritsRefY = spiritsRef.current.getBoundingClientRect().y;
+      if(cocktailRefY < 110 && cocktailRefY > -110){
+        setCurrentDrinkSection("cocktails");
       }
-      else if(wineRefY < 100 && wineRefY > -100){
-        setCurrentView("wine");
+      else if(wineRefY < 110 && wineRefY > -110){
+        setCurrentDrinkSection("wine");
       }
-      else if(packagedRefY < 100 && packagedRefY > -100){
-        setCurrentView("packaged");
+      else if(packagedRefY < 110 && packagedRefY > -110){
+        setCurrentDrinkSection("packaged");
+      }
+      else if(spiritsRefY < 110 && spiritsRefY > -110){
+        setCurrentDrinkSection("spirits");
       }
     }
     window.addEventListener("scroll", showCurrentView);
+
+    passRefs({
+      wineRef,
+      cocktailRef,
+      packagedRef,
+      spiritsRef
+    });
 
     return(() => window.removeEventListener("scroll", showCurrentView));
   },[]);
@@ -202,6 +208,7 @@ export const DrinksMenu = ({menuData}) => {
 
         <LiquorSection 
           sectionTitle={"Bourbon"}
+          ref={spiritsRef}
           sectionSizeString={"1oz, 2oz"}
           items={bourbon} />
         

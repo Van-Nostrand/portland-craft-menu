@@ -29,7 +29,7 @@ import {
   PACKAGED_BEER
 } from "./CONSTANTS";
 
-export const PageLoader = ({ pageTitle}) => {
+export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
 
   let currentPage;
   switch(true){
@@ -37,7 +37,7 @@ export const PageLoader = ({ pageTitle}) => {
       currentPage = <FoodMenu menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES,FEATURES}} />;
       break;
     case /drinks/.test(pageTitle): 
-      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, BOURBON, RYE, SCOTCH, OTHER_WHISKEY, GIN, VODKA, TEQUILA, OTHER_SPIRITS, RUM, BRANDY, PACKAGED_BEER}} />;
+      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, BOURBON, RYE, SCOTCH, OTHER_WHISKEY, GIN, VODKA, TEQUILA, OTHER_SPIRITS, RUM, BRANDY, PACKAGED_BEER}} setCurrentDrinkSection={setCurrentDrinkSection} passRefs={passRefs} />;
       break;
     case /specials/.test(pageTitle): 
       currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;
