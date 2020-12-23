@@ -89,7 +89,7 @@ export const OMNIVORES = [
     name: "Roasted Organic Carrot and Brussel Sprouts Salad",
     price: "10",
     notes: "Carrots, brussel sprouts, radish, sunflower seeds, double smoked bacon vinaigrette",
-    diet: ""
+    diet: "gluten free"
   },
   {
     name: "Craft Poutine",
@@ -146,7 +146,7 @@ export const HERBIVORES = [
     name: "Cauliflower Soup",
     price: "12",
     notes: "Cauliflower, cheddar crumble",
-    diet: "vegetarian, gluten free"
+    diet: "vegetarian"
   },
   {
     name: '"Fried Rice"',
@@ -176,9 +176,9 @@ export const LARGER = [
     diet: "", 
   },
   {
-    name: "Pacific Wild Salmon",
-    price: "24",
-    notes: "Fried rice, corn, broccoli, sesame leek sauce",
+    name: "Wild Pacific Lingcod",
+    price: "25",
+    notes: "Poached, with confit carrots, potatoes, brussel sprouts",
     diet: "gluten and dairy free", 
   }  
 ];
@@ -493,21 +493,21 @@ export const HAPPY_HOUR = [
   {
     name: "Select US Craft Beer",
     prices: [
-      {price: "5.75", size: " (14oz)"}
+      {price: "5.75", size: "14oz"}
     ]
   },
   {
     name: "Select Local Draught Beer",
     prices: [
-      {price: "4", size: " (14oz)"},
-      {price: "5", size: " (20oz)"}
+      {price: "4", size: "14oz"},
+      {price: "5", size: "20oz"}
     ]
   },
   {
     name: "House Red, White, & Rose Wine",
     prices: [
-      {price: "5.50", size: " (5oz)"},
-      {price: "9", size: "(8oz)"}
+      {price: "5.50", size: "5oz"},
+      {price: "9", size: "8oz"}
     ]
   },
   {
@@ -525,7 +525,7 @@ export const HAPPY_HOUR = [
   {
     name: "Jameson",
     prices: [
-      {price: "4.50", size: " (1oz)"}
+      {price: "4.50", size: "1oz"}
     ]
   }
 ]
