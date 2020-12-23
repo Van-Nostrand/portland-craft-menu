@@ -60,23 +60,34 @@ export const HappyHour = ({menuData}) => {
 };
 
 const LineItem = (props) => {
+
+  let pricestring = "";
+  let sizestring = "";
+
+  //this processes items which have multiple prices and pour sizes
+  props.prices.forEach((line, i) => {
+    pricestring = `${pricestring}$${line.price}`;
+    sizestring = sizestring + line.size;
+
+
+    if(props.prices.length - 1 !== i){
+      pricestring = pricestring + " / ";
+      sizestring = sizestring + "/";
+    }
+  })
+
   return(
     <li className="hh-item">
       <div className="item-name">
         {props.name}
       </div>
       <span>
-        {props.prices.map((line, i) => {
-          return (
-            <span key={`linespan-${props.name}${i}`}>
-              
-              <div className="item-price">
-                ${line.price}
-              </div>
-              {line.size !== "" ? <div className="item-size">{line.size}</div> : "" }
-            </span>
-          )
-        })}
+        <div className="item-price">
+          {pricestring}
+        </div>
+        <div className="item-size">
+          {sizestring !== "" ? ` (${sizestring})` : ""}
+        </div>
       </span>
     </li>
   )

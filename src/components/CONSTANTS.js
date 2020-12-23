@@ -176,9 +176,9 @@ export const LARGER = [
     diet: "", 
   },
   {
-    name: "Pacific Wild Salmon",
-    price: "24",
-    notes: "Fried rice, corn, broccoli, sesame leek sauce",
+    name: "Wild Pacific Lingcod",
+    price: "25",
+    notes: "Poached, with confit carrots, potatoes, brussel sprouts",
     diet: "gluten and dairy free", 
   }  
 ];
@@ -196,7 +196,7 @@ export const SWEETS = [
     notes: "Sponge cake, whipped cream, cacao nibs",
     diet: "vegetarian, contains nuts", 
   }
-];
+]
 
 export const WHITE_WINE = [
   {
@@ -280,7 +280,7 @@ export const RED_WINE = [
     sizes: [12, 16, 48],
     notes: "B.C."
   }
-];
+]
 
 export const BUBBLES = [
   {
@@ -293,7 +293,7 @@ export const BUBBLES = [
     sizes: [11, 45],
     notes: "B.C."
   }
-];
+]
 
 export const OLD_COCKTAILS = [
   {
@@ -342,7 +342,7 @@ export const OLD_COCKTAILS = [
     price: "13",
     notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
   }
-];
+]
 
 export const HOUSE_COCKTAILS = [
   {
@@ -385,8 +385,7 @@ export const HOUSE_COCKTAILS = [
     price: "15",
     notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
-];
-
+]
 export const COCKTAILS = [
   {
     name: "Gastown",
@@ -428,7 +427,7 @@ export const COCKTAILS = [
     price: "14",
     notes: "Tequila, Green Chartreuse, sugar, lime, cassis, egg white"
   },
-];
+]
 
 export const FEATURES = [
   {
@@ -494,21 +493,21 @@ export const HAPPY_HOUR = [
   {
     name: "Select US Craft Beer",
     prices: [
-      {price: "5.75", size: " (14oz)"}
+      {price: "5.75", size: "14oz"}
     ]
   },
   {
     name: "Select Local Draught Beer",
     prices: [
-      {price: "4", size: " (14oz)"},
-      {price: "5", size: " (20oz)"}
+      {price: "4", size: "14oz"},
+      {price: "5", size: "20oz"}
     ]
   },
   {
     name: "House Red, White, & Rose Wine",
     prices: [
-      {price: "5.50", size: " (5oz)"},
-      {price: "9", size: "(8oz)"}
+      {price: "5.50", size: "5oz"},
+      {price: "9", size: "8oz"}
     ]
   },
   {
@@ -526,10 +525,10 @@ export const HAPPY_HOUR = [
   {
     name: "Jameson",
     prices: [
-      {price: "4.50", size: " (1oz)"}
+      {price: "4.50", size: "1oz"}
     ]
   }
-];
+]
 
 export const NON_ALCOHOLIC = [
   {
