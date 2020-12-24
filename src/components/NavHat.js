@@ -36,7 +36,7 @@ export const NavHat = ({changePage, currentPage, currentDrinkSection, allRefs}) 
         DRINKS
       </button>
       <button className={currentPage === "specials" ? "button-current-page" : "" } onClick={() => changePage("specials")}>
-        HAPPY-HOUR
+        FEATURES
       </button>
     </>
   );
