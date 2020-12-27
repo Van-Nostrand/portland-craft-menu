@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { FoodMenu } from "./FoodMenu";
 import { DrinksMenu } from "./DrinksMenu";
 import { HappyHour } from "./HappyHour";
@@ -11,18 +11,41 @@ import {
   SNACKS, OMNIVORES, HERBIVORES, LARGER, SWEETS, SIDES  
 } from "./CONSTANTS";
 
+import {apiCall} from "../service/api";
+
 export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
+  
+  let [ menu, setMenu ] = useState();
+
+  const fetchMenu = async () => {
+    try{
+      let allMenuData = await apiCall("get", "/api/");
+      setMenu(allMenuData);
+    } catch(err){
+      console.log(err);
+    }
+  }
+
+  useEffect(() => {
+    fetchMenu();
+  }, []);
 
   let currentPage;
   switch(true){
+    case !menu :
+      currentPage = <div>LOADING...</div>;
+      break;
     case /food/.test(pageTitle): 
-      currentPage = <FoodMenu menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES,FEATURES}} />;
+      // currentPage = <FoodMenu menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES,FEATURES}} />;
+      currentPage = <FoodMenu menuData={...menu.food} />;
       break;
     case /drinks/.test(pageTitle): 
-      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, BOURBON, RYE, SCOTCH, OTHER_WHISKEY, GIN, VODKA, TEQUILA, OTHER_SPIRITS, RUM, BRANDY, PACKAGED_BEER}} setCurrentDrinkSection={setCurrentDrinkSection} passRefs={passRefs} />;
+      // currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, BOURBON, RYE, SCOTCH, OTHER_WHISKEY, GIN, VODKA, TEQUILA, OTHER_SPIRITS, RUM, BRANDY, PACKAGED_BEER}} setCurrentDrinkSection={setCurrentDrinkSection} passRefs={passRefs} />;
+      currentPage = <DrinksMenu menuData={...menu.drinks} setCurrentDrinkSection={setCurrentDrinkSection} passRefs={passRefs} />;
       break;
     case /specials/.test(pageTitle): 
-      currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;
+      // currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;
+      currentPage = <HappyHour menuData={...menu.features} />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }
