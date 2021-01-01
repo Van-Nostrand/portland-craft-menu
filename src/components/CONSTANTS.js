@@ -505,7 +505,7 @@ export const HAPPY_HOUR = [
   {
     name: "Select Local Draught Beer",
     prices: [
-      {price: "4", size: "14oz"},
+      {price: "4", size: "12oz"},
       {price: "5", size: "20oz"}
     ]
   },
