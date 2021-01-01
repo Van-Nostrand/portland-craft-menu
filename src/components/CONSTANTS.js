@@ -88,7 +88,7 @@ export const OMNIVORES = [
   {
     name: "Roasted Organic Carrot and Brussel Sprouts Salad",
     price: "10",
-    notes: "Carrots, brussel sprouts, radish, sunflower seeds, double smoked bacon vinaigrette",
+    notes: "Carrots, brussel sprouts, parsnip, radish, sunflower seeds, double smoked bacon vinaigrette",
     diet: "gluten free"
   },
   {
@@ -188,12 +188,6 @@ export const SWEETS = [
     name: "Fried Pear Pie",
     price: "8",
     notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
-    diet: "vegetarian, contains nuts", 
-  },
-  {
-    name: "Chocolate Mousse",
-    price: "9", 
-    notes: "Sponge cake, whipped cream, cacao nibs",
     diet: "vegetarian, contains nuts", 
   }
 ]
@@ -433,8 +427,20 @@ export const FEATURES = [
   {
     name: "Skillet Pie",
     price: "12",
-    notes: "Fresh house-made dough, pork belly, mushrooms, tomatoes, cheese, parsley",
-    diet: ""
+    notes: "Cheese, mushroom, shallots, tomato, basil, balsamic vinegar",
+    diet: "vegetarian"
+  },
+  {
+    name: "Bison Bavette",
+    price: "26",
+    notes: "Marinated and grilled, red wine sauce. Served with truffle fries",
+    diet: "gluten free"
+  },
+  {
+    name: "Dark Chocolate Mousse",
+    price: "9", 
+    notes: "Pear, hazelnut crumble, and chantilly",
+    diet: "vegetarian, contains nuts", 
   }
 ];
 
