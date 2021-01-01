@@ -6,7 +6,9 @@ import LiquorSection, { LiquorItem } from "./LiquorComponents";
 import { useCustomScrollRef } from "../hooks/useCustomScrollRef";
 
 export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
-  const SCROLL_ALIASING = 40; // old iteration: values used for performance reasons
+  
+  // old iteration: scroll aliasing and currentscroll were used for testing
+  const SCROLL_ALIASING = 40; 
   let [ currentScroll, setCurrentScroll ] = useState(0);
 
   let wineTopRef = useRef();
