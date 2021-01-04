@@ -189,7 +189,14 @@ export const SWEETS = [
     price: "8",
     notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
     diet: "vegetarian, contains nuts", 
+  },
+  {
+    name: "Dark Chocolate Mousse (feature dessert)",
+    price: "9", 
+    notes: "Pear, hazelnut crumble, and chantilly",
+    diet: "vegetarian, contains nuts", 
   }
+
 ]
 
 export const WHITE_WINE = [
@@ -425,10 +432,16 @@ export const COCKTAILS = [
 
 export const FEATURES = [
   {
-    name: "Skillet Pie",
+    name: "Vegetarian Skillet Pie",
     price: "12",
-    notes: "Cheese, mushroom, shallots, tomato, basil, balsamic vinegar",
+    notes: "Cheese, mushroom, shallots, tomato, basil, balsamic vinegar, tomato sauce",
     diet: "vegetarian"
+  },
+  {
+    name: "Smoked Salmon Skillet Pie",
+    price: "15",
+    notes: "Cheese, capers, green onion, tomato sauce",
+    diet: ""
   },
   {
     name: "Bison Bavette",
