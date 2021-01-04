@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import { FoodMenu } from "./FoodMenu";
-import { DrinksMenu } from "./DrinksMenu";
-import { HappyHour } from "./HappyHour";
+import { FoodMenu } from "./menu/FoodMenu";
+import { DrinksMenu } from "./menu/DrinksMenu";
+import { HappyHour } from "./menu/HappyHour";
 import {
   WHITE_WINE, RED_WINE, BUBBLES,
   HOUSE_COCKTAILS,

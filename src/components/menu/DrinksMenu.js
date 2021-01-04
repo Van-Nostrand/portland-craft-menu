@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import PackagedBeerSection, { PackagedBeer } from "./PackagedBeerComponents";
-import WineSection, { Wine } from "./WineComponents";
-import CocktailSection, { Cocktail } from "./CocktailComponents";
-import LiquorSection, { LiquorItem } from "./LiquorComponents";
-import { useCustomScrollRef } from "../hooks/useCustomScrollRef";
+import PackagedBeerSection, { PackagedBeer } from "../items/PackagedBeerComponents";
+import WineSection, { Wine } from "../items/WineComponents";
+import CocktailSection, { Cocktail } from "../items/CocktailComponents";
+import LiquorSection, { LiquorItem } from "../items/LiquorComponents";
+import { useCustomScrollRef } from "../../hooks/useCustomScrollRef";
 
 export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
   

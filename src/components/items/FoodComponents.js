@@ -1,46 +1,6 @@
 import React from "react";
 
-export const FoodMenu = ({ menuData }) => {
-
-  return(<>
-    <div className="food-menu menu">
-      <p>All items are nut-free unless specified</p>
-
-      <FoodSection 
-        section="Features" 
-        items={menuData.FEATURES} />
-
-      <FoodSection 
-        section="Snacks" 
-        items={menuData.SNACKS} />
-
-      <FoodSection
-        section="Omnivores"
-        items={menuData.OMNIVORES} />
-
-      <FoodSection
-        section="Herbivores"
-        items={menuData.HERBIVORES} />
-      
-      <FoodSection 
-        section="Large Plates" 
-        items={menuData.LARGER} />
-
-      <FoodSection 
-        section="Sweets" 
-        items={menuData.SWEETS} />
-      
-      <FoodSection 
-        section="Sides" 
-        items={menuData.SIDES} />
-
-    </div>
-  </>);
-}
-
-
-
-const FoodSection = ({section, items}) => {
+export const FoodSection = ({section, items}) => {
 
   let foods = items.map((item, i) => {
     
@@ -53,7 +13,6 @@ const FoodSection = ({section, items}) => {
   });
   
   let classString = `food-section ${section.toLowerCase().split(" ").join("")}`;
-  // section = section.toUpperCase();
 
   return(
     <section className={classString}>
@@ -67,9 +26,7 @@ const FoodSection = ({section, items}) => {
   );
 }
 
-
-
-const Food = ({ itemName = "unnamed", price = "23", notes="", diet = "" }) => {
+export const Food = ({ itemName = "unnamed", price = "23", notes="", diet = "" }) => {
   let itemNotes, dietDiv;
 
   if(notes === ""){

@@ -10,7 +10,7 @@ export const ApiTest = () => {
 
   const fetchMenu = async () => {
     try{
-      let apiResults = await apiCall("get", "/api/beers");
+      let apiResults = await apiCall("get", "/beer");
       setResults(apiResults);
     } catch(err){
       alert("throwing error")
