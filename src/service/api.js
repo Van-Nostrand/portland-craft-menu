@@ -1,5 +1,5 @@
 import axios from "axios";
-const ROOT_URL = "http://localhost:8081";
+const ROOT_URL = "http://localhost:8000";
 
 export function apiCall(method, path, data){
   return new Promise((resolve, reject) => {
