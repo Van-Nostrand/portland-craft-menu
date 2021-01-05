@@ -11,24 +11,21 @@ import {
   SNACKS, OMNIVORES, HERBIVORES, LARGER, SWEETS, SIDES  
 } from "./CONSTANTS";
 
-import {apiCall} from "../service/api";
+import { apiCall } from "./apiCall";
 
 export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
-
   let [ menu, setMenu ] = useState();
 
-  const fetchMenu = async () => {
-    try{
-      let allMenuData = await apiCall("get", "/api/");
-      setMenu(allMenuData);
-    } catch(err){
-      console.log(err);
-    }
+  const getMenuData = async () => {
+    // let menuData = await useApi("https://restaurant-menu-backend.herokuapp.com/api/");
+
+    let menuData = await apiCall("get","http://localhost:8000/api/" );
+    setMenu(menuData);
   }
 
   useEffect(() => {
-    fetchMenu();
-  }, []);
+    getMenuData();
+  },[])
 
   let currentPage;
   switch(true){

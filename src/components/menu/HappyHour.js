@@ -1,5 +1,5 @@
 import React from "react";
-import smileyface from "../assets/smileyfaceColor2.svg";
+import smileyface from "../../assets/smileyfaceColor2.svg";
 
 
 export const HappyHour = ({menuData}) => {
