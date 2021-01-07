@@ -15,18 +15,19 @@ import { apiCall } from "./apiCall";
 
 export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
   let [ menu, setMenu ] = useState();
-
+  
+  
   const getMenuData = async () => {
-    // let menuData = await useApi("https://restaurant-menu-backend.herokuapp.com/api/");
-
+    // let menuData = await apiCall("get", "https://restaurant-menu-backend.herokuapp.com/api/");
+    
     let menuData = await apiCall("get","http://localhost:8000/api/" );
     setMenu(menuData);
   }
-
+  
   useEffect(() => {
     getMenuData();
   },[])
-
+  
   let currentPage;
   switch(true){
     case !menu :
@@ -46,7 +47,7 @@ export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }
-  
+
   return(
     <>
       {currentPage}
