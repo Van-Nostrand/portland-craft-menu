@@ -18,15 +18,15 @@ export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
   
   
   const getMenuData = async () => {
-    // let menuData = await apiCall("get", "https://restaurant-menu-backend.herokuapp.com/api/");
+    let menuData = await apiCall("get", "https://restaurant-menu-backend.herokuapp.com/api/");
     
-    let menuData = await apiCall("get","http://localhost:8000/api/" );
+    // let menuData = await apiCall("get","http://localhost:8000/api/" );
     setMenu(menuData);
   }
   
   useEffect(() => {
     getMenuData();
-  },[])
+  },[]);
   
   let currentPage;
   switch(true){
@@ -34,16 +34,13 @@ export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
       currentPage = <div>LOADING...</div>;
       break;
     case /food/.test(pageTitle): 
-      currentPage = <FoodMenu menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES,FEATURES}} />;
-      // currentPage = <FoodMenu menuData={...menu.food} />;
+      currentPage = <FoodMenu externalData={menu[1] ? menu[1] : null} menuData={{SNACKS,OMNIVORES,HERBIVORES,LARGER,SWEETS,SIDES,FEATURES}} />;
       break;
     case /drinks/.test(pageTitle): 
-      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, BOURBON, RYE, SCOTCH, OTHER_WHISKEY, GIN, VODKA, TEQUILA, OTHER_SPIRITS, RUM, BRANDY, PACKAGED_BEER}} setCurrentDrinkSection={setCurrentDrinkSection} passRefs={passRefs} />;
-      // currentPage = <DrinksMenu menuData={...menu.drinks} setCurrentDrinkSection={setCurrentDrinkSection} passRefs={passRefs} />;
+      currentPage = <DrinksMenu externalData={menu[0] ? menu[0] : null} menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, BOURBON, RYE, SCOTCH, OTHER_WHISKEY, GIN, VODKA, TEQUILA, OTHER_SPIRITS, RUM, BRANDY, PACKAGED_BEER}} setCurrentDrinkSection={setCurrentDrinkSection} passRefs={passRefs} />;
       break;
     case /specials/.test(pageTitle): 
       currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;
-      // currentPage = <HappyHour menuData={...menu.features} />;
       break;
     default: console.log("something went wrong in the menu"); currentPage = <div>ERROR</div>;
   }

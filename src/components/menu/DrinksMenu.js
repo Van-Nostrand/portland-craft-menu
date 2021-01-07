@@ -5,12 +5,12 @@ import CocktailSection, { Cocktail } from "../items/CocktailComponents";
 import LiquorSection, { LiquorItem } from "../items/LiquorComponents";
 import { useCustomScrollRef } from "../../hooks/useCustomScrollRef";
 
-export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
+export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs, externalData}) => {
   
   // old iteration: scroll aliasing and currentscroll were used for testing
   const SCROLL_ALIASING = 40; 
   let [ currentScroll, setCurrentScroll ] = useState(0);
-
+  
   let wineTopRef = useRef();
   let wineBottomRef = useRef();
   let cocktailRef = useRef();
@@ -20,6 +20,7 @@ export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
 
   useEffect(() => {
 
+    // move this into an external hook?
     const showCurrentView = () => {
       if(wineTopRef.current.getBoundingClientRect().top < 0 && wineBottomRef.current.getBoundingClientRect().bottom > 140 ){
         setCurrentDrinkSection("wine");
@@ -37,6 +38,7 @@ export const DrinksMenu = ({menuData, setCurrentDrinkSection, passRefs}) => {
 
     window.addEventListener("scroll", showCurrentView);
 
+    // does this make sense? maybe it's better for refs to be created in a parent and passed down as props?
     passRefs({
       wineTopRef,
       wineBottomRef,

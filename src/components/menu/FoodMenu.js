@@ -1,7 +1,39 @@
 import React from "react";
 import { FoodSection } from "../items/FoodComponents";
 
-export const FoodMenu = ({ menuData }) => {
+export const FoodMenu = ({ menuData, externalData }) => {
+
+
+  let featureItems = [], 
+      snackItems = [], 
+      herbivores = [],
+      omnivores = [], 
+      largePlates = [], 
+      sweets = [], 
+      sides = [];
+  externalData.forEach(item => {
+    switch(true){
+      case /side/.test(item.menuSection): sides.push(item);
+        break;
+      case /start/.test(item.menuSection): snackItems.push(item);
+        break;
+      case /small/.test(item.menuSection): 
+        if(/^vegetarian/.test(item.diet) || /^vegan/.test(item.diet)){
+          herbivores.push(item);
+        }
+        else{
+          omnivores.push(item);
+        }
+        break;
+      case /large/.test(item.menuSection): largePlates.push(item);
+        break;
+      case /dessert/.test(item.menuSection): sweets.push(item);
+        break;
+      case /feature/.test(item.menuSection): featureItems.push(item);
+        break;
+      default: console.log(`problem sorting data in foodmenu while processing ${item.name}`);
+    }
+  });
 
   return(<>
     <div className="food-menu menu">
@@ -9,31 +41,31 @@ export const FoodMenu = ({ menuData }) => {
 
       <FoodSection 
         section="Features" 
-        items={menuData.FEATURES} />
+        items={featureItems} />
 
       <FoodSection 
         section="Snacks" 
-        items={menuData.SNACKS} />
+        items={snackItems} />
 
       <FoodSection
         section="Omnivores"
-        items={menuData.OMNIVORES} />
+        items={omnivores} />
 
       <FoodSection
         section="Herbivores"
-        items={menuData.HERBIVORES} />
+        items={herbivores} />
       
       <FoodSection 
         section="Large Plates" 
-        items={menuData.LARGER} />
+        items={largePlates} />
 
       <FoodSection 
         section="Sweets" 
-        items={menuData.SWEETS} />
+        items={sweets} />
       
       <FoodSection 
         section="Sides" 
-        items={menuData.SIDES} />
+        items={sides} />
 
     </div>
   </>);

@@ -4,7 +4,7 @@ import {PageLoader} from "./PageLoader";
 // import {ApiTest} from "./ApiTest";
 
 export const App = () => {
-  let [ currentPage, setCurrentPage ] = useState("drinks");
+  let [ currentPage, setCurrentPage ] = useState("food");
   let [ currentDrinkSection, setCurrentDrinkSection ] = useState("wine");
   let [ allRefs, passRefs ] = useState();
 
@@ -19,12 +19,6 @@ export const App = () => {
       <PageLoader passRefs={passRefs} pageTitle={currentPage} setCurrentDrinkSection={setCurrentDrinkSection} />
     </div>
   )
-  // return(
-  //   <div>
-  //     <NavHat />
-  //     <PageLoader />
-  //   </div>
-  // )
 }
 
 
