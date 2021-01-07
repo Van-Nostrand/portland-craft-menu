@@ -159,7 +159,7 @@ export const HERBIVORES = [
 export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
-    price: "20",
+    price: "18",
     notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries, or salad (+$2)",
     diet: "", 
   },
