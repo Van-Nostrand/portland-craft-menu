@@ -3,7 +3,8 @@ import { FoodSection } from "../items/FoodComponents";
 
 export const FoodMenu = ({ menuData, externalData }) => {
 
-
+  console.log("top of foodmenu");
+  console.log(externalData);
   let featureItems = [], 
       snackItems = [], 
       herbivores = [],
