@@ -120,13 +120,7 @@ export const OMNIVORES = [
     price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
     diet: "gluten free", 
-  },
-  {
-    name: "Cache Creek Beef Tartar",
-    price: "18",
-    notes: "Black garlic, celery, radish, egg yolk, shallots, toast",
-    diet: "dairy free", 
-  },
+  }
 ];
 
 export const HERBIVORES = [
@@ -145,7 +139,7 @@ export const HERBIVORES = [
   {
     name: "Cauliflower Soup",
     price: "12",
-    notes: "Cauliflower, cheddar crumble",
+    notes: "Cauliflower, cheddar crumble, buttermilk biscuit",
     diet: "vegetarian"
   },
   {
@@ -179,7 +173,7 @@ export const LARGER = [
     name: "Wild Pacific Lingcod",
     price: "25",
     notes: "Poached, with confit carrots, potatoes, brussel sprouts",
-    diet: "gluten and dairy free", 
+    diet: "gluten free", 
   }  
 ];
 
