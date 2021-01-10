@@ -179,18 +179,11 @@ export const LARGER = [
 
 export const SWEETS = [
   {
-    name: "Fried Pear Pie",
-    price: "8",
-    notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
-    diet: "vegetarian, contains nuts", 
-  },
-  {
-    name: "Dark Chocolate Mousse (feature dessert)",
+    name: "Dark Chocolate Mousse",
     price: "9", 
     notes: "Pear, hazelnut crumble, and chantilly",
     diet: "vegetarian, contains nuts", 
   }
-
 ]
 
 export const WHITE_WINE = [
@@ -395,7 +388,7 @@ export const COCKTAILS = [
   {
     name: "Mt Hood Warmer",
     price: "14",
-    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
+    notes: "Chai infused whiskey, Ampersand \"Nocino!\", Grand Marnier, orange, sugar, absinthe"
   },
   {
     name: "Eastburn Daquiri",
@@ -443,12 +436,7 @@ export const FEATURES = [
     notes: "Marinated and grilled, red wine sauce. Served with truffle fries",
     diet: "gluten free"
   },
-  {
-    name: "Dark Chocolate Mousse",
-    price: "9", 
-    notes: "Pear, hazelnut crumble, and chantilly",
-    diet: "vegetarian, contains nuts", 
-  }
+  
 ];
 
 export const HAPPY_HOUR_FOOD = [
