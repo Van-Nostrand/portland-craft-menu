@@ -56,18 +56,6 @@ module.exports = {
           "css-loader"
         ]
       },
-      // {
-      //   test: /\.(jpe?g|svg|png|gif)$/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: '[hash]-[name].[ext]'
-      //       }
-      //     }
-          
-      //   ]
-      // },
       {
         test: /\.(jpe?g|svg|png|gif)$/,
         type: "asset/resource"
