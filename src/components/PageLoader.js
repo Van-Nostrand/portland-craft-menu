@@ -18,10 +18,18 @@ export const PageLoader = ({ pageTitle, setCurrentDrinkSection, passRefs }) => {
   
   
   const getMenuData = async () => {
+
+    // the actual code I would want to run
     let menuData = await apiCall("get", "https://restaurant-menu-backend.herokuapp.com/api/");
-    
-    // let menuData = await apiCall("get","http://localhost:8000/api/" );
     setMenu(menuData);
+
+    // a delay I added to simulate heroku and/or mongodb sleeping, or slow responses. Allows for development of "loading" screen
+    // let menuData;
+    // setTimeout(async function(){
+    //   menuData = await apiCall("get", "https://restaurant-menu-backend.herokuapp.com/api/");
+    //   setMenu(menuData);
+    // },2000) ;
+    
   }
   
   useEffect(() => {
