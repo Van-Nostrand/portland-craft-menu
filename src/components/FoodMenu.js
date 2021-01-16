@@ -38,8 +38,6 @@ export const FoodMenu = ({ menuData }) => {
   </>);
 }
 
-
-
 const FoodSection = ({section, items}) => {
 
   let foods = items.map((item, i) => {
@@ -53,7 +51,6 @@ const FoodSection = ({section, items}) => {
   });
   
   let classString = `food-section ${section.toLowerCase().split(" ").join("")}`;
-  // section = section.toUpperCase();
 
   return(
     <section className={classString}>
@@ -76,9 +73,17 @@ const Food = ({ itemName = "unnamed", price = "23", notes="", diet = "" }) => {
     itemNotes = <></>;
   } 
   else {
+    
+    //if {notes} is an array, then wrap in divs to create line breaks
     itemNotes = 
       <div className="item-notes smaller-text">
-        {notes}
+        { Array.isArray(notes) ? 
+          notes.map((note, i) => {
+            return <div key={`subnote${i}`}>{note}</div>;
+          }) 
+        : 
+          notes
+        }
       </div>;
   }
 

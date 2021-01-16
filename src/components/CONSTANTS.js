@@ -49,7 +49,7 @@ export const SNACKS = [
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
-    notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
+    notes: ["Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs.", "Substitute truffle fries (+$2.50)"],
     diet: "gluten and dairy free", 
   },
   {
@@ -154,7 +154,7 @@ export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
     price: "18",
-    notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries, or salad (+$2)",
+    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
     diet: "", 
   },
   {
@@ -166,7 +166,7 @@ export const LARGER = [
   {
     name: "Farmcrest Chicken and Waffle",
     price: "23",
-    notes: "Fried chicken breast, mushroom, bacon, butter, gravy",
+    notes: "Fried chicken breast, mushroom, bacon butter, gravy",
     diet: "", 
   },
   {
@@ -183,6 +183,12 @@ export const SWEETS = [
     price: "9", 
     notes: "Pear, hazelnut crumble, and chantilly",
     diet: "vegetarian, contains nuts", 
+  },
+  {
+    name: "Fried Bread",
+    price: "8",
+    notes: "Bourbon caramel, maple pastry, cream",
+    diet: "vegetarian, contains nuts"
   }
 ]
 
@@ -431,11 +437,17 @@ export const FEATURES = [
     diet: ""
   },
   {
+    name: "Buttermilk Fried Chicken Sandwich",
+    price: "18",
+    notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
+    diet: ""
+  },
+  {
     name: "Bison Bavette",
     price: "26",
-    notes: "Marinated and grilled, red wine sauce. Served with truffle fries",
+    notes: ["Available after 5pm.", "Marinated and grilled, red wine sauce. Served with truffle fries."],
     diet: "gluten free"
-  },
+  }
   
 ];
 
