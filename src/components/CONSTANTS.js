@@ -431,12 +431,6 @@ export const FEATURES = [
     diet: "vegetarian"
   },
   {
-    name: "Smoked Salmon Skillet Pie",
-    price: "15",
-    notes: "Cheese, capers, green onion, tomato sauce",
-    diet: ""
-  },
-  {
     name: "Buttermilk Fried Chicken Sandwich",
     price: "18",
     notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
