@@ -26,6 +26,8 @@ export const NavHat = ({changePage, currentPage, currentDrinkSection, allRefs}) 
     }
   },[]);
 
+  console.log(LazyFullNav);
+
 
   let buttons = (
     <>
