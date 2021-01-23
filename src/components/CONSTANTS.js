@@ -425,11 +425,23 @@ export const COCKTAILS = [
 
 export const FEATURES = [
   {
-    name: "Vegetarian Skillet Pie",
-    price: "12",
-    notes: "Cheese, mushroom, shallots, tomato, basil, balsamic vinegar, tomato sauce",
+    name: "Margherita Skillet Pie",
+    price: "13",
+    notes: "Fresh tomato, basil, mozzarella, tomato sauce",
     diet: "vegetarian"
   },
+  {
+    name: "Meat Skillet Pie",
+    price: "16",
+    notes: "Genoa salami, mushrooms, mozzarella, fresh herbs, tomato sauce",
+    diet: ""
+  },    
+  {
+    name: "Baked Pacific Shrimp",
+    price: "12",
+    notes: "Cherry tomato, chili garlic butter",
+    diet: ""
+  },    
   {
     name: "Buttermilk Fried Chicken Sandwich",
     price: "18",
