@@ -80,6 +80,12 @@ export const SNACKS = [
 
 export const OMNIVORES = [
   {
+    name: "Meat Skillet Pie",
+    price: "*",
+    notes: "Rotating styles - ask your server!",
+    diet: ""
+  },
+  {
     name: "Pacific Wild Shrimp Fritter",
     price: "10",
     notes: "Corn, soy bean, herbs, spicy black garlic aioli",
@@ -124,6 +130,12 @@ export const OMNIVORES = [
 ];
 
 export const HERBIVORES = [
+  {
+    name: "Veggie Skillet Pie",
+    price: "*",
+    notes: "Rotating styles - ask your server!",
+    diet: ""
+  },
   {
     name: "B.C. Brassica",
     price: "8",
@@ -423,19 +435,7 @@ export const COCKTAILS = [
   },
 ]
 
-export const FEATURES = [
-  {
-    name: "Margherita Skillet Pie",
-    price: "13",
-    notes: "Fresh tomato, basil, mozzarella, tomato sauce",
-    diet: "vegetarian"
-  },
-  {
-    name: "Meat Skillet Pie",
-    price: "16",
-    notes: "Genoa salami, mushrooms, mozzarella, fresh herbs, tomato sauce",
-    diet: ""
-  },    
+export const FEATURES = [ 
   {
     name: "Baked Pacific Shrimp",
     price: "12",
@@ -447,12 +447,6 @@ export const FEATURES = [
     price: "18",
     notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
     diet: ""
-  },
-  {
-    name: "Bison Bavette",
-    price: "26",
-    notes: ["Available after 5pm.", "Marinated and grilled, red wine sauce. Served with truffle fries."],
-    diet: "gluten free"
   }
   
 ];
