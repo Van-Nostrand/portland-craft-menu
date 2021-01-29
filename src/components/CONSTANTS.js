@@ -157,7 +157,7 @@ export const HERBIVORES = [
   {
     name: '"Fried Rice"',
     price: "14",
-    notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
+    notes: "Compressed rice cubes, mushrooms, gai lan, corn, shallots, sesame sauce",
     diet: "vegan, gluten free", 
   }
 ];
