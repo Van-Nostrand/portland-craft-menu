@@ -16,10 +16,6 @@ export const SIDES = [
     price: "5"
   },
   {
-    name: "Coconut Gravy",
-    price: "2"
-  },
-  {
     name: "Chicken Gravy",
     price: "2"
   },
@@ -53,7 +49,7 @@ export const SNACKS = [
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
-    notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
+    notes: ["Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs.", "Substitute truffle fries (+$2.50)"],
     diet: "gluten and dairy free", 
   },
   {
@@ -84,6 +80,12 @@ export const SNACKS = [
 
 export const OMNIVORES = [
   {
+    name: "Meat Skillet Pie",
+    price: "*",
+    notes: "Rotating styles - ask your server!",
+    diet: ""
+  },
+  {
     name: "Pacific Wild Shrimp Fritter",
     price: "10",
     notes: "Corn, soy bean, herbs, spicy black garlic aioli",
@@ -92,7 +94,7 @@ export const OMNIVORES = [
   {
     name: "Roasted Organic Carrot and Brussel Sprouts Salad",
     price: "10",
-    notes: "Carrots, brussel sprouts, radish, sunflower seeds, double smoked bacon vinaigrette",
+    notes: "Carrots, brussel sprouts, parsnip, radish, sunflower seeds, double smoked bacon vinaigrette",
     diet: "gluten free"
   },
   {
@@ -124,16 +126,16 @@ export const OMNIVORES = [
     price: "16",
     notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
     diet: "gluten free", 
-  },
-  {
-    name: "Cache Creek Beef Tartar",
-    price: "18",
-    notes: "Black garlic, celery, radish, egg yolk, shallots, toast",
-    diet: "dairy free", 
-  },
+  }
 ];
 
 export const HERBIVORES = [
+  {
+    name: "Veggie Skillet Pie",
+    price: "*",
+    notes: "Rotating styles - ask your server!",
+    diet: ""
+  },
   {
     name: "B.C. Brassica",
     price: "8",
@@ -149,13 +151,13 @@ export const HERBIVORES = [
   {
     name: "Cauliflower Soup",
     price: "12",
-    notes: "Cauliflower, cheddar crumble",
+    notes: "Cauliflower, cheddar crumble, buttermilk biscuit",
     diet: "vegetarian"
   },
   {
     name: '"Fried Rice"',
     price: "14",
-    notes: "Mushrooms, gai lan, corn, shallots, sesame sauce",
+    notes: "Compressed rice cubes, mushrooms, gai lan, corn, shallots, sesame sauce",
     diet: "vegan, gluten free", 
   }
 ];
@@ -163,8 +165,8 @@ export const HERBIVORES = [
 export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
-    price: "20",
-    notes: "Cheddar, bacon, onion, lettuce, tomato, daikon, aioli",
+    price: "18",
+    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
     diet: "", 
   },
   {
@@ -176,29 +178,29 @@ export const LARGER = [
   {
     name: "Farmcrest Chicken and Waffle",
     price: "23",
-    notes: "Fried chicken breast, mushroom, bacon, butter, coconut gravy",
+    notes: "Fried chicken breast, mushroom, bacon butter, gravy",
     diet: "", 
   },
   {
-    name: "Pacific Wild Salmon",
-    price: "24",
-    notes: "Fried rice, corn, broccoli, sesame leek sauce",
-    diet: "gluten and dairy free", 
+    name: "Wild Pacific Lingcod",
+    price: "25",
+    notes: "Poached, with confit carrots, potatoes, brussel sprouts",
+    diet: "gluten free", 
   }  
 ];
 
 export const SWEETS = [
   {
-    name: "Fried Pear Pie",
-    price: "8",
-    notes: "Deep fried pear hand pie, hazelnuts, spiced sugar",
+    name: "Dark Chocolate Mousse",
+    price: "9", 
+    notes: "Pear, hazelnut crumble, and chantilly",
     diet: "vegetarian, contains nuts", 
   },
   {
-    name: "Chocolate Mousse",
-    price: "9", 
-    notes: "Sponge cake, whipped cream, cacao nibs",
-    diet: "vegetarian, contains nuts", 
+    name: "Fried Bread",
+    price: "8",
+    notes: "Bourbon caramel, maple pastry, cream",
+    diet: "vegetarian, contains nuts"
   }
 ]
 
@@ -404,7 +406,7 @@ export const COCKTAILS = [
   {
     name: "Mt Hood Warmer",
     price: "14",
-    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
+    notes: "Chai infused whiskey, Ampersand \"Nocino!\", Grand Marnier, orange, sugar, absinthe"
   },
   {
     name: "Eastburn Daquiri",
@@ -433,13 +435,20 @@ export const COCKTAILS = [
   },
 ]
 
-export const FEATURES = [
+export const FEATURES = [ 
   {
-    name: "Skillet Pie",
+    name: "Baked Pacific Shrimp",
     price: "12",
-    notes: "Fresh house-made dough, pork belly, mushrooms, tomatoes, cheese, parsley",
+    notes: "Cherry tomato, chili garlic butter",
+    diet: ""
+  },    
+  {
+    name: "Buttermilk Fried Chicken Sandwich",
+    price: "18",
+    notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
     diet: ""
   }
+  
 ];
 
 export const HAPPY_HOUR_FOOD = [
@@ -497,21 +506,21 @@ export const HAPPY_HOUR = [
   {
     name: "Select US Craft Beer",
     prices: [
-      {price: "5.75", size: " (14oz)"}
+      {price: "5.75", size: "14oz"}
     ]
   },
   {
     name: "Select Local Draught Beer",
     prices: [
-      {price: "4", size: " (14oz)"},
-      {price: "5", size: " (20oz)"}
+      {price: "4", size: "12oz"},
+      {price: "5", size: "20oz"}
     ]
   },
   {
     name: "House Red, White, & Rose Wine",
     prices: [
-      {price: "5.50", size: " (5oz)"},
-      {price: "9", size: "(8oz)"}
+      {price: "5.50", size: "5oz"},
+      {price: "9", size: "8oz"}
     ]
   },
   {
@@ -529,7 +538,7 @@ export const HAPPY_HOUR = [
   {
     name: "Jameson",
     prices: [
-      {price: "4.50", size: " (1oz)"}
+      {price: "4.50", size: "1oz"}
     ]
   }
 ]
