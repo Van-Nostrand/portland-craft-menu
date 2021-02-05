@@ -110,11 +110,17 @@ export const OMNIVORES = [
     diet: "gluten and dairy free", 
   },
   {
-    name: "Fraser Valley Pork Belly",
-    price: "13",
-    notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
-    diet: "gluten and dairy free", 
+    name: "Pork Ribs",
+    price: "10 for 3 or $13 for 5",
+    notes: "Peanuts, fresh herbs, tamarind soy glaze",
+    diet: "contains nuts"
   },
+  // {
+  //   name: "Fraser Valley Pork Belly",
+  //   price: "13",
+  //   notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
+  //   diet: "gluten and dairy free", 
+  // },
   {
     name: "Westcoast Crab Dip",
     price: "15",
