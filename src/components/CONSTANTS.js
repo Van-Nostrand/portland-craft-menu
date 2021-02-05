@@ -113,7 +113,7 @@ export const OMNIVORES = [
     name: "Pork Ribs",
     price: "10 for 3 or $13 for 5",
     notes: "Peanuts, fresh herbs, tamarind soy glaze",
-    diet: "contains nuts"
+    diet: "contains nuts, dairy free"
   },
   // {
   //   name: "Fraser Valley Pork Belly",
@@ -447,7 +447,13 @@ export const FEATURES = [
     price: "12",
     notes: "Cherry tomato, chili garlic butter",
     diet: ""
-  },    
+  },   
+  {
+    name: "Onion Chips",
+    price: "8",
+    notes: "Buttermilk batter, house ranch dip",
+    diet: "vegetarian"
+  },  
   {
     name: "Buttermilk Fried Chicken Sandwich",
     price: "18",
