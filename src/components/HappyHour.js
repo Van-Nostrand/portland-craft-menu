@@ -1,7 +1,7 @@
 import React from "react";
 import smileyface from "../assets/smileyfaceColor2.svg";
 
-
+//TODO: streamline this page
 export const HappyHour = ({menuData}) => {
 
   let drinks = menuData[0].map((item, i) => <LineItem name={item.name} prices={item.prices} key={`lineitem-${i}`} />);
@@ -47,7 +47,8 @@ export const HappyHour = ({menuData}) => {
               ly distanced
             </span>
           </div>
-          <p>All-day on Sundays, 20 and 12 oz pours of a select local lager or pilsner are $4.50!</p>
+          <p>All-day on Sundays, 20oz and 12oz pours of a select local lager or pilsner are $4.50!</p>
+        
 
         </section>
 
@@ -85,26 +86,6 @@ const LineItem = (props) => {
       </span>
     </li>
   )
-  // return(
-  //   <li className="hh-item">
-  //     <div className="item-name">
-  //       {props.name}
-  //     </div>
-  //     <span>
-  //       {props.prices.map((line, i) => {
-  //         return (
-  //           <span key={`linespan-${props.name}${i}`}>
-              
-  //             <div className="item-price">
-  //               ${line.price}
-  //             </div>
-  //             {line.size !== "" ? <div className="item-size">{line.size}</div> : "" }
-  //           </span>
-  //         )
-  //       })}
-  //     </span>
-  //   </li>
-  // )
 }
 
 

@@ -104,10 +104,10 @@ export const OMNIVORES = [
     diet: "", 
   },
   {
-    name: "Pacific Humboldt Squid",
+    name: "Crispy Humboldt Squid",
     price: "12",
-    notes: "Tomato, leeks, garlic, chilis, herbs",
-    diet: "gluten and dairy free", 
+    notes: "Battered and fried, served with black garlic aioli and house pickled veg",
+    diet: "dairy free", 
   },
   {
     name: "Pork Ribs",
@@ -115,12 +115,6 @@ export const OMNIVORES = [
     notes: "Peanuts, fresh herbs, tamarind soy glaze",
     diet: "contains nuts, dairy free"
   },
-  // {
-  //   name: "Fraser Valley Pork Belly",
-  //   price: "13",
-  //   notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
-  //   diet: "gluten and dairy free", 
-  // },
   {
     name: "Westcoast Crab Dip",
     price: "15",
@@ -201,12 +195,6 @@ export const SWEETS = [
     price: "9", 
     notes: "Pear, hazelnut crumble, and chantilly",
     diet: "vegetarian, contains nuts", 
-  },
-  {
-    name: "Fried Bread",
-    price: "8",
-    notes: "Bourbon caramel, maple pastry, cream",
-    diet: "vegetarian, contains nuts"
   }
 ]
 
@@ -443,6 +431,18 @@ export const COCKTAILS = [
 
 export const FEATURES = [ 
   {
+    name: "Chicken Wafflewich and a Kona Big Wave",
+    price: "22",
+    notes: ["See next item for sandwich description", "Served with a 14oz Kona Big wave"],
+    diet: ""
+  },
+  {
+    name: "Buttermilk Fried Chicken Wafflewich",
+    price: "18",
+    notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
+    diet: ""
+  },
+  {
     name: "Baked Pacific Shrimp",
     price: "12",
     notes: "Cherry tomato, chili garlic butter",
@@ -453,14 +453,7 @@ export const FEATURES = [
     price: "8",
     notes: "Buttermilk batter, house ranch dip",
     diet: "vegetarian"
-  },  
-  {
-    name: "Buttermilk Fried Chicken Sandwich",
-    price: "18",
-    notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
-    diet: ""
-  }
-  
+  } 
 ];
 
 export const HAPPY_HOUR_FOOD = [
@@ -577,7 +570,7 @@ export const NON_ALCOHOLIC = [
   {
     name: "Mocktails",
     price: "5",
-    notes: "PLACEHOLDER"
+    notes: "Ask your bartender what they can offer!"
   }
 ];
 
@@ -595,7 +588,11 @@ export const PACKAGED_BEER = [
     price: "3",
   },
   {
-    name: "Deschutes Mirror Pond Pale Ale",
+    name: "Deschutes Fresh Squeezed IPA",
+    price: "3.5",
+  },
+  {
+    name: "Sierra Nevada Pale Ale",
     price: "3.5",
   },
 ]
