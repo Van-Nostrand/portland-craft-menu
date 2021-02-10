@@ -431,12 +431,6 @@ export const COCKTAILS = [
 
 export const FEATURES = [ 
   {
-    name: "Chicken Wafflewich and a Kona Big Wave",
-    price: "22",
-    notes: ["See next item for sandwich description", "Served with a 14oz Kona Big wave"],
-    diet: ""
-  },
-  {
     name: "Buttermilk Fried Chicken Wafflewich",
     price: "18",
     notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
