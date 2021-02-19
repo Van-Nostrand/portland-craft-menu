@@ -110,7 +110,7 @@ export const OMNIVORES = [
     diet: "dairy free", 
   },
   {
-    name: "Pork Ribs",
+    name: "Beer-Braised Pork Ribs",
     price: "10 for 3 or $13 for 5",
     notes: "Peanuts, fresh herbs, tamarind soy glaze",
     diet: "contains nuts, dairy free"
@@ -190,6 +190,12 @@ export const LARGER = [
 ];
 
 export const SWEETS = [
+  {
+    name: "Cr&egrave;me Br&ucirc;l&eacute;e",
+    price: '8',
+    notes: 'Szechuan peppercorn infused',
+    diet: ''
+  },
   {
     name: "Dark Chocolate Mousse",
     price: "9", 
