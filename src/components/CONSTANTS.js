@@ -92,6 +92,12 @@ export const OMNIVORES = [
     diet: "dairy free", 
   },
   {
+    name: "Smash Burger",
+    price: "10",
+    notes: "4oz Three Rivers beef patty, Armstrong cheese, lettuce, tomato, house sauce",
+    diet: ""
+  },
+  {
     name: "Roasted Organic Carrot and Brussel Sprouts Salad",
     price: "10",
     notes: "Carrots, brussel sprouts, parsnip, radish, sunflower seeds, double smoked bacon vinaigrette",
@@ -191,7 +197,7 @@ export const LARGER = [
 
 export const SWEETS = [
   {
-    name: "Cr&egrave;me Br&ucirc;l&eacute;e",
+    name: "Crème Brûlée",
     price: '8',
     notes: 'Szechuan peppercorn infused',
     diet: ''
