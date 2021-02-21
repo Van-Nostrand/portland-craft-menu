@@ -49,7 +49,7 @@ export const SNACKS = [
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
-    notes: ["Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs.", "Substitute truffle fries (+$2.50)"],
+    notes: ["Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs", "Substitute truffle fries (+$2.50)"],
     diet: "gluten and dairy free", 
   },
   {
@@ -91,12 +91,7 @@ export const OMNIVORES = [
     notes: "Corn, soy bean, herbs, spicy black garlic aioli",
     diet: "dairy free", 
   },
-  {
-    name: "Smash Burger",
-    price: "10",
-    notes: "4oz Three Rivers beef patty, Armstrong cheese, lettuce, tomato, house sauce",
-    diet: ""
-  },
+  
   {
     name: "Roasted Organic Carrot and Brussel Sprouts Salad",
     price: "10",
@@ -115,6 +110,12 @@ export const OMNIVORES = [
     notes: "Battered and fried, served with black garlic aioli and house pickled veg",
     diet: "dairy free", 
   },
+  {
+    name: "Baked Wild Pacific Shrimp",
+    price: "13",
+    notes: "Garlic chili lime butter, tomato, jalapeno, fresh herbs, house bread",
+    diet: ""
+  }, 
   {
     name: "Beer-Braised Pork Ribs",
     price: "10 for 3 or $13 for 5",
@@ -172,8 +173,14 @@ export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
     price: "18",
-    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
+    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli", "Served with fries", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
     diet: "", 
+  },
+  {
+    name: "Buttermilk Fried Chicken Wafflewich",
+    price: "18",
+    notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
+    diet: ""
   },
   {
     name: "Grain Bowl",
@@ -443,23 +450,29 @@ export const COCKTAILS = [
 
 export const FEATURES = [ 
   {
-    name: "Buttermilk Fried Chicken Wafflewich",
-    price: "18",
-    notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
-    diet: ""
-  },
-  {
-    name: "Baked Pacific Shrimp",
-    price: "12",
-    notes: "Cherry tomato, chili garlic butter",
-    diet: ""
-  },   
-  {
     name: "Onion Chips",
     price: "8",
     notes: "Buttermilk batter, house ranch dip",
     diet: "vegetarian"
-  } 
+  },
+  {
+    name: "Smash Burger",
+    price: "10",
+    notes: "4oz Two Rivers house blend, Armstrong cheese, lettuce, tomato, house sauce",
+    diet: ""
+  },  
+  {
+    name: "Vancity Vegan Sandwich",
+    price: "16",
+    notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries"],
+    diet: "contains nuts, vegan"
+  },
+  {
+    name: "Seared Albacore Tuna Sandwich",
+    price: "18",
+    notes: ["Avocado spread, arugula, radish, pickled cabbage, house bread", "Served with fries"],
+    diet: ""
+  },
 ];
 
 export const HAPPY_HOUR_FOOD = [
