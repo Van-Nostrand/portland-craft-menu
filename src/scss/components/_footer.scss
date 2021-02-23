@@ -1,0 +1,16 @@
+.footer{
+  position: relative;
+  top: $desktop-nav-height; //if this changes, content needs adjusting too
+  height: 25rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border: 4px dashed purple;
+
+  &-social-link{
+
+    img{
+      height: 5rem;
+    }
+  }  
+}
