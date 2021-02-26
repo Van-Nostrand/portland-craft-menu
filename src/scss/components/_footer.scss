@@ -7,7 +7,18 @@
   justify-content: space-between;
   border: 4px dashed purple;
 
+  @include respond(tab-port){
+    flex-flow: column;
+  }
+
   &-social-link{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @include respond(tab-port){
+      align-items: flex-start;
+    }
 
     img{
       height: 5rem;

@@ -17,7 +17,8 @@
   @include respond(tab-port){
     top: $mobile-nav-height;
     margin: 1rem 0;
-    width: 95vw;
+    width: unset;
+    padding: 1rem;
 
     display: flex;
     flex-flow: column nowrap;

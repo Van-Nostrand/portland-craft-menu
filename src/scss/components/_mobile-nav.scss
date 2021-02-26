@@ -2,14 +2,13 @@
   position: fixed;
   top: 0;
   width: 100vw;
+  height: $mobile-nav-height;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: stretch;
-  
   align-items: center;
-  height: $mobile-nav-height;
-
+  
   background-color: $alt-dark-font;
 
   &__logo.logo{
