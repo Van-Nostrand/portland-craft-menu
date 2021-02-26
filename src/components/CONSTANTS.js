@@ -191,15 +191,9 @@ export const LARGER = [
   {
     name: "Farmcrest Chicken and Waffle",
     price: "23",
-    notes: "Fried chicken breast, mushroom, bacon butter, gravy",
+    notes: "Fried chicken breast, bacon butter, gravy",
     diet: "", 
-  },
-  {
-    name: "Wild Pacific Lingcod",
-    price: "25",
-    notes: "Poached, with confit carrots, potatoes, brussel sprouts",
-    diet: "gluten free", 
-  }  
+  }
 ];
 
 export const SWEETS = [
@@ -207,7 +201,13 @@ export const SWEETS = [
     name: "Crème Brûlée",
     price: '8',
     notes: 'Szechuan peppercorn infused',
-    diet: ''
+    diet: 'vegetarian'
+  },
+  {
+    name: "Upsidedown Cherry Cake",
+    price: '8',
+    notes: "Bourbon caramel, chantilly",
+    diet: 'vegetarian'
   },
   {
     name: "Dark Chocolate Mousse",
