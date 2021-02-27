@@ -3,7 +3,7 @@ import React from "react";
 
 export const CocktailSection = ({cocktails}) => {
   return (
-    <section className={`cocktail-section`}>
+    <section className={`drink-section cocktail-section`}>
       <div className={`cocktail-section-title section-title`}>
         Cocktails
       </div>

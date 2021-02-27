@@ -63,7 +63,8 @@
       text-align: center;
       color: $portland-red;
   
-      padding: 3rem 2rem 0rem 0.5rem;
+      margin-top: 2rem;
+      padding-left: 1rem;
   
       @include respond(big-desk){
         font-size: 1.2em;
@@ -143,6 +144,7 @@
 
   ////////////////////////////////////
   ///////// SIDES
+  // This all needs to be destroyed and rebuilt
   & .sides {
   
     @include respond(tab-port){
@@ -171,8 +173,8 @@
       .food-item{
         grid-template-columns: 80% 10%;
         grid-template-rows: auto;
-        width: 18rem;
-        margin: 0.1rem;
+        width: 18rem; //good idea or no?
+        margin-bottom: 0;  
         
         font-size: 0.8em;
         

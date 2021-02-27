@@ -6,6 +6,12 @@ import emailLogo from "../assets/email.svg";
 export default function Footer(){
   return(
     <div className="footer">
+      <div className='footer-address'>
+        Portland Craft, 3835 Main St, BC, V5V 3P1
+      </div>
+      <div className="footer-phonenumber">
+        (604) 569-2494
+      </div>
       <div className="footer-social">
         <a className="footer-social-link" href="https://www.facebook.com/PortlandCraft">
           <img src={fbLogo} />
@@ -25,3 +31,12 @@ export default function Footer(){
     </div>
   )
 }
+
+/**
+ * address
+ * phone number
+ * contact
+ * 
+ * The squarespace site has insta/facebook separate from email
+ * has an email signup form
+ */

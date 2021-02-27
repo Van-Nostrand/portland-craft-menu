@@ -19,7 +19,7 @@ export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal, style}) 
 export const WineSection = ({sectionTitle, sectionSizeString, wines}) => {
   let lowercasesection = sectionTitle.toLowerCase();
   return (
-    <section className={`wine-section ${lowercasesection}-wine-section`}>
+    <section className={`drink-section wine-section ${lowercasesection}-wine-section`}>
       <div className={`wine-section-title ${lowercasesection}-section-title section-title`}>
         {sectionTitle}
       </div>

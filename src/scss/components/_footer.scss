@@ -2,16 +2,31 @@
   position: relative;
   top: $desktop-nav-height; //if this changes, content needs adjusting too
   height: 25rem;
+  width: 76vw;
+
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  border: 4px dashed purple;
+  flex-flow: column;
+  align-items: flex-start;
+
+  margin: 0 auto;
+  padding: 3rem;
+  
+
+  font-size: 2rem;
 
   @include respond(tab-port){
     flex-flow: column;
+    padding: 2rem;
+
+    width: unset;
+   
+
+    // display: flex;
+    justify-content: space-between;
   }
 
-  &-social-link{
+  &-social{
+
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -20,8 +35,12 @@
       align-items: flex-start;
     }
 
-    img{
-      height: 5rem;
-    }
-  }  
+    &-link{
+  
+      img{
+        height: 5rem;
+      }
+    } 
+  }
+   
 }

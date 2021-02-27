@@ -41,18 +41,20 @@
   }
 }
 
+.drink-section{
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  padding: 0 2rem;
+}
+
 .wine-section{
-  margin: 0 1rem;
-
-  display: grid;
-  grid-template-columns: 3fr 2fr 3fr;
-  grid-template-rows: 7rem auto;
-
+  margin: 0 2rem;
   border-top: 3px solid $portland-red;
 
   @include respond(tab-port){
-    margin: 0;
-    width: 99%;
+    // margin: 0;
+    // width: 99%;
   }
 
   .wine-section-title{
