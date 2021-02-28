@@ -4,7 +4,7 @@ import {PageLoader} from "./PageLoader";
 import Footer from "./Footer";
 
 export const App = () => {
-  let [currentPage, setCurrentPage] = useState("drinks");
+  let [currentPage, setCurrentPage] = useState("food");
 
   return (
     <div className="app-div">
