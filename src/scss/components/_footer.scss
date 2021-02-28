@@ -16,12 +16,10 @@
 
   @include respond(tab-port){
     flex-flow: column;
-    padding: 2rem;
+    padding: 2rem 0;
+    align-items: stretch;
 
-    width: unset;
-   
-
-    // display: flex;
+    width: 100%;
     justify-content: space-between;
   }
 
@@ -33,6 +31,11 @@
 
     @include respond(tab-port){
       align-items: flex-start;
+    }
+
+    @include respond(phone){
+      flex-flow: row;
+      
     }
 
     &-link{

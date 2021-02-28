@@ -1,8 +1,10 @@
 .nav-hat-wrapper{
-  position: relative;
-  width: 100vw;
+  position: fixed;
+  // width: 100vw;
+  width: 100%;
   top: 0;
   overflow: hidden;
+  z-index: 2;
 
   button {
     border: none;

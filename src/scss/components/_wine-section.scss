@@ -1,0 +1,97 @@
+.wine-section{
+  margin: 0 2rem;
+  border-top: 3px solid $portland-red;
+  width: 100%;
+  font-size: 2.6rem;
+
+  @include respond(tab-port){
+    margin: 0 auto;
+  }
+
+  .wine-section-title{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    display: inline;
+    width: 40%;
+
+    padding-top: 3rem;
+    
+    font-size: 0.95em;
+    color: $portland-red;
+
+    @include respond(phone){
+      padding-top: 0;
+    }
+  }
+  
+  .wine-sizes{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    align-self: end;
+    padding: 0 3.5rem 0.5rem 0;
+    width: 40%;
+    position: relative;
+    top: -100%;
+
+    display: inline;
+    
+    font-size: 0.6em;
+
+    @include respond(tab-port){
+      padding: 0;
+    }
+
+    @include respond(phone){
+      padding-right: 2rem;
+      font-size: 0.7em;
+      align-self: flex-end;
+      text-align: end;
+    }
+  }
+
+  .wine-list{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+
+    @include respond(tab-port){
+      padding: 1rem 0.7rem ;
+    }
+
+    @include respond(phone){
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+.red-wine-section{ 
+  grid-column: 1; 
+
+  @include respond(tab-port){
+    grid-column: 1 / span 6;
+  }
+}
+
+.white-wine-section{ 
+  grid-column: 2; 
+
+  @include respond(tab-port){
+    grid-column: 7 / span 6;
+  }
+}
+
+.bubbly-wine-section{
+  grid-column: 1;
+  width: 100%;
+
+  justify-self: center;
+
+  @include respond(tab-port){
+    grid-column: 8 / span 5;
+    grid-row: 2;
+
+    width: 99%;
+  }
+}

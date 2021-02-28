@@ -7,7 +7,10 @@ export const Wine = ({ itemName = "unnamed", notes="", sizes, varietal, style}) 
         {itemName}
       </div>
       <div className="wine-item-varietal">
-        {varietal}{` (${notes})`}
+        {varietal}
+      </div>
+      <div className="wine-item-region">
+        {` (${notes})`}
       </div>
       <div className="wine-item-price item-price">
         ${sizes.join(" / $")}
@@ -21,7 +24,7 @@ export const WineSection = ({sectionTitle, sectionSizeString, wines}) => {
   return (
     <section className={`drink-section wine-section ${lowercasesection}-wine-section`}>
       <div className={`wine-section-title ${lowercasesection}-section-title section-title`}>
-        {sectionTitle}
+        {sectionTitle}{` ${(sectionTitle === "Red" || sectionTitle === "White" )? 'Wine' : ''}`}
       </div>
       <div className={`wine-sizes ${lowercasesection}-wine-sizes`}>
         {sectionSizeString}
