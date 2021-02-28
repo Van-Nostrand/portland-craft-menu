@@ -3,23 +3,21 @@
   top: $desktop-nav-height; //if this changes, content needs adjusting too
   height: 25rem;
   width: 76vw;
+  margin: 0 auto;
 
+  padding: 3rem;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
 
-  margin: 0 auto;
-  padding: 3rem;
-  
-
   font-size: 2rem;
 
   @include respond(tab-port){
-    flex-flow: column;
-    padding: 2rem 0;
-    align-items: stretch;
-
     width: 100%;
+    padding: 2rem 0;
+
+    flex-flow: column;
+    align-items: stretch;
     justify-content: space-between;
   }
 
@@ -35,7 +33,6 @@
 
     @include respond(phone){
       flex-flow: row;
-      
     }
 
     &-link{
