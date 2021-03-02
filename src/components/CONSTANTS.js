@@ -81,8 +81,8 @@ export const SNACKS = [
 export const OMNIVORES = [
   {
     name: "Meat Skillet Pie",
-    price: "*",
-    notes: "Rotating styles - ask your server!",
+    price: "16",
+    notes: "Genoa salami, mushrooms, tomato sauce, herb oil",
     diet: ""
   },
   {
@@ -138,10 +138,10 @@ export const OMNIVORES = [
 
 export const HERBIVORES = [
   {
-    name: "Veggie Skillet Pie",
-    price: "*",
-    notes: "Rotating styles - ask your server!",
-    diet: ""
+    name: "Margarita Skillet Pie",
+    price: "12",
+    notes: "Fresh tomato, fresh mozza, arugula, tomato sauce",
+    diet: "vegetarian"
   },
   {
     name: "B.C. Brassica",
