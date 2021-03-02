@@ -56,21 +56,10 @@ module.exports = {
           "css-loader"
         ]
       },
-      // {
-      //   test: /\.(jpe?g|svg|png|gif)$/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: '[hash]-[name].[ext]'
-      //       }
-      //     }
-          
-      //   ]
-      // },
       {
         test: /\.(jpe?g|svg|png|gif)$/,
-        type: "asset/resource"
+        type: "asset/resource",
+        use: "file-loader"
       },
       {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
