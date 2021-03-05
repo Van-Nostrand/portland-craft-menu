@@ -2,6 +2,4 @@
 
 An online menu for Portland Craft
 
-## TODO
-* implement lazy loading of images
-* clean up desktop, big desktop, and tab-landscape breakpoints
+this branch (V4.0) is current production. Updated Tues March 2nd
