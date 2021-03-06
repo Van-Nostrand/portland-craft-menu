@@ -160,12 +160,6 @@ export const HERBIVORES = [
     price: "12",
     notes: "Cauliflower, cheddar crumble, buttermilk biscuit",
     diet: "vegetarian"
-  },
-  {
-    name: '"Fried Rice"',
-    price: "14",
-    notes: "Compressed rice cubes, mushrooms, gai lan, corn, shallots, sesame sauce",
-    diet: "vegan, gluten free", 
   }
 ];
 
@@ -181,12 +175,6 @@ export const LARGER = [
     price: "18",
     notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
     diet: ""
-  },
-  {
-    name: "Grain Bowl",
-    price: "21",
-    notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
-    diet: "vegan, contains nuts", 
   },
   {
     name: "Farmcrest Chicken and Waffle",
@@ -314,55 +302,64 @@ export const BUBBLES = [
   }
 ]
 
-export const OLD_COCKTAILS = [
+
+export const NEW_COCKTAILS = [
   {
-    name: "Aperol or Elderflower Spritz",
+    name: "Aperol / Elderflower Spritz",
     price: "11",
     notes: "Choose either Aperol or St Germain & Cassis (+$1), sparkling white wine, soda"
   },
   {
-    name: "Margarita",
+    name: "Moscow Mule",
     price: "12",
-    notes: "El Jimador Blanco tequila, triple sec, lime"
+    notes: "Absolut vodka, lime, sugar, Angostura bitters, ginger beer"
   },
-  
   {
-    name: "Whiskey Sour",
+    name: "Brown Derby",
     price: "13",
-    notes: "Wild Turkey bourbon, lemon, sugar, Angostura bitters, egg white"
+    notes: "Old Forester Bourbon, grapefruit, honey, lime"
   },
   {
-    name: "Corpse Reviver #2",
-    price: "12",
-    notes: "Beefeater gin, Cointreau, Lillet Blanc, Pernod rinse, lemon"
-  },
-  {
-    name: "Daquiri",
-    price: "12",
-    notes: "Dark rum, lime, sugar"
-  },
-  {
-    name: "Negroni Sour",
+    name: "Boulevardier",
     price: "13",
-    notes: "Beefeater gin, Campari, Odd Society Amaro, orange, lemon, sugar, egg white. Cory's own creation!"
+    notes: "Old Forester Bourbon, Campari, sweet vermouth"
   },
   {
-    name: "Best Bloody Caesar",
-    price: "9 / $13",
-    notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
+    name: "Old Fashioned",
+    price: "15",
+    notes: "Woodford Reserve Bourbon, sugar, Angostura bitters"
   },
   {
-    name: "Fraser Collins",
+    name: "Nelson Iced Tea",
     price: "13",
-    notes: "Beefeater gin, lemon, sugar, cucumber, black pepper, topped off with pilsner. Mike's twist on the Tom Collins!"
+    notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
   },
   {
-    name: "Spanish Fashion",
+    name: "Gastown",
     price: "13",
-    notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
+    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
+  },
+  {
+    name: "Charlotte's Tick Bite",
+    price: "13",
+    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
+  },
+  {
+    name: "Mt Hood Warmer",
+    price: "14",
+    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
+  },
+  {
+    name: "Lonsdale Quay",
+    price: "15",
+    notes: "Vodka, Galliano, St Germain, earl grey tea, lemon, sugar, egg white"
+  },
+  {
+    name: "Rose City Pearing",
+    price: "15",
+    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
 ]
-
 export const HOUSE_COCKTAILS = [
   {
     name: "Aperol / Elderflower Spritz",
@@ -405,48 +402,6 @@ export const HOUSE_COCKTAILS = [
     notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
 ]
-export const COCKTAILS = [
-  {
-    name: "Gastown",
-    price: "13",
-    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
-  },
-  {
-    name: "Portland Spritz",
-    price: "11",
-    notes: "Absolut vodka, St Germain, cassis, lemon, raspberries"
-  },
-  {
-    name: "Mt Hood Warmer",
-    price: "14",
-    notes: "Chai infused whiskey, Ampersand \"Nocino!\", Grand Marnier, orange, sugar, absinthe"
-  },
-  {
-    name: "Eastburn Daquiri",
-    price: "13",
-    notes: "Butter infused rum, lemon, sugar, house-made candied ginger"
-  },
-  {
-    name: "Lonsdale Quay",
-    price: "15",
-    notes: "Vodka, Galliano, St Germain, earl grey tea, lemon, sugar, egg white"
-  },
-  {
-    name: "Charlotte's Tick Bite",
-    price: "13",
-    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
-  },
-  {
-    name: "Rose City Pearing",
-    price: "15",
-    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
-  },
-  {
-    name: "Forest Park",
-    price: "14",
-    notes: "Tequila, Green Chartreuse, sugar, lime, cassis, egg white"
-  },
-]
 
 export const FEATURES = [ 
   {
@@ -466,13 +421,7 @@ export const FEATURES = [
     price: "16",
     notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries"],
     diet: "contains nuts, vegan"
-  },
-  {
-    name: "Seared Albacore Tuna Sandwich",
-    price: "18",
-    notes: ["Avocado spread, arugula, radish, pickled cabbage, house bread", "Served with fries"],
-    diet: ""
-  },
+  }
 ];
 
 export const HAPPY_HOUR_FOOD = [
