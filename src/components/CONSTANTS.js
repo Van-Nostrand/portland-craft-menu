@@ -421,6 +421,11 @@ export const FEATURES = [
     price: "16",
     notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), onion chips (+$3.50), or poutine (+$4)"],
     diet: "contains nuts, vegan"
+  },
+  {
+    name: "Smoked Meat Sandwich",
+    price: "18",
+    notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), onion chips (+$3.50), or poutine (+$4)"]
   }
 ];
 
