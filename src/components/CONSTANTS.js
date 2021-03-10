@@ -192,12 +192,6 @@ export const SWEETS = [
     diet: 'vegetarian'
   },
   {
-    name: "Upsidedown Cherry Cake",
-    price: '8',
-    notes: "Bourbon caramel, chantilly",
-    diet: 'vegetarian'
-  },
-  {
     name: "Dark Chocolate Mousse",
     price: "9", 
     notes: "Pear, hazelnut crumble, and chantilly",
