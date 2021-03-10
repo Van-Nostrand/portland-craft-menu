@@ -34,12 +34,7 @@ export const SIDES = [
 ];
 
 export const SNACKS = [
-  {
-    name: "Candied Bacon",
-    price: "2 for 1 or $10 for 6",
-    notes: "Johnston Farm smoked bacon baked with house-spice blend",
-    diet: "gluten and dairy free", 
-  },
+  
   {
     name: "Pickled Vegetables",
     price: "6",
