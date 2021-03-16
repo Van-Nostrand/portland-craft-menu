@@ -162,13 +162,13 @@ export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
     price: "18",
-    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli", "Served with fries", "Substitute salad (+$2), onion chips (+$3.50), or poutine (+$4)"],
+    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), or poutine (+$4)"],
     diet: "", 
   },
   {
     name: "Buttermilk Fried Chicken Wafflewich",
     price: "18",
-    notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), onion chips (+$3.50), or poutine (+$4)"],
+    notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), or poutine (+$4)"],
     diet: ""
   },
   {
@@ -408,13 +408,13 @@ export const FEATURES = [
   {
     name: "Vancity Vegan Sandwich",
     price: "16",
-    notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), onion chips (+$3.50), or poutine (+$4)"],
+    notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), or poutine (+$4)"],
     diet: "contains nuts, vegan"
   },
   {
     name: "Smoked Meat Sandwich",
     price: "18",
-    notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), onion chips (+$3.50), or poutine (+$4)"]
+    notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), or poutine (+$4)"]
   },
   {
     name: "Baked Pasta",
