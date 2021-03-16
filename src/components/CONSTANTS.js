@@ -292,7 +292,7 @@ export const BUBBLES = [
 ]
 
 
-export const NEW_COCKTAILS = [
+export const HOUSE_COCKTAILS = [
   {
     name: "Aperol / Elderflower Spritz",
     price: "11",
@@ -323,21 +323,21 @@ export const NEW_COCKTAILS = [
     price: "13",
     notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
   },
-  {
-    name: "Gastown",
-    price: "13",
-    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
-  },
+  // {
+  //   name: "Gastown",
+  //   price: "13",
+  //   notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
+  // },
   {
     name: "Charlotte's Tick Bite",
     price: "13",
     notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
   },
-  {
-    name: "Mt Hood Warmer",
-    price: "14",
-    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
-  },
+  // {
+  //   name: "Mt Hood Warmer",
+  //   price: "14",
+  //   notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
+  // },
   {
     name: "Lonsdale Quay",
     price: "15",
@@ -349,7 +349,7 @@ export const NEW_COCKTAILS = [
     notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
 ]
-export const HOUSE_COCKTAILS = [
+export const OLD_COCKTAILS = [
   {
     name: "Aperol / Elderflower Spritz",
     price: "11",
@@ -415,6 +415,12 @@ export const FEATURES = [
     name: "Smoked Meat Sandwich",
     price: "18",
     notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), onion chips (+$3.50), or poutine (+$4)"]
+  },
+  {
+    name: "Baked Pasta",
+    price: "16",
+    notes: "Tomato meat sauce, penne, bocconcini, herbs, bread",
+    diet: ""
   }
 ];
 
