@@ -24,10 +24,6 @@ export const SIDES = [
     price: "5"
   },
   {
-    name: "Tofu",
-    price: "6"
-  },
-  {
     name: "Fried Chicken Breast",
     price: "8"
   },
@@ -76,8 +72,8 @@ export const SNACKS = [
 export const OMNIVORES = [
   {
     name: "Meat Skillet Pie",
-    price: "16",
-    notes: "Genoa salami, mushrooms, tomato sauce, herb oil",
+    price: "14",
+    notes: "Genoa salami, tomato sauce, herb oil",
     diet: ""
   },
   {
@@ -411,10 +407,16 @@ export const FEATURES = [
     notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
     diet: "contains nuts, vegan"
   },
+  // {
+  //   name: "Smoked Meat Sandwich",
+  //   price: "18",
+  //   notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"]
+  // },
   {
-    name: "Smoked Meat Sandwich",
-    price: "18",
-    notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"]
+    name: "Seared Albacore Tuna Sandwich",
+    price: "17",
+    notes: ["Kimchi, avocado, arugula, radish", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    diet: ""
   },
   {
     name: "Baked Pasta",
