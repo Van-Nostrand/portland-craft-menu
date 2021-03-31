@@ -4,11 +4,13 @@
   position: relative;
   margin-bottom: 1rem;
 
-  grid-column: 1 / span 2;
+  min-width: 45%;
   
   display: flex;
   flex-flow: column;
-  align-items: stretch;
+  // align-items: stretch;
+
+  // width: min-content;
 
   border-top: 3px solid $portland-red;
   
@@ -39,11 +41,16 @@
 
   .section__list{
 
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    justify-content: stretch;
+    // display: grid;
+    // grid-template-columns: 25% 25% 25% 25%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    max-height: 30rem;
+
     padding: 1rem;
-    justify-content: center;
+    // justify-content: center;
 
     @include respond(tab-port){
       display: grid;
@@ -60,4 +67,35 @@
       align-items: stretch;
     }
   }
+}
+
+.features {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.snacks {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+
+.omnivores {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+.herbivores {
+  grid-column: 4;
+  grid-row: 2;
+}
+.largeplates {
+  grid-column: 1;
+  grid-row: 3;
+}
+.sweets {
+  grid-column: 3;
+  grid-row: 3;
+}
+.sides {
+  grid-column: 4;
+  grid-row: 3;
 }

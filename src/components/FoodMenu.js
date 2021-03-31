@@ -3,8 +3,9 @@ import React from "react";
 export const FoodMenu = ({ menuData }) => {
 
   return(<>
+    <p>All items are nut-free unless specified</p>
     <div className="food-menu menu">
-      <p>All items are nut-free unless specified</p>
+      
 
       <FoodSection 
         section="Features" 

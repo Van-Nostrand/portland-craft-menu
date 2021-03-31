@@ -40,7 +40,7 @@ export const SNACKS = [
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
-    notes: ["Make them truffle fries for +$2.50", "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs"],
+    notes: ["Make them truffle fries for +$2½", "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs"],
     diet: "gluten and dairy free", 
   },
   {
@@ -158,13 +158,13 @@ export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
     price: "18",
-    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
     diet: "", 
   },
   {
     name: "Buttermilk Fried Chicken Wafflewich",
     price: "18",
-    notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
     diet: ""
   },
   {
@@ -319,21 +319,13 @@ export const HOUSE_COCKTAILS = [
     price: "13",
     notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
   },
-  // {
-  //   name: "Gastown",
-  //   price: "13",
-  //   notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
-  // },
+ 
   {
     name: "Charlotte's Tick Bite",
     price: "13",
     notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
   },
-  // {
-  //   name: "Mt Hood Warmer",
-  //   price: "14",
-  //   notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
-  // },
+
   {
     name: "Lonsdale Quay",
     price: "15",
@@ -404,18 +396,13 @@ export const FEATURES = [
   {
     name: "Vancity Vegan Sandwich",
     price: "16",
-    notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
     diet: "contains nuts, vegan"
   },
-  // {
-  //   name: "Smoked Meat Sandwich",
-  //   price: "18",
-  //   notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"]
-  // },
   {
     name: "Seared Albacore Tuna Sandwich",
     price: "17",
-    notes: ["Kimchi, avocado, arugula, radish", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    notes: ["Kimchi, avocado, arugula, radish", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
     diet: ""
   },
   {
@@ -481,7 +468,7 @@ export const HAPPY_HOUR = [
   {
     name: "Select US Craft Beer",
     prices: [
-      {price: "5.75", size: "14oz"}
+      {price: "5¾", size: "14oz"}
     ]
   },
   {
@@ -494,7 +481,7 @@ export const HAPPY_HOUR = [
   {
     name: "House Red, White, & Rose Wine",
     prices: [
-      {price: "5.50", size: "5oz"},
+      {price: "5½", size: "5oz"},
       {price: "9", size: "8oz"}
     ]
   },
@@ -507,13 +494,13 @@ export const HAPPY_HOUR = [
   {
     name: "Select Single/Double Highballs",
     prices: [
-      {price: "5 / $7.50", size: ""}
+      {price: "5 / $7½", size: ""}
     ]
   },
   {
     name: "Jameson",
     prices: [
-      {price: "4.50", size: "1oz"}
+      {price: "4½", size: "1oz"}
     ]
   }
 ]
@@ -521,16 +508,16 @@ export const HAPPY_HOUR = [
 export const NON_ALCOHOLIC = [
   {
     name: "Pop",
-    price: "3.50",
+    price: "3½",
     notes: "Pepsi, Diet Pepsi, Sprite, Ginger Ale, Soda, Tonic"
   },
   {
     name: "Orange Juice",
-    price: "3.50"
+    price: "3½"
   },
   {
     name: "Cranberry Juice",
-    price: "3.50"
+    price: "3½"
   },
   {
     name: "Fentimans Sodas",
@@ -547,7 +534,7 @@ export const NON_ALCOHOLIC = [
 export const PACKAGED_BEER = [
   {
     name: "Steamworks Kolsch",
-    price: "3",
+    price: "3½",
   },
   {
     name: "Steamworks Hazy Pale Ale",
@@ -559,10 +546,10 @@ export const PACKAGED_BEER = [
   },
   {
     name: "Deschutes Fresh Squeezed IPA",
-    price: "3.5",
+    price: "3½",
   },
   {
     name: "Sierra Nevada Pale Ale",
-    price: "3.5",
+    price: "3½",
   },
 ]
