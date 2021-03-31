@@ -24,22 +24,13 @@ export const SIDES = [
     price: "5"
   },
   {
-    name: "Tofu",
-    price: "6"
-  },
-  {
     name: "Fried Chicken Breast",
     price: "8"
   },
 ];
 
 export const SNACKS = [
-  {
-    name: "Candied Bacon",
-    price: "2 for 1 or $10 for 6",
-    notes: "Johnston Farm smoked bacon baked with house-spice blend",
-    diet: "gluten and dairy free", 
-  },
+  
   {
     name: "Pickled Vegetables",
     price: "6",
@@ -49,7 +40,7 @@ export const SNACKS = [
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
-    notes: ["Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs.", "Substitute truffle fries (+$2.50)"],
+    notes: ["Make them truffle fries for +$2.50", "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs"],
     diet: "gluten and dairy free", 
   },
   {
@@ -81,8 +72,8 @@ export const SNACKS = [
 export const OMNIVORES = [
   {
     name: "Meat Skillet Pie",
-    price: "*",
-    notes: "Rotating styles - ask your server!",
+    price: "14",
+    notes: "Genoa salami, tomato sauce, herb oil",
     diet: ""
   },
   {
@@ -91,6 +82,7 @@ export const OMNIVORES = [
     notes: "Corn, soy bean, herbs, spicy black garlic aioli",
     diet: "dairy free", 
   },
+  
   {
     name: "Roasted Organic Carrot and Brussel Sprouts Salad",
     price: "10",
@@ -104,16 +96,22 @@ export const OMNIVORES = [
     diet: "", 
   },
   {
-    name: "Pacific Humboldt Squid",
+    name: "Crispy Humboldt Squid",
     price: "12",
-    notes: "Tomato, leeks, garlic, chilis, herbs",
-    diet: "gluten and dairy free", 
+    notes: "Battered and fried, served with black garlic aioli and house pickled veg",
+    diet: "dairy free", 
   },
   {
-    name: "Fraser Valley Pork Belly",
+    name: "Baked Wild Pacific Shrimp",
     price: "13",
-    notes: "Seared pork belly, house pickles, green onions, smoked onion jam",
-    diet: "gluten and dairy free", 
+    notes: "Garlic chili lime butter, tomato, jalapeno, fresh herbs, house bread",
+    diet: ""
+  }, 
+  {
+    name: "Beer-Braised Pork Ribs",
+    price: "10 for 3 or $13 for 5",
+    notes: "Peanuts, fresh herbs, tamarind soy glaze",
+    diet: "contains nuts, dairy free"
   },
   {
     name: "Westcoast Crab Dip",
@@ -131,10 +129,10 @@ export const OMNIVORES = [
 
 export const HERBIVORES = [
   {
-    name: "Veggie Skillet Pie",
-    price: "*",
-    notes: "Rotating styles - ask your server!",
-    diet: ""
+    name: "Margarita Skillet Pie",
+    price: "12",
+    notes: "Fresh tomato, fresh mozza, arugula, tomato sauce",
+    diet: "vegetarian"
   },
   {
     name: "B.C. Brassica",
@@ -153,12 +151,6 @@ export const HERBIVORES = [
     price: "12",
     notes: "Cauliflower, cheddar crumble, buttermilk biscuit",
     diet: "vegetarian"
-  },
-  {
-    name: '"Fried Rice"',
-    price: "14",
-    notes: "Compressed rice cubes, mushrooms, gai lan, corn, shallots, sesame sauce",
-    diet: "vegan, gluten free", 
   }
 ];
 
@@ -166,41 +158,35 @@ export const LARGER = [
   {
     name: "Cache Creek Dry-Aged Burger",
     price: "18",
-    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
+    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
     diet: "", 
   },
   {
-    name: "Grain Bowl",
-    price: "21",
-    notes: "Organic farro, organic greens, tomato, cucumber, soy bean, tofu, cashew herb dressing",
-    diet: "vegan, contains nuts", 
+    name: "Buttermilk Fried Chicken Wafflewich",
+    price: "18",
+    notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    diet: ""
   },
   {
     name: "Farmcrest Chicken and Waffle",
     price: "23",
-    notes: "Fried chicken breast, mushroom, bacon butter, gravy",
+    notes: "Fried chicken breast, bacon butter, gravy",
     diet: "", 
-  },
-  {
-    name: "Wild Pacific Lingcod",
-    price: "25",
-    notes: "Poached, with confit carrots, potatoes, brussel sprouts",
-    diet: "gluten free", 
-  }  
+  }
 ];
 
 export const SWEETS = [
+  {
+    name: "Crème Brûlée",
+    price: '8',
+    notes: 'Szechuan peppercorn infused',
+    diet: 'vegetarian'
+  },
   {
     name: "Dark Chocolate Mousse",
     price: "9", 
     notes: "Pear, hazelnut crumble, and chantilly",
     diet: "vegetarian, contains nuts", 
-  },
-  {
-    name: "Fried Bread",
-    price: "8",
-    notes: "Bourbon caramel, maple pastry, cream",
-    diet: "vegetarian, contains nuts"
   }
 ]
 
@@ -301,56 +287,65 @@ export const BUBBLES = [
   }
 ]
 
-export const OLD_COCKTAILS = [
+
+export const HOUSE_COCKTAILS = [
   {
-    name: "Aperol or Elderflower Spritz",
+    name: "Aperol / Elderflower Spritz",
     price: "11",
     notes: "Choose either Aperol or St Germain & Cassis (+$1), sparkling white wine, soda"
   },
   {
-    name: "Margarita",
+    name: "Moscow Mule",
     price: "12",
-    notes: "El Jimador Blanco tequila, triple sec, lime"
+    notes: "Absolut vodka, lime, sugar, Angostura bitters, ginger beer"
   },
-  
   {
-    name: "Whiskey Sour",
+    name: "Brown Derby",
     price: "13",
-    notes: "Wild Turkey bourbon, lemon, sugar, Angostura bitters, egg white"
+    notes: "Old Forester Bourbon, grapefruit, honey, lime"
   },
   {
-    name: "Corpse Reviver #2",
-    price: "12",
-    notes: "Beefeater gin, Cointreau, Lillet Blanc, Pernod rinse, lemon"
-  },
-  {
-    name: "Daquiri",
-    price: "12",
-    notes: "Dark rum, lime, sugar"
-  },
-  {
-    name: "Negroni Sour",
+    name: "Boulevardier",
     price: "13",
-    notes: "Beefeater gin, Campari, Odd Society Amaro, orange, lemon, sugar, egg white. Cory's own creation!"
+    notes: "Old Forester Bourbon, Campari, sweet vermouth"
   },
   {
-    name: "Best Bloody Caesar",
-    price: "9 / $13",
-    notes: "Absolut vodka, house caesar mix, Clamato, pickled veg. Can be ordered as a single or double"
+    name: "Old Fashioned",
+    price: "15",
+    notes: "Woodford Reserve Bourbon, sugar, Angostura bitters"
   },
   {
-    name: "Fraser Collins",
+    name: "Nelson Iced Tea",
     price: "13",
-    notes: "Beefeater gin, lemon, sugar, cucumber, black pepper, topped off with pilsner. Mike's twist on the Tom Collins!"
+    notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
+  },
+  // {
+  //   name: "Gastown",
+  //   price: "13",
+  //   notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
+  // },
+  {
+    name: "Charlotte's Tick Bite",
+    price: "13",
+    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
+  },
+  // {
+  //   name: "Mt Hood Warmer",
+  //   price: "14",
+  //   notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
+  // },
+  {
+    name: "Lonsdale Quay",
+    price: "15",
+    notes: "Vodka, Galliano, St Germain, earl grey tea, lemon, sugar, egg white"
   },
   {
-    name: "Spanish Fashion",
-    price: "13",
-    notes: "Cazadores A\u00f1ejo tequila, Cinzano Rosso, Angostura bitters"
+    name: "Rose City Pearing",
+    price: "15",
+    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
 ]
-
-export const HOUSE_COCKTAILS = [
+export const OLD_COCKTAILS = [
   {
     name: "Aperol / Elderflower Spritz",
     price: "11",
@@ -392,63 +387,43 @@ export const HOUSE_COCKTAILS = [
     notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
 ]
-export const COCKTAILS = [
-  {
-    name: "Gastown",
-    price: "13",
-    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
-  },
-  {
-    name: "Portland Spritz",
-    price: "11",
-    notes: "Absolut vodka, St Germain, cassis, lemon, raspberries"
-  },
-  {
-    name: "Mt Hood Warmer",
-    price: "14",
-    notes: "Chai infused whiskey, Ampersand \"Nocino!\", Grand Marnier, orange, sugar, absinthe"
-  },
-  {
-    name: "Eastburn Daquiri",
-    price: "13",
-    notes: "Butter infused rum, lemon, sugar, house-made candied ginger"
-  },
-  {
-    name: "Lonsdale Quay",
-    price: "15",
-    notes: "Vodka, Galliano, St Germain, earl grey tea, lemon, sugar, egg white"
-  },
-  {
-    name: "Charlotte's Tick Bite",
-    price: "13",
-    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
-  },
-  {
-    name: "Rose City Pearing",
-    price: "15",
-    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
-  },
-  {
-    name: "Forest Park",
-    price: "14",
-    notes: "Tequila, Green Chartreuse, sugar, lime, cassis, egg white"
-  },
-]
 
 export const FEATURES = [ 
   {
-    name: "Baked Pacific Shrimp",
-    price: "12",
-    notes: "Cherry tomato, chili garlic butter",
-    diet: ""
-  },    
+    name: "Onion Chips",
+    price: "8",
+    notes: "Buttermilk batter, house ranch dip",
+    diet: "vegetarian"
+  },
   {
-    name: "Buttermilk Fried Chicken Sandwich",
-    price: "18",
-    notes: ["Available before 5pm.", "Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli. Served with fries.", "Substitute salad (+$2), truffle fries (+$2.50), or poutine (+$4)"],
+    name: "Smash Burger",
+    price: "10",
+    notes: "4oz Two Rivers house blend, Armstrong cheese, lettuce, tomato, house sauce",
+    diet: ""
+  },  
+  {
+    name: "Vancity Vegan Sandwich",
+    price: "16",
+    notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    diet: "contains nuts, vegan"
+  },
+  // {
+  //   name: "Smoked Meat Sandwich",
+  //   price: "18",
+  //   notes: ["Smoked meat, dijon aioli, shallots, pickle", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"]
+  // },
+  {
+    name: "Seared Albacore Tuna Sandwich",
+    price: "17",
+    notes: ["Kimchi, avocado, arugula, radish", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2.50), or poutine (+$4)"],
+    diet: ""
+  },
+  {
+    name: "Baked Pasta",
+    price: "16",
+    notes: "Tomato meat sauce, penne, bocconcini, herbs, bread",
     diet: ""
   }
-  
 ];
 
 export const HAPPY_HOUR_FOOD = [
@@ -565,7 +540,7 @@ export const NON_ALCOHOLIC = [
   {
     name: "Mocktails",
     price: "5",
-    notes: "PLACEHOLDER"
+    notes: "Ask your bartender what they can offer!"
   }
 ];
 
@@ -583,7 +558,11 @@ export const PACKAGED_BEER = [
     price: "3",
   },
   {
-    name: "Deschutes Mirror Pond Pale Ale",
+    name: "Deschutes Fresh Squeezed IPA",
+    price: "3.5",
+  },
+  {
+    name: "Sierra Nevada Pale Ale",
     price: "3.5",
   },
 ]
