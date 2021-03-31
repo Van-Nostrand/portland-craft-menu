@@ -5,12 +5,8 @@ function LazyFullNav({buttons, logo}) {
   const [image, setImage] = useState();
 
   const getImage = () => {
-    import(
-      /* webpackMode: "lazy" */
-      `../assets/pcTaps.jpg`
-    )
-    .then(src => setImage(src.default))
-    .catch(err => console.log(err));
+    let theImage = require('../assets/pcTaps.jpeg');
+    setImage(theImage);
   }
 
   useEffect(() => {
@@ -20,7 +16,7 @@ function LazyFullNav({buttons, logo}) {
   if(!image){
     return <div>LOADING</div>
   }
-   
+  console.log(image);
   return(
     <nav className="full-nav">
       <div className="bknd-img-wrapper">

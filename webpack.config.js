@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
@@ -33,16 +33,17 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           'style-loader',
-          'css-loader',
-          'resolve-url-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
           {
             loader: 'sass-loader',
             options: {
-              implementation: require('node-sass'),
-              sassOptions: {
-                file: "src/sass/main.scss",
-                outFile: "public/style.css"
-              }
+              implementation: require('sass'),
+              sourceMap: true
             }
           }
         ]
@@ -58,8 +59,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|svg|png|gif)$/,
-        type: "asset/resource",
-        use: "file-loader"
+        type: "asset/resource"
       },
       {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
