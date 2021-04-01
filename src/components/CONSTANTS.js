@@ -33,15 +33,21 @@ export const SNACKS = [
   
   {
     name: "Pickled Vegetables",
-    price: "6",
+    price: "7",
     notes: "House-pickled seasonally sourced selections",
     diet: "vegan, gluten free", 
   },
   {
     name: "Felix Farm Kennebec Fries",
     price: "7",
-    notes: ["Make them truffle fries for +$2½", "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs"],
+    notes: "Double-cooked Felix Farm Kennebec potatoes, garlic aioli, fresh herbs",
     diet: "gluten and dairy free", 
+  },
+  {
+    name: "Parmesan Truffle Fries",
+    price: "9",
+    notes: "Double-cooked Felix Farm Kennebec potatoes tossed in parmesan, truffle oil",
+    diet: "gluten free", 
   },
   {
     name: "Warm Mixed Olives",
@@ -56,20 +62,14 @@ export const SNACKS = [
     diet: "vegan, gluten free", 
   },
   {
-    name: "Crispy Farmcrest Chicken Crackling",
-    price: "8",
-    notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
-    diet: "gluten and dairy free", 
+    name: "Edamame",
+    price: "7",
+    notes: "Rock salt, oregano",
+    diet: "vegan, gluten free", 
   },
-  {
-    name: "Cashew Spread",
-    price: "10",
-    notes: "With pickled vegetables, fresh herbs, fresh bread, all made in-house",
-    diet: "vegan", 
-  }
 ];
 
-export const OMNIVORES = [
+export const SMALL_PLATES = [
   {
     name: "Meat Skillet Pie",
     price: "14",
@@ -77,18 +77,11 @@ export const OMNIVORES = [
     diet: ""
   },
   {
-    name: "Pacific Wild Shrimp Fritter",
+    name: "Smash Burger",
     price: "10",
-    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
-    diet: "dairy free", 
-  },
-  
-  {
-    name: "Roasted Organic Carrot and Brussel Sprouts Salad",
-    price: "10",
-    notes: "Carrots, brussel sprouts, parsnip, radish, sunflower seeds, double smoked bacon vinaigrette",
-    diet: "gluten free"
-  },
+    notes: "3.5oz patty, Armstrong cheese, lettuce, tomato, house sauce",
+    diet: ""
+  }, 
   {
     name: "Craft Poutine",
     price: "11",
@@ -96,81 +89,103 @@ export const OMNIVORES = [
     diet: "", 
   },
   {
-    name: "Crispy Humboldt Squid",
-    price: "12",
-    notes: "Battered and fried, served with black garlic aioli and house pickled veg",
-    diet: "dairy free", 
-  },
-  {
-    name: "Baked Wild Pacific Shrimp",
-    price: "13",
-    notes: "Garlic chili lime butter, tomato, jalapeno, fresh herbs, house bread",
-    diet: ""
-  }, 
-  {
-    name: "Beer-Braised Pork Ribs",
-    price: "10 for 3 or $13 for 5",
-    notes: "Peanuts, fresh herbs, tamarind soy glaze",
-    diet: "contains nuts, dairy free"
-  },
-  {
-    name: "Westcoast Crab Dip",
-    price: "15",
-    notes: "Bacon, leeks, herbs, house bread",
+    name: "Pulled Pork Poutine",
+    price: "14",
+    notes: "Craft Poutine, served with pulled pork",
     diet: "", 
   },
   {
     name: "Farmcrest Wings",
     price: "16",
-    notes: "1lb of wings, daikon, carrots, celery, garlic chili butter sauce",
+    notes: "Choose either salt & pepper or honey hot. Comes with ranch dressing",
     diet: "gluten free", 
-  }
-];
-
-export const HERBIVORES = [
-  {
-    name: "Margarita Skillet Pie",
-    price: "12",
-    notes: "Fresh tomato, fresh mozza, arugula, tomato sauce",
-    diet: "vegetarian"
   },
   {
-    name: "B.C. Brassica",
-    price: "8",
-    notes: "Broccoli, kale, cashews, garlic, herbs",
-    diet: "vegan, gluten free, contains nuts", 
-  },
-  {
-    name: "B.C. Kale Salad",
-    price: "9",
-    notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
-    diet: "vegan, gluten free", 
-  },
-  {
-    name: "Cauliflower Soup",
-    price: "12",
-    notes: "Cauliflower, cheddar crumble, buttermilk biscuit",
-    diet: "vegetarian"
-  }
-];
-
-export const LARGER = [
-  {
-    name: "Cache Creek Dry-Aged Burger",
-    price: "18",
-    notes: ["Cheddar, bacon, onion, lettuce, tomato, daikon, aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
-    diet: "", 
-  },
-  {
-    name: "Buttermilk Fried Chicken Wafflewich",
-    price: "18",
-    notes: ["Buttermilk waffle, carrot slaw, pickled jalapenos and shallots, chili citrus aioli", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
+    name: "Eggplant Caviar & Hummus",
+    price: "13",
+    notes: "House garlic bread and sourdough",
     diet: ""
   },
   {
-    name: "Farmcrest Chicken and Waffle",
-    price: "23",
-    notes: "Fried chicken breast, bacon butter, gravy",
+    name: "Daily Salad",
+    price: "MP",
+    notes: "Ask your server for details",
+    diet: ""
+  }
+];
+
+export const PIZZA = [
+  {
+    name: "Margherita",
+    price: "16",
+    notes: "Bocconcini, basil, tomato sauce",
+    diet: "vegetarian"
+  },
+  {
+    name: "Prosciutto Arugula",
+    price: "19",
+    notes: "Bocconcini, tomato sauce",
+    diet: ""
+  },
+  {
+    name: "Smoked Salmon Pizza",
+    price: "19",
+    notes: "Bocconcini, onions, capers, tomato sauce",
+    diet: ""
+  },
+  {
+    name: "Vegetarian",
+    price: "17",
+    notes: "Ask your server for today's toppings",
+    diet: "...vegetarian"
+  },
+]
+
+export const BURGERS = [
+  {
+    name: "Smash Burger",
+    price: "10",
+    notes: "3oz patty, cheddar, lettuce, pickle, special sauce",
+    diet: ""
+  },
+  {
+    name: "Portland Burger",
+    price: "14",
+    notes: "Two 3oz patties, bacon, cheddar, lettuce, tomato, friend onion, pickle, special sauce",
+    diet: ""
+  },
+  {
+    name: "Pulled Pork Burger",
+    price: "13",
+    notes: "Slaw, pickles, shallots, aioli",
+    diet: ""
+  },
+  {
+    name: "Vegan Sandwich",
+    price: "12",
+    notes: "Roasted veg, hummus, eggplant caviar, arugula, focaccia",
+    diet: "vegan"
+  },
+  {
+    name: "Smoked Salmon & Avocado Toast",
+    price: "13",
+    notes: "Avocado puree, smoked salmon, dry tomato, pickled shallots, fried capers, focaccia",
+    diet: ""
+  }
+]
+
+export const LARGE_PLATES = [
+  
+  {
+    name: "Put a Bird On It!",
+    price: "20",
+    notes: "Fried Chicken, waffle, crispy bacon, gravy, maple syrup",
+    diet: ""
+  },
+  {
+    name: "Steak Frites",
+    price: "25",
+    notes: "Wine, shallot and peppercorn steak jus",
     diet: "", 
   }
 ];
@@ -381,36 +396,7 @@ export const OLD_COCKTAILS = [
 ]
 
 export const FEATURES = [ 
-  {
-    name: "Onion Chips",
-    price: "8",
-    notes: "Buttermilk batter, house ranch dip",
-    diet: "vegetarian"
-  },
-  {
-    name: "Smash Burger",
-    price: "10",
-    notes: "4oz Two Rivers house blend, Armstrong cheese, lettuce, tomato, house sauce",
-    diet: ""
-  },  
-  {
-    name: "Vancity Vegan Sandwich",
-    price: "16",
-    notes: ["Focaccia bread, cashew spread, roasted zucchini, roasted tomato, beets, cauliflower, and greens", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
-    diet: "contains nuts, vegan"
-  },
-  {
-    name: "Seared Albacore Tuna Sandwich",
-    price: "17",
-    notes: ["Kimchi, avocado, arugula, radish", "Served with fries", "Substitute salad (+$2), half-salad-half-fries (+$3), truffle fries (+$2½), or poutine (+$4)"],
-    diet: ""
-  },
-  {
-    name: "Baked Pasta",
-    price: "16",
-    notes: "Tomato meat sauce, penne, bocconcini, herbs, bread",
-    diet: ""
-  }
+ 
 ];
 
 export const HAPPY_HOUR_FOOD = [

@@ -7,9 +7,9 @@ export const FoodMenu = ({ menuData }) => {
     <div className="food-menu menu">
       
 
-      <FoodSection 
+      {/* <FoodSection 
         section="Features" 
-        items={menuData.FEATURES} />
+        items={menuData.FEATURES} /> */}
 
       <FoodSection 
         section="Snacks" 
