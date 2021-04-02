@@ -1,12 +1,15 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
 ///////////////////////////////////////////////////
 ///////////////// WINE SECTION
 .wine-section{
   margin: 0 2rem;
-  border-top: 3px solid $portland-red;
+  border-top: 3px solid vars.$portland-red;
   width: 100%;
   font-size: 2.6rem;
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     margin: 0 auto;
   }
 
@@ -20,9 +23,9 @@
     padding-top: 3rem;
     
     font-size: 0.95em;
-    color: $portland-red;
+    color: vars.$portland-red;
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       padding-top: 0;
     }
   }
@@ -41,11 +44,11 @@
     
     font-size: 0.6em;
 
-    @include respond(tab-port){
+    @include mixins.respond(tab-port){
       padding: 0;
     }
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       padding-right: 2rem;
       font-size: 0.7em;
       align-self: flex-end;
@@ -57,11 +60,11 @@
     grid-column: 1 / span 3;
     grid-row: 2;
 
-    @include respond(tab-port){
+    @include mixins.respond(tab-port){
       padding: 1rem 0.7rem ;
     }
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       padding-left: 2rem;
       padding-right: 2rem;
     }
@@ -71,7 +74,7 @@
 .red-wine-section{ 
   grid-column: 1; 
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     grid-column: 1 / span 6;
   }
 }
@@ -79,7 +82,7 @@
 .white-wine-section{ 
   grid-column: 2; 
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     grid-column: 7 / span 6;
   }
 }
@@ -90,7 +93,7 @@
 
   justify-self: center;
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     grid-column: 8 / span 5;
     grid-row: 2;
 
@@ -111,7 +114,7 @@
 
   letter-spacing: -0.05rem;
 
-  @include respond(phone){
+  @include mixins.respond(phone){
     margin: 0;
   }
 
@@ -121,7 +124,7 @@
 
     font-size: 0.7em;
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       font-size: 0.9em;
     }
   }
@@ -134,7 +137,7 @@
 
     font-size: 0.6em;
     
-    @include respond(phone){
+    @include mixins.respond(phone){
       grid-column: 2;
       grid-row: 1;
       justify-self: start;
@@ -151,7 +154,7 @@
     font-size: 0.5em;
     
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       font-size: 0.65em;
       line-height: 2;
     }
@@ -164,7 +167,7 @@
 
     font-size: 0.65em;
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       font-size: 0.65em;
       line-height: 2;
     }

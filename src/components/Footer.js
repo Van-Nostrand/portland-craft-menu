@@ -6,9 +6,9 @@ import emailLogo from "../assets/email.svg";
 export default function Footer(){
   return(
     <div className="footer">
-      <div className='footer-address'>
+      <a href="https://www.google.ca/maps/place/Portland+Craft/@49.2518306,-123.0917292,14z/data=!4m5!3m4!1s0x0:0xd53e2e63677ed9d6!8m2!3d49.2506846!4d-123.1012487" className='footer-address'>
         Portland Craft, 3835 Main St, BC, V5V 3P1
-      </div>
+      </a>
       <div className="footer-phonenumber">
         (604) 569-2494
       </div>
@@ -25,9 +25,9 @@ export default function Footer(){
           <img src={emailLogo} />
         </a>
       </div>
-      <div className="footer-author-info">
+      <a href="https://github.com/Van-Nostrand" className="footer-author-info">
         Copyright © 2020 Daniel Doull
-      </div>
+      </a>
     </div>
   )
 }

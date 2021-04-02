@@ -1,3 +1,6 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
 /////////////////////////////////////////// 
 ////////// GENERAL MENU STYLING
 
@@ -7,9 +10,9 @@
   flex-grow: 2;
   display: flex;
   justify-content: center;
-  @include sectionBorderTop();
+  @include mixins.sectionBorderTop();
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     display: none;
   }
 }
@@ -18,5 +21,5 @@
   align-self: center;
   height: 90%;
   width: 0.2rem;
-  background-color: $portland-red;
+  background-color: vars.$portland-red;
 }

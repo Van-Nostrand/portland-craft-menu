@@ -1,3 +1,6 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
 .full-nav{
   // position: fixed;
   box-sizing: content-box;
@@ -5,13 +8,13 @@
 
   width: inherit;
   
-  height: $desktop-nav-height;
+  height: vars.$desktop-nav-height;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     display: none;
   }
 }
@@ -19,10 +22,10 @@
 .bknd-img-wrapper{
   position: absolute;
   width: 100%;
-  height: $desktop-nav-height;
+  height: vars.$desktop-nav-height;
   overflow: hidden;
 
-  @include respond(big-desk){
+  @include mixins.respond(big-desk){
     background-color: purple;
   }
 
@@ -32,7 +35,7 @@
     filter: brightness(45%);
     transform: translate(-10rem, -52rem) rotate(-12deg);
 
-    @include respond(desktop){
+    @include mixins.respond(desktop){
       transform: translate(-10rem, -58rem) rotate(-12deg);
     }
   }
@@ -40,32 +43,32 @@
 
 .secondary-nav-scroll-target{
   position: absolute;
-  top: $desktop-secondary-nav-top;
+  top: vars.$desktop-secondary-nav-top;
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     display: none;
   }
 }
 
 .secondary-nav{
   position: fixed;
-  top: -$desktop-secondary-nav-height ;
+  top: -(vars.$desktop-secondary-nav-height) ;
 
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: $desktop-secondary-nav-height;
-  background-color: $menu-background-color;
+  height: vars.$desktop-secondary-nav-height;
+  background-color: vars.$menu-background-color;
   transition: transform 0.3s;
 
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     display: none;
   }
 
   .bknd-img-wrapper{
-    height: $desktop-secondary-nav-height;
+    height: vars.$desktop-secondary-nav-height;
 
     & img{
       transform: translate(0rem, -17rem);
@@ -75,7 +78,7 @@
 
 .secondary-nav-open{
   transform: translateY(100%);
-  @include respond(tab-port){
+  @include mixins.respond(tab-port){
     display: none;
   }
 }

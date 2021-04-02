@@ -1,3 +1,6 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
 .nav-hat-wrapper{
   position: fixed;
   // width: 100vw;
@@ -14,16 +17,16 @@
 
     font-size: 2.6em;
    
-    @include newHeadingShadow();
+    @include mixins.newHeadingShadow();
 
   }
 
   button:hover {
-    color: $light-font-hover;
+    color: vars.$light-font-hover;
   }
 
   button:active{
-    color: $portland-off-white;
+    color: vars.$portland-off-white;
     transform: translateY(0.1rem);
   }
 
@@ -32,19 +35,19 @@
       position: relative;
       height: auto;
       width: auto;
-      margin: 0 $desktop-side-margin/2 0 $desktop-side-margin;
+      margin: 0 vars.$desktop-side-margin/2 0 vars.$desktop-side-margin;
   
-      @include respond(phone){
-        height: $phone-nav-logo-height;
+      @include mixins.respond(phone){
+        height: vars.$phone-nav-logo-height;
         padding: 0;
         margin-right: 0;
-        margin-left: $phone-side-margin;
+        margin-left: vars.$phone-side-margin;
       }
     }
 
     .button-group{
       position: relative;
-      margin: 0 $desktop-side-margin 0 $desktop-side-margin;
+      margin: 0 vars.$desktop-side-margin 0 vars.$desktop-side-margin;
       width: 100%;
 
       display: flex;
@@ -60,7 +63,7 @@ nav{ z-index: 1;}
 nav div{ z-index: 2;}
 
 button.button-current-page{
-  border-bottom: 3px solid $portland-red;
+  border-bottom: 3px solid vars.$portland-red;
   box-sizing: content-box;
   margin-bottom: -3px;
 }

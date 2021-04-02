@@ -1,7 +1,10 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
 
 .drinks-menu{
   position: relative;
-  top: $desktop-nav-height; 
+  top: vars.$desktop-nav-height; 
   margin: 3rem auto;
   width: 76vw;
 
@@ -11,14 +14,14 @@
 
   font-size: 2.5rem;
 
-  @include respond(tab-port){
-    top: $mobile-nav-height;
+  @include mixins.respond(tab-port){
+    top: vars.$mobile-nav-height;
     width: unset;
     padding: 1rem;
     grid-template-columns: repeat(12, 1fr);
   }
 
-  @include respond(phone){
+  @include mixins.respond(phone){
     display: flex;
     flex-flow: column;
     align-items: stretch;
@@ -27,7 +30,7 @@
     padding-bottom: 1rem;
     font-weight: 600;
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       font-size: 1.2em;
       margin-top: 2rem;
       margin-left: 1rem;
@@ -40,7 +43,7 @@
     flex-flow: column;
     align-items: stretch;
 
-    @include respond(phone){
+    @include mixins.respond(phone){
       padding-left: 2rem;
       padding-right: 2rem;
       margin-bottom: 2rem;

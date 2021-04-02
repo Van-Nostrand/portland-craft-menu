@@ -1,31 +1,34 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
 .nav-hat-wrapper .mobile-nav{
   position: fixed;
   top: 0;
   width: 100vw;
-  height: $mobile-nav-height;
+  height: vars.$mobile-nav-height;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: stretch;
   align-items: center;
   
-  background-color: $alt-dark-font;
+  background-color: vars.$alt-dark-font;
 
   &__logo.logo{
     display: inline-block;
-    height: $mobile-nav-height - 1.6rem;
-    margin: 0 0 0 $mobile-side-margin;
+    height: vars.$mobile-nav-height - 1.6rem;
+    margin: 0 0 0 vars.$mobile-side-margin;
 
-    background-color: $alt-dark-font;
+    background-color: vars.$alt-dark-font;
 
-    @include respond(phone){
-      height: $phone-nav-logo-height;
-      margin: 0.5rem 0 0.5rem $phone-side-margin;
+    @include mixins.respond(phone){
+      height: vars.$phone-nav-logo-height;
+      margin: 0.5rem 0 0.5rem vars.$phone-side-margin;
     }
 
-    @include respond(small-phone){
-      height: $phone-nav-logo-height - 0.8rem;
-      margin: 0.5rem 0 0.5rem ($phone-side-margin)-0.5rem;
+    @include mixins.respond(small-phone){
+      height: vars.$phone-nav-logo-height - 0.8rem;
+      margin: 0.5rem 0 0.5rem (vars.$phone-side-margin)-0.5rem;
     }
 
     img{
@@ -43,34 +46,34 @@
 
     margin: 0;
 
-    @include respond(tab-land){
-      margin: 0 ($mobile-side-margin + 1rem );
+    @include mixins.respond(tab-land){
+      margin: 0 (vars.$mobile-side-margin + 1rem );
     }
     
-    @include respond(phone){
-      margin-right: $phone-side-margin;
-      margin-left: $phone-side-margin*2;
+    @include mixins.respond(phone){
+      margin-right: vars.$phone-side-margin;
+      margin-left: vars.$phone-side-margin*2;
     }
 
-    @include respond(small-phone){
-      margin-left: $phone-side-margin;
-      margin-right: $phone-side-margin - 0.5rem;
+    @include mixins.respond(small-phone){
+      margin-left: vars.$phone-side-margin;
+      margin-right: vars.$phone-side-margin - 0.5rem;
     }
     
     button{
       font-size: 2.6em;
-      background-color: $alt-dark-font;
+      background-color: vars.$alt-dark-font;
 
       // @include newHeadingShadow();
       
-      @include respond(phone){
+      @include mixins.respond(phone){
         margin-left: 0.5rem;
         margin-top: 0.6rem;
 
         font-size: 2.4em;
       }
 
-      @include respond(small-phone){
+      @include mixins.respond(small-phone){
         font-size: 2em;
       }
     }

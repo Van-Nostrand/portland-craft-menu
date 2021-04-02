@@ -1,3 +1,5 @@
+@use '../abstracts/vars';
+
 // generalized responsive design breakpoints
 @mixin respond($breakpoint){
   @if $breakpoint == small-phone {
@@ -25,14 +27,14 @@
 
 @mixin fontShadow(){
   text-shadow: 
-    0.3rem 0.3rem $button-font-shadow, 
-    -1px 0 1px $button-font-outline, 
-    0 -1px 1px $button-font-outline;
+    0.3rem 0.3rem vars.$button-font-shadow, 
+    -1px 0 1px vars.$button-font-outline, 
+    0 -1px 1px vars.$button-font-outline;
 }
 
 @mixin newHeadingShadow(){
   color: white;
-  text-shadow: 0.06em 0em 0.03em $goth-lavender, 0.1em 0 $potential-blue;
+  text-shadow: 0.06em 0em 0.03em vars.$goth-lavender, 0.1em 0 vars.$potential-blue;
 }
 
 @mixin desktopPseudoDivider(){
@@ -41,7 +43,7 @@
   left: 50%;
   top: 1.5rem;
 
-  border: 0.3rem solid $portland-red;
+  border: 0.3rem solid vars.$portland-red;
   height: 0.2rem;
   width: 88%;
   margin: -3rem -44%;
@@ -53,7 +55,7 @@
   left: 50%;
   top: 1rem;
 
-  border: 0.4rem solid $portland-red;
+  border: 0.4rem solid vars.$portland-red;
   height: 0.3rem;
   width: 90%;
   margin: -2rem -45%;
@@ -65,11 +67,11 @@
   left: 50%;
   top: 1rem;
 
-  border-top: 0.4rem solid $portland-red;  
-  width: $width or 90%;
-  margin: -2rem (-$width/2 or -45%);
+  border-top: 0.4rem solid vars.$portland-red;  
+  width: vars.$width or 90%;
+  margin: -2rem (-vars.$width/2 or -45%);
 }
 
 @mixin sectionBorderTop(){
-  border-top: 3px solid $portland-red;
+  border-top: 3px solid vars.$portland-red;
 }

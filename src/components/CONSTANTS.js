@@ -16,12 +16,8 @@ export const SIDES = [
     price: "5"
   },
   {
-    name: "Chicken Gravy",
+    name: "Gravy",
     price: "2"
-  },
-  {
-    name: "Waffle",
-    price: "5"
   },
   {
     name: "Fried Chicken Breast",

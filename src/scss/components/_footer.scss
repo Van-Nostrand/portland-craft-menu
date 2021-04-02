@@ -1,7 +1,9 @@
+@use '../abstracts/vars';
+@use '../abstracts/mixins';
+
 .footer{
   position: relative;
-  top: $desktop-nav-height; //if this changes, content needs adjusting too
-  height: 25rem;
+  top: vars.$desktop-nav-height; //if this changes, content needs adjusting too
   width: 76vw;
   margin: 0 auto;
 
@@ -10,9 +12,11 @@
   flex-flow: column;
   align-items: flex-start;
 
-  font-size: 2rem;
+  justify-content: end;
 
-  @include respond(tab-port){
+  font-size: 1.3rem;
+
+  @include mixins.respond(tab-port){
     width: 100%;
     padding: 2rem;
 
@@ -21,28 +25,62 @@
     justify-content: space-between;
   }
 
+  & a {
+    color: vars.$brown-q;
+    text-decoration: none;
+  }
+  & a:link {
+    color: vars.$brown-q;
+  }
+  & a:visited {
+    color: vars.$brown-q;
+  }
+  & a:hover {
+    color: vars.$brown-q;
+  }
+  & a:active {
+    color: vars.$brown-q;
+  }
+  & a:focus {
+    color: vars.$brown-q;
+  }
+
+  & div {
+    margin-top: 1rem;
+  }
+
   &-social{
 
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
+    // justify-content: end;
 
-    @include respond(tab-port){
+    @include mixins.respond(tab-port){
       align-items: flex-start;
     }
 
-    @include respond(phone){
-      flex-flow: row;
-    }
+    // @include mixins.respond(phone){
+    //   flex-flow: row;
+    // }
 
     &-link{
 
       margin-right: 2rem;
   
       img{
-        height: 5rem;
+        height: 3rem;
       }
     } 
   }
+
+  &-phonenumber {
+    margin-bottom: 1rem;
+  }
+
+  &-author-info {
+    margin-top: 1rem;
+  }
+ 
    
 }

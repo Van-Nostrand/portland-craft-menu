@@ -1,19 +1,19 @@
 
-@import "abstracts/variables";
-@import "abstracts/mixins";
+// @use "abstracts/vars";
+// @use "abstracts/mixins";
 
-@import "base/base";
+@use "base/base";
 
-@import "components/navhat";
-@import "components/full-nav";
-@import "components/mobile-nav";
-@import "components/footer";
-@import "components/cocktails";
-@import "components/food";
-@import "components/wine";
-@import "components/packaged-beer";
+@use "components/navhat";
+@use "components/full-nav";
+@use "components/mobile-nav";
+@use "components/footer";
+@use "components/cocktails";
+@use "components/food";
+@use "components/wine";
+@use "components/packaged-beer";
 
-@import "pages/food-menu";
-@import "pages/drinks-menu";
-@import "pages/menu";
-@import "pages/happy-hour";
+@use "pages/food-menu";
+@use "pages/drinks-menu";
+@use "pages/menu";
+@use "pages/happy-hour";
