@@ -40,3 +40,6 @@ export default function Footer(){
  * The squarespace site has insta/facebook separate from email
  * has an email signup form
  */
+
+//Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G532F Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/6.2 Chrome/56.0.2924.87 Mobile Safari/537.36
+//Mozilla/5.0 (Linux; Android 10; SAMSUNG SM-A217F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/11.0 Chrome/75.0.3770.143 Mobile Safari/537.36

@@ -49,26 +49,26 @@
     margin-top: 1rem;
   }
 
-  &-social{
+  &-address {
+    font-size: 1.3em;
+  }
+
+  &-social {
 
     display: flex;
     flex-flow: row;
     align-items: center;
-    // justify-content: end;
 
     @include mixins.respond(tab-port){
       align-items: flex-start;
     }
 
-    // @include mixins.respond(phone){
-    //   flex-flow: row;
-    // }
 
-    &-link{
+    &-link {
 
       margin-right: 2rem;
   
-      img{
+      img {
         height: 3rem;
       }
     } 
@@ -76,11 +76,10 @@
 
   &-phonenumber {
     margin-bottom: 1rem;
+    font-size: 1.5em;
   }
 
   &-author-info {
     margin-top: 1rem;
   }
- 
-   
 }
