@@ -10,8 +10,6 @@
   display: grid;
   grid-template-columns: repeat(4, 25%);
 
-  
-
   color: $brown-q;
   font-size: 2.5rem;
 
@@ -43,32 +41,7 @@
   section.snacks .section__title{
     color: $potential-blue;
   }
-  section.omnivores .section__title{
-    color: $portland-red;
-  }
-  section.herbivores .section__title{
-    color: $maybe-green;
-  }
-
-  // positions "sides" beside "sweets"
-  // section:nth-last-child(2){
-  //   grid-column: 1;
   
-  //   @include respond(tab-port){
-  //     grid-column: unset;
-  //     margin-right: 0;
-  //   }
-  // }
-
-  // //positions "sides" beside "sweets"
-  // section:nth-last-child(1){
-  //   grid-column: 2;
-  
-  //   @include respond(tab-port){
-  //     grid-column: unset;
-  //     margin-left: 0;
-  //   }
-  // }
 
   ///////////////////////////////////////
   ////////// SWEETS
@@ -138,4 +111,50 @@
   .herbivores .section__title{
     color: $maybe-green;
   }
+}
+
+.snacks {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.smallplates {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+.pizza {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+.burgers { 
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+.largeplates {
+  grid-column: 1;
+  grid-row: 3;
+
+  .section__list {
+    max-width: 95%;
+
+    @include respond(tab-port){
+      max-width: unset;
+    }
+  }
+}
+.sweets {
+  grid-column: 3;
+  grid-row: 3;
+
+  .section__list {
+    max-width: 95%;
+
+    @include respond(tab-port){
+      max-width: unset;
+    }
+  }
+}
+.sides {
+  grid-column: 4;
+  grid-row: 3;
 }

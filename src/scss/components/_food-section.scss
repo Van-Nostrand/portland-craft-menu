@@ -41,16 +41,13 @@
 
   .section__list{
 
-    // display: grid;
-    // grid-template-columns: 25% 25% 25% 25%;
-
     display: flex;
     flex-flow: column wrap;
     justify-content: start;
     max-height: 30rem;
+    max-width: 45%;
 
     padding: 1rem;
-    // justify-content: center;
 
     @include respond(tab-port){
       display: grid;
@@ -58,6 +55,9 @@
       justify-content: space-around;
       align-items: stretch;
       
+
+      max-height: unset;
+      max-width: unset;
       text-align: start;
     }
     
@@ -67,35 +67,4 @@
       align-items: stretch;
     }
   }
-}
-
-.features {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.snacks {
-  grid-column: 3 / span 2;
-  grid-row: 1;
-}
-
-.omnivores {
-  grid-column: 1 / span 3;
-  grid-row: 2;
-}
-.herbivores {
-  grid-column: 4;
-  grid-row: 2;
-}
-.largeplates {
-  grid-column: 1;
-  grid-row: 3;
-}
-.sweets {
-  grid-column: 3;
-  grid-row: 3;
-}
-.sides {
-  grid-column: 4;
-  grid-row: 3;
 }

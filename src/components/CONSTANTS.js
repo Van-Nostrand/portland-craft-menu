@@ -70,18 +70,7 @@ export const SNACKS = [
 ];
 
 export const SMALL_PLATES = [
-  {
-    name: "Meat Skillet Pie",
-    price: "14",
-    notes: "Genoa salami, tomato sauce, herb oil",
-    diet: ""
-  },
-  {
-    name: "Smash Burger",
-    price: "10",
-    notes: "3.5oz patty, Armstrong cheese, lettuce, tomato, house sauce",
-    diet: ""
-  }, 
+
   {
     name: "Craft Poutine",
     price: "11",
@@ -128,7 +117,7 @@ export const PIZZA = [
     diet: ""
   },
   {
-    name: "Smoked Salmon Pizza",
+    name: "Smoked Salmon",
     price: "19",
     notes: "Bocconcini, onions, capers, tomato sauce",
     diet: ""
@@ -191,12 +180,7 @@ export const LARGE_PLATES = [
 ];
 
 export const SWEETS = [
-  {
-    name: "Crème Brûlée",
-    price: '8',
-    notes: 'Szechuan peppercorn infused',
-    diet: 'vegetarian'
-  },
+
   {
     name: "Dark Chocolate Mousse",
     price: "9", 
@@ -209,12 +193,6 @@ export const WHITE_WINE = [
   {
     name: "Tightrope",
     varietal: "Pinot Gris",
-    sizes: [10, 14, 42],
-    notes: "B.C."
-  },
-  {
-    name: "Bonamici",
-    varietal: "Rose",
     sizes: [10, 14, 42],
     notes: "B.C."
   },
@@ -281,12 +259,6 @@ export const RED_WINE = [
     sizes: [12, 16, 48],
     notes: "Cal."
   },
-  {
-    name: "Kanazawa",
-    varietal: "Merlot",
-    sizes: [12, 16, 48],
-    notes: "B.C."
-  }
 ]
 
 export const BUBBLES = [
@@ -301,7 +273,6 @@ export const BUBBLES = [
     notes: "B.C."
   }
 ]
-
 
 export const HOUSE_COCKTAILS = [
   {
@@ -352,6 +323,7 @@ export const HOUSE_COCKTAILS = [
     notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
   }
 ]
+
 export const OLD_COCKTAILS = [
   {
     name: "Aperol / Elderflower Spritz",
@@ -418,36 +390,13 @@ export const HAPPY_HOUR_FOOD = [
     notes: "Roasted in-house with our own spice blend",
     diet: "vegan, gluten free", 
   },
-  {
-    name: "Crispy Farmcrest Chicken Crackling",
-    price: "5",
-    notes: "Fried chicken skin seasoned with a blend of lime, chilis, lemongrass, herbs",
-    diet: "gluten and dairy free", 
-  },
+ 
   {
     name: "Craft Poutine",
     price: "8",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
     diet: "", 
   },
-  {
-    name: "Westcoast Crab Dip",
-    price: "12",
-    notes: "Bacon, leeks, herbs, house bread",
-    diet: "", 
-  },
-  {
-    name: "B.C. Kale Salad",
-    price: "7",
-    notes: "Tomato, radish, pumpkin seeds, balsamic soy dressing",
-    diet: "vegan, gluten free", 
-  },
-  {
-    name: "Pacific Wild Shrimp Fritter",
-    price: "8",
-    notes: "Corn, soy bean, herbs, spicy black garlic aioli",
-    diet: "dairy free", 
-  }
 ];
 
 export const HAPPY_HOUR = [

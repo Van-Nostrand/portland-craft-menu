@@ -5,27 +5,26 @@ export const FoodMenu = ({ menuData }) => {
   return(<>
     <p>All items are nut-free unless specified</p>
     <div className="food-menu menu">
-      
-
-      {/* <FoodSection 
-        section="Features" 
-        items={menuData.FEATURES} /> */}
 
       <FoodSection 
         section="Snacks" 
         items={menuData.SNACKS} />
 
       <FoodSection
-        section="Omnivores"
-        items={menuData.OMNIVORES} />
+        section="Small Plates"
+        items={menuData.SMALL_PLATES} />
 
       <FoodSection
-        section="Herbivores"
-        items={menuData.HERBIVORES} />
+        section="Burgers"
+        items={menuData.BURGERS} />
+      
+      <FoodSection
+        section="Pizza"
+        items={menuData.PIZZA} />
       
       <FoodSection 
         section="Large Plates" 
-        items={menuData.LARGER} />
+        items={menuData.LARGE_PLATES} />
 
       <FoodSection 
         section="Sweets" 
@@ -61,6 +60,23 @@ const FoodSection = ({section, items}) => {
       <div className="section__title">
         {section}
       </div>
+      {
+        section == "Burgers" ? 
+          <div className="burger-addons">
+            <div className="burger-addons-title">
+              Add-ons for any burger or sandwich!
+            </div>
+            <div className="burger-addons-options">
+              <div>Fries $4</div>
+              <div>Parmesan Truffle Fries $6</div>
+              <div>Poutine $7</div>
+              <div>Gravy $2</div>
+              <div>Cheese $2½</div>
+              <div>Bacon $2</div>
+            </div>
+          </div>
+        : <></>
+      }
       <ul className="section__list">
         {foods}
       </ul>
