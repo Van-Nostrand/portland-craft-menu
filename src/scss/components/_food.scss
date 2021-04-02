@@ -1,4 +1,5 @@
 ////////////////////////////////////////////////
+//////////// FOOD SECTION
 .food-section{
   
   position: relative;
@@ -68,3 +69,86 @@
     }
   }
 }
+
+
+
+//////////////////////////////////// 
+////////// FOOD ITEMS
+.food-item{
+  position: relative;
+  display: grid;
+  margin: 1rem;
+
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto 1fr;
+  row-gap: 0.1rem;
+  
+  font-size: 0.6em;
+
+  // width: 30rem;
+  
+  @include respond(big-desk){
+    margin: 1rem 2rem;
+
+    font-size: 0.8em;
+  }
+
+  @include respond(tab-port){
+    max-height: unset;
+    align-content: center;
+    width: unset;
+
+  }
+
+  @include respond(phone){
+    max-width: unset;
+
+    font-size: 0.9em;
+  }
+
+  .item-name{
+    display: inline-block;
+    
+    letter-spacing: 0;
+    grid-column: 1 / span 2;
+    grid-row: 1 ;
+    justify-self: start;
+
+    font-size: 1.08em;
+
+  }
+
+  .item-price{
+    display: inline-block;
+
+    text-align: end;
+    grid-column: 3;
+    grid-row: 1;
+
+    font-size: 0.9em;
+    padding-right: 0.7rem;
+
+    @include respond(tab-port){
+      padding-right: 0;
+    }
+  } 
+  
+  .item-notes{
+
+    justify-self: start;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+
+    font-size: 0.8em;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .diet{
+    font-size: 0.7em;
+    font-style: italic;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}
+
