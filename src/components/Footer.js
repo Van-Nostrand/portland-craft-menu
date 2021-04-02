@@ -26,7 +26,7 @@ export default function Footer(){
         </a>
       </div>
       <div className="footer-author-info">
-        Copyright 2020 Daniel Doull
+        Copyright © 2020 Daniel Doull
       </div>
     </div>
   )

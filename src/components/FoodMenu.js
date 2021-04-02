@@ -60,26 +60,29 @@ const FoodSection = ({section, items}) => {
       <div className="section__title">
         {section}
       </div>
+
       {
         section == "Burgers" ? 
           <div className="burger-addons">
             <div className="burger-addons-title">
-              Add-ons for any burger or sandwich!
+              Burger add-ons
             </div>
             <div className="burger-addons-options">
-              <div>Fries $4</div>
-              <div>Parmesan Truffle Fries $6</div>
-              <div>Poutine $7</div>
-              <div>Gravy $2</div>
-              <div>Cheese $2½</div>
-              <div>Bacon $2</div>
+              <div>Fries • $4</div>
+              <div>Parmesan Truffle Fries • $6</div>
+              <div>Poutine • $7</div>
+              <div>Gravy • $2</div>
+              <div>Cheese • $2½</div>
+              <div>Bacon • $2</div>
             </div>
           </div>
         : <></>
       }
+      
       <ul className="section__list">
         {foods}
       </ul>
+      
     </section>
   );
 }

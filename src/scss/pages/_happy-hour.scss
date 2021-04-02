@@ -22,7 +22,7 @@
   grid-template-rows: repeat(6, auto);
   justify-items: center;
 
-  background-color: $menu-background-color;
+  // background-color: $menu-background-color;
   color: $brown-q;
 
   @include respond(tab-port){

@@ -16,7 +16,7 @@ export const HappyHour = ({menuData}) => {
           </div>
           <div className="section__hh-subtitle">
             <div className="hh-subtitle-time">
-              4-6pm<br />Tuesday - Thursday
+              3-5pm<br />Tuesday - Thursday
             </div>
             
             <div className="hh-subtitle-time">
