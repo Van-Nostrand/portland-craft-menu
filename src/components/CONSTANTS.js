@@ -178,10 +178,10 @@ export const LARGE_PLATES = [
 export const SWEETS = [
 
   {
-    name: "Dark Chocolate Mousse",
-    price: "9", 
-    notes: "Pear, hazelnut crumble, and chantilly",
-    diet: "vegetarian, contains nuts", 
+    name: "Bread Pudding",
+    price: "5", 
+    notes: "Pear jam, whipped cream",
+    diet: "vegetarian", 
   }
 ]
 
@@ -465,22 +465,27 @@ export const NON_ALCOHOLIC = [
 export const PACKAGED_BEER = [
   {
     name: "Steamworks Kolsch",
-    price: "3½",
+    size: "473ml",
+    price: ["3¾","13"]
   },
   {
     name: "Steamworks Hazy Pale Ale",
-    price: "3",
+    size: "355ml",
+    price: ["3½","12"]
   },
   {
     name: "Parkside Dawn Pilsner",
-    price: "3",
+    size: "355ml",
+    price: ["3½","12"]
   },
   {
     name: "Deschutes Fresh Squeezed IPA",
-    price: "3½",
+    size: "355ml",
+    price: ["4","14"]
   },
   {
     name: "Sierra Nevada Pale Ale",
-    price: "3½",
+    size: "355ml",
+    price: ["4","14"]
   },
 ]

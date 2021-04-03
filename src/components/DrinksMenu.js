@@ -47,6 +47,7 @@ export const DrinksMenu = ({menuData}) => {
     return <PackagedBeer 
               name={beer.name} 
               price={beer.price}
+              size={beer.size}
               key={`packaged-beer-${i}`} />
   });
 

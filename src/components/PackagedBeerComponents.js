@@ -19,14 +19,19 @@ export const PackagedBeerSection = ({beers}) => {
   )
 }
 
-export const PackagedBeer = ({name, price}) => {
+export const PackagedBeer = ({name, price, size}) => {
+
+  let prices = price.map((p, i) => {
+    if(i === 0) return <div key={`togo${name}price${i}`}>single {size} can: ${p}</div>;
+    if(i === 1) return <div key={`togo${name}price${i}`}>4 pack: ${p}</div>;
+  })
   return(
     <li className="menu-item packaged-beer" >
       <div className="packaged-beer-name item-name">
         {name}
       </div>
       <div className="packaged-beer-price item-price">
-        ${/[.50]$/.test(price) ? <>{price.split(".")[0]}&#189;</> : <>{price}</>}
+        {prices}
       </div>
     </li>
   )

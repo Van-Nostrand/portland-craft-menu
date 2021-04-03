@@ -11,6 +11,8 @@
 
 
   border-top: 3px solid vars.$portland-red;
+  // font-size: 1rem;
+  font-size: 0.7em;
 
   @include mixins.respond(tab-port){
     grid-column: 8 / span 5;
@@ -24,7 +26,7 @@
   }
 
   @include mixins.respond(phone){
-    font-size: 1.2em;
+    // font-size: 1.2em;
   }
 
   &-title{
@@ -33,14 +35,16 @@
     // justify-self: center;
 
     // padding-top: 3rem;
+    // width: 50%;
 
     color: vars.$portland-red;
-    // font-size: 1.2em;
+    font-size: 2.5rem;
+    grid-column: 1 / span 2;
   }
 
   p{
     font-style: italic;
-    font-size: 0.7em;
+    // font-size: 0.7em;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -56,7 +60,7 @@
 
     @include mixins.respond(phone){
       text-align: start;
-      font-size: 0.8em;
+      // font-size: 0.8em;
     }
     
   }
@@ -70,7 +74,7 @@
   &-list{
     grid-column: 1 / span 3;
     grid-row: 4;
-    width: 70%;
+    width: 75%;
     justify-self: center;
     
     display: flex;
@@ -85,7 +89,7 @@
 
     .packaged-beer{
       display: grid;
-      grid-template-columns: 80% 20%;
+      grid-template-columns: 50% 50%;
       
       justify-self: center;
       margin: 0.3rem 2rem;
@@ -93,14 +97,18 @@
       &-name{
         grid-column: 1;
 
-        font-size: 0.8em;
+        // font-size: 0.8em;
       }
 
       &-price{
         grid-column: 2;
         justify-self: end;
 
-        font-size: 0.7em;
+        display: flex;
+        flex-flow: column nowrap;
+
+
+        // font-size: 0.7em;
       }
     }
   }
