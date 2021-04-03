@@ -1,0 +1,17 @@
+/////////////////// 
+.non-alc-section {
+
+  // font-size: 2rem;
+  &-title {
+
+  }
+
+  &-list {
+    li {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding-right: 3rem;
+    }
+  }
+}

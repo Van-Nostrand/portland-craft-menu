@@ -17,7 +17,7 @@
   font-size: 1.3rem;
 
   @include mixins.respond(tab-port){
-    width: 100%;
+    // width: 100%;
     padding: 2rem;
 
     flex-flow: column;

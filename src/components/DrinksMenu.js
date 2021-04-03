@@ -2,6 +2,7 @@ import React from "react";
 import { PackagedBeerSection, PackagedBeer } from "./PackagedBeerComponents";
 import { Wine, WineSection } from "./WineComponents";
 import { Cocktail, CocktailSection } from "./CocktailComponents";
+import { NonAlcSection, NonAlcDrink } from "./NonAlcDrink";
 
 export const DrinksMenu = ({menuData}) => {
 
@@ -40,7 +41,8 @@ export const DrinksMenu = ({menuData}) => {
               itemName={cocktail.name}
               price={cocktail.price}
               notes={cocktail.notes} 
-              key={`cocktail-${i}`} />
+              key={`cocktail-${i}`} 
+            />
   });
 
   let packagedBeer = menuData.PACKAGED_BEER.map((beer, i) => {
@@ -48,8 +50,17 @@ export const DrinksMenu = ({menuData}) => {
               name={beer.name} 
               price={beer.price}
               size={beer.size}
-              key={`packaged-beer-${i}`} />
+              key={`packaged-beer-${i}`} 
+            />
   });
+
+  let nonAlc = menuData.NON_ALCOHOLIC.map((drank, i) => {
+    return <NonAlcDrink 
+              name={drank.name}
+              price={drank.price}
+              key={`nonalc-${i}`}
+            />
+  })
 
   return (
     <div className="menu drinks-menu">
@@ -57,23 +68,32 @@ export const DrinksMenu = ({menuData}) => {
         <WineSection 
           sectionTitle="Red" 
           sectionSizeString="5oz, 8oz, bottle" 
-          wines={redwines} />
+          wines={redwines} 
+        />
 
         <WineSection 
           sectionTitle="White" 
           sectionSizeString="5oz, 8oz, bottle" 
-          wines={whitewines} />
+          wines={whitewines} 
+        />
 
         <WineSection 
           sectionTitle="Bubbly" 
           sectionSizeString="5oz, bottle" 
-          wines={bubblies} />
+          wines={bubblies} 
+        />
 
         <CocktailSection
-          cocktails={cocktails} />
+          cocktails={cocktails} 
+        />
 
         <PackagedBeerSection 
-          beers={packagedBeer} />
+          beers={packagedBeer} 
+        />
+
+        <NonAlcSection 
+          dranks={nonAlc}
+        />
       
     </div>
   )

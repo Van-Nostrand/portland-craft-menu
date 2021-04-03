@@ -16,7 +16,8 @@ import {
   LARGE_PLATES,
   SWEETS,
   SIDES,
-  PACKAGED_BEER
+  PACKAGED_BEER,
+  NON_ALCOHOLIC
 } from "./CONSTANTS";
 
 export const PageLoader = ({ pageTitle}) => {
@@ -27,7 +28,7 @@ export const PageLoader = ({ pageTitle}) => {
       currentPage = <FoodMenu menuData={{SNACKS,SMALL_PLATES,LARGE_PLATES,PIZZA,BURGERS,SWEETS,SIDES}} />;
       break;
     case /drinks/.test(pageTitle): 
-      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, PACKAGED_BEER}} />;
+      currentPage = <DrinksMenu menuData={{WHITE_WINE, RED_WINE, BUBBLES, HOUSE_COCKTAILS, PACKAGED_BEER, NON_ALCOHOLIC}} />;
       break;
     case /specials/.test(pageTitle): 
       currentPage = <HappyHour menuData={[HAPPY_HOUR, HAPPY_HOUR_FOOD]} />;

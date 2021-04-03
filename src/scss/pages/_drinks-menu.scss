@@ -43,6 +43,8 @@
     flex-flow: column;
     align-items: stretch;
 
+    font-size: 1.8rem;
+
     @include mixins.respond(phone){
       padding-left: 2rem;
       padding-right: 2rem;
@@ -55,4 +57,7 @@
   display: flex;
   flex-flow: column;
   align-items: stretch;
+
+  border-top: 3px solid vars.$portland-red;
 }
+

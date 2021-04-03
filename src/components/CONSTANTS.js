@@ -301,13 +301,11 @@ export const HOUSE_COCKTAILS = [
     price: "13",
     notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
   },
- 
   {
     name: "Charlotte's Tick Bite",
     price: "13",
     notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
   },
-
   {
     name: "Lonsdale Quay",
     price: "15",
@@ -438,6 +436,11 @@ export const HAPPY_HOUR = [
 
 export const NON_ALCOHOLIC = [
   {
+    name: "Hoochy Booch Kombucha",
+    price: "8",
+    notes: `Bellini (peach orange apricot) or Blue Valentine ("blue slurpee")`,
+  },
+  {
     name: "Pop",
     price: "3½",
     notes: "Pepsi, Diet Pepsi, Sprite, Ginger Ale, Soda, Tonic"
@@ -462,6 +465,10 @@ export const NON_ALCOHOLIC = [
   }
 ];
 
+export const KOMBUCHA = [
+  
+];
+
 export const PACKAGED_BEER = [
   {
     name: "Steamworks Kolsch",
@@ -470,6 +477,16 @@ export const PACKAGED_BEER = [
   },
   {
     name: "Steamworks Hazy Pale Ale",
+    size: "355ml",
+    price: ["3½","12"]
+  },
+  {
+    name: "Main St Pilsner",
+    size: "355ml",
+    price: ["3½","12"]
+  },
+  {
+    name: "Main St Fruit Bomb Sour",
     size: "355ml",
     price: ["3½","12"]
   },
