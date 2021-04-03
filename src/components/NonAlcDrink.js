@@ -13,7 +13,7 @@ export const NonAlcSection = ({dranks}) => {
   )
 }
 
-export const NonAlcDrink = ({name, price}) => {
+export const NonAlcDrink = ({name, price, notes}) => {
 
   return(
     <li className="menu-item non-alc" >
@@ -22,6 +22,9 @@ export const NonAlcDrink = ({name, price}) => {
       </div>
       <div className="non-alc-price item-price">
         {price}
+      </div>
+      <div className="non-alc-notes item-notes">
+        {notes}
       </div>
     </li>
   )

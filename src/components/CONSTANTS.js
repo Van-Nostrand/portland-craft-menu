@@ -441,6 +441,11 @@ export const NON_ALCOHOLIC = [
     notes: `Bellini (peach orange apricot) or Blue Valentine ("blue slurpee")`,
   },
   {
+    name: "Partake Non-Alcoholic Beer",
+    price: "6",
+    notes: "Pale ale, blonde, or IPA"
+  },
+  {
     name: "Pop",
     price: "3½",
     notes: "Pepsi, Diet Pepsi, Sprite, Ginger Ale, Soda, Tonic"

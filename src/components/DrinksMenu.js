@@ -58,6 +58,7 @@ export const DrinksMenu = ({menuData}) => {
     return <NonAlcDrink 
               name={drank.name}
               price={drank.price}
+              notes={drank.notes}
               key={`nonalc-${i}`}
             />
   })
