@@ -28,7 +28,7 @@ export const SIDES = [
 export const SNACKS = [
   
   {
-    name: "Pickled Vegetables",
+    name: "We Can Pickle That!",
     price: "7",
     notes: "House-pickled seasonally sourced selections",
     diet: "vegan, gluten free", 
@@ -175,7 +175,7 @@ export const LARGE_PLATES = [
   },
   {
     name: "Steak Frites",
-    price: "25",
+    price: "23",
     notes: "Wine, shallot and peppercorn steak jus",
     diet: "", 
   }
