@@ -109,7 +109,7 @@
   position: relative;
 
   display: grid;
-  grid-template-columns: 6fr 6fr 1.5fr 4fr;
+  grid-template-columns: 6fr 6fr 1.2fr 4.3fr;
   grid-template-rows: auto auto;
 
   letter-spacing: -0.05rem;
@@ -125,7 +125,7 @@
     font-size: 0.7em;
 
     @include mixins.respond(phone){
-      font-size: 0.9em;
+      font-size: 1.2em;
     }
   }
 
@@ -135,14 +135,14 @@
     justify-self: end;
     padding-right: 0.5rem;
 
-    font-size: 0.6em;
+    font-size: 0.7em;
     
     @include mixins.respond(phone){
       grid-column: 2;
       grid-row: 1;
       justify-self: start;
 
-      font-size: 0.85em;
+      font-size: 1em;
     }
   }
 
@@ -155,7 +155,7 @@
     
 
     @include mixins.respond(phone){
-      font-size: 0.65em;
+      font-size: 0.85em;
       line-height: 2;
     }
   }
@@ -165,10 +165,10 @@
     grid-row: 1;
     justify-self: end;
 
-    font-size: 0.65em;
+    font-size: 0.8em;
 
     @include mixins.respond(phone){
-      font-size: 0.65em;
+      font-size: 0.9em;
       line-height: 2;
     }
   }

@@ -58,6 +58,10 @@
         grid-row: 1;
 
         font-size: 0.9em;
+
+        @include mixins.respond(tab-port) {
+          font-size: 1.3em;
+        }
       }
 
       &-price{
@@ -66,6 +70,10 @@
         justify-self: end;
 
         font-size: 0.77em; //aim for 13px
+
+        @include mixins.respond(tab-port) {
+          font-size: 1em;
+        }
       }
 
       &-notes{
@@ -74,6 +82,10 @@
 
         font-size: 0.7em;
         font-style: italic;
+
+        @include mixins.respond(tab-port) {
+          font-size: 0.95em;
+        }
       }
     }
   }

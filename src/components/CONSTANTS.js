@@ -297,72 +297,34 @@ export const HOUSE_COCKTAILS = [
     notes: "Woodford Reserve Bourbon, sugar, Angostura bitters"
   },
   {
-    name: "Nelson Iced Tea",
-    price: "13",
-    notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
+    name: "'Boochy Slushy Puppy",
+    price: "11",
+    notes: "Gin, Cointreau, lime, grenadine, \"Blue Valentine\" Hoochy Booch Kombucha"
+  },
+  // {
+  //   name: "Nelson Iced Tea",
+  //   price: "13",
+  //   notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
+  // },
+  {
+    name: "Portland Daiquiri",
+    price: "12",
+    notes: "White rum, lime, sugar, absinthe"
   },
   {
-    name: "Charlotte's Tick Bite",
-    price: "13",
-    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
+    name: "Paloma",
+    price: "14",
+    notes: "Tequila, grapefruit, lime, soda"
   },
   {
-    name: "Lonsdale Quay",
-    price: "15",
-    notes: "Vodka, Galliano, St Germain, earl grey tea, lemon, sugar, egg white"
-  },
-  {
-    name: "Rose City Pearing",
-    price: "15",
-    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
+    name: "Bloody Best Caesar",
+    price: "9 single, $13 double",
+    notes: "Vodka, house caesar mix, lime, Clamato, house spice-mix rim"
   }
 ]
 
-export const OLD_COCKTAILS = [
-  {
-    name: "Aperol / Elderflower Spritz",
-    price: "11",
-    notes: "Choose either Aperol or St Germain & Cassis (+$1), sparkling white wine, soda"
-  },
-  {
-    name: "Moscow Mule",
-    price: "12",
-    notes: "Absolut vodka, lime, sugar, Angostura bitters, ginger beer"
-  },
-  {
-    name: "Nelson Iced Tea",
-    price: "13",
-    notes: "Gin, Cointreau, Nelson Olive Oil Black Cherry balscamic vinegar, lemon, soda"
-  },
-  {
-    name: "Gastown",
-    price: "13",
-    notes: "Sons of Vancouver amaretto and chili vodka, lemon juice, egg whites, citrus zest"
-  },
-  {
-    name: "Charlotte's Tick Bite",
-    price: "13",
-    notes: "Pisco, Cocalero, Cointreau, lime, salt, rimmed with spicy seasoning"
-  },
-  {
-    name: "Mt Hood Warmer",
-    price: "14",
-    notes: "Chai infused whiskey, Ampersand \"Nocino!\", brandy, Grand Marnier, orange, sugar, absinthe"
-  },
-  {
-    name: "Lonsdale Quay",
-    price: "15",
-    notes: "Vodka, Galliano, St Germain, earl grey tea, lemon, sugar, egg white"
-  },
-  {
-    name: "Rose City Pearing",
-    price: "15",
-    notes: "McClellands Islay scotch, Lot 40 Rye, Guiseppe Carpano Vermouth, pear, lemon, sugar"
-  }
-]
 
 export const FEATURES = [ 
- 
 ];
 
 export const HAPPY_HOUR_FOOD = [

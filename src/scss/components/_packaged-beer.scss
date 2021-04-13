@@ -92,12 +92,16 @@
       grid-template-columns: 50% 50%;
       
       justify-self: center;
-      margin: 0.3rem 2rem;
+      margin: 0.3rem 0rem;
 
       &-name{
         grid-column: 1;
 
         // font-size: 0.8em;
+
+        @include mixins.respond(tab-port){
+          font-size: 1.3em;
+        }
       }
 
       &-price{
@@ -107,6 +111,10 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-end;
+
+        @include mixins.respond(tab-port) {
+          font-size: 1.1em;
+        }
 
 
         // font-size: 0.7em;
