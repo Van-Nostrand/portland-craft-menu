@@ -101,28 +101,28 @@ export const SMALL_PLATES = [
 
 export const PIZZA = [
   {
-    name: "Margherita",
+    name: "Margherita Pizza",
     price: "16",
     notes: "Bocconcini, basil, tomato sauce",
     diet: "vegetarian"
   },
   {
-    name: "Prosciutto Arugula",
+    name: "Prosciutto Arugula Pizza",
     price: "19",
     notes: "Bocconcini, tomato sauce",
     diet: ""
   },
   {
-    name: "Smoked Salmon",
+    name: "Smoked Salmon Pizza",
     price: "19",
     notes: "Bocconcini, onions, capers, tomato sauce",
     diet: ""
   },
   {
-    name: "Vegetarian",
+    name: "Vegetarian Pizza",
     price: "17",
     notes: "Ask your server for today's toppings",
-    diet: "...vegetarian"
+    diet: ""
   },
 ]
 
@@ -139,6 +139,12 @@ export const BURGERS = [
     notes: "Two 3oz patties, bacon, cheddar, lettuce, tomato, friend onion, pickle, special sauce",
     diet: ""
   },
+  {
+    name: "Chicken Burger",
+    price: "13",
+    notes: "Fried chicken, avocado puree, lettuce, pickled jalapenos, aioli",
+    diet: ""
+  }, 
   {
     name: "Pulled Pork Burger",
     price: "13",
