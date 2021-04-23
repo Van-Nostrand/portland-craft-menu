@@ -335,16 +335,16 @@ export const FEATURES = [
 
 export const HAPPY_HOUR_FOOD = [
   {
-    name: "Pickled Vegetables",
+    name: "We Can Pickle That!",
     price: "4",
     notes: "House-pickled seasonally sourced selections",
     diet: "vegan, gluten free", 
   },
   {
-    name: "Felix Farm Kennebec Fries",
+    name: "Edamame",
     price: "5",
-    notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
-    diet: "gluten and dairy free", 
+    notes: "Rock salt, oregano",
+    diet: "vegan, gluten free", 
   },
   {
     name: "Spiced Candied Nuts",
@@ -352,13 +352,48 @@ export const HAPPY_HOUR_FOOD = [
     notes: "Roasted in-house with our own spice blend",
     diet: "vegan, gluten free", 
   },
- 
+  {
+    name: "Warm Mixed Olives",
+    price: "6",
+    notes: "House marinated with citrus and herbs",
+    diet: "vegan, gluten free", 
+  },
+  {
+    name: "Felix Farm Kennebec Fries",
+    price: "5",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, black garlic aioli, fresh herbs",
+    diet: "gluten and dairy free", 
+  }, 
   {
     name: "Craft Poutine",
-    price: "8",
+    price: "9",
     notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
     diet: "", 
   },
+  {
+    name: "Smash Burger",
+    price: "9½",
+    notes: "3oz patty, cheddar, lettuce, pickle, special sauce",
+    diet: ""
+  },
+  {
+    name: "Pulled Pork Burger",
+    price: "11",
+    notes: "Slaw, pickles, shallots, aioli",
+    diet: ""
+  },
+  {
+    name: "Margherita Pizza",
+    price: "14",
+    notes: "Bocconcini, basil, tomato sauce",
+    diet: "vegetarian"
+  },
+  {
+    name: "Steak Frites",
+    price: "19½",
+    notes: "Wine, shallot and peppercorn steak jus",
+    diet: "", 
+  }
 ];
 
 export const HAPPY_HOUR = [
@@ -369,9 +404,9 @@ export const HAPPY_HOUR = [
     ]
   },
   {
-    name: "Select Local Draught Beer",
+    name: "Tap #9 Local Craft Beer",
     prices: [
-      {price: "4", size: "12oz"},
+      {price: "4", size: "14oz"},
       {price: "5", size: "20oz"}
     ]
   },
@@ -385,7 +420,7 @@ export const HAPPY_HOUR = [
   {
     name: "Aperol Spritz & Moscow Mule",
     prices: [
-      {price: "9", size: ""},
+      {price: "8", size: ""},
     ]
   },
   {
