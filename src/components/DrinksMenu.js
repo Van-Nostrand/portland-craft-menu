@@ -66,6 +66,10 @@ export const DrinksMenu = ({menuData}) => {
   return (
     <div className="menu drinks-menu">
 
+        <PackagedBeerSection 
+          beers={packagedBeer} 
+        />
+
         <WineSection 
           sectionTitle="Red" 
           sectionSizeString="5oz, 8oz, bottle" 
@@ -88,9 +92,7 @@ export const DrinksMenu = ({menuData}) => {
           cocktails={cocktails} 
         />
 
-        <PackagedBeerSection 
-          beers={packagedBeer} 
-        />
+        
 
         <NonAlcSection 
           dranks={nonAlc}

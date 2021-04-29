@@ -12,7 +12,7 @@
 
   border-top: 3px solid vars.$portland-red;
   // font-size: 1rem;
-  font-size: 0.7em;
+  // font-size: 0.7em;
 
   @include mixins.respond(tab-port){
     grid-column: 8 / span 5;
@@ -30,15 +30,9 @@
   }
 
   &-title{
-    // grid-column: 2;
-    // grid-row: 1;
-    // justify-self: center;
-
-    // padding-top: 3rem;
-    // width: 50%;
 
     color: vars.$portland-red;
-    font-size: 2.5rem;
+    font-size: 2.3em;   
     grid-column: 1 / span 2;
   }
 

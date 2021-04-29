@@ -479,22 +479,22 @@ export const KOMBUCHA = [
 
 export const PACKAGED_BEER = [
   {
-    name: "Steamworks Kolsch",
+    name: "Steamworks: Kolsch",
     size: "473ml",
     price: ["3¾","13"]
   },
   {
-    name: "Steamworks Hazy Pale Ale",
+    name: "Steamworks: Hazy Pale Ale",
     size: "355ml",
     price: ["3½","12"]
   },
   {
-    name: "Main St Pilsner",
+    name: "Main St: Pilsner",
     size: "355ml",
     price: ["3½","12"]
   },
   {
-    name: "Main St Fruit Bomb Sour",
+    name: "Main St: Fruit Bomb Sour",
     size: "355ml",
     price: ["3½","12"]
   },
@@ -502,6 +502,21 @@ export const PACKAGED_BEER = [
     name: "Parkside Dawn Pilsner",
     size: "355ml",
     price: ["3½","12"]
+  },
+  {
+    name: "Great Notion: Super Baked Blueberry Sour",
+    size: "473ml",
+    price: ["8.99"]
+  },
+  {
+    name: "Great Notion: Groundhog Day Imperial IPA",
+    size: "473ml",
+    price: ["8.99"]
+  },
+  {
+    name: "Offshoot: Relax, It's Just a Hazy IPA",
+    size: "473ml",
+    price: ["8.99"]
   },
   {
     name: "Deschutes Fresh Squeezed IPA",
