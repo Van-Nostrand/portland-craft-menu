@@ -68,6 +68,7 @@ const FoodSection = ({section, items}) => {
               Burger add-ons
             </div>
             <div className="burger-addons-options">
+              <div>Gluten-free Bun • $1</div>
               <div>Fries • $4</div>
               <div>Parmesan Truffle Fries • $6</div>
               <div>Poutine • $7</div>
