@@ -141,7 +141,7 @@ export const BURGERS = [
   },
   {
     name: "Chicken Burger",
-    price: "13",
+    price: "14",
     notes: "Fried chicken, avocado puree, lettuce, pickled jalapenos, aioli",
     diet: ""
   }, 
@@ -184,9 +184,9 @@ export const LARGE_PLATES = [
 export const SWEETS = [
 
   {
-    name: "Bread Pudding",
-    price: "5", 
-    notes: "Pear jam, whipped cream",
+    name: "Chocolate Brownie",
+    price: "8", 
+    notes: "Sour cherries, candied hazelnuts",
     diet: "vegetarian", 
   }
 ]
