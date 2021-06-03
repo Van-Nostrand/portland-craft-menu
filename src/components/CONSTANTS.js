@@ -29,27 +29,39 @@ export const SNACKS = [
   
   {
     name: "We Can Pickle That!",
-    price: "7",
-    notes: "House-pickled seasonally sourced selections",
+    price: "8",
+    notes: "House-pickled veggies and fruit",
     diet: "vegan, gluten free", 
   },
   {
-    name: "Felix Farm Kennebec Fries",
-    price: "7",
-    notes: "Double-cooked Felix Farm Kennebec potatoes, garlic aioli, fresh herbs",
+    name: "We Couldn't pickle that",
+    price: "8",
+    notes: "Imported mixed olives",
+    diet: "vegan, gluten free", 
+  },
+  {
+    name: "Edamame",
+    price: "8",
+    notes: "Olive oil, rock salt, oregano",
+    diet: "vegan, gluten free", 
+  },
+  {
+    name: "Hey BubbaGanush",
+    price: "14",
+    notes: "Eggplant caviar with hummus. Seved with house garlic bread and sourdough",
+    diet: "vegan"
+  },
+  {
+    name: "Hand-cut Kennebeck Cajun Fries",
+    price: "8",
+    notes: "Kennebec potatoes. Add dip for $1",
     diet: "gluten and dairy free", 
   },
   {
     name: "Parmesan Truffle Fries",
-    price: "9",
+    price: "11",
     notes: "Double-cooked Felix Farm Kennebec potatoes tossed in parmesan, truffle oil",
-    diet: "gluten free", 
-  },
-  {
-    name: "Warm Mixed Olives",
-    price: "7",
-    notes: "House marinated with citrus and herbs",
-    diet: "vegan, gluten free", 
+    diet: "vegetarian, gluten free", 
   },
   {
     name: "Spiced Candied Nuts",
@@ -58,29 +70,41 @@ export const SNACKS = [
     diet: "vegan, gluten free", 
   },
   {
-    name: "Edamame",
-    price: "7",
-    notes: "Rock salt, oregano",
-    diet: "vegan, gluten free", 
+    name: "Soup of the Day",
+    price: "9",
+    notes: "Ask your server about which soup it is... and the backstory!",
+    diet: ""
   },
+  {
+    name: "Poutine",
+    price: "12",
+    notes: "Fries, Quebec cheese curds, house-made gravy. Add pulled pork for $4",
+    diet: "", 
+  },
+
 ];
 
 export const SMALL_PLATES = [
-
   {
-    name: "Craft Poutine",
+    name: "\"Green Salad\"",
+    price: "9",
+    notes: "Daily fresh ingredients with our house dressing (dijon, olive oil, balsamic)",
+    diet: "vegan, gluten free"
+  },
+  {
+    name: "Quinoa Salad",
     price: "11",
-    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
-    diet: "", 
+    notes: "",
+    diet: ""
   },
   {
-    name: "Pulled Pork Poutine",
-    price: "14",
-    notes: "Craft Poutine, served with pulled pork",
-    diet: "", 
+    name: "Beer Battered Fried Onion Chips",
+    price: "9",
+    notes: "Served with cream herb aioli",
+    diet: "vegetarian"
   },
   {
-    name: "Farmcrest Wings",
+    name: "Wings",
     price: "16",
     notes: "Choose either salt & pepper or honey hot. Comes with ranch dressing",
     diet: "gluten free", 
