@@ -1,8 +1,7 @@
-import React from "react";
-import smileyface from "../assets/smileyfaceColor2.svg";
+import React from 'react';
+import smileyface from '../assets/smileyfaceColor2.svg';
 
-
-export const HappyHour = ({menuData}) => {
+export default function HappyHour({menuData}) {
 
   let drinks = menuData[0].map((item, i) => <LineItem name={item.name} prices={item.prices} key={`lineitem-${i}`} />);
   let food = menuData[1].map((item, i) => <Food itemName={item.name} price={item.price} notes={item.notes} key={`hh-food-${i}`} />);
@@ -19,9 +18,6 @@ export const HappyHour = ({menuData}) => {
               3-5pm<br />Every Day
             </div>
             
-            {/* <div className="hh-subtitle-time">
-              3-6pm<br/>Friday - Sunday
-            </div> */}
           </div>
           <div className="hh-food-title">
             Happy-Hour Food Features

@@ -1,10 +1,10 @@
-import React from "react";
-import { PackagedBeerSection, PackagedBeer } from "./PackagedBeerComponents";
-import { Wine, WineSection } from "./WineComponents";
-import { Cocktail, CocktailSection } from "./CocktailComponents";
-import { NonAlcSection, NonAlcDrink } from "./NonAlcDrink";
+import React from 'react';
+import { PackagedBeerSection, PackagedBeer } from '../components/PackagedBeer';
+import { Wine, WineSection } from '../components/Wine';
+import { Cocktail, CocktailSection } from '../components/Cocktail';
+import { NonAlcSection, NonAlcDrink } from '../components/NonAlcDrink';
 
-export const DrinksMenu = ({menuData}) => {
+export default function DrinksMenu({menuData}) {
 
   let redwines = menuData.RED_WINE.map((wine, j) => {
     return <Wine 
@@ -91,8 +91,6 @@ export const DrinksMenu = ({menuData}) => {
         <CocktailSection
           cocktails={cocktails} 
         />
-
-        
 
         <NonAlcSection 
           dranks={nonAlc}

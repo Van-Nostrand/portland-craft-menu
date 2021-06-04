@@ -25,7 +25,6 @@
   grid-template-rows: repeat(6, auto);
   justify-items: center;
 
-  // background-color: vars.$menu-background-color;
   color: vars.$brown-q;
 
   @include mixins.respond(tab-port){

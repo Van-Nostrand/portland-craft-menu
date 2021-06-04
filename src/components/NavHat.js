@@ -1,8 +1,9 @@
 import React, { Suspense, useState, useEffect } from "react";
-import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
-import MobileNav from "./MobileNav";
 import { Link, useLocation } from 'react-router-dom';
-const LazyFullNav = React.lazy(() => import("./LazyFullNav"));
+
+import MobileNav from "./nav/MobileNav";
+const LazyFullNav = React.lazy(() => import("./nav/LazyFullNav"));
+import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
 
 
 export default function NavHat({ changePage, currentPage }) {

@@ -5,9 +5,7 @@
   "main": "index.js",
   "homepage": "http://Van-Nostrand.github.io/portland-craft-menu",
   "scripts": {
-    "dev": "webpack serve --mode=development",
-    "devdev": "webpack serve --mode=development --host 0.0.0.0",
-    "prod": "webpack serve --mode=production",
+    "dev": "webpack serve --mode development",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"

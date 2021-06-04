@@ -11,7 +11,7 @@ module.exports = {
       dependOn: 'shared'
     },
     fullnav: {
-      import: __dirname + "/src/components/LazyFullNav.js",
+      import: __dirname + "/src/components/nav/LazyFullNav.js",
       dependOn: 'shared'
     },
     shared: ['react', 'react-dom']

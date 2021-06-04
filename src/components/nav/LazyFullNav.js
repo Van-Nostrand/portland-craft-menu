@@ -5,7 +5,7 @@ function LazyFullNav({ logo, children }) {
   const [ image, setImage ] = useState();
 
   const getImage = () => {
-    let theImage = require('../assets/pcTaps.jpeg');
+    let theImage = require('../../assets/pcTaps.jpeg');
     setImage(theImage);
   }
 
@@ -16,7 +16,7 @@ function LazyFullNav({ logo, children }) {
   if (!image) {
     return <div>LOADING</div>
   }
-  return(
+  return (
     <nav className="full-nav">
       <div className="bknd-img-wrapper">
         <img src={image} />
