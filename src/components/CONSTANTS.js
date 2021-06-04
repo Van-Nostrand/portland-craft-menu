@@ -116,7 +116,7 @@ export const SMALL_PLATES = [
   {
     name: "Honey Glazed Hot Wings",
     price: "17.50",
-    notes: "Add a \"damn hot\" wing to the coffin for $3",
+    notes: "",
     diet: ""
   },
   {
