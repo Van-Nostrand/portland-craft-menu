@@ -87,5 +87,8 @@ module.exports = {
       chunkFilename: "[id].css"
     })
   ],
-  devtool: "source-map"
+  devtool: "source-map",
+  devServer: {
+    historyApiFallback: true
+  }
 }

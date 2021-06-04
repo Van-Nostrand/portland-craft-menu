@@ -1,8 +1,8 @@
 import React, { useState, useEffect} from "react";
 
-function LazyFullNav({buttons, logo}) {
+function LazyFullNav({ logo, children }) {
 
-  const [image, setImage] = useState();
+  const [ image, setImage ] = useState();
 
   const getImage = () => {
     let theImage = require('../assets/pcTaps.jpeg');
@@ -13,10 +13,9 @@ function LazyFullNav({buttons, logo}) {
     getImage();
   },[]);
 
-  if(!image){
+  if (!image) {
     return <div>LOADING</div>
   }
-  console.log(image);
   return(
     <nav className="full-nav">
       <div className="bknd-img-wrapper">
@@ -26,7 +25,7 @@ function LazyFullNav({buttons, logo}) {
         <img src={logo} />
       </div>
       <div className="button-group full-nav__button-group">
-        {buttons}
+        {children}
       </div>
     </nav>
   )

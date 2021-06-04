@@ -1,16 +1,16 @@
 import React, { Suspense, useState, useEffect } from "react";
 import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
 import MobileNav from "./MobileNav";
+import { Link, useLocation } from 'react-router-dom';
 const LazyFullNav = React.lazy(() => import("./LazyFullNav"));
 
 
-export const NavHat = ({changePage, currentPage}) => {
+export default function NavHat({ changePage, currentPage }) {
 
   const [ fullNav, setFullNav ] = useState(false);
-  
+  let currentLocation = useLocation();
 
   const testWindowSize = () => {
-
     if(window.innerWidth > 1200){
       setFullNav(true);
     }
@@ -28,36 +28,49 @@ export const NavHat = ({changePage, currentPage}) => {
   },[]);
 
 
-  let buttons = (
+  let navButtons = (
     <>
-      <button className={currentPage === "food" ? "button-current-page" : "" } onClick={() => changePage("food")}>
-        FOOD
-      </button>      
-      <button className={currentPage === "drinks" ? "button-current-page" : "" } onClick={() => changePage("drinks")}>
-        DRINKS
-      </button>
-      <button className={currentPage === "specials" ? "button-current-page" : "" } onClick={() => changePage("specials")}>
-        HAPPY-HOUR
-      </button>
+      <Link 
+        className={currentLocation === '/food' ? 'button-current-page' : ''} 
+        to='/food'
+      >
+          Food
+      </Link>
+      <Link 
+        className={currentLocation === '/drinks' ? 'button-current-page' : ''} 
+        to='/drinks'
+      >
+          Drinks
+      </Link>
+      <Link 
+        className={currentLocation === '/happyhour' ? 'button-current-page' : ''} 
+        to='/happyhour'
+      >
+          Happy Hour
+      </Link>
     </>
-  );
+  )
 
  
   let navElement;
-  if(!fullNav){
-    navElement = <MobileNav buttons={buttons} logo={blkWhiteLogo} />
+  if (!fullNav){
+    navElement = 
+      <MobileNav logo={blkWhiteLogo}>
+        {navButtons}
+      </MobileNav>
   }
-  else{
-    navElement =  <Suspense fallback={<div>Loading...</div>}>
-                    <LazyFullNav buttons={buttons} logo={blkWhiteLogo} />
-                  </Suspense>;
+  else {
+    navElement = 
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyFullNav logo={blkWhiteLogo}>
+          {navButtons}
+        </LazyFullNav>
+      </Suspense>;
   }
 
   return(
     <div className="nav-hat-wrapper">
-      
       {navElement}
-
     </div>
   )
 };
