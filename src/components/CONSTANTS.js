@@ -105,9 +105,19 @@ export const SMALL_PLATES = [
   },
   {
     name: "Wings",
-    price: "16",
-    notes: "Choose either salt & pepper or honey hot. Comes with ranch dressing",
+    price: "17",
+    notes: "Portland's famous salt and pepper wings",
     diet: "gluten free", 
+  },
+  {
+    name: "Honey Glazed Hot Wings",
+    price: "17.50",
+    notes: "Add a \"damn hot\" wing to the coffin for $3",
+    diet: ""
+  },
+  {
+    name: "Grilled Pork Ribs",
+    price: "16",
   },
   {
     name: "Eggplant Caviar & Hummus",
