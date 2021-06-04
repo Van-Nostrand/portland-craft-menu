@@ -1,4 +1,5 @@
 import React from "react";
+import { AIOLI } from "./CONSTANTS";
 
 export const FoodMenu = ({ menuData }) => {
 
@@ -69,20 +70,36 @@ const FoodSection = ({section, items}) => {
             </div>
             <div className="burger-addons-options">
               <div>Gluten-free Bun • $1</div>
-              <div>Fries • $4</div>
+              <div>Fries • $5</div>
+              <div>Soup • $5</div>
+              <div>Green Salad • $4</div>
               <div>Parmesan Truffle Fries • $6</div>
               <div>Poutine • $7</div>
-              <div>Gravy • $2</div>
-              <div>Cheese • $2½</div>
+              <div>Chicken breast (grilled or fried) • $6</div>
+              <div>Beef Patty • $7</div>
+              <div>Cheese • $1</div>
               <div>Bacon • $2</div>
             </div>
           </div>
-        : <></>
+        : section == "Pizza" ? 
+            <div className="pizza-subheader">
+              All our pizzas are made in house with 48 hour cold fermented dough. Hand kneaded and rolled
+            </div> 
+            : <></>
       }
       
       <ul className="section__list">
         {foods}
       </ul>
+
+      {/* {
+        section === "Burgers" ? 
+          <div className="aioli-list">
+            <div>Aiolis: </div>
+            {AIOLI.map(aioli => <div className="aioli-item">{aioli}</div>)}
+          </div>
+          : <></>
+      } */}
       
     </section>
   );

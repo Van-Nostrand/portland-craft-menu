@@ -45,7 +45,8 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: start;
-    max-height: 30rem;
+    max-height: 35rem;
+    height: 100%;
     max-width: 45%;
 
     padding: 1rem;
@@ -85,7 +86,6 @@
   
   font-size: 0.6em;
 
-  // width: 30rem;
   
   @include mixins.respond(big-desk){
     margin: 1rem 2rem;
@@ -207,4 +207,10 @@
         }
       }
     }
+  }
+
+  .pizza-subheader {
+    font-size: 0.65em;
+    margin-left: 2rem;
+    margin-top: 1rem;
   }

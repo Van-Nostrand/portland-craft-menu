@@ -19,11 +19,15 @@ export const SIDES = [
     name: "Gravy",
     price: "2"
   },
-  {
-    name: "Fried Chicken Breast",
-    price: "8"
-  },
+ 
 ];
+
+export const AIOLI = [
+  "Smoked Garlic",
+  "Ranch-ish",
+  "Blue Cheese",
+  "Spicy Tomato",
+]
 
 export const SNACKS = [
   
@@ -54,7 +58,7 @@ export const SNACKS = [
   {
     name: "Hand-cut Kennebeck Cajun Fries",
     price: "8",
-    notes: "Kennebec potatoes. Add dip for $1",
+    notes: "Kennebec potatoes. Add aioli for $1",
     diet: "gluten and dairy free", 
   },
   {
@@ -135,27 +139,27 @@ export const SMALL_PLATES = [
 
 export const PIZZA = [
   {
-    name: "Margherita Pizza",
-    price: "16",
-    notes: "Bocconcini, basil, tomato sauce",
+    name: "Classic Margherita",
+    price: "17",
+    notes: "",
     diet: "vegetarian"
   },
   {
-    name: "Prosciutto Arugula Pizza",
+    name: "Prosciutto Rocket",
     price: "19",
-    notes: "Bocconcini, tomato sauce",
+    notes: "With arugula",
     diet: ""
   },
   {
-    name: "Smoked Salmon Pizza",
+    name: "West Coast",
     price: "19",
-    notes: "Bocconcini, onions, capers, tomato sauce",
+    notes: "Smoked salmon, capers, Canadian shalots",
     diet: ""
   },
   {
-    name: "Vegetarian Pizza",
+    name: "Veggie",
     price: "17",
-    notes: "Ask your server for today's toppings",
+    notes: "Fresh seasonal veggies. Ask your server",
     diet: ""
   },
 ]
@@ -163,56 +167,63 @@ export const PIZZA = [
 export const BURGERS = [
   {
     name: "Smash Burger",
-    price: "10",
-    notes: "3oz patty, cheddar, lettuce, pickle, special sauce",
+    price: "11",
+    notes: "Single patty, cheddar, lettuce, pickle, special sauce",
     diet: ""
   },
   {
     name: "Portland Burger",
     price: "14",
-    notes: "Two 3oz patties, bacon, cheddar, lettuce, tomato, friend onion, pickle, special sauce",
+    notes: "Double patty, grilled bacon, cheddar, lettuce, tomato, friend onion, pickle, special sauce",
     diet: ""
   },
   {
-    name: "Chicken Burger",
+    name: "\"Sharpy Sharp Burger\"",
     price: "14",
-    notes: "Fried chicken, avocado puree, lettuce, pickled jalapenos, aioli",
+    notes: "Double weight patty, blue cheese, house onion jam, arugula",
+    diet: ""
+  },
+  {
+    name: "Put a Pig on it",
+    price: "13",
+    notes: "Slow cooked BBQ pulled pork, house made slaw, pickled jalapenos, aioli",
+    diet: ""
+  },
+  
+  {
+    name: "Chicken Burger",
+    price: "13",
+    notes: "Buttermilk fried chicken, avocado puree, lettuce, pickled jalapenos, aioli, red onion",
     diet: ""
   }, 
   {
-    name: "Pulled Pork Burger",
-    price: "13",
-    notes: "Slaw, pickles, shallots, aioli",
-    diet: ""
-  },
-  {
     name: "Vegan Sandwich",
     price: "12",
-    notes: "Roasted veg, hummus, eggplant caviar, arugula, focaccia",
+    notes: "Roasted veg, hummus, eggplant caviar, arugula, house panini",
     diet: "vegan"
   },
-  {
-    name: "Smoked Salmon & Avocado Toast",
-    price: "13",
-    notes: "Avocado puree, smoked salmon, dry tomato, pickled shallots, fried capers, focaccia",
-    diet: ""
-  }
 ]
 
 export const LARGE_PLATES = [
+  {
+    name: "The Big Salad",
+    price: "ask your server",
+    notes: "Made fresh with seasonal ingredients",
+    diet: ""
+  },
   
+  {
+    name: "Steak Frites",
+    price: "23",
+    notes: "Wine, shallot and peppercorn steak jus",
+    diet: "", 
+  },
   {
     name: "Put a Bird On It!",
     price: "20",
     notes: "Fried Chicken, waffle, crispy bacon, gravy, maple syrup",
     diet: ""
   },
-  {
-    name: "Steak Frites",
-    price: "23",
-    notes: "Wine, shallot and peppercorn steak jus",
-    diet: "", 
-  }
 ];
 
 export const SWEETS = [
@@ -220,7 +231,7 @@ export const SWEETS = [
   {
     name: "Chocolate Brownie",
     price: "8", 
-    notes: "Sour cherries, candied hazelnuts",
+    notes: "carmelized hazelnuts, whipped cream",
     diet: "vegetarian", 
   }
 ]

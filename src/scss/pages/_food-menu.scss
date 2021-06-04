@@ -12,6 +12,7 @@
 
   display: grid;
   grid-template-columns: repeat(4, 25%);
+  
 
   color: vars.$brown-q;
   font-size: 2.5rem;
@@ -24,6 +25,10 @@
 
     display: flex;
     flex-flow: column nowrap;
+  }
+
+  section {
+    height: 100%;
   }
 
   p{
