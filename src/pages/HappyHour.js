@@ -23,7 +23,7 @@ export default function HappyHour({ menuData }) {
   }
  
   return (
-    <div className="menu happy-hour-menu">
+    <div className="happy-hour-menu menu ">
       <SectionWrapper
         sectionClassName="happy-hour-section"
         title="Happy-Hour!"

@@ -9,6 +9,7 @@ import blkWhiteLogo from "../../assets/portlandlogoWHITE.svg";
 export default function NavHat({ changePage, currentPage }) {
 
   const [ fullNav, setFullNav ] = useState(false);
+  // will be used to style nav buttons, highlighting whichever page is current
   let currentLocation = useLocation();
 
   const testWindowSize = () => {

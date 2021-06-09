@@ -1,8 +1,8 @@
 import React from 'react';
-import { PackagedBeerSection, PackagedBeer } from '../components/PackagedBeer';
-import { Wine, WineSection } from '../components/Wine';
-import { Cocktail, CocktailSection } from '../components/Cocktail';
-import { NonAlcSection, NonAlcDrink } from '../components/NonAlcDrink';
+// import { PackagedBeerSection, PackagedBeer } from '../components/PackagedBeer';
+// import { Wine, WineSection } from '../components/Wine';
+// import { Cocktail, CocktailSection } from '../components/Cocktail';
+// import { NonAlcSection, NonAlcDrink } from '../components/NonAlcDrink';
 import SectionWrapper from '../components/SectionWrapper';
 import ItemWrapper from '../components/ItemWrapper';
 
@@ -76,7 +76,9 @@ export default function DrinksMenu({menuData}) {
           sectionClassName="drink-section packaged-section"
           title="Beers To Go"
         >
-          { getItems(menuData.PACKAGED_BEER, 'packaged') }
+          <ul className="item-list">
+            { getItems(menuData.PACKAGED_BEER, 'packaged') }
+          </ul>
         </SectionWrapper>
 
         <SectionWrapper
@@ -86,7 +88,9 @@ export default function DrinksMenu({menuData}) {
           <div className="wine-sizes">
             5oz, 8oz, bottle
           </div>
-          { getWineItems(menuData.RED_WINE, 'redwine') }
+          <ul className="item-list">
+            { getWineItems(menuData.RED_WINE, 'redwine') }
+          </ul>
         </SectionWrapper>
         
         <SectionWrapper
@@ -96,7 +100,9 @@ export default function DrinksMenu({menuData}) {
           <div className="wine-sizes">
             5oz, 8oz, bottle
           </div>
-          { getWineItems(menuData.WHITE_WINE, 'whitewine') }
+          <ul className="item-list">
+            { getWineItems(menuData.WHITE_WINE, 'whitewine') }
+          </ul> 
         </SectionWrapper>
         
         <SectionWrapper
@@ -106,21 +112,27 @@ export default function DrinksMenu({menuData}) {
           <div className="wine-sizes">
             5oz, bottle
           </div>
-          { getWineItems(menuData.BUBBLES, 'bubbles') }
+          <ul className="item-list">
+            { getWineItems(menuData.BUBBLES, 'bubbles') }
+          </ul>
         </SectionWrapper>
         
         <SectionWrapper
           sectionClassName="drink-section cocktail-section"
           title="Cocktails"
         >
-          { getCocktails(menuData.HOUSE_COCKTAILS, 'cocktails') }
+          <ul className="item-list">
+            { getCocktails(menuData.HOUSE_COCKTAILS, 'cocktails') }
+          </ul>
         </SectionWrapper>
 
         <SectionWrapper
           sectionClassName="drink-section non-alcoholic-section"
           title="Non Alcoholic"
         >
-          { getItems(menuData.NON_ALCOHOLIC, 'nonalc') }
+          <ul className="item-list">
+            { getItems(menuData.NON_ALCOHOLIC, 'nonalc') }
+          </ul>
         </SectionWrapper>
       
     </div>

@@ -1,9 +1,8 @@
 @use '../abstracts/vars';
 @use '../abstracts/mixins';
 
-.happy-hour-page{
-  position: relative;
-  top: vars.$desktop-nav-height; 
+.happy-hour-menu {
+  
 
   display: flex;
   flex-flow: column nowrap;

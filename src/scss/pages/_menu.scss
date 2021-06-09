@@ -4,26 +4,22 @@
 /////////////////////////////////////////// 
 ////////// GENERAL MENU STYLING
 
+.menu {
+  position: relative;
+  top: vars.$desktop-nav-height; // allows space for navbar
+  width: vars.$desktop-menu-width;
 
-.divider-wrapper{
-  align-self: stretch;
-  flex-grow: 2;
-  display: flex;
-  justify-content: center;
-  @include mixins.sectionBorderTop();
-
-  @include mixins.respond(tab-port){
-    display: none;
+  @include mixins.respond(tab-port) {
+    top: vars.$mobile-nav-height;
+    width: unset;
+    padding: 1rem;
   }
 }
 
-.horizontal-divider{
-  align-self: center;
-  height: 90%;
-  width: 0.2rem;
-  background-color: vars.$portland-red;
-}
-
-.section-title {
-  color: vars.$portland-red;
-}
+// unused
+// .horizontal-divider{
+//   align-self: center;
+//   height: 90%;
+//   width: 0.2rem;
+//   background-color: vars.$portland-red;
+// }

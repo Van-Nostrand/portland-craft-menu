@@ -12,7 +12,7 @@ export default function SectionWrapper(props) {
  
   return(
     <section className={sectionClass}>
-      <div className='section__title'>
+      <div className='section-title'>
         {props.title || ''}
       </div>
       {props.children}
