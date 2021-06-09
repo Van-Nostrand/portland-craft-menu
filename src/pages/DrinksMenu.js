@@ -3,98 +3,125 @@ import { PackagedBeerSection, PackagedBeer } from '../components/PackagedBeer';
 import { Wine, WineSection } from '../components/Wine';
 import { Cocktail, CocktailSection } from '../components/Cocktail';
 import { NonAlcSection, NonAlcDrink } from '../components/NonAlcDrink';
+import SectionWrapper from '../components/SectionWrapper';
+import ItemWrapper from '../components/ItemWrapper';
 
 export default function DrinksMenu({menuData}) {
 
-  let redwines = menuData.RED_WINE.map((wine, j) => {
-    return <Wine 
-            itemName={wine.name}
-            varietal={wine.varietal}
-            style="red"
-            sizes={wine.sizes}
-            notes={wine.notes}
-            key={`red-wine-${j}`} />
-  });
+  const getWineItems = ( itemArray, section ) => {
+    return (
+      itemArray.map((item, i) => {
+        return (
+          <ItemWrapper
+            key={`${section}${i}`} 
+            name={item.name}
+            price={item.price}
+            section={section}
+          >
+            { item.varietal ? 
+              <div className="wine-item-varietal">
+                {item.varietal}
+              </div>
+              : <></>
+            }
 
-  let whitewines = menuData.WHITE_WINE.map((wine, j) => {
-    return <Wine 
-            itemName={wine.name}
-            varietal={wine.varietal}
-            style="white"
-            sizes={wine.sizes}
-            notes={wine.notes}
-            key={`white-wine-${j}`} />
-  });
+            <div className="wine-item-region">
+              {`(${item.notes})`}
+            </div>
 
-  let bubblies = menuData.BUBBLES.map((wine, j) => {
-    return <Wine 
-            itemName={wine.name}
-            varietal={wine.varietal}
-            style="bubbly"
-            sizes={wine.sizes}
-            notes={wine.notes}
-            key={`bubbly-${j}`} />
-  });
+          </ItemWrapper>
+        )
+      })
+    )
+  }
 
-  let cocktails = menuData.HOUSE_COCKTAILS.map((cocktail, i) => {
-    return <Cocktail
-              itemName={cocktail.name}
-              price={cocktail.price}
-              notes={cocktail.notes} 
-              key={`cocktail-${i}`} 
-            />
-  });
-
-  let packagedBeer = menuData.PACKAGED_BEER.map((beer, i) => {
-    return <PackagedBeer 
-              name={beer.name} 
-              price={beer.price}
-              size={beer.size}
-              key={`packaged-beer-${i}`} 
-            />
-  });
-
-  let nonAlc = menuData.NON_ALCOHOLIC.map((drank, i) => {
-    return <NonAlcDrink 
-              name={drank.name}
-              price={drank.price}
-              notes={drank.notes}
-              key={`nonalc-${i}`}
-            />
-  })
+  const getCocktails = ( itemArray, section ) => {
+    return (
+      itemArray.map((item, i) => {
+        return (
+          <ItemWrapper
+            key={`${section}${i}`} 
+            name={item.name}
+            price={item.price}
+            section={section}
+          >
+            <div className="cocktail-notes">
+              {item.notes}
+            </div>
+          </ItemWrapper>
+        )
+      })
+    )
+  }
+  const getItems = ( itemArray, section ) => {
+    return (
+      itemArray.map((item, i) => {
+        return (
+          <ItemWrapper
+            key={`${section}${i}`} 
+            name={item.name}
+            price={item.price}
+            section={section}
+          >
+          </ItemWrapper>
+        )
+      })
+    )
+  }
 
   return (
     <div className="menu drinks-menu">
 
-        <PackagedBeerSection 
-          beers={packagedBeer} 
-        />
+        <SectionWrapper
+          sectionClassName="drink-section packaged-section"
+          title="Beers To Go"
+        >
+          { getItems(menuData.PACKAGED_BEER, 'packaged') }
+        </SectionWrapper>
 
-        <WineSection 
-          sectionTitle="Red" 
-          sectionSizeString="5oz, 8oz, bottle" 
-          wines={redwines} 
-        />
+        <SectionWrapper
+          sectionClassName="drink-section wine-section red-wine-section"
+          title="Red"
+        >
+          <div className="wine-sizes">
+            5oz, 8oz, bottle
+          </div>
+          { getWineItems(menuData.RED_WINE, 'redwine') }
+        </SectionWrapper>
+        
+        <SectionWrapper
+          sectionClassName="drink-section wine-section white-wine-section"
+          title="White"
+        >
+          <div className="wine-sizes">
+            5oz, 8oz, bottle
+          </div>
+          { getWineItems(menuData.WHITE_WINE, 'whitewine') }
+        </SectionWrapper>
+        
+        <SectionWrapper
+          sectionClassName="drink-section wine-section bubbly-wine-section"
+          title="Bubbly"
+        >
+          <div className="wine-sizes">
+            5oz, bottle
+          </div>
+          { getWineItems(menuData.BUBBLES, 'bubbles') }
+        </SectionWrapper>
+        
+        <SectionWrapper
+          sectionClassName="drink-section cocktail-section"
+          title="Cocktails"
+        >
+          { getCocktails(menuData.HOUSE_COCKTAILS, 'cocktails') }
+        </SectionWrapper>
 
-        <WineSection 
-          sectionTitle="White" 
-          sectionSizeString="5oz, 8oz, bottle" 
-          wines={whitewines} 
-        />
-
-        <WineSection 
-          sectionTitle="Bubbly" 
-          sectionSizeString="5oz, bottle" 
-          wines={bubblies} 
-        />
-
-        <CocktailSection
-          cocktails={cocktails} 
-        />
-
-        <NonAlcSection 
-          dranks={nonAlc}
-        />
+        <SectionWrapper
+          sectionClassName="drink-section non-alcoholic-section"
+          title="Non Alcoholic"
+        >
+          { getItems(menuData.NON_ALCOHOLIC, 'nonalc') }
+        </SectionWrapper>
       
     </div>
   )

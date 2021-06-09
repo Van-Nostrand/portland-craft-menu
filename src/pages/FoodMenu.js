@@ -1,19 +1,28 @@
 import * as React from 'react';
-import { FoodSection, Food } from '../components/Food';
+import { Food } from '../components/Food';
 import SectionWrapper from '../components/SectionWrapper';
+import ItemWrapper from '../components/ItemWrapper';
 
 export default function FoodMenu({ menuData }) {
 
-  const getFoodItems = (foodArray, keystring) => {
+  const getFoodItems = ( foodArray, section ) => {
     return (
       foodArray.map((item, i) => 
-        <Food 
-          key={`${keystring}${i}`} 
+        <ItemWrapper
+          key={`${section}${i}`} 
           name={item.name} 
-          price={item.price} 
-          notes={item.notes} 
-          diet={item.diet} 
-        />)
+          price={item.price}
+          section={section} 
+        >
+          <div className={"food-item-notes"}>
+            {item.notes}
+          </div>
+
+          <div className="food-item-diet">
+            {item.diet}
+          </div>
+        </ItemWrapper>
+      )
     )
   }
 
@@ -21,7 +30,6 @@ export default function FoodMenu({ menuData }) {
     <>
       <p>All items are nut-free unless specified</p>
       <div className="food-menu menu">
-      #f6f5f4
 
         <SectionWrapper 
           sectionClassName="food-section snacks"
@@ -72,7 +80,6 @@ export default function FoodMenu({ menuData }) {
         >
           { getFoodItems(menuData.SIDES, 'side') }
         </SectionWrapper>
-     
 
       </div>
     </>

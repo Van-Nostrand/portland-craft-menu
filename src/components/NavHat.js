@@ -49,6 +49,12 @@ export default function NavHat({ changePage, currentPage }) {
       >
           Happy Hour
       </Link>
+      <Link 
+        className={currentLocation === '/brunch' ? 'button-current-page' : ''}
+        to='/brunch'
+      >
+        Brunch
+      </Link>
     </>
   )
 

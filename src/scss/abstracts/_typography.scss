@@ -1,0 +1,96 @@
+.drinks-menu {
+  font-size: 2.5rem;
+
+  .section-title {
+    @include mixins.respond(phone){
+      font-size: 1.2em;
+    }
+  }
+
+  .section-list {
+    font-size: 1.8rem;
+  }
+}
+
+.food-menu {
+  font-size: 2.5rem;
+
+  p {
+    font-size: 0.7em;
+  }
+
+  .food-section .burger-addons {
+    font-size: 0.6em;
+  
+    @include mixins.respond(tab-port){
+      font-size: 0.9em;
+    }
+  
+    &-options div {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.happy-hour-page {
+  font-size: 2.5rem;
+
+  .happy-hour-section {
+
+    .section__title {
+      font-size: 2.3em;
+    }
+
+    .section__hh-subtitle {
+      font-size: 1em;
+    }
+
+    .hh-food-title, .hh-drinks-title {
+      font-size: 1.2em;
+    }
+
+    .hh-item {
+      font-size: 0.95em;
+
+      .item-price {
+        font-size: 0.9em;
+      }
+
+      .item-size {
+        font-size: 0.7em;
+      }
+    }
+  }
+}
+
+.sunday-social-section {
+  .section__title {
+    font-size: 2.3em;
+
+    @include mixins.respond(small-phone){
+      font-size: 2em;
+    }
+
+    span:nth-of-type(2) {
+      font-size:0.5em;
+    }
+  }
+
+  .section__title:last-child {
+    line-height: 1em;
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1.4em;
+    font-weight: 400;
+  }
+
+  @include mixins.respond(phone) {
+    font-size: 0.9em;
+  }
+}
+
+.smaller-text {
+  font-size: 1.5rem;
+}
