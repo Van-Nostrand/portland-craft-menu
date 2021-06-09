@@ -1,11 +1,8 @@
 @use '../abstracts/vars';
 @use '../abstracts/mixins';
 
-.full-nav{
-  // position: fixed;
+.full-nav {
   box-sizing: content-box;
-  top: 0;
-
   width: inherit;
   
   height: vars.$desktop-nav-height;
@@ -14,71 +11,48 @@
   justify-content: space-between;
   align-items: center;
 
-  @include mixins.respond(tab-port){
-    display: none;
-  }
-}
-
-.bknd-img-wrapper{
-  position: absolute;
-  width: 100%;
-  height: vars.$desktop-nav-height;
-  overflow: hidden;
-
-  @include mixins.respond(big-desk){
-    background-color: purple;
-  }
-
-  img{
-    object-fit: cover;
-    width: 110%;
-    filter: brightness(45%);
-    transform: translate(-10rem, -52rem) rotate(-12deg);
-
-    @include mixins.respond(desktop){
-      transform: translate(-10rem, -58rem) rotate(-12deg);
+  .nav-bknd-img-wrapper {
+    position: absolute;
+    width: 100%;
+    height: vars.$desktop-nav-height;
+    overflow: hidden;
+  
+    @include mixins.respond(big-desk) {
+      background-color: purple;
+    }
+  
+    img {
+      object-fit: cover;
+      width: 110%;
+      filter: brightness(45%);
+      transform: translate(-10rem, -52rem) rotate(-12deg);
+  
+      @include mixins.respond(desktop) {
+        transform: translate(-10rem, -58rem) rotate(-12deg);
+      }
     }
   }
-}
 
-.secondary-nav-scroll-target{
-  position: absolute;
-  top: vars.$desktop-secondary-nav-top;
-
-  @include mixins.respond(tab-port){
-    display: none;
-  }
-}
-
-.secondary-nav{
-  position: fixed;
-  top: -(vars.$desktop-secondary-nav-height) ;
-
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: vars.$desktop-secondary-nav-height;
-  background-color: vars.$menu-background-color;
-  transition: transform 0.3s;
-
-  @include mixins.respond(tab-port){
-    display: none;
+  .nav-logo {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin-top: 0;
+    margin-right: vars.$desktop-side-margin / 2;
+    margin-bottom: 0;
+    margin-left: vars.$desktop-side-margin;
   }
 
-  .bknd-img-wrapper{
-    height: vars.$desktop-secondary-nav-height;
+  .button-group {
+    position: relative;
+    margin-top: 0;
+    margin-right: vars.$desktop-side-margin;
+    margin-bottom: 0;
+    margin-left: vars.$desktop-side-margin;
+    width: 100%;
 
-    & img{
-      transform: translate(0rem, -17rem);
-    }
-  }
-}
-
-.secondary-nav-open{
-  transform: translateY(100%);
-  @include mixins.respond(tab-port){
-    display: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
   }
 }

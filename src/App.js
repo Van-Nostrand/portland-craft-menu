@@ -10,7 +10,7 @@ import FoodMenu from "./pages/FoodMenu";
 import DrinksMenu from "./pages/DrinksMenu";
 import HappyHour from "./pages/HappyHour";
 import BrunchMenu from './pages/BrunchMenu';
-import NavHat from "./components/NavHat";
+import NavHat from "./components/nav/NavHat";
 import Footer from "./components/Footer";
 
 import {

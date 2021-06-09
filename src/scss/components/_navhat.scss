@@ -1,63 +1,13 @@
 @use '../abstracts/vars';
 @use '../abstracts/mixins';
 
-.nav-hat-wrapper{
+.nav-hat {
   position: fixed;
-  // width: 100vw;
   width: 100%;
   top: 0;
-  overflow: hidden;
+  // overflow: hidden;
   z-index: 2;
 
-  button {
-    border: none;
-    cursor: pointer;
-    background: none;
-    text-align: center;
-
-    font-size: 2.6em;
-   
-    @include mixins.newHeadingShadow();
-
-  }
-
-  button:hover {
-    color: vars.$light-font-hover;
-  }
-
-  button:active{
-    color: vars.$portland-off-white;
-    transform: translateY(0.1rem);
-  }
-
-  nav{
-    .logo{
-      position: relative;
-      height: auto;
-      width: auto;
-      margin: 0 vars.$desktop-side-margin/2 0 vars.$desktop-side-margin;
-  
-      @include mixins.respond(phone){
-        height: vars.$phone-nav-logo-height;
-        padding: 0;
-        margin-right: 0;
-        margin-left: vars.$phone-side-margin;
-      }
-    }
-
-    .button-group{
-      position: relative;
-      margin: 0 vars.$desktop-side-margin 0 vars.$desktop-side-margin;
-      width: 100%;
-
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-  
-      font-weight: 700;
-      font-family: inherit;
-    }
-  }  
 }
 nav{ z-index: 1;}
 nav div{ z-index: 2;}

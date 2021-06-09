@@ -18,13 +18,13 @@ function LazyFullNav({ logo, children }) {
   }
   return (
     <nav className="full-nav">
-      <div className="bknd-img-wrapper">
+      <div className="nav-bknd-img-wrapper">
         <img src={image} />
       </div>
-      <div className="logo full-nav__logo">
+      <div className="nav-logo">
         <img src={logo} />
       </div>
-      <div className="button-group full-nav__button-group">
+      <div className="button-group">
         {children}
       </div>
     </nav>

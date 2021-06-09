@@ -1,9 +1,9 @@
 import React, { Suspense, useState, useEffect } from "react";
 import { Link, useLocation } from 'react-router-dom';
 
-import MobileNav from "./nav/MobileNav";
-const LazyFullNav = React.lazy(() => import("./nav/LazyFullNav"));
-import blkWhiteLogo from "../assets/portlandlogoWHITE.svg";
+import MobileNav from "./MobileNav";
+const LazyFullNav = React.lazy(() => import("./LazyFullNav"));
+import blkWhiteLogo from "../../assets/portlandlogoWHITE.svg";
 
 
 export default function NavHat({ changePage, currentPage }) {
@@ -32,25 +32,25 @@ export default function NavHat({ changePage, currentPage }) {
   let navButtons = (
     <>
       <Link 
-        className={currentLocation === '/food' ? 'button-current-page' : ''} 
+        className={currentLocation === '/food' ? 'nav-button button-current-page' : 'nav-button'} 
         to='/food'
       >
           Food
       </Link>
       <Link 
-        className={currentLocation === '/drinks' ? 'button-current-page' : ''} 
+        className={currentLocation === '/drinks' ? 'nav-button button-current-page' : 'nav-button'} 
         to='/drinks'
       >
           Drinks
       </Link>
       <Link 
-        className={currentLocation === '/happyhour' ? 'button-current-page' : ''} 
+        className={currentLocation === '/happyhour' ? 'nav-button button-current-page' : 'nav-button'} 
         to='/happyhour'
       >
           Happy Hour
       </Link>
       <Link 
-        className={currentLocation === '/brunch' ? 'button-current-page' : ''}
+        className={currentLocation === '/brunch' ? 'nav-button button-current-page' : 'nav-button'}
         to='/brunch'
       >
         Brunch
@@ -76,7 +76,7 @@ export default function NavHat({ changePage, currentPage }) {
   }
 
   return(
-    <div className="nav-hat-wrapper">
+    <div className="nav-hat">
       {navElement}
     </div>
   )
