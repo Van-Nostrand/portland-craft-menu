@@ -19,53 +19,37 @@ export const SIDES = [
     name: "Gravy",
     price: "2"
   },
- 
+  {
+    name: "Fried Chicken Breast",
+    price: "8"
+  },
 ];
-
-export const AIOLI = [
-  "Smoked Garlic",
-  "Ranch-ish",
-  "Blue Cheese",
-  "Spicy Tomato",
-]
 
 export const SNACKS = [
   
   {
     name: "We Can Pickle That!",
-    price: "8",
-    notes: "House-pickled veggies and fruit",
+    price: "7",
+    notes: "House-pickled seasonally sourced selections",
     diet: "vegan, gluten free", 
   },
   {
-    name: "We Couldn't pickle that",
-    price: "8",
-    notes: "Imported mixed olives",
-    diet: "vegan, gluten free", 
-  },
-  {
-    name: "Edamame",
-    price: "8",
-    notes: "Olive oil, rock salt, oregano",
-    diet: "vegan, gluten free", 
-  },
-  {
-    name: "Hey BubbaGanush",
-    price: "14",
-    notes: "Eggplant caviar with hummus. Seved with house garlic bread and sourdough",
-    diet: "vegan"
-  },
-  {
-    name: "Hand-cut Kennebeck Cajun Fries",
-    price: "8",
-    notes: "Kennebec potatoes. Add aioli for $1",
+    name: "Felix Farm Kennebec Fries",
+    price: "7",
+    notes: "Double-cooked Felix Farm Kennebec potatoes, garlic aioli, fresh herbs",
     diet: "gluten and dairy free", 
   },
   {
     name: "Parmesan Truffle Fries",
-    price: "11",
+    price: "9",
     notes: "Double-cooked Felix Farm Kennebec potatoes tossed in parmesan, truffle oil",
-    diet: "vegetarian, gluten free", 
+    diet: "gluten free", 
+  },
+  {
+    name: "Warm Mixed Olives",
+    price: "7",
+    notes: "House marinated with citrus and herbs",
+    diet: "vegan, gluten free", 
   },
   {
     name: "Spiced Candied Nuts",
@@ -74,54 +58,32 @@ export const SNACKS = [
     diet: "vegan, gluten free", 
   },
   {
-    name: "Soup of the Day",
-    price: "9",
-    notes: "Ask your server about which soup it is... and the backstory!",
-    diet: ""
+    name: "Edamame",
+    price: "7",
+    notes: "Rock salt, oregano",
+    diet: "vegan, gluten free", 
   },
-  {
-    name: "Poutine",
-    price: "12",
-    notes: "Fries, Quebec cheese curds, house-made gravy. Add pulled pork for $4",
-    diet: "", 
-  },
-
 ];
 
 export const SMALL_PLATES = [
+
   {
-    name: "\"Green Salad\"",
-    price: "9",
-    notes: "Daily fresh ingredients with our house dressing (dijon, olive oil, balsamic)",
-    diet: "vegan, gluten free"
-  },
-  {
-    name: "Quinoa Salad",
+    name: "Craft Poutine",
     price: "11",
-    notes: "",
-    diet: ""
+    notes: "Double-cooked Felix Farm Kennebec potatoes, Quebec cheese curds, house-made chicken gravy",
+    diet: "", 
   },
   {
-    name: "Beer Battered Fried Onion Chips",
-    price: "9",
-    notes: "Served with cream herb aioli",
-    diet: "vegetarian"
+    name: "Pulled Pork Poutine",
+    price: "14",
+    notes: "Craft Poutine, served with pulled pork",
+    diet: "", 
   },
   {
-    name: "Wings",
-    price: "17",
-    notes: "Portland's famous salt and pepper wings",
-    diet: "gluten free", 
-  },
-  {
-    name: "Honey Glazed Hot Wings",
-    price: "17.50",
-    notes: "",
-    diet: ""
-  },
-  {
-    name: "Grilled Pork Ribs",
+    name: "Farmcrest Wings",
     price: "16",
+    notes: "Choose either salt & pepper or honey hot. Comes with ranch dressing",
+    diet: "gluten free", 
   },
   {
     name: "Eggplant Caviar & Hummus",
@@ -139,27 +101,27 @@ export const SMALL_PLATES = [
 
 export const PIZZA = [
   {
-    name: "Classic Margherita",
-    price: "17",
-    notes: "",
+    name: "Margherita Pizza",
+    price: "16",
+    notes: "Bocconcini, basil, tomato sauce",
     diet: "vegetarian"
   },
   {
-    name: "Prosciutto Rocket",
+    name: "Prosciutto Arugula Pizza",
     price: "19",
-    notes: "With arugula",
+    notes: "Bocconcini, tomato sauce",
     diet: ""
   },
   {
-    name: "West Coast",
+    name: "Smoked Salmon Pizza",
     price: "19",
-    notes: "Smoked salmon, capers, Canadian shalots",
+    notes: "Bocconcini, onions, capers, tomato sauce",
     diet: ""
   },
   {
-    name: "Veggie",
+    name: "Vegetarian Pizza",
     price: "17",
-    notes: "Fresh seasonal veggies. Ask your server",
+    notes: "Ask your server for today's toppings",
     diet: ""
   },
 ]
@@ -167,71 +129,64 @@ export const PIZZA = [
 export const BURGERS = [
   {
     name: "Smash Burger",
-    price: "11",
-    notes: "Single patty, cheddar, lettuce, pickle, special sauce",
+    price: "10",
+    notes: "3oz patty, cheddar, lettuce, pickle, special sauce",
     diet: ""
   },
   {
     name: "Portland Burger",
     price: "14",
-    notes: "Double patty, grilled bacon, cheddar, lettuce, tomato, friend onion, pickle, special sauce",
+    notes: "Two 3oz patties, bacon, cheddar, lettuce, tomato, friend onion, pickle, special sauce",
     diet: ""
   },
-  {
-    name: "\"Sharpy Sharp Burger\"",
-    price: "14",
-    notes: "Double weight patty, blue cheese, house onion jam, arugula",
-    diet: ""
-  },
-  {
-    name: "Put a Pig on it",
-    price: "13",
-    notes: "Slow cooked BBQ pulled pork, house made slaw, pickled jalapenos, aioli",
-    diet: ""
-  },
-  
   {
     name: "Chicken Burger",
     price: "13",
-    notes: "Buttermilk fried chicken, avocado puree, lettuce, pickled jalapenos, aioli, red onion",
+    notes: "Fried chicken, avocado puree, lettuce, pickled jalapenos, aioli",
     diet: ""
   }, 
   {
+    name: "Pulled Pork Burger",
+    price: "13",
+    notes: "Slaw, pickles, shallots, aioli",
+    diet: ""
+  },
+  {
     name: "Vegan Sandwich",
     price: "12",
-    notes: "Roasted veg, hummus, eggplant caviar, arugula, house panini",
+    notes: "Roasted veg, hummus, eggplant caviar, arugula, focaccia",
     diet: "vegan"
   },
+  {
+    name: "Smoked Salmon & Avocado Toast",
+    price: "13",
+    notes: "Avocado puree, smoked salmon, dry tomato, pickled shallots, fried capers, focaccia",
+    diet: ""
+  }
 ]
 
 export const LARGE_PLATES = [
-  {
-    name: "The Big Salad",
-    price: "ask your server",
-    notes: "Made fresh with seasonal ingredients",
-    diet: ""
-  },
   
-  {
-    name: "Steak Frites",
-    price: "23",
-    notes: "Wine, shallot and peppercorn steak jus",
-    diet: "", 
-  },
   {
     name: "Put a Bird On It!",
     price: "20",
     notes: "Fried Chicken, waffle, crispy bacon, gravy, maple syrup",
     diet: ""
   },
+  {
+    name: "Steak Frites",
+    price: "23",
+    notes: "Wine, shallot and peppercorn steak jus",
+    diet: "", 
+  }
 ];
 
 export const SWEETS = [
 
   {
-    name: "Chocolate Brownie",
-    price: "8", 
-    notes: "carmelized hazelnuts, whipped cream",
+    name: "Bread Pudding",
+    price: "5", 
+    notes: "Pear jam, whipped cream",
     diet: "vegetarian", 
   }
 ]
@@ -445,7 +400,7 @@ export const HAPPY_HOUR = [
   {
     name: "Select US Craft Beer",
     prices: [
-      {price: "5.75", size: "14oz"}
+      {price: "5¾", size: "14oz"}
     ]
   },
   {
@@ -458,7 +413,7 @@ export const HAPPY_HOUR = [
   {
     name: "House Red, White, & Rose Wine",
     prices: [
-      {price: "5.50", size: "5oz"},
+      {price: "5½", size: "5oz"},
       {price: "9", size: "8oz"}
     ]
   },
@@ -471,13 +426,13 @@ export const HAPPY_HOUR = [
   {
     name: "Select Single/Double Highballs",
     prices: [
-      {price: "5 / $7.50", size: ""}
+      {price: "5 / $7½", size: ""}
     ]
   },
   {
     name: "Jameson",
     prices: [
-      {price: "4.50", size: "1oz"}
+      {price: "4½", size: "1oz"}
     ]
   }
 ]
@@ -495,16 +450,16 @@ export const NON_ALCOHOLIC = [
   },
   {
     name: "Pop",
-    price: "3.50",
+    price: "3½",
     notes: "Pepsi, Diet Pepsi, Sprite, Ginger Ale, Soda, Tonic"
   },
   {
     name: "Orange Juice",
-    price: "3.50"
+    price: "3½"
   },
   {
     name: "Cranberry Juice",
-    price: "3.50"
+    price: "3½"
   },
   {
     name: "Fentimans Sodas",
@@ -526,42 +481,42 @@ export const PACKAGED_BEER = [
   {
     name: "Steamworks: Kolsch",
     size: "473ml",
-    price: ["3.75","13"]
+    price: ["3¾","13"]
   },
   {
     name: "Steamworks: Hazy Pale Ale",
     size: "355ml",
-    price: ["3.50","12"]
+    price: ["3½","12"]
   },
   {
     name: "Main St: Pilsner",
     size: "355ml",
-    price: ["3.50","12"]
+    price: ["3½","12"]
   },
   {
     name: "Main St: Fruit Bomb Sour",
     size: "355ml",
-    price: ["3.50","12"]
+    price: ["3½","12"]
   },
   {
     name: "Parkside Dawn Pilsner",
     size: "355ml",
-    price: ["3.50","12"]
+    price: ["3½","12"]
   },
   {
     name: "Great Notion: Super Baked Blueberry Sour",
     size: "473ml",
-    price: ["9"]
+    price: ["8.99"]
   },
   {
     name: "Great Notion: Groundhog Day Imperial IPA",
     size: "473ml",
-    price: ["9"]
+    price: ["8.99"]
   },
   {
     name: "Offshoot: Relax, It's Just a Hazy IPA",
     size: "473ml",
-    price: ["9"]
+    price: ["8.99"]
   },
   {
     name: "Deschutes Fresh Squeezed IPA",

@@ -29,7 +29,18 @@
     flex-flow: row wrap;
     padding-left: 2rem;
 
-
+    @include mixins.respond(tab-port){
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: stretch;
+      padding-left: 0;  
+    }
+    
+    @include mixins.respond(phone){
+    
+      flex-flow: column nowrap;
+      align-items: stretch;
+    } 
   }
 
   // .section__title {
@@ -62,23 +73,7 @@
 
   //   padding: 1rem;
 
-  //   @include mixins.respond(tab-port){
-  //     display: grid;
-  //     grid-template-columns: 40vw 40vw;
-  //     justify-content: space-around;
-  //     align-items: stretch;
-      
-
-  //     max-height: unset;
-  //     max-width: unset;
-  //     text-align: start;
-  //   }
     
-  //   @include mixins.respond(phone){
-  //     display: flex;
-  //     flex-flow: column nowrap;
-  //     align-items: stretch;
-  //   }
   // }
 }
 ///////////////////////////////////////
@@ -98,6 +93,11 @@
 .burger-addons {
 
   padding-left: 2rem;
+
+  @include mixins.respond(phone) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
   &-title {
     margin-top: 0.5rem;
@@ -127,8 +127,13 @@
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto auto 1fr;
   row-gap: 0.1rem;
+
+  @include mixins.respond(tab-port) {
+    flex: 0 2 auto;
+    // width: 100%;
+  }
   
-  font-size: 0.6em;
+  // font-size: 0.6em;
 
   // width: 30rem;
   
