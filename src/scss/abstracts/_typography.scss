@@ -1,5 +1,5 @@
 /*
-In this file I'm going to try only defining the following:
+In this file:
 - any property with "font" in the name
 - any property with "text" in the name
 - color
@@ -43,6 +43,10 @@ In this file I'm going to try only defining the following:
 }
 
 .menu {
+
+  font-size: 2.5rem; 
+  color: vars.$brown-q; // todo - consider moving to .menu?
+
   .section-title {
     color: vars.$portland-red;
     font-weight: 600;
@@ -53,11 +57,32 @@ In this file I'm going to try only defining the following:
   }
 }
 
+.menu-item {
+
+  .item-name {
+    letter-spacing: 0;
+    font-size: 1.08em; // todo - change to rem equivalent
+  }
+
+  .item-price {
+    text-align: end;
+    font-size: 0.9em;
+  }
+
+  .item-notes {
+    font-size: 0.8em;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .item-diet {
+    font-size: 1.2rem;
+    // font-style: italic;
+    font-weight: 500;
+  }
+}
+
 .food-menu {
-
-  color: vars.$brown-q; // todo - consider moving to .menu?
-  font-size: 2.5rem;
-
   p {
     font-size: 0.7em;
     font-style: italic;
@@ -81,6 +106,30 @@ In this file I'm going to try only defining the following:
   }
 }
 
+.drinks-menu { 
+
+}
+
 .happy-hour-menu {
 
+  .happy-hour-section {
+
+    .section-title {
+      
+    }
+
+    .item-list {
+      .menu-item {
+        .item-price {
+          font-size: 0.9em; // todo - change this
+        }
+
+        .item-size {
+          color: vars.$dark-font;
+          font-weight: 400;
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
 }

@@ -33,53 +33,55 @@ import {
 
 export default function App() {
   return (
-    <Router>
-      <NavHat />
+    <div className="app-wrapper">
+      <Router>
+        <NavHat />
 
-      <Switch>
-        <Route exact path="/" render={() => <Redirect to="/food" />} />
-        <Route path="/food">
-          <FoodMenu
-            menuData={{
-              SNACKS,
-              SMALL_PLATES,
-              LARGE_PLATES,
-              PIZZA,
-              BURGERS,
-              SWEETS,
-              SIDES,
-            }}
-          />
-        </Route>
-        <Route path="/drinks">
-          <DrinksMenu
-            menuData={{
-              WHITE_WINE,
-              RED_WINE,
-              BUBBLES,
-              HOUSE_COCKTAILS,
-              PACKAGED_BEER,
-              NON_ALCOHOLIC,
-            }}
-          />
-        </Route>
-        <Route path="/happyhour">
-          <HappyHour
-            menuData={{
-              HAPPY_HOUR,
-              HAPPY_HOUR_FOOD,
-            }}
-          />
-        </Route>
-        <Route path="/brunch">
-          <BrunchMenu
-            menuData={{
+        <Switch>
+          <Route exact path="/" render={() => <Redirect to="/food" />} />
+          <Route path="/food">
+            <FoodMenu
+              menuData={{
+                SNACKS,
+                SMALL_PLATES,
+                LARGE_PLATES,
+                PIZZA,
+                BURGERS,
+                SWEETS,
+                SIDES,
+              }}
+            />
+          </Route>
+          <Route path="/drinks">
+            <DrinksMenu
+              menuData={{
+                WHITE_WINE,
+                RED_WINE,
+                BUBBLES,
+                HOUSE_COCKTAILS,
+                PACKAGED_BEER,
+                NON_ALCOHOLIC,
+              }}
+            />
+          </Route>
+          <Route path="/happyhour">
+            <HappyHour
+              menuData={{
+                HAPPY_HOUR,
+                HAPPY_HOUR_FOOD,
+              }}
+            />
+          </Route>
+          <Route path="/brunch">
+            <BrunchMenu
+              menuData={{
 
-            }}
-          />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+              }}
+            />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
   );
 }

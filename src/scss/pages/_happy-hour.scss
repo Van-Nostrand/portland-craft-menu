@@ -2,149 +2,78 @@
 @use '../abstracts/mixins';
 
 .happy-hour-menu {
-  
-
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 
-  font-size: 2.5rem;
-
-}
-
-.happy-hour-section{
-
-  // COPIED FROM FOOD MENU
-  position: relative;
-  margin: 1rem auto 3rem auto;
-  width: 76vw;
-
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, auto);
-  justify-items: center;
-
-  color: vars.$brown-q;
-
-  @include mixins.respond(tab-port){
-    // top: vars.$mobile-nav-height + 3rem;
-    margin: 1rem 0;
-    width: 95vw;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-  .section__title{
-    grid-column: 3 / span 2;
-    grid-row: 1;
-
-    font-size: 2.3em;
-    font-weight: 500;
-    color: vars.$portland-red;
-
-    @include mixins.respond(phone){
-      margin-bottom: 2rem;
-    }
-  }
-
-  .section__hh-subtitle{
-    grid-column: 2 / span 4;
-    grid-row: 2;
-
-    display: flex; 
-    flex-flow: row;
-    
-    color: vars.$dark-font;
-    font-weight: 500;
-    text-align: center;
-    justify-items: stretch;
-    font-size: 1em;
-
-    .hh-subtitle-time{
-      display: inline-block;
+  .happy-hour-section {
+    margin: 1rem auto 3rem auto; // margin auto? seems unnecessary
   
-      @include mixins.respond(tab-port){
-        display: block;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    justify-items: center;
+  
+    @include mixins.respond(tab-port) {
+      margin: 1rem 0;
+      width: 95vw;
+  
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    } 
+
+    .section-title {
+      grid-column: 3 / span 2;
+      grid-row: 1;
+  
+      @include mixins.respond(phone) {
+        margin-bottom: 2rem;
       }
     }
 
-    .hh-subtitle-time:nth-of-type(1){
-      margin-right: 2rem;
+    .happy-hour-time {
+
     }
-    .hh-subtitle-time:nth-of-type(2){
-      margin-left: 2rem;
+
+    .item-list {
+
+      .menu-item {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 1rem;
+        
+        @include mixins.respond(phone){
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+        }
+
+        .item-price {
+          margin: 0 0.5rem;
+      
+          @include mixins.respond(tab-port){
+            margin: 0;
+          }
+        }
+
+        .item-size {
+          margin: 0 0.3rem;
+        }
+
+        span {
+          display: flex;
+          flex-flow: row nowrap;
+        }
+      }
     }
   }
-
-  .hh-food-title, .hh-drinks-title{
-    margin: 3rem 0 2rem 0;
-    color: vars.$portland-red;
-    font-size: 1.2em;
-    font-weight: 600;
-
-    @include mixins.respond(phone){
-      margin-top: 1rem;
-    }
-  }
-
-  .hh-food-title{
-    grid-column: 2 / span 2;
-    grid-row: 3;
-    text-align: center;
-  }
-
-  .hh-food-list{
-    grid-column: 1 / span 3;
-    grid-row: 4;
-    margin-bottom: 2rem;
-  }
-
-  .hh-drinks-title{
-    grid-column: 4 / span 2;
-    grid-row: 3;
-    text-align: center;
-  }
-
-  .hh-drinks-list{
-    grid-column: 4 / span 3;
-    grid-row: 4;
-  }  
 }
 
-.hh-item{
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 1rem;
-  font-size: 0.95em;
-  
-  @include mixins.respond(phone){
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
+// child of .happy-hour-menu.happy-hour-section
+.happy-hour-food-section {
 
-  .item-price{
-    margin: 0 0.5rem;
-    font-size: 0.9em;
-
-    @include mixins.respond(tab-port){
-      margin: 0;
-    }
-  }
-
-  .item-size{
-    color: vars.$dark-font;
-    font-weight: 400;
-    margin: 0 0.3rem;
-    font-size: 0.7em;
-  }
-
-  span{
-    display: flex;
-    flex-flow: row nowrap;
-  }
 }
 
 .hh-item div {

@@ -3,14 +3,11 @@
 
 .food-menu {
 
-  margin: 1rem auto 3rem auto;
-
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
   @include mixins.respond(tab-port) {
     margin: 1rem 0;
-
     display: flex;
     flex-flow: column nowrap;
   }
@@ -25,18 +22,6 @@
 
     @include mixins.respond(phone) {
       margin-left: 0.5rem;
-    }
-  }
-
-  ///////////////////////////////////////
-  ////////// SWEETS
-  .sweets {
-    .item-list {
-      grid-template-columns: 50% 50%;
-
-      @include mixins.respond(tab-port) {
-        grid-template-columns: 40vw 40vw;
-      }
     }
   }
 }
@@ -74,7 +59,7 @@
   grid-column: 3;
   grid-row: 3;
 
-  .section__list {
+  .item-list {
     max-width: 95%;
 
     @include mixins.respond(tab-port) {
@@ -87,24 +72,5 @@
   grid-row: 3;
 }
 
-///////////////////////////////////// 
-///////////// BURGER ADDONS
-.burger-addons {
 
-  padding-left: 2rem;
-
-  &-title {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  &-options {
-    display: flex;
-    flex-flow: row wrap;
-
-    & div {
-      flex: 1 2 33%;
-    }
-  }
-}
 

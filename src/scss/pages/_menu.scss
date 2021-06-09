@@ -3,11 +3,13 @@
 
 /////////////////////////////////////////// 
 ////////// GENERAL MENU STYLING
-
 .menu {
   position: relative;
   top: vars.$desktop-nav-height; // allows space for navbar
   width: vars.$desktop-menu-width;
+
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
 
   @include mixins.respond(tab-port) {
     top: vars.$mobile-nav-height;
@@ -15,11 +17,3 @@
     padding: 1rem;
   }
 }
-
-// unused
-// .horizontal-divider{
-//   align-self: center;
-//   height: 90%;
-//   width: 0.2rem;
-//   background-color: vars.$portland-red;
-// }

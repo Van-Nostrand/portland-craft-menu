@@ -1,8 +1,4 @@
 import React from 'react';
-// import { PackagedBeerSection, PackagedBeer } from '../components/PackagedBeer';
-// import { Wine, WineSection } from '../components/Wine';
-// import { Cocktail, CocktailSection } from '../components/Cocktail';
-// import { NonAlcSection, NonAlcDrink } from '../components/NonAlcDrink';
 import SectionWrapper from '../components/SectionWrapper';
 import ItemWrapper from '../components/ItemWrapper';
 

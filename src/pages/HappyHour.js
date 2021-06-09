@@ -36,14 +36,18 @@ export default function HappyHour({ menuData }) {
           sectionClassName="happy-hour-section-food"
           title="Happy-Hour Food Features"
         >
-          { getItems(menuData.HAPPY_HOUR_FOOD, "happy-hour-food") } 
+          <ul className="item-list">
+            { getItems(menuData.HAPPY_HOUR_FOOD, "happy-hour-food") } 
+          </ul>
         </SectionWrapper>
 
         <SectionWrapper
           sectionClassName="happy-hour-section-drinks"
           title="Happy-Hour Drink Features"
         >
-          { getItems(menuData.HAPPY_HOUR, "happy-hour-drinks") }
+          <ul className="item-list">
+            { getItems(menuData.HAPPY_HOUR, "happy-hour-drinks") }
+          </ul>
         </SectionWrapper>
 
       </SectionWrapper>

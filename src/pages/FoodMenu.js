@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Food } from '../components/Food';
+import React from 'react';
 import SectionWrapper from '../components/SectionWrapper';
 import ItemWrapper from '../components/ItemWrapper';
 
@@ -14,11 +13,11 @@ export default function FoodMenu({ menuData }) {
           price={item.price}
           section={section} 
         >
-          <div className={"food-item-notes"}>
+          <div className={`${section}-item-notes item-notes`}>
             {item.notes}
           </div>
 
-          <div className="food-item-diet">
+          <div className={`${section}-item-diet item-diet`}>
             {item.diet}
           </div>
         </ItemWrapper>
