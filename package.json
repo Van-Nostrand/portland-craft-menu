@@ -6,6 +6,7 @@
   "homepage": "http://Van-Nostrand.github.io/portland-craft-menu",
   "scripts": {
     "dev": "webpack serve --mode development",
+    "start": "pm2-runtime start ecosystem.config.js --env production",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
