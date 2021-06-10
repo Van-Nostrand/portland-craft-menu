@@ -11,6 +11,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "engines": {
+    "npm": ">=7.x"
+  },
   "author": "Daniel Doull",
   "license": "MIT",
   "dependencies": {
