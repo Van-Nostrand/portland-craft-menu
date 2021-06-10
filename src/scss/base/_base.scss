@@ -17,20 +17,17 @@
   box-sizing: inherit;
 }
 
-
-
-button{
+button {
   font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
 }
 
-html{
+html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
+  // font-family: Helvetica;
   text-rendering: optimizeLegibility;
-
-  // background-color: $menu-background-color;
   
   //breakpoints for reasonable resizing of fonts on other devices
   @include mixins.respond(tab-land){  // width < 1200
@@ -39,9 +36,9 @@ html{
   @include mixins.respond(tab-port){  // width < 900?
     font-size: 50%;
   }
-  @include mixins.respond(phone){
+  @include mixins.respond(phone){ // width ~ 400
     font-size: 40%;
-    letter-spacing: 0.01rem;
+    // letter-spacing: 0.01rem;
   }
   
   @include mixins.respond(desktop){
@@ -52,8 +49,9 @@ html{
   }
 }
 
-li{
-  list-style: none;
+
+li {
+  list-style: none; // because list style is dumb
 }
 
 .app-wrapper {

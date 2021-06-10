@@ -7,13 +7,20 @@
   position: relative;
   top: vars.$desktop-nav-height; // allows space for navbar
   width: vars.$desktop-menu-width;
+  padding-top: 2rem;
 
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, 1fr);
 
   @include mixins.respond(tab-port) {
     top: vars.$mobile-nav-height;
     width: unset;
     padding: 1rem;
+  }
+
+  section {
+    .section-title {
+      padding-top: 3rem;
+    }
   }
 }

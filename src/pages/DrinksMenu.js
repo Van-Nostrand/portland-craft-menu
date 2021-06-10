@@ -41,7 +41,7 @@ export default function DrinksMenu({menuData}) {
             price={item.price}
             section={section}
           >
-            <div className="cocktail-notes">
+            <div className="cocktail-notes item-notes">
               {item.notes}
             </div>
           </ItemWrapper>
@@ -66,12 +66,13 @@ export default function DrinksMenu({menuData}) {
   }
 
   return (
-    <div className="menu drinks-menu">
+    <div className="drinks-menu menu">
 
         <SectionWrapper
           sectionClassName="drink-section packaged-section"
           title="Beers To Go"
         >
+          <div className="packaged-formats">single can / 4 pack</div>
           <ul className="item-list">
             { getItems(menuData.PACKAGED_BEER, 'packaged') }
           </ul>
@@ -118,7 +119,7 @@ export default function DrinksMenu({menuData}) {
           title="Cocktails"
         >
           <ul className="item-list">
-            { getCocktails(menuData.HOUSE_COCKTAILS, 'cocktails') }
+            { getCocktails(menuData.HOUSE_COCKTAILS, 'cocktail') }
           </ul>
         </SectionWrapper>
 

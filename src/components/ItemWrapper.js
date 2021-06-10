@@ -19,7 +19,7 @@ export default function ItemWrapper({ name, price, section, children }) {
       </div>
       
       <div className={`${classPrefix}-price item-price`}>
-        ${ typeof(price) === Array ? price.join(' / $') : price }
+        ${ typeof(price) === "object" ? price.join(' / $') : price }
       </div>
 
       {children}

@@ -60,24 +60,23 @@ In this file:
 .menu-item {
 
   .item-name {
-    letter-spacing: 0;
-    font-size: 1.08em; // todo - change to rem equivalent
+    letter-spacing: 1.1px;
+    font-size: 0.8em; 
   }
 
   .item-price {
     text-align: end;
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 
   .item-notes {
-    font-size: 0.8em;
-    font-weight: 100;
+    font-size: 0.6em;
+    // font-weight: 100;
     font-style: italic;
   }
 
   .item-diet {
-    font-size: 1.2em;
-    // font-style: italic;
+    font-size: 0.6em;
     font-weight: 500;
 
     @include mixins.respond(tab-port) {
@@ -143,5 +142,37 @@ In this file:
         }
       }
     }
+  }
+}
+
+.packaged-section {
+  .packaged-formats {
+    font-size: 0.7em;
+  }
+}
+
+.redwine-item-name.item-name,
+.whitewine-item-name.item-name,
+.bubbles-item-name.item-name {
+  font-size: 0.75em;
+}
+
+.wine-sizes {
+  font-size: 0.6em;
+  text-align: end;
+  letter-spacing: 0.12rem;
+}
+
+.wine-item-varietal {
+  font-size: 0.75em;
+}
+
+.wine-item-region {
+  font-size: 0.6em;
+}
+
+.nonalc-item.menu-item {
+  .nonalc-item-name.item-name {
+    font-size: 0.65em;
   }
 }

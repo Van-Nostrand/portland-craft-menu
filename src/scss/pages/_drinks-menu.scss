@@ -32,13 +32,41 @@
       margin-bottom: 2rem;
     }
   }
+  .drink-section {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+  
+    border-top: 3px solid vars.$portland-red;
+  }
+
+  .packaged-section {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .cocktail-section {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+  
+  .red-wine-section {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+  
+  .white-wine-section {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+  }
+
+  .non-alcoholic-section {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  
+  .bubbly-wine-section {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+  }
 }
-
-.drink-section {
-  display: flex;
-  flex-flow: column;
-  align-items: stretch;
-
-  border-top: 3px solid vars.$portland-red;
-}
-

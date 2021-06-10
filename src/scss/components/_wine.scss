@@ -3,27 +3,23 @@
 
 ///////////////////////////////////////////////////
 ///////////////// WINE SECTION
-.wine-section{
+.wine-section {
   margin: 0 2rem;
   border-top: 3px solid vars.$portland-red;
   width: 100%;
-  // font-size: 2.6rem;
 
   @include mixins.respond(tab-port){
     margin: 0 auto;
   }
 
-  .wine-section-title{
+  .section-title {
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
-    display: inline;
-    width: 40%;
+    display: inline; // todo - REAL SUS
+    width: 40%; // todo - WHY
 
-    padding-top: 3rem;
-    
-    // font-size: 0.95em;
-    color: vars.$portland-red;
+    // padding-top: 3rem; 
 
     @include mixins.respond(phone){
       padding-top: 0;
@@ -35,14 +31,11 @@
     grid-row: 1;
     justify-self: end;
     align-self: end;
-    padding: 0 3.5rem 0.5rem 0;
+    padding: 0 5rem 0.5rem 0;
     width: 40%;
     position: relative;
-    top: -100%;
 
     display: inline;
-    
-    // font-size: 0.6em;
 
     @include mixins.respond(tab-port){
       padding: 0;
@@ -50,9 +43,7 @@
 
     @include mixins.respond(phone){
       padding-right: 2rem;
-      // font-size: 0.7em;
       align-self: flex-end;
-      // text-align: end;
     }
   }
 
@@ -101,10 +92,20 @@
   }
 }
 
+// override the bottom padding of the wine section titles, because the "wine sizes" div adds more than enough space
+// this is ridiculous
+.drink-section.wine-section.red-wine-section .section-title,
+.drink-section.wine-section.white-wine-section .section-title,
+.drink-section.wine-section.bubbly-wine-section .section-title {
+  padding-bottom: 0;
+}
+
 
 ////////////////////////////////////////////////
 //////////// WINE ITEM
-.wine-item{
+.redwine-item, 
+.whitewine-item, 
+.bubbles-item {
   margin: 0.3rem 0;
   position: relative;
 
@@ -112,64 +113,38 @@
   grid-template-columns: 6fr 6fr 1.2fr 4.3fr;
   grid-template-rows: auto auto;
 
-  // letter-spacing: -0.05rem;
 
   @include mixins.respond(phone){
     margin: 0;
   }
 
-  &-name{
+  &-name {
     grid-column: 1;
     grid-row: 1;
-
-    // font-size: 0.7em;
-
-    @include mixins.respond(phone){
-      // font-size: 1.2em;
-    }
   }
 
-  &-varietal{
+  &-varietal {
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
     padding-right: 0.5rem;
 
-    // font-size: 0.7em;
-    
     @include mixins.respond(phone){
       grid-column: 2;
       grid-row: 1;
       justify-self: start;
-
-      // font-size: 1em;
     }
   }
 
-  &-region{
+  &-region {
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
-
-    // font-size: 0.5em;
-    
-
-    @include mixins.respond(phone){
-      // font-size: 0.85em;
-      // line-height: 2;
-    }
   }
 
-  &-price{
+  &-price {
     grid-column: 4;
     grid-row: 1;
     justify-self: end;
-
-    // font-size: 0.8em;
-
-    @include mixins.respond(phone){
-      // font-size: 0.9em;
-      // line-height: 2;
-    }
   }
 }

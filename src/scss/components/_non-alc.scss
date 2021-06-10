@@ -1,40 +1,29 @@
 /////////////////// 
-.non-alc-section {
+.drinks-menu {
 
-  // font-size: 2rem;
-  &-title {
+  .drink-section.non-alcoholic-section {
+  
+    .item-list {
+      display: flex;
+      flex-flow: row wrap;
+  
+      .nonalc-item {
+        flex: 0 2 30rem;
 
-  }
+        display: grid;
+        grid-template-columns: 3fr 4fr 3fr;
+        margin-bottom: 0.5rem;
+        
 
-  &-list {
-    li {
-      
-      display: grid;
-      grid-template-columns: 70% 30%;
-      grid-template-rows: auto auto;
-      margin-bottom: 1rem;
+        &-name {
+          grid-column: 1 / span 2;
+        }
 
-      .item-name {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-
-        font-size: 1.3em;
-        margin-bottom: 0.3rem;
-      }
-
-      .item-price {
-        grid-column: 2;
-        grid-row: 1;
-
-        justify-self: end;
-        padding-right: 2rem;
-      }
-
-      .item-notes {
-        grid-column: 1 / span 2;
-        grid-row: 2;
-
-        font-style: italic;
+        &-price {
+          grid-column: 3;
+          text-align: start;
+          padding-right: 2rem;
+        }
       }
     }
   }
