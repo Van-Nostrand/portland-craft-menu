@@ -3,6 +3,6 @@
 An online menu for Portland Craft
 
 ## TODO
-* reimplement style rules
-* * redundancies
-* * create shared rules
+* develop a new style
+* do something more interesting with images
+* subtle animations
