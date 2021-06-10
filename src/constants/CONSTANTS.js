@@ -444,41 +444,28 @@ export const HAPPY_HOUR_FOOD = [
 export const HAPPY_HOUR = [
   {
     name: "Select US Craft Beer",
-    prices: [
-      {price: "5.75", size: "14oz"}
-    ]
+    price: "5.75"
+      
   },
   {
     name: "Tap #9 Local Craft Beer",
-    prices: [
-      {price: "4", size: "14oz"},
-      {price: "5", size: "20oz"}
-    ]
+    price: ["4","5"]
   },
   {
     name: "House Red, White, & Rose Wine",
-    prices: [
-      {price: "5.50", size: "5oz"},
-      {price: "9", size: "8oz"}
-    ]
+    price: ["5.50","9"]
   },
   {
     name: "Aperol Spritz & Moscow Mule",
-    prices: [
-      {price: "8", size: ""},
-    ]
+    price: [ "8"]
   },
   {
     name: "Select Single/Double Highballs",
-    prices: [
-      {price: "5 / $7.50", size: ""}
-    ]
+    price: ["5", "7.50"]
   },
   {
     name: "Jameson",
-    prices: [
-      {price: "4.50", size: "1oz"}
-    ]
+    price: ["4.50"]
   }
 ]
 
@@ -544,7 +531,7 @@ export const PACKAGED_BEER = [
     price: ["3.50","12"]
   },
   {
-    name: "Parkside Dawn Pilsner",
+    name: "Parkside: Dawn Pilsner",
     size: "355ml",
     price: ["3.50","12"]
   },
@@ -564,12 +551,12 @@ export const PACKAGED_BEER = [
     price: ["9"]
   },
   {
-    name: "Deschutes Fresh Squeezed IPA",
+    name: "Deschutes: Fresh Squeezed IPA",
     size: "355ml",
     price: ["4","14"]
   },
   {
-    name: "Sierra Nevada Pale Ale",
+    name: "Sierra Nevada: Pale Ale",
     size: "355ml",
     price: ["4","14"]
   },

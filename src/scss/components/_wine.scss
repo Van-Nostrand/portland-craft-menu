@@ -9,7 +9,7 @@
   width: 100%;
 
   @include mixins.respond(tab-port){
-    margin: 0 auto;
+    margin: 0 auto; 
   }
 
   .section-title {
@@ -18,8 +18,6 @@
     justify-self: center;
     display: inline; // todo - REAL SUS
     width: 40%; // todo - WHY
-
-    // padding-top: 3rem; 
 
     @include mixins.respond(phone){
       padding-top: 0;
@@ -107,44 +105,48 @@
 .whitewine-item, 
 .bubbles-item {
   margin: 0.3rem 0;
-  position: relative;
 
   display: grid;
-  grid-template-columns: 6fr 6fr 1.2fr 4.3fr;
+  grid-template-columns: 6fr 4.3fr;
   grid-template-rows: auto auto;
 
 
   @include mixins.respond(phone){
-    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-template-columns: 6fr 4.5fr;
   }
 
   &-name {
-    grid-column: 1;
+    grid-column: 1 / span 2 ;
     grid-row: 1;
   }
 
-  &-varietal {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
-    padding-right: 0.5rem;
+  // &-varietal {
+  //   grid-column: 2;
+  //   grid-row: 1;
+  //   justify-self: end;
+  //   padding-right: 0.5rem;
 
-    @include mixins.respond(phone){
-      grid-column: 2;
-      grid-row: 1;
-      justify-self: start;
-    }
-  }
+  //   @include mixins.respond(phone){
+  //     grid-column: 2;
+  //     grid-row: 1;
+  //     justify-self: start;
+  //   }
+  // }
 
   &-region {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
+    grid-column: 1;
+    grid-row: 2;
+    // justify-self: end;
   }
 
   &-price {
-    grid-column: 4;
+    grid-column: 2;
     grid-row: 1;
     justify-self: end;
+    @include mixins.respond(phone) {
+      grid-row: 2;
+    }
   }
 }

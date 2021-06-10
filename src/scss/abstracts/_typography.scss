@@ -30,7 +30,7 @@ In this file:
     a {
       text-decoration: none;
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 3rem;
       @include mixins.newHeadingShadow();
     }
     a:link {     color: #dedede; }
@@ -62,17 +62,30 @@ In this file:
   .item-name {
     letter-spacing: 1.1px;
     font-size: 0.8em; 
+    font-weight: 600;
+
+    @include mixins.respond(phone) {
+      font-size: 1em;
+    }
   }
 
   .item-price {
     text-align: end;
     font-size: 0.7em;
+
+    @include mixins.respond(phone) {
+      font-size: 1em;
+    }
   }
 
   .item-notes {
     font-size: 0.6em;
     // font-weight: 100;
     font-style: italic;
+
+    @include mixins.respond(phone) {
+      font-size: 0.9em;
+    }
   }
 
   .item-diet {
@@ -80,15 +93,19 @@ In this file:
     font-weight: 500;
 
     @include mixins.respond(tab-port) {
-      font-size: 0.8em;
+      font-size: 0.9em;
     }
   }
 }
 
 .food-menu {
   p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-style: italic;
+
+    @include mixins.respond(phone) {
+      font-size: 1em;
+    }
   }
 
   .snacks .section-title{
@@ -98,19 +115,20 @@ In this file:
   .burger-addons {
 
     &-title {
-      font-size: 1.6rem;
+      font-size: 0.8em;
+      font-style: italic;
       
-      @include mixins.respond(tab-port) {
-        font-size: 2.4rem;
+      @include mixins.respond(phone) {
+        font-size: 1em;
       }
     }
 
     &-options {
       & div {
-        font-size: 1.4rem;
+        font-size: 0.7em;
 
-        @include mixins.respond(tab-port) {
-          font-size: 2rem;
+        @include mixins.respond(phone) {
+          font-size: 0.9em;
         }
       }
     }
@@ -123,16 +141,34 @@ In this file:
 
 .happy-hour-menu {
 
-  .happy-hour-section {
+  .sunday-social-section {
+    p {
+      text-align: center;
+    }
+  }
 
-    .section-title {
-      
+  .happy-hour-section,
+  .sunday-social-section {
+
+    .section-title, .happy-hour-time {
+      text-align: center;
     }
 
     .item-list {
       .menu-item {
+        .item-name {
+          font-size: 0.7em;
+
+          @include mixins.respond(tab-port) {
+            font-size: 1em;
+          }
+        }
         .item-price {
-          font-size: 0.9em; // todo - change this
+          font-size: 0.7em; // todo - change this?
+
+          @include mixins.respond(tab-port) {
+            font-size: 1em;
+          }
         }
 
         .item-size {
@@ -155,24 +191,48 @@ In this file:
 .whitewine-item-name.item-name,
 .bubbles-item-name.item-name {
   font-size: 0.75em;
+
+  @include mixins.respond(phone) {
+    font-size: 1em;
+  }
+}
+
+.redwine-item-price.item-price,
+.whitewine-item-price.item-price,
+.bubbles-item-price.item-price {
+  @include mixins.respond(phone) {
+    font-size: 1em;
+  }
 }
 
 .wine-sizes {
   font-size: 0.6em;
   text-align: end;
   letter-spacing: 0.12rem;
+
+  @include mixins.respond(phone) {
+    font-size: 0.9em;
+  }
 }
 
 .wine-item-varietal {
   font-size: 0.75em;
+
+  @include mixins.respond(phone) {
+    font-size: 0.9em;
+  }
 }
 
 .wine-item-region {
-  font-size: 0.6em;
+  font-size: 0.9em;
 }
 
 .nonalc-item.menu-item {
   .nonalc-item-name.item-name {
     font-size: 0.65em;
+
+    @include mixins.respond(phone) {
+      font-size: 1em;
+    }
   }
 }

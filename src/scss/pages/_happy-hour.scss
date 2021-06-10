@@ -2,21 +2,26 @@
 @use '../abstracts/mixins';
 
 .happy-hour-menu {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include mixins.respond(tab-port) {
+    display: flex;
+    flex-flow: column;
+  }
 
   .happy-hour-section {
-    margin: 1rem auto 3rem auto; // margin auto? seems unnecessary
+  
+    grid-column: 1;
   
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, auto);
-    justify-items: center;
+    grid-template-rows: repeat(6, 1fr);
   
     @include mixins.respond(tab-port) {
       margin: 1rem 0;
-      width: 95vw;
+      width: 95vw; // UGH
   
       display: flex;
       flex-flow: column nowrap;
@@ -33,21 +38,24 @@
     }
 
     .happy-hour-time {
-
+      grid-row: 2;
+      grid-column: 3 / span 2;
     }
 
     .item-list {
+      padding-top: 2rem;
 
       .menu-item {
         display: flex;
-        flex-flow: row nowrap;
-        margin: 1rem;
-        
-        @include mixins.respond(phone){
+        flex-flow: row ;
+        margin-bottom: 1rem;
+        justify-content: space-between;
+
+        @include mixins.respond(phone) {
           width: 100%;
           display: flex;
           flex-flow: row nowrap;
-          justify-content: space-between;
+          
         }
 
         .item-price {
@@ -72,76 +80,67 @@
 }
 
 // child of .happy-hour-menu.happy-hour-section
-.happy-hour-food-section {
-
+.happy-hour-section-food {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 4;
 }
 
-.hh-item div {
-
-  display: inline-block;
-  margin: 0 0.1rem;
+.happy-hour-section-drinks {
+  grid-column: 4 / span 3;
+  grid-row: 3 / span 4;
 }
-.smiley-face-wrapper{
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  width: 100%;
 
-  img{
-    //the svg isn't centered properly, so this corrects that until I edit it
-    position: relative;
-    left: -6px;
+.happy-hour-section-food,
+.happy-hour-section-drinks {
+  .item-list {
+    display: flex;
+    flex-flow: column;
+
+    padding-left: 2rem;
   }
 }
 
 .sunday-social-section{
 
-  position: relative;
-  width: 76vw;
-  margin-top: 2rem;
+  grid-column: 2;
 
-  display: flex;
-  flex-flow: column;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 
 
-  @include mixins.respond(phone){
-    width: 96vw;
+  .section-title { 
+    grid-column: 3 / span 2;
+    grid-row: 1;
   }
 
-  .section__title{
+  p {
+    grid-column: 2 / span 4;
+    grid-row: 3;
+    align-self: center;
+
+    @include mixins.respond(tab-port) {
+      grid-row: 2;
+    }
+  }
+
+  .smiley-face-wrapper{
+
+    grid-column: 2 / span 4;
+    grid-row: 4 / span 3;
     display: flex;
     flex-flow: row;
-    align-items: flex-end;
     justify-content: center;
 
-    color: vars.$portland-red;
-    font-size: 2.3em;
-
-    @include mixins.respond(small-phone){
-      font-size: 2em;
+    @include mixins.respond(phone) {
+      max-width: 100%;
+      grid-column: 1 / span 6;
+      grid-row: 3 / span 4;
     }
-
-    span:nth-of-type(2){
-      font-size:0.5em;
-      line-height: 1.65em;
-    }
-  }
-  .section__title:last-child{
-    line-height: 1em;
-    font-size: 1em;
-  }
-
-  p{
-    font-weight: 400;
-    font-size: 1.4em;
-    text-align: center;
-
-    @include mixins.respond(phone){
-      font-size: 0.9em;
+  
+    img{
+      //the svg isn't centered properly, so this corrects that until I edit it
+      position: relative;
     }
   }
-}
-.smaller-text{
-  font-size: 1.5rem;
 }

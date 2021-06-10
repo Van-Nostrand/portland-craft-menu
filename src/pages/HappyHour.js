@@ -57,11 +57,12 @@ export default function HappyHour({ menuData }) {
         title="Sunday Social"
       >
         <p>All-day on Sundays, 20 and 12 oz pours of a select local lager or pilsner are $4.50!</p>
+        <div className="smiley-face-wrapper">
+          <img src={smileyface} />
+        </div>
       </SectionWrapper>
 
-      <div className="smiley-face-wrapper">
-        <img src={smileyface} />
-      </div>
+      
     </div>
   )
 };

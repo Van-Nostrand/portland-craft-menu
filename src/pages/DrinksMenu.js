@@ -10,18 +10,18 @@ export default function DrinksMenu({menuData}) {
         return (
           <ItemWrapper
             key={`${section}${i}`} 
-            name={item.name}
+            name={`${item.name} ${item.varietal || ""}`}
             price={item.price}
             section={section}
           >
-            { item.varietal ? 
+            {/* { item.varietal ? 
               <div className="wine-item-varietal">
                 {item.varietal}
               </div>
               : <></>
-            }
+            } */}
 
-            <div className="wine-item-region">
+            <div className={`${section}-item-region wine-item-region`}>
               {`(${item.notes})`}
             </div>
 

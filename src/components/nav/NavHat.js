@@ -48,7 +48,7 @@ export default function NavHat({ changePage, currentPage }) {
         className={currentLocation === '/happyhour' ? 'nav-button button-current-page' : 'nav-button'} 
         to='/happyhour'
       >
-          Happy Hour
+          Happy-Hour
       </Link>
       <Link 
         className={currentLocation === '/brunch' ? 'nav-button button-current-page' : 'nav-button'}
